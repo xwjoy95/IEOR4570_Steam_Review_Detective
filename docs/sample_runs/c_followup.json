@@ -1,0 +1,654 @@
+{
+  "question": "那中文玩家和英文玩家的不满一样吗？",
+  "seconds": 42.6,
+  "tool_calls_per_agent": {
+    "Clarifier": 1,
+    "Lead": 4,
+    "Patch Historian 1": 3,
+    "Review Analyst 3": 3,
+    "Review Analyst 2": 5
+  },
+  "agent_timings_s": {
+    "Clarifier": [
+      0.0,
+      4.9
+    ],
+    "Lead": [
+      4.9,
+      18.9
+    ],
+    "Patch Historian 1": [
+      9.6,
+      13.5
+    ],
+    "Review Analyst 2": [
+      9.6,
+      15.6
+    ],
+    "Review Analyst 3": [
+      9.6,
+      13.3
+    ],
+    "Writer": [
+      18.9,
+      42.6
+    ]
+  },
+  "cited": [
+    "R6",
+    "R7",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R26",
+    "R27"
+  ],
+  "cited_but_missing": [],
+  "response": "# 中文玩家和英文玩家的不满一样吗？\n\n在2026年9月9日，游戏发布了1.4版本更新，其重构了存档系统以实现更快的加载和云同步，并引入了销售外观皮肤和基地装饰的内购商店“边境交易所”[R14]。由于该更新在玩家首次启动时迁移现有世界，导致中英文玩家群体中都出现了大范围的存档损坏和世界丢失问题，并引发了差评轰炸[R18][R20][R21][R26][R27]。尽管两个语区的玩家均对存档丢失与新引入的内购商店感到不满，但两者的侧重点存在细微差异[R17][R18][R20][R21][R22][R23][R24][R26]。简体中文玩家强烈抗议内购商店中单个皮肤售价68元，指出这一价格甚至高于游戏本体[R17]；英文玩家除了声讨存档丢失和商店，还指出热修复工具无法完全挽回箱子内的物品、主菜单的内购按钮破坏了新玩家的初体验，并表达了对开发商的长期信任危机[R22][R23][R24]。\n\n## 时间线\n\n- **2026年9月7日当周**：英文差评率达到40.5%，当周共有2950个好评和2010个差评[R6]。\n- **2026年9月9日**：1.4版本更新发布，重写了存档系统以提高加载速度并支持云同步，同时上线了出售外观皮肤和基地装饰的内购商店“边境交易所”[R14]。\n- **2026年9月14日当周**：英文差评率达到40.3%，当周共有2410个好评和1630个差评[R7]。\n- **2026年9月16日**：发布1.4.1热修复补丁，加入了从旧格式重建世界的恢复工具，但也指出某些情况下可能无法恢复容器内的物品[R15]。\n- **2026年9月19日**：媒体报道指出，玩家在1.4版本存档迁移后反映世界丢失，且开发商已承认这一问题，此事引发了差评轰炸[R27]。\n- **2026年10月1日**：发布1.4.2更新，下调了“边境交易所”所有商品30%的价格，并向1.4版本前购买游戏的玩家赠送免费皮肤包[R16]。\n\n## 玩家在抱怨什么\n\n中英文玩家在存档受损和内购商店这两个核心问题上有着共同的愤怒，但不同群体和不同游玩时间的玩家展现出了不同的关注点：\n\n1. **存档与世界丢失（中英文玩家共有）**：简体中文、繁体中文和英文玩家均报告了更新后存档消失或读取失败的问题[R18][R20][R21][R26]。繁体中文玩家指出官方提供的修复工具无法救回损坏的存档[R26]。英文玩家则报告1.4.1修复工具重建世界后，导致箱子里的物资和170小时积累的战利品丢失[R23]。\n2. **内购商店的冲击（新玩家与简中玩家）**：简体中文玩家对内购价格表示强烈抗议，认为一个皮肤68元的价格比游戏本体还要贵[R17]。对于游玩时间仅为3.5小时的英文新玩家来说，主菜单醒目的内购商店按钮留下了极差的第一印象，从而促使他们选择退款[R24]。\n3. **老玩家的信任危机（英文老玩家）**：游玩时间达到301.7小时的英文老玩家表示，尽管存档已经可以重新正常工作，但因为内购商店仍然存在，他们不再信任开发商，因此依然维持差评[R22]。\n\n以下是部分玩家评价的原文摘录：\n\n- 一位游玩时间为96.1小时的简体中文玩家评论道：[R17]\n  > \"1.4 更新加了个‘边境商店’，皮肤一个 68 块，比游戏本体还贵。买断制游戏还搞内购，太难看了。\"\n- 一位游玩时间为212.4小时的英文玩家写道：[R20]\n  > \"Lost my 200-hour save after 1.4. The new save system 'migrated' my world into an empty map. No backup, no warning.\"\n- 一位游玩时间为120.6小时的繁体中文玩家写道：[R26]\n  > \"更新後存檔讀取失敗，官方的修復工具也救不回來。\"\n\n## 数据无法回答的问题\n\n本报告基于的数据存在以下局限性，无法回答相关问题：\n\n- Steam评论仅反映了主动撰写评价的玩家群体，无法代表不写评论的其他玩家态度。\n- 任何关于SteamSpy的拥有者数据均属于估算值。\n- 数据中不包含任何主机平台的信息。\n- 无法探知开发商真实的内部决策动机，仅能通过官方公告获取其公开阐述的动机（例如重写存档系统是为了提升加载速度和云同步，下调商店价格以及赠送皮肤包是为了应对玩家不满）[R14][R16]。",
+  "session_id": "d700bfb1-17e2-4253-a0cc-7358f380ec24",
+  "tool_calls": [
+    {
+      "agent": "Clarifier",
+      "name": "search_game",
+      "args": {
+        "query": "Ashen Frontier",
+        "limit": 5
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"results\": [{\"appid\": 2999990, \"name\": \"Ashen Frontier\", \"release_date\": \"2025-03-18\", \"price\": \"$24.99\"}, {\"appid\": 2999980, \"name\": \"Ashen Frontier: Origins\", \"release_date\": \"2022-06-02\", \"price\": \"$9.99\"}]}"
+    },
+    {
+      "agent": "Lead",
+      "name": "get_review_trend",
+      "args": {
+        "appid": 2999990,
+        "language": "all"
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"granularity\": \"week\", \"language\": \"all\", \"series\": [{\"ref\": \"R1\", \"period\": \"2026-08-03\", \"up\": 2110, \"down\": 172, \"pct_negative\": 7.5}, {\"ref\": \"R2\", \"period\": \"2026-08-10\", \"up\": 2380, \"down\": 205, \"pct_negative\": 7.9}, {\"ref\": \"R3\", \"period\": \"2026-08-17\", \"up\": 1990, \"down\": 171, \"pct_negative\": 7.9}, {\"ref\": \"R4\", \"period\": \"2026-08-24\", \"up\": 2050, \"down\": 180, \"pct_negative\": 8.1}, {\"ref\": \"R5\", \"period\": \"2026-08-31\", \"up\": 2240, \"down\": 195, \"pct_negative\": 8.0}, {\"ref\": \"R6\", \"period\": \"2026-09-07\", \"up\": 2950, \"down\": 2010, \"pct_negative\": 40.5}, {\"ref\": \"R7\", \"period\": \"2026-09-14\", \"up\": 2410, \"down\": 1630, \"pct_negative\": 40.3}, {\"ref\": \"R8\", \"period\": \"2026-09-21\", \"up\": 1880, \"down\": 990, \"pct_negative\": 34.5}, {\"ref\": \"R9\", \"period\": \"2026-09-28\", \"up\": 1720, \"down\": 760, \"pct_negative\": 30.6}, {\"ref\": \"R10\", \"period\": \"2026-10-05\", \"up\": 1610, \"down\": 520, \"pct_negative\": 24.4}, {\"ref\": \"R11\", \"period\": \"2026-10-12\", \"up\": 1540, \"down\": 410, \"pct_negative\": 21.0}, {\"ref\": \"R12\", \"period\": \"2026-10-19\", \"up\": 1490, \"down\": 350, \"pct_negative\": 19.0}, {\"ref\": \"R13\", \"period\": \"2026-10-26\", \"up\": 1460, \"down\": 300, \"pct_negative\": 17.0}], \"spikes\": [{\"period\": \"2026-09-07\", \"pct_negative\": 40.5, \"baseline\": 8.0, \"ref\": \"R6\"}, {\"period\": \"2026-09-14\", \"pct_negative\": 40.3, \"baseline\": 16.1, \"ref\": \"R7\"}], \"source\": \"appreviewhistogram\"}"
+    },
+    {
+      "agent": "Patch Historian 1",
+      "name": "get_patch_notes",
+      "args": {
+        "start": "2026-08-15",
+        "end": "2026-10-31",
+        "official_only": true,
+        "appid": 2999990
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"notes\": [{\"ref\": \"R14\", \"date\": \"2026-09-09\", \"title\": \"Update 1.4: New Save System & Frontier Exchange\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000002\", \"official\": true, \"summary\": \"Rewrites the save system for faster loading and cloud sync. Existing worlds are migrated on first launch. Introduces the Frontier Exchange, an in-game store for cosmetic skins and base decorations.\"}, {\"ref\": \"R15\", \"date\": \"2026-09-16\", \"title\": \"Hotfix 1.4.1: Save Recovery Tool\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000003\", \"official\": true, \"summary\": \"We're sorry. Some worlds failed to migrate. This hotfix adds a recovery tool that rebuilds worlds from the old format. Container contents may not be recoverable in all cases.\"}, {\"ref\": \"R16\", \"date\": \"2026-10-01\", \"title\": \"Update 1.4.2: Exchange price changes\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000004\", \"official\": true, \"summary\": \"Lowers all Frontier Exchange prices by 30% and gives every player who owned the game before 1.4 a free skin pack.\"}], \"source\": \"GetNewsForApp\"}"
+    },
+    {
+      "agent": "Review Analyst 3",
+      "name": "sample_reviews",
+      "args": {
+        "end": "2026-10-26",
+        "max_hours": null,
+        "review_type": "negative",
+        "limit": 40,
+        "appid": 2999990,
+        "min_hours": null,
+        "start": "2026-09-07",
+        "language": "schinese"
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"total_in_range\": 3, \"sampled\": true, \"reviews\": [{\"ref\": \"R17\", \"date\": \"2026-09-11\", \"language\": \"schinese\", \"positive\": false, \"hours_at_review\": 96.1, \"text\": \"1.4 更新加了个‘边境商店’，皮肤一个 68 块，比游戏本体还贵。买断制游戏还搞内购，太难看了。\"}, {\"ref\": \"R18\", \"date\": \"2026-09-11\", \"language\": \"schinese\", \"positive\": false, \"hours_at_review\": 158.0, \"text\": \"存档没了一半，商店倒是做得挺快。先修存档再赚钱吧。\"}, {\"ref\": \"R19\", \"date\": \"2026-09-20\", \"language\": \"schinese\", \"positive\": false, \"hours_at_review\": 22.4, \"text\": \"新玩家，看到商店价格就不想继续玩了，同样的钱可以买别的完整游戏。\"}], \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "limit": 40,
+        "min_hours": null,
+        "language": "english",
+        "end": "2026-10-26",
+        "appid": 2999990,
+        "start": "2026-09-07",
+        "review_type": "negative",
+        "max_hours": null
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"total_in_range\": 5, \"sampled\": true, \"reviews\": [{\"ref\": \"R20\", \"date\": \"2026-09-10\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 212.4, \"text\": \"Lost my 200-hour save after 1.4. The new save system 'migrated' my world into an empty map. No backup, no warning.\"}, {\"ref\": \"R21\", \"date\": \"2026-09-10\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 143.8, \"text\": \"1.4 wiped two of my three worlds. Support says 'working on it'. Do not update until they fix saves.\"}, {\"ref\": \"R22\", \"date\": \"2026-10-08\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 301.7, \"text\": \"300 hours in. Saves work again but I don't trust this dev anymore. Shop stays, so the review stays negative.\"}, {\"ref\": \"R23\", \"date\": \"2026-09-18\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 175.3, \"text\": \"The 1.4.1 recovery tool restored my world but lost every chest's contents. 170 hours of loot gone.\"}, {\"ref\": \"R24\", \"date\": \"2026-09-12\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 3.5, \"text\": \"Bought it on sale, first thing I see is a cash shop button on the main menu. Refunded.\"}], \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Patch Historian 1",
+      "name": "get_game_info",
+      "args": {
+        "appid": 2999990
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"ref\": \"R25\", \"appid\": 2999990, \"name\": \"Ashen Frontier\", \"developer\": \"Emberline Studio\", \"publisher\": \"Emberline Studio\", \"release_date\": \"2025-03-18\", \"genres\": [\"Survival\", \"Crafting\", \"Open World\"], \"price\": \"$24.99\", \"discount_pct\": 0, \"metacritic\": 82, \"note\": \"Current price only; no price history.\", \"source\": \"appdetails\"}"
+    },
+    {
+      "agent": "Review Analyst 3",
+      "name": "sample_reviews",
+      "args": {
+        "review_type": "negative",
+        "appid": 2999990,
+        "limit": 40,
+        "end": "2026-10-26",
+        "start": "2026-09-07",
+        "max_hours": null,
+        "language": "tchinese",
+        "min_hours": null
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"total_in_range\": 1, \"sampled\": true, \"reviews\": [{\"ref\": \"R26\", \"date\": \"2026-09-13\", \"language\": \"tchinese\", \"positive\": false, \"hours_at_review\": 120.6, \"text\": \"更新後存檔讀取失敗，官方的修復工具也救不回來。\"}], \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "get_review_trend",
+      "args": {
+        "language": "english",
+        "appid": 2999990
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"granularity\": \"week\", \"language\": \"english\", \"series\": [{\"ref\": \"R1\", \"period\": \"2026-08-03\", \"up\": 2110, \"down\": 172, \"pct_negative\": 7.5}, {\"ref\": \"R2\", \"period\": \"2026-08-10\", \"up\": 2380, \"down\": 205, \"pct_negative\": 7.9}, {\"ref\": \"R3\", \"period\": \"2026-08-17\", \"up\": 1990, \"down\": 171, \"pct_negative\": 7.9}, {\"ref\": \"R4\", \"period\": \"2026-08-24\", \"up\": 2050, \"down\": 180, \"pct_negative\": 8.1}, {\"ref\": \"R5\", \"period\": \"2026-08-31\", \"up\": 2240, \"down\": 195, \"pct_negative\": 8.0}, {\"ref\": \"R6\", \"period\": \"2026-09-07\", \"up\": 2950, \"down\": 2010, \"pct_negative\": 40.5}, {\"ref\": \"R7\", \"period\": \"2026-09-14\", \"up\": 2410, \"down\": 1630, \"pct_negative\": 40.3}, {\"ref\": \"R8\", \"period\": \"2026-09-21\", \"up\": 1880, \"down\": 990, \"pct_negative\": 34.5}, {\"ref\": \"R9\", \"period\": \"2026-09-28\", \"up\": 1720, \"down\": 760, \"pct_negative\": 30.6}, {\"ref\": \"R10\", \"period\": \"2026-10-05\", \"up\": 1610, \"down\": 520, \"pct_negative\": 24.4}, {\"ref\": \"R11\", \"period\": \"2026-10-12\", \"up\": 1540, \"down\": 410, \"pct_negative\": 21.0}, {\"ref\": \"R12\", \"period\": \"2026-10-19\", \"up\": 1490, \"down\": 350, \"pct_negative\": 19.0}, {\"ref\": \"R13\", \"period\": \"2026-10-26\", \"up\": 1460, \"down\": 300, \"pct_negative\": 17.0}], \"spikes\": [{\"period\": \"2026-09-07\", \"pct_negative\": 40.5, \"baseline\": 8.0, \"ref\": \"R6\"}, {\"period\": \"2026-09-14\", \"pct_negative\": 40.3, \"baseline\": 16.1, \"ref\": \"R7\"}], \"source\": \"appreviewhistogram\"}"
+    },
+    {
+      "agent": "Patch Historian 1",
+      "name": "get_patch_notes",
+      "args": {
+        "official_only": false,
+        "start": "2026-08-15",
+        "appid": 2999990,
+        "end": "2026-10-31"
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"notes\": [{\"ref\": \"R14\", \"date\": \"2026-09-09\", \"title\": \"Update 1.4: New Save System & Frontier Exchange\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000002\", \"official\": true, \"summary\": \"Rewrites the save system for faster loading and cloud sync. Existing worlds are migrated on first launch. Introduces the Frontier Exchange, an in-game store for cosmetic skins and base decorations.\"}, {\"ref\": \"R15\", \"date\": \"2026-09-16\", \"title\": \"Hotfix 1.4.1: Save Recovery Tool\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000003\", \"official\": true, \"summary\": \"We're sorry. Some worlds failed to migrate. This hotfix adds a recovery tool that rebuilds worlds from the old format. Container contents may not be recoverable in all cases.\"}, {\"ref\": \"R27\", \"date\": \"2026-09-19\", \"title\": \"Ashen Frontier's 1.4 update sparks review bomb over lost saves\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000005\", \"official\": false, \"summary\": \"Press coverage: players report lost worlds after the 1.4 save migration; the developer acknowledges the issue.\"}, {\"ref\": \"R16\", \"date\": \"2026-10-01\", \"title\": \"Update 1.4.2: Exchange price changes\", \"url\": \"https://store.steampowered.com/news/app/2999990/view/5800000004\", \"official\": true, \"summary\": \"Lowers all Frontier Exchange prices by 30% and gives every player who owned the game before 1.4 a free skin pack.\"}], \"source\": \"GetNewsForApp\"}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "review_stats",
+      "args": {
+        "start": "2026-09-07",
+        "group_by": "playtime",
+        "end": "2026-10-26",
+        "appid": 2999990
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"group_by\": \"playtime\", \"groups\": [{\"ref\": \"R28\", \"group\": \"10-100h\", \"up\": 2, \"down\": 2, \"pct_negative\": 50.0}, {\"ref\": \"R29\", \"group\": \"<10h\", \"up\": 1, \"down\": 1, \"pct_negative\": 50.0}, {\"ref\": \"R30\", \"group\": \">100h\", \"up\": 1, \"down\": 6, \"pct_negative\": 85.7}], \"sampled\": true, \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Review Analyst 3",
+      "name": "review_stats",
+      "args": {
+        "appid": 2999990,
+        "start": "2026-09-07",
+        "group_by": "language",
+        "end": "2026-10-26"
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"group_by\": \"language\", \"groups\": [{\"ref\": \"R31\", \"group\": \"english\", \"up\": 2, \"down\": 5, \"pct_negative\": 71.4}, {\"ref\": \"R32\", \"group\": \"schinese\", \"up\": 2, \"down\": 3, \"pct_negative\": 60.0}, {\"ref\": \"R33\", \"group\": \"tchinese\", \"up\": 0, \"down\": 1, \"pct_negative\": 100.0}], \"sampled\": true, \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "min_hours": 0,
+        "limit": 40,
+        "appid": 2999990,
+        "start": "2026-09-07",
+        "review_type": "negative",
+        "end": "2026-10-26",
+        "language": "english",
+        "max_hours": 10
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"total_in_range\": 1, \"sampled\": true, \"reviews\": [{\"ref\": \"R24\", \"date\": \"2026-09-12\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 3.5, \"text\": \"Bought it on sale, first thing I see is a cash shop button on the main menu. Refunded.\"}], \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "reviews",
+        "task": "Analyze Chinese (Simplified and Traditional) negative reviews for Ashen Frontier (appid 2999990) from September 7, 2026 to October 26, 2026. Identify the main complaints and issues raised by Chinese-speaking players during this period."
+      },
+      "result": "{\"findings\": [{\"claim\": \"Simplified Chinese reviewers complained about the 1.4 update adding a 'border store' with overpriced skins costing 68, which is more expensive than the base game.\", \"evidence\": [\"R17\"]}, {\"claim\": \"Simplified Chinese reviewers reported save file issues after updates, complaining that saves were lost and urging developers to fix saves before introducing in-game purchases.\", \"evidence\": [\"R18\"]}, {\"claim\": \"Traditional Chinese reviewers reported save loading failures after updates where official repair tools could not recover the save.\", \"evidence\": [\"R26\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "patches",
+        "task": "Find all updates, announcements, patch notes and store changes for Ashen Frontier (appid 2999990) released between late August 2026 and October 2026, especially around September 7, 2026."
+      },
+      "result": "{\"findings\": [{\"claim\": \"On 2026-09-09, Update 1.4 was released, rewriting the save system for faster loading and cloud sync while introducing the Frontier Exchange in-game store for cosmetic skins and base decorations.\", \"evidence\": [\"R14\"]}, {\"claim\": \"On 2026-09-16, Hotfix 1.4.1 was released with a recovery tool to rebuild worlds from the old format after some worlds failed to migrate, noting that container contents may not be recoverable in all cases.\", \"evidence\": [\"R15\"]}, {\"claim\": \"On 2026-09-19, press coverage noted that players reported lost worlds after the 1.4 save migration and that the developer acknowledged the issue.\", \"evidence\": [\"R27\"]}, {\"claim\": \"On 2026-10-01, Update 1.4.2 lowered all Frontier Exchange prices by 30% and provided a free skin pack to every player who owned the game before version 1.4.\", \"evidence\": [\"R16\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "start": "2026-09-07",
+        "end": "2026-10-26",
+        "max_hours": null,
+        "limit": 40,
+        "appid": 2999990,
+        "min_hours": 100,
+        "review_type": "negative",
+        "language": "english"
+      },
+      "result": "{\"ok\": true, \"fake\": true, \"as_of\": \"2026-11-04\", \"from_snapshot\": false, \"appid\": 2999990, \"total_in_range\": 4, \"sampled\": true, \"reviews\": [{\"ref\": \"R20\", \"date\": \"2026-09-10\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 212.4, \"text\": \"Lost my 200-hour save after 1.4. The new save system 'migrated' my world into an empty map. No backup, no warning.\"}, {\"ref\": \"R21\", \"date\": \"2026-09-10\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 143.8, \"text\": \"1.4 wiped two of my three worlds. Support says 'working on it'. Do not update until they fix saves.\"}, {\"ref\": \"R22\", \"date\": \"2026-10-08\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 301.7, \"text\": \"300 hours in. Saves work again but I don't trust this dev anymore. Shop stays, so the review stays negative.\"}, {\"ref\": \"R23\", \"date\": \"2026-09-18\", \"language\": \"english\", \"positive\": false, \"hours_at_review\": 175.3, \"text\": \"The 1.4.1 recovery tool restored my world but lost every chest's contents. 170 hours of loot gone.\"}], \"source\": \"appreviews\"}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "reviews",
+        "task": "Analyze English negative reviews for Ashen Frontier (appid 2999990) from September 7, 2026 to October 26, 2026. Identify the main complaints and issues raised by English-speaking players during this period."
+      },
+      "result": "{\"findings\": [{\"claim\": \"English negative review percentage peaked at 40.5% during the week of 2026-09-07 and 40.3% during the week of 2026-09-14.\", \"evidence\": [\"R6\", \"R7\"]}, {\"claim\": \"Players complained about losing long-term game saves and worlds after updating to version 1.4.\", \"evidence\": [\"R20\", \"R21\"]}, {\"claim\": \"Some players reported that recovery tools restored worlds but caused the loss of chest contents and loot.\", \"evidence\": [\"R23\"]}, {\"claim\": \"Players expressed a lack of trust in the developers following the save data issues, with some noting that cash shops remained present.\", \"evidence\": [\"R22\"]}, {\"claim\": \"Low-hour players reported negative first impressions due to cash shop buttons on the main menu.\", \"evidence\": [\"R24\"]}], \"cannot_answer\": []}"
+    }
+  ],
+  "evidence": {
+    "R1": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-08-03",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-08-03",
+      "text": "Ashen Frontier, week of 2026-08-03: 2110 positive, 172 negative reviews (7.5% negative).",
+      "meta": {}
+    },
+    "R2": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-08-10",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-08-10",
+      "text": "Ashen Frontier, week of 2026-08-10: 2380 positive, 205 negative reviews (7.9% negative).",
+      "meta": {}
+    },
+    "R3": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-08-17",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-08-17",
+      "text": "Ashen Frontier, week of 2026-08-17: 1990 positive, 171 negative reviews (7.9% negative).",
+      "meta": {}
+    },
+    "R4": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-08-24",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-08-24",
+      "text": "Ashen Frontier, week of 2026-08-24: 2050 positive, 180 negative reviews (8.1% negative).",
+      "meta": {}
+    },
+    "R5": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-08-31",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-08-31",
+      "text": "Ashen Frontier, week of 2026-08-31: 2240 positive, 195 negative reviews (8.0% negative).",
+      "meta": {}
+    },
+    "R6": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-09-07",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-09-07",
+      "text": "Ashen Frontier, week of 2026-09-07: 2950 positive, 2010 negative reviews (40.5% negative).",
+      "meta": {}
+    },
+    "R7": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-09-14",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-09-14",
+      "text": "Ashen Frontier, week of 2026-09-14: 2410 positive, 1630 negative reviews (40.3% negative).",
+      "meta": {}
+    },
+    "R8": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-09-21",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-09-21",
+      "text": "Ashen Frontier, week of 2026-09-21: 1880 positive, 990 negative reviews (34.5% negative).",
+      "meta": {}
+    },
+    "R9": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-09-28",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-09-28",
+      "text": "Ashen Frontier, week of 2026-09-28: 1720 positive, 760 negative reviews (30.6% negative).",
+      "meta": {}
+    },
+    "R10": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-10-05",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-05",
+      "text": "Ashen Frontier, week of 2026-10-05: 1610 positive, 520 negative reviews (24.4% negative).",
+      "meta": {}
+    },
+    "R11": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-10-12",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-12",
+      "text": "Ashen Frontier, week of 2026-10-12: 1540 positive, 410 negative reviews (21.0% negative).",
+      "meta": {}
+    },
+    "R12": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-10-19",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-19",
+      "text": "Ashen Frontier, week of 2026-10-19: 1490 positive, 350 negative reviews (19.0% negative).",
+      "meta": {}
+    },
+    "R13": {
+      "source": "review_trend",
+      "raw_id": "2999990:2026-10-26",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier, week of 2026-10-26: 1460 positive, 300 negative reviews (17.0% negative).",
+      "meta": {}
+    },
+    "R14": {
+      "source": "news",
+      "raw_id": "5800000002",
+      "url": "https://store.steampowered.com/news/app/2999990/view/5800000002",
+      "date": "2026-09-09",
+      "text": "Update 1.4: New Save System & Frontier Exchange. Rewrites the save system for faster loading and cloud sync. Existing worlds are migrated on first launch. Introduces the Frontier Exchange, an in-game store for cosmetic skins and base decorations.",
+      "meta": {}
+    },
+    "R15": {
+      "source": "news",
+      "raw_id": "5800000003",
+      "url": "https://store.steampowered.com/news/app/2999990/view/5800000003",
+      "date": "2026-09-16",
+      "text": "Hotfix 1.4.1: Save Recovery Tool. We're sorry. Some worlds failed to migrate. This hotfix adds a recovery tool that rebuilds worlds from the old format. Container contents may not be recoverable in all cases.",
+      "meta": {}
+    },
+    "R16": {
+      "source": "news",
+      "raw_id": "5800000004",
+      "url": "https://store.steampowered.com/news/app/2999990/view/5800000004",
+      "date": "2026-10-01",
+      "text": "Update 1.4.2: Exchange price changes. Lowers all Frontier Exchange prices by 30% and gives every player who owned the game before 1.4 a free skin pack.",
+      "meta": {}
+    },
+    "R17": {
+      "source": "review",
+      "raw_id": "190000006",
+      "url": "https://steamcommunity.com/profiles/765611980190000006/recommended/2999990/",
+      "date": "2026-09-11",
+      "text": "1.4 更新加了个‘边境商店’，皮肤一个 68 块，比游戏本体还贵。买断制游戏还搞内购，太难看了。",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 96.1,
+        "positive": false
+      }
+    },
+    "R18": {
+      "source": "review",
+      "raw_id": "190000007",
+      "url": "https://steamcommunity.com/profiles/765611980190000007/recommended/2999990/",
+      "date": "2026-09-11",
+      "text": "存档没了一半，商店倒是做得挺快。先修存档再赚钱吧。",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 158.0,
+        "positive": false
+      }
+    },
+    "R19": {
+      "source": "review",
+      "raw_id": "190000012",
+      "url": "https://steamcommunity.com/profiles/765611980190000012/recommended/2999990/",
+      "date": "2026-09-20",
+      "text": "新玩家，看到商店价格就不想继续玩了，同样的钱可以买别的完整游戏。",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 22.4,
+        "positive": false
+      }
+    },
+    "R20": {
+      "source": "review",
+      "raw_id": "190000004",
+      "url": "https://steamcommunity.com/profiles/765611980190000004/recommended/2999990/",
+      "date": "2026-09-10",
+      "text": "Lost my 200-hour save after 1.4. The new save system 'migrated' my world into an empty map. No backup, no warning.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 212.4,
+        "positive": false
+      }
+    },
+    "R21": {
+      "source": "review",
+      "raw_id": "190000005",
+      "url": "https://steamcommunity.com/profiles/765611980190000005/recommended/2999990/",
+      "date": "2026-09-10",
+      "text": "1.4 wiped two of my three worlds. Support says 'working on it'. Do not update until they fix saves.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 143.8,
+        "positive": false
+      }
+    },
+    "R22": {
+      "source": "review",
+      "raw_id": "190000014",
+      "url": "https://steamcommunity.com/profiles/765611980190000014/recommended/2999990/",
+      "date": "2026-10-08",
+      "text": "300 hours in. Saves work again but I don't trust this dev anymore. Shop stays, so the review stays negative.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 301.7,
+        "positive": false
+      }
+    },
+    "R23": {
+      "source": "review",
+      "raw_id": "190000011",
+      "url": "https://steamcommunity.com/profiles/765611980190000011/recommended/2999990/",
+      "date": "2026-09-18",
+      "text": "The 1.4.1 recovery tool restored my world but lost every chest's contents. 170 hours of loot gone.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 175.3,
+        "positive": false
+      }
+    },
+    "R24": {
+      "source": "review",
+      "raw_id": "190000008",
+      "url": "https://steamcommunity.com/profiles/765611980190000008/recommended/2999990/",
+      "date": "2026-09-12",
+      "text": "Bought it on sale, first thing I see is a cash shop button on the main menu. Refunded.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 3.5,
+        "positive": false
+      }
+    },
+    "R25": {
+      "source": "store",
+      "raw_id": "2999990",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-11-04",
+      "text": "{\"name\": \"Ashen Frontier\", \"developer\": \"Emberline Studio\", \"publisher\": \"Emberline Studio\", \"release_date\": \"2025-03-18\", \"genres\": [\"Survival\", \"Crafting\", \"Open World\"], \"price\": \"$24.99\", \"discount_pct\": 0, \"metacritic\": 82}",
+      "meta": {}
+    },
+    "R26": {
+      "source": "review",
+      "raw_id": "190000009",
+      "url": "https://steamcommunity.com/profiles/765611980190000009/recommended/2999990/",
+      "date": "2026-09-13",
+      "text": "更新後存檔讀取失敗，官方的修復工具也救不回來。",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 120.6,
+        "positive": false
+      }
+    },
+    "R27": {
+      "source": "news",
+      "raw_id": "5800000005",
+      "url": "https://store.steampowered.com/news/app/2999990/view/5800000005",
+      "date": "2026-09-19",
+      "text": "Ashen Frontier's 1.4 update sparks review bomb over lost saves. Press coverage: players report lost worlds after the 1.4 save migration; the developer acknowledges the issue.",
+      "meta": {}
+    },
+    "R28": {
+      "source": "review_stats",
+      "raw_id": "2999990:2026-09-07:2026-10-26:playtime:10-100h",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier reviews 2026-09-07 to 2026-10-26, playtime = 10-100h: 2 positive, 2 negative (50.0% negative, sampled).",
+      "meta": {}
+    },
+    "R29": {
+      "source": "review_stats",
+      "raw_id": "2999990:2026-09-07:2026-10-26:playtime:<10h",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier reviews 2026-09-07 to 2026-10-26, playtime = <10h: 1 positive, 1 negative (50.0% negative, sampled).",
+      "meta": {}
+    },
+    "R30": {
+      "source": "review_stats",
+      "raw_id": "2999990:2026-09-07:2026-10-26:playtime:>100h",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier reviews 2026-09-07 to 2026-10-26, playtime = >100h: 1 positive, 6 negative (85.7% negative, sampled).",
+      "meta": {}
+    },
+    "R31": {
+      "source": "review_stats",
+      "raw_id": "2999990:2026-09-07:2026-10-26:language:english",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier reviews 2026-09-07 to 2026-10-26, language = english: 2 positive, 5 negative (71.4% negative, sampled).",
+      "meta": {}
+    },
+    "R32": {
+      "source": "review_stats",
+      "raw_id": "2999990:2026-09-07:2026-10-26:language:schinese",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier reviews 2026-09-07 to 2026-10-26, language = schinese: 2 positive, 3 negative (60.0% negative, sampled).",
+      "meta": {}
+    },
+    "R33": {
+      "source": "review_stats",
+      "raw_id": "2999990:2026-09-07:2026-10-26:language:tchinese",
+      "url": "https://store.steampowered.com/app/2999990/",
+      "date": "2026-10-26",
+      "text": "Ashen Frontier reviews 2026-09-07 to 2026-10-26, language = tchinese: 0 positive, 1 negative (100.0% negative, sampled).",
+      "meta": {}
+    }
+  },
+  "chart": {
+    "series": [
+      {
+        "ref": "R1",
+        "period": "2026-08-03",
+        "up": 2110,
+        "down": 172,
+        "pct_negative": 7.5
+      },
+      {
+        "ref": "R2",
+        "period": "2026-08-10",
+        "up": 2380,
+        "down": 205,
+        "pct_negative": 7.9
+      },
+      {
+        "ref": "R3",
+        "period": "2026-08-17",
+        "up": 1990,
+        "down": 171,
+        "pct_negative": 7.9
+      },
+      {
+        "ref": "R4",
+        "period": "2026-08-24",
+        "up": 2050,
+        "down": 180,
+        "pct_negative": 8.1
+      },
+      {
+        "ref": "R5",
+        "period": "2026-08-31",
+        "up": 2240,
+        "down": 195,
+        "pct_negative": 8.0
+      },
+      {
+        "ref": "R6",
+        "period": "2026-09-07",
+        "up": 2950,
+        "down": 2010,
+        "pct_negative": 40.5
+      },
+      {
+        "ref": "R7",
+        "period": "2026-09-14",
+        "up": 2410,
+        "down": 1630,
+        "pct_negative": 40.3
+      },
+      {
+        "ref": "R8",
+        "period": "2026-09-21",
+        "up": 1880,
+        "down": 990,
+        "pct_negative": 34.5
+      },
+      {
+        "ref": "R9",
+        "period": "2026-09-28",
+        "up": 1720,
+        "down": 760,
+        "pct_negative": 30.6
+      },
+      {
+        "ref": "R10",
+        "period": "2026-10-05",
+        "up": 1610,
+        "down": 520,
+        "pct_negative": 24.4
+      },
+      {
+        "ref": "R11",
+        "period": "2026-10-12",
+        "up": 1540,
+        "down": 410,
+        "pct_negative": 21.0
+      },
+      {
+        "ref": "R12",
+        "period": "2026-10-19",
+        "up": 1490,
+        "down": 350,
+        "pct_negative": 19.0
+      },
+      {
+        "ref": "R13",
+        "period": "2026-10-26",
+        "up": 1460,
+        "down": 300,
+        "pct_negative": 17.0
+      }
+    ],
+    "patches": [
+      {
+        "date": "2026-08-12",
+        "title": "Update 1.3: Rivers & Rods"
+      },
+      {
+        "date": "2026-09-09",
+        "title": "Update 1.4: New Save System & Frontier Exchange"
+      },
+      {
+        "date": "2026-09-16",
+        "title": "Hotfix 1.4.1: Save Recovery Tool"
+      },
+      {
+        "date": "2026-10-01",
+        "title": "Update 1.4.2: Exchange price changes"
+      }
+    ]
+  }
+}

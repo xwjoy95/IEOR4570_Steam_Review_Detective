@@ -1,0 +1,18 @@
+{
+  "question": "这游戏怎么样？",
+  "seconds": 2.2,
+  "tool_calls_per_agent": {},
+  "agent_timings_s": {
+    "Clarifier": [
+      0.0,
+      2.2
+    ]
+  },
+  "cited": [],
+  "cited_but_missing": [],
+  "response": "请问您指的是哪款游戏呢？另外，您想具体了解它的哪些方面（例如：近期的玩家评价、重大更新、中外玩家反馈差异，或者是否值得入手等）？",
+  "session_id": "c37c9a69-ecb2-4ebb-a2d3-1b84410d6d04",
+  "tool_calls": [],
+  "evidence": {},
+  "chart": null
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Steam Review Detective</title>
+        <!-- Layout adapted from the course reference wikipedia-deep-research. -->
+        <style>
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+            body { font-family: system-ui, sans-serif; padding: 2rem 1rem; color: #111; }
+            main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+            section { border: 1px solid #e0e0e0; padding: 1.25rem 1.5rem; }
+            h1 { font-size: 1.25rem; font-weight: 600; }
+            .intro p { font-size: 0.9rem; line-height: 1.6; color: #444; margin-top: 0.5rem; }
+            h2 {
+                font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #999;
+                font-weight: 400; margin-bottom: 0.75rem; display: flex; justify-content: space-between;
+            }
+            #question {
+                width: 100%; padding: 0.6rem 0; border: none; border-bottom: 1px solid #e0e0e0;
+                font-size: 1rem; outline: none;
+            }
+            #question:focus { border-bottom-color: #000; }
+            .examples { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+            .examples button { background: #f3f3f3; color: #333; text-transform: none; letter-spacing: 0; }
+            button {
+                padding: 0.6rem 1.2rem; background: #000; color: #fff; border: none; font-size: 0.75rem;
+                text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer;
+            }
+            #run { margin-top: 1rem; }
+            button:disabled { opacity: 0.3; }
+            #activity { list-style: none; font-size: 0.85rem; line-height: 1.7; }
+            #activity .agent { font-weight: 600; }
+            #activity .error { color: #dc2626; }
+            #status { color: #999; text-transform: none; letter-spacing: 0; }
+            #output { font-size: 0.9rem; white-space: pre-wrap; word-break: break-word; line-height: 1.6; }
+            .empty { color: #999; }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="intro">
+                <h1>Steam Review Detective</h1>
+                <p><strong>What it explores:</strong> why a Steam game's player sentiment changed. Researchers check reviews, patch notes and player counts in parallel, and a writer turns what they find into a cited report.</p>
+                <p><strong>Who it's for:</strong> players deciding whether to buy or come back to a game, and developers studying how a competitor's update landed.</p>
+                <p><strong>How to use it:</strong> name a game and ask what changed. If the question is too vague, it asks you back first.</p>
+            </section>
+
+            <section>
+                <h2>Question</h2>
+                <form id="task">
+                    <input id="question" placeholder="e.g. Why did Baldur's Gate 3's reviews drop recently?" autocomplete="off" />
+                    <div class="examples">
+                        <!-- TODO: replace with the README's 3 sample questions once the demo games are picked -->
+                        <button type="button" data-q="Which update caused the recent spike in negative reviews for XX, and what are players complaining about?">Recent review drop</button>
+                        <button type="button" data-q="Do Chinese and English players complain about the same things in XX?">Chinese vs English players</button>
+                        <button type="button" data-q="How do players with 100+ hours review XX differently from newcomers?">Veterans vs newcomers</button>
+                    </div>
+                    <button id="run" type="submit">Investigate</button>
+                </form>
+            </section>
+
+            <!-- TODO: review timeline chart (daily up/down bars, patch notes as vertical lines) -->
+
+            <section>
+                <h2>Activity <span id="status"></span></h2>
+                <ol id="activity"><li class="empty">Each agent's tool calls appear here.</li></ol>
+            </section>
+
+            <section>
+                <h2>Report</h2>
+                <!-- TODO: render markdown; make [R12] citations clickable using the response's evidence -->
+                <div id="output" class="empty">The cited report appears here.</div>
+            </section>
+        </main>
+
+        <script src="/context-panel.js"></script>
+        <script>
+            const $ = (id) => document.getElementById(id);
+            let sessionId = null;
+
+            function addActivity(agent, text, cls = "") {
+                const li = document.createElement("li");
+                li.className = cls;
+                if (agent) {
+                    const name = document.createElement("span");
+                    name.className = "agent";
+                    name.textContent = agent + " ";
+                    li.appendChild(name);
+                }
+                li.append(text);
+                $("activity").appendChild(li);
+            }
+
+            document.querySelectorAll(".examples button").forEach((b) =>
+                b.addEventListener("click", () => ($("question").value = b.dataset.q)),
+            );
+
+            $("task").addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const message = $("question").value.trim();
+                if (!message) return;
+                $("activity").replaceChildren();
+                $("output").className = "empty";
+                $("output").textContent = "Researching...";
+                $("status").textContent = "running";
+                $("run").disabled = true;
+                try {
+                    const res = await fetch("/chat", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ message, session_id: sessionId }),
+                    });
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    const data = await res.json();
+                    sessionId = data.session_id;
+                    for (const call of data.tool_calls) addActivity(call.agent, `called ${call.name}`);
+                    $("output").className = "";
+                    $("output").textContent = data.response;
+                    $("status").textContent = "done";
+                } catch (err) {
+                    addActivity("", String(err), "error");
+                    $("status").textContent = "failed";
+                } finally {
+                    $("run").disabled = false;
+                }
+            });
+        </script>
+    </body>
+</html>
