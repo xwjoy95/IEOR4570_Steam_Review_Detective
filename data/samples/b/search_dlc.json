@@ -1,0 +1,14 @@
+{
+  "source": "https://store.steampowered.com/api/storesearch/",
+  "params": {
+    "term": "Baldur's Gate 3 Soundtrack",
+    "l": "english",
+    "cc": "US"
+  },
+  "captured_at": "2026-11-06T09:49:36.457481+00:00",
+  "status": 200,
+  "data": {
+    "total": 0,
+    "items": []
+  }
+}

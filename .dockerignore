@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+.pytest_cache
+.env
+.env.*
+!.env.example
+**/*api-key*
+**/*api_key*
+**/steam-api-data.txt
+**/credentials*.json
+**/secrets
+**/*.pem
+**/*.key

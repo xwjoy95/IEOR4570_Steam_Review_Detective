@@ -1,0 +1,13 @@
+.gcloudignore
+.git
+.gitignore
+#!include:.gitignore
+.env
+.env.*
+**/*api-key*
+**/*api_key*
+**/steam-api-data.txt
+**/credentials*.json
+**/secrets/**
+**/*.pem
+**/*.key

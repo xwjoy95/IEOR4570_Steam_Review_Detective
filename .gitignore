@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local credentials (never commit)
+.env.*
+!.env.example
+*api-key*
+*api_key*
+secrets/
+credentials*.json
+
+steam-api-data.txt
+*.pem
+*.key

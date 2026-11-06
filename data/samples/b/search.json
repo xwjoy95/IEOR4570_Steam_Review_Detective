@@ -1,0 +1,66 @@
+{
+  "source": "https://store.steampowered.com/api/storesearch/",
+  "params": {
+    "term": "Baldur's Gate 3",
+    "l": "english",
+    "cc": "US"
+  },
+  "captured_at": "2026-11-06T09:49:36.545481+00:00",
+  "status": 200,
+  "data": {
+    "total": 3,
+    "items": [
+      {
+        "type": "app",
+        "name": "Baldur's Gate 3",
+        "id": 1086940,
+        "price": {
+          "currency": "USD",
+          "initial": 5999,
+          "final": 5999
+        },
+        "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/3dd81008e9c385caf68152450c22353f6a8abec9/capsule_231x87.jpg?t=1777363040",
+        "metascore": "96",
+        "platforms": {
+          "windows": true,
+          "mac": true,
+          "linux": false
+        },
+        "streamingvideo": false,
+        "controller_support": "full"
+      },
+      {
+        "type": "app",
+        "name": "Baldur's Gate 3 - Digital Deluxe Edition DLC",
+        "id": 2378500,
+        "price": {
+          "currency": "USD",
+          "initial": 999,
+          "final": 999
+        },
+        "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/capsule_231x87.jpg?t=1692306965",
+        "metascore": "",
+        "platforms": {
+          "windows": true,
+          "mac": true,
+          "linux": false
+        },
+        "streamingvideo": false
+      },
+      {
+        "type": "app",
+        "name": "Baldur's Gate 3 Toolkit Data",
+        "id": 2956320,
+        "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2956320/capsule_231x87.jpg?t=1725896725",
+        "metascore": "",
+        "platforms": {
+          "windows": true,
+          "mac": false,
+          "linux": false
+        },
+        "streamingvideo": false,
+        "controller_support": "full"
+      }
+    ]
+  }
+}

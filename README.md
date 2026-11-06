@@ -6,7 +6,9 @@ Name a Steam game and ask why its reviews changed. A Lead agent splits the quest
 researchers check player reviews, patch notes and player counts in parallel, and a Writer turns
 their findings into a report where every fact cites a review, announcement or data point `[R12]`.
 
-Status: the agents work end to end on fake data; the real data tools are stubs (`TODO(A/B/C)` marks who owns what).
+Status: the agents work end to end on fake data. B's real search, store details, announcements and
+shared HTTP/snapshot layer are implemented and validated live and offline. A/C tools remain stubs.
+See [B's integration notes](docs/member_b.md) and [validation results](docs/b_validation.json).
 
 ## Target users
 
@@ -64,7 +66,15 @@ uv run scripts/e2e_runs.py    # 3 real runs with Gemini; saves responses to docs
 
 `USE_FAKE_TOOLS=1` (the default for now) runs every tool on the fictional fake data in
 `tools/fakes.py` ("Ashen Frontier", appid 2999990), with the real tools' names and schemas. Set
-`USE_FAKE_TOOLS=0` in `.env` once the real tools work.
+`USE_FAKE_TOOLS=0` in `.env` once all teammates' real tools work. To validate B's real tools independently
+of that switch (no model credentials or Steam key required):
+
+```bash
+uv run scripts/check_steam_news.py --start 2026-03-01 --end 2026-03-31
+```
+
+Keep credentials outside the repository or in a local ignored `.env`. Never put keys in snapshots,
+sample responses, reports or frontend code. These three B endpoints do not use the Steam key.
 
 ## Sample queries
 

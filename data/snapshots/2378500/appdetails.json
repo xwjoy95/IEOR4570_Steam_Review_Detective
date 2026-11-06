@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "appid": 2378500,
+  "source": "https://store.steampowered.com/api/appdetails",
+  "params": {
+    "appids": 2378500,
+    "cc": "US",
+    "l": "english"
+  },
+  "as_of": "2026-11-06",
+  "captured_at": "2026-11-06T10:00:43.778286+00:00",
+  "data": {
+    "2378500": {
+      "success": true,
+      "data": {
+        "type": "dlc",
+        "name": "Baldur's Gate 3 - Digital Deluxe Edition DLC",
+        "steam_appid": 2378500,
+        "required_age": "17",
+        "is_free": false,
+        "detailed_description": "For those looking to get a little more out of Baldur’s Gate 3, the Digital Deluxe Edition upgrade content includes in-game cosmetics, such as a unique custom dice skin to show off to your friends, as well as practical in-game items such as the Mask of the Shapeshifter from Divinity: Original Sin 2.<br><br>Listen to the magical music of Borislav Slavov’s Original Soundtrack for Baldur’s Gate 3 or even pick up a pen and play D&amp;D as one of our Origin characters with the handy printable pre-made character sheets. There’s plenty to get stuck into, in and outside of the game. <br><br><strong>For full details, see below. </strong><br><br><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/extras/cf1e9e4a24beae85216c1fa5e9faf448.avif?t=1692306965\" width=610 height=960 /></span><br><br><ul class=\"bb_ul\"><li> <strong>Bard Song Pack</strong> - Astound audiences by performing this special set of new songs – or have them covering their ears if you lack proficiency.<br></li><li> <strong>Exclusive Dice Skin</strong> - Fail checks with style, or succeed with a new air of confidence.<br></li><li> <strong>Paintings from Rivellon</strong> - Discover a new collection of paintings across the Forgotten Realms, inspired by Divinity: Original Sin 2. <br></li><li> <strong>Adventurer's Pouch</strong> - Receive a collection of camp supplies and potions to help get your journey started.<br></li><li> <strong>Digital OST</strong> - Enjoy the music of Baldur's Gate 3 from composer Borislav Slavov. Crack this soundtrack out in your D&amp;D session, and get the feel and mood of Baldur's Gate 3! <br></li><li> <strong>Digital Artbook</strong> - Explore the art and design of Baldur's Gate 3 in this comprehensive digital artbook, written by Larian.<br></li><li> <strong>Digital Character Sheets</strong> - Peruse and print a set of four-page D&amp;D character sheets for each Baldur's Gate 3 Origin character. </li></ul><strong><br><br><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/extras/9158bb5c69fc484274617b5da2ad7e40.avif?t=1692306965\" width=610 height=654 /></span><br><br>AND AN ITEM PACK FROM THE WORLD OF DIVINITY: ORIGINAL SIN!</strong><br><ul class=\"bb_ul\"><li> <strong>Mask of the Shapeshifter</strong> - Headgear that allows you to change race and appearance on the fly, inspired by Fane of Divinity: Original Sin 2<br></li><li> <strong>Cape of the Red Prince</strong> - Cloak inspired by the Red Prince of Divinity: Original Sin 2<br></li><li> <strong>Lute of the Merryweather Bard</strong> - Playable instrument inspired by Lohse of Divinity: Original Sin 2<br></li><li> <strong>Needle of the Outlaw Rogue</strong> - Dagger inspired by Sebille of Divinity: Original Sin 2<br></li><li> <strong>Bicorne of the Sea Beast</strong> - Headgear inspired by Beast of Divinity: Original Sin 2</li></ul><br>All as awesome as they are wholly unnecessary.",
+        "about_the_game": "For those looking to get a little more out of Baldur’s Gate 3, the Digital Deluxe Edition upgrade content includes in-game cosmetics, such as a unique custom dice skin to show off to your friends, as well as practical in-game items such as the Mask of the Shapeshifter from Divinity: Original Sin 2.<br><br>Listen to the magical music of Borislav Slavov’s Original Soundtrack for Baldur’s Gate 3 or even pick up a pen and play D&amp;D as one of our Origin characters with the handy printable pre-made character sheets. There’s plenty to get stuck into, in and outside of the game. <br><br><strong>For full details, see below. </strong><br><br><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/extras/cf1e9e4a24beae85216c1fa5e9faf448.avif?t=1692306965\" width=610 height=960 /></span><br><br><ul class=\"bb_ul\"><li> <strong>Bard Song Pack</strong> - Astound audiences by performing this special set of new songs – or have them covering their ears if you lack proficiency.<br></li><li> <strong>Exclusive Dice Skin</strong> - Fail checks with style, or succeed with a new air of confidence.<br></li><li> <strong>Paintings from Rivellon</strong> - Discover a new collection of paintings across the Forgotten Realms, inspired by Divinity: Original Sin 2. <br></li><li> <strong>Adventurer's Pouch</strong> - Receive a collection of camp supplies and potions to help get your journey started.<br></li><li> <strong>Digital OST</strong> - Enjoy the music of Baldur's Gate 3 from composer Borislav Slavov. Crack this soundtrack out in your D&amp;D session, and get the feel and mood of Baldur's Gate 3! <br></li><li> <strong>Digital Artbook</strong> - Explore the art and design of Baldur's Gate 3 in this comprehensive digital artbook, written by Larian.<br></li><li> <strong>Digital Character Sheets</strong> - Peruse and print a set of four-page D&amp;D character sheets for each Baldur's Gate 3 Origin character. </li></ul><strong><br><br><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/extras/9158bb5c69fc484274617b5da2ad7e40.avif?t=1692306965\" width=610 height=654 /></span><br><br>AND AN ITEM PACK FROM THE WORLD OF DIVINITY: ORIGINAL SIN!</strong><br><ul class=\"bb_ul\"><li> <strong>Mask of the Shapeshifter</strong> - Headgear that allows you to change race and appearance on the fly, inspired by Fane of Divinity: Original Sin 2<br></li><li> <strong>Cape of the Red Prince</strong> - Cloak inspired by the Red Prince of Divinity: Original Sin 2<br></li><li> <strong>Lute of the Merryweather Bard</strong> - Playable instrument inspired by Lohse of Divinity: Original Sin 2<br></li><li> <strong>Needle of the Outlaw Rogue</strong> - Dagger inspired by Sebille of Divinity: Original Sin 2<br></li><li> <strong>Bicorne of the Sea Beast</strong> - Headgear inspired by Beast of Divinity: Original Sin 2</li></ul><br>All as awesome as they are wholly unnecessary.",
+        "short_description": "The Digital Deluxe Edition includes both practical and cosmetic in-game items, such as a unique custom dice skin and the Mask of the Shapeshifter from Divinity: Original Sin 2. As well as the Original Game Soundtrack for Baldur's Gate 3, digital Artbook and printable pre-made Origin character sheets",
+        "fullgame": {
+          "appid": "1086940",
+          "name": "Baldur's Gate 3"
+        },
+        "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Polish, Russian, Simplified Chinese, Turkish, Portuguese - Brazil, Italian, Spanish - Latin America, Traditional Chinese, Ukrainian<br><strong>*</strong>languages with full audio support",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/header.jpg?t=1692306965",
+        "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/capsule_231x87.jpg?t=1692306965",
+        "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/capsule_184x69.jpg?t=1692306965",
+        "website": "https://baldursgate3.game",
+        "pc_requirements": {
+          "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel I5 4690 / AMD FX 8350<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia GTX 970 / RX 480 (4GB+ of VRAM)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 4 GB available space<br></li><li><strong>Additional Notes:</strong> SSD required</li></ul>",
+          "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10 64-bit<br></li><li><strong>Processor:</strong> Intel i7 8700K / AMD r5 3600<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> Nvidia 2060 Super / RX 5700 XT (8GB+ of VRAM)<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 4 GB available space<br></li><li><strong>Additional Notes:</strong> SSD required</li></ul>"
+        },
+        "mac_requirements": {
+          "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 10.15.6<br></li><li><strong>Processor:</strong> 2.6GHz Quad-Core Intel Core i7<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> AMD Radeon460 4GB<br></li><li><strong>Storage:</strong> 150 GB available space<br></li><li><strong>Additional Notes:</strong> Minimum specs can run the game on low to medium settings. To meet minimum specs, you'll need a MacBook Pro 15 inch from 2016 or newer, with the above mentioned GPU. Or, a MacBook Pro 13 inch from 2018 or newer. M1 Chip requirements: MacBook Air, MacBook Pro, or Mac mini with Apple M1 chip and 8GB of RAM. SSD recommended.</li></ul>",
+          "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li><strong>OS:</strong> macOS 10.15.7<br></li><li><strong>Processor:</strong> 2.3GHz 8-Core Intel Core i9<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> AMD Radeon Pro 5500M 8GB<br></li><li><strong>Storage:</strong> 150 GB available space<br></li><li><strong>Additional Notes:</strong> Recommended specs can run the game on high or ultra settings. You'll meet recommended specs if you have a MacBook Pro 15 inch or 16 inch from 2019 and upwith the above mentioned GPU. An iMac from 2017 or newer will also pull it off. M1 Chip requirements: MacBook Air, MacBook Pro, or Mac mini with Apple M1 chip and 16GB of RAM.SSD recommended.</li></ul>"
+        },
+        "linux_requirements": {
+          "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+          "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+        },
+        "legal_notice": "© 2023 Larian Studios. All rights reserved. Larian Studios is a registered trademark of Arrakis NV, affiliate of Larian Studios Games ltd. All company names, brand names, trademarks and logos are the property of their respective owners. © 2023 Wizards of the coast. All rights reserved. Wizards of the Coast, Baldur's Gate, Dungeons & Dragons, D&D, and their respective logos are registered trademarks of Wizards of the Coast LLC.",
+        "developers": [
+          "Larian Studios"
+        ],
+        "price_overview": {
+          "currency": "USD",
+          "initial": 999,
+          "final": 999,
+          "discount_percent": 0,
+          "initial_formatted": "",
+          "final_formatted": "$9.99"
+        },
+        "packages": [
+          855524
+        ],
+        "package_groups": [
+          {
+            "name": "default",
+            "title": "Buy Baldur's Gate 3 - Digital Deluxe Edition DLC",
+            "description": "",
+            "selection_text": "Select a purchase option",
+            "save_text": "",
+            "display_type": 0,
+            "is_recurring_subscription": "false",
+            "subs": [
+              {
+                "packageid": 855524,
+                "percent_savings_text": " ",
+                "percent_savings": 0,
+                "option_text": "Digital Deluxe Edition DLC - $9.99",
+                "option_description": "",
+                "can_get_free_license": "0",
+                "is_free_license": false,
+                "price_in_cents_with_discount": 999
+              }
+            ]
+          }
+        ],
+        "platforms": {
+          "windows": true,
+          "mac": true,
+          "linux": false
+        },
+        "categories": [
+          {
+            "id": 2,
+            "description": "Single-player"
+          },
+          {
+            "id": 1,
+            "description": "Multi-player"
+          },
+          {
+            "id": 9,
+            "description": "Co-op"
+          },
+          {
+            "id": 38,
+            "description": "Online Co-op"
+          },
+          {
+            "id": 48,
+            "description": "LAN Co-op"
+          },
+          {
+            "id": 21,
+            "description": "Downloadable Content"
+          },
+          {
+            "id": 23,
+            "description": "Steam Cloud"
+          },
+          {
+            "id": 62,
+            "description": "Family Sharing"
+          }
+        ],
+        "genres": [
+          {
+            "id": "25",
+            "description": "Adventure"
+          },
+          {
+            "id": "3",
+            "description": "RPG"
+          },
+          {
+            "id": "2",
+            "description": "Strategy"
+          }
+        ],
+        "screenshots": [
+          {
+            "id": 0,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_3250c1e6aeae1968dfa085eac1cd33da2b00b253.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_3250c1e6aeae1968dfa085eac1cd33da2b00b253.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 1,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_5c6df47fd4137af659bd8bf962a3f75a2d2362cd.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_5c6df47fd4137af659bd8bf962a3f75a2d2362cd.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 2,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_476e6645275e9340ac9c6def7411efb90b65cfd0.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_476e6645275e9340ac9c6def7411efb90b65cfd0.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 3,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_b8e7bebae6249126883f365bfe412ca0fe59a05b.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_b8e7bebae6249126883f365bfe412ca0fe59a05b.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 4,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_5d48a7a5eee94c5f941bed03e17c7c340a7bfd3f.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_5d48a7a5eee94c5f941bed03e17c7c340a7bfd3f.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 5,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_3ac12b9b101f75921af73784abad91bea9ccbf6a.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_3ac12b9b101f75921af73784abad91bea9ccbf6a.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 6,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_ac5404a8b2dbd2a586ff58f5e735e3a236e7d75a.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_ac5404a8b2dbd2a586ff58f5e735e3a236e7d75a.1920x1080.jpg?t=1692306965"
+          },
+          {
+            "id": 7,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_1cef0195f1ec81d7b32c9564d983c3341e889dcb.600x338.jpg?t=1692306965",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/ss_1cef0195f1ec81d7b32c9564d983c3341e889dcb.1920x1080.jpg?t=1692306965"
+          }
+        ],
+        "recommendations": {
+          "total": 4399
+        },
+        "release_date": {
+          "coming_soon": false,
+          "date": "Aug 3, 2023"
+        },
+        "support_info": {
+          "url": "https://larian.com/support",
+          "email": ""
+        },
+        "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/2378500?t=1692306965",
+        "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2378500/page_bg_raw.jpg?t=1692306965",
+        "content_descriptors": {
+          "ids": [
+            1,
+            2,
+            5
+          ],
+          "notes": "This Game may contain content not appropriate for all ages. It contains General Mature Content, and may include Nudity or Sexual Content."
+        },
+        "ratings": {
+          "esrb": {
+            "rating": "m",
+            "descriptors": "Blood and Gore\r\nNudity\r\nSexual Content\r\nStrong Language\r\nViolence",
+            "use_age_gate": "true",
+            "required_age": "17"
+          },
+          "pegi": {
+            "rating": "18",
+            "descriptors": "Violence\r\nBad Language\r\nSex",
+            "use_age_gate": "true",
+            "required_age": "18"
+          },
+          "dejus": {
+            "rating": "16",
+            "descriptors": "Violência Extrema\r\nLinguagem imprópria\r\nNudez",
+            "use_age_gate": "true",
+            "required_age": "16"
+          },
+          "csrr": {
+            "rating": "R",
+            "descriptors": "性,\r\n暴力,\r\n不當言語",
+            "use_age_gate": "true",
+            "required_age": "18"
+          },
+          "steam_germany": {
+            "rating_generated": "1",
+            "rating": "0",
+            "required_age": "0",
+            "banned": "0",
+            "use_age_gate": "0",
+            "descriptors": ""
+          }
+        }
+      }
+    }
+  }
+}
