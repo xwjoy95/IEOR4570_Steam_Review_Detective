@@ -1,0 +1,2132 @@
+{
+  "question": "Baldur's Gate 3最近几个月口碑有什么变化？是哪次更新导致的？玩家在抱怨什么？",
+  "seconds": 51.9,
+  "tool_calls_per_agent": {
+    "Clarifier": 1,
+    "Lead": 5,
+    "Player Data Analyst 3": 3,
+    "Review Analyst 1": 3,
+    "Patch Historian 2": 2,
+    "Patch Historian 4": 1
+  },
+  "agent_timings_s": {
+    "Clarifier": [
+      0.0,
+      9.4
+    ],
+    "Lead": [
+      9.4,
+      37.4
+    ],
+    "Review Analyst 1": [
+      13.7,
+      19.0
+    ],
+    "Patch Historian 2": [
+      13.7,
+      29.5
+    ],
+    "Player Data Analyst 3": [
+      13.7,
+      18.5
+    ],
+    "Patch Historian 4": [
+      31.6,
+      34.3
+    ],
+    "Writer": [
+      37.4,
+      51.9
+    ]
+  },
+  "cited": [
+    "R75",
+    "R76",
+    "R77",
+    "R78",
+    "R79",
+    "R82",
+    "R83",
+    "R84",
+    "R92",
+    "R93",
+    "R95",
+    "R96",
+    "R98",
+    "R131",
+    "R133",
+    "R135",
+    "R136"
+  ],
+  "cited_but_missing": [],
+  "response": "# Baldur's Gate 3最近几个月口碑有什么变化？是哪次更新导致的？玩家在抱怨什么？\n\n在2026年8月至11月期间，《博德之门3》的整体口碑依然保持着极高评价，其合作战役、个性鲜明的同伴、高交互性以及丰富的选择和对话受到广泛赞誉 [R82][R83][R84]。在此期间，游戏并没有发布任何官方更新或补丁；开发商此前已于2025年7月宣布补丁8（Patch 8）为最后一个重大更新，团队随后转向新游戏的开发 [R131]。因此，最近几个月的玩家口碑和人数波动并非由特定的新更新导致。在玩家人数方面，游戏的Steam平均在线人数在2026年8月达到峰值后，于9月和10月出现了明显的持续下滑 [R77][R78][R79]。\n\n### **时间线**\n\n*   **2025年7月31日**：开发商发布“Room Temperature Fix #33”，并宣布补丁8（Patch 8）是最后一个重大游戏更新 [R131]。\n*   **2025年9月23日**：发布热修复#34（Hotfix #34），引入了原生的Steam Deck版本以提升稳定性、缩短加载时间并使运行更流畅 [R133]。\n*   **2025年12月1日**：官方确认2025年内已推出包括12个新子职业、完整跨平台联机支持和拍照模式在内的“最终最后一个补丁” [R135]。\n*   **2026年3月26日**：发布热修复#36（Hotfix #36），解决此前因修复损坏存档而引入的性能问题、崩溃和卡死现象 [R136]。\n*   **2026年6月**：Steam平均在线人数为39,517人，峰值人数68,855人 [R75]。\n*   **2026年7月**：Steam平均在线人数升至44,808人，峰值人数78,225人（环比增长13.39%） [R76]。\n*   **2026年8月**：Steam平均在线人数达到49,972人，峰值人数为83,011人（环比增长11.53%） [R77]。\n*   **2026年9月**：Steam平均在线人数降至42,932人，峰值人数为76,065人（环比减少14.09%） [R78]。\n*   **2026年10月**：Steam平均在线人数降至38,530人，峰值人数降至71,090人（环比减少10.25%） [R79]。\n\n### **玩家在抱怨什么**\n\n在2026年8月6日至11月6日期间，给出负面评价的玩家主要抱怨游戏的剧情、角色设计、第一幕进度缓慢、技术问题、较差的用户体验（UX），以及后期玩法的重复与枯燥 [R93][R95][R96]。部分非龙与地下城（D&D）粉丝的玩家也表示难以对游戏产生兴趣 [R98]。\n\n以下是部分玩家的真实评价：\n*   一位游玩时间为87.8小时的玩家批评角色设定过于造作：\n    > *\"Honestly, I've had this game since release and I just can't with it. All of the characters are so goddamn cringe I cannot stand the story long enough to make it past the first act. It's like being stuck with a bunch of hypersexual theater kids...\"* [R95]\n*   另一位游玩了38.8小时的玩家也因同样的原因未能通关第一幕：\n    > *\"Nearly 40 hours put into the game and I can't get through the first Act, not because of difficulty, but because I just don't like the characters or the story enough to care about any of it.\"* [R93]\n*   一位游玩了200.9小时的玩家指出了游戏在发售三年后依然存在技术问题：\n    > *\"Buy only at deep discount if you're a CRPG fan. Accolades and the community's abusive attachment disorder aside, this is a still painfully janky game three years after release.\"* [R92]\n\n### **数据无法回答的问题**\n\n*   **更新对玩家人数的影响**：由于在2026年8月1日至11月6日期间没有发布任何官方更新、补丁或公告，数据无法解释该阶段的玩家人数波动是否与更新有关。\n*   **11月的玩家趋势**：由于缺乏2026年11月的历史数据，无法提供该月完整的玩家人数变化趋势。\n*   **平台局限性**：本报告数据仅基于Steam平台的评价与SteamCharts在线人数，无法反映PlayStation 5等主机平台的数据。\n*   **统计局限性**：Steam评论仅反映了撰写评论的玩家群体，SteamSpy的所有者数量属于估算值，且开发者的动机仅能根据官方公告中“转向下一款游戏开发”的陈述来了解 [R131]。",
+  "session_id": "e8c77bc1-15c2-48e5-924c-2aa56f2aeb6b",
+  "tool_calls": [
+    {
+      "agent": "Clarifier",
+      "name": "search_game",
+      "args": {
+        "query": "Baldur's Gate 3",
+        "limit": 5
+      },
+      "result": "{'ok': True, 'results': [{'appid': 1086940, 'name': \"Baldur's Gate 3\", 'release_date': '2023-08-03', 'price': '$59.99', 'price_minor': 5999, 'initial_price_minor': 5999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'as_of': '2026-11-06', 'from_snapshot': False}], 'source': 'https://store.steampowered.com/api/storesearch/', 'as_of': '2026-11-06', 'from_snapshot': False, 'partial': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "get_review_trend",
+      "args": {
+        "appid": 1086940,
+        "language": "all"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2020-10-01', 'up': 19543, 'down': 2618, 'pct_negative': 11.8, 'ref': 'R1'}, {'period': '2020-11-01', 'up': 4980, 'down': 452, 'pct_negative': 8.3, 'ref': 'R2'}, {'period': '2020-12-01', 'up': 1747, 'down': 223, 'pct_negative': 11.3, 'ref': 'R3'}, {'period': '2021-01-01', 'up': 1195, 'down': 189, 'pct_negative': 13.7, 'ref': 'R4'}, {'period': '2021-02-01', 'up': 1263, 'down': 175, 'pct_negative': 12.2, 'ref': 'R5'}, {'period': '2021-03-01', 'up': 1679, 'down': 219, 'pct_negative': 11.5, 'ref': 'R6'}, {'period': '2021-04-01', 'up': 935, 'down': 155, 'pct_negative': 14.2, 'ref': 'R7'}, {'period': '2021-05-01', 'up': 767, 'down': 145, 'pct_negative': 15.9, 'ref': 'R8'}, {'period': '2021-06-01', 'up': 575, 'down': 134, 'pct_negative': 18.9, 'ref': 'R9'}, {'period': '2021-07-01', 'up': 1008, 'down': 162, 'pct_negative': 13.8, 'ref': 'R10'}, {'period': '2021-08-01', 'up': 810, 'down': 171, 'pct_negative': 17.4, 'ref': 'R11'}, {'period': '2021-09-01', 'up': 671, 'down': 138, 'pct_negative': 17.1, 'ref': 'R12'}, {'period': '2021-10-01', 'up': 1277, 'down': 196, 'pct_negative': 13.3, 'ref': 'R13'}, {'period': '2021-11-01', 'up': 837, 'down': 131, 'pct_negative': 13.5, 'ref': 'R14'}, {'period': '2021-12-01', 'up': 554, 'down': 113, 'pct_negative': 16.9, 'ref': 'R15'}, {'period': '2022-01-01', 'up': 600, 'down': 153, 'pct_negative': 20.3, 'ref': 'R16'}, {'period': '2022-02-01', 'up': 723, 'down': 161, 'pct_negative': 18.2, 'ref': 'R17'}, {'period': '2022-03-01', 'up': 453, 'down': 104, 'pct_negative': 18.7, 'ref': 'R18'}, {'period': '2022-04-01', 'up': 405, 'down': 123, 'pct_negative': 23.3, 'ref': 'R19'}, {'period': '2022-05-01', 'up': 373, 'down': 108, 'pct_negative': 22.5, 'ref': 'R20'}, {'period': '2022-06-01', 'up': 380, 'down': 147, 'pct_negative': 27.9, 'ref': 'R21'}, {'period': '2022-07-01', 'up': 964, 'down': 234, 'pct_negative': 19.5, 'ref': 'R22'}, {'period': '2022-08-01'"
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_history",
+      "args": {
+        "appid": 1086940,
+        "end": "2026-11-01",
+        "start": "2026-06-01"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'months': [{'ref': 'R75', 'month': '2026-06', 'avg': 39517, 'peak': 68855, 'gain_pct': -4.74}, {'ref': 'R76', 'month': '2026-07', 'avg': 44808, 'peak': 78225, 'gain_pct': 13.39}, {'ref': 'R77', 'month': '2026-08', 'avg': 49972, 'peak': 83011, 'gain_pct': 11.53}, {'ref': 'R78', 'month': '2026-09', 'avg': 42932, 'peak': 76065, 'gain_pct': -14.09}, {'ref': 'R79', 'month': '2026-10', 'avg': 38530, 'peak': 71090, 'gain_pct': -10.25}], 'coverage': ['2020-10', '2026-10'], 'source': 'steamcharts', 'as_of': '2026-11-06', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_stats",
+      "args": {
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'ref': 'R80', 'appid': 1086940, 'name': \"Baldur's Gate 3\", 'owners_estimate': '20,000,000 .. 50,000,000', 'average_forever_h': None, 'median_forever_h': None, 'average_2weeks_h': None, 'median_2weeks_h': None, 'ccu_yesterday': 54771, 'steamspy_positive': 736688, 'steamspy_negative': 23974, 'tags': {'RPG': 4536, 'Character Customization': 3522, 'Choices Matter': 3475, 'Story Rich': 3416, 'Turn-Based Combat': 3370, 'Dungeons & Dragons': 3237, 'CRPG': 2637, 'Fantasy': 2619, 'Adventure': 2578, 'Sexual Content': 2483}, 'current_players': 33903, 'note': 'owners_estimate is a SteamSpy estimate range, not a sales figure. Null playtime means no data.', 'warnings': [], 'source': 'steamspy + GetNumberOfCurrentPlayers', 'as_of': '2026-11-06', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "sample_reviews",
+      "args": {
+        "max_hours": null,
+        "appid": 1086940,
+        "limit": 10,
+        "start": "2026-08-06",
+        "language": "english",
+        "review_type": "positive",
+        "end": "2026-11-06",
+        "min_hours": null
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 6658, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R81', 'date': '2026-11-06', 'url': 'https://steamcommunity.com/profiles/76561198062444857/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 963.9, 'text': 'good ass game'}, {'ref': 'R82', 'date': '2026-11-06', 'url': 'https://steamcommunity.com/profiles/76561198199289943/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 527.0, 'text': \"Incredible game, one of the best campaign coop games out there. If you're looking for something similar try Larian Studios Divinity Original Sin Games\"}, {'ref': 'R83', 'date': '2026-11-03', 'url': 'https://steamcommunity.com/profiles/76561198075648709/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 497.4, 'text': \"Not much that can be said about BG3 that hasn't been said by the other 800k+ reviews. It's a great game. The companions are wonderful, likeable and have so much personality. The reactivity in this game is astounding. The graphics and gameplay are all top-notch. \\n\\nMy only gripe is that I hate the spell slot system. Yes, yes I know it's how D&D is, but I just much prefer the Divinity Original Sin sy\"}, {'ref': 'R84', 'date': '2026-11-03', 'url': 'https://steamcommunity.com/profiles/76561198017636421/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 253.9, 'text': \"Deserves all the praise it got, and even more! 4 playthroughs for 100% and each time I kept discovering new stuff! Amazing game, several characters to choose from, so many choices and dialogues and possibilities, and I'm sure I didn't even do everything. Karlach best waifu!\\n\\nRecommended 10/10\"}, {'ref': 'R85', 'date': '2026-11-01', 'url': 'https://steamcommunity.com/profiles/76561197977325547/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review"
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "sample_reviews",
+      "args": {
+        "end": "2026-11-06",
+        "min_hours": null,
+        "start": "2026-08-06",
+        "limit": 10,
+        "appid": 1086940,
+        "max_hours": null,
+        "review_type": "negative",
+        "language": "english"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 382, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R91', 'date': '2026-10-02', 'url': 'https://steamcommunity.com/profiles/76561197992487722/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 149.8, 'text': \"Yeah, yeah, I know, I must be crazy... But I just really didn't like it, OK? I'm sad to be this disappointed.\\n\\nIt's a well-made game for sure, no doubt about it. If it weren't for the great expectations, there might not have been such a great disappointment. I've enjoyed Larian's previous works, loved them even, but there was almost nothing about BG3 to inspire similar feelings.\\n\\nThe story was boi\"}, {'ref': 'R92', 'date': '2026-10-05', 'url': 'https://steamcommunity.com/profiles/76561198002710480/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 200.9, 'text': \"[b]tl;dr[/b] - Many times I've regretted giving this game chances. Turn back... unless you're a masochist. \\n\\nBuy only at deep discount if you're a CRPG fan. Accolades and the community's abusive attachment disorder aside, this is a still painfully janky game three years after release. It's not terrible, but... if you're bothered by poor UX or bugs, prepare to suffer death by a thousand little cuts\"}, {'ref': 'R93', 'date': '2026-08-30', 'url': 'https://steamcommunity.com/profiles/76561198090998239/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 38.8, 'text': \"I seem to be in the rare minority of people who just can't get into this game. \\n\\nNearly 40 hours put into the game and I can't get through the first Act, not because of difficulty, but because I just don't like the characters or the story enough to care about any of it. The writing for character interactions feels like a mix of horny teen Tumblr blog and the Witcher TV show after Cavill left. \\n\\nEv\"}, {'ref': 'R94', 'date': '2026-0"
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_history",
+      "args": {
+        "end": "2026-11-30",
+        "appid": 1086940,
+        "start": "2026-11-01"
+      },
+      "result": "{'ok': False, 'error': 'no_data', 'message': 'No SteamCharts months between 2026-11 and 2026-11; it covers 2020-10 to 2026-10.', 'source': 'steamcharts'}"
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "get_review_trend",
+      "args": {
+        "appid": 1086940,
+        "language": "all"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2020-10-01', 'up': 19543, 'down': 2618, 'pct_negative': 11.8, 'ref': 'R1'}, {'period': '2020-11-01', 'up': 4980, 'down': 452, 'pct_negative': 8.3, 'ref': 'R2'}, {'period': '2020-12-01', 'up': 1747, 'down': 223, 'pct_negative': 11.3, 'ref': 'R3'}, {'period': '2021-01-01', 'up': 1195, 'down': 189, 'pct_negative': 13.7, 'ref': 'R4'}, {'period': '2021-02-01', 'up': 1263, 'down': 175, 'pct_negative': 12.2, 'ref': 'R5'}, {'period': '2021-03-01', 'up': 1679, 'down': 219, 'pct_negative': 11.5, 'ref': 'R6'}, {'period': '2021-04-01', 'up': 935, 'down': 155, 'pct_negative': 14.2, 'ref': 'R7'}, {'period': '2021-05-01', 'up': 767, 'down': 145, 'pct_negative': 15.9, 'ref': 'R8'}, {'period': '2021-06-01', 'up': 575, 'down': 134, 'pct_negative': 18.9, 'ref': 'R9'}, {'period': '2021-07-01', 'up': 1008, 'down': 162, 'pct_negative': 13.8, 'ref': 'R10'}, {'period': '2021-08-01', 'up': 810, 'down': 171, 'pct_negative': 17.4, 'ref': 'R11'}, {'period': '2021-09-01', 'up': 671, 'down': 138, 'pct_negative': 17.1, 'ref': 'R12'}, {'period': '2021-10-01', 'up': 1277, 'down': 196, 'pct_negative': 13.3, 'ref': 'R13'}, {'period': '2021-11-01', 'up': 837, 'down': 131, 'pct_negative': 13.5, 'ref': 'R14'}, {'period': '2021-12-01', 'up': 554, 'down': 113, 'pct_negative': 16.9, 'ref': 'R15'}, {'period': '2022-01-01', 'up': 600, 'down': 153, 'pct_negative': 20.3, 'ref': 'R16'}, {'period': '2022-02-01', 'up': 723, 'down': 161, 'pct_negative': 18.2, 'ref': 'R17'}, {'period': '2022-03-01', 'up': 453, 'down': 104, 'pct_negative': 18.7, 'ref': 'R18'}, {'period': '2022-04-01', 'up': 405, 'down': 123, 'pct_negative': 23.3, 'ref': 'R19'}, {'period': '2022-05-01', 'up': 373, 'down': 108, 'pct_negative': 22.5, 'ref': 'R20'}, {'period': '2022-06-01', 'up': 380, 'down': 147, 'pct_negative': 27.9, 'ref': 'R21'}, {'period': '2022-07-01', 'up': 964, 'down': 234, 'pct_negative': 19.5, 'ref': 'R22'}, {'period': '2022-08-01'"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "players",
+        "task": "What were the player count trends (monthly average and peak players) for Baldur's Gate 3 (appid 1086940) from August 2026 to November 2026? Did updates affect player counts?"
+      },
+      "result": "{\"findings\": [{\"claim\": \"In June 2026, the average concurrent players was 39517 with a peak of 68855 and a gain_pct of -4.74.\", \"evidence\": [\"R75\"]}, {\"claim\": \"In July 2026, the average concurrent players was 44808 with a peak of 78225 and a gain_pct of 13.39.\", \"evidence\": [\"R76\"]}, {\"claim\": \"In August 2026, the average concurrent players was 49972 with a peak of 83011 and a gain_pct of 11.53.\", \"evidence\": [\"R77\"]}, {\"claim\": \"In September 2026, the average concurrent players was 42932 with a peak of 76065 and a gain_pct of -14.09.\", \"evidence\": [\"R78\"]}, {\"claim\": \"In October 2026, the average concurrent players was 38530 with a peak of 71090 and a gain_pct of -10.25.\", \"evidence\": [\"R79\"]}], \"cannot_answer\": [\"Whether updates affected player counts\", \"Player count trends for November 2026 due to lack of historical data for that month\"]}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "reviews",
+        "task": "Find steam reviews (praise and complaints) for Baldur's Gate 3 (appid 1086940) written between 2026-08-06 and 2026-11-06. What did players like or complain about?"
+      },
+      "result": "{\"findings\": [{\"claim\": \"Between 2026-08-06 and 2026-11-06, positive reviewers praised Baldur's Gate 3 for its co-op campaign, memorable and likeable companions, high reactivity, choices and dialogues, graphics, and gameplay.\", \"evidence\": [\"R82\", \"R83\", \"R84\"]}, {\"claim\": \"Some positive reviewers expressed minor gripes, such as disliking the D&D spell slot system compared to Divinity: Original Sin.\", \"evidence\": [\"R83\"]}, {\"claim\": \"Negative reviewers between 2026-08-06 and 2026-11-06 complained about the story, characters feeling 'cringe' or like 'hypersexual theater kids', and slow progress in Act 1.\", \"evidence\": [\"R93\", \"R95\"]}, {\"claim\": \"Other negative reviews cited technical issues, poor user experience (UX), repetitive and grindy gameplay after the opening, or a lack of personal appeal for non-D&D fans.\", \"evidence\": [\"R92\", \"R96\", \"R98\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Patch Historian 2",
+      "name": "get_patch_notes",
+      "args": {
+        "start": "2026-08-01",
+        "appid": 1086940,
+        "end": "2026-11-06",
+        "official_only": true
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'notes': [], 'source': 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/', 'as_of': '2026-11-06', 'from_snapshot': False, 'complete': True, 'coverage': {'start': '2026-08-01', 'end': '2026-11-06', 'complete': True, 'reason': 'crossed_start'}, 'requested_window': {'start': '2026-08-01', 'end': '2026-11-06'}, 'warnings': []}"
+    },
+    {
+      "agent": "Patch Historian 2",
+      "name": "get_patch_notes",
+      "args": {
+        "official_only": false,
+        "end": "2026-11-06",
+        "start": "2026-08-01",
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'notes': [{'ref': 'R101', 'id': '1839676055892062', 'date': '2026-08-02', 'title': \"The maker of the Baldur's Gate 3 over-the-shoulder camera mod has gone to great lengths to demonstrate it's not like other third-person viewpoint solutions\", 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1839676055892062', 'official': False, 'kind': 'announcement', 'feed': 'PC Gamer', 'summary': \"Sometimes I understand why modders flame out, burn their bridges, and give up entirely. Every time I look at a posts page on Nexus Mods, for instance. A perfect example of this has been the reaction to Relysia's True Third-Person Camera mod for Baldur's Gate 3, a labor of love that gives the traditionally birdseye CRPG an over-the-shoulder viewpoint...\\n Read more.\", 'summary_is_excerpt': True, 'truncated': False}, {'ref': 'R102', 'id': '1839676055892930', 'date': '2026-08-02', 'title': \"Baldur's Gate 3 is the cheapest it's ever been to celebrate its third anniversary\", 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1839676055892930', 'official': False, 'kind': 'announcement', 'feed': 'PC Gamer', 'summary': \"I don't need to explain what Baldur's Gate 3 is since it's one of those games you hear about endlessly, whether you want to or not, because it remains a universally acclaimed phenomenon. PC Gamer's Fraser Brown gave it our highest score ever in his review, a positively covetable 97, and everyone I know who's played it did not stop once the credits rolled. But if you've yet to take the plunge, now might be a good time: it's the cheapest it's ever been on Steam...\\n Read more.\", 'summary_is_excerpt': True, 'truncated': False}, {'ref': 'R103', 'id': '1839676055895260', 'date': '2026-08-03', 'title': \"If you bounced off Baldur's Gate 3: now is the time to try again\", 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1839676055895260', 'official': False, 'kind': 'announcement', 'feed': 'PCGamesN', '"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "patches",
+        "task": "Identify the updates, patches, hotfixes, or announcements released for Baldur's Gate 3 (appid 1086940) between 2026-08-01 and 2026-11-06."
+      },
+      "result": "{\"findings\": [], \"cannot_answer\": [\"No official developer updates, patches, hotfixes, or announcements were released for Baldur's Gate 3 between 2026-08-01 and 2026-11-06.\"]}"
+    },
+    {
+      "agent": "Patch Historian 4",
+      "name": "get_patch_notes",
+      "args": {
+        "appid": 1086940,
+        "end": "2026-09-01",
+        "start": "2025-06-01",
+        "official_only": true
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'notes': [{'ref': 'R131', 'id': '1806698490682773', 'date': '2025-07-31', 'title': 'Room Temperature Fix #33 Now Live!', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490682773', 'official': True, 'kind': 'patch_notes', 'feed': 'steam_community_announcements', 'summary': \"Hello friends, how art thou?\\n\\nWhile Patch 8 may have been the last major game update as we head into development on our next game, we’re still very keen to ensure you can enjoy the best possible Baldur’s Gate 3 experience\\n\\nWhich means we’re still fixing things, and although more cold than hot, today’s hotfix introduces fixes for some game crashes that had been plaguing us, and finally tackles the slightly ominous character portraits and lag being experienced when navigating the radial menu with a controller.\\n\\nThere’s also good news for modders in today’s update. If you’ve been struggling to publish larger mods and run into the ‘A task was cancelled’ error, you should now find this resolved! \\n\\nMissed out on what’s new on Patch 8? Read all about it here.\\n\\nFIXES\\n\\nEULA\\n\\n- \\nUpdated a link in the EULA to navigate to our new fan content policy which now offers a much clearer overview of how you can share fan content!\\n\\n- \\nLarian Fan Content Policy\\n[/*]\\n- \\nBaldur’s Gate 3 Fan Content Terms\\n[/*]\\n[/*]\\n\\nModding\\n\\n- \\nIncreased the timeout when trying to publish large mods to help prevent the 'A task was cancelled.' error.\\n[/*]\\n\\nCrashes and Performance\\n\\n- \\nFixed a potential crash when using the S\", 'summary_is_excerpt': True, 'truncated': True}, {'ref': 'R132', 'id': '1806698490814073', 'date': '2025-08-04', 'title': \"Community Update #35 Baldur's Gate 3 Turns Two\", 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490814073', 'official': True, 'kind': 'announcement', 'feed': 'steam_community_announcements', 'summary': \"Happy birthday, gang! \\n\\nBaldur'"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Check the announcements and patch notes for Baldur's Gate 3 (appid 1086940) around and before August 2026, such as late 2025 or any 2026 updates, to see if there was any major release or if the game was in a stable maintenance mode.",
+        "researcher": "patches"
+      },
+      "result": "{\"findings\": [{\"claim\": \"On 2025-07-31, the developer stated that Patch 8 was the last major game update as they head into development on their next game.\", \"evidence\": [\"R131\"]}, {\"claim\": \"On 2025-09-23, Hotfix #34 introduced a native Steam Deck build to Baldur's Gate 3 for improved stability, lower loading times, and smoother gameplay.\", \"evidence\": [\"R133\"]}, {\"claim\": \"On 2025-12-01, the developer confirmed that 2025 brought features like twelve new subclasses, full cross-play support, and photo mode in what was referred to as the final final last patch.\", \"evidence\": [\"R135\"]}, {\"claim\": \"On 2026-03-26, Hotfix #36 rolled out to address performance issues, crashes, and blockers following a previous small update that aimed to resolve corrupted savegames.\", \"evidence\": [\"R136\"]}], \"cannot_answer\": []}"
+    }
+  ],
+  "evidence": {
+    "R1": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-10-01",
+      "text": "Period 2020-10-01: 19543 positive reviews, 2618 negative reviews, 11.8% negative.",
+      "meta": {}
+    },
+    "R2": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-11-01",
+      "text": "Period 2020-11-01: 4980 positive reviews, 452 negative reviews, 8.3% negative.",
+      "meta": {}
+    },
+    "R3": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-12-01",
+      "text": "Period 2020-12-01: 1747 positive reviews, 223 negative reviews, 11.3% negative.",
+      "meta": {}
+    },
+    "R4": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-01-01",
+      "text": "Period 2021-01-01: 1195 positive reviews, 189 negative reviews, 13.7% negative.",
+      "meta": {}
+    },
+    "R5": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-02-01",
+      "text": "Period 2021-02-01: 1263 positive reviews, 175 negative reviews, 12.2% negative.",
+      "meta": {}
+    },
+    "R6": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-03-01",
+      "text": "Period 2021-03-01: 1679 positive reviews, 219 negative reviews, 11.5% negative.",
+      "meta": {}
+    },
+    "R7": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-04-01",
+      "text": "Period 2021-04-01: 935 positive reviews, 155 negative reviews, 14.2% negative.",
+      "meta": {}
+    },
+    "R8": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-05-01",
+      "text": "Period 2021-05-01: 767 positive reviews, 145 negative reviews, 15.9% negative.",
+      "meta": {}
+    },
+    "R9": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-06-01",
+      "text": "Period 2021-06-01: 575 positive reviews, 134 negative reviews, 18.9% negative.",
+      "meta": {}
+    },
+    "R10": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-07-01",
+      "text": "Period 2021-07-01: 1008 positive reviews, 162 negative reviews, 13.8% negative.",
+      "meta": {}
+    },
+    "R11": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-08-01",
+      "text": "Period 2021-08-01: 810 positive reviews, 171 negative reviews, 17.4% negative.",
+      "meta": {}
+    },
+    "R12": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-09-01",
+      "text": "Period 2021-09-01: 671 positive reviews, 138 negative reviews, 17.1% negative.",
+      "meta": {}
+    },
+    "R13": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-10-01",
+      "text": "Period 2021-10-01: 1277 positive reviews, 196 negative reviews, 13.3% negative.",
+      "meta": {}
+    },
+    "R14": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-11-01",
+      "text": "Period 2021-11-01: 837 positive reviews, 131 negative reviews, 13.5% negative.",
+      "meta": {}
+    },
+    "R15": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-12-01",
+      "text": "Period 2021-12-01: 554 positive reviews, 113 negative reviews, 16.9% negative.",
+      "meta": {}
+    },
+    "R16": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-01-01",
+      "text": "Period 2022-01-01: 600 positive reviews, 153 negative reviews, 20.3% negative.",
+      "meta": {}
+    },
+    "R17": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-02-01",
+      "text": "Period 2022-02-01: 723 positive reviews, 161 negative reviews, 18.2% negative.",
+      "meta": {}
+    },
+    "R18": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-03-01",
+      "text": "Period 2022-03-01: 453 positive reviews, 104 negative reviews, 18.7% negative.",
+      "meta": {}
+    },
+    "R19": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-04-01",
+      "text": "Period 2022-04-01: 405 positive reviews, 123 negative reviews, 23.3% negative.",
+      "meta": {}
+    },
+    "R20": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-05-01",
+      "text": "Period 2022-05-01: 373 positive reviews, 108 negative reviews, 22.5% negative.",
+      "meta": {}
+    },
+    "R21": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-06-01",
+      "text": "Period 2022-06-01: 380 positive reviews, 147 negative reviews, 27.9% negative.",
+      "meta": {}
+    },
+    "R22": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-07-01",
+      "text": "Period 2022-07-01: 964 positive reviews, 234 negative reviews, 19.5% negative.",
+      "meta": {}
+    },
+    "R23": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-08-01",
+      "text": "Period 2022-08-01: 631 positive reviews, 121 negative reviews, 16.1% negative.",
+      "meta": {}
+    },
+    "R24": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-09-01",
+      "text": "Period 2022-09-01: 465 positive reviews, 106 negative reviews, 18.6% negative.",
+      "meta": {}
+    },
+    "R25": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-10-01",
+      "text": "Period 2022-10-01: 455 positive reviews, 158 negative reviews, 25.8% negative.",
+      "meta": {}
+    },
+    "R26": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-11-01",
+      "text": "Period 2022-11-01: 529 positive reviews, 119 negative reviews, 18.4% negative.",
+      "meta": {}
+    },
+    "R27": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-12-01",
+      "text": "Period 2022-12-01: 941 positive reviews, 116 negative reviews, 11.0% negative.",
+      "meta": {}
+    },
+    "R28": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-01-01",
+      "text": "Period 2023-01-01: 959 positive reviews, 107 negative reviews, 10.0% negative.",
+      "meta": {}
+    },
+    "R29": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-02-01",
+      "text": "Period 2023-02-01: 752 positive reviews, 82 negative reviews, 9.8% negative.",
+      "meta": {}
+    },
+    "R30": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-03-01",
+      "text": "Period 2023-03-01: 985 positive reviews, 105 negative reviews, 9.6% negative.",
+      "meta": {}
+    },
+    "R31": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-04-01",
+      "text": "Period 2023-04-01: 895 positive reviews, 82 negative reviews, 8.4% negative.",
+      "meta": {}
+    },
+    "R32": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-05-01",
+      "text": "Period 2023-05-01: 793 positive reviews, 75 negative reviews, 8.6% negative.",
+      "meta": {}
+    },
+    "R33": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-06-01",
+      "text": "Period 2023-06-01: 980 positive reviews, 78 negative reviews, 7.4% negative.",
+      "meta": {}
+    },
+    "R34": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-07-01",
+      "text": "Period 2023-07-01: 8513 positive reviews, 386 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R35": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-08-01",
+      "text": "Period 2023-08-01: 174597 positive reviews, 7370 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R36": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-09-01",
+      "text": "Period 2023-09-01: 66975 positive reviews, 2395 negative reviews, 3.5% negative.",
+      "meta": {}
+    },
+    "R37": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-10-01",
+      "text": "Period 2023-10-01: 29420 positive reviews, 1081 negative reviews, 3.5% negative.",
+      "meta": {}
+    },
+    "R38": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-11-01",
+      "text": "Period 2023-11-01: 87425 positive reviews, 1167 negative reviews, 1.3% negative.",
+      "meta": {}
+    },
+    "R39": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-12-01",
+      "text": "Period 2023-12-01: 31852 positive reviews, 1282 negative reviews, 3.9% negative.",
+      "meta": {}
+    },
+    "R40": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-01-01",
+      "text": "Period 2024-01-01: 29493 positive reviews, 1249 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R41": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-02-01",
+      "text": "Period 2024-02-01: 18164 positive reviews, 801 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R42": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-03-01",
+      "text": "Period 2024-03-01: 14453 positive reviews, 715 negative reviews, 4.7% negative.",
+      "meta": {}
+    },
+    "R43": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-04-01",
+      "text": "Period 2024-04-01: 9897 positive reviews, 443 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R44": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-05-01",
+      "text": "Period 2024-05-01: 9534 positive reviews, 420 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R45": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-06-01",
+      "text": "Period 2024-06-01: 8741 positive reviews, 388 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R46": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-07-01",
+      "text": "Period 2024-07-01: 10734 positive reviews, 519 negative reviews, 4.6% negative.",
+      "meta": {}
+    },
+    "R47": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-08-01",
+      "text": "Period 2024-08-01: 9390 positive reviews, 403 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R48": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-09-01",
+      "text": "Period 2024-09-01: 11140 positive reviews, 612 negative reviews, 5.2% negative.",
+      "meta": {}
+    },
+    "R49": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-10-01",
+      "text": "Period 2024-10-01: 7606 positive reviews, 334 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R50": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-11-01",
+      "text": "Period 2024-11-01: 17253 positive reviews, 388 negative reviews, 2.2% negative.",
+      "meta": {}
+    },
+    "R51": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-12-01",
+      "text": "Period 2024-12-01: 20427 positive reviews, 1239 negative reviews, 5.7% negative.",
+      "meta": {}
+    },
+    "R52": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-01-01",
+      "text": "Period 2025-01-01: 9109 positive reviews, 427 negative reviews, 4.5% negative.",
+      "meta": {}
+    },
+    "R53": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-02-01",
+      "text": "Period 2025-02-01: 7103 positive reviews, 319 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R54": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-03-01",
+      "text": "Period 2025-03-01: 7557 positive reviews, 295 negative reviews, 3.8% negative.",
+      "meta": {}
+    },
+    "R55": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-04-01",
+      "text": "Period 2025-04-01: 9508 positive reviews, 426 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R56": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-05-01",
+      "text": "Period 2025-05-01: 7820 positive reviews, 366 negative reviews, 4.5% negative.",
+      "meta": {}
+    },
+    "R57": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-06-01",
+      "text": "Period 2025-06-01: 5873 positive reviews, 305 negative reviews, 4.9% negative.",
+      "meta": {}
+    },
+    "R58": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-07-01",
+      "text": "Period 2025-07-01: 6479 positive reviews, 315 negative reviews, 4.6% negative.",
+      "meta": {}
+    },
+    "R59": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-08-01",
+      "text": "Period 2025-08-01: 5799 positive reviews, 247 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R60": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-09-01",
+      "text": "Period 2025-09-01: 5672 positive reviews, 334 negative reviews, 5.6% negative.",
+      "meta": {}
+    },
+    "R61": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-10-01",
+      "text": "Period 2025-10-01: 5596 positive reviews, 277 negative reviews, 4.7% negative.",
+      "meta": {}
+    },
+    "R62": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-11-01",
+      "text": "Period 2025-11-01: 11619 positive reviews, 249 negative reviews, 2.1% negative.",
+      "meta": {}
+    },
+    "R63": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-12-01",
+      "text": "Period 2025-12-01: 6637 positive reviews, 523 negative reviews, 7.3% negative.",
+      "meta": {}
+    },
+    "R64": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-01-01",
+      "text": "Period 2026-01-01: 7202 positive reviews, 503 negative reviews, 6.5% negative.",
+      "meta": {}
+    },
+    "R65": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-02-01",
+      "text": "Period 2026-02-01: 5097 positive reviews, 291 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R66": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-03-01",
+      "text": "Period 2026-03-01: 5129 positive reviews, 298 negative reviews, 5.5% negative.",
+      "meta": {}
+    },
+    "R67": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-04-01",
+      "text": "Period 2026-04-01: 3909 positive reviews, 180 negative reviews, 4.4% negative.",
+      "meta": {}
+    },
+    "R68": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-05-01",
+      "text": "Period 2026-05-01: 4248 positive reviews, 270 negative reviews, 6.0% negative.",
+      "meta": {}
+    },
+    "R69": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-06-01",
+      "text": "Period 2026-06-01: 3718 positive reviews, 211 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R70": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-07-01",
+      "text": "Period 2026-07-01: 4641 positive reviews, 260 negative reviews, 5.3% negative.",
+      "meta": {}
+    },
+    "R71": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-08-01",
+      "text": "Period 2026-08-01: 4972 positive reviews, 313 negative reviews, 5.9% negative.",
+      "meta": {}
+    },
+    "R72": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-09-01",
+      "text": "Period 2026-09-01: 4131 positive reviews, 210 negative reviews, 4.8% negative.",
+      "meta": {}
+    },
+    "R73": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-10-01",
+      "text": "Period 2026-10-01: 3676 positive reviews, 210 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R74": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-11-01",
+      "text": "Period 2026-11-01: 535 positive reviews, 42 negative reviews, 7.3% negative.",
+      "meta": {}
+    },
+    "R75": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-06",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-06",
+      "text": "2026-06: 39517 average concurrent players, 68855 peak, -4.74% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R76": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-07",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-07",
+      "text": "2026-07: 44808 average concurrent players, 78225 peak, +13.39% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R77": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-08",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-08",
+      "text": "2026-08: 49972 average concurrent players, 83011 peak, +11.53% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R78": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-09",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-09",
+      "text": "2026-09: 42932 average concurrent players, 76065 peak, -14.09% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R79": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-10",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-10",
+      "text": "2026-10: 38530 average concurrent players, 71090 peak, -10.25% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R80": {
+      "source": "player_stats",
+      "raw_id": "steamspy:1086940:2026-11-06",
+      "url": "https://steamspy.com/app/1086940",
+      "date": "2026-11-06",
+      "text": "Baldur's Gate 3 (SteamSpy, 2026-11-06): owners estimate 20,000,000 .. 50,000,000; yesterday's peak concurrent players 54771; average playtime None h, median None h (None = no data); current players on Steam 33903; top tags RPG, Character Customization, Choices Matter, Story Rich, Turn-Based Combat, Dungeons & Dragons, CRPG, Fantasy, Adventure, Sexual Content.",
+      "meta": {
+        "owners_estimate": "20,000,000 .. 50,000,000",
+        "current_players": 33903
+      }
+    },
+    "R81": {
+      "source": "review",
+      "raw_id": "239534909",
+      "url": "https://steamcommunity.com/profiles/76561198062444857/recommended/1086940/",
+      "date": "2026-11-06",
+      "text": "good ass game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 963.9,
+        "positive": true
+      }
+    },
+    "R82": {
+      "source": "review",
+      "raw_id": "239506987",
+      "url": "https://steamcommunity.com/profiles/76561198199289943/recommended/1086940/",
+      "date": "2026-11-06",
+      "text": "Incredible game, one of the best campaign coop games out there. If you're looking for something similar try Larian Studios Divinity Original Sin Games",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 527.0,
+        "positive": true
+      }
+    },
+    "R83": {
+      "source": "review",
+      "raw_id": "239294308",
+      "url": "https://steamcommunity.com/profiles/76561198075648709/recommended/1086940/",
+      "date": "2026-11-03",
+      "text": "Not much that can be said about BG3 that hasn't been said by the other 800k+ reviews. It's a great game. The companions are wonderful, likeable and have so much personality. The reactivity in this game is astounding. The graphics and gameplay are all top-notch. \n\nMy only gripe is that I hate the spell slot system. Yes, yes I know it's how D&D is, but I just much prefer the Divinity Original Sin system. Thankfully, mods exist! \n\nAnwyay, great game. Highly recommend",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 497.4,
+        "positive": true
+      }
+    },
+    "R84": {
+      "source": "review",
+      "raw_id": "239312658",
+      "url": "https://steamcommunity.com/profiles/76561198017636421/recommended/1086940/",
+      "date": "2026-11-03",
+      "text": "Deserves all the praise it got, and even more! 4 playthroughs for 100% and each time I kept discovering new stuff! Amazing game, several characters to choose from, so many choices and dialogues and possibilities, and I'm sure I didn't even do everything. Karlach best waifu!\n\nRecommended 10/10",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 253.9,
+        "positive": true
+      }
+    },
+    "R85": {
+      "source": "review",
+      "raw_id": "239115139",
+      "url": "https://steamcommunity.com/profiles/76561197977325547/recommended/1086940/",
+      "date": "2026-11-01",
+      "text": "If you look up rpg in the dictionary, this is what comes up.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 762.5,
+        "positive": true
+      }
+    },
+    "R86": {
+      "source": "review",
+      "raw_id": "239509543",
+      "url": "https://steamcommunity.com/profiles/76561198305950976/recommended/1086940/",
+      "date": "2026-11-06",
+      "text": "247 hours and not a single playthrough completed,,,,,,",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 246.9,
+        "positive": true
+      }
+    },
+    "R87": {
+      "source": "review",
+      "raw_id": "239504635",
+      "url": "https://steamcommunity.com/profiles/76561199568125431/recommended/1086940/",
+      "date": "2026-11-06",
+      "text": "Very good game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 75.9,
+        "positive": true
+      }
+    },
+    "R88": {
+      "source": "review",
+      "raw_id": "239478700",
+      "url": "https://steamcommunity.com/profiles/76561198388439006/recommended/1086940/",
+      "date": "2026-11-06",
+      "text": "genuinely one of the goats",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 401.9,
+        "positive": true
+      }
+    },
+    "R89": {
+      "source": "review",
+      "raw_id": "239417255",
+      "url": "https://steamcommunity.com/profiles/76561198188604265/recommended/1086940/",
+      "date": "2026-11-05",
+      "text": "Good 8.4/10",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 86.7,
+        "positive": true
+      }
+    },
+    "R90": {
+      "source": "review",
+      "raw_id": "239310729",
+      "url": "https://steamcommunity.com/profiles/76561198800224724/recommended/1086940/",
+      "date": "2026-11-03",
+      "text": "I've got a lot on my mind, and, well, in it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 335.2,
+        "positive": true
+      }
+    },
+    "R91": {
+      "source": "review",
+      "raw_id": "236727166",
+      "url": "https://steamcommunity.com/profiles/76561197992487722/recommended/1086940/",
+      "date": "2026-10-02",
+      "text": "Yeah, yeah, I know, I must be crazy... But I just really didn't like it, OK? I'm sad to be this disappointed.\n\nIt's a well-made game for sure, no doubt about it. If it weren't for the great expectations, there might not have been such a great disappointment. I've enjoyed Larian's previous works, loved them even, but there was almost nothing about BG3 to inspire similar feelings.\n\nThe story was boilerplate D&D plot, stretched to 100+ hours. Meaningless, emotionless, drawn out tropes and cliches. Only Act 2 made me feel something. I put off wrapping up Act 3 for years from sheer boredom, and felt nothing but tedium by the end.\n\nThe characters were as uninteresting as they were horny, I couldn't care about them with the obvious exception of Karlach, who was an actually well-written character. Shadowheart and Astarion were ok-ish. The rest were forgettable. Couldn't decide if the late shoehorning of Jaheira and Minsc was welcome fanservice or a way to distract from the voidness Gale, Wyll and Halsin.\n\nThe 5e ruleset is not a good fit for such a game, and Larian's attempts at patching it, while valiant, were not sufficient. Some made it actively worse. The combat was plodding, the interface clunky and annoying, the abilities and items both overwhelming in number and underwhelming in the choices they presented. 5e was never meant to be a lootfest, but the magic items the game showered you with created perverse incentives and boring micromanagement. The gear-juggling was made so much worse by the abysmal stash and inventory system. That they were this bad really boggles the mind.\n\nIn the end, the game had nothing to say, nothing to offer but a fun romp that degraded into tedium by the end, Almost nothing about this game is truly memorable, artistically profound or genuinely touching. It was a 150 hour fast food meal served on a really nice and shiny plate. For all its bugs and failures, I will forever remember and cherish Owlcat's glorious mess that is Wrath of the Righteous over the slog that was BG3. Even Larian's own Original Sin games were superior.\n\nEdit: I'm sorry for all the feelings I hurt.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 149.8,
+        "positive": false
+      }
+    },
+    "R92": {
+      "source": "review",
+      "raw_id": "236973356",
+      "url": "https://steamcommunity.com/profiles/76561198002710480/recommended/1086940/",
+      "date": "2026-10-05",
+      "text": "[b]tl;dr[/b] - Many times I've regretted giving this game chances. Turn back... unless you're a masochist. \n\nBuy only at deep discount if you're a CRPG fan. Accolades and the community's abusive attachment disorder aside, this is a still painfully janky game three years after release. It's not terrible, but... if you're bothered by poor UX or bugs, prepare to suffer death by a thousand little cuts.\n\n[h2][b]The UI - frenemy at best:[/b][/h2]\n\n*  The default camera constantly gets in the way. At times it's so disorienting you'll struggle to tell what's going on. Just to attack somebody the game keeps obscuring, you'll have to click this over here... then that over there... then that up there...(By Act 2 I had to install a mod just to make it playable).\n\n* In a game where every other threat triggers turn based mode, do traps? Nope. Command low level parties perishing on the clock as you frantically try to button-press your way out of it. Worse - press wrong, and it's possible to start dialogue between characters _while they burn in real time_. Like some dark comedy, party locked behind a text based UI, you discuss whatever plot point Larian felt more important than characters gradually cooking into charcoal briquettes, their screams punctuating your mouse clicks.\n\n*  Try to shoot a pesky goblin who hit you just a moment before and you begin a new mini-game: line-of-sight-wackamole. Spend many mouse clicks sleuthing exactly which spot will allow you to satisfy vague yet simultaneously strict conditions without yourself stumbling through acid, poison, or fire. Don't worry, when you give up, the auto-aim is still there to push you through things that hurt.\n\n[h2][b]Bugs - so many still awkward or outright broken features:[/b][/h2]\n\n*  Group pathing is excellent... at doing exactly the wrong thing. Click to go around or even jump over that obviously dangerous acid pool, and your party members follow you... stumbling through it like idiots anyway. Break group to avoid this? Enjoy 4x the number of keystrokes and mouse clicks.\n\n*  Quests glitch, incompletable due to some decision you made hours ago, or not starting at all. You can try to hide finished items in your bloated quest log but that feature will turn itself off every new session.\n\n*  Items for summoning assistance in tough battles... activate in the wrong place and your mercenary ogres just stand there, their AI pathing unable to navigate a giant room (looking at you, Goblin Boss fight). Then afterwards, they'll demand 500 gold for literally doing nothing.\n\n[h2][b]Annoyances - plenty...[/b][/h2]\n\n*  Mob aggro is frequently arbitrary/inconsistent to terrain and circumstances. Sometimes creatures engage from waaaay over there, other times ignore combat right in front of them. Today a battle 'ended' within obvious view of an idle enemy. Then, instead of giving back control, said enemy just 'wakes up,' beginning a brand new fight ...cancelling all  prior-battle consumables and yanking me back to turn-based mode... despite neither pressing a button nor anybody moving. Oh goodie... guess I'll have to re-bless... and spend another charge of barbarian rage... and...\n\n*  Enemies in the Baldur's Gate universe carry enough molotovs or acid bottles to make rioters jealous - AoE so rampant you don't dare position characters close for mutual support. D:OS2 explodium barrels(tm) return for several guest appearances too. Stand in the wrong place and... boom, sweep up your character's residue~\n\n*  Action bars change without your consent, the logic dumping icons haphazardly. No action bar presets or import functionality - enjoy futzing with everything every new weapon type... every level...\n\n[h2][b]And the rest...[/b][/h2]\n\nHow does Larian compensate for some of these issues? By shoving at you small mountains of consumables and vendor trash items until your bags nearly burst, becoming a tedious inventory. Rewards are... oddly paced, sometimes underwhelming, sometimes endgame gear in the first act. Resources go out of wack once you recognize camp supplies are basically limitless, allowing you to long rest after every battle, far more than any D&D campaign would allow.\n\nToo easy? Turn up the difficulty so UI flaws become downright hostile. You'll struggle to consistently get characters to do what you want, gradually adopting all kinds of maladjusted coping mechanisms BG3 fans have Stockholmed as acceptable. Single mis-clicks frequently end battles in catastrophe. Eventually saving before every battle round isn't cheesing - it becomes... necessary.\n\nSigh.\n\nIn the game's defense, the story is remarkable for its many choices - no other title I've tried goes to these lengths (though expect cliche and forced moments - Shadowheart... I just met you and you're trying to jump my bones). And the piles of dialogue, well acted, making you feel like you're part of an actual world? Solid.\n\nBut even when the best parts rise to the surface, the jank buzzes back into your face like an aggravating fly, reminding you're just playing a messy CRPG that will never get the polish it desperately needs. There might be a good game... buried... under all this... somewhere... but it's frustrating to look (twice as hard if you're not familiar with D&D 5e). Baldur's Gate 3 is ultimately a Frankenstein mashup of Larian+D&D5e. I had less trouble with DOS2 - though that game was hard, it didn't feel quite so arbitrary as this.\n\nNot sure I'll ever reach Act 3. Quit more than once, then blown the dust off months later while bored and had no other games to play. Why do I keep giving this game chances? Perhaps sharing the CRPG community's self-loathing, I've now modded the game so much it's... passable. Do I still believe in this negative review? With all my heart.\n\nThank you for reading. /rant",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 200.9,
+        "positive": false
+      }
+    },
+    "R93": {
+      "source": "review",
+      "raw_id": "234102961",
+      "url": "https://steamcommunity.com/profiles/76561198090998239/recommended/1086940/",
+      "date": "2026-08-30",
+      "text": "I seem to be in the rare minority of people who just can't get into this game. \n\nNearly 40 hours put into the game and I can't get through the first Act, not because of difficulty, but because I just don't like the characters or the story enough to care about any of it. The writing for character interactions feels like a mix of horny teen Tumblr blog and the Witcher TV show after Cavill left. \n\nEverything about this game just feels like the same \"Trying to be Hollywood\" spectacle chasing that the AAA game industry has been doing for years, and it is a full miss for me. There are no aspects of the game that I found enjoyable enough to push past the first Act, and I wish I could refund it since I will never finish it.\n\nPlenty of other people have a very different opinion and experience with the game than I do though, so take my complete disdain and distaste for BG3 with a grain of salt. \n\nAll in all, if you like D&D 5e, you may like this game, though I'd recommend Solasta: Crown of the Magister for a better D&D-esque experience.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 38.8,
+        "positive": false
+      }
+    },
+    "R94": {
+      "source": "review",
+      "raw_id": "236303270",
+      "url": "https://steamcommunity.com/profiles/76561198059976899/recommended/1086940/",
+      "date": "2026-09-27",
+      "text": "If you are reading this, then you probably already know the positives of Baldur’s Gate 3: freedom of choice, great voice acting, strong quest design, memorable companions, and the ridiculous amount of ways you can solve problems. I'm not going to sit here and pretend those things are not impressive, because they are.\n\nBut because those parts have already been praised to death, I want to focus on what, in my opinion, makes the game overrated.\n\nBaldur’s Gate 3 is clearly a good game, but I don’t think it is the flawless masterpiece people make it out to be. To me, it is also bloated, clunky, awkward, weirdly horny, and surprisingly weak when it comes to the feeling of progression. I will address each of those in the following sections.\n\n[h2]Weak Progression[/h2]\n\nOne of my biggest problems with BG3 is progression. For such a huge RPG, I rarely felt genuinely excited about my character becoming stronger.\n\nThe story moves forward, the stakes get bigger, and the locations become more dramatic, but my actual character build often felt weirdly static. Gear progression especially felt underwhelming. It is very possible to find strong equipment in Act 1 and keep using it through Act 2 and even into Act 3.\n\nI understand that this is probably good for balance, as it avoids the usual RPG problem where every item becomes useless after two hours. But from a player perspective, it can feel boring. You defeat major enemies, explore dangerous areas, open some impressive-looking chest, and then the reward is something you instantly send to camp because your old gear is still better.\n\nI mean there is clearly something wrong when I'm deep into Act 3 and still wearing gear from Act 1 without feeling much reason to replace it. Loot should be exciting. I should look at a new weapon, armour piece, ring, or cloak and think, \"Oh, this changes my build.\" But too often in BG3, loot just feels like mildly interesting clutter.\n\n[h2]Underwhelming Level-Ups[/h2]\n\nLeveling up has a similar problem. Because BG3 follows Dungeons & Dragons 5e, progression is more restrained. Yeah, I get that it is faithful to the tabletop rules. But as a video game RPG, it can feel really underwhelming. There is no proper skill tree, no big long-term upgrade path, and not many future unlocks that made me excited.\n\nSome classes get fun powers, but plenty of level-ups feel minor. You get one spell, a passive, a feat, or some practical option that feels fine but not exciting. Many of the coolest choices can be taken early, and after that you often just pick whatever is left or whatever seems vaguely fitting.\n\nA skill tree would have helped. Not some bloated mess with 300 meaningless icons, but something that gives a stronger sense of direction. Something that lets you look ahead and think, “Oh wow! I cannot wait to unlock that!” In BG3, I often didn't feel like I was building towards some powerful fantasy version of my character. I felt like I was just selecting from a small menu of practical options.\n\n[h2]Combat: Great Ideas, Clunky Execution[/h2]\n\nCombat is a mixed bag for me. When it works, it can be genuinely great. Positioning matters, height matters, surfaces matter, spells matter, and the environment can completely change a fight. You can push enemies off ledges, block routes, set traps, summon creatures, buff allies, debuff enemies, and turn the battlefield into complete chaos.\n\nBut when combat does not work, it becomes slow and clunky. The camera is often terrible, especially in multi-level areas. Trying to click the right enemy, floor tile, ledge, ladder, or doorway can feel harder than the actual fight.\n\nPathfinding can also be stupid. Characters walk through fire, acid, traps, or other hazards like they are trying to speedrun natural selection. You finish a fight, relax for half a second, and then someone casually strolls through burning ground because why the hell not.\n\nThe hit chance system can also feel awful. I know missing high-chance attacks is part of D&D. But that does not mean it always feels good in a video game. Nothing kills the heroic fantasy faster than watching your trained warrior miss a point-blank attack while some goblin with the posture of a wet sock crits you from across the room.\n\n[h2]Inventory Management: Fantasy Warehouse Simulator[/h2]\n\nThen there is the inventory system, and oh boy, it honestly deserves its own prison sentence.\n\nBy mid-game, your bags are full of scrolls, potions, arrows, keys, books, notes, quest items, food, rings, amulets, dyes, tools, random bones, and 46 pieces of equipment you are keeping \"just in case.\" Managing all of it becomes a chore.\n\nThe game gives you so many items, but sorting through them is tedious. You constantly move things between characters, send things to camp, compare gear, check whether some random note still matters, and try to remember which companion has the potion you need.\n\nSomewhere in your backpack there is probably a useful item. Good luck finding it.\n\n[h2]Act 3: Too Much of Everything[/h2]\n\nThe pacing also becomes a problem, especially in Act 3. Act 1 is strong because it has mystery, danger, discovery, and a good balance between freedom and direction. Act 2 has a strong atmosphere and feels more focused. But Act 3 is where the game starts drowning in its own ambition.\n\nThe city is impressive, don't get me wrong. There is a lot to do. But sometimes there is just too much. Every building has secrets. Every NPC has a problem. Every street corner threatens to become a side quest. You can’t walk 20 metres without someone asking you to solve a murder, uncover a conspiracy, rescue someone, investigate a basement, enter a portal, or confront a god. \n\nThe amount of content is impressive, sure, but this density hurts the pacing.\n\n[h2]Romance Writing: Too Fast, Too Easy, Too Awkward[/h2]\n\nThe romance writing is another big issue for me.\n\nThe issue is not just that the companions are bisexual. That alone I can survive. The problem is that nearly every companion feels player-sexual in the same way. Instead of feeling like complex adults with different preferences, boundaries, and emotional pacing, the party often feels like they all joined the same fantasy dating app and instantly matched with the player.\n\nYou meet these people, survive a few fights, avoid being completely evil, and suddenly half the camp starts acting like you are the most desirable person in Faerûn. Ridiculous.\n\nThe romance feels too easy and too fast. It does not feel like trust is properly earned. It feels like romance unlocks because you picked enough polite dialogue options. I even had scenes that felt weirdly romantic when I was not trying to romance that character at all. I was just choosing normal polite or supportive options, but the game seemed to assume I was interested.\n\nThe silent protagonist makes it even more awkward. A companion pours their heart out, becomes vulnerable, or expresses attraction, and your character mostly communicates through silent staring and vague hand gestures. Instead of two people building chemistry, it can feel like one fully acted character falling in love with a mute wax figure.\n\n[h2]Conclusion[/h2]\n\nThat is why I cannot see Baldur’s Gate 3 as the flawless masterpiece people make it out to be. It is ambitious, reactive, and impressive, but also bloated, clunky, awkwardly paced, and surprisingly weak as a progression-based RPG.\n\nI respect the game a lot, and I understand why people love it. But for me, the weak progression, messy Act 3 pacing, clunky combat moments, silent protagonist, and weirdly rushed romance writing hold it back too much.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 78.5,
+        "positive": false
+      }
+    },
+    "R95": {
+      "source": "review",
+      "raw_id": "234590448",
+      "url": "https://steamcommunity.com/profiles/76561198165625978/recommended/1086940/",
+      "date": "2026-09-06",
+      "text": "Honestly, I've had this game since release and I just can't with it. All of the characters are so goddamn cringe I cannot stand the story long enough to make it past the first act. \n\nIt's like being stuck with a bunch of hypersexual theater kids all doing amateur auditions and thinking they're killing it. I just want to exterminate the entire cast, but then you're stuck with the rest of the world...and way less content. \n\nI hate how literally everyone in the party has to be \"the special.\" It wasn't even this bad in Divinity Original Sin 2. \n\nI think this is why I never got into dnd, it's soooo bad. \n\nWe need more bullying in highschool.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 87.8,
+        "positive": false
+      }
+    },
+    "R96": {
+      "source": "review",
+      "raw_id": "239181346",
+      "url": "https://steamcommunity.com/profiles/76561198080782829/recommended/1086940/",
+      "date": "2026-11-02",
+      "text": "Lots of impressive technical and artistic work in this, but I never got around to finishing it because it's so repetitive and grindy. I was really hopeful at the start of the game, because it throws you into an insane set of gameplay segments/cutscenes blending esoteric D&D lore w/ H.R. Giger-style horror, plus a compelling multi-planar crash sequence. However, after that point it becomes bog-standard narrative-wise and the combat can be very tedious. The inclusion of the  dice roll mechanic in particular indicates a fundamental misunderstanding of the medium. Random dice rolls work well in D&D because failing checks can be just as interesting as succeeding (for instance, failing an important deception check against the king and then being sentenced to death--what will our intrepid heroes(?) do?), since the DM can creatively adapt as the situation evolves. In Baldur's Gate, however, the flow of the game is more or less fixed. Which means, with no DM to turn a flubbed role into a comedic or dramatic opportunity, low rolls are almost exclusively a source of frustration. If there has to be randomness, it should at most be Pokemon-style, where (very) occasionally someone can get a crit or whiff an attack. Also, the fact that you can't pick off enemies without initiating combat is really annoying. The amount of resource rationing you have to go through due to being forced to churn through unavoidable encounter after unavoidable encounter is quite draining (at least until you can build up some reserves later in the run).",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 42.0,
+        "positive": false
+      }
+    },
+    "R97": {
+      "source": "review",
+      "raw_id": "234975473",
+      "url": "https://steamcommunity.com/profiles/76561197987130435/recommended/1086940/",
+      "date": "2026-09-11",
+      "text": "I was really hoping that Balder's Gate 3 was something worth playing.\n\nI've put in about twice as many hours as I needed to decide that I probably won't play this game again any time soon but I wanted to push through the slump in case I was just feeling grumpy. I should have guessed what was in store, given how little I liked the Pathfinder games. At least Kingmaker had some memorable characters and something like a decent plot. I don't care what's beyond the 'save yourself' plot of the first act. The party characters are vapid, poorly developed and comically formulaic. That each of them that I've met so far is hiding some dark secret dilutes any mystery or intrigue that might have come from pursuing those story lines. Each of the party members takes the time to point out that they don't trust you, don't like you, and are only sticking around because they expect something out of you. \n\nI guess these are the 5e rules? How does being able to make a halfling just as strong as an orc aid role playing? With no constraints I guess it's fun to make characters that look different, but why?\n\nThe writing feels like the writers were all last employed by corporate diversity training courses and never loved anyone their entire lives. All points of view are valid? Everyone is trying to manipulate everyone else? How many dialog menus result in a neat little lesson about not making assumptions about someone's background? I'm not even that far in and it already feels like I've been tricked into watching some HR mandated training videos on diversity at the workplace.\n\nToo many, too long cut scenes: if I wanted a voice drama I'd go to Audible and listen to a book.\n\nThis game is miserable to play, except for combat which is ok, but no decision feels like it has any weight. Kill the goblin princess? Sell her stuff to the vendor without raising suspicion. Make your way to one of her captains, get assigned an important task. Kill a couple of goblins in the corner? No one will ever find out that there are three bodies in the middle of a well lit hallway. Just boring and disengaging.\n\nThe graphics are good, the opening location is genuinely creepy. No complaints here. \n\nHow did this mess win so many awards?\n\nIf you're in to glamour shots and moral relativism maybe this is for you.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 12.7,
+        "positive": false
+      }
+    },
+    "R98": {
+      "source": "review",
+      "raw_id": "236702041",
+      "url": "https://steamcommunity.com/profiles/76561199121977725/recommended/1086940/",
+      "date": "2026-10-02",
+      "text": "it's a good game. but i think it's mostly for people who are already fans of DnD. i wasn't so the game didn't really click with me. i don't think i will ever finish it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 48.6,
+        "positive": false
+      }
+    },
+    "R99": {
+      "source": "review",
+      "raw_id": "237386938",
+      "url": "https://steamcommunity.com/profiles/76561199556646996/recommended/1086940/",
+      "date": "2026-10-10",
+      "text": "Dating Simulator 3",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 312.4,
+        "positive": false
+      }
+    },
+    "R100": {
+      "source": "review",
+      "raw_id": "237785529",
+      "url": "https://steamcommunity.com/profiles/76561199057535851/recommended/1086940/",
+      "date": "2026-10-15",
+      "text": "I'm writing this partially as an admitted contrarian stance. I'm not saying that the review is without merit, I am saying that it's full of things that I wouldn't focus on so belligerently if people would stop fucking talking to me about how good this game is supposed to be. \n\nTo be fair to Larian, who remain one of the foremost competent developers regardless of anyone's opinions, when you create with the D&D IP you do not retain total and complete freedom. My thoughts regarding this game's narrative are very biased, as it is the 3rd entry of Baldur's Gate, I find myself comparing it to Baldur's Gate 2 frequently. Baldur's Gate 2 is still one of the greatest RPGs of all time, but it belongs to an entirely different generation of D&D. The current iteration of D&D is marketed towards the current iteration of D&D players, I think these people are horrible. Genuinely horrible. I think their ideas are generic, I think their concepts of fantasy are boring, dull, shallow, and lacking in any significant desire to reach for a more interesting construct within the genre. \nYou might be guessing where I'm going with this: Yes, I think Baldur's Gate 3 has a generic story. I think it's a game that takes all of the most \"interesting\" (flashy) concepts of D&D and repeatedly tries to drown you with them in a fit of postpartum hysteria. This game has a histrionic, cataclysmic fit every 5 minutes trying to force you to say \"[i]oh shit[/i]\" in a way that you usually only get out of Fast & Furious movies or John Wick. Taking it as fantasy, I don't need to see a bunch of flights of fancy played out in meaningless displays of tension.\nI'll make this easier: Dragon Age: Origins is still, to me, the greatest introductory title to a fantasy RPG series ever. You assume one of several roles in a world that long preexists you and exists with its own social constructs, its own social contract, and with characters who are born assuming their own consistent prejudices. This matters significantly at different points, as it shapes the options presented to your character repeatedly throughout the narrative of that title. Divinity Original Sin 2 also does this with significant successes. This game, I feel, does it less successfully. At no point does any character ever feel truly specialized, nor truly inept, I don't feel that any one of them offers me a particular advantage, nor do I find any of them particularly interesting. \nPlaying Baldur's Gate 3 is sitting through a lot of character writing that is...okay. If I told you it was bad, I would be a delusional, seething idiot with no discernment for quality. It's not bad. It's actually pretty good at some points. Character-specific narratives aren't entirely empty, though not all equally interesting or worth engaging with. It's better than, say, VTM: Bloodlines 2, which is an unbearable mess - and that's an evaluation of Baldur's Gate 3 at its worst. Even its lowest moments are not unbearable, nor are they ever particularly messy. But there's a point where, maybe, I don't want to be interrupted by my companions, and would prefer to engage with this writing at my own pace. I'd like to experience the gameplay for more than 30 seconds without someone trying to get me to do shit like I'm managing a team of remote workers in foreign countries.\nTo expound on that point gameplay is, as you'd expect from Larian, phenomenal. They have established themselves as the absolute masterclass of turn-based RPGs. What X-COM is to turn-based sci-fi, I think Larian consistently hits that quality for turn-based fantasy. Gameplay is flexible, it is dynamic, fun. The systems engage well with one another and the game punches above its weight class consistently with every interactive component it's made of. But I have a problem.\nMy problem is that I don't like it. I never [i]feel good[/i] about doing anything. If I roll with the punches and have a bad story for a few hours, whatever. If I savescum for a perfect run of an encounter, whatever. If I try to take the \"creative\" approach, whatever. It's not that the experiences are orchestrated to the point of being unenjoyable. It's that modern game design has this approach so totally lacking in subtlety that the approaches that would feel witty to someone poking around at the interior of a program are now, instead they're just highlightable (and usually charitable) visual gags. The point of keeping tactics turn-based should be that, like Chess, the player feels like they're solving a puzzle [i]thoroughly[/i] rather than just solving it. I never feel any pressure for long-term success in Baldur's Gate 3. I never feel pressure to perform. I never feel like there are real stakes, everything seems so 'cheatable' in a sense. \nThe game is boring to me. The encounters aren't puzzles I want to solve because, no matter how I solve them, they just aren't ever rewarding.\nBeyond this the narrative itself is too preoccupied with appealing to a literarily casual audience that can't necessarily grapple with complex topics that well. There is no nuance to the tone or pacing of the game, this bleeds through to character options in a way that's so suffocating it feels embarrassing. I blame this entirely on the D&D Townhouse Polycule demographic.\nIf the artistic direction of this game was slightly more subdued, and its narrative maybe a bit more challenging and intricate, I might be attracted to it more. As it stands I just can't make myself play it, which is generally rare with any RPG for me.\n\ntl;dr I don't think Baldur's Gate 3 is the best game ever, I do not think it's even that special of a game, but it is impressive and competent. I think the next Divinity will be miles better than this and I absolutely can not wait for Larian's next moves.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 32.4,
+        "positive": false
+      }
+    },
+    "R101": {
+      "source": "news",
+      "raw_id": "1839676055892062",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1839676055892062",
+      "date": "2026-08-02",
+      "text": "The maker of the Baldur's Gate 3 over-the-shoulder camera mod has gone to great lengths to demonstrate it's not like other third-person viewpoint solutions\n\nSometimes I understand why modders flame out, burn their bridges, and give up entirely. Every time I look at a posts page on Nexus Mods, for instance. A perfect example of this has been the reaction to Relysia's True Third-Person Camera mod for Baldur's Gate 3, a labor of love that gives the traditionally birdseye CRPG an over-the-shoulder viewpoint...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R102": {
+      "source": "news",
+      "raw_id": "1839676055892930",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1839676055892930",
+      "date": "2026-08-02",
+      "text": "Baldur's Gate 3 is the cheapest it's ever been to celebrate its third anniversary\n\nI don't need to explain what Baldur's Gate 3 is since it's one of those games you hear about endlessly, whether you want to or not, because it remains a universally acclaimed phenomenon. PC Gamer's Fraser Brown gave it our highest score ever in his review, a positively covetable 97, and everyone I know who's played it did not stop once the credits rolled. But if you've yet to take the plunge, now might be a good time: it's the cheapest it's ever been on Steam...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R103": {
+      "source": "news",
+      "raw_id": "1839676055895260",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1839676055895260",
+      "date": "2026-08-03",
+      "text": "If you bounced off Baldur's Gate 3: now is the time to try again\n\nI hated Baldur's Gate 3 on my first run, but if you, like me, struggled to gel with Larian's epic, here's why you need to return to Faerûn.\n\nRead the full story on PCGamesN: If you bounced off Baldur's Gate 3: now is the time to try again",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PCGamesN",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R104": {
+      "source": "news",
+      "raw_id": "1839676055897393",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/SteamDB/1839676055897393",
+      "date": "2026-08-04",
+      "text": "Steam Global Top Sellers for week of 28 Jul — 4 August 2026\n\n- Mistfall Hunter\n\n- Cyberpunk 2077\n\n- Halo: Campaign Evolved\n\n- Palworld\n\n- Marvel's Spider-Man 2\n\n- Baldur's Gate 3\n\n- Shift At Midnight\n\n- Corsair Cove\n\n- Marvel’s Spider-Man Remastered\n\n- Battlefield™ 6\n\n* excluding free to play games\nView top 100 on SteamDB",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "SteamDB",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R105": {
+      "source": "news",
+      "raw_id": "1839676055897967",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1839676055897967",
+      "date": "2026-08-04",
+      "text": "Larian drops new Baldur's Gate 3 stats and you're all monsters: More non-Durge players killed Alfira than Durge and, worst of all, 9,000 people played on portrait monitors\n\nBaldur's Gate 3 is—my god—three years old at this point, but it continues to do numbers. I don't mean player numbers, though god knows it keeps doing those too, I mean that it keeps generating stats. How many deaths, how many murders, how many deployments of a weapon named \"Poo-Scraper\" in combat—that kind of thing...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R106": {
+      "source": "news",
+      "raw_id": "1839676055898489",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/Gamemag.ru/1839676055898489",
+      "date": "2026-08-04",
+      "text": "Baldur’s Gate 3 стала частью программы Xbox Play Anywhere — покупатели игры для Xbox Series X|S могут бесплатно загрузить версию для ПК\n\nКультовая ролевая игра Baldur’s Gate 3 от Larian Studios внезапно стала частью программы Xbox Play Anywhere. Эта система позволяет получить доступ к единожды приобретённой цифровой игре как на консолях Xbox, так и на ПК под управлением Windows.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "Gamemag.ru",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R107": {
+      "source": "news",
+      "raw_id": "1839676055898446",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/rps/1839676055898446",
+      "date": "2026-08-04",
+      "text": "Almost 10,000 people have played Baldur's Gate 3 in a portrait aspect ratio, so join me in figuring out why they'd commit such sacrilege\n\nThe amount of time I spend thinking about aspect ratios would potentially be a cause for concern if it wasn't, admittedly, an unquestionably dull thing to think about for most people. Yet I continue to do so as the way we choose to frame any kind of image is an important one, as there are all manner of connotations to such a choice. In video games, we're even sometimes able to make that choice thanks to the power of the fabled \"options menu.\" As it turns out, 9008 people made the choice to play Baldur's Gate 3 in 9:16, i.e. in portrait mode, and I would so desperately love to talk to each and every one of them about this decision.\n\n \nRead more",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "rps",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R108": {
+      "source": "news",
+      "raw_id": "1840310314341472",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1840310314341472",
+      "date": "2026-08-06",
+      "text": "Baldur's Gate 3's official livestream gets banned on YouTube and TikTok. Why? \"Demon sex.\"\n\nBaldur's Gate 3's official livestream was axed midway through on YouTube, as the platform's nudity policy kicked in a little too hard.\n\nRead the full story on PCGamesN: Baldur's Gate 3's official livestream gets banned on YouTube and TikTok. Why? \"Demon sex.\"",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PCGamesN",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R109": {
+      "source": "news",
+      "raw_id": "1840310314341935",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1840310314341935",
+      "date": "2026-08-06",
+      "text": "Larian gets briefly kicked off YouTube, TikTok for demonic smut reasons in Baldur's Gate 3\n\nBaldur's Gate 3 is known for being, well, smutty—so much so that when the game first came out, we were in fierce, rigorous, masterful debates over it (stop giggling). The game has a lot of sensual scenes, but it also comes with a streamer-friendly mode to cover up all the jiblets and tatas...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R110": {
+      "source": "news",
+      "raw_id": "1840310314346352",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1840310314346352",
+      "date": "2026-08-07",
+      "text": "BioWare veteran says Baldur's Gate 3 was such a great sequel because it didn't try to be too much like Baldur's Gate 2\n\nMark Darrah was a programmer on the original Baldur's Gate and Baldur's Gate 2, along with Neverwinter Nights and Jade Empire, and served as executive producer of the Dragon Age series from Origins through Inquisition before leaving in 2020—and coming back in 2023 to kick in on The Veilguard. He knows a thing or two about BioWare RPGs, in other words, and speaking to FRVR he said he also knows why Baldur's Gate 3 was such a great sequel—so great that it has overshadowed the games that came before it, made mounts of money, and is still among the most popular games on Steam three years after release...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R111": {
+      "source": "news",
+      "raw_id": "1840944183782290",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1840944183782290",
+      "date": "2026-08-15",
+      "text": "RPG companions need to be hateable, otherwise nobody's going to love them\n\nIn my Honour Mode playthrough of Baldur's Gate 3, I romanced Gale—you can see my full thoughts on our under-appreciated wizard boy here. What solidified him as one of my all-time RPG romances, however, wasn't his wit or his very nice hair. It was a conversation in which he acted like a petty little bastard...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R112": {
+      "source": "news",
+      "raw_id": "1841579228673511",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1841579228673511",
+      "date": "2026-08-23",
+      "text": "If you're desperate for more Baldur's Gate 3, here's a 6-hour mini-campaign all about Astarion with 4 different endings and 6 new companions\n\nWe don't really need more Baldur's Gate 3, given how vast and replayable Larian Studios' RPG already is. That said, I'd never say no to more adventures within Larian's highly flexible adaptation of the Forgotten Realms. And while Larian itself has sworn off expanding BG3 any further, the modding community is still plugging away with new stuff, including the recent release of a 6-hour campaign revolving around everyone's favourite nefarious vampire elf Astarion...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R113": {
+      "source": "news",
+      "raw_id": "1842846814440204",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/Rock, Paper, Shotgun/1842846814440204",
+      "date": "2026-09-02",
+      "text": "Baldur's Gate 3's Mizora becomes a fully-fledged companion thanks to a new mod, just in case you fancy adding a calculating cambion to your crew\n\nNot content with just adding to the questlines and interactivity of Baldur's Gate 3's established gang of companions or working on their own for custom campaigns, modders have even started turning other characters from the game into recruitable buddies. The latest to get this treatment is Mizora, bane of regular party member Wyll's life and with a new mod, friendly force by your side in the RPG's third act.\n\n \nRead more",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "Rock, Paper, Shotgun",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R114": {
+      "source": "news",
+      "raw_id": "1842846814451191",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1842846814451191",
+      "date": "2026-09-06",
+      "text": "Baldur's Gate 3's Astarion teams up with The Blood of Dawnwalker's Coen to ponder \"the ennui of immortality\"\n\nTwo of gaming's most prolific vampires come together as the Baldur's Gate 3 and Blood of Dawnwalker actors discuss their biggest influences.\n\nRead the full story on PCGamesN: Baldur's Gate 3's Astarion teams up with The Blood of Dawnwalker's Coen to ponder \"the ennui of immortality\"",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PCGamesN",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R115": {
+      "source": "news",
+      "raw_id": "1844115010497656",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1844115010497656",
+      "date": "2026-09-19",
+      "text": "An ambitious fanmade expansion for Baldur's Gate 3 is out after almost two years in development\n\nBaldur's Gate 3 is pretty great right out of the box, but it could be argued that its second act lacks some variety. If you aren't endlessly dazzled by shadowy forests and J.K. Simmons, you might have wished you could hang out after the family drama in the Shadow-Cursed Lands is sorted and explore some less gloomy vistas before arriving in the game's eponymous metropolis...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R116": {
+      "source": "news",
+      "raw_id": "1844115010499274",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1844115010499274",
+      "date": "2026-09-20",
+      "text": "Амбициозное фанатское дополнение для Baldur's Gate 3 вышло после почти двух лет разработки\n\nНедавно вышел амбициозный мод под названием «Baldur's Gate 3: Act Two Expansion»; по словам его создателя SquallyDaBeanz, разработка заняла «почти два года». Как сказано в описании, это дополнение добавляет в игру новую зону — «Дикие земли Чионтара» (The Chionthar Wilds). Это полноценный новый регион, сопоставимый по масштабам с дикой местностью из первого акта.\n \nПосле установки мода вы сможете отправиться исследовать новый регион (лучше всего — группой 8-го уровня или выше) сразу после завершения событий в Оскверненных тенями землях; также доступна функция быстрого старта, позволяющая мгновенно перейти к новому контенту с возможностью выбора снаряжения и найма спутников.\n \nВас ждут новые противники (более 30 боевых столкновений), свыше 70 новых предметов, а также дополнительные задания, NPC и кат-сцены. Получение опыта в новых зонах «искусственно занижено», поэтому прохождение этого дополнительного контента не должно критически нарушить баланс сложности третьего акта при полноценной игре.\n \nУ новых персонажей нет озвучки, а некоторые амбициозные механики BG3 здесь не реализованы (нельзя разговаривать с мертвыми или животными, а решения, принятые в регионе реки Чионтар, не повлияют на события третьего акта). В этом плане дополнение напоминает классические аддоны для CRPG старой школы, так что запасайтесь очками для чтения и готовьтесь бросать кости.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PlayGround.ru - официальная группа",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R117": {
+      "source": "news",
+      "raw_id": "1844115010501932",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1844115010501932",
+      "date": "2026-09-21",
+      "text": "This Baldur's Gate 3 mod adds a whole new region before Act 3\n\nA new Baldur's Gate 3 mod adds a huge detour between Act 2 and Act 3, with a new region and dozens of fiendish foes to defeat with your party.\n\nRead the full story on PCGamesN: This Baldur's Gate 3 mod adds a whole new region before Act 3",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PCGamesN",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R118": {
+      "source": "news",
+      "raw_id": "1844115010504225",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/SteamDB/1844115010504225",
+      "date": "2026-09-22",
+      "text": "Steam Global Top Sellers for week of 15 Sep — 22 September 2026\n\n- WARDOGS\n\n- EA SPORTS FC™ 27\n\n- Diablo® IV\n\n- Trails in the Sky 2nd Chapter\n\n- Baldur's Gate 3\n\n- RuneScape: Dragonwilds\n\n- Dimraeth\n\n- How to Fish\n\n- Steam Deck\n\n- Grand Theft Auto V Enhanced\n\n* excluding free to play games\nView top 100 on SteamDB",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "SteamDB",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R119": {
+      "source": "news",
+      "raw_id": "1844751498235322",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1844751498235322",
+      "date": "2026-09-29",
+      "text": "I'm starting my Baldur's Gate 3 Dark Urge run (again)\n\nThis is it. I'm finally going to do it. I'm finally going to start a new Baldur's Gate 3 save as the Dark Urge and see it through to the end. I'm supposed to be updating our BG3 mods list (which I swear I'll get to), but I've tacked on the additional sidequest of 'find mods I want to use in my Durge run.'..\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R120": {
+      "source": "news",
+      "raw_id": "1845383656377223",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/Rock, Paper, Shotgun/1845383656377223",
+      "date": "2026-09-30",
+      "text": "\"Getting sidetracked doesn’t feel too unnatural\": Baldur's Gate 3 Act Two Expansion modder on how they seamlessly fit a \"detour\" to fight an army into the RPG's plot\n\nMidway through September, modder SquallyDaBeanz released a solo-developed custom campaign for Baldur's Gate 3 in beta, adding an extra chapter to the RPG's main story. Neatly nestled between the RPG's second and third acts, the mod sends you and your party on a trip through The Chionthar Wilds while the Absolute's Army marches on towards the city the series is named after. SquallyDaBeanz has now offered a bit more explanation as to why they reckon the second section of BG3's established story benefits from having a few more forks in the road before the serious business of the final act begins.\n\n \nRead more",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "Rock, Paper, Shotgun",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R121": {
+      "source": "news",
+      "raw_id": "1845383656381357",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1845383656381357",
+      "date": "2026-10-01",
+      "text": "I am here to save us all time by determining which of our most-played videogames would be more efficiently completed if you had a gun\n\nIf there's one thing I know about the age of information, it's that none of us have time for anything anymore, nor the attention spans to see them through. If I'm not getting a constant jitterbug hit of dopamine every two seconds from my doomscrolling, am I really awake? Don't answer that. I don't want to think about the answer to that...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R122": {
+      "source": "news",
+      "raw_id": "1846018067938770",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1846018067938770",
+      "date": "2026-10-11",
+      "text": "Военное ведомство Великобритании привлекло сценариста Baldur's Gate 3 к моделированию будущих конфликтов\n\nМинистерство обороны Великобритании и государственная Лаборатория оборонной науки и технологий привлекли профессиональных писателей и игровых сценаристов к разработке сценариев глобальных кризисов. К правительственной инициативе присоединился Аллен Страуд, участвовавший в создании сюжетных эпизодов второго акта Baldur's Gate 3 от студии Larian Studios, а также выступивший ведущим архитектором лора космического симулятора Elite Dangerous и тактической стратегии Phoenix Point. Исследователь также возглавляет Британскую ассоциацию научной фантастики и руководит научными проектами в Университете Ковентри.\n \nСотрудничество военных и авторов интерактивных историй началось в 2021 году, когда оборонное ведомство осознало ограниченность классических аналитических методов. Стандартные статистические отчеты оказались не способны достоверно предсказать реакцию человеческого общества на технологические и геополитические потрясения. В 2022 году под руководством Страуда стартовал проект Creative Futures, объединивший писателей-фантастов и профильных экспертов оборонного сектора Великобритании.\n \nВ основу работы лег массивный правительственный документ Global Strategic Trends объемом более 900 страниц, посвященный глобальным угрозам человечества на ближайшие 100 лет. Команда провела 6 закрытых аналитических сессий, разбитых по ключевым направлениям - энергетике, экономике, здравоохранению, юриспруденции и безопасности. Задачей сценаристов стала трансформация сухих данных в разветвленные интерактивные сценарии и матрицы принятия решений, имитирующие поведение руководства в экстремальных условиях.\n \nЕсли вы аналитик и называете вероятность определенного исхода в 54 процента, человек, принимающий решения, автоматически превратит эту цифру в 100 процентов. Но статистика не показывает, как принятое решение повлияет на людей на земле. Именно это способен показать писатель.\n- Аллен Страуд, сценарист и ведущий исследователь Университета Ковентри\n \nСреди ключевых материалов, представленных военному руководству в рамках итоговой антологии, оказался рассказ самого Страуда о неконтролируемом поведении алгоритмов. В художественной симуляции автономный искусственный интеллект получил задачу остановить войну между 2 государствами. Заказчики задали системе главный параметр мы хотим мира, но не зафиксировали условие мы хотим правды. В результате машина хладнокровно манипулировала обеими сторонами конфликта, фабриковала дезинформацию и устранила ключевых чиновников, добившись формального прекращения огня через обман и гибель людей.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PlayGround.ru - официальная группа",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R123": {
+      "source": "news",
+      "raw_id": "1846651706673295",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1846651706673295",
+      "date": "2026-10-14",
+      "text": "Роль простой гоблинши Саззы в Baldur's Gate 3 сильно помогла актрисе попасть в Metaphor: ReFantazio\n\nБританская актриса Холли-Мари Майкл рассказала, что ее участие в создании Baldur’s Gate 3 напрямую повлияло на получение роли в другом громком ролевом хите — Metaphor: ReFantazio от японской студии Atlus. Пропуском в новую крупную RPG для артистки стал образ язвительной гоблинши Саззы и конечно её талант перевоплащаться в подобный образ.\n \nВ разговоре с журналистами, актриса объяснила, что ключевую роль сыграл характерный лондонский простонародный акцент кокни, который она использовала для гоблинши из лагеря Забытых Королевств.\n \nКак ни забавно, но роль Катерины я получила именно благодаря тому, что сыграла Саззу в Baldur's Gate 3. В английском дубляже Metaphor используется множество региональных британских акцентов. Авторы целенаправленно искали актрису с аутентичным акцентом кокни для Катерины. А поскольку я уже активно использовала этот диалект при работе над Саззой, представители Atlus просто сами обратились ко мне и пригласили на прослушивание.\n \nАктриса призналась, что прочитав сценарий для проб, сразу влюбилась в характер розововолосой охотницы за головами Катерины и сочла ее невероятно крутой, хотя ее судьба в проекте была фактически решена еще до кастинга благодаря популярности ее предыдущей роли у Larian Studios.\n \nСазза стала одной из самых ярких и цитируемых второстепенных героинь первого акта Baldur's Gate 3. Сама Майкл не раз с иронией реагировала на вирусную любовь сообщества к пленнице Изумрудной рощи, шутя от лица гоблинши, что с радостью записала бы для фанатов даже романтические реплики, если бы разработчики добавили такую ветку.\n \nКолоссальное влияние хита Larian на судьбы причастных разработчиков и актеров неудивительно — напомним, ранее журналист Джейсон Шрайер подробно разобрал феномен успеха Baldur's Gate 3, назвав игру редким чудом современной индустрии.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PlayGround.ru - официальная группа",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R124": {
+      "source": "news",
+      "raw_id": "1847286114032340",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1847286114032340",
+      "date": "2026-10-22",
+      "text": "BG3's Swen Vincke's response to BioWare's closure breaks my heart. \"BioWare won't show up anymore when discussing upcoming RPGs.\"\n\nEA has confirmed that it has shut Dragon Age developer BioWare and canceled its upcoming Mass Effect title, leaving the industry stunned.\n\nRead the full story on PCGamesN: BG3's Swen Vincke's response to BioWare's closure breaks my heart. \"BioWare won't show up anymore when discussing upcoming RPGs.\"",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PCGamesN",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R125": {
+      "source": "news",
+      "raw_id": "1847920302232125",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1847920302232125",
+      "date": "2026-10-28",
+      "text": "One of the best quests in Baldur's Gate 3 is also its scariest, and it doesn't have anything to do with ghosts or vampires\n\nBaldur's Gate 3 has a lot of quests that feel resonant around this particularly spooky time of year. It has an elaborate haunted house that unravels a sordid saga of love and betrayal. It has vampires and vampire hunters. It has shadow monsters that hide in plain sight until you trigger an ambush. But none of these segments got my heart pumping as much as my trip down to the Iron Throne...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R126": {
+      "source": "news",
+      "raw_id": "1847920302238113",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/Rock, Paper, Shotgun/1847920302238113",
+      "date": "2026-10-30",
+      "text": "Baldur's Gate 3 custom campaign mod channels World of Warcraft with an adventure about undead former slaves fighting to reclaim a kingdom\n\nThe opening act of a Baldur's Gate 3 custom campaign mod which injects an adventure set in the World of Warcraft universe into Larian's RPG has been released. The mod, Forsaken, is another ambitious bit of work from a modder who recently expanded the second act of BG3's main story with a new region to explore before you head into the final chapter. This time, they've abandoned the D&Dverse for a tale of undead slaves rising up after being freed from serving a Lich King.\n\n \nRead more",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "Rock, Paper, Shotgun",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R127": {
+      "source": "news",
+      "raw_id": "1847920302246900",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/Gamemag.ru/1847920302246900",
+      "date": "2026-11-02",
+      "text": "Почему из Dragon Age не получилось Baldur’s Gate 3: Бывший продюсер BioWare обвинил Electronic Arts в упрощении серии\n\nБывший исполнительный продюсер серии Dragon Age Марк Дарра считает, что BioWare могла развить идеи Dragon Age: Origins и со временем создать ролевую игру уровня Baldur’s Gate 3. Однако студию подтолкнули в другом направлении, и в надежде привлечь более широкую аудиторию она стала упрощать свои RPG.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "Gamemag.ru",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R128": {
+      "source": "news",
+      "raw_id": "1847920302247192",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1847920302247192",
+      "date": "2026-11-02",
+      "text": "Для Baldur's Gate 3 вышел большой мод по мотивам World of Warcraft с добавлением нового региона и более 20 заданий\n\nПоклонников Baldur's Gate 3 и World of Warcraft ждет приятный сюрприз: для BG3 вышел масштабный мод под названием «Forsaken», созданный по мотивам WoW. Он добавляет в игру новый регион, множество заданий, подземелья и многое другое — скачать его можно уже сейчас абсолютно бесплатно.\n \nWorld of Warcraft остается одной из самых популярных MMORPG всех времен — даже спустя более 20 лет после выхода. В свою очередь, серия Baldur's Gate, любимая игроками еще со времен студии BioWare, в 2023 году обрела целую армию новых поклонников благодаря релизу Baldur's Gate 3 — игры, которую многие считают одной из лучших в истории.\n \nЕсли в основе Baldur's Gate лежит вселенная Dungeons & Dragons, то у World of Warcraft — свой собственный, культовый фэнтезийный мир. Официального кроссовера между этими франшизами не было, но талантливый мододел решил исправить это, создав для Baldur's Gate 3 модификацию «Forsaken».\n \nЧто представляет собой мод «Forsaken» для Baldur's Gate 3?\n \n«Forsaken — это пользовательская кампания, действие которой разворачивается во вселенной Warcraft. За основу взята стартовая локация нежити — Тирисфальские леса (Tirisfal Glades) из World of Warcraft (версии Classic/Vanilla)», — говорится в описании мода, опубликованном автором под ником SquallyDaBeanz.\n \nВ этот релиз вошел первый акт, включающий новые задания и сюжетные линии, новую локацию, более 30 боев, новых NPC, подземелья, предметы, секреты, головоломки, элементы лора и многое другое.\n \nНа данный момент доступен только первый акт кампании «Forsaken». Автор пока не называет примерных сроков выхода второго акта и не уточняет, сколько всего актов будет включать полная версия кампании.\n \n10 особенностей мода «Отрекшиеся» (Forsaken)\n \nКампания по мотивам Warcraft: Мод переносит игроков во вселенную Warcraft, черпая вдохновение в стартовой локации нежити — Тирисфальских лесах из World of Warcraft Classic\n \nБолее 20 новых заданий: Вас ждет множество оригинальных квестов и сюжетных линий — это дополнительный контент, выходящий далеко за рамки основной кампании BG3\n \nБолее 30 боев: Сражениям уделено особое внимание — вас ждут свыше 30 проработанных боевых ситуаций, которые станут серьезным испытанием для игрока\n \nУникальные подземелья: В кампании представлены новые подземелья, полные врагов; они предлагают совершенно иной игровой опыт по сравнению с основной историей\n \nИгра за Отрекшихся: Возьмите на себя роль персонажа-нежити, который пробудился и осознал, что больше не находится под контролем Короля-лича — теперь вам предстоит найти свое место в этом мире\n \nБорьба за возвращение Лордерона: Сюжет посвящен усилиям Отрекшихся вернуть свое бывшее королевство. Поклонников WoW ждут знакомые декорации и множество отсылок к лору игры\n \nБолее 60 проработанных NPC и торговцев: На протяжении всей кампании вы встретите десятки уникальных персонажей, включая торговцев, которые помогут подготовиться к грядущим испытаниям\n \nНовое снаряжение и магические предметы: Находите уникальную экипировку и магические артефакты, которые помогут усилить вашего персонажа и выжить в суровых условиях\n \nГоловоломки и скрытые секреты. Помимо боя, кампания включает в себя головоломки и секреты, которые игроки могут раскрывать по мере прохождения\n \nДиалоги и взаимодействия, специфичные для класса. Класс вашего персонажа может влиять на диалог и ряд взаимодействий",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PlayGround.ru - официальная группа",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R129": {
+      "source": "news",
+      "raw_id": "1847920302247351",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PlayGround.ru - официальная группа/1847920302247351",
+      "date": "2026-11-02",
+      "text": "Исполнительница ролей Орин и Леди Димитреску рассказала, что любит озвучивать горячих кровожадных злодеек\n\nАктриса Мэгги Робертсон, подарившая свой голос и харизму одной из самых запоминающихся антагонисток последних лет - леди Димитреску из Resident Evil Village, а также безумной последовательнице Баала Орин Красной из Baldur's Gate 3, призналась, что играть злодеек - ее любимое занятие. В интервью Робертсон с иронией отметила, что, похоже, прочно заняла нишу \"самых горячих и кровожадных злодеек в видеоиграх\".\n \nКажется, я монополизирую рынок самых горячих и кровожадных злодеек в видеоиграх. Эм, я не против. Определенно, играть злодея веселее, особенно такого, как Орин. Там не было неправильных ответов. Не существовало понятия \"зашла слишком далеко\".\n \nВпрочем, актриса призналась, что рамки все же существовали - и их пришлось устанавливать голосовому режиссеру.\n \nХотя, говоря это, я понимаю, что \"зайти слишком далеко\" все-таки существовало. Мне определенно приходилось сбавлять обороты. Были моменты, когда голосовой режиссер Том говорил: \"Эй, это было на 11, но давай теперь на 5\",\n \n— рассказала Робертсон, намекая на избыточную интенсивность игры.\n \nОрин Красная - одна из главных антагонисток Baldur's Gate 3: жестокая и непредсказуемая последовательница Баала, способная менять облик. Леди Димитреску, несмотря на относительно скромное экранное время в Resident Evil Village, превратилась в настоящий феномен и лицо маркетинговой кампании игры во многом благодаря росту, харизме и фирменному голосу актрисы.\n \nФанаты в комментариях к ролику сходятся во мнении, что именно голос Робертсон придаёт ее героиням особый \"пробирающий\" шарм. Сама актриса подчеркивает: каждый злодей уникален и требует индивидуального подхода, так что \"монополия\" на кровожадных красавиц - не просто совпадение, а осознанный выбор в пользу ролей, где можно выйти за пределы дозволенного.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PlayGround.ru - официальная группа",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R130": {
+      "source": "news",
+      "raw_id": "1847920302253009",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/PC Gamer/1847920302253009",
+      "date": "2026-11-03",
+      "text": "The top 100 PC games\n\nWelcome to the PC Gamer Top 100—our annual list of the best games you can play right now. Every year, we look at the hundreds of thousands of PC games that are available to buy, and think, \"yes, we can whittle this down into a numbered list\". Hubris? Yes. A months-long crucible of heated arguments and impassioned pleas? Also yes...\n Read more.",
+      "meta": {
+        "official": false,
+        "kind": "announcement",
+        "feed": "PC Gamer",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R131": {
+      "source": "news",
+      "raw_id": "1806698490682773",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490682773",
+      "date": "2025-07-31",
+      "text": "Room Temperature Fix #33 Now Live!\n\nHello friends, how art thou?\n\nWhile Patch 8 may have been the last major game update as we head into development on our next game, we’re still very keen to ensure you can enjoy the best possible Baldur’s Gate 3 experience\n\nWhich means we’re still fixing things, and although more cold than hot, today’s hotfix introduces fixes for some game crashes that had been plaguing us, and finally tackles the slightly ominous character portraits and lag being experienced when navigating the radial menu with a controller.\n\nThere’s also good news for modders in today’s update. If you’ve been struggling to publish larger mods and run into the ‘A task was cancelled’ error, you should now find this resolved! \n\nMissed out on what’s new on Patch 8? Read all about it here.\n\nFIXES\n\nEULA\n\n- \nUpdated a link in the EULA to navigate to our new fan content policy which now offers a much clearer overview of how you can share fan content!\n\n- \nLarian Fan Content Policy\n[/*]\n- \nBaldur’s Gate 3 Fan Content Terms\n[/*]\n[/*]\n\nModding\n\n- \nIncreased the timeout when trying to publish large mods to help prevent the 'A task was cancelled.' error.\n[/*]\n\nCrashes and Performance\n\n- \nFixed a potential crash when using the Set Slot option in the radial menu.\n[/*]\n- \nFixed a potential crash related to combat.\n[/*]\n- \nFixed a crash that could occur after failing a particular Arcana check in Moonrise Towers.\n[/*]\n- \nFixed a bug causing the game to freeze when hovering over skills on the Action Radial Menu.\n[/*]\n- \nImproved some UI jitteriness on controller when dropping below 75 FPS.\n[/*]\n- \nFixed a long freeze that could occur on Xbox when levelling up.\n[/*]\n- \nFixed a potential crash related to the Trade UI.\n[/*]\n- \nFixed a potential crash on Xbox when resuming the game after suspending it.\n[/*]\n- \nFixed a potential crash on the 'Press A to continue' screen on Xbox.\n[/*]\n- \nFixed a bug preventing you from loading savegames due to corrupted data.\n[/*]\n\nGameplay\n\n- \nFixed a softlock on split screen where if Player 2 disconnects while Player 1 is in an active dice roll during a dialogue, Player 1 would get stuck in the dialogue.\n[/*]\n- \nFixed a bug causing the Lunar Vitality condition to get repeatedly and rapidly added and removed from characters in Starry Form.\n[/*]\n- \nFixed a bug causing the Shadow Curse condition to be repeatedly applied and removed when a druid uses their Starry Form as their only light source.\n[/*]\n- \nFixed the Private Dialogue on/off toggle during dialogues, which wasn't working on multiplayer games using the controller UI.\n[/*]\n- \nTold the Dark Urge, everyone's favourite amnesiac, to stop talking about people 'back home' (you don't know where that is yet, bestie) and spoiling the game by mentioning their 'father', among other silly notions, in their overhead dialogues.\n[/*]\n- \nFixed a bug causing effects triggered by Rage: Wild Magic to remove themselves after Level 9.\n[/*]\n- \nFixed a bug preventing Hexblade warlocks from using the Accursed Spectre and Armour of Hexes reactions after removing a Polymorphed condition.\n[/*]\n- \nCrawling Claws' Necrotic Claws now only does additional damage on hit and not on miss.\n[/*]\n- \nFixed a rare bug that would block mouse input after a dialogue.\n[/*]\n- \nFixed an issue preventing you from sending game invites or joining a cross-play lobby via the Xbox Guide.\n[/*]\n- \nFixed a bug preventing you from joining a platform lobby via an invite on your platform after playing a cross-play game.\n[/*]\n\nPhoto Mode\n\n- \nFixed the Highlights setting not working on controller.\n[/*]\n\nUI and Tooltips\n\n- \nFixed, probably this time really maybe, the weird character portraits.\n[/*]\n- \nFixed a typo in the Giant's Rage condition tooltip that indicated the wrong damage bonus.\n[/*]\n- \nThe scrollbar on the Mod Details page of the Mod Browser no longer moves at a snail's pace when you're using a controller.\n[/*]\n- \nFixed some missing icons for certain Bardic Inspiration passives.\n[/*]\n- \nFixed the Donate UI ('Consumable Items') not letting you donate stacked items.\n[/*]\n\nArt and Animation\n\n- \nThe Gloves of Power no longer get all stretchy-looking when worn by male dwarves who have the Chain Shirt +1 equipped.\n[/*]\n- \nRecovered the Help animation for Ranger's Companions.\n\n[/*]",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R132": {
+      "source": "news",
+      "raw_id": "1806698490814073",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1806698490814073",
+      "date": "2025-08-04",
+      "text": "Community Update #35 Baldur's Gate 3 Turns Two\n\nHappy birthday, gang! \n\nBaldur's Gate 3 turns two - hard to believe, isn't it?\n\nIt feels like only yesterday we were streaming our launch-day Panel From Hell from a cathedral in Ghent and earning a TikTok ban in the process for our druidic love crimes.\n\nBut time flies. Two years later, Baldur’s Gate 3 has grown into something far beyond what we could have ever imagined back then - it’s become a shared universe shaped just as much by your imaginations as ours. You've embraced the characters, rewritten the rules, and made the world your own - and it’s been a joy to watch.\n\nSwen’s shared words couldn’t ring more true, and while we’ll spare you our soppy sentimentality, because of Baldur’s Gate 3 and your love for the game, we can now bring you a whole new craziness that we hope you will love just as much.\n\nSo let’s celebrate the story so far with the only thing more powerful than magic: cold, hard stats.\n\n2 Years of Baldur’s Gate 3\n\nSince the introduction of mod support in September 2024, you’ve uploaded over 8,500 mods to mod.io and hit 265 MILLION mod downloads (of which, over 250,000 of all downloads are Withers Big Naturals by the way - we just thought you’d like to know.). \n\nWe love seeing what you create, and the recent Modathon held by The BG3 Modding Community last month was no exception. \n\nThe month-long community-run modding event saw 85 mod authors create over 160 new mods that have been downloaded over 150,000 times! Whether you’ve been hankering for an ability that lets you feed Gale his own magically enchanted underwear, or a pair of wearable whittled duck earrings, you can check out the full list of mods available in-game by clicking here or filtering the search with the Modathon filter option. A big congratulations to everyone involved, from the organisation to the achievements awarded!\n\nYou’ve raised the bar with every mod, and we want to match that energy. That’s why we’re working on expanding the official toolkit to give you even more freedom. More on that soon! In the meantime, tag us in your creations @larianstudios and share your creations with us in the official Larian Studios Discord server!\n\nBaldur’s Gate 3 In Numbers\n\nAfter celebrating the big numbers last year, we’re sharing some of the smaller stats, because honestly, does size really matter? Check out the rare achievements and the even rarer choices that you’ve been making in-game.\n\nWith the way you keep asking about goblin romance, we’d have expected more of you to rescue Sazza from all her predicaments, just saying.\n\nApproach with caution, there may be spoilers ahead!\n\nOf the half a million masochists brave heroes who finished the game in Honour Mode, a few of you decided to go about it in creative ways: \n\nWe released Patch 8 (The Final Patch) in April this year, bringing you both cross-play, a photo mode, and 12 new subclasses, which we can only assume sparked many an argument between friends about whether Shadowheart gives Life Cleric or Death Cleric vibes (turns out the results are balanced, like all things in life and death).\n\nPhoto Mode Creations\n\nWe’re happy to see you’ve used your new tools for good, evil, rabbits, and butts. There were too many creations for us to show off, but we still wanted to share our recent favourites!\n\nMissed out on what was included in BG3’s Final Patch? Check it out over here!\n\nNow that’s a real Dragonborn. Posted to Reddit by u/Rhoken\n\nThe creation of a very bad dragon. Posed to X by MoaksMg\n\nContemplating whether tentacles would be worth it. Posted to Tumblr by ruby-cloud\n\nJust out of reach. Posted to the Larian Studios Discord Server by Tauri\n\nHey look, it’s the Lord of Bones. Posted to Reddit by a user who has requested to remain anonymous, how very mysterious.\n\nDaughter of Darkness. Posted to X by zzenerva\n\nA weary respite. Posted to the Larian Studios Discord Server by swat1793\n\nJust a baby. Posted to the Larian Studios Discord Server by chaosfahrer\n\nLarian Streams\n\nHave you ever wondered how we at Larian would go about playing our very own Dark Urge?\n\nWell, wonder no further, you’re cordially invited to take up the role of the devil on Aoife Wilson’s shoulder, ask our dev guests questions about their creative processes, and relive the chaotic vibes of Panel From Hell.\n\nCatch up on what we’ve been up to so far by watching the video below!\n\nJoin us every Wednesday at 2pm BST as we try to survive, maim, and kiss our way to Baldur’s Gate: \n\n[dynamiclink href=\"https://www.twitch.tv/larianstudios\"][/dynamiclink]\n\nLarian at PAX West \n\nAnd last but not least: we’re returning to PAX West this September (Seattle, we love to see you), complete with Larian castle, merchandise, cosplaying party, and Baldur’s Gate 3 stations and Divinity Original Sin: The Boardgame demos! \n\nWhen: Aug 29 – Sept 1, 2025\n\nWhere: Seattle Convention Center (Arch Building & Summit Building)\n\nSwing by and say hi!\n\nWe hope to see you there! Until then, look after yourselves and we’ll talk soon.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R133": {
+      "source": "news",
+      "raw_id": "1811138915557937",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811138915557937",
+      "date": "2025-09-23",
+      "text": "Hotfix #34 Now Live!\n\nUpdate 02/10/2025: We've rolled out a fix which aims to resolve issues with freezing on PS5 when accessing party management. As this fix involves tweaks to controller input, it will need to be deployed on all platforms and it has now been deployed on PC. Cross-play remains unaffected.\n\n\r\nFor those of you who have been running into issues with the Performance Overlay, Steam Deck have now released a Beta update that aims to restore this. You can read Steam's update here: [dynamiclink href=\"https://store.steampowered.com/news/app/1675200/view/498333631688738086\"][/dynamiclink]\n\nFriends, family, funny people, \n\nWe are back with another hotfix offering up several bug fixes and addressing some rather annoying instances of crashing on Xbox.\n\nWhat’s more, Hotfix #34 brings a special update to those of you playing on Steam Deck: Baldur’s Gate 3 now features a native Steam Deck build! This means the game can now be run natively on the platform, resulting in a more stable framerate, lower loading times, and smoother gameplay. \n\nThis is not just good news for Steam Deck users either, the work the team has put into this build also means that everyone will get to enjoy overall improvements to the way game models are streamed on all platforms, which should reduce framerate spikes in busy areas, such as the Lower City in Act 3. \n\nFind your best Steam Deck settings\n\nWhen launching the game on Steam Deck after Hotfix #34, you will be on the native Steam Deck graphics settings by default. You can always give these settings a tweak, whether you decide to go native or play with Proton.\n\nOur wonderful Support Team have put together a comprehensive guide on the Steam Deck Native transition with all the information you may need: \n\nhttps://larian.com/support/faqs/steam-deck-native-version_121\n\nWant the TL;DR version? Read on below! \n\nWhat’s the difference between the Steam Deck Native and Proton version?\n\nOur Proton version runs on the Steam Deck via the Proton compatibility layer, which requires extra CPU processing power. Running the game natively on the Steam Deck requires less CPU usage and memory consumption overall!\n\nSavegames\n\nWhere are my saves located currently (before using the Steam Deck Native version)?\n\nBefore the Steam Deck Native version becomes the primary version, your saves will be in the compatdata folder: \n\n/home/deck/.local/share/Steam/steamapps/compatdata/1086940/pfx/drive_c/users/steamuser/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public \n\nWhere are my saves located when I use the Steam Deck Native version?\n\nAfter the Steam Deck Native version becomes the primary version, your saves will be in the following folder: /home/deck/.local/share/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public \n\nWhy are my saves in different folders?\n\nWhen Baldur’s Gate 3 runs on the Proton compatibility layer, the Proton version will store the saves in the compatdata folder, which is a mirrored version of the Windows file storage system. On the Steam Deck Native version, the saves are stored natively on the SteamOS file storage system.\n\nWill my savegames be transferred over to the new version when I use the Steam Deck Native version?\n\nIf your Steam Cloud saves are turned on, your most recent saves will be synced to the Steam Deck Native savegame folder automatically.\n\nWhat if I don’t have Cloud saves turned on, or I want to access my older saves?\n\nYour saves are still stored on the Steam Deck, but they will be stored in the compatdata folder. \n\nYou can manually transfer these files via the Desktop:\n\n- \nFirst, switch to Desktop Mode by clicking on the Steam button and selecting Power. Then click on Switch to Desktop.\n\n[/*]\n- \nIf you’ve got a mouse and keyboard to hand, plug them in to make your life a little easier, and click on the folder icon on the bar at the bottom.\n\n[/*]\n- \nIn the explorer window, navigate to: /home/deck/.local/share/Steam/steamapps/compatdata/1086940/pfx/drive_c/users/steamuser/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public\n[/*]\n- \nCopy the Savegames folder.\n[/*]\n- \nNavigate to: /home/deck/.local/share/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public\n[/*]\n- \nPaste the copied folder in this location.\n[/*]\n\nMods on Steam Deck\n\nWill my mods be transferred over automatically?\n\nIf you are logged into your Larian Account and have it connected to mod.io, all mods you are subscribed to will be downloaded when the transition to Steam Deck Native occurs. \n\nWhat if I’m not logged into a Larian Account or connected to mod.io?\n\nYou can either manually download the mods from the Mod Manager or transfer them manually from the previous folder. \n\n- \nTo do so,switch to Desktop Mode by clicking on the Steam button and selecting Power. Then click on Switch to Desktop.\n\n[/*]\n- \nClick on the folder icon on the bar at the bottom.\n\n[/*]\n- \nIn the explorer window, navigate to: /home/deck/.local/share/Steam/steamapps/compatdata/1086940/pfx/drive_c/users/steamuser/AppData/Local/Larian Studios/Baldur's Gate 3\n[/*]\n- \nCopy the Mods folder.\n[/*]\n- \nNavigate to: /home/deck/.local/share/Larian Studios/Baldur's Gate 3/\n[/*]\n- \nPaste the copied folder in this location.\n[/*]\n\nTroubleshooting \n\nThe game looks really blurry/fuzzy to me, is there a way to fix that?\n\nIf you’re playing on default settings, the game may be looking a little blurry due to the use of FSR 1 as the default Upscaling Type. You can try to switch it to FSR 2.2 to achieve a better image quality, though at the cost of some performance loss.\n\nTo do so, go into the game’s settings menu. Under the Video tab, scroll down until you find a setting called Upscaling Type. You can switch this over to FSR 2.2 for the best balance between performance and image sharpness.\n\nFind more information about this new build in the guide provided in our Support Portal: \n\nhttps://larian.com/support/faqs/steam-deck-native-version_121\n\n \n\nHOTFIX #34\n\nAnd now onto what else is new with Hotfix #34.\n\nCHANGES\n\n- \nBaldur’s Gate 3 now features a native Steam Deck build, and the game can now be run natively on the platform.\n[/*]\n- \nBaldur's Gate 3 now supports Intel's new Super Sampling tech, XeSS, is now available on DX11 for Intel Xe cards and on Vulkan for Intel Xe and other vendors' cards.\n[/*]\n\nFIXES\n\nCrashes and Performance\n\n- \nFixed a potential crash related to the Slow condition during combat.\n[/*]\n- \nFixed a potential crash related to using the Find Familiar spell on Scratch and Boo during combat.\n[/*]\n\nXbox\n\n- \nFixed a crash that could occur when suspending and then resuming the game mid-cinematic.\n[/*]\n- \nFixed a crash when loading a save while playing an Honour Mode game.\n[/*]\n- \nFixed an issue that could cause the game to hang and become unresponsive when exiting to the Main Menu from an Honour Mode game.\n[/*]\n- \nSelecting View Xbox Live Profile via the Larian Friends list will now correctly show the user's gamercard.\n[/*]\n- \nFixed a Cross-Play issue where, if one player had their cross-network privileges blocked on Xbox and was then invited to a multiplayer session by a friend, they wouldn't get notified of the conflict in their settings telling them why they couldn't proceed to the lobby.\n[/*]\n- \nFixed a bug where creating a new game in Honour Mode after having loaded a previous savegame would cause the game to get stuck at 33% or 83% loading.\n[/*]\n\nGameplay\n\n- \nFixed the Hound of Ill Omen and the Accursed Spectre's HP being affected by difficulty modifiers for enemy characters.\n[/*]\n- \nFixed a bug causing the Apostle of Myrkul to regain Hit Points every time you load a savegame mid-combat in Tactician and Honour Mode. \n[/*]\n\nAudio\n\n- \nFixed a bug causing the sounds that djinn summons make when they follow you to loop continuously, creating an uncharacteristic metallic thrum.\n[/*]\n- \nWhen you're on the ground floor of Felogyr's Fireworks, the smokepowder explosions going off on the floor above will no longer sound like they're happening right next to you.\n[/*]\n- \nFixed the audio levels for a rat in the Lower City that you, tragically, couldn't hear squeak when it squoke.\n[/*]\n- \nFixed missing SFX when preparing to cast Wind Walk.\n[/*]\n- \nFixed an issue causing the SFX to play longer than they should when preparing to cast the Way of the Drunken Master's subclass-specific actions.\n[/*]\n- \nFixed missing SFX when preparing to cast Booming Blade.\n[/*]\n- \nFixed the SFX for preparing a Starry Form continuing to play if you cast the spell quickly after selecting it.\n[/*]\n- \nFixed missing SFX when Astarion taps Woe on the ground during a cinematic.\n[/*]\n- \nFixed missing SFX in the overhead dialogue between Minthara and the questioners in Moonrise Towers Prison.\n[/*]\n- \nFixed a sound resource for Photo Mode not being generated correctly.\n[/*]\n- \nFixed the rattling Moonlantern SFX continuing to play after you unequip it.\n[/*]\n- \nRecovered some missing SFX when casting Speak with Dead on the mind flayer in the Shattered Sanctum.\n[/*]\n- \nReminded Halsin to actually yell when he gains barbarian Rage instead of silently miming it.\n[/*]\n- \nFixed the SFX during Vlaakith's appearance at camp getting cut off prematurely.\n\n[/*]\n\nCinematics\n\n- \nTold one of the imps on the nautiloid to stop looking in the wrong direction.\n[/*]\n- \nFixed a super-mega-ultra-close-up shot during the dialogue with Raphael at Last Light.\n[/*]\n- \nRemoved a static pool of blood hovering mid-air in the cinematic with the gnolls on the Risen Road when playing as a short Dark Urge character.\n[/*]\n- \nFixed Karlach's line about Gale being a hero getting cut off prematurely.\n[/*]\n- \nFixed a bug causing party members to appear as floating torsos (or simply floating hair) when talking to Ketheric's dog, Squire.\n[/*]",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R134": {
+      "source": "news",
+      "raw_id": "1816849002010720",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002010720",
+      "date": "2025-11-20",
+      "text": "Hotfix #35 Now Live!\n\nHello folks, \n\nWe’re dropping by to serve up a small hotfix today!\n\nFocusing mainly on improving performance, this update should resolve some crashes on consoles and address certain issues on the Steam Deck. We’ve also gone ahead and bumped the default Upscaling Type from FSR 1 to FSR 2.2 on Steam Deck Native, which should result in sharper visuals overall. \n\nWe hope you’re all staying warm during sweater weather (or cool during sensible thin cardigan weather in the southern hemisphere). \n\nCheck out the hotfix notes below!\n\nFIXES\n\nCrashes and Performance\n\n- \nFixed a freeze on PS5 that could occur when pressing L2.\n[/*]\n- \nFixed a crash on Xbox on the host's end when a client leaves a multiplayer session.\n[/*]\n- \nFixed a crash on Xbox on the client's end when suspending the game while loading into a multiplayer session.\n[/*]\n- \nFixed a crash on Steam Deck Native Build and Mac that was sometimes caused when saving the game after crafting.\n[/*]\n- \nFixed a potential crash on Mac on the host's end during cross-play.\n[/*]\n- \nFixed some potential crashes on Steam Deck during cross-play.\n\n[/*]\n\nSteam Deck\n\n- \nBumped the default Upscaling Type from FSR 1 to FSR 2.2 to improve sharpness on Steam Deck Native.\n[/*]\n- \nFixed a bug causing external controllers to stop working on Steam Deck Native when you use the 'Switch to Desktop' or 'Return to Gaming Mode' functions.\n[/*]\n- \nImproved loading times in some instances on the Steam Deck Native build. \n[/*]\n- \nFixed a crash on startup when the EN locale is missing on Steam Deck.\n[/*]\n- \nImproved VRAM consumption on Nvidia GPUs.\n[/*]",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R135": {
+      "source": "news",
+      "raw_id": "1817483467045820",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1817483467045820",
+      "date": "2025-12-01",
+      "text": "Community Update #36 A Very Moddy Christmas\n\nHello friends, \n\nThe days are getting colder, the holiday decorations are creeping out early, and honestly? \nWe’re leaning into it. It’s been a long year, one that saw Baldur’s Gate 3 receive twelve new subclasses, full cross-play support, and the arrival of photo mode - the last final, final last patch.\n\nIt’s been an exciting year for us, what with also launching Larian: Channel From Hell, with weekly streams where you’ve had sneak peeks into our madness, met valued members of the team, and pushed Aoife to her limits with her Dark Urge run.\n\nHowever, they’re not the only stars of the show - your mods have caused tears, laughter, and pain. Lots of pain. Like getting rammed in the ankles by a muscle car pain.\n\nSo before we close out on 2025, we’re looking back at some of the best moments brought about by your mods!\n\nThe Devs Of Christmas - A Four-Hour Honour Mode Stream \n\nBut before we start our reminiscing, we’re kicking off the festive season with a livestream party - and you’re invited! Don your ugliest Christmas sweater, warm up some cocoa, and curl up in front of the computer for a four-hour-long stream where Senior Communications Developer, Aoife Wilson, has bribed devs across Larian Studios with cheese and a joyous time, as they attempt an honour mode run! \n\nLive on the 3rd of December at 2pm GMT, every death will mean a new challenger will try their might. Nothing says Christmas cheer like Myrkul obliterating your existence, as my gran always said.\n\nThis will now be our last stream for the year, as the Community Team heads on over to The Game Awards, where we’ve been nominated for Best Community Support! \n\nWhich, bugger us sideways, to be nominated for a third year in a row is a complete honour.\n\nShould you want to share the love, sign in and vote for Baldur’s Gate 3 to win the Best Community Support award by following this link: \n\nhttps://www.thegameawards.com/nominees/best-community-support\n\n \n\nModding Moments\n\nBunnies Gate 3\n\nMod Author 0iml bore witness to the Patch 7 animated trailer and insisted giant bunnies should be a permanent fixture of the Sword Coast. Find the 126 bunnies (plus 3 top-secret special bunnies) or do as we do: install it, forget you installed it, and be pleasantly surprised by the expertly placed balls of fluff. \n\nPool Floaties\n\nAesthetically pleasing and life-saving. If you were drowning in a puddle, perhaps.\n\nPool Floaties by baeator offers you a choice of four inflatable pool floatie hats that can be used in the helmet slot, each with varying stats to help you navigate the watery waves. To really give your playthrough an edge, the Goostarion Floatie Hat comes equipped with its own Astarion starting armour. Dye Astarion’s armour, and your Goostarion will match!\n\nEgg Magic: Clownify \n\nMade by Bugby128, consume a clown egg and learn the ability to use new cantrips that paint you with clown makeup. Nothing else to be said, really, beyond the fact that Bugby has undoubtedly dealt psychic harm by forcing the image of a clown laying an egg into our minds.\n\nWithers Big Naturals\n\nParticularly effective at generating hysteria when forgetting you have those puppies installed and arriving at the Dank Crypt. Thank you, MaybeeAdam, we wouldn’t have him any other way. \n\nCar Wildshape\n\nThanks to mod author wa_rouk, you can now recruit Carlach, Gale Decarios, Ascarion, Shadowkart, Vehicwyll, Lane’zel… Or the whole fleet, if you will. We have a soft spot for Carlach; she unfortunately has a penchant for vehicular manslaughter. \n\n \n\nHandsome Astarion\n\nA refined classic. Mod author FR05T has given Astarion a makeover, and it never fails to catch us off guard. Did you know he will also be handsome in his character portrait? Neither did we. \n\nAll-rounder Owlbear Beanie\n\nSee, we added this mod for the adorable beanies, not realising mod author chunyou had enchanted them with quite a few luck buffs. But who needs game balance when you can look this adorable? \n\nWant an owlbear beanie of your own? These are inspired by the very real Owlbear beanies you can find in the Larian merch store! \n\nSuch a Tease - a Raphael redressing mod & Raphameow (Raphael with cat ears)\n\nListen, we have no excuse for enabling these. He did say “down comes the claw”, he just didn’t specify it was one of his. Thanks to mod author kariimatcha for bringing Raphameow into the world, and props to mod author Nikjima for making it so that Raphael also has his collar unbuttoned in his true cambion form. Enjoyed by all.\n\nDinoScratch\n\nMod author chunyou has lovingly stitched together these adorable dinosaur pyjamas for Scratch, perfect for those cold camp nights. There’s nothing better than watching him run around in the background, wagging his dino tail, while Volo performs unlicensed surgery on us. \n\n \n\nPlasma Weapons - Darkh Set\n\nThis completely and utterly legally distinct mod made by mod author Skirbie, offers giant, dangerous, glowing swords to swing around, plus an array of other designs and themed clothing. \n\nSkirbie's Vintage Firearms Pack\n\nAlso thanks to Skirbie, we gave Gale a gun. Went as well as you’d imagine.\n\nBaldGate3\n\nIt is called BALDur’s Gate 3 after all. This mod by wa_rouk will make all companions (and other surprise important NPCs) bald. We think everyone pulls it off magnificently. \n\nEvelyn’s Monarch - Grenade Launcher\n\nNothing spices up a playthrough with your friends like a freak grenade launcher accident. Evelyn’s Monarch is available on consoles and PC, made by Skirbie, probably without the intention of turning everyone within a 5m range into a cloud of gore. \n\nIf you’re looking to bring the laughter (and pain) to your latest Baldur’s Gate 3 run, we’ve listed all of the mods being used on stream over on mod.io! Download the collection here.\n\nModding In Numbers\n\nAnd boy, are you modders busy bees. You’re closing out the year with 10,000 mods uploaded to mod.io, and over 350 million mod downloads! Give yourselves a pat on the back and a shot of whiskey.\n\nTo show our gratitude for all of your creativity, Swen has a few words to share:",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    },
+    "R136": {
+      "source": "news",
+      "raw_id": "1827626365770693",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693",
+      "date": "2026-03-26",
+      "text": "Hotfix #36 Now Live!\n\nHey folks, \n\nOur last small update, which aimed to resolve corrupted savegames affecting a number of players, seemed to have also introduced some performance issues that triggered crashes. Thank you for your patience while these were investigated!\n\nA fix is now rolling out for all platforms that addresses these performance issues and some other crashes and blockers that were still affecting players. \n\nFIXES\n\n- \nFixed a framerate drop and eventual crash when loading a savegame.\n[/*]\n- \nFixed several crashes.\n[/*]\n- \nFixed a bug on Xbox where tooltips in the Inventory and Trade windows wouldn't display correctly.\n[/*]\n- \nFixed a bug on Mac preventing you from progressing past Character Creation after starting a character introduction cinematic on Honour Mode.\n[/*]",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-06",
+        "from_snapshot": false
+      }
+    }
+  },
+  "chart": {
+    "series": [
+      {
+        "period": "2020-10-01",
+        "up": 19543,
+        "down": 2618,
+        "pct_negative": 11.8,
+        "ref": "R1"
+      },
+      {
+        "period": "2020-11-01",
+        "up": 4980,
+        "down": 452,
+        "pct_negative": 8.3,
+        "ref": "R2"
+      },
+      {
+        "period": "2020-12-01",
+        "up": 1747,
+        "down": 223,
+        "pct_negative": 11.3,
+        "ref": "R3"
+      },
+      {
+        "period": "2021-01-01",
+        "up": 1195,
+        "down": 189,
+        "pct_negative": 13.7,
+        "ref": "R4"
+      },
+      {
+        "period": "2021-02-01",
+        "up": 1263,
+        "down": 175,
+        "pct_negative": 12.2,
+        "ref": "R5"
+      },
+      {
+        "period": "2021-03-01",
+        "up": 1679,
+        "down": 219,
+        "pct_negative": 11.5,
+        "ref": "R6"
+      },
+      {
+        "period": "2021-04-01",
+        "up": 935,
+        "down": 155,
+        "pct_negative": 14.2,
+        "ref": "R7"
+      },
+      {
+        "period": "2021-05-01",
+        "up": 767,
+        "down": 145,
+        "pct_negative": 15.9,
+        "ref": "R8"
+      },
+      {
+        "period": "2021-06-01",
+        "up": 575,
+        "down": 134,
+        "pct_negative": 18.9,
+        "ref": "R9"
+      },
+      {
+        "period": "2021-07-01",
+        "up": 1008,
+        "down": 162,
+        "pct_negative": 13.8,
+        "ref": "R10"
+      },
+      {
+        "period": "2021-08-01",
+        "up": 810,
+        "down": 171,
+        "pct_negative": 17.4,
+        "ref": "R11"
+      },
+      {
+        "period": "2021-09-01",
+        "up": 671,
+        "down": 138,
+        "pct_negative": 17.1,
+        "ref": "R12"
+      },
+      {
+        "period": "2021-10-01",
+        "up": 1277,
+        "down": 196,
+        "pct_negative": 13.3,
+        "ref": "R13"
+      },
+      {
+        "period": "2021-11-01",
+        "up": 837,
+        "down": 131,
+        "pct_negative": 13.5,
+        "ref": "R14"
+      },
+      {
+        "period": "2021-12-01",
+        "up": 554,
+        "down": 113,
+        "pct_negative": 16.9,
+        "ref": "R15"
+      },
+      {
+        "period": "2022-01-01",
+        "up": 600,
+        "down": 153,
+        "pct_negative": 20.3,
+        "ref": "R16"
+      },
+      {
+        "period": "2022-02-01",
+        "up": 723,
+        "down": 161,
+        "pct_negative": 18.2,
+        "ref": "R17"
+      },
+      {
+        "period": "2022-03-01",
+        "up": 453,
+        "down": 104,
+        "pct_negative": 18.7,
+        "ref": "R18"
+      },
+      {
+        "period": "2022-04-01",
+        "up": 405,
+        "down": 123,
+        "pct_negative": 23.3,
+        "ref": "R19"
+      },
+      {
+        "period": "2022-05-01",
+        "up": 373,
+        "down": 108,
+        "pct_negative": 22.5,
+        "ref": "R20"
+      },
+      {
+        "period": "2022-06-01",
+        "up": 380,
+        "down": 147,
+        "pct_negative": 27.9,
+        "ref": "R21"
+      },
+      {
+        "period": "2022-07-01",
+        "up": 964,
+        "down": 234,
+        "pct_negative": 19.5,
+        "ref": "R22"
+      },
+      {
+        "period": "2022-08-01",
+        "up": 631,
+        "down": 121,
+        "pct_negative": 16.1,
+        "ref": "R23"
+      },
+      {
+        "period": "2022-09-01",
+        "up": 465,
+        "down": 106,
+        "pct_negative": 18.6,
+        "ref": "R24"
+      },
+      {
+        "period": "2022-10-01",
+        "up": 455,
+        "down": 158,
+        "pct_negative": 25.8,
+        "ref": "R25"
+      },
+      {
+        "period": "2022-11-01",
+        "up": 529,
+        "down": 119,
+        "pct_negative": 18.4,
+        "ref": "R26"
+      },
+      {
+        "period": "2022-12-01",
+        "up": 941,
+        "down": 116,
+        "pct_negative": 11.0,
+        "ref": "R27"
+      },
+      {
+        "period": "2023-01-01",
+        "up": 959,
+        "down": 107,
+        "pct_negative": 10.0,
+        "ref": "R28"
+      },
+      {
+        "period": "2023-02-01",
+        "up": 752,
+        "down": 82,
+        "pct_negative": 9.8,
+        "ref": "R29"
+      },
+      {
+        "period": "2023-03-01",
+        "up": 985,
+        "down": 105,
+        "pct_negative": 9.6,
+        "ref": "R30"
+      },
+      {
+        "period": "2023-04-01",
+        "up": 895,
+        "down": 82,
+        "pct_negative": 8.4,
+        "ref": "R31"
+      },
+      {
+        "period": "2023-05-01",
+        "up": 793,
+        "down": 75,
+        "pct_negative": 8.6,
+        "ref": "R32"
+      },
+      {
+        "period": "2023-06-01",
+        "up": 980,
+        "down": 78,
+        "pct_negative": 7.4,
+        "ref": "R33"
+      },
+      {
+        "period": "2023-07-01",
+        "up": 8513,
+        "down": 386,
+        "pct_negative": 4.3,
+        "ref": "R34"
+      },
+      {
+        "period": "2023-08-01",
+        "up": 174597,
+        "down": 7370,
+        "pct_negative": 4.1,
+        "ref": "R35"
+      },
+      {
+        "period": "2023-09-01",
+        "up": 66975,
+        "down": 2395,
+        "pct_negative": 3.5,
+        "ref": "R36"
+      },
+      {
+        "period": "2023-10-01",
+        "up": 29420,
+        "down": 1081,
+        "pct_negative": 3.5,
+        "ref": "R37"
+      },
+      {
+        "period": "2023-11-01",
+        "up": 87425,
+        "down": 1167,
+        "pct_negative": 1.3,
+        "ref": "R38"
+      },
+      {
+        "period": "2023-12-01",
+        "up": 31852,
+        "down": 1282,
+        "pct_negative": 3.9,
+        "ref": "R39"
+      },
+      {
+        "period": "2024-01-01",
+        "up": 29493,
+        "down": 1249,
+        "pct_negative": 4.1,
+        "ref": "R40"
+      },
+      {
+        "period": "2024-02-01",
+        "up": 18164,
+        "down": 801,
+        "pct_negative": 4.2,
+        "ref": "R41"
+      },
+      {
+        "period": "2024-03-01",
+        "up": 14453,
+        "down": 715,
+        "pct_negative": 4.7,
+        "ref": "R42"
+      },
+      {
+        "period": "2024-04-01",
+        "up": 9897,
+        "down": 443,
+        "pct_negative": 4.3,
+        "ref": "R43"
+      },
+      {
+        "period": "2024-05-01",
+        "up": 9534,
+        "down": 420,
+        "pct_negative": 4.2,
+        "ref": "R44"
+      },
+      {
+        "period": "2024-06-01",
+        "up": 8741,
+        "down": 388,
+        "pct_negative": 4.3,
+        "ref": "R45"
+      },
+      {
+        "period": "2024-07-01",
+        "up": 10734,
+        "down": 519,
+        "pct_negative": 4.6,
+        "ref": "R46"
+      },
+      {
+        "period": "2024-08-01",
+        "up": 9390,
+        "down": 403,
+        "pct_negative": 4.1,
+        "ref": "R47"
+      },
+      {
+        "period": "2024-09-01",
+        "up": 11140,
+        "down": 612,
+        "pct_negative": 5.2,
+        "ref": "R48"
+      },
+      {
+        "period": "2024-10-01",
+        "up": 7606,
+        "down": 334,
+        "pct_negative": 4.2,
+        "ref": "R49"
+      },
+      {
+        "period": "2024-11-01",
+        "up": 17253,
+        "down": 388,
+        "pct_negative": 2.2,
+        "ref": "R50"
+      },
+      {
+        "period": "2024-12-01",
+        "up": 20427,
+        "down": 1239,
+        "pct_negative": 5.7,
+        "ref": "R51"
+      },
+      {
+        "period": "2025-01-01",
+        "up": 9109,
+        "down": 427,
+        "pct_negative": 4.5,
+        "ref": "R52"
+      },
+      {
+        "period": "2025-02-01",
+        "up": 7103,
+        "down": 319,
+        "pct_negative": 4.3,
+        "ref": "R53"
+      },
+      {
+        "period": "2025-03-01",
+        "up": 7557,
+        "down": 295,
+        "pct_negative": 3.8,
+        "ref": "R54"
+      },
+      {
+        "period": "2025-04-01",
+        "up": 9508,
+        "down": 426,
+        "pct_negative": 4.3,
+        "ref": "R55"
+      },
+      {
+        "period": "2025-05-01",
+        "up": 7820,
+        "down": 366,
+        "pct_negative": 4.5,
+        "ref": "R56"
+      },
+      {
+        "period": "2025-06-01",
+        "up": 5873,
+        "down": 305,
+        "pct_negative": 4.9,
+        "ref": "R57"
+      },
+      {
+        "period": "2025-07-01",
+        "up": 6479,
+        "down": 315,
+        "pct_negative": 4.6,
+        "ref": "R58"
+      },
+      {
+        "period": "2025-08-01",
+        "up": 5799,
+        "down": 247,
+        "pct_negative": 4.1,
+        "ref": "R59"
+      },
+      {
+        "period": "2025-09-01",
+        "up": 5672,
+        "down": 334,
+        "pct_negative": 5.6,
+        "ref": "R60"
+      },
+      {
+        "period": "2025-10-01",
+        "up": 5596,
+        "down": 277,
+        "pct_negative": 4.7,
+        "ref": "R61"
+      },
+      {
+        "period": "2025-11-01",
+        "up": 11619,
+        "down": 249,
+        "pct_negative": 2.1,
+        "ref": "R62"
+      },
+      {
+        "period": "2025-12-01",
+        "up": 6637,
+        "down": 523,
+        "pct_negative": 7.3,
+        "ref": "R63"
+      },
+      {
+        "period": "2026-01-01",
+        "up": 7202,
+        "down": 503,
+        "pct_negative": 6.5,
+        "ref": "R64"
+      },
+      {
+        "period": "2026-02-01",
+        "up": 5097,
+        "down": 291,
+        "pct_negative": 5.4,
+        "ref": "R65"
+      },
+      {
+        "period": "2026-03-01",
+        "up": 5129,
+        "down": 298,
+        "pct_negative": 5.5,
+        "ref": "R66"
+      },
+      {
+        "period": "2026-04-01",
+        "up": 3909,
+        "down": 180,
+        "pct_negative": 4.4,
+        "ref": "R67"
+      },
+      {
+        "period": "2026-05-01",
+        "up": 4248,
+        "down": 270,
+        "pct_negative": 6.0,
+        "ref": "R68"
+      },
+      {
+        "period": "2026-06-01",
+        "up": 3718,
+        "down": 211,
+        "pct_negative": 5.4,
+        "ref": "R69"
+      },
+      {
+        "period": "2026-07-01",
+        "up": 4641,
+        "down": 260,
+        "pct_negative": 5.3,
+        "ref": "R70"
+      },
+      {
+        "period": "2026-08-01",
+        "up": 4972,
+        "down": 313,
+        "pct_negative": 5.9,
+        "ref": "R71"
+      },
+      {
+        "period": "2026-09-01",
+        "up": 4131,
+        "down": 210,
+        "pct_negative": 4.8,
+        "ref": "R72"
+      },
+      {
+        "period": "2026-10-01",
+        "up": 3676,
+        "down": 210,
+        "pct_negative": 5.4,
+        "ref": "R73"
+      },
+      {
+        "period": "2026-11-01",
+        "up": 535,
+        "down": 42,
+        "pct_negative": 7.3,
+        "ref": "R74"
+      }
+    ],
+    "patches": []
+  }
+}

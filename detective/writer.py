@@ -13,6 +13,9 @@ WRITER_PROMPT = """\
 Write a short report in markdown that answers the question, using only the findings you're given.
 The reader is a player deciding whether to buy or return to a game, or a developer studying it.
 
+Keep it under about 700 words. Cover the time window the question asks about; older events get
+at most one or two lines of background.
+
 Structure, in this order:
 1. A heading that restates the question, then a one-paragraph answer: what changed, when, and why.
 2. **Timeline**: dated bullets, what happened when (updates, review spikes, player-count changes).
@@ -25,6 +28,7 @@ Structure, in this order:
 
 Citations:
 - End every sentence that states a fact with the evidence ids from its finding, like [R3] or [R3][R7].
+  Cite at most 3 ids per sentence: pick the most direct ones.
 - Use only ids that appear in the findings. Never invent one, never renumber them.
 - Don't add facts, numbers or dates that aren't in the findings or the evidence list.
 

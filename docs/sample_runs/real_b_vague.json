@@ -1,0 +1,18 @@
+{
+  "question": "这游戏怎么样？",
+  "seconds": 2.0,
+  "tool_calls_per_agent": {},
+  "agent_timings_s": {
+    "Clarifier": [
+      0.0,
+      2.0
+    ]
+  },
+  "cited": [],
+  "cited_but_missing": [],
+  "response": "请问您指的是哪款 Steam 游戏呢？另外，您想了解这款游戏的哪些方面（例如：近期的玩家评价、新老玩家的看法、是否值得购买等）？",
+  "session_id": "332aca75-d1c2-4616-ac1f-2d944796d500",
+  "tool_calls": [],
+  "evidence": {},
+  "chart": null
+}

@@ -2,6 +2,7 @@
 
 import asyncio
 import json
+import os
 from types import SimpleNamespace
 
 import pytest
@@ -45,11 +46,35 @@ def test_evidence_store():
 # --- Fake tools ---
 
 
+FAKE = {real.name: fakes.fake_tool(real) for real in REAL}
+
+
+def test_real_tools_are_the_default():
+    if os.environ.get("USE_FAKE_TOOLS") is None:
+        assert not tools.USE_FAKE_TOOLS
+        for real in REAL:  # the real tool, wrapped only by clean_dates
+            assert getattr(tools, real.name).params_json_schema == real.params_json_schema
+
+
+def test_clean_dates_repairs_glued_arguments():
+    seen = []
+
+    async def fake_invoke(ctx, input_json):
+        seen.append(json.loads(input_json))
+        return "ok"
+
+    import dataclasses
+    tool = tools.clean_dates(dataclasses.replace(REAL[4], on_invoke_tool=fake_invoke))
+    run(tool.on_invoke_tool(None, json.dumps({"start": "2026-08-06", "end": "2026-11-06,language:", "language": "schinese"})))
+    run(tool.on_invoke_tool(None, json.dumps({"start": "2026-8-6", "end": "2026-11-06ʿ,language:"})))
+    assert seen[0] == {"start": "2026-08-06", "end": "2026-11-06", "language": "schinese"}
+    assert seen[1] == {"start": "2026-8-6", "end": "2026-11-06"}  # not a date: left for the tool to reject
+
+
 def test_fakes_keep_the_real_schemas():
-    assert tools.USE_FAKE_TOOLS
     assert len(tools.__all__) == 8
     for real in REAL:
-        fake = getattr(tools, real.name)
+        fake = FAKE[real.name]
         assert fake is not real
         assert fake.params_json_schema == real.params_json_schema
         assert fake.description == real.description
@@ -57,7 +82,7 @@ def test_fakes_keep_the_real_schemas():
 
 def test_fakes_return_refs_from_the_store():
     state = Research(hooks=TraceHooks())
-    out = json.loads(run(tools.sample_reviews.on_invoke_tool(
+    out = json.loads(run(FAKE["sample_reviews"].on_invoke_tool(
         tool_ctx(state, "sample_reviews", {}),
         json.dumps({"appid": fakes.APPID, "start": "2026-09-09", "end": "2026-09-20", "review_type": "negative",
                     "language": "schinese", "min_hours": None, "max_hours": None, "limit": 5}),
@@ -66,7 +91,7 @@ def test_fakes_return_refs_from_the_store():
     assert all(r["language"] == "schinese" and not r["positive"] for r in out["reviews"])
     assert all(state.store.get(r["ref"]) for r in out["reviews"])
 
-    trend = json.loads(run(tools.get_review_trend.on_invoke_tool(tool_ctx(state, "get_review_trend", {}),
+    trend = json.loads(run(FAKE["get_review_trend"].on_invoke_tool(tool_ctx(state, "get_review_trend", {}),
                                                                   json.dumps({"appid": fakes.APPID, "language": "all"}))))
     assert trend["spikes"][0]["period"] == "2026-09-07"
     assert state.chart and state.chart["series"]

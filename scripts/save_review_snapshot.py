@@ -1,7 +1,7 @@
 
 import asyncio
 
-from tools.steam_reviews import fetch_review_pages
+from tools.steam_reviews import fetch_review_pages, review_snapshot_name
 from tools.http import save_snapshot, close_client
 
 
@@ -26,7 +26,8 @@ async def main():
         # Save the response and its query parameters
         path = save_snapshot(
             appid,
-            "reviews_negative_english_2026_10",
+            # Named after the query, so sample_reviews finds it (scripts/make_snapshot.py does this for any window)
+            review_snapshot_name(params["review_type"], params["language"], params["start"], params["end"]),
             {
                 "params": params,
                 "data": result

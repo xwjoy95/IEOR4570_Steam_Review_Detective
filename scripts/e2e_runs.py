@@ -13,13 +13,16 @@ sys.path.insert(0, str(ROOT))
 from fastapi.testclient import TestClient  # noqa: E402
 
 import app  # noqa: E402
+import tools  # noqa: E402
 from detective.hooks import TraceHooks  # noqa: E402
 
 OUT = ROOT / "docs" / "sample_runs"
+PREFIX = "" if tools.USE_FAKE_TOOLS else "real_"  # fake runs keep the old names
 
 # name, question, continue the previous run's session?
+GAME = "Ashen Frontier" if tools.USE_FAKE_TOOLS else "Baldur's Gate 3"
 RUNS = [
-    ("a_clear", "Ashen Frontier 最近差评暴增，是哪次更新导致的？玩家具体在骂什么？", False),
+    ("a_clear", f"{GAME}最近几个月口碑有什么变化？是哪次更新导致的？玩家在抱怨什么？", False),
     ("b_vague", "这游戏怎么样？", False),
     ("c_followup", "那中文玩家和英文玩家的不满一样吗？", "a_clear"),
 ]
@@ -49,7 +52,7 @@ def main() -> None:
         data = r.json()
         if r.status_code != 200:
             print(name, r.status_code, data)
-            (OUT / f"{name}.json").write_text(json.dumps({"question": question, "status": r.status_code, "error": data}, ensure_ascii=False, indent=2))
+            (OUT / f"{PREFIX}{name}.json").write_text(json.dumps({"question": question, "status": r.status_code, "error": data}, ensure_ascii=False, indent=2))
             continue
         sessions[name] = data["session_id"]
         hooks = created[-1]
@@ -65,7 +68,7 @@ def main() -> None:
             "cited_but_missing": [c for c in cited if c not in data["evidence"]],
             **data,
         }
-        (OUT / f"{name}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
+        (OUT / f"{PREFIX}{name}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
         print(f"== {name}: {elapsed}s, {record['tool_calls_per_agent']}, cited {len(cited)}, missing {record['cited_but_missing']}")
         print(json.dumps(timings))
         print(data["response"][:1500], "\n")

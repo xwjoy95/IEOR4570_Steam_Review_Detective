@@ -7,6 +7,7 @@ snapshot script. Tool handlers always register evidence in the current run.
 import asyncio
 import html
 import json
+import os
 import re
 from datetime import date, datetime, time, timedelta, timezone
 from html.parser import HTMLParser
@@ -54,6 +55,10 @@ def _envelope(appid: int, source: str, params: dict, data: dict, **extra) -> dic
 
 
 def _persist(appid: int, name: str, snapshot: dict) -> list[str]:
+    # Opt-in (added by Jiashu, for B to review): tools don't write snapshots during normal runs, so
+    # running the app doesn't change tracked files. scripts/make_snapshot.py saves them instead.
+    if os.environ.get("SAVE_SNAPSHOTS") != "1":
+        return []
     try:
         http.save_snapshot(appid, name, snapshot)
         return []

@@ -1,5 +1,7 @@
 """The whole run: clarify -> plan and research in parallel (with gap rounds) -> write -> check citations."""
 
+from datetime import date
+
 from agents import MaxTurnsExceeded, Runner
 
 from detective.lead import Clarification, clarifier, lead
@@ -20,6 +22,7 @@ def clarifier_input(question: str, history: list[dict], last_games: list[dict]) 
     if last_games:
         lines.append("Game(s) from the previous question: " + "; ".join(f"{g['name']} (appid {g['appid']})" for g in last_games))
         lines.append("")
+    lines.append(f"Today: {date.today().isoformat()}")
     lines.append(f"Question: {question}")
     return "\n".join(lines)
 
@@ -42,7 +45,7 @@ async def deep_research(question: str, history: list[dict], research: Research, 
 
     # 2. Research: the Lead plans, fans out researchers in parallel, and goes back for gaps.
     games = "; ".join(f"{g['name']} (appid {g['appid']})" for g in research.games)
-    prompt = f"Question: {question}\nGame: {games}\nFocus: {clarification.focus or question}"
+    prompt = f"Today: {date.today().isoformat()}\nQuestion: {question}\nGame: {games}\nFocus: {clarification.focus or question}"
     if clarification.window:
         prompt += f"\nWindow: {' to '.join(clarification.window)}"
     try:

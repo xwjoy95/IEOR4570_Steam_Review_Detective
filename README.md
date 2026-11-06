@@ -7,7 +7,8 @@ researchers check player reviews, patch notes and player counts in parallel, and
 their findings into a report where every fact cites a review, announcement or data point `[R12]`.
 
 Status: the agents work end to end on fake data. B's real search, store details, announcements and
-shared HTTP/snapshot layer are implemented and validated live and offline. A/C tools remain stubs.
+shared HTTP/snapshot layer are implemented and validated live and offline. A's review tools and C's
+player tools (SteamSpy, current players, SteamCharts) are implemented too.
 See [B's integration notes](docs/member_b.md) and [validation results](docs/b_validation.json).
 
 ## Target users
@@ -64,9 +65,9 @@ uv run pytest                 # offline: no model calls, no network
 uv run scripts/e2e_runs.py    # 3 real runs with Gemini; saves responses to docs/sample_runs/
 ```
 
-`USE_FAKE_TOOLS=1` (the default for now) runs every tool on the fictional fake data in
-`tools/fakes.py` ("Ashen Frontier", appid 2999990), with the real tools' names and schemas. Set
-`USE_FAKE_TOOLS=0` in `.env` once all teammates' real tools work. To validate B's real tools independently
+The tools use real Steam data by default. `USE_FAKE_TOOLS=1` runs every tool on the fictional fake data in
+`tools/fakes.py` ("Ashen Frontier", appid 2999990, no network), with the real tools' names and schemas. Save demo games' data for offline fallback with
+`uv run scripts/make_snapshot.py <appid> --start YYYY-MM-DD --end YYYY-MM-DD`. To validate B's real tools independently
 of that switch (no model credentials or Steam key required):
 
 ```bash

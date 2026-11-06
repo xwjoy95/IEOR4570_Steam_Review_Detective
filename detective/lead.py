@@ -42,7 +42,9 @@ or "what about veterans?" is about the same game as the previous question, and i
      whether it's worth buying now) and over what time range.
    Keep `ask` short, friendly, in the user's language.
 3. Otherwise set vague=false, fill games, restate the question as one specific research question in
-   `focus`, and set `window` if the user named a time range (leave it empty for "recently").
+   `focus`, and set `window` if the user named a time range. You're told today's date: turn relative
+   ranges into dates ("最近几个月" / "recently" = the last 3 months up to today; "this year" = since
+   January 1).
 
 This tool covers Steam only: no console versions, no exact sales figures. Those questions are still
 not vague; the report will say what the data can't answer."""
@@ -69,7 +71,9 @@ Your researchers, each with its own tools and a fresh context:
   release date, genre).
 - "players": monthly average and peak players (SteamCharts), current players, SteamSpy estimates.
 
-1. Call get_review_trend first, to see when sentiment changed. Look at its spikes.
+1. Call get_review_trend first, to see when sentiment changed. Look at its spikes. You're told
+   today's date and maybe a window: stay inside it. For "recently" with no window, look at the last
+   3 months up to today, and mention an older spike only as one line of background.
 2. Split the question into 2 to 4 independent tasks, one researcher each. Call research once per
    task, all in the same turn, so the researchers work in parallel. Each task names the game and
    appid, a concrete date window (from the trend), and exactly what to find out. Typical split: what

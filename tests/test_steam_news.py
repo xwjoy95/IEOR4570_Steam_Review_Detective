@@ -44,6 +44,7 @@ def call(tool, research=None, **args):
 @pytest.fixture(autouse=True)
 def isolate(monkeypatch, tmp_path):
     monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
+    monkeypatch.setenv("SAVE_SNAPSHOTS", "1")  # these tests check B's snapshot writes; off by default
     async def blocked(*args, **kwargs):
         raise httpx.ConnectError("simulated offline")
     monkeypatch.setattr(http, "get_json", blocked)
@@ -300,3 +301,12 @@ def test_malformed_live_and_corrupt_snapshot(monkeypatch):
         return {"appnews": {"newsitems": [{"gid": "bad", "date": "yesterday"}]}}
     monkeypatch.setattr(http, "get_json", malformed)
     assert call(news.get_patch_notes, appid=APPID, start=START, end=END, official_only=True)["error"] == "unavailable"
+
+
+def test_tools_do_not_write_snapshots_by_default(monkeypatch):
+    monkeypatch.delenv("SAVE_SNAPSHOTS")
+    async def fake(url, params):
+        return sample("details")
+    monkeypatch.setattr(http, "get_json", fake)
+    assert call(news.get_game_info, state(), appid=APPID)["ok"]
+    assert http.load_snapshot(APPID, "appdetails") is None

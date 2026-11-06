@@ -1,6 +1,6 @@
 """Fake data for all 8 tools, so the agents run end to end before the real tools exist.
 
-Turned on by USE_FAKE_TOOLS=1 (the default while the real tools are stubs). Each fake keeps the real
+Turned on by USE_FAKE_TOOLS=1 (off by default). Each fake keeps the real
 tool's name, description and parameter schema (it is the real FunctionTool with a different body),
 so swapping in the real tools changes nothing on the agent side.
 

@@ -19,8 +19,98 @@ import json
 from agents import RunContextWrapper, function_tool
 
 from detective.state import Research
+from tools import http as _http
 from tools.http import get_json, error, load_snapshot, not_implemented
 from datetime import datetime, timezone
+
+# Review sample snapshots (written by scripts/make_snapshot.py, read by sample_reviews as a fallback).
+LEGACY_REVIEW_SNAPSHOTS = ("reviews_negative_english_2026_10",)  # saved before names carried the query
+
+
+def review_snapshot_name(review_type: str, language: str, start: str, end: str) -> str:
+    """Snapshot name for one sample_reviews query, e.g. reviews_negative_english_2026-08-01_2026-10-31."""
+    clean = lambda v: "".join(c if c.isalnum() or c in "-" else "-" for c in str(v))
+    return f"reviews_{clean(review_type)}_{clean(language)}_{clean(start)}_{clean(end)}"
+
+
+def _review_day(review: dict) -> str:
+    return datetime.fromtimestamp(review["timestamp_created"], tz=timezone.utc).strftime("%Y-%m-%d")
+
+
+def _valid_review_snapshot(snapshot, appid: int) -> bool:
+    params = (snapshot or {}).get("params") or {}
+    data = (snapshot or {}).get("data")
+    return (
+        params.get("appid") == appid
+        and all(isinstance(params.get(k), str) for k in ("start", "end", "review_type", "language"))
+        and isinstance(data, dict)
+        and isinstance(data.get("reviews"), list)
+        and isinstance(data.get("sampled"), bool)
+        and isinstance(data.get("pages_fetched"), int)
+        and isinstance(snapshot.get("as_of"), str)
+    )
+
+
+def find_review_snapshot(appid: int, start: str, end: str, review_type: str, language: str) -> dict | None:
+    """The best saved review sample for this query, already narrowed to it, or None.
+
+    Order: the exact query's snapshot (or a legacy one with identical params); then any review
+    snapshot for this appid that is at least as broad (review_type "all" or the same; language "all"
+    or the same) and whose window overlaps the request, preferring full coverage, then more overlap.
+    Returns {"as_of", "data": {reviews, total_matching, pages_fetched, sampled}, "window": [s, e],
+    "exact": bool}; "window" is the part of the request the snapshot covers.
+    """
+    query = {"appid": appid, "start": start, "end": end, "review_type": review_type, "language": language}
+    for name in (review_snapshot_name(review_type, language, start, end), *LEGACY_REVIEW_SNAPSHOTS):
+        snapshot = load_snapshot(appid, name)
+        if _valid_review_snapshot(snapshot, appid) and snapshot["params"] == query:
+            return {"as_of": snapshot["as_of"], "data": snapshot["data"], "window": [start, end], "exact": True}
+
+    candidates = []
+    folder = _http.SNAPSHOT_DIR / str(appid)
+    for path in sorted(folder.glob("reviews_*.json")) if folder.is_dir() else []:
+        snapshot = load_snapshot(appid, path.stem)
+        if not _valid_review_snapshot(snapshot, appid):
+            continue
+        params = snapshot["params"]
+        if params["review_type"] not in ("all", review_type) or params["language"] not in ("all", language):
+            continue
+        lo, hi = max(start, params["start"]), min(end, params["end"])
+        if lo > hi:
+            continue
+        reviews = []
+        for review in snapshot["data"]["reviews"]:
+            try:
+                day = _review_day(review)
+            except (KeyError, TypeError, ValueError, OSError):
+                continue
+            if not lo <= day <= hi:
+                continue
+            if review_type != "all" and bool(review.get("voted_up")) != (review_type == "positive"):
+                continue
+            if language != "all" and review.get("language") != language:
+                continue
+            reviews.append(review)
+        covers = params["start"] <= start and end <= params["end"]
+        # Filtering a complete snapshot that covers the whole request is still complete; a sampled
+        # snapshot, or one that covers only part of the request, gives a sample.
+        complete = covers and not snapshot["data"]["sampled"]
+        candidates.append((covers, hi, -len(reviews), {
+            "as_of": snapshot["as_of"],
+            "data": {
+                "reviews": reviews,
+                "total_matching": len(reviews) if complete else None,
+                "pages_fetched": snapshot["data"]["pages_fetched"],
+                "sampled": not complete,
+            },
+            "window": [lo, hi],
+            "exact": False,
+        }))
+    if not candidates:
+        return None
+    # Full coverage first, then the latest-ending overlap, then the most reviews.
+    candidates.sort(key=lambda c: (c[0], c[1], -c[2]), reverse=True)
+    return candidates[0][3]
 
 
 def calculate_review_trend(data: dict) -> dict:
@@ -316,7 +406,8 @@ async def get_review_trend(ctx: RunContextWrapper[Research], appid: int, languag
 
     Args:
         appid: The Steam app id.
-        language: "all", "english", "schinese", "tchinese", ...
+        language: Only "all" is supported: the histogram counts every language together. For a
+            language comparison, use review_stats with group_by="language".
 
     Returns {"ok", "appid", "granularity", "series": [{period, up, down, pct_negative}],
     "spikes": [{period, pct_negative, baseline}], "source", "as_of", "from_snapshot"}.
@@ -495,6 +586,7 @@ async def sample_reviews(
         }
 
         from_snapshot = False
+        snapshot_window = None
         as_of = datetime.now(timezone.utc).date().isoformat()
 
         try:
@@ -505,36 +597,20 @@ async def sample_reviews(
             )
 
         except Exception as live_error:
-            # Fall back only to a snapshot matching the query
-            snapshot = load_snapshot(
-                appid,
-                "reviews_negative_english_2026_10"
-            )
+            # Fall back to a saved sample for this query, or a broader one that overlaps it
+            snapshot = find_review_snapshot(appid, start, end, review_type, language)
 
-            if snapshot is None or snapshot.get("params") != query:
+            if snapshot is None:
                 return error(
                     "fetch_failed",
                     f"Live request failed and no matching snapshot exists: {live_error}",
                     source
                 )
 
-            page_data = snapshot.get("data")
-
-            if (
-                not isinstance(page_data, dict)
-                or not isinstance(page_data.get("reviews"), list)
-                or not isinstance(page_data.get("sampled"), bool)
-                or not isinstance(page_data.get("pages_fetched"), int)
-                or not isinstance(snapshot.get("as_of"), str)
-            ):
-                return error(
-                    "invalid_snapshot",
-                    "Saved review data is invalid.",
-                    source
-                )
-
+            page_data = snapshot["data"]
             from_snapshot = True
             as_of = snapshot["as_of"]
+            snapshot_window = snapshot["window"]
 
         # Filter reviews by playtime at the time of review
         filtered = []
@@ -623,7 +699,9 @@ async def sample_reviews(
             "reviews": output_reviews,
             "source": source,
             "as_of": as_of,
-            "from_snapshot": from_snapshot
+            "from_snapshot": from_snapshot,
+            # With a snapshot, the part of the requested window the saved sample covers
+            **({"snapshot_window": snapshot_window} if from_snapshot else {})
         }
 
     except ValueError as exc:

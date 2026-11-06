@@ -391,3 +391,90 @@ def test_review_stats_snapshot_fallback(
         state.store.get(item["ref"]) is not None
         for item in groups
     )
+
+
+# --- Snapshot naming and fallback for sample_reviews (Jiashu) ---
+
+
+def _review(rid, day, up, lang="english", minutes=600):
+    ts = int(datetime.fromisoformat(day).replace(tzinfo=timezone.utc).timestamp())
+    return {"recommendationid": rid, "author": {"steamid": "765611980" + rid, "playtime_at_review": minutes},
+            "language": lang, "review": f"review {rid}", "timestamp_created": ts, "voted_up": up,
+            "weighted_vote_score": 0.5, "votes_up": 1}
+
+
+def _save_reviews(appid, name, params, reviews, as_of="2026-11-06"):
+    http.save_snapshot(appid, name, {"as_of": as_of, "params": {"appid": appid, **params},
+                                     "data": {"reviews": reviews, "total_matching": len(reviews),
+                                              "pages_fetched": 1, "sampled": False}})
+
+
+def _sample_offline(monkeypatch, **args):
+    async def failed_fetch(*a, **k):
+        raise RuntimeError("offline")
+    monkeypatch.setattr(steam_reviews, "fetch_review_pages", failed_fetch)
+    full = {"appid": 1086940, "review_type": "negative", "language": "all", "min_hours": None,
+            "max_hours": None, "limit": 40, **args}
+    ctx = ToolContext(context=Research(hooks=TraceHooks()), tool_name="sample_reviews",
+                      tool_call_id="snap", tool_arguments=json.dumps(full))
+    return asyncio.run(steam_reviews.sample_reviews.on_invoke_tool(ctx, json.dumps(full)))
+
+
+def test_review_snapshot_name():
+    assert steam_reviews.review_snapshot_name("negative", "schinese", "2026-08-01", "2026-10-31") == \
+        "reviews_negative_schinese_2026-08-01_2026-10-31"
+    assert steam_reviews.review_snapshot_name("all", "en/../x", "2026-08-01", "2026-10-31") == \
+        "reviews_all_en----x_2026-08-01_2026-10-31"  # filename-safe
+
+
+def test_sample_reviews_exact_snapshot(monkeypatch, tmp_path):
+    monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
+    params = {"start": "2026-09-01", "end": "2026-09-30", "review_type": "negative", "language": "english"}
+    _save_reviews(1086940, steam_reviews.review_snapshot_name("negative", "english", "2026-09-01", "2026-09-30"),
+                  params, [_review("1", "2026-09-10", False)])
+    out = _sample_offline(monkeypatch, start="2026-09-01", end="2026-09-30", language="english")
+    assert out["ok"] and out["from_snapshot"] and out["total_in_range"] == 1
+    assert out["snapshot_window"] == ["2026-09-01", "2026-09-30"]
+
+
+def test_sample_reviews_broader_overlapping_snapshot(monkeypatch, tmp_path):
+    monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
+    # A broad sample: all types, all languages, Aug-Oct
+    params = {"start": "2026-08-01", "end": "2026-10-31", "review_type": "all", "language": "all"}
+    reviews = [_review("1", "2026-08-15", False), _review("2", "2026-09-10", False),
+               _review("3", "2026-09-12", True), _review("4", "2026-09-20", False, "schinese"),
+               _review("5", "2026-10-30", False)]
+    _save_reviews(1086940, steam_reviews.review_snapshot_name("all", "all", "2026-08-01", "2026-10-31"), params, reviews)
+
+    out = _sample_offline(monkeypatch, start="2026-09-01", end="2026-09-30", language="english")
+    assert out["ok"] and out["from_snapshot"]
+    assert [r["text"] for r in out["reviews"]] == ["review 2"]  # negative, English, in September only
+    assert out["sampled"] is False and out["total_in_range"] == 1  # a complete snapshot, narrowed, is still complete
+
+    # Partial overlap: request runs past the snapshot's end
+    out = _sample_offline(monkeypatch, start="2026-10-15", end="2026-11-05")
+    assert out["snapshot_window"] == ["2026-10-15", "2026-10-31"] and len(out["reviews"]) == 1
+    assert out["sampled"] is True and out["total_in_range"] is None  # only part of the window: a sample
+
+    # A narrower snapshot can't answer a broader query; no overlap -> error
+    assert _sample_offline(monkeypatch, start="2025-01-01", end="2025-01-31")["error"] == "fetch_failed"
+
+
+def test_sample_reviews_prefers_full_coverage(monkeypatch, tmp_path):
+    monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
+    _save_reviews(1086940, "reviews_negative_all_2026-09-15_2026-09-30",
+                  {"start": "2026-09-15", "end": "2026-09-30", "review_type": "negative", "language": "all"},
+                  [_review("1", "2026-09-20", False)])
+    _save_reviews(1086940, "reviews_negative_all_2026-08-01_2026-10-31",
+                  {"start": "2026-08-01", "end": "2026-10-31", "review_type": "negative", "language": "all"},
+                  [_review("2", "2026-09-05", False), _review("3", "2026-09-25", False)])
+    out = _sample_offline(monkeypatch, start="2026-09-01", end="2026-09-30")
+    assert out["snapshot_window"] == ["2026-09-01", "2026-09-30"] and len(out["reviews"]) == 2
+
+
+def test_sample_reviews_legacy_snapshot_name(monkeypatch, tmp_path):
+    monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
+    params = {"start": "2026-10-01", "end": "2026-10-31", "review_type": "negative", "language": "english"}
+    _save_reviews(1086940, "reviews_negative_english_2026_10", params, [_review("1", "2026-10-03", False)])
+    out = _sample_offline(monkeypatch, start="2026-10-01", end="2026-10-31", language="english")
+    assert out["ok"] and out["from_snapshot"] and len(out["reviews"]) == 1
