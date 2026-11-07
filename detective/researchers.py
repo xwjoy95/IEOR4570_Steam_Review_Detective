@@ -69,7 +69,7 @@ Tool parameter rules:
 
 {_RULES}"""
 
-# TODO(B): owner please review
+# Steam announcements and store details.
 PATCHES_PROMPT = f"""\
 You are the Patch Historian on a team investigating why a Steam game's player sentiment changed.
 You read the developer's announcements and patch notes, and the game's store details.

@@ -142,10 +142,11 @@ def test_long_retry_after_and_overall_timeout(monkeypatch):
 
 
 def test_snapshots_roundtrip_corruption_and_credentials(tmp_path):
-    data = {"params": {"appid": 42}, "data": {"name": "测试"}, "as_of": "2026-01-01"}
+    data = {"params": {"appid": 42}, "data": {"name": "\u6d4b\u8bd5"}, "as_of": "2026-01-01"}
     path = http.save_snapshot(42, "appdetails", data)
     assert "captured_at" not in data
     assert http.load_snapshot(42, "appdetails")["as_of"] == "2026-01-01"
+    assert http.load_snapshot(42, "appdetails")["data"] == data["data"]
     assert http.load_snapshot(42, "missing") is None
     assert not list(path.parent.glob("*.tmp"))
     path.write_text("broken JSON", encoding="utf-8")

@@ -1,13 +1,13 @@
-"""B's real Steam tools. Public endpoints only; no API keys are read or sent.
+"""Steam game search, store details, and developer announcements.
 
-Public fetch_game_details/fetch_news_window return raw snapshot envelopes for C's
-snapshot script. Tool handlers always register evidence in the current run.
+Public endpoints require no API key. Tools register evidence in the current run
+and read snapshots on failure. scripts/make_snapshot.py writes snapshots through
+fetch_game_details and fetch_news_window.
 """
 
 import asyncio
 import html
 import json
-import os
 import re
 from datetime import date, datetime, time, timedelta, timezone
 from html.parser import HTMLParser
@@ -54,18 +54,6 @@ def _envelope(appid: int, source: str, params: dict, data: dict, **extra) -> dic
             "as_of": now.date().isoformat(), "captured_at": now.isoformat(), "data": data, **extra}
 
 
-def _persist(appid: int, name: str, snapshot: dict) -> list[str]:
-    # Opt-in (added by Jiashu, for B to review): tools don't write snapshots during normal runs, so
-    # running the app doesn't change tracked files. scripts/make_snapshot.py saves them instead.
-    if os.environ.get("SAVE_SNAPSHOTS") != "1":
-        return []
-    try:
-        http.save_snapshot(appid, name, snapshot)
-        return []
-    except (OSError, ValueError):
-        return ["Live data is available, but the local snapshot could not be saved."]
-
-
 def _valid_snapshot(snap: dict | None, appid: int, source: str) -> bool:
     if not snap or snap.get("appid") != appid or snap.get("source") != source:
         return False
@@ -107,7 +95,7 @@ async def _details(appid: int) -> tuple[dict, bool, list[str]]:
             raise ValueError("Live details unavailable and no matching US/English snapshot exists") from None
         _details_data(snap["data"], appid)
         return snap, True, ["Live details unavailable; using the dated local snapshot."]
-    return snap, False, _persist(appid, "appdetails", snap)
+    return snap, False, []
 
 
 def _release(data: dict) -> tuple[str | None, str | None]:
@@ -374,8 +362,6 @@ async def get_patch_notes(ctx: RunContextWrapper[Research], appid: int, start: s
             saved = _news_snapshot(appid, start, end, official_only)
             if saved:
                 snap, fallback = saved, True
-        if not fallback and snap["coverage"]["complete"]:
-            warnings += _persist(appid, "news_official" if official_only else "news_all", snap)
     except _IO_ERRORS:
         snap = _news_snapshot(appid, start, end, official_only)
         fallback = True
@@ -395,7 +381,7 @@ async def get_patch_notes(ctx: RunContextWrapper[Research], appid: int, start: s
         title = clean_markup(row.get("title", ""))
         text = clean_markup(row["contents"])
         url = row.get("url") or f"https://store.steampowered.com/news/app/{appid}/view/{gid}"
-        kind = "patch_notes" if "patchnotes" in (row.get("tags") or []) or re.search(r"\b(patch|hotfix)\b|补丁|修复", title, re.I) else "announcement"
+        kind = "patch_notes" if "patchnotes" in (row.get("tags") or []) or re.search(r"\b(patch|hotfix)\b|\u8865\u4e01|\u4fee\u590d", title, re.I) else "announcement"
         ref = ctx.context.store.add("news", gid, url, published, title + "\n\n" + text,
                                     {"official": official, "kind": kind, "feed": row.get("feedname"),
                                      "as_of": snap["as_of"], "from_snapshot": fallback})

@@ -1,10 +1,9 @@
-"""Offline B-tool contracts. Captured responses are read from data/samples/b.
+"""Offline tests for Steam search, store details, and announcements.
 
-Mutations below (free game, duplicate times, malformed rows, etc.) are synthetic
-edge cases, never presented as real Steam observations.
+Real responses captured on 2026-11-06 are in tests/fixtures/steam_news/.
+Mutations below are synthetic edge cases, not real Steam observations.
 """
 import asyncio
-import copy
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -17,13 +16,13 @@ from agents.tool_context import ToolContext
 from evidence import EvidenceStore
 from tools import http, steam_news as news
 
-SAMPLES = Path(__file__).resolve().parents[1] / "data" / "samples" / "b"
+FIXTURES = Path(__file__).parent / "fixtures" / "steam_news"
 APPID = 1086940
 START, END = "2026-03-01", "2026-03-31"
 
 
 def sample(name):
-    return json.loads((SAMPLES / f"{name}.json").read_text(encoding="utf-8"))["data"]
+    return json.loads((FIXTURES / f"{name}.json").read_text(encoding="utf-8"))
 
 
 def state():
@@ -44,7 +43,6 @@ def call(tool, research=None, **args):
 @pytest.fixture(autouse=True)
 def isolate(monkeypatch, tmp_path):
     monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
-    monkeypatch.setenv("SAVE_SNAPSHOTS", "1")  # these tests check B's snapshot writes; off by default
     async def blocked(*args, **kwargs):
         raise httpx.ConnectError("simulated offline")
     monkeypatch.setattr(http, "get_json", blocked)
@@ -52,7 +50,7 @@ def isolate(monkeypatch, tmp_path):
 
 def details_snap(data=None):
     return news._envelope(APPID, news.DETAILS_URL,
-                          {"appids": APPID, "cc": "US", "l": "english"}, data or sample("details"))
+                          {"appids": APPID, "cc": "US", "l": "english"}, data or sample("appdetails_1086940"))
 
 
 def news_row(gid="1", day="2026-03-15", feed=news.OFFICIAL_FEED, **kwargs):
@@ -68,13 +66,13 @@ def news_snap(rows, official=True, complete=True, start=START, end=END):
 
 
 def test_search_verifies_real_app_type_and_deduplicates(monkeypatch):
-    raw = sample("search")
+    raw = sample("search_bg3")
     raw["items"] += raw["items"][:1]
     async def fake(url, params):
         if url == news.SEARCH_URL:
             return raw
         appid = params["appids"]
-        doc = sample("details")
+        doc = sample("appdetails_1086940")
         data = doc[str(APPID)]["data"]
         data["steam_appid"] = appid
         data["type"] = {APPID: "game", 2378500: "dlc", 2956320: "tool"}[appid]
@@ -91,7 +89,7 @@ def test_search_ambiguity_keeps_two_games(monkeypatch):
         if url == news.SEARCH_URL:
             return {"items": [{"id": APPID}, {"id": APPID + 1}]}
         appid = params["appids"]
-        doc = sample("details")[str(APPID)]
+        doc = sample("appdetails_1086940")[str(APPID)]
         doc["data"]["steam_appid"] = appid
         doc["data"]["name"] = f"Example {appid}"
         return {str(appid): doc}
@@ -103,7 +101,7 @@ def test_search_ambiguity_keeps_two_games(monkeypatch):
 def test_search_empty_success_differs_from_network_failure(monkeypatch):
     assert not call(news.search_game, query="No local games", limit=5)["ok"]
     async def empty(*args, **kwargs):
-        return sample("search_dlc")
+        return sample("search_empty")
     monkeypatch.setattr(http, "get_json", empty)
     out = call(news.search_game, query="Missing", limit=5)
     assert out["ok"] and out["results"] == [] and not out["from_snapshot"]
@@ -132,7 +130,7 @@ def test_search_invalid(query, limit):
 def test_details_captured_facts_and_full_evidence(monkeypatch):
     async def fake(url, params):
         assert params == {"appids": APPID, "cc": "US", "l": "english"}
-        return sample("details")
+        return sample("appdetails_1086940")
     monkeypatch.setattr(http, "get_json", fake)
     research = state()
     out = call(news.get_game_info, research, appid=APPID)
@@ -141,12 +139,12 @@ def test_details_captured_facts_and_full_evidence(monkeypatch):
     evidence = research.store.get(out["ref"])
     assert evidence.url == out["url"] and evidence.date == out["as_of"]
     assert '"price_minor": 5999' in evidence.text and "US" in evidence.text
-    assert http.load_snapshot(APPID, "appdetails")
+    assert http.load_snapshot(APPID, "appdetails") is None
 
 
 @pytest.mark.parametrize("free", [True, False])
 def test_free_vs_missing_price_and_release_precision(monkeypatch, free):
-    doc = sample("details")
+    doc = sample("appdetails_1086940")
     data = doc[str(APPID)]["data"]
     data.pop("price_overview", None)
     data.pop("metacritic", None)
@@ -194,7 +192,7 @@ def test_markup_preserves_meaning_lists_and_links():
 
 
 def test_captured_news_extract_and_source(monkeypatch):
-    rows = sample("news")["appnews"]["newsitems"]
+    rows = sample("news_1086940")["appnews"]["newsitems"]
     async def fake(url, params):
         assert params["feeds"] == news.OFFICIAL_FEED
         return {"appnews": {"appid": APPID, "newsitems": rows}}
@@ -303,10 +301,23 @@ def test_malformed_live_and_corrupt_snapshot(monkeypatch):
     assert call(news.get_patch_notes, appid=APPID, start=START, end=END, official_only=True)["error"] == "unavailable"
 
 
-def test_tools_do_not_write_snapshots_by_default(monkeypatch):
-    monkeypatch.delenv("SAVE_SNAPSHOTS")
+@pytest.mark.parametrize("tool,args", [
+    (news.search_game, {"query": "Baldur's Gate 3", "limit": 5}),
+    (news.get_game_info, {"appid": APPID}),
+    (news.get_patch_notes, {"appid": APPID, "start": START, "end": END, "official_only": True}),
+])
+def test_tools_never_write_snapshots(monkeypatch, tool, args):
+    def fail(*args, **kwargs):
+        raise AssertionError("Tools must not write snapshots")
+
     async def fake(url, params):
-        return sample("details")
+        if url == news.SEARCH_URL:
+            return {"items": [{"id": APPID}]}
+        if url == news.NEWS_URL:
+            return sample("news_1086940")
+        return sample("appdetails_1086940")
+
     monkeypatch.setattr(http, "get_json", fake)
-    assert call(news.get_game_info, state(), appid=APPID)["ok"]
+    monkeypatch.setattr(http, "save_snapshot", fail)
+    assert call(tool, state(), **args)["ok"]
     assert http.load_snapshot(APPID, "appdetails") is None
