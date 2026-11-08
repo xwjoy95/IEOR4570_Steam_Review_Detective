@@ -47,7 +47,6 @@ Rules:
   Steam API: mention in the finding that it is snapshot data and give the tool's as_of date.
 - Dates are YYYY-MM-DD."""
 
-# TODO(A): owner please review
 REVIEWS_PROMPT = f"""\
 You are the Review Analyst on a team investigating why a Steam game's player sentiment changed.
 You read Steam user reviews: the weekly trend, samples of reviews from a time window, and breakdowns

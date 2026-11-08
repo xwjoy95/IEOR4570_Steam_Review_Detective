@@ -104,9 +104,16 @@ follow-up questions ("what about Chinese players?") work in the same session:
 - `tool_calls`: `[{agent, name, args, result}]`, one entry per tool call, grouped by agent.
 - `evidence`: `{R12: {source, raw_id, url, date, text, meta}}` — what each citation opens.
 - `chart`: the review timeline the page draws:
-  `{appid, granularity, as_of, from_snapshot, series: [{period, up, down, pct_negative, ref}], patches: [{ref, id, date, title, url, official, kind}]}`.
+  `{appid, granularity, as_of, from_snapshot, series: [{period, up, down, pct_negative, ref}], patches: [{ref, id, date, title, url, official, kind}], players: [{month, avg, ref}]}`.
   `get_review_trend` fills `series`, `granularity` and the collection date `as_of`;
-  `get_patch_notes` fills `patches` for the same game; a different game starts a new timeline.
+  `get_patch_notes` fills `patches` for the same game; a different game starts a new timeline;
+  `build_chart` adds the `players` series from the researchers' player-history evidence, and
+  derives `patches` from the evidence if no trend call happened.
+- `games`: `[{appid, name, store_url, header_image, developer, release_date, genres, price}]` —
+  the dossier header cards (facts only when known).
+- `timeline`: `[{agent, start, end}]` in seconds from the run's start — shows the parallel fan-out.
+
+`POST /clear?session_id=...` forgets one conversation (the page's delete button).
 
 ## Fake data and snapshots
 

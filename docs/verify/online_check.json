@@ -1,27 +1,27 @@
 [
   {
     "check": "steam",
-    "ok": false,
-    "detail": "store.steampowered.com -> ReadTimeout: The read operation timed out"
-  },
-  {
-    "check": "steam",
-    "ok": false,
-    "detail": "store.steampowered.com -> ConnectTimeout: timed out"
-  },
-  {
-    "check": "steam",
-    "ok": false,
-    "detail": "api.steampowered.com -> ReadTimeout: The read operation timed out"
+    "ok": true,
+    "detail": "store.steampowered.com -> HTTP 200"
   },
   {
     "check": "steam",
     "ok": true,
-    "detail": "steamspy.com -> HTTP 403 (rate-limited; tools fall back to the snapshot)"
+    "detail": "store.steampowered.com -> HTTP 200"
+  },
+  {
+    "check": "steam",
+    "ok": true,
+    "detail": "api.steampowered.com -> HTTP 200"
+  },
+  {
+    "check": "steam",
+    "ok": true,
+    "detail": "steamspy.com -> HTTP 200"
   },
   {
     "check": "vertex",
-    "ok": false,
-    "detail": "APIConnectionError: litellm.APIConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by Co (gcloud auth application-default login?)"
+    "ok": true,
+    "detail": "model replied in 15.0s: 'ready'"
   }
 ]

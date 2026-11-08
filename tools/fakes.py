@@ -35,24 +35,25 @@ WEEKS = [
     ("2026-10-26", 1460, 300),
 ]
 
-# (id, date, language, hours_at_review, voted_up, helpful score, text)
+# (id, date, language, hours_at_review, voted_up, helpful score, text). The language tags drive
+# the fake filtering; the fictional texts are written in English for an all-English codebase.
 REVIEWS = [
     ("190000001", "2026-08-14", "english", 64.2, True, 0.81, "Best base-building loop I've played in years. The 1.3 fishing update added a lot."),
-    ("190000002", "2026-08-21", "schinese", 37.5, True, 0.74, "建造系统很自由，和朋友联机很开心，性价比很高。"),
+    ("190000002", "2026-08-21", "schinese", 37.5, True, 0.74, "The building system is free-form, co-op with friends is a blast, and it is great value."),
     ("190000003", "2026-08-28", "english", 12.0, False, 0.42, "Fun but the late game gets grindy and the frame rate drops in big bases."),
     ("190000004", "2026-09-10", "english", 212.4, False, 0.97, "Lost my 200-hour save after 1.4. The new save system 'migrated' my world into an empty map. No backup, no warning."),
     ("190000005", "2026-09-10", "english", 143.8, False, 0.93, "1.4 wiped two of my three worlds. Support says 'working on it'. Do not update until they fix saves."),
-    ("190000006", "2026-09-11", "schinese", 96.1, False, 0.91, "1.4 更新加了个‘边境商店’，皮肤一个 68 块，比游戏本体还贵。买断制游戏还搞内购，太难看了。"),
-    ("190000007", "2026-09-11", "schinese", 158.0, False, 0.88, "存档没了一半，商店倒是做得挺快。先修存档再赚钱吧。"),
+    ("190000006", "2026-09-11", "schinese", 96.1, False, 0.91, "Update 1.4 added a 'Frontier Exchange' where one skin costs 68 yuan, more than the base game. Microtransactions in a paid game are shameless."),
+    ("190000007", "2026-09-11", "schinese", 158.0, False, 0.88, "Half my saves are gone, but the shop shipped quickly. Fix saves before monetizing."),
     ("190000008", "2026-09-12", "english", 3.5, False, 0.55, "Bought it on sale, first thing I see is a cash shop button on the main menu. Refunded."),
-    ("190000009", "2026-09-13", "tchinese", 120.6, False, 0.79, "更新後存檔讀取失敗，官方的修復工具也救不回來。"),
+    ("190000009", "2026-09-13", "tchinese", 120.6, False, 0.79, "After the update my save fails to load, and the official recovery tool cannot save it either."),
     ("190000010", "2026-09-15", "english", 88.0, True, 0.61, "My saves survived. The shop is cosmetic-only and the core game is still great. Review bomb is overblown."),
     ("190000011", "2026-09-18", "english", 175.3, False, 0.86, "The 1.4.1 recovery tool restored my world but lost every chest's contents. 170 hours of loot gone."),
-    ("190000012", "2026-09-20", "schinese", 22.4, False, 0.83, "新玩家，看到商店价格就不想继续玩了，同样的钱可以买别的完整游戏。"),
-    ("190000013", "2026-10-03", "schinese", 64.0, True, 0.58, "1.4.2 商店降价 30% 了，诚意还算有，改回好评。"),
+    ("190000012", "2026-09-20", "schinese", 22.4, False, 0.83, "New player here: one look at the shop prices and I stopped wanting to play. The same money buys a complete game."),
+    ("190000013", "2026-10-03", "schinese", 64.0, True, 0.58, "Update 1.4.2 cut shop prices by 30%, which shows some good faith; back to a positive review."),
     ("190000014", "2026-10-08", "english", 301.7, False, 0.90, "300 hours in. Saves work again but I don't trust this dev anymore. Shop stays, so the review stays negative."),
     ("190000015", "2026-10-15", "english", 9.8, True, 0.47, "New player here, didn't experience the save issue. Game is fun, ignore the shop."),
-    ("190000016", "2026-10-22", "schinese", 140.2, True, 0.52, "修复后存档正常了，商店不买也不影响玩，回坑。"),
+    ("190000016", "2026-10-22", "schinese", 140.2, True, 0.52, "Saves work again after the fix, and skipping the shop does not hurt gameplay. Back to the game."),
 ]
 
 PATCHES = [

@@ -27,8 +27,8 @@ class Clarification(BaseModel):
 CLARIFIER_PROMPT = """\
 You decide whether a question about Steam games is specific enough to research. You don't research it.
 
-The conversation so far may come before the question. Use it: a follow-up like "那中文玩家呢？"
-or "what about veterans?" is about the same game as the previous question, and is not vague.
+The conversation so far may come before the question. Use it: a follow-up like "what about the
+Chinese players?" or "what about veterans?" is about the same game as the previous question, and is not vague.
 
 1. Find the game(s) with search_game. If one result's name matches the user's game exactly (or
    it's clearly the one they mean), use it. Ignore DLC and soundtracks.
@@ -37,14 +37,14 @@ or "what about veterans?" is about the same game as the previous question, and i
    - several different games match and you can't tell which one: list the candidates with their
      release years and ask which one;
    - no game matches: say so and ask for the exact Steam name;
-   - the question has no direction ("怎么样", "好玩吗", "is it good"): ask what they want to know
+   - the question has no direction ("how is it", "is it good", "fun or not"): ask what they want to know
      (why its reviews changed, a specific update, Chinese vs English players, veterans vs newcomers,
      whether it's worth buying now) and over what time range.
    Keep `ask` short, friendly, in the user's language.
 3. Otherwise set vague=false, fill games, restate the question as one specific research question in
    `focus`, and set `window` if the user named a time range. You're told today's date: turn relative
-   ranges into dates ("最近几个月" / "recently" = the last 3 months up to today; "this year" = since
-   January 1).
+   ranges into dates ("recently" / "the last few months" = the last 3 months up to today;
+   "this year" = since January 1).
 
 This tool covers Steam only: no console versions, no exact sales figures. Those questions are still
 not vague; the report will say what the data can't answer."""
