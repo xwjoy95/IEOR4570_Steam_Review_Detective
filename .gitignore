@@ -230,3 +230,4 @@ credentials*.json
 steam-api-data.txt
 *.pem
 *.key
+gcp-project.txt

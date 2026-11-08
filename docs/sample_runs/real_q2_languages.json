@@ -1,0 +1,2317 @@
+{
+  "question": "Do Chinese and English players complain about the same things in Baldur's Gate 3 between August and October 2026?",
+  "seconds": 69.5,
+  "tool_calls_per_agent": {
+    "Clarifier": 1,
+    "Lead": 5,
+    "Patch Historian 3": 2,
+    "Review Analyst 2": 3,
+    "Review Analyst 1": 1,
+    "Player Data Analyst 4": 2
+  },
+  "agent_timings_s": {
+    "Clarifier": [
+      0.0,
+      8.7
+    ],
+    "Lead": [
+      8.7,
+      32.7
+    ],
+    "Review Analyst 1": [
+      12.6,
+      18.8
+    ],
+    "Review Analyst 2": [
+      12.6,
+      23.4
+    ],
+    "Patch Historian 3": [
+      12.6,
+      17.6
+    ],
+    "Player Data Analyst 4": [
+      24.7,
+      29.7
+    ],
+    "Writer": [
+      32.7,
+      69.5
+    ]
+  },
+  "cited": [
+    "R75",
+    "R76",
+    "R82",
+    "R85",
+    "R98",
+    "R100",
+    "R108",
+    "R120",
+    "R122",
+    "R130",
+    "R137",
+    "R138",
+    "R139",
+    "R143",
+    "R153",
+    "R154",
+    "R155",
+    "R156",
+    "R157",
+    "R158"
+  ],
+  "cited_but_missing": [],
+  "response": "# Do Chinese and English players complain about the same things in Baldur's Gate 3 between August and October 2026?\n\nBetween August and October 2026, English-speaking and Chinese-speaking players shared core complaints regarding frustrating combat mechanics, excessive random number generation (RNG), high miss rates, steep learning curves, and various technical bugs [R75][R82][R122]. However, their primary focuses differed [R82][R100][R138]. English players uniquely targeted the game's slow pacing and cringe character writing [R100][R108][R120]. In contrast, Chinese players (both Simplified and Traditional) focused more heavily on translation errors, clumsy controller interfaces, multiplayer connection issues, lack of guidance, and a lack of macroscopic impact from player choices [R82][R85][R138]. This negative feedback occurred alongside a player base peak in August 2026, followed by a steady decline through September and October 2026 [R155][R156][R157].\n\n## Timeline\n*   **June 2026**: Baldur's Gate 3 had an average of 39517 players, a peak of 68855 players, and a gain percentage of -4.74 [R153].\n*   **July 2026**: The game had an average of 44808 players, a peak of 78225 players, and a gain percentage of 13.39 [R154].\n*   **August 2026**: The game reached an average of 49972 players, a peak of 83011 players, and a gain percentage of 11.53 [R155].\n*   **September 2026**: Player counts declined to an average of 42932 players, a peak of 76065 players, and a gain percentage of -14.09 [R156].\n*   **October 2026**: The player base fell to an average of 38530 players, a peak of 71090 players, and a gain percentage of -10.25 [R157].\n\n## What players are complaining about\nEnglish, Simplified Chinese, and Traditional Chinese players share several core criticisms, including frustrating RNG, missed attacks, a steep learning curve, and technical bugs [R75][R82][R122]. However, the groups differ in their primary targets:\n*   **English players** frequently complain about slow, tedious, or boring gameplay pacing, noting they must force themselves to play [R108][R120]. They also criticize the story and companions as cringeworthy or \"hypersexual\" [R98][R100][R130].\n*   **Simplified Chinese players** highlight a total lack of newcomer guidance, requiring walkthroughs just to progress, alongside translation issues, awkward phrasing, and clumsy controller layouts [R76][R82][R85].\n*   **Traditional Chinese players** point out poor optimization, crashes, and bad multiplayer experiences [R137][R139]. They also complain that player choices do not affect macro geopolitics and criticize combat for relying heavily on explosives [R138][R143].\n\nBelow are selected reviews highlighting these issues:\n*   An English player with 87.8 hours at review criticized the narrative: \"All of the characters are so goddamn cringe I cannot stand the story long enough to make it past the first act.\" [R100]\n*   A Simplified Chinese player with 13.6 hours at review described the lack of beginner guidance: \"对于一个新手来说，这游戏的引导功能形同虚设。\" [R82]\n*   A Traditional Chinese player with 310.3 hours at review remarked on the limits of player choice: \"任何抉擇都不會在宏觀上影響地緣政治\" [R138]\n\n## What the data can't answer\n*   No updates, patches, or developer announcements were found for Baldur's Gate 3 (appid: 1086940) from July to October 2026.\n*   Historical player counts for November 2026 cannot be provided.\n*   Yesterday's peak concurrent players was 54771 [R158].\n*   This report is limited to Steam reviews, which only reflect players who write reviews.\n*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,000,000 .. 50,000,000, which is an estimate rather than an official figure [R158].\n*   No console player data is available.\n*   The developers' motives can only be studied as stated in official announcements.\n\n*Note (automated check): the following could not be verified against the cited sources and may be inaccurate:*\n- the number 3 in “*   **June 2026**: Baldur's Gate 3 had an average of 39517 p” does not appear in the cited evidence (R153)\n- the number 20 in “*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,00” does not appear in the cited evidence (R158)\n- the number 000 in “*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,00” does not appear in the cited evidence (R158)\n- the number 000 in “*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,00” does not appear in the cited evidence (R158)\n- the number 50 in “*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,00” does not appear in the cited evidence (R158)\n- the number 000 in “*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,00” does not appear in the cited evidence (R158)\n- the number 000 in “*   The SteamSpy owner estimate for Baldur's Gate 3 is 20,00” does not appear in the cited evidence (R158)",
+  "session_id": "35289792-1e8c-4f8d-87d6-d8e929dd2bde",
+  "tool_calls": [
+    {
+      "agent": "Clarifier",
+      "name": "search_game",
+      "args": {
+        "limit": 5,
+        "query": "Baldur's Gate 3"
+      },
+      "result": "{'ok': True, 'results': [{'appid': 1086940, 'name': \"Baldur's Gate 3\", 'release_date': '2023-08-03', 'price': '$59.99', 'price_minor': 5999, 'initial_price_minor': 5999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'as_of': '2026-11-08', 'from_snapshot': False}], 'source': 'https://store.steampowered.com/api/storesearch/', 'as_of': '2026-11-08', 'from_snapshot': False, 'partial': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "get_review_trend",
+      "args": {
+        "language": "all",
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2020-10-01', 'up': 19543, 'down': 2618, 'pct_negative': 11.8, 'ref': 'R1'}, {'period': '2020-11-01', 'up': 4980, 'down': 452, 'pct_negative': 8.3, 'ref': 'R2'}, {'period': '2020-12-01', 'up': 1747, 'down': 223, 'pct_negative': 11.3, 'ref': 'R3'}, {'period': '2021-01-01', 'up': 1195, 'down': 189, 'pct_negative': 13.7, 'ref': 'R4'}, {'period': '2021-02-01', 'up': 1263, 'down': 175, 'pct_negative': 12.2, 'ref': 'R5'}, {'period': '2021-03-01', 'up': 1679, 'down': 219, 'pct_negative': 11.5, 'ref': 'R6'}, {'period': '2021-04-01', 'up': 935, 'down': 155, 'pct_negative': 14.2, 'ref': 'R7'}, {'period': '2021-05-01', 'up': 767, 'down': 145, 'pct_negative': 15.9, 'ref': 'R8'}, {'period': '2021-06-01', 'up': 575, 'down': 134, 'pct_negative': 18.9, 'ref': 'R9'}, {'period': '2021-07-01', 'up': 1008, 'down': 162, 'pct_negative': 13.8, 'ref': 'R10'}, {'period': '2021-08-01', 'up': 810, 'down': 171, 'pct_negative': 17.4, 'ref': 'R11'}, {'period': '2021-09-01', 'up': 671, 'down': 138, 'pct_negative': 17.1, 'ref': 'R12'}, {'period': '2021-10-01', 'up': 1277, 'down': 196, 'pct_negative': 13.3, 'ref': 'R13'}, {'period': '2021-11-01', 'up': 837, 'down': 131, 'pct_negative': 13.5, 'ref': 'R14'}, {'period': '2021-12-01', 'up': 554, 'down': 113, 'pct_negative': 16.9, 'ref': 'R15'}, {'period': '2022-01-01', 'up': 600, 'down': 153, 'pct_negative': 20.3, 'ref': 'R16'}, {'period': '2022-02-01', 'up': 723, 'down': 161, 'pct_negative': 18.2, 'ref': 'R17'}, {'period': '2022-03-01', 'up': 453, 'down': 104, 'pct_negative': 18.7, 'ref': 'R18'}, {'period': '2022-04-01', 'up': 405, 'down': 123, 'pct_negative': 23.3, 'ref': 'R19'}, {'period': '2022-05-01', 'up': 373, 'down': 108, 'pct_negative': 22.5, 'ref': 'R20'}, {'period': '2022-06-01', 'up': 380, 'down': 147, 'pct_negative': 27.9, 'ref': 'R21'}, {'period': '2022-07-01', 'up': 964, 'down': 234, 'pct_negative': 19.5, 'ref': 'R22'}, {'period': '2022-08-01'"
+    },
+    {
+      "agent": "Patch Historian 3",
+      "name": "get_patch_notes",
+      "args": {
+        "end": "2026-10-31",
+        "official_only": true,
+        "start": "2026-07-01",
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'notes': [], 'source': 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/', 'as_of': '2026-11-08', 'from_snapshot': False, 'complete': True, 'coverage': {'start': '2026-07-01', 'end': '2026-10-31', 'complete': True, 'reason': 'crossed_start'}, 'requested_window': {'start': '2026-07-01', 'end': '2026-10-31'}, 'warnings': []}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "end": "2026-10-31 मसा",
+        "appid": 1086940,
+        "limit": 20,
+        "language": "schinese",
+        "max_hours": null,
+        "min_hours": null,
+        "review_type": "negative",
+        "start": "2026-08-01"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': 91, 'sampled_in_range': 91, 'total_matching': 91, 'pages_fetched': 1, 'sampled': True, 'reviews': [{'ref': 'R75', 'date': '2026-10-23', 'url': 'https://steamcommunity.com/profiles/76561198903732913/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 15.8, 'text': '未命中严重失误之门3'}, {'ref': 'R76', 'date': '2026-08-14', 'url': 'https://steamcommunity.com/profiles/76561198809324670/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 89.1, 'text': '能不看攻略吗？玩的好累这游戏，做个任务就要搜攻略，任务线索藏的跟迷一样，玩到第三章实在玩不动了'}, {'ref': 'R77', 'date': '2026-10-20', 'url': 'https://steamcommunity.com/profiles/76561198858916021/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 295.6, 'text': '我要把开发信仰之跃试炼的人和莎尔通通图了'}, {'ref': 'R78', 'date': '2026-10-05', 'url': 'https://steamcommunity.com/profiles/76561198390017517/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 115.1, 'text': '游戏精致和玩家体验差不冲突，自动保存了个什么玩意。动不动一个多小时白打'}, {'ref': 'R79', 'date': '2026-08-13', 'url': 'https://steamcommunity.com/profiles/76561199193430398/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 40.8, 'text': '你做尼玛DND，职业全等级特性都不给我预览是几个意思？？？？'}, {'ref': 'R80', 'date': '2026-08-08', 'url': 'https://steamcommunity.com/profiles/76561198137411054/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 2.8, 'text': '不好玩，对大多数人来说可能根本玩不进去'}, {'ref': 'R81', 'date': '2026-09-06', 'url': 'https://steamcommunity.com/profiles/76561198423614317/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 7.5, 'text': '独狼需要如此频率的回档，游戏的线性设计有问题'}, {'ref': 'R82', 'date': '2026-08-31', 'url': 'https://steamcommunity.com/profiles/76561198381780422/recommended/1086940/', 'language': 'schinese', 'positive': False, 'hours_at_review': 13.6, 'text': '对于一个新手来说，这游戏的引导功能形同虚设。一个流程数百小时的游戏居然要在前期就跟着攻略步步为营，"
+    },
+    {
+      "agent": "Patch Historian 3",
+      "name": "get_game_info",
+      "args": {
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'name': \"Baldur's Gate 3\", 'type': 'game', 'developer': ['Larian Studios'], 'publisher': ['Larian Studios'], 'release_date': '2023-08-03', 'release_date_raw': 'Aug 3, 2023', 'coming_soon': False, 'genres': ['Adventure', 'RPG', 'Strategy'], 'platforms': {'windows': True, 'mac': True, 'linux': False}, 'price': '$59.99', 'price_minor': 5999, 'initial_price_minor': 5999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'metacritic': 96, 'description': 'Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.', 'price_scope': 'Current US store price at collection time; no price history.', 'ref': 'R95', 'url': 'https://store.steampowered.com/app/1086940/', 'date': '2026-11-08', 'source': 'https://store.steampowered.com/api/appdetails', 'as_of': '2026-11-08', 'from_snapshot': False, 'warnings': []}"
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "sample_reviews",
+      "args": {
+        "end": "2026-10-31",
+        "language": "english",
+        "appid": 1086940,
+        "start": "2026-08-01",
+        "max_hours": null,
+        "review_type": "negative",
+        "limit": 40,
+        "min_hours": null
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 390, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R96', 'date': '2026-10-02', 'url': 'https://steamcommunity.com/profiles/76561197992487722/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 149.8, 'text': \"Yeah, yeah, I know, I must be crazy... But I just really didn't like it, OK? I'm sad to be this disappointed.\\n\\nIt's a well-made game for sure, no doubt about it. If it weren't for the great expectations, there might not have been such a great disappointment. I've enjoyed Larian's previous works, loved them even, but there was almost nothing about BG3 to inspire similar feelings.\\n\\nThe story was boi\"}, {'ref': 'R97', 'date': '2026-10-05', 'url': 'https://steamcommunity.com/profiles/76561198002710480/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 200.9, 'text': \"[b]tl;dr[/b] - Many times I've regretted giving this game chances. Turn back... unless you're a masochist. \\n\\nBuy only at deep discount if you're a CRPG fan. Accolades and the community's abusive attachment disorder aside, this is a still painfully janky game three years after release. It's not terrible, but... if you're bothered by poor UX or bugs, prepare to suffer death by a thousand little cuts\"}, {'ref': 'R98', 'date': '2026-08-30', 'url': 'https://steamcommunity.com/profiles/76561198090998239/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 38.8, 'text': \"I seem to be in the rare minority of people who just can't get into this game. \\n\\nNearly 40 hours put into the game and I can't get through the first Act, not because of difficulty, but because I just don't like the characters or the story enough to care about any of it. The writing for character interactions feels like a mix of horny teen Tumblr blog and the Witcher TV show after Cavill left. \\n\\nEv\"}, {'ref': 'R99', 'date': '2026-0"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "appid": 1086940,
+        "start": "2026-08-01",
+        "end": "2026-10-31",
+        "language": "tchinese",
+        "max_hours": null,
+        "min_hours": null,
+        "review_type": "negative",
+        "limit": 20
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': 13, 'sampled_in_range': 13, 'total_matching': 13, 'pages_fetched': 1, 'sampled': False, 'reviews': [{'ref': 'R136', 'date': '2026-10-17', 'url': 'https://steamcommunity.com/profiles/76561198121876371/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 69.2, 'text': '人物角色不能動，然後丟東西被擋到，但是下一回合敵人又丟的到我，我問號欸\\n兩個五環法術不如一個三環的，玩得很造'}, {'ref': 'R137', 'date': '2026-09-13', 'url': 'https://steamcommunity.com/profiles/76561198406145798/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 207.5, 'text': '畫面優化蠻爛的'}, {'ref': 'R138', 'date': '2026-08-04', 'url': 'https://steamcommunity.com/profiles/76561198349535519/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 310.3, 'text': '不差，但遠沒有普遍網上說的那麼好\\n作為CRPG抉擇卻遠遠都只是幫誰或害死誰\\n任何抉擇都不會在宏觀上影響地緣政治\\n且不論你前面做什麼、什麼身分\\n大決戰能做的抉擇都是一模一樣的\\n至於其他部分我認為只能算加分項\\n衝著最強CRPG這個名號來買的不推薦'}, {'ref': 'R139', 'date': '2026-08-02', 'url': 'https://steamcommunity.com/profiles/76561198003149947/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 459.0, 'text': '多人遊戲體驗很差, 而且經常崩潰, 很多bug\\n\\n單人遊戲會順利一些'}, {'ref': 'R140', 'date': '2026-10-24', 'url': 'https://steamcommunity.com/profiles/76561199023956267/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 7.3, 'text': '這遊戲搶走了我最在乎的人 不好意思我只能忍痛給負評'}, {'ref': 'R141', 'date': '2026-10-03', 'url': 'https://steamcommunity.com/profiles/76561199073466367/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 517.2, 'text': 'trash'}, {'ref': 'R142', 'date': '2026-08-29', 'url': 'https://steamcommunity.com/profiles/76561198436080049/recommended/1086940/', 'language': 'tchinese', 'positive': False, 'hours_at_review': 12.5, 'text': 'rubbish'}, {'ref': 'R143', 'date': '2026-08-18', 'url': 'https://steamcommunity.com/profiles/76561198255584791/recommended/1086940/', 'language': 'tchinese', 'positive':"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "patches",
+        "task": "List updates, patches, or developer announcements for Baldur's Gate 3 (appid: 1086940) from July to October 2026."
+      },
+      "result": "{\"findings\": [], \"cannot_answer\": [\"No updates, patches, or developer announcements were found for Baldur's Gate 3 (appid: 1086940) from July to October 2026.\"]}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "reviews",
+        "task": "Identify the main complaints in English-language negative reviews for Baldur's Gate 3 (appid: 1086940) between 2026-08-01 and 2026-10-31."
+      },
+      "result": "{\"findings\": [{\"claim\": \"Reviewers complained about slow, tedious, or boring gameplay pacing, noting that they had to force themselves to play.\", \"evidence\": [\"R108\", \"R109\", \"R120\", \"R127\", \"R128\"]}, {\"claim\": \"Several players criticized the story, characters, and dialogue as cringeworthy, unappealing, or like a hypersexual teenage/Tumblr blog.\", \"evidence\": [\"R98\", \"R100\", \"R130\"]}, {\"claim\": \"Multiple negative reviews highlighted frustrations with combat design, difficulty spikes, and reliance on heavy save-scumming.\", \"evidence\": [\"R101\", \"R111\", \"R113\", \"R133\", \"R135\"]}, {\"claim\": \"Players pointed out excessive RNG, dice rolls, and missed attacks as mechanics that ruin the experience or make encounters tedious.\", \"evidence\": [\"R118\", \"R121\", \"R122\", \"R131\", \"R132\"]}, {\"claim\": \"Some reviewers felt overwhelmed by complex stats, character development, or inventory/spell management.\", \"evidence\": [\"R106\", \"R122\", \"R123\"]}, {\"claim\": \"Specific complaints mentioned technical issues, jank, bugs, camera angle restrictions, and unsatisfactory implementation of Act 3.\", \"evidence\": [\"R97\", \"R114\", \"R119\", \"R134\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "review_stats",
+      "args": {
+        "group_by": "language",
+        "end": "2026-10-31",
+        "start": "2026-08-01",
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'group_by': 'language', 'start': '2026-08-01', 'end': '2026-10-31', 'groups': [{'group': 'english', 'up': 283, 'down': 17, 'pct_negative': 5.7, 'ref': 'R149'}, {'group': 'schinese', 'up': 291, 'down': 9, 'pct_negative': 3.0, 'ref': 'R150'}], 'sampled': 600, 'partial_sample': True, 'total_matching': 9716, 'pages_fetched': 6, 'language_coverage': {'english': {'sampled': 300, 'total_matching': 7313, 'pages_fetched': 3, 'partial_sample': True}, 'schinese': {'sampled': 300, 'total_matching': 2403, 'pages_fetched': 3, 'partial_sample': True}}, 'source': 'https://api.steampowered.com/IUserReviewsService/GetAppReviews/v1/', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Identify the main complaints in Simplified and Traditional Chinese-language negative reviews for Baldur's Gate 3 (appid: 1086940) between 2026-08-01 and 2026-10-31.",
+        "researcher": "reviews"
+      },
+      "result": "{\"findings\": [{\"claim\": \"Simplified Chinese negative reviewers complain about missing attacks, bad combat/numerical balance, and high difficulty, citing constant misses and frustrating RNG mechanics.\", \"evidence\": [\"R75\", \"R82\", \"R83\", \"R84\"]}, {\"claim\": \"Simplified Chinese negative reviews mention a lack of newcomer guidance, hidden quest objectives requiring external walkthroughs, and complex rules.\", \"evidence\": [\"R76\", \"R82\"]}, {\"claim\": \"Simplified Chinese negative reviews report various technical issues, including translation problems, clumsy controller controls, UI/UX issues, and bugs.\", \"evidence\": [\"R85\", \"R87\", \"R89\"]}, {\"claim\": \"Traditional Chinese negative reviewers complain about poor optimization, bugs, crashes, and bad multiplayer experiences.\", \"evidence\": [\"R137\", \"R139\", \"R147\"]}, {\"claim\": \"Traditional Chinese negative reviews mention that choices do not meaningfully impact macro geopolitics or the game's finale, and criticize the combat for relying heavily on explosives.\", \"evidence\": [\"R138\", \"R143\"]}, {\"claim\": \"Traditional Chinese negative reviews also cite steep learning curves, lack of proper guidance, and heavy reliance on external guides or love for D&D to enjoy the game.\", \"evidence\": [\"R144\", \"R147\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Player Data Analyst 4",
+      "name": "get_player_history",
+      "args": {
+        "start": "2026-04-01",
+        "appid": 1086940,
+        "end": "2026-11-30"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'months': [{'ref': 'R151', 'month': '2026-04', 'avg': 40041, 'peak': 73878, 'gain_pct': -9.78}, {'ref': 'R152', 'month': '2026-05', 'avg': 41482, 'peak': 71430, 'gain_pct': 3.6}, {'ref': 'R153', 'month': '2026-06', 'avg': 39517, 'peak': 68855, 'gain_pct': -4.74}, {'ref': 'R154', 'month': '2026-07', 'avg': 44808, 'peak': 78225, 'gain_pct': 13.39}, {'ref': 'R155', 'month': '2026-08', 'avg': 49972, 'peak': 83011, 'gain_pct': 11.53}, {'ref': 'R156', 'month': '2026-09', 'avg': 42932, 'peak': 76065, 'gain_pct': -14.09}, {'ref': 'R157', 'month': '2026-10', 'avg': 38530, 'peak': 71090, 'gain_pct': -10.25}], 'coverage': ['2020-10', '2026-10'], 'source': 'steamcharts', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Player Data Analyst 4",
+      "name": "get_player_stats",
+      "args": {
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'ref': 'R158', 'appid': 1086940, 'name': \"Baldur's Gate 3\", 'owners_estimate': '20,000,000 .. 50,000,000', 'average_forever_h': None, 'median_forever_h': None, 'average_2weeks_h': None, 'median_2weeks_h': None, 'ccu_yesterday': 54771, 'steamspy_positive': 736688, 'steamspy_negative': 23974, 'tags': {'RPG': 4536, 'Character Customization': 3522, 'Choices Matter': 3475, 'Story Rich': 3416, 'Turn-Based Combat': 3370, 'Dungeons & Dragons': 3237, 'CRPG': 2637, 'Fantasy': 2619, 'Adventure': 2578, 'Sexual Content': 2483}, 'current_players': 35245, 'note': 'owners_estimate is a SteamSpy estimate range, not a sales figure. Null playtime means no data.', 'warnings': [], 'source': 'steamspy + GetNumberOfCurrentPlayers', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Analyze player counts, peak players, and average players for Baldur's Gate 3 (appid: 1086940) between June and November 2026.",
+        "researcher": "players"
+      },
+      "result": "{\"findings\": [{\"claim\": \"In June 2026, Baldur's Gate 3 had an average of 39517 players, a peak of 68855 players, and a gain percentage of -4.74.\", \"evidence\": [\"R153\"]}, {\"claim\": \"In July 2026, Baldur's Gate 3 had an average of 44808 players, a peak of 78225 players, and a gain percentage of 13.39.\", \"evidence\": [\"R154\"]}, {\"claim\": \"In August 2026, Baldur's Gate 3 had an average of 49972 players, a peak of 83011 players, and a gain percentage of 11.53.\", \"evidence\": [\"R155\"]}, {\"claim\": \"In September 2026, Baldur's Gate 3 had an average of 42932 players, a peak of 76065 players, and a gain percentage of -14.09.\", \"evidence\": [\"R156\"]}, {\"claim\": \"In October 2026, Baldur's Gate 3 had an average of 38530 players, a peak of 71090 players, and a gain percentage of -10.25.\", \"evidence\": [\"R157\"]}, {\"claim\": \"The SteamSpy owner estimate for Baldur's Gate 3 is 20,000,000 .. 50,000,000.\", \"evidence\": [\"R158\"]}, {\"claim\": \"Yesterday's peak concurrent players (ccu_yesterday) was 54771.\", \"evidence\": [\"R158\"]}], \"cannot_answer\": [\"historical player counts for November 2026\"]}"
+    }
+  ],
+  "evidence": {
+    "R1": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-10-01",
+      "text": "Period 2020-10-01: 19543 positive reviews, 2618 negative reviews, 11.8% negative.",
+      "meta": {}
+    },
+    "R2": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-11-01",
+      "text": "Period 2020-11-01: 4980 positive reviews, 452 negative reviews, 8.3% negative.",
+      "meta": {}
+    },
+    "R3": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-12-01",
+      "text": "Period 2020-12-01: 1747 positive reviews, 223 negative reviews, 11.3% negative.",
+      "meta": {}
+    },
+    "R4": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-01-01",
+      "text": "Period 2021-01-01: 1195 positive reviews, 189 negative reviews, 13.7% negative.",
+      "meta": {}
+    },
+    "R5": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-02-01",
+      "text": "Period 2021-02-01: 1263 positive reviews, 175 negative reviews, 12.2% negative.",
+      "meta": {}
+    },
+    "R6": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-03-01",
+      "text": "Period 2021-03-01: 1679 positive reviews, 219 negative reviews, 11.5% negative.",
+      "meta": {}
+    },
+    "R7": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-04-01",
+      "text": "Period 2021-04-01: 935 positive reviews, 155 negative reviews, 14.2% negative.",
+      "meta": {}
+    },
+    "R8": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-05-01",
+      "text": "Period 2021-05-01: 767 positive reviews, 145 negative reviews, 15.9% negative.",
+      "meta": {}
+    },
+    "R9": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-06-01",
+      "text": "Period 2021-06-01: 575 positive reviews, 134 negative reviews, 18.9% negative.",
+      "meta": {}
+    },
+    "R10": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-07-01",
+      "text": "Period 2021-07-01: 1008 positive reviews, 162 negative reviews, 13.8% negative.",
+      "meta": {}
+    },
+    "R11": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-08-01",
+      "text": "Period 2021-08-01: 810 positive reviews, 171 negative reviews, 17.4% negative.",
+      "meta": {}
+    },
+    "R12": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-09-01",
+      "text": "Period 2021-09-01: 671 positive reviews, 138 negative reviews, 17.1% negative.",
+      "meta": {}
+    },
+    "R13": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-10-01",
+      "text": "Period 2021-10-01: 1277 positive reviews, 196 negative reviews, 13.3% negative.",
+      "meta": {}
+    },
+    "R14": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-11-01",
+      "text": "Period 2021-11-01: 837 positive reviews, 131 negative reviews, 13.5% negative.",
+      "meta": {}
+    },
+    "R15": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-12-01",
+      "text": "Period 2021-12-01: 554 positive reviews, 113 negative reviews, 16.9% negative.",
+      "meta": {}
+    },
+    "R16": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-01-01",
+      "text": "Period 2022-01-01: 600 positive reviews, 153 negative reviews, 20.3% negative.",
+      "meta": {}
+    },
+    "R17": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-02-01",
+      "text": "Period 2022-02-01: 723 positive reviews, 161 negative reviews, 18.2% negative.",
+      "meta": {}
+    },
+    "R18": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-03-01",
+      "text": "Period 2022-03-01: 453 positive reviews, 104 negative reviews, 18.7% negative.",
+      "meta": {}
+    },
+    "R19": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-04-01",
+      "text": "Period 2022-04-01: 405 positive reviews, 123 negative reviews, 23.3% negative.",
+      "meta": {}
+    },
+    "R20": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-05-01",
+      "text": "Period 2022-05-01: 373 positive reviews, 108 negative reviews, 22.5% negative.",
+      "meta": {}
+    },
+    "R21": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-06-01",
+      "text": "Period 2022-06-01: 380 positive reviews, 147 negative reviews, 27.9% negative.",
+      "meta": {}
+    },
+    "R22": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-07-01",
+      "text": "Period 2022-07-01: 964 positive reviews, 234 negative reviews, 19.5% negative.",
+      "meta": {}
+    },
+    "R23": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-08-01",
+      "text": "Period 2022-08-01: 631 positive reviews, 121 negative reviews, 16.1% negative.",
+      "meta": {}
+    },
+    "R24": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-09-01",
+      "text": "Period 2022-09-01: 465 positive reviews, 106 negative reviews, 18.6% negative.",
+      "meta": {}
+    },
+    "R25": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-10-01",
+      "text": "Period 2022-10-01: 455 positive reviews, 158 negative reviews, 25.8% negative.",
+      "meta": {}
+    },
+    "R26": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-11-01",
+      "text": "Period 2022-11-01: 529 positive reviews, 119 negative reviews, 18.4% negative.",
+      "meta": {}
+    },
+    "R27": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-12-01",
+      "text": "Period 2022-12-01: 941 positive reviews, 116 negative reviews, 11.0% negative.",
+      "meta": {}
+    },
+    "R28": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-01-01",
+      "text": "Period 2023-01-01: 959 positive reviews, 107 negative reviews, 10.0% negative.",
+      "meta": {}
+    },
+    "R29": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-02-01",
+      "text": "Period 2023-02-01: 752 positive reviews, 82 negative reviews, 9.8% negative.",
+      "meta": {}
+    },
+    "R30": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-03-01",
+      "text": "Period 2023-03-01: 985 positive reviews, 105 negative reviews, 9.6% negative.",
+      "meta": {}
+    },
+    "R31": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-04-01",
+      "text": "Period 2023-04-01: 895 positive reviews, 82 negative reviews, 8.4% negative.",
+      "meta": {}
+    },
+    "R32": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-05-01",
+      "text": "Period 2023-05-01: 793 positive reviews, 75 negative reviews, 8.6% negative.",
+      "meta": {}
+    },
+    "R33": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-06-01",
+      "text": "Period 2023-06-01: 980 positive reviews, 78 negative reviews, 7.4% negative.",
+      "meta": {}
+    },
+    "R34": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-07-01",
+      "text": "Period 2023-07-01: 8513 positive reviews, 386 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R35": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-08-01",
+      "text": "Period 2023-08-01: 174597 positive reviews, 7370 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R36": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-09-01",
+      "text": "Period 2023-09-01: 66975 positive reviews, 2395 negative reviews, 3.5% negative.",
+      "meta": {}
+    },
+    "R37": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-10-01",
+      "text": "Period 2023-10-01: 29420 positive reviews, 1081 negative reviews, 3.5% negative.",
+      "meta": {}
+    },
+    "R38": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-11-01",
+      "text": "Period 2023-11-01: 87425 positive reviews, 1167 negative reviews, 1.3% negative.",
+      "meta": {}
+    },
+    "R39": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-12-01",
+      "text": "Period 2023-12-01: 31852 positive reviews, 1282 negative reviews, 3.9% negative.",
+      "meta": {}
+    },
+    "R40": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-01-01",
+      "text": "Period 2024-01-01: 29493 positive reviews, 1249 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R41": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-02-01",
+      "text": "Period 2024-02-01: 18164 positive reviews, 801 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R42": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-03-01",
+      "text": "Period 2024-03-01: 14453 positive reviews, 715 negative reviews, 4.7% negative.",
+      "meta": {}
+    },
+    "R43": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-04-01",
+      "text": "Period 2024-04-01: 9897 positive reviews, 443 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R44": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-05-01",
+      "text": "Period 2024-05-01: 9534 positive reviews, 420 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R45": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-06-01",
+      "text": "Period 2024-06-01: 8741 positive reviews, 388 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R46": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-07-01",
+      "text": "Period 2024-07-01: 10734 positive reviews, 519 negative reviews, 4.6% negative.",
+      "meta": {}
+    },
+    "R47": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-08-01",
+      "text": "Period 2024-08-01: 9390 positive reviews, 403 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R48": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-09-01",
+      "text": "Period 2024-09-01: 11140 positive reviews, 612 negative reviews, 5.2% negative.",
+      "meta": {}
+    },
+    "R49": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-10-01",
+      "text": "Period 2024-10-01: 7606 positive reviews, 334 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R50": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-11-01",
+      "text": "Period 2024-11-01: 17253 positive reviews, 388 negative reviews, 2.2% negative.",
+      "meta": {}
+    },
+    "R51": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-12-01",
+      "text": "Period 2024-12-01: 20427 positive reviews, 1239 negative reviews, 5.7% negative.",
+      "meta": {}
+    },
+    "R52": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-01-01",
+      "text": "Period 2025-01-01: 9109 positive reviews, 427 negative reviews, 4.5% negative.",
+      "meta": {}
+    },
+    "R53": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-02-01",
+      "text": "Period 2025-02-01: 7103 positive reviews, 319 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R54": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-03-01",
+      "text": "Period 2025-03-01: 7557 positive reviews, 295 negative reviews, 3.8% negative.",
+      "meta": {}
+    },
+    "R55": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-04-01",
+      "text": "Period 2025-04-01: 9508 positive reviews, 426 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R56": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-05-01",
+      "text": "Period 2025-05-01: 7820 positive reviews, 366 negative reviews, 4.5% negative.",
+      "meta": {}
+    },
+    "R57": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-06-01",
+      "text": "Period 2025-06-01: 5873 positive reviews, 305 negative reviews, 4.9% negative.",
+      "meta": {}
+    },
+    "R58": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-07-01",
+      "text": "Period 2025-07-01: 6479 positive reviews, 315 negative reviews, 4.6% negative.",
+      "meta": {}
+    },
+    "R59": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-08-01",
+      "text": "Period 2025-08-01: 5799 positive reviews, 247 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R60": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-09-01",
+      "text": "Period 2025-09-01: 5672 positive reviews, 334 negative reviews, 5.6% negative.",
+      "meta": {}
+    },
+    "R61": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-10-01",
+      "text": "Period 2025-10-01: 5596 positive reviews, 277 negative reviews, 4.7% negative.",
+      "meta": {}
+    },
+    "R62": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-11-01",
+      "text": "Period 2025-11-01: 11619 positive reviews, 249 negative reviews, 2.1% negative.",
+      "meta": {}
+    },
+    "R63": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-12-01",
+      "text": "Period 2025-12-01: 6637 positive reviews, 523 negative reviews, 7.3% negative.",
+      "meta": {}
+    },
+    "R64": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-01-01",
+      "text": "Period 2026-01-01: 7202 positive reviews, 503 negative reviews, 6.5% negative.",
+      "meta": {}
+    },
+    "R65": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-02-01",
+      "text": "Period 2026-02-01: 5097 positive reviews, 291 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R66": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-03-01",
+      "text": "Period 2026-03-01: 5129 positive reviews, 298 negative reviews, 5.5% negative.",
+      "meta": {}
+    },
+    "R67": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-04-01",
+      "text": "Period 2026-04-01: 3909 positive reviews, 180 negative reviews, 4.4% negative.",
+      "meta": {}
+    },
+    "R68": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-05-01",
+      "text": "Period 2026-05-01: 4248 positive reviews, 270 negative reviews, 6.0% negative.",
+      "meta": {}
+    },
+    "R69": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-06-01",
+      "text": "Period 2026-06-01: 3718 positive reviews, 211 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R70": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-07-01",
+      "text": "Period 2026-07-01: 4641 positive reviews, 260 negative reviews, 5.3% negative.",
+      "meta": {}
+    },
+    "R71": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-08-01",
+      "text": "Period 2026-08-01: 4972 positive reviews, 313 negative reviews, 5.9% negative.",
+      "meta": {}
+    },
+    "R72": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-09-01",
+      "text": "Period 2026-09-01: 4131 positive reviews, 210 negative reviews, 4.8% negative.",
+      "meta": {}
+    },
+    "R73": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-10-01",
+      "text": "Period 2026-10-01: 3676 positive reviews, 210 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R74": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-11-01",
+      "text": "Period 2026-11-01: 684 positive reviews, 48 negative reviews, 6.6% negative.",
+      "meta": {}
+    },
+    "R75": {
+      "source": "review",
+      "raw_id": "238382627",
+      "url": "https://steamcommunity.com/profiles/76561198903732913/recommended/1086940/",
+      "date": "2026-10-23",
+      "text": "未命中严重失误之门3",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 15.8,
+        "positive": false
+      }
+    },
+    "R76": {
+      "source": "review",
+      "raw_id": "232833209",
+      "url": "https://steamcommunity.com/profiles/76561198809324670/recommended/1086940/",
+      "date": "2026-08-14",
+      "text": "能不看攻略吗？玩的好累这游戏，做个任务就要搜攻略，任务线索藏的跟迷一样，玩到第三章实在玩不动了",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 89.1,
+        "positive": false
+      }
+    },
+    "R77": {
+      "source": "review",
+      "raw_id": "238132153",
+      "url": "https://steamcommunity.com/profiles/76561198858916021/recommended/1086940/",
+      "date": "2026-10-20",
+      "text": "我要把开发信仰之跃试炼的人和莎尔通通图了",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 295.6,
+        "positive": false
+      }
+    },
+    "R78": {
+      "source": "review",
+      "raw_id": "236975264",
+      "url": "https://steamcommunity.com/profiles/76561198390017517/recommended/1086940/",
+      "date": "2026-10-05",
+      "text": "游戏精致和玩家体验差不冲突，自动保存了个什么玩意。动不动一个多小时白打",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 115.1,
+        "positive": false
+      }
+    },
+    "R79": {
+      "source": "review",
+      "raw_id": "232707623",
+      "url": "https://steamcommunity.com/profiles/76561199193430398/recommended/1086940/",
+      "date": "2026-08-13",
+      "text": "你做尼玛DND，职业全等级特性都不给我预览是几个意思？？？？",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 40.8,
+        "positive": false
+      }
+    },
+    "R80": {
+      "source": "review",
+      "raw_id": "232365192",
+      "url": "https://steamcommunity.com/profiles/76561198137411054/recommended/1086940/",
+      "date": "2026-08-08",
+      "text": "不好玩，对大多数人来说可能根本玩不进去",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 2.8,
+        "positive": false
+      }
+    },
+    "R81": {
+      "source": "review",
+      "raw_id": "234589699",
+      "url": "https://steamcommunity.com/profiles/76561198423614317/recommended/1086940/",
+      "date": "2026-09-06",
+      "text": "独狼需要如此频率的回档，游戏的线性设计有问题",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 7.5,
+        "positive": false
+      }
+    },
+    "R82": {
+      "source": "review",
+      "raw_id": "234133017",
+      "url": "https://steamcommunity.com/profiles/76561198381780422/recommended/1086940/",
+      "date": "2026-08-31",
+      "text": "对于一个新手来说，这游戏的引导功能形同虚设。一个流程数百小时的游戏居然要在前期就跟着攻略步步为营，这种前期体验真的很差。任务没有所需等级提示，触发战斗了才知道完全打不过。我玩了十几个小时，哥布林领袖打不过，装备武器不知道怎么升级，想找支线升级都不知道做哪个，队里那几个人要伤害没伤害要血量没血量巴不得每打完一场战斗就休息一次。在那个巫婆地洞又是毒又是泥，被对面先手打得灰头土脸好不容易轮到我方四个人直接两个未命中；千辛万苦打死了四个随从除了面具什么有用的东西都没给，结果还有一大段布满陷阱的路，拆陷阱20面的骰子还有好几点加成愣是连续骰出来2和3，被炸懵几次发现对面是3个血量是我两倍的怪。我就按着自己的玩法，不知道走到哪一步突然又触发战斗，对面占尽地利人和对我方实行包围的同时全是先手然后来一堆投掷物aoe。我买这个游戏就像犯天条一样受尽折磨，上网一看教程动辄几十分钟甚至按小时计，各种术语名词乱七八糟，还要忍受队内一个说话像我欠了她十万九千七一样的臭脸绿皮，一个问十句不回答一句有用信息的怪胎。我就当这三百块钱扔下水道里了吧",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 13.6,
+        "positive": false
+      }
+    },
+    "R83": {
+      "source": "review",
+      "raw_id": "236379290",
+      "url": "https://steamcommunity.com/profiles/76561199019421622/recommended/1086940/",
+      "date": "2026-09-28",
+      "text": "大名鼎鼎的博德之门3，在发售当年被誉为最好玩的游戏，通关一周目后感觉着实有些名不副实\r\n\r\n首先，最让人失望的是战斗系统，战斗系统太糟糕了——举个例子，奥林，足足12层的不可撼动，每回合刷新，由被套庇护术从而无法直接选中的小怪提供。制作组的意思大概是，你需要用各种手段把这些小怪干掉，然后集中火力对战boss。\r\n实际上呢？最好的方法就是六环飞弹把不可撼动打掉，接着靠伤害灌死\r\n拉斐尔，卡扎多尔，院长等BOSS都是如此，老老实实走机制是最困难的，伤害灌死才是王道\r\n原因很简单，数值系统导致只要怪物打到你身上，那必定是刀刀见血，AC给的是闪避几率而非肉度，鏖战是最糟糕的选择\r\n\r\n第二，极度糟糕的商店系统——这里说的不是议价好感度之类的东西，而是细节，点击长休按钮，入夜后你在营地穿的衣服，鞋子，大部分好看的衣服都在第三章，前两章陪伴你的只有灰尘扑扑的冒险者衣物，这和所处环境有一部分关系但让瓦罗或者随便加个NPC买点好看的内衣很难么？\r\n\r\n第三，糟糕的日后谈——我第一个完整打完的CRPG是行商浪人，和它一比本作的日后谈显得太过简陋，我更喜欢左边放个帅气的立绘，右边写上人物结局，类似公主王子幸福地过完一声云云。BG3的日后谈仅仅是六个月后，而且是队友口述——这太糟糕了，你完全可以做得更好，我的吟游诗人和影心过上了幸福的田园生活，游戏里是怎么表现的？黑屏，白字......\r\n\r\n第四，赶工痕迹明显，最明显的是君主和王子二选一那里——这实在是不可理喻，首先给玩家变灵吸怪的选项，就说明了啃王子脑袋根本不是必选项，况且放出王子出来，王子如果不识时务那么他会面对君主和干死仨神选的玩家，难道把王子打到奄奄一息再啃会破坏口味？\r\n\r\n总的来说，这款游戏好玩么？好玩。但知道这一切后，让我花二百多买我乐意么？鉴于发售这么久依旧没有DLC或者其他补充完善剧情，我的答案是不乐意",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 137.7,
+        "positive": false
+      }
+    },
+    "R84": {
+      "source": "review",
+      "raw_id": "234223485",
+      "url": "https://steamcommunity.com/profiles/76561198054887959/recommended/1086940/",
+      "date": "2026-09-01",
+      "text": "attacks always miss and spells always miss? What kind of stupid game is this ?",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 42.2,
+        "positive": false
+      }
+    },
+    "R85": {
+      "source": "review",
+      "raw_id": "237472589",
+      "url": "https://steamcommunity.com/profiles/76561198942312134/recommended/1086940/",
+      "date": "2026-10-11",
+      "text": "翻译很大问题，语句不通，超级别扭，好像是和我不在一个次元的没用一句白话，看着都累！！视角问题一坨吧对不起3A的叫法，战斗职业严重不平衡。 到处都是黑乎乎的，离开了黑乎乎你会做游戏？还是说黑乎乎的地牢更省成本。 很多剧情要你直接找书看，什么玩意。玩游戏看书搞研究？一个剧情就靠看书\n无敌！！我玩下来体验是很差的。BUG还是很多。我认为就是一个探索解密的地牢游戏，不喜欢这种类型的千万别买。体验很差。BUG多如牛毛！手柄野是一坨大便，ABXY按键都是反着的。什么屁玩意，以后不考虑这个IP",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 257.8,
+        "positive": false
+      }
+    },
+    "R86": {
+      "source": "review",
+      "raw_id": "236976650",
+      "url": "https://steamcommunity.com/profiles/76561198796317667/recommended/1086940/",
+      "date": "2026-10-05",
+      "text": "1",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 128.0,
+        "positive": false
+      }
+    },
+    "R87": {
+      "source": "review",
+      "raw_id": "236758669",
+      "url": "https://steamcommunity.com/profiles/76561198140327529/recommended/1086940/",
+      "date": "2026-10-03",
+      "text": "多人联机捡不了东西，别人可以捡。读档后走路都不让走了。年度最佳更新了三年还有这种低级问题吗",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 1.6,
+        "positive": false
+      }
+    },
+    "R88": {
+      "source": "review",
+      "raw_id": "235534741",
+      "url": "https://steamcommunity.com/profiles/76561198322990052/recommended/1086940/",
+      "date": "2026-09-18",
+      "text": "下回来两次，实在是玩不下去，",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 9.8,
+        "positive": false
+      }
+    },
+    "R89": {
+      "source": "review",
+      "raw_id": "235481757",
+      "url": "https://steamcommunity.com/profiles/76561198268264709/recommended/1086940/",
+      "date": "2026-09-17",
+      "text": "在你们解雇掉UI设计师并用干渴和虫啮以及恰到好处的文火慢烤终结他可悲的生命后再将他的灵魂禁锢在无信者之墙中遭受永恒的折磨来让他为自己蹩脚的丑陋无比的该以反人类罪行受到审判的畸形造物付出代价之前，我拒绝给这款游戏打出他应得的好评。",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 147.3,
+        "positive": false
+      }
+    },
+    "R90": {
+      "source": "review",
+      "raw_id": "235466989",
+      "url": "https://steamcommunity.com/profiles/76561198083548864/recommended/1086940/",
+      "date": "2026-09-17",
+      "text": "没有神界原罪好，养鸡妹塑造得不错，夺心魔还可以，其余没什么意思。",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 206.9,
+        "positive": false
+      }
+    },
+    "R91": {
+      "source": "review",
+      "raw_id": "235118703",
+      "url": "https://steamcommunity.com/profiles/76561198353978454/recommended/1086940/",
+      "date": "2026-09-12",
+      "text": " 差评差评差评太垃圾了，玩了神界原罪再来玩这个，前期打的死去活来，有技能了没有爽的战斗，各种无意义的聊天，各种无意义的长休，超级多的露营物资，拿来干啥，后期根本消耗不了，就连终局战斗也没有好的指引，召唤NPC盟友还以为是一起过来帮忙，哪知道只来一个，有啥用呢，各种无意义的交互，交互做的特别差，超级虎头蛇尾，不好玩不好玩不好玩，不如3 4 5 6刷神界原罪2，神界原罪2才是好游戏，这充其量就是个半成品",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 57.4,
+        "positive": false
+      }
+    },
+    "R92": {
+      "source": "review",
+      "raw_id": "234374535",
+      "url": "https://steamcommunity.com/profiles/76561199076821379/recommended/1086940/",
+      "date": "2026-09-03",
+      "text": "感觉不适合我",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 62.6,
+        "positive": false
+      }
+    },
+    "R93": {
+      "source": "review",
+      "raw_id": "232712235",
+      "url": "https://steamcommunity.com/profiles/76561198119771639/recommended/1086940/",
+      "date": "2026-08-13",
+      "text": "不适合，太慢太啰嗦",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 17.4,
+        "positive": false
+      }
+    },
+    "R94": {
+      "source": "review",
+      "raw_id": "232554656",
+      "url": "https://steamcommunity.com/profiles/76561198285994183/recommended/1086940/",
+      "date": "2026-08-11",
+      "text": "还是神原好玩，治好了我的miss焦虑症，爱来自骰子",
+      "meta": {
+        "language": "schinese",
+        "hours_at_review": 80.7,
+        "positive": false
+      }
+    },
+    "R95": {
+      "source": "store",
+      "raw_id": "1086940",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-11-08",
+      "text": "{\"appid\": 1086940, \"name\": \"Baldur's Gate 3\", \"type\": \"game\", \"developer\": [\"Larian Studios\"], \"publisher\": [\"Larian Studios\"], \"release_date\": \"2023-08-03\", \"release_date_raw\": \"Aug 3, 2023\", \"coming_soon\": false, \"genres\": [\"Adventure\", \"RPG\", \"Strategy\"], \"platforms\": {\"windows\": true, \"mac\": true, \"linux\": false}, \"price\": \"$59.99\", \"price_minor\": 5999, \"initial_price_minor\": 5999, \"currency\": \"USD\", \"region\": \"US\", \"is_free\": false, \"discount_pct\": 0, \"metacritic\": 96, \"description\": \"Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.\", \"price_scope\": \"Current US store price at collection time; no price history.\"}",
+      "meta": {
+        "from_snapshot": false,
+        "captured_at": "2026-11-08T05:49:27.554873+00:00"
+      }
+    },
+    "R96": {
+      "source": "review",
+      "raw_id": "236727166",
+      "url": "https://steamcommunity.com/profiles/76561197992487722/recommended/1086940/",
+      "date": "2026-10-02",
+      "text": "Yeah, yeah, I know, I must be crazy... But I just really didn't like it, OK? I'm sad to be this disappointed.\n\nIt's a well-made game for sure, no doubt about it. If it weren't for the great expectations, there might not have been such a great disappointment. I've enjoyed Larian's previous works, loved them even, but there was almost nothing about BG3 to inspire similar feelings.\n\nThe story was boilerplate D&D plot, stretched to 100+ hours. Meaningless, emotionless, drawn out tropes and cliches. Only Act 2 made me feel something. I put off wrapping up Act 3 for years from sheer boredom, and felt nothing but tedium by the end.\n\nThe characters were as uninteresting as they were horny, I couldn't care about them with the obvious exception of Karlach, who was an actually well-written character. Shadowheart and Astarion were ok-ish. The rest were forgettable. Couldn't decide if the late shoehorning of Jaheira and Minsc was welcome fanservice or a way to distract from the voidness Gale, Wyll and Halsin.\n\nThe 5e ruleset is not a good fit for such a game, and Larian's attempts at patching it, while valiant, were not sufficient. Some made it actively worse. The combat was plodding, the interface clunky and annoying, the abilities and items both overwhelming in number and underwhelming in the choices they presented. 5e was never meant to be a lootfest, but the magic items the game showered you with created perverse incentives and boring micromanagement. The gear-juggling was made so much worse by the abysmal stash and inventory system. That they were this bad really boggles the mind.\n\nIn the end, the game had nothing to say, nothing to offer but a fun romp that degraded into tedium by the end, Almost nothing about this game is truly memorable, artistically profound or genuinely touching. It was a 150 hour fast food meal served on a really nice and shiny plate. For all its bugs and failures, I will forever remember and cherish Owlcat's glorious mess that is Wrath of the Righteous over the slog that was BG3. Even Larian's own Original Sin games were superior.\n\nEdit: I'm sorry for all the feelings I hurt.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 149.8,
+        "positive": false
+      }
+    },
+    "R97": {
+      "source": "review",
+      "raw_id": "236973356",
+      "url": "https://steamcommunity.com/profiles/76561198002710480/recommended/1086940/",
+      "date": "2026-10-05",
+      "text": "[b]tl;dr[/b] - Many times I've regretted giving this game chances. Turn back... unless you're a masochist. \n\nBuy only at deep discount if you're a CRPG fan. Accolades and the community's abusive attachment disorder aside, this is a still painfully janky game three years after release. It's not terrible, but... if you're bothered by poor UX or bugs, prepare to suffer death by a thousand little cuts.\n\n[h2][b]The UI - frenemy at best:[/b][/h2]\n\n*  The default camera constantly gets in the way. At times it's so disorienting you'll struggle to tell what's going on. Just to attack somebody the game keeps obscuring, you'll have to click this over here... then that over there... then that up there...(By Act 2 I had to install a mod just to make it playable).\n\n* In a game where every other threat triggers turn based mode, do traps? Nope. Command low level parties perishing on the clock as you frantically try to button-press your way out of it. Worse - press wrong, and it's possible to start dialogue between characters _while they burn in real time_. Like some dark comedy, party locked behind a text based UI, you discuss whatever plot point Larian felt more important than characters gradually cooking into charcoal briquettes, their screams punctuating your mouse clicks.\n\n*  Try to shoot a pesky goblin who hit you just a moment before and you begin a new mini-game: line-of-sight-wackamole. Spend many mouse clicks sleuthing exactly which spot will allow you to satisfy vague yet simultaneously strict conditions without yourself stumbling through acid, poison, or fire. Don't worry, when you give up, the auto-aim is still there to push you through things that hurt.\n\n[h2][b]Bugs - so many still awkward or outright broken features:[/b][/h2]\n\n*  Group pathing is excellent... at doing exactly the wrong thing. Click to go around or even jump over that obviously dangerous acid pool, and your party members follow you... stumbling through it like idiots anyway. Break group to avoid this? Enjoy 4x the number of keystrokes and mouse clicks.\n\n*  Quests glitch, incompletable due to some decision you made hours ago, or not starting at all. You can try to hide finished items in your bloated quest log but that feature will turn itself off every new session.\n\n*  Items for summoning assistance in tough battles... activate in the wrong place and your mercenary ogres just stand there, their AI pathing unable to navigate a giant room (looking at you, Goblin Boss fight). Then afterwards, they'll demand 500 gold for literally doing nothing.\n\n[h2][b]Annoyances - plenty...[/b][/h2]\n\n*  Mob aggro is frequently arbitrary/inconsistent to terrain and circumstances. Sometimes creatures engage from waaaay over there, other times ignore combat right in front of them. Today a battle 'ended' within obvious view of an idle enemy. Then, instead of giving back control, said enemy just 'wakes up,' beginning a brand new fight ...cancelling all  prior-battle consumables and yanking me back to turn-based mode... despite neither pressing a button nor anybody moving. Oh goodie... guess I'll have to re-bless... and spend another charge of barbarian rage... and...\n\n*  Enemies in the Baldur's Gate universe carry enough molotovs or acid bottles to make rioters jealous - AoE so rampant you don't dare position characters close for mutual support. D:OS2 explodium barrels(tm) return for several guest appearances too. Stand in the wrong place and... boom, sweep up your character's residue~\n\n*  Action bars change without your consent, the logic dumping icons haphazardly. No action bar presets or import functionality - enjoy futzing with everything every new weapon type... every level...\n\n[h2][b]And the rest...[/b][/h2]\n\nHow does Larian compensate for some of these issues? By shoving at you small mountains of consumables and vendor trash items until your bags nearly burst, becoming a tedious inventory. Rewards are... oddly paced, sometimes underwhelming, sometimes endgame gear in the first act. Resources go out of wack once you recognize camp supplies are basically limitless, allowing you to long rest after every battle, far more than any D&D campaign would allow.\n\nToo easy? Turn up the difficulty so UI flaws become downright hostile. You'll struggle to consistently get characters to do what you want, gradually adopting all kinds of maladjusted coping mechanisms BG3 fans have Stockholmed as acceptable. Single mis-clicks frequently end battles in catastrophe. Eventually saving before every battle round isn't cheesing - it becomes... necessary.\n\nSigh.\n\nIn the game's defense, the story is remarkable for its many choices - no other title I've tried goes to these lengths (though expect cliche and forced moments - Shadowheart... I just met you and you're trying to jump my bones). And the piles of dialogue, well acted, making you feel like you're part of an actual world? Solid.\n\nBut even when the best parts rise to the surface, the jank buzzes back into your face like an aggravating fly, reminding you're just playing a messy CRPG that will never get the polish it desperately needs. There might be a good game... buried... under all this... somewhere... but it's frustrating to look (twice as hard if you're not familiar with D&D 5e). Baldur's Gate 3 is ultimately a Frankenstein mashup of Larian+D&D5e. I had less trouble with DOS2 - though that game was hard, it didn't feel quite so arbitrary as this.\n\nNot sure I'll ever reach Act 3. Quit more than once, then blown the dust off months later while bored and had no other games to play. Why do I keep giving this game chances? Perhaps sharing the CRPG community's self-loathing, I've now modded the game so much it's... passable. Do I still believe in this negative review? With all my heart.\n\nThank you for reading. /rant",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 200.9,
+        "positive": false
+      }
+    },
+    "R98": {
+      "source": "review",
+      "raw_id": "234102961",
+      "url": "https://steamcommunity.com/profiles/76561198090998239/recommended/1086940/",
+      "date": "2026-08-30",
+      "text": "I seem to be in the rare minority of people who just can't get into this game. \n\nNearly 40 hours put into the game and I can't get through the first Act, not because of difficulty, but because I just don't like the characters or the story enough to care about any of it. The writing for character interactions feels like a mix of horny teen Tumblr blog and the Witcher TV show after Cavill left. \n\nEverything about this game just feels like the same \"Trying to be Hollywood\" spectacle chasing that the AAA game industry has been doing for years, and it is a full miss for me. There are no aspects of the game that I found enjoyable enough to push past the first Act, and I wish I could refund it since I will never finish it.\n\nPlenty of other people have a very different opinion and experience with the game than I do though, so take my complete disdain and distaste for BG3 with a grain of salt. \n\nAll in all, if you like D&D 5e, you may like this game, though I'd recommend Solasta: Crown of the Magister for a better D&D-esque experience.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 38.8,
+        "positive": false
+      }
+    },
+    "R99": {
+      "source": "review",
+      "raw_id": "236303270",
+      "url": "https://steamcommunity.com/profiles/76561198059976899/recommended/1086940/",
+      "date": "2026-09-27",
+      "text": "If you are reading this, then you probably already know the positives of Baldur’s Gate 3: freedom of choice, great voice acting, strong quest design, memorable companions, and the ridiculous amount of ways you can solve problems. I'm not going to sit here and pretend those things are not impressive, because they are.\n\nBut because those parts have already been praised to death, I want to focus on what, in my opinion, makes the game overrated.\n\nBaldur’s Gate 3 is clearly a good game, but I don’t think it is the flawless masterpiece people make it out to be. To me, it is also bloated, clunky, awkward, weirdly horny, and surprisingly weak when it comes to the feeling of progression. I will address each of those in the following sections.\n\n[h2]Weak Progression[/h2]\n\nOne of my biggest problems with BG3 is progression. For such a huge RPG, I rarely felt genuinely excited about my character becoming stronger.\n\nThe story moves forward, the stakes get bigger, and the locations become more dramatic, but my actual character build often felt weirdly static. Gear progression especially felt underwhelming. It is very possible to find strong equipment in Act 1 and keep using it through Act 2 and even into Act 3.\n\nI understand that this is probably good for balance, as it avoids the usual RPG problem where every item becomes useless after two hours. But from a player perspective, it can feel boring. You defeat major enemies, explore dangerous areas, open some impressive-looking chest, and then the reward is something you instantly send to camp because your old gear is still better.\n\nI mean there is clearly something wrong when I'm deep into Act 3 and still wearing gear from Act 1 without feeling much reason to replace it. Loot should be exciting. I should look at a new weapon, armour piece, ring, or cloak and think, \"Oh, this changes my build.\" But too often in BG3, loot just feels like mildly interesting clutter.\n\n[h2]Underwhelming Level-Ups[/h2]\n\nLeveling up has a similar problem. Because BG3 follows Dungeons & Dragons 5e, progression is more restrained. Yeah, I get that it is faithful to the tabletop rules. But as a video game RPG, it can feel really underwhelming. There is no proper skill tree, no big long-term upgrade path, and not many future unlocks that made me excited.\n\nSome classes get fun powers, but plenty of level-ups feel minor. You get one spell, a passive, a feat, or some practical option that feels fine but not exciting. Many of the coolest choices can be taken early, and after that you often just pick whatever is left or whatever seems vaguely fitting.\n\nA skill tree would have helped. Not some bloated mess with 300 meaningless icons, but something that gives a stronger sense of direction. Something that lets you look ahead and think, “Oh wow! I cannot wait to unlock that!” In BG3, I often didn't feel like I was building towards some powerful fantasy version of my character. I felt like I was just selecting from a small menu of practical options.\n\n[h2]Combat: Great Ideas, Clunky Execution[/h2]\n\nCombat is a mixed bag for me. When it works, it can be genuinely great. Positioning matters, height matters, surfaces matter, spells matter, and the environment can completely change a fight. You can push enemies off ledges, block routes, set traps, summon creatures, buff allies, debuff enemies, and turn the battlefield into complete chaos.\n\nBut when combat does not work, it becomes slow and clunky. The camera is often terrible, especially in multi-level areas. Trying to click the right enemy, floor tile, ledge, ladder, or doorway can feel harder than the actual fight.\n\nPathfinding can also be stupid. Characters walk through fire, acid, traps, or other hazards like they are trying to speedrun natural selection. You finish a fight, relax for half a second, and then someone casually strolls through burning ground because why the hell not.\n\nThe hit chance system can also feel awful. I know missing high-chance attacks is part of D&D. But that does not mean it always feels good in a video game. Nothing kills the heroic fantasy faster than watching your trained warrior miss a point-blank attack while some goblin with the posture of a wet sock crits you from across the room.\n\n[h2]Inventory Management: Fantasy Warehouse Simulator[/h2]\n\nThen there is the inventory system, and oh boy, it honestly deserves its own prison sentence.\n\nBy mid-game, your bags are full of scrolls, potions, arrows, keys, books, notes, quest items, food, rings, amulets, dyes, tools, random bones, and 46 pieces of equipment you are keeping \"just in case.\" Managing all of it becomes a chore.\n\nThe game gives you so many items, but sorting through them is tedious. You constantly move things between characters, send things to camp, compare gear, check whether some random note still matters, and try to remember which companion has the potion you need.\n\nSomewhere in your backpack there is probably a useful item. Good luck finding it.\n\n[h2]Act 3: Too Much of Everything[/h2]\n\nThe pacing also becomes a problem, especially in Act 3. Act 1 is strong because it has mystery, danger, discovery, and a good balance between freedom and direction. Act 2 has a strong atmosphere and feels more focused. But Act 3 is where the game starts drowning in its own ambition.\n\nThe city is impressive, don't get me wrong. There is a lot to do. But sometimes there is just too much. Every building has secrets. Every NPC has a problem. Every street corner threatens to become a side quest. You can’t walk 20 metres without someone asking you to solve a murder, uncover a conspiracy, rescue someone, investigate a basement, enter a portal, or confront a god. \n\nThe amount of content is impressive, sure, but this density hurts the pacing.\n\n[h2]Romance Writing: Too Fast, Too Easy, Too Awkward[/h2]\n\nThe romance writing is another big issue for me.\n\nThe issue is not just that the companions are bisexual. That alone I can survive. The problem is that nearly every companion feels player-sexual in the same way. Instead of feeling like complex adults with different preferences, boundaries, and emotional pacing, the party often feels like they all joined the same fantasy dating app and instantly matched with the player.\n\nYou meet these people, survive a few fights, avoid being completely evil, and suddenly half the camp starts acting like you are the most desirable person in Faerûn. Ridiculous.\n\nThe romance feels too easy and too fast. It does not feel like trust is properly earned. It feels like romance unlocks because you picked enough polite dialogue options. I even had scenes that felt weirdly romantic when I was not trying to romance that character at all. I was just choosing normal polite or supportive options, but the game seemed to assume I was interested.\n\nThe silent protagonist makes it even more awkward. A companion pours their heart out, becomes vulnerable, or expresses attraction, and your character mostly communicates through silent staring and vague hand gestures. Instead of two people building chemistry, it can feel like one fully acted character falling in love with a mute wax figure.\n\n[h2]Conclusion[/h2]\n\nThat is why I cannot see Baldur’s Gate 3 as the flawless masterpiece people make it out to be. It is ambitious, reactive, and impressive, but also bloated, clunky, awkwardly paced, and surprisingly weak as a progression-based RPG.\n\nI respect the game a lot, and I understand why people love it. But for me, the weak progression, messy Act 3 pacing, clunky combat moments, silent protagonist, and weirdly rushed romance writing hold it back too much.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 78.5,
+        "positive": false
+      }
+    },
+    "R100": {
+      "source": "review",
+      "raw_id": "234590448",
+      "url": "https://steamcommunity.com/profiles/76561198165625978/recommended/1086940/",
+      "date": "2026-09-06",
+      "text": "Honestly, I've had this game since release and I just can't with it. All of the characters are so goddamn cringe I cannot stand the story long enough to make it past the first act. \n\nIt's like being stuck with a bunch of hypersexual theater kids all doing amateur auditions and thinking they're killing it. I just want to exterminate the entire cast, but then you're stuck with the rest of the world...and way less content. \n\nI hate how literally everyone in the party has to be \"the special.\" It wasn't even this bad in Divinity Original Sin 2. \n\nI think this is why I never got into dnd, it's soooo bad. \n\nWe need more bullying in highschool.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 87.8,
+        "positive": false
+      }
+    },
+    "R101": {
+      "source": "review",
+      "raw_id": "233426871",
+      "url": "https://steamcommunity.com/profiles/76561198377511478/recommended/1086940/",
+      "date": "2026-08-22",
+      "text": "A great D&D adaptation, but a frustrating game\n\nBaldur’s Gate 3 does an impressive job of translating D&D rules into a video game. Character classes, spells, abilities, dice rolls and many other mechanics are remarkably well implemented.\n\nUnfortunately, I increasingly dislike the actual game built around those mechanics.\n\nThe biggest problem is the combat design. Especially in Act 3, major encounters constantly introduce enemies with special abilities that are poorly explained or completely unexpected. Enemies become invisible, stun characters, move without provoking opportunity attacks, apply multiple status effects, create darkness, and use combinations of actions that are difficult to understand from the player's perspective.\n\nThe problem isn't difficulty. **The problem is a lack of information.**\n\nA good D&D encounter gives you enough information to make tactical decisions. BG3 too often makes you discover the rules by getting hit by them first. Eventually combat starts feeling less like *“How do I outsmart these enemies?”* and more like *“What ridiculous special ability did the game just pull out of nowhere?”*\n\nLarge encounters are another problem. Watching 15–20 enemies take their turns one after another makes fights incredibly slow. Combine that with all the status effects, animations and special abilities, and some battles become an exhausting exercise in waiting.\n\nThe camp system also becomes increasingly annoying. Wanting to take a long rest can turn into another cutscene, companion conversation, romance scene, dream sequence or even a fight. The companions are interesting, but the game sometimes feels like **group therapy with occasional adventuring in between**.\n\nLoot has the opposite problem. In BG1 and BG2, finding a magical item was exciting. In Act 3 of BG3, I constantly find supposedly powerful items and think: *“What am I supposed to do with this?”* Many are so build-specific that they immediately become vendor trash.\n\nAnd then there are the technical and UI problems: unclear mechanics, missing or misleading indicators, awkward camera behavior, and situations where the game behaves differently from what its descriptions suggest.\n\nI actually like the D&D rules in BG3 a lot.\n\n**It's the game built around them that increasingly frustrates me.**\n\nI enjoyed BG1, BG2, Icewind Dale and Neverwinter Nights much more. They had fewer systems, smaller encounters and less spectacle, but they generally **let me play instead of constantly getting in my way**.\n\nAt this point, I frequently find myself asking:\n\n**“How do I beat this?”**\n\nfollowed by:\n\n**“Do I really want to spend another hour doing this?”**\n\nThat's a disappointing place for a Baldur's Gate game to leave me.\n\n**Excellent D&D implementation. Increasingly frustrating game design.**",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 137.0,
+        "positive": false
+      }
+    },
+    "R102": {
+      "source": "review",
+      "raw_id": "234975473",
+      "url": "https://steamcommunity.com/profiles/76561197987130435/recommended/1086940/",
+      "date": "2026-09-11",
+      "text": "I was really hoping that Balder's Gate 3 was something worth playing.\n\nI've put in about twice as many hours as I needed to decide that I probably won't play this game again any time soon but I wanted to push through the slump in case I was just feeling grumpy. I should have guessed what was in store, given how little I liked the Pathfinder games. At least Kingmaker had some memorable characters and something like a decent plot. I don't care what's beyond the 'save yourself' plot of the first act. The party characters are vapid, poorly developed and comically formulaic. That each of them that I've met so far is hiding some dark secret dilutes any mystery or intrigue that might have come from pursuing those story lines. Each of the party members takes the time to point out that they don't trust you, don't like you, and are only sticking around because they expect something out of you. \n\nI guess these are the 5e rules? How does being able to make a halfling just as strong as an orc aid role playing? With no constraints I guess it's fun to make characters that look different, but why?\n\nThe writing feels like the writers were all last employed by corporate diversity training courses and never loved anyone their entire lives. All points of view are valid? Everyone is trying to manipulate everyone else? How many dialog menus result in a neat little lesson about not making assumptions about someone's background? I'm not even that far in and it already feels like I've been tricked into watching some HR mandated training videos on diversity at the workplace.\n\nToo many, too long cut scenes: if I wanted a voice drama I'd go to Audible and listen to a book.\n\nThis game is miserable to play, except for combat which is ok, but no decision feels like it has any weight. Kill the goblin princess? Sell her stuff to the vendor without raising suspicion. Make your way to one of her captains, get assigned an important task. Kill a couple of goblins in the corner? No one will ever find out that there are three bodies in the middle of a well lit hallway. Just boring and disengaging.\n\nThe graphics are good, the opening location is genuinely creepy. No complaints here. \n\nHow did this mess win so many awards?\n\nIf you're in to glamour shots and moral relativism maybe this is for you.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 12.7,
+        "positive": false
+      }
+    },
+    "R103": {
+      "source": "review",
+      "raw_id": "236702041",
+      "url": "https://steamcommunity.com/profiles/76561199121977725/recommended/1086940/",
+      "date": "2026-10-02",
+      "text": "it's a good game. but i think it's mostly for people who are already fans of DnD. i wasn't so the game didn't really click with me. i don't think i will ever finish it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 48.6,
+        "positive": false
+      }
+    },
+    "R104": {
+      "source": "review",
+      "raw_id": "237386938",
+      "url": "https://steamcommunity.com/profiles/76561199556646996/recommended/1086940/",
+      "date": "2026-10-10",
+      "text": "Dating Simulator 3",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 312.4,
+        "positive": false
+      }
+    },
+    "R105": {
+      "source": "review",
+      "raw_id": "237785529",
+      "url": "https://steamcommunity.com/profiles/76561199057535851/recommended/1086940/",
+      "date": "2026-10-15",
+      "text": "I'm writing this partially as an admitted contrarian stance. I'm not saying that the review is without merit, I am saying that it's full of things that I wouldn't focus on so belligerently if people would stop fucking talking to me about how good this game is supposed to be. \n\nTo be fair to Larian, who remain one of the foremost competent developers regardless of anyone's opinions, when you create with the D&D IP you do not retain total and complete freedom. My thoughts regarding this game's narrative are very biased, as it is the 3rd entry of Baldur's Gate, I find myself comparing it to Baldur's Gate 2 frequently. Baldur's Gate 2 is still one of the greatest RPGs of all time, but it belongs to an entirely different generation of D&D. The current iteration of D&D is marketed towards the current iteration of D&D players, I think these people are horrible. Genuinely horrible. I think their ideas are generic, I think their concepts of fantasy are boring, dull, shallow, and lacking in any significant desire to reach for a more interesting construct within the genre. \nYou might be guessing where I'm going with this: Yes, I think Baldur's Gate 3 has a generic story. I think it's a game that takes all of the most \"interesting\" (flashy) concepts of D&D and repeatedly tries to drown you with them in a fit of postpartum hysteria. This game has a histrionic, cataclysmic fit every 5 minutes trying to force you to say \"[i]oh shit[/i]\" in a way that you usually only get out of Fast & Furious movies or John Wick. Taking it as fantasy, I don't need to see a bunch of flights of fancy played out in meaningless displays of tension.\nI'll make this easier: Dragon Age: Origins is still, to me, the greatest introductory title to a fantasy RPG series ever. You assume one of several roles in a world that long preexists you and exists with its own social constructs, its own social contract, and with characters who are born assuming their own consistent prejudices. This matters significantly at different points, as it shapes the options presented to your character repeatedly throughout the narrative of that title. Divinity Original Sin 2 also does this with significant successes. This game, I feel, does it less successfully. At no point does any character ever feel truly specialized, nor truly inept, I don't feel that any one of them offers me a particular advantage, nor do I find any of them particularly interesting. \nPlaying Baldur's Gate 3 is sitting through a lot of character writing that is...okay. If I told you it was bad, I would be a delusional, seething idiot with no discernment for quality. It's not bad. It's actually pretty good at some points. Character-specific narratives aren't entirely empty, though not all equally interesting or worth engaging with. It's better than, say, VTM: Bloodlines 2, which is an unbearable mess - and that's an evaluation of Baldur's Gate 3 at its worst. Even its lowest moments are not unbearable, nor are they ever particularly messy. But there's a point where, maybe, I don't want to be interrupted by my companions, and would prefer to engage with this writing at my own pace. I'd like to experience the gameplay for more than 30 seconds without someone trying to get me to do shit like I'm managing a team of remote workers in foreign countries.\nTo expound on that point gameplay is, as you'd expect from Larian, phenomenal. They have established themselves as the absolute masterclass of turn-based RPGs. What X-COM is to turn-based sci-fi, I think Larian consistently hits that quality for turn-based fantasy. Gameplay is flexible, it is dynamic, fun. The systems engage well with one another and the game punches above its weight class consistently with every interactive component it's made of. But I have a problem.\nMy problem is that I don't like it. I never [i]feel good[/i] about doing anything. If I roll with the punches and have a bad story for a few hours, whatever. If I savescum for a perfect run of an encounter, whatever. If I try to take the \"creative\" approach, whatever. It's not that the experiences are orchestrated to the point of being unenjoyable. It's that modern game design has this approach so totally lacking in subtlety that the approaches that would feel witty to someone poking around at the interior of a program are now, instead they're just highlightable (and usually charitable) visual gags. The point of keeping tactics turn-based should be that, like Chess, the player feels like they're solving a puzzle [i]thoroughly[/i] rather than just solving it. I never feel any pressure for long-term success in Baldur's Gate 3. I never feel pressure to perform. I never feel like there are real stakes, everything seems so 'cheatable' in a sense. \nThe game is boring to me. The encounters aren't puzzles I want to solve because, no matter how I solve them, they just aren't ever rewarding.\nBeyond this the narrative itself is too preoccupied with appealing to a literarily casual audience that can't necessarily grapple with complex topics that well. There is no nuance to the tone or pacing of the game, this bleeds through to character options in a way that's so suffocating it feels embarrassing. I blame this entirely on the D&D Townhouse Polycule demographic.\nIf the artistic direction of this game was slightly more subdued, and its narrative maybe a bit more challenging and intricate, I might be attracted to it more. As it stands I just can't make myself play it, which is generally rare with any RPG for me.\n\ntl;dr I don't think Baldur's Gate 3 is the best game ever, I do not think it's even that special of a game, but it is impressive and competent. I think the next Divinity will be miles better than this and I absolutely can not wait for Larian's next moves.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 32.4,
+        "positive": false
+      }
+    },
+    "R106": {
+      "source": "review",
+      "raw_id": "237657435",
+      "url": "https://steamcommunity.com/profiles/76561198009681196/recommended/1086940/",
+      "date": "2026-10-13",
+      "text": "I got this because of the hype, but not for me.\n\nImmediately I was drawn within the story and wanted to known more about it.\nStoryline and choices are well developed. I was curios to find out more. However....\n\nI found myself overwhelmed with stats, skills and character development. not just for character that I developed but for companions as well. As someone who never played D&D game I found difficult to understand entire game mechanic overloaded with multiple characters. After exploration started wherever I went, it would be a struggle to win a fight. Enemies would mostly be higher level than me. This resulted in constant quick loads so I can try different approach. Was I just unlucky that I have constantly found myself surrounded by higher level enemies.... I don't know.... what I do know is that it killed my enjoyment. Everything turned to be a chore of extremely high precision. \n\nWhat would it make it better (for me)?\nMore time needs to be given to understand the mechanics and character development before being introduced with more companions. Game does not hold you by the hand (maybe intentionally) and does not help you understand how to navigate complex systems.\n\nWith a sad hearth I am leaving this journey but I am happy that something like this exist (even if not for me).",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 21.6,
+        "positive": false
+      }
+    },
+    "R107": {
+      "source": "review",
+      "raw_id": "237937251",
+      "url": "https://steamcommunity.com/profiles/76561198136521118/recommended/1086940/",
+      "date": "2026-10-17",
+      "text": "Was trying to play though this for the first time. We turned off the mature and explicit content and were very disiponted when we came into a building with a bugbear and a orge haveing sex. \n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 20.6,
+        "positive": false
+      }
+    },
+    "R108": {
+      "source": "review",
+      "raw_id": "239025668",
+      "url": "https://steamcommunity.com/profiles/76561198084253099/recommended/1086940/",
+      "date": "2026-10-31",
+      "text": "the game is to slow, to expensive and the story isn't enjoyable.  many like it but I'm finding I almost have to force myself to play it.  I wish I didn't buy it...  However spending the money I did on it I would feel its a waste if I don't keep trying to like it.  So many like it, I know I'm in the minority...",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 8.9,
+        "positive": false
+      }
+    },
+    "R109": {
+      "source": "review",
+      "raw_id": "234721357",
+      "url": "https://steamcommunity.com/profiles/76561199028905982/recommended/1086940/",
+      "date": "2026-09-07",
+      "text": "very boring and slow",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 7.0,
+        "positive": false
+      }
+    },
+    "R110": {
+      "source": "review",
+      "raw_id": "238648783",
+      "url": "https://steamcommunity.com/profiles/76561198026571219/recommended/1086940/",
+      "date": "2026-10-27",
+      "text": "Excellent characters, not at all fun to play.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 94.4,
+        "positive": false
+      }
+    },
+    "R111": {
+      "source": "review",
+      "raw_id": "234807893",
+      "url": "https://steamcommunity.com/profiles/76561198161575323/recommended/1086940/",
+      "date": "2026-09-09",
+      "text": "You have to really like Larian's formula to enjoy this game. It does sprinkle in D&D's core mechanics very well, but it leans in the direction of Gygax D&D. The winning player formula is:\r\n\r\n- Save\r\n- Open the next door/portal/...\r\n- Learn about the hidden combat/social encounter for Door McDoorington \r\n- Get wiped in the 10v4 where every enemy has a free held action and a status debuff scroll\r\n- Reload\r\n- Spend 20 minutes building a Rub Goldberg machine on top of the McDoorington mansion\r\n- Lose the social encounter again (DC 5 roll)\r\n- Enter combat\r\n- Detonate the device\r\n- Fly the \"Mission Accomplished\" banner\r\n- Save again\r\n\r\nThe min:max \"be as prepared as Batman\" gameplay will work for some, but not others.\r\n\r\nOutside of the core Larian formula, the gameplay has some performance and stability problems. I consistently run into half-rendered maps.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 32.1,
+        "positive": false
+      }
+    },
+    "R112": {
+      "source": "review",
+      "raw_id": "234807134",
+      "url": "https://steamcommunity.com/profiles/76561198326473912/recommended/1086940/",
+      "date": "2026-09-08",
+      "text": "not enough dogs",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 65.5,
+        "positive": false
+      }
+    },
+    "R113": {
+      "source": "review",
+      "raw_id": "233875547",
+      "url": "https://steamcommunity.com/profiles/76561198202421247/recommended/1086940/",
+      "date": "2026-08-28",
+      "text": "This shit is impossible to play without save scumming.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 79.8,
+        "positive": false
+      }
+    },
+    "R114": {
+      "source": "review",
+      "raw_id": "237474901",
+      "url": "https://steamcommunity.com/profiles/76561197998390304/recommended/1086940/",
+      "date": "2026-10-11",
+      "text": "Act 1: Absolutely amazing. The absolute peak of RPG gaming.\n\nAct 2: Still good, but the cracks are starting to show.\n\nAct 3: An incomprehensible clusterfuck where everything pretends to matter, but somehow nothing feels particularly impactful anymore.\n\nBaldur's Gate 3 starts off as one of the most incredible RPG experiences I've ever had. Act 1 is genuinely fantastic. The exploration, the companions, the choices, the feeling that you're just a bunch of adventurers trying to make sense of the world around you. It's everything I want from an RPG.\n\nAct 2 is still good, but things start feeling increasingly railroaded. Misinterpret one little thing, make a decision without fully understanding its consequences, and suddenly something massive happens that can sour the rest of your campaign. Player agency starts feeling less like freedom and more like trying to guess what the writers intended you to do.\n\nAnd then comes Act 3.\n\nGood lord, what happened here?\n\nSuddenly you're drowning in supposedly world-shattering revelations, grand conspiracies, and characters with increasingly ridiculous ambitions. Everything is presented as the most important thing imaginable, yet very little of it actually feels meaningful.\n\nIt's like starting out reading The Fellowship of the Ring, embarking on this wonderful, grounded adventure with a group of companions, only for the story to slowly transform into some American Gods-style drama where the biggest, strongest, most important beings in existence all have the biggest, meanest plans.\n\nAnd of course, you and your merry band of increasingly overpowered superheroes are the only ones who can stop them.\n\nSomewhere along the way, the grounded RPG adventure turns into a comical superhero flick.\n\nAnd perhaps the funniest part is that, in doing so, Baldur's Gate 3 stays remarkably faithful to D&D 5e.\n\nBecause it suffers from exactly the same progression problem: you start out as a bunch of nobodies worrying about goblins stealing someone's chickens, and before you know it, you're fighting gods, dragons, and the equivalent of World War III because apparently every adventure needs to escalate into a cosmic catastrophe.\n\nBigger stakes, bigger villains, bigger explosions. But not necessarily a better story.\n\nI wish Baldur's Gate 3 had remained the adventure it was in Act 1. A wonderful, personal journey where your companions, discoveries, and smaller decisions felt like they mattered.\n\nInstead, it trades that magic for an increasingly bloated spectacle that seems convinced the fate of the entire universe is inherently more interesting than the fate of a handful of adventurers.\n\nAn absolutely phenomenal beginning, a decent middle, and a final act that completely lost me.\n\nSometimes saving a village from goblins is a far better adventure than saving the entire world from gods.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 145.2,
+        "positive": false
+      }
+    },
+    "R115": {
+      "source": "review",
+      "raw_id": "235795755",
+      "url": "https://steamcommunity.com/profiles/76561198008764241/recommended/1086940/",
+      "date": "2026-09-21",
+      "text": "Nach nun etwa 59 Stunden und dem Gefühl, dass ich nahezu jegliches Interesse daran verloren habe, das Spiel weiterzuspielen, möchte ich meine Eindrücke teilen.\n\n\n[h1]Mein erster Durchlauf – Balanced[/h1]\n\nIch bin auf [b]Balanced[/b] gestartet, also mit einem ausgeglichenen Verhältnis zwischen Kampf und Exploration.\n\nDas Spiel führt einen relativ tunnelförmig von Encounter zu Encounter und treibt dabei gleichzeitig die Story voran. Zwar gibt es Abzweigungen und alternative Wege, allerdings vermittelt einem das Spiel sehr schnell, wenn man sich in ein Gebiet begibt, das offenbar „zu schwer“ ist.\n\nIch bin beispielsweise dazu übergegangen, solche Gebiete zunächst schleichend zu erkunden – nur um erneut vermittelt zu bekommen, dass ich dort offenbar noch nichts zu suchen habe.\n\nWas mich dabei besonders gestört hat: [b]Viele grundlegende Mechaniken werden kaum oder gar nicht erklärt.[/b]\n\nNach etwa drei Stunden starb meine Gruppe in einem Kampf, den ich im Nachhinein nicht einmal hätte führen müssen. Daraufhin wurde ich wieder an den Strand am Anfang des Spiels gesetzt. Es wurde in all der Zeit einfach nicht gespeichert... >_<\n\n\n[list]\n[*]Wie das Camp funktioniert, musste ich selbst herausfinden.\n[*]Dass man regelmäßig Short Rests und Long Rests nutzen sollte, musste ich selbst herausfinden.\n[*]Dass man praktisch nach jedem relevanten Schritt speichern sollte, musste ich ebenfalls selbst lernen.\n[/list]\n\n\nIch habe mich anschließend bei Freunden erkundigt, wie man eigentlich sinnvoll progressen soll, ohne ständig auf Heilung oder Exploits angewiesen zu sein. Wirklich hilfreiche Antworten bekam ich dabei kaum.\n\nKurz vor dem Goblin Camp kam dann nach einem extrem anstrengenden Kampf gegen die Phase Matriarch Spider der Punkt, an dem ich meinen ersten Charakter endgültig aufgegeben habe. Ich hatte schlicht keine Perspektive mehr für meinen gewählten Schleich-Charakter. Kaum passendes Gear, kaum passende Items und Händler, die für diese Spielweise kaum etwas anbieten.\n\n\n[h1]Zweiter Durchlauf – Explorer[/h1]\n\nAlso neuer Versuch: Zwerg-Barbar auf [b]Explorer[/b].\n\nUnd plötzlich ist das komplette Gegenteil der Fall.\n\nDie Kämpfe sind inzwischen so einfach, dass ich teilweise das Gefühl habe, sie auch mit einem einzelnen Charakter gewinnen zu können. Sicherlich helfen mir die inzwischen bekannten Mechaniken, aber auch das Verhalten und die Fähigkeiten der Gegner spielen dabei eine große Rolle.\n\nMittlerweile habe ich unter anderem die Githyanki Creche nahezu vollständig ausgelöscht.\n\nDabei tritt allerdings ein weiterer Punkt auf, der mich mittlerweile massiv nervt:\n\nMechaniken wie [b]Entwaffnen[/b], die einem Schlichtweg nicht erläutert werden und denen man einfach ausgeliefert ist. Man müsste das Spiel und alle Mechaniken, jeden Schritt kennen, also das Spiel studieren um darauf reagieren zu können. Bedeutet, jeder weitere Kampf, wird ähnlich ablaufen und entweder ich Informiere mich, nutze buggy Interactions oder lade Kämpfe zich dutzende male neu um sie zu überwinden. \n\nMeine Charaktere werden gefühlt in jedem Kampf ständig entwaffnet. Gleichzeitig kann ich meine Waffen teilweise nicht einmal unmittelbar wieder ausrüsten, geschweige denn aufheben... \n\nDas Problem ist weniger, dass es diese Mechanik gibt, sondern dass das Spiel einem praktisch nicht erklärt, [b]wie man damit umgehen oder sich davor schützen soll.[/b]\n\nIm Internet findet man dann Hinweise, dass mehr Stärke die Wahrscheinlichkeit reduzieren soll. Drei meiner Charaktere haben bereits 18 Stärke – und soweit ich zu diesem Zeitpunkt weiß, liegt das Maximum bei 20. Viel mehr kann ich also ohnehin nicht dagegen unternehmen.\n\nUnd wieder stehe ich vor dem gleichen Problem: Ich muss auf eine Mechanik reagieren, von der mir das Spiel praktisch nichts erklärt.\n\nUnd die Belohnungen sind einfach nicht existent. Etwas zu überwinden das extrems schwierig war, droppt in der Regel nichts was auch dementsprechend \"WoW\" oder \"Geil\" auslösen würde.  Solche Items sind hinter weirden Interaktionen versteckt. \n\n\n[h1]Das eigentliche Problem[/h1]\n\nUnd genau hier liegt für mich das grundlegende Problem mit BG3:\n\n[b]Ich verstehe nicht, wo der Spaß entstehen soll, wenn man das Spiel nicht vorher ausgiebig recherchiert.[/b]\n\nJede Entscheidung fühlt sich potentiell wie ein Fehler an. Man speichert ständig, lädt Kämpfe neu, weil man zu viele Ressourcen verbraucht hat, verliert möglicherweise wichtige Items und erfährt teilweise erst Stunden später, dass man etwas hätte anders machen müssen.\n\nInformiert man sich vorher im Internet, stellt man wiederum fest, dass man bereits vor 10 Stunden Entscheidungen getroffen oder Items verpasst hat, die man jetzt gerne gehabt hätte.\n\nAlso lädt man einen alten Spielstand.\n\nDas erzeugt bei mir keinen Entdeckerdrang, sondern eher das Gefühl, das Spiel ständig gegen sich selbst absichern zu müssen.\n\nNatürlich gibt es unglaublich viele Möglichkeiten und Entscheidungen. Aber wenn die Konsequenz daraus ist, dass ich nach jeder größeren Entscheidung überlegen muss, ob ich gerade möglicherweise einen wichtigen Inhalt für die nächsten 10 Stunden zerstört habe, dann nimmt mir das einen großen Teil des Spielspaßes.\n\nAuch die Charaktere tragen für mich bisher nur begrenzt dazu bei. Man kann natürlich seine Begleiter meucheln und auf viele Dinge völlig anders reagieren – aber das bringt mir wenig, wenn ich anschließend nichts davon habe außer Nachteile. \n\n[b]Karlach ist für mich bisher die einzige Figur, die ich wirklich sympathisch finde.[/b]\n\nUnd nur wegen ihrer Geschichte möchte ich mir die restlichen ~100 Stunden ehrlich gesagt nicht antun.\n\n\n[h1]Fazit[/h1]\n\nBG3 bietet offensichtlich enorme Freiheit, unzählige Möglichkeiten und sehr viel Content.\n\nFür mich fühlt sich diese Freiheit allerdings nicht wie Freiheit an, sondern wie eine Ansammlung potentieller Fehlentscheidungen, deren Konsequenzen ich ohne vorherige Recherche kaum einschätzen kann.\n\nNach rund 59 Stunden habe ich deshalb schlicht das Interesse verloren, weiterzuspielen.\n\n[b]Für mich persönlich mehr Frust als Spielspaß.[/b]\n\nMaybe in einer Gruppe anders...",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 83.2,
+        "positive": false
+      }
+    },
+    "R116": {
+      "source": "review",
+      "raw_id": "233628250",
+      "url": "https://steamcommunity.com/profiles/76561197975567214/recommended/1086940/",
+      "date": "2026-08-24",
+      "text": "Either pick the \"total asshole\" response when talking to you teammates or they ALL try to ride your dick.  It's a bit much, and annoying.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 28.6,
+        "positive": false
+      }
+    },
+    "R117": {
+      "source": "review",
+      "raw_id": "233548330",
+      "url": "https://steamcommunity.com/profiles/76561199114730472/recommended/1086940/",
+      "date": "2026-08-23",
+      "text": "A little too wonky for a game this highly praised and hyped",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 24.4,
+        "positive": false
+      }
+    },
+    "R118": {
+      "source": "review",
+      "raw_id": "234737160",
+      "url": "https://steamcommunity.com/profiles/76561199545954553/recommended/1086940/",
+      "date": "2026-09-07",
+      "text": "dog shit. missed 10 times back to back on all characters and lost honor run. absolute trashcan",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 488.1,
+        "positive": false
+      }
+    },
+    "R119": {
+      "source": "review",
+      "raw_id": "233372470",
+      "url": "https://steamcommunity.com/profiles/76561198027968127/recommended/1086940/",
+      "date": "2026-08-21",
+      "text": "It is sometimes nice to have your expectations proven wrong. Sadly in this case I was looking forward to this game and when playing, it looks great but the camera point of view is just plain rubbish.  I continued right up to the point when I was trying to attack some enemies on the roof and I realised you can't look up. You cant even see what is on the roof, because you are only seeing you and your companions on the ground floor. I mean seriously! Can you shoot out of a window .. no not really as you can't see what you would be aiming at.  This is supposed to be a good game that has won countless awards...what were the judges playing? Something else?  Could be a great game if they introduced a FPV option even just temporarily with a keystroke or a better way to manage the camera. As it is, I view this as something that could be good but is so fundamentally flawed that gameplay totally ruins the experience. Game deleted...moving on.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.5,
+        "positive": false
+      }
+    },
+    "R120": {
+      "source": "review",
+      "raw_id": "237329168",
+      "url": "https://steamcommunity.com/profiles/76561198055437838/recommended/1086940/",
+      "date": "2026-10-10",
+      "text": "Slow, tedious, boring.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 10.1,
+        "positive": false
+      }
+    },
+    "R121": {
+      "source": "review",
+      "raw_id": "235886213",
+      "url": "https://steamcommunity.com/profiles/76561198061141897/recommended/1086940/",
+      "date": "2026-09-23",
+      "text": "Not for me, otherwise great game.\r\nDon't bother with this game if you want fast paced gameplay.\r\nDon't bother if you can't stand RNG, dice rolls really decide whether or not you're having fun.\r\nDon't bother if you just want to relax, your party can wipe at any time making you lose whatever amount of time since your last save.\r\nDon't bother if you don't like solving puzzles with absolutely no clues.\r\nWon't comment on the story because I didn't make it very far, but for me personally I found it very boring and all characters are tropes / highly predictable.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 30.0,
+        "positive": false
+      }
+    },
+    "R122": {
+      "source": "review",
+      "raw_id": "235836724",
+      "url": "https://steamcommunity.com/profiles/76561198088277163/recommended/1086940/",
+      "date": "2026-09-22",
+      "text": "The ruleset or whatever it is called in D&D completely runied the experience for me as a wizard during our 4-player co-op playthrough.\n\nIt is genuinely not fun to waste all your spell points and/or actions on misses, and deal single digit damage in three turns, just to die to a single strike from one sneaky enemy. During our playthrough the general impression was that the meta is damage, no matter the fact that the game has a wide variety of interesting spells. It's just not worth it to try to stun an enemy for 1 turn and miss, instead of trying to actually damage it. Waste of potential.\n\nThe game was also full of technical problems. Bard trying to give us buffs for dialogues, the game confirming it at first, and then not adding the bonus to the final throw value - these sorts of bugs ruined tense moments. \nConstant desyncs and crashes during several phases of the game also ruined the experience. We finished only because of 1 member like the game out of four. Shame.\n\nTo be fair, the game looks good and most of the characters have an interesting story. Music also stands out.\n\nIt really says a lot about the gaming industry that this could became a GoT. If you are not a fan of the ruleset, I would say you should play Divinity Original Sin 2 instead of this. It was developed by the same studio and it is much more enjoyable.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 113.8,
+        "positive": false
+      }
+    },
+    "R123": {
+      "source": "review",
+      "raw_id": "234639990",
+      "url": "https://steamcommunity.com/profiles/76561199030027602/recommended/1086940/",
+      "date": "2026-09-06",
+      "text": "Look, I REALLY wanted to like this game, I love D&D but... This game just isn't it for me... The character customization is surprisingly limited, spell casters are useless, I get that level 1 spells and stuff need spell slots, but it feels like \"Well, just had a hard combat, and I can't do anything anymore for the next hard one!\" which really sucks cause I love spell casters in D&D, but what is the point of Minor Illusion or Disguise Self? When will I use them when I just have one combat after the other and no opportunity for shenanigans? The characters are annoying, I'm sure they're well written, I just don't like them. I really hate how the game rolls for me in combat. I get that makes the gameplay more streamlined, but I don't get the feeling that you get when you roll high in D&D, in this game it's just \"Oh, the enemy took ___ damage, cool.\" And also the setting is just not it for me. I like having more low stakes, and I get that's not what the game is going for, but like there aren't any other D&D games so I don't have a choice??? And finally, there's like no player agency. So far all it feels like I can do is either: \"You're cool.\" or \"Fuck you.\" and with some special differences like: \"You're cool. [Roll Persuasion]\" or \"Fuck you. [Roll Intimidation]\" like I want to be able to do funny stuff, not just be forced to do the same things over and over... Oh yeah also cause the setting is so serious, I can't play as a goofy little guy, and I can't choose my characters backstory or like, anything?? I know it wouldn't be useful, just add it as an option???\r\n\r\nAgain, I'm sure this game is great later on, it just doesn't do it for me and I can't bother getting further in, which is sad, cause I was really hopeful it would be fun, and I can't refund it anymore. I just really wish this was more of a D&D game than a D&D inspired game.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 7.0,
+        "positive": false
+      }
+    },
+    "R124": {
+      "source": "review",
+      "raw_id": "238505512",
+      "url": "https://steamcommunity.com/profiles/76561199063870259/recommended/1086940/",
+      "date": "2026-10-25",
+      "text": "eh",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 14.8,
+        "positive": false
+      }
+    },
+    "R125": {
+      "source": "review",
+      "raw_id": "238434011",
+      "url": "https://steamcommunity.com/profiles/76561198006589726/recommended/1086940/",
+      "date": "2026-10-24",
+      "text": "After playing it, was disappointed alot areas seem unfinished like skipped all together specially avernous or w/e it called.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 156.7,
+        "positive": false
+      }
+    },
+    "R126": {
+      "source": "review",
+      "raw_id": "238417550",
+      "url": "https://steamcommunity.com/profiles/76561198137314814/recommended/1086940/",
+      "date": "2026-10-24",
+      "text": "Controls made me nasous nauseous",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 0.8,
+        "positive": false
+      }
+    },
+    "R127": {
+      "source": "review",
+      "raw_id": "238392760",
+      "url": "https://steamcommunity.com/profiles/76561199572603816/recommended/1086940/",
+      "date": "2026-10-23",
+      "text": "Verdict: 🤷 Wait for a sale\nScore: 6/10 (5 is average)\n\nTLDR review: Fun exploration that does not lack depth, but far too tedious and convoluted for the average player.\n\nPros\n- Lots of exploration/customization\n- Very in depth\n- You can make Shadowheart naked\n\nCons\n- Many invisible walls \n- Janky and underexplained mechanics\n- Combat / leveling up is repetitive\n- Exploration becomes tedious... LET ME SPRINT",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 17.9,
+        "positive": false
+      }
+    },
+    "R128": {
+      "source": "review",
+      "raw_id": "238139088",
+      "url": "https://steamcommunity.com/profiles/76561199866049177/recommended/1086940/",
+      "date": "2026-10-20",
+      "text": "It's okay, I see the fun and I have the fun but it's also slow and boring.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.3,
+        "positive": false
+      }
+    },
+    "R129": {
+      "source": "review",
+      "raw_id": "238129257",
+      "url": "https://steamcommunity.com/profiles/76561198081525341/recommended/1086940/",
+      "date": "2026-10-20",
+      "text": "First Baldurs gate game that ive actually ever paid attention or understood things for (yknow young kid just doing things on games)\r\nThought yknow what im all about these RPG style games and it looks brilliant, Holy crap the \"Normal\" or second from easiest setting is HARSH as a new player, i step the difficulty down a notch, still a nice bit of challenge but some times a bit too harsh.\r\nThen just as you get passed 2 or 3 hours of play a pretty much game breaking bug where GALE a character encountered early on has a persisting aura that HURTS your allies. because you CANNOT move them away properly when reviving others and he is the last person alive you cannoy progress , you go to camp? cant long rest as its not registering him as alive or something stupid! apparantly a very very well known bug and has now 4 hours into it essentially soft locked me from ANY progress.it wouldnt be so bad if the game wasnt so extremely long winded and slow to play which was the whole appeal of it in the first place but for something like this to be going on frankly is not acceptable. the community forums just say the same fix that is not applicable in this sense and it feels and seems to be that the devs have completely abandoned this bug or even bothering to try and fix it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 5.0,
+        "positive": false
+      }
+    },
+    "R130": {
+      "source": "review",
+      "raw_id": "237658065",
+      "url": "https://steamcommunity.com/profiles/76561198060377292/recommended/1086940/",
+      "date": "2026-10-13",
+      "text": "A fun combat system with writing akin to a cancelled Netflix show targeted at a \"young adult\" audience.\nCharacters are so flat you could cut an atom even when stacking them all together.\nThey made an absolute bumbling buffoon out of Jaheira and most companions are completely spineless so that an evil character can still have a full party.\nThose that have some spine won't even confront you, they just fuck right off completely out of the game with just a fleeting notification informing you about it.\nThere's 17 companions in BG2 and they all have far more depth and dialogue than any of the 10 you get in BG3.\n\nYou can fuck a bear AND an [spoiler]illithid[/spoiler] though, so game of the decade it is.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 217.6,
+        "positive": false
+      }
+    },
+    "R131": {
+      "source": "review",
+      "raw_id": "236351770",
+      "url": "https://steamcommunity.com/profiles/76561198039611509/recommended/1086940/",
+      "date": "2026-09-27",
+      "text": "Played both Divinity games so have experience with these type of Larian games. Those games were complex, but BG3 dials it up with an absurd amount of RNG. I'm no stranger to turn-based rpgs, but not super familiar with the DnD rule set. So I guess it appeals to the randomness of the tabletop. But from an actual RPG gameplay experience, I find all the extra RNG extremely tedious. So much so that the game, unfortunately, feels like a crawl to play. Setting/story draws you in well, but this game will trigger anyone with analysis paralysis. That's why this ~20 hr review is what it is. Initial impressions of the game are not great and the game doesn't seem warranted of it's crazy run time so far. However, I am willing to go back here and there and see if my experience improves. If things click better, perhaps i'll update my review. Clearly this game has an audience, just maybe not for me.\n\nFINAL THOUGHTS: put in another 10+ hours, think i'm spent. The game is beautifully put together, it's just a shame that the actual gameplay/mechanics are so subpar. Even down right bad in areas. Maybe it's because I've played my fair share of other RPG/CRPGs, maybe it's just that I don't gel with the DnD ruleset present, but there isn't really anything that revolutionary here that hasn't been done in other games. Overall wanted more RPG, less RNG.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 33.1,
+        "positive": false
+      }
+    },
+    "R132": {
+      "source": "review",
+      "raw_id": "235988219",
+      "url": "https://steamcommunity.com/profiles/76561198107704111/recommended/1086940/",
+      "date": "2026-09-24",
+      "text": "The best save-scumming simulator since Pathfinder: Kingmaker.\n\nBaldur's Gate 3 looks fantastic and has all the ingredients of a great RPG: an excellent story, incredible voice acting, cinematic scenes, interesting classes, and plenty of quests. Unfortunately, the dice-based gameplay completely kills the experience for me.\n\nSo much of what you do comes down to dice rolls that even characters who are supposed to be good at something can constantly fail at it. What's the point of making a decision or building a character around certain strengths when the game can just decide that your character is suddenly incompetent?\n\nPros:\n\n- Great story, graphics, and cinematic scenes that make you want to keep playing.\nProbably the best voice acting I've ever heard in a game.\n- Extensive and interesting class and character building.\n- Lots of well-designed and memorable quests.\n- The game encourages multiple playthroughs if you want to see everything.\n- The amount of choices and possible outcomes is genuinely impressive.\n\nCons:\n\n-The heavy reliance on dice rolls can make your character choices feel meaningless. Even with a high chance of success, you can still fail at something that should be routine.\n-The constant failed rolls can turn serious situations into a comedy show. At some point you could put circus music under almost every encounter and it would fit.\n-Some characters and dialogue feel more like edgy teenagers than actual adults, which can really hurt the immersion for me.\n-The constant save-scumming becomes almost mandatory if you don't want important situations decided by an unlucky roll. This reminds me a lot of Pathfinder: Kingmaker.\n-Loading saves repeatedly gets especially annoying when you already know that a failed roll was the only reason something went wrong.\n\nOverall:\n\nI understand why so many people consider Baldur's Gate 3 one of the best RPGs ever made. The production quality, voice acting, visuals, story, and character building are absolutely top-tier.\n\nBut personally, the dice system ruins too much of it for me. I prefer RPGs where character progression actually makes you reliably good at something. If my character has the skills for a task, I want that to matter instead of constantly watching him trip over his own feet because the game rolled a 1.\n\nFor me, Dragon Age: Origins and Dragon Age II are still much closer to what I want from an RPG. Baldur's Gate 3 is incredibly well-made, but the core gameplay philosophy simply isn't for me.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 35.3,
+        "positive": false
+      }
+    },
+    "R133": {
+      "source": "review",
+      "raw_id": "235984544",
+      "url": "https://steamcommunity.com/profiles/76561197986736527/recommended/1086940/",
+      "date": "2026-09-23",
+      "text": "I spent 3 years hearing how great this game is and while the story is good and a lot of little details make thins interesting, nothing will get past the worst part of this game:  Combat.   The combat just sucks all the fun out of the room.   And believe me, it's not this type of game that's a problem.   The combat in say, Pathfinder: Kingmaker is fun.   But here it's a let down.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 13.3,
+        "positive": false
+      }
+    },
+    "R134": {
+      "source": "review",
+      "raw_id": "235833241",
+      "url": "https://steamcommunity.com/profiles/76561198429050961/recommended/1086940/",
+      "date": "2026-09-22",
+      "text": "too many bugs, stupid design, vital NPCs die in my our AOE when fight is over... just because wanted to walk through wall of fire. wasted chunk of my life on this stupid game.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 666.9,
+        "positive": false
+      }
+    },
+    "R135": {
+      "source": "review",
+      "raw_id": "235732681",
+      "url": "https://steamcommunity.com/profiles/76561198822481497/recommended/1086940/",
+      "date": "2026-09-21",
+      "text": "Combat in this game is extremely hard. I wish I could tell you that it gets better but I haven't been able to make it far at all. There are just two beginner fights that meet your beginner character's level then everything becomes impossible. Every enemy has more movement points than you, more party members with greater hitpoints and better attacks. It could be really fun if it ramped up slowly so I could get past any of the confrontations beyond the first few. Die, reload, die, reload, die, reload. Die. Reload. Die. Quit.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 5.3,
+        "positive": false
+      }
+    },
+    "R136": {
+      "source": "review",
+      "raw_id": "237914484",
+      "url": "https://steamcommunity.com/profiles/76561198121876371/recommended/1086940/",
+      "date": "2026-10-17",
+      "text": "人物角色不能動，然後丟東西被擋到，但是下一回合敵人又丟的到我，我問號欸\n兩個五環法術不如一個三環的，玩得很造",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 69.2,
+        "positive": false
+      }
+    },
+    "R137": {
+      "source": "review",
+      "raw_id": "235181014",
+      "url": "https://steamcommunity.com/profiles/76561198406145798/recommended/1086940/",
+      "date": "2026-09-13",
+      "text": "畫面優化蠻爛的",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 207.5,
+        "positive": false
+      }
+    },
+    "R138": {
+      "source": "review",
+      "raw_id": "232049291",
+      "url": "https://steamcommunity.com/profiles/76561198349535519/recommended/1086940/",
+      "date": "2026-08-04",
+      "text": "不差，但遠沒有普遍網上說的那麼好\n作為CRPG抉擇卻遠遠都只是幫誰或害死誰\n任何抉擇都不會在宏觀上影響地緣政治\n且不論你前面做什麼、什麼身分\n大決戰能做的抉擇都是一模一樣的\n至於其他部分我認為只能算加分項\n衝著最強CRPG這個名號來買的不推薦",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 310.3,
+        "positive": false
+      }
+    },
+    "R139": {
+      "source": "review",
+      "raw_id": "231906369",
+      "url": "https://steamcommunity.com/profiles/76561198003149947/recommended/1086940/",
+      "date": "2026-08-02",
+      "text": "多人遊戲體驗很差, 而且經常崩潰, 很多bug\n\n單人遊戲會順利一些",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 459.0,
+        "positive": false
+      }
+    },
+    "R140": {
+      "source": "review",
+      "raw_id": "238441325",
+      "url": "https://steamcommunity.com/profiles/76561199023956267/recommended/1086940/",
+      "date": "2026-10-24",
+      "text": "這遊戲搶走了我最在乎的人 不好意思我只能忍痛給負評",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 7.3,
+        "positive": false
+      }
+    },
+    "R141": {
+      "source": "review",
+      "raw_id": "236826888",
+      "url": "https://steamcommunity.com/profiles/76561199073466367/recommended/1086940/",
+      "date": "2026-10-03",
+      "text": "trash",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 517.2,
+        "positive": false
+      }
+    },
+    "R142": {
+      "source": "review",
+      "raw_id": "233975180",
+      "url": "https://steamcommunity.com/profiles/76561198436080049/recommended/1086940/",
+      "date": "2026-08-29",
+      "text": "rubbish",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 12.5,
+        "positive": false
+      }
+    },
+    "R143": {
+      "source": "review",
+      "raw_id": "233130358",
+      "url": "https://steamcommunity.com/profiles/76561198255584791/recommended/1086940/",
+      "date": "2026-08-18",
+      "text": "垃圾遊戲, 完全沒有DND的味道, 還是拉瑞安的老傳統, 戰鬥靠得不是build而是炸藥桶.",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 94.0,
+        "positive": false
+      }
+    },
+    "R144": {
+      "source": "review",
+      "raw_id": "233849686",
+      "url": "https://steamcommunity.com/profiles/76561199664487226/recommended/1086940/",
+      "date": "2026-08-27",
+      "text": "實在太難了,真的玩不下去,很誇張,遊戲內容與機制非常多非常複雜,卻又沒有適當的說明與引導,東西一堆卻又根本看不懂,甚麼都不清楚的情況下從等級1就開始高難度的戰鬥,我只玩到等級3就花了6個小時,而且每場戰鬥都全滅,很扯,全滅還是那種角色死透了沒辦法再復活的那種死,這是整人遊戲嗎?",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 9.7,
+        "positive": false
+      }
+    },
+    "R145": {
+      "source": "review",
+      "raw_id": "232095396",
+      "url": "https://steamcommunity.com/profiles/76561198130544771/recommended/1086940/",
+      "date": "2026-08-05",
+      "text": " 掛著查個攻略 發現不好玩 就不能退款了 垃圾遊戲 不如前作",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 3.7,
+        "positive": false
+      }
+    },
+    "R146": {
+      "source": "review",
+      "raw_id": "236399322",
+      "url": "https://steamcommunity.com/profiles/76561199099646949/recommended/1086940/",
+      "date": "2026-09-28",
+      "text": "垃圾遊戲",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 13.4,
+        "positive": false
+      }
+    },
+    "R147": {
+      "source": "review",
+      "raw_id": "232899452",
+      "url": "https://steamcommunity.com/profiles/76561198052797204/recommended/1086940/",
+      "date": "2026-08-15",
+      "text": "真的要對龍與地下城相關的遊戲有愛才能買，劇情真的又臭又長，沒有看攻略根本不知道任務要去哪裡做\r\n這款居然是2023年的GOTY，感覺是靠政治正確進的，遊戲介面做得很爛\r\nBUG一堆BUG，要一直SL，不然就要重跑，畫面卡到爆\r\n你真的要有愛再買，千萬不要跟風",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 149.1,
+        "positive": false
+      }
+    },
+    "R148": {
+      "source": "review",
+      "raw_id": "233576954",
+      "url": "https://steamcommunity.com/profiles/76561197990821510/recommended/1086940/",
+      "date": "2026-08-24",
+      "text": "Hello , my name is Baldur's gate 3 and i suck.",
+      "meta": {
+        "language": "tchinese",
+        "hours_at_review": 0.9,
+        "positive": false
+      }
+    },
+    "R149": {
+      "source": "review_stats",
+      "raw_id": "1086940:2026-08-01:2026-10-31:language:english",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-10-31",
+      "text": "Review statistics for language group 'english' from 2026-08-01 to 2026-10-31: 300 observed reviews, 283 positive, 17 negative, 5.7% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "english",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R150": {
+      "source": "review_stats",
+      "raw_id": "1086940:2026-08-01:2026-10-31:language:schinese",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-10-31",
+      "text": "Review statistics for language group 'schinese' from 2026-08-01 to 2026-10-31: 300 observed reviews, 291 positive, 9 negative, 3.0% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "schinese",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R151": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-04",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-04",
+      "text": "2026-04: 40041 average concurrent players, 73878 peak, -9.78% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R152": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-05",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-05",
+      "text": "2026-05: 41482 average concurrent players, 71430 peak, +3.6% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R153": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-06",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-06",
+      "text": "2026-06: 39517 average concurrent players, 68855 peak, -4.74% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R154": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-07",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-07",
+      "text": "2026-07: 44808 average concurrent players, 78225 peak, +13.39% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R155": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-08",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-08",
+      "text": "2026-08: 49972 average concurrent players, 83011 peak, +11.53% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R156": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-09",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-09",
+      "text": "2026-09: 42932 average concurrent players, 76065 peak, -14.09% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R157": {
+      "source": "player_history",
+      "raw_id": "1086940:2026-10",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2026-10",
+      "text": "2026-10: 38530 average concurrent players, 71090 peak, -10.25% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R158": {
+      "source": "player_stats",
+      "raw_id": "steamspy:1086940:2026-11-08",
+      "url": "https://steamspy.com/app/1086940",
+      "date": "2026-11-08",
+      "text": "Baldur's Gate 3 (SteamSpy, 2026-11-08): owners estimate 20,000,000 .. 50,000,000; yesterday's peak concurrent players 54771; average playtime None h, median None h (None = no data); current players on Steam 35245; top tags RPG, Character Customization, Choices Matter, Story Rich, Turn-Based Combat, Dungeons & Dragons, CRPG, Fantasy, Adventure, Sexual Content.",
+      "meta": {
+        "owners_estimate": "20,000,000 .. 50,000,000",
+        "current_players": 35245
+      }
+    }
+  },
+  "chart": {
+    "appid": 1086940,
+    "granularity": "month",
+    "as_of": "2026-11-08",
+    "from_snapshot": false,
+    "series": [
+      {
+        "period": "2020-10-01",
+        "up": 19543,
+        "down": 2618,
+        "pct_negative": 11.8,
+        "ref": "R1"
+      },
+      {
+        "period": "2020-11-01",
+        "up": 4980,
+        "down": 452,
+        "pct_negative": 8.3,
+        "ref": "R2"
+      },
+      {
+        "period": "2020-12-01",
+        "up": 1747,
+        "down": 223,
+        "pct_negative": 11.3,
+        "ref": "R3"
+      },
+      {
+        "period": "2021-01-01",
+        "up": 1195,
+        "down": 189,
+        "pct_negative": 13.7,
+        "ref": "R4"
+      },
+      {
+        "period": "2021-02-01",
+        "up": 1263,
+        "down": 175,
+        "pct_negative": 12.2,
+        "ref": "R5"
+      },
+      {
+        "period": "2021-03-01",
+        "up": 1679,
+        "down": 219,
+        "pct_negative": 11.5,
+        "ref": "R6"
+      },
+      {
+        "period": "2021-04-01",
+        "up": 935,
+        "down": 155,
+        "pct_negative": 14.2,
+        "ref": "R7"
+      },
+      {
+        "period": "2021-05-01",
+        "up": 767,
+        "down": 145,
+        "pct_negative": 15.9,
+        "ref": "R8"
+      },
+      {
+        "period": "2021-06-01",
+        "up": 575,
+        "down": 134,
+        "pct_negative": 18.9,
+        "ref": "R9"
+      },
+      {
+        "period": "2021-07-01",
+        "up": 1008,
+        "down": 162,
+        "pct_negative": 13.8,
+        "ref": "R10"
+      },
+      {
+        "period": "2021-08-01",
+        "up": 810,
+        "down": 171,
+        "pct_negative": 17.4,
+        "ref": "R11"
+      },
+      {
+        "period": "2021-09-01",
+        "up": 671,
+        "down": 138,
+        "pct_negative": 17.1,
+        "ref": "R12"
+      },
+      {
+        "period": "2021-10-01",
+        "up": 1277,
+        "down": 196,
+        "pct_negative": 13.3,
+        "ref": "R13"
+      },
+      {
+        "period": "2021-11-01",
+        "up": 837,
+        "down": 131,
+        "pct_negative": 13.5,
+        "ref": "R14"
+      },
+      {
+        "period": "2021-12-01",
+        "up": 554,
+        "down": 113,
+        "pct_negative": 16.9,
+        "ref": "R15"
+      },
+      {
+        "period": "2022-01-01",
+        "up": 600,
+        "down": 153,
+        "pct_negative": 20.3,
+        "ref": "R16"
+      },
+      {
+        "period": "2022-02-01",
+        "up": 723,
+        "down": 161,
+        "pct_negative": 18.2,
+        "ref": "R17"
+      },
+      {
+        "period": "2022-03-01",
+        "up": 453,
+        "down": 104,
+        "pct_negative": 18.7,
+        "ref": "R18"
+      },
+      {
+        "period": "2022-04-01",
+        "up": 405,
+        "down": 123,
+        "pct_negative": 23.3,
+        "ref": "R19"
+      },
+      {
+        "period": "2022-05-01",
+        "up": 373,
+        "down": 108,
+        "pct_negative": 22.5,
+        "ref": "R20"
+      },
+      {
+        "period": "2022-06-01",
+        "up": 380,
+        "down": 147,
+        "pct_negative": 27.9,
+        "ref": "R21"
+      },
+      {
+        "period": "2022-07-01",
+        "up": 964,
+        "down": 234,
+        "pct_negative": 19.5,
+        "ref": "R22"
+      },
+      {
+        "period": "2022-08-01",
+        "up": 631,
+        "down": 121,
+        "pct_negative": 16.1,
+        "ref": "R23"
+      },
+      {
+        "period": "2022-09-01",
+        "up": 465,
+        "down": 106,
+        "pct_negative": 18.6,
+        "ref": "R24"
+      },
+      {
+        "period": "2022-10-01",
+        "up": 455,
+        "down": 158,
+        "pct_negative": 25.8,
+        "ref": "R25"
+      },
+      {
+        "period": "2022-11-01",
+        "up": 529,
+        "down": 119,
+        "pct_negative": 18.4,
+        "ref": "R26"
+      },
+      {
+        "period": "2022-12-01",
+        "up": 941,
+        "down": 116,
+        "pct_negative": 11.0,
+        "ref": "R27"
+      },
+      {
+        "period": "2023-01-01",
+        "up": 959,
+        "down": 107,
+        "pct_negative": 10.0,
+        "ref": "R28"
+      },
+      {
+        "period": "2023-02-01",
+        "up": 752,
+        "down": 82,
+        "pct_negative": 9.8,
+        "ref": "R29"
+      },
+      {
+        "period": "2023-03-01",
+        "up": 985,
+        "down": 105,
+        "pct_negative": 9.6,
+        "ref": "R30"
+      },
+      {
+        "period": "2023-04-01",
+        "up": 895,
+        "down": 82,
+        "pct_negative": 8.4,
+        "ref": "R31"
+      },
+      {
+        "period": "2023-05-01",
+        "up": 793,
+        "down": 75,
+        "pct_negative": 8.6,
+        "ref": "R32"
+      },
+      {
+        "period": "2023-06-01",
+        "up": 980,
+        "down": 78,
+        "pct_negative": 7.4,
+        "ref": "R33"
+      },
+      {
+        "period": "2023-07-01",
+        "up": 8513,
+        "down": 386,
+        "pct_negative": 4.3,
+        "ref": "R34"
+      },
+      {
+        "period": "2023-08-01",
+        "up": 174597,
+        "down": 7370,
+        "pct_negative": 4.1,
+        "ref": "R35"
+      },
+      {
+        "period": "2023-09-01",
+        "up": 66975,
+        "down": 2395,
+        "pct_negative": 3.5,
+        "ref": "R36"
+      },
+      {
+        "period": "2023-10-01",
+        "up": 29420,
+        "down": 1081,
+        "pct_negative": 3.5,
+        "ref": "R37"
+      },
+      {
+        "period": "2023-11-01",
+        "up": 87425,
+        "down": 1167,
+        "pct_negative": 1.3,
+        "ref": "R38"
+      },
+      {
+        "period": "2023-12-01",
+        "up": 31852,
+        "down": 1282,
+        "pct_negative": 3.9,
+        "ref": "R39"
+      },
+      {
+        "period": "2024-01-01",
+        "up": 29493,
+        "down": 1249,
+        "pct_negative": 4.1,
+        "ref": "R40"
+      },
+      {
+        "period": "2024-02-01",
+        "up": 18164,
+        "down": 801,
+        "pct_negative": 4.2,
+        "ref": "R41"
+      },
+      {
+        "period": "2024-03-01",
+        "up": 14453,
+        "down": 715,
+        "pct_negative": 4.7,
+        "ref": "R42"
+      },
+      {
+        "period": "2024-04-01",
+        "up": 9897,
+        "down": 443,
+        "pct_negative": 4.3,
+        "ref": "R43"
+      },
+      {
+        "period": "2024-05-01",
+        "up": 9534,
+        "down": 420,
+        "pct_negative": 4.2,
+        "ref": "R44"
+      },
+      {
+        "period": "2024-06-01",
+        "up": 8741,
+        "down": 388,
+        "pct_negative": 4.3,
+        "ref": "R45"
+      },
+      {
+        "period": "2024-07-01",
+        "up": 10734,
+        "down": 519,
+        "pct_negative": 4.6,
+        "ref": "R46"
+      },
+      {
+        "period": "2024-08-01",
+        "up": 9390,
+        "down": 403,
+        "pct_negative": 4.1,
+        "ref": "R47"
+      },
+      {
+        "period": "2024-09-01",
+        "up": 11140,
+        "down": 612,
+        "pct_negative": 5.2,
+        "ref": "R48"
+      },
+      {
+        "period": "2024-10-01",
+        "up": 7606,
+        "down": 334,
+        "pct_negative": 4.2,
+        "ref": "R49"
+      },
+      {
+        "period": "2024-11-01",
+        "up": 17253,
+        "down": 388,
+        "pct_negative": 2.2,
+        "ref": "R50"
+      },
+      {
+        "period": "2024-12-01",
+        "up": 20427,
+        "down": 1239,
+        "pct_negative": 5.7,
+        "ref": "R51"
+      },
+      {
+        "period": "2025-01-01",
+        "up": 9109,
+        "down": 427,
+        "pct_negative": 4.5,
+        "ref": "R52"
+      },
+      {
+        "period": "2025-02-01",
+        "up": 7103,
+        "down": 319,
+        "pct_negative": 4.3,
+        "ref": "R53"
+      },
+      {
+        "period": "2025-03-01",
+        "up": 7557,
+        "down": 295,
+        "pct_negative": 3.8,
+        "ref": "R54"
+      },
+      {
+        "period": "2025-04-01",
+        "up": 9508,
+        "down": 426,
+        "pct_negative": 4.3,
+        "ref": "R55"
+      },
+      {
+        "period": "2025-05-01",
+        "up": 7820,
+        "down": 366,
+        "pct_negative": 4.5,
+        "ref": "R56"
+      },
+      {
+        "period": "2025-06-01",
+        "up": 5873,
+        "down": 305,
+        "pct_negative": 4.9,
+        "ref": "R57"
+      },
+      {
+        "period": "2025-07-01",
+        "up": 6479,
+        "down": 315,
+        "pct_negative": 4.6,
+        "ref": "R58"
+      },
+      {
+        "period": "2025-08-01",
+        "up": 5799,
+        "down": 247,
+        "pct_negative": 4.1,
+        "ref": "R59"
+      },
+      {
+        "period": "2025-09-01",
+        "up": 5672,
+        "down": 334,
+        "pct_negative": 5.6,
+        "ref": "R60"
+      },
+      {
+        "period": "2025-10-01",
+        "up": 5596,
+        "down": 277,
+        "pct_negative": 4.7,
+        "ref": "R61"
+      },
+      {
+        "period": "2025-11-01",
+        "up": 11619,
+        "down": 249,
+        "pct_negative": 2.1,
+        "ref": "R62"
+      },
+      {
+        "period": "2025-12-01",
+        "up": 6637,
+        "down": 523,
+        "pct_negative": 7.3,
+        "ref": "R63"
+      },
+      {
+        "period": "2026-01-01",
+        "up": 7202,
+        "down": 503,
+        "pct_negative": 6.5,
+        "ref": "R64"
+      },
+      {
+        "period": "2026-02-01",
+        "up": 5097,
+        "down": 291,
+        "pct_negative": 5.4,
+        "ref": "R65"
+      },
+      {
+        "period": "2026-03-01",
+        "up": 5129,
+        "down": 298,
+        "pct_negative": 5.5,
+        "ref": "R66"
+      },
+      {
+        "period": "2026-04-01",
+        "up": 3909,
+        "down": 180,
+        "pct_negative": 4.4,
+        "ref": "R67"
+      },
+      {
+        "period": "2026-05-01",
+        "up": 4248,
+        "down": 270,
+        "pct_negative": 6.0,
+        "ref": "R68"
+      },
+      {
+        "period": "2026-06-01",
+        "up": 3718,
+        "down": 211,
+        "pct_negative": 5.4,
+        "ref": "R69"
+      },
+      {
+        "period": "2026-07-01",
+        "up": 4641,
+        "down": 260,
+        "pct_negative": 5.3,
+        "ref": "R70"
+      },
+      {
+        "period": "2026-08-01",
+        "up": 4972,
+        "down": 313,
+        "pct_negative": 5.9,
+        "ref": "R71"
+      },
+      {
+        "period": "2026-09-01",
+        "up": 4131,
+        "down": 210,
+        "pct_negative": 4.8,
+        "ref": "R72"
+      },
+      {
+        "period": "2026-10-01",
+        "up": 3676,
+        "down": 210,
+        "pct_negative": 5.4,
+        "ref": "R73"
+      },
+      {
+        "period": "2026-11-01",
+        "up": 684,
+        "down": 48,
+        "pct_negative": 6.6,
+        "ref": "R74"
+      }
+    ],
+    "patches": []
+  }
+}

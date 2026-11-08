@@ -1,7 +1,11 @@
-"""Run sample questions end to end against the real model (with whatever tools are configured) and
-save each /chat response, plus timings, to docs/sample_runs/.  Usage: uv run scripts/e2e_runs.py"""
+"""Run the README's sample queries end to end against the real model and tools, plus one vague
+question and one follow-up as a demo, saving each /chat response with timings to docs/sample_runs/.
+
+Usage: uv run scripts/e2e_runs.py [name ...]      (names below; default: all)
+"""
 
 import json
+import re
 import sys
 import time
 from collections import Counter
@@ -19,12 +23,17 @@ from detective.hooks import TraceHooks  # noqa: E402
 OUT = ROOT / "docs" / "sample_runs"
 PREFIX = "" if tools.USE_FAKE_TOOLS else "real_"  # fake runs keep the old names
 
-# name, question, continue the previous run's session?
-GAME = "Ashen Frontier" if tools.USE_FAKE_TOOLS else "Baldur's Gate 3"
+# name, question, continue the previous run's session? The first three are the README's sample
+# queries over the snapshot window (2026-08-01 to 2026-10-31); the rest demo clarify + follow-up.
 RUNS = [
-    ("a_clear", f"{GAME}最近几个月口碑有什么变化？是哪次更新导致的？玩家在抱怨什么？", False),
-    ("b_vague", "这游戏怎么样？", False),
-    ("c_followup", "那中文玩家和英文玩家的不满一样吗？", "a_clear"),
+    ("q1_spike", "Which update caused Helldivers 2's negative reviews to spike between August and "
+                 "October 2026, and what exactly are players complaining about?", False),
+    ("q2_languages", "Do Chinese and English players complain about the same things in Baldur's Gate 3 "
+                     "between August and October 2026?", False),
+    ("q3_veterans", "How do players with 100+ hours review PUBG between August and October 2026 "
+                    "differently from newcomers?", False),
+    ("d_vague", "Is it good?", False),
+    ("d_followup", "What about Chinese players compared to English players?", "q2_languages"),
 ]
 
 # Keep each run's hooks so we can read agent timings (not part of the /chat response).
@@ -40,11 +49,13 @@ def _record(self, *args, **kwargs):
 TraceHooks.__init__ = _record
 
 
-def main() -> None:
+def main(wanted: list[str]) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     client = TestClient(app.app)
     sessions: dict[str, str] = {}
     for name, question, follow in RUNS:
+        if wanted and name not in wanted:
+            continue
         body = {"message": question, "session_id": sessions.get(follow) if follow else None}
         t0 = time.monotonic()
         r = client.post("/chat", json=body)
@@ -54,11 +65,14 @@ def main() -> None:
             print(name, r.status_code, data)
             (OUT / f"{PREFIX}{name}.json").write_text(json.dumps({"question": question, "status": r.status_code, "error": data}, ensure_ascii=False, indent=2))
             continue
-        sessions[name] = data["session_id"]
+        if follow:
+            sessions[name] = sessions[follow]
+        else:
+            sessions[name] = data["session_id"]
         hooks = created[-1]
         start = min((t[0] for t in hooks.timings.values()), default=t0)
         timings = {agent: [round(a - start, 1), round(b - start, 1) if b else None] for agent, (a, b) in hooks.timings.items()}
-        cited = sorted(set(__import__("re").findall(r"\[(R\d+)\]", data["response"])), key=lambda x: int(x[1:]))
+        cited = sorted(set(re.findall(r"\[(R\d+)\]", data["response"])), key=lambda x: int(x[1:]))
         record = {
             "question": question,
             "seconds": elapsed,
@@ -75,4 +89,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

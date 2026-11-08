@@ -507,12 +507,18 @@ async def get_review_trend(ctx: RunContextWrapper[Research], appid: int, languag
         for spike in trend["spikes"]:
             spike["ref"] = refs[spike["period"]]
 
-        # Provide the review timeline to the frontend
-        previous_chart = ctx.context.chart or {}
-
+        # Provide the review timeline to the frontend: {appid, granularity, as_of, from_snapshot,
+        # series: [{period, up, down, pct_negative, ref}], patches: [{ref, id, date, title, url,
+        # official, kind}]}. get_patch_notes fills patches for the same appid; a different appid
+        # (a two-game comparison) starts a new timeline.
+        previous_chart = getattr(ctx.context, "chart", None) or {}
         ctx.context.chart = {
+            "appid": appid,
+            "granularity": trend["granularity"],
+            "as_of": as_of,
+            "from_snapshot": from_snapshot,
             "series": trend["series"],
-            "patches": previous_chart.get("patches", [])
+            "patches": previous_chart.get("patches", []) if previous_chart.get("appid") == appid else [],
         }
 
         return {
@@ -537,7 +543,7 @@ async def sample_reviews(
     appid: int,
     start: str,
     end: str,
-    review_type: str = "all",  # was "negative": a default should not decide the report's tone (Jiashu)
+    review_type: str = "negative",
     language: str = "all",
     min_hours: float | None = None,
     max_hours: float | None = None,

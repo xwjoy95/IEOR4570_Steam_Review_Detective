@@ -6,34 +6,17 @@
     "appid": 1086940,
     "official_only": true
   },
-  "as_of": "2026-11-06",
-  "captured_at": "2026-11-06T10:00:46.735883+00:00",
+  "as_of": "2026-11-08",
+  "captured_at": "2026-11-08T05:35:45.526420+00:00",
   "data": {
     "appnews": {
       "appid": 1086940,
-      "newsitems": [
-        {
-          "gid": "1827626365770693",
-          "title": "Hotfix #36 Now Live!",
-          "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365770693",
-          "is_external_url": true,
-          "author": "SaloAtLarian",
-          "contents": "[p]Hey folks,\u00a0[/p][p][/p][p]Our last small update, which aimed to resolve corrupted savegames affecting a number of players, seemed to have also introduced some performance issues that triggered crashes. Thank you for your patience while these were investigated!\n[/p][p]A fix is now rolling out for all platforms that addresses these performance issues and some other crashes and blockers that were still affecting players.\u00a0 [/p][h2][b]FIXES[/b][/h2][list][*][p]Fixed a framerate drop and eventual crash when loading a savegame.[/p][/*][*][p]Fixed several crashes.[/p][/*][*][p]Fixed a bug on Xbox where tooltips in the Inventory and Trade windows wouldn't display correctly.[/p][/*][*][p]Fixed a bug on Mac preventing you from progressing past Character Creation after starting a character introduction cinematic on Honour Mode.[/p][/*][/list]",
-          "feedlabel": "Community Announcements",
-          "date": 1774536005,
-          "feedname": "steam_community_announcements",
-          "feed_type": 1,
-          "appid": 1086940,
-          "tags": [
-            "patchnotes"
-          ]
-        }
-      ]
+      "newsitems": []
     }
   },
   "coverage": {
-    "start": "2026-03-01",
-    "end": "2026-03-31",
+    "start": "2026-08-01",
+    "end": "2026-10-31",
     "complete": true,
     "reason": "crossed_start"
   }

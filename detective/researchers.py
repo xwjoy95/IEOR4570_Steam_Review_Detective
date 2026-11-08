@@ -1,6 +1,7 @@
 """The three researchers: their prompts, their tool subsets, and the `research` tool the Lead uses to
 send one out. Each researcher runs in a fresh context and sees only its task and its own tools."""
 
+import dataclasses
 import json
 from typing import Literal
 
@@ -8,7 +9,7 @@ from agents import Agent, MaxTurnsExceeded, RunContextWrapper, Runner, function_
 from pydantic import BaseModel
 
 from detective.llm import CHEAP, SETTINGS
-from detective.state import MAX_RESEARCHERS, MAX_ROUNDS, Research
+from detective.state import MAX_RESEARCHERS, MAX_ROUNDS, MAX_TOOL_CALLS, Research
 from tools import (
     get_game_info,
     get_patch_notes,
@@ -42,6 +43,8 @@ Rules:
 - At most 8 findings. Each is one specific, checkable sentence: dates, counts, percentages, who said what.
 - Put the parts of your task the tools can't answer in cannot_answer. Don't guess.
 - If a tool returns ok: false, try once more with different arguments, then report the gap.
+- When a tool result says from_snapshot: true, its data comes from the saved snapshot, not the live
+  Steam API: mention in the finding that it is snapshot data and give the tool's as_of date.
 - Dates are YYYY-MM-DD."""
 
 # TODO(A): owner please review
@@ -148,6 +151,19 @@ def _game_line(research: Research) -> str:
     return "; ".join(f"{g['name']} (appid {g['appid']})" for g in research.games) or "unknown"
 
 
+def _capped(tool, counter: dict):
+    """A copy of one tool that refuses calls once this researcher is out, instead of trusting the prompt."""
+    async def invoke(ctx, input_json: str) -> str:
+        counter["calls"] += 1
+        if counter["calls"] > MAX_TOOL_CALLS:
+            return json.dumps({
+                "ok": False, "error": "tool_call_limit",
+                "message": f"Tool call limit ({MAX_TOOL_CALLS}) reached. Report your findings now.",
+            }, ensure_ascii=False)
+        return await tool.on_invoke_tool(ctx, input_json)
+    return dataclasses.replace(tool, on_invoke_tool=invoke)
+
+
 @function_tool
 async def research(ctx: RunContextWrapper[Research], researcher: Literal["reviews", "patches", "players"], task: str) -> str:
     """Send one researcher, in a fresh context, to answer one task. Returns its findings, each with the
@@ -170,7 +186,10 @@ async def research(ctx: RunContextWrapper[Research], researcher: Literal["review
     # What researcher.as_tool() would do, written out so each run gets a numbered name: its own
     # column in the context panel, and its own label in tool_calls.
     state.researchers += 1
-    agent = RESEARCHERS[researcher].clone(name=f"{RESEARCHERS[researcher].name} {state.researchers}")
+    base = RESEARCHERS[researcher]
+    counter = {"calls": 0}
+    agent = base.clone(name=f"{base.name} {state.researchers}",
+                       tools=[_capped(tool, counter) for tool in base.tools])
     prompt = f"Game: {_game_line(state)}\nTask: {task}"
     try:
         result = await Runner.run(agent, prompt, context=state, hooks=state.hooks, max_turns=10)

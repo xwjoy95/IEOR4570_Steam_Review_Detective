@@ -37,6 +37,8 @@ Citations:
   Cite at most 3 ids per sentence: pick the most direct ones.
 - Use only ids that appear in the findings. Never invent one, never renumber them.
 - Don't add facts, numbers or dates that aren't in the findings or the evidence list.
+- The report is checked automatically after you write it: every number and every quoted passage
+  must appear in the evidence its sentence cites. Copy numbers and quotes exactly.
 
 Style:
 - Write everything, headings included, in the language the user asked in (translate the section
@@ -57,6 +59,62 @@ writer = Agent(
 )
 
 MAX_QUOTE_CHARS = 300
+
+NUMBER = re.compile(r"\d+(?:\.\d+)?")  # ids like [R12] are removed before this runs
+QUOTE = re.compile(r'"([^"]{10,})"|\u201c([^\u201d]{10,})\u201d')  # "..." or \u201c...\u201d
+
+
+def _norm(text: str) -> str:
+    """Letters, digits and CJK only, lowercased: quotes may differ in punctuation and spacing."""
+    return re.sub(r"[\W_]+", "", text.lower())
+
+
+def _has_number(corpus: str, num: str) -> bool:
+    """The number as-is (2026-09-09 contains 9; not 4 in 41), commas ignored on both sides."""
+    return re.search(rf"(?<!\d){re.escape(num)}(?!\d)", corpus.replace(",", "")) is not None
+
+
+def grounding_issues(report: str, store) -> list[str]:
+    """Deterministic grounding checks beyond citation existence: in every line that carries
+    citations, each number and each quoted passage must appear in the evidence that line cites.
+    Returns one human-readable issue per problem; an empty list means the report is grounded."""
+    issues = []
+    for line in report.splitlines():
+        ids = sorted(set(CITATION.findall(line)), key=lambda r: int(r[1:]))
+        if not ids:
+            continue
+        plain = " ".join(
+            item.text + " " + str(item.meta) for rid in ids if (item := store.get(rid))
+        )
+        for num in NUMBER.findall(CITATION.sub("", line)):
+            if not _has_number(plain, num):
+                issues.append(f"the number {num} in \u201c{line.strip()[:60]}\u201d does not appear in the cited evidence ({', '.join(ids)})")
+        joined = _norm(plain)
+        for match in QUOTE.findall(line):
+            quote = (match[0] or match[1]).strip()
+            if _norm(quote) not in joined:
+                issues.append(f"the quoted text \u201c{quote[:60]}\u201d is not in the cited evidence ({', '.join(ids)})")
+    return issues
+
+
+def caveat(issues: list[str]) -> str:
+    """The degraded ending when grounding still fails after the rewrite: flag it, don't hide it."""
+    return ("*Note (automated check): the following could not be verified against the cited sources "
+            "and may be inaccurate:*\n" + "\n".join(f"- {issue}" for issue in issues))
+
+
+def _fix_prompt(prompt: str, report: str, missing: list[str], issues: list[str]) -> str:
+    problems = []
+    if missing:
+        problems.append(f"these cited ids don't exist: {', '.join(missing)}")
+    if issues:
+        problems.append("these statements are not grounded in the evidence they cite:\n" +
+                        "\n".join(f"- {issue}" for issue in issues))
+    return (
+        f"{prompt}\n\nYour previous draft had problems: " + "\n".join(problems) +
+        ".\nRewrite it citing only ids from the findings, copying every number and quote exactly "
+        f"from the evidence.\n\nPrevious draft:\n{report}"
+    )
 
 
 def writer_input(question: str, research: Research) -> str:
@@ -82,18 +140,21 @@ def strip_citations(report: str, missing: list[str]) -> str:
 
 
 async def write(question: str, research: Research) -> str:
-    """Write the report, check every [R#] exists, and rewrite once if any doesn't."""
+    """Write the report, then check it twice: every [R#] must exist, and every number and quote
+    must be grounded in the evidence it cites. One rewrite; anything still unsupported is either
+    stripped (bad ids) or flagged in a caveat at the end (ungrounded statements)."""
     prompt = writer_input(question, research)
     result = await Runner.run(writer, prompt, context=research, hooks=research.hooks)
     report = str(result.final_output)
 
     missing = research.store.validate(report)
-    if missing:
-        fix = (
-            f"{prompt}\n\nYour previous draft cited ids that don't exist: {', '.join(missing)}. "
-            f"Rewrite it citing only ids from the findings.\n\nPrevious draft:\n{report}"
-        )
-        result = await Runner.run(writer, fix, context=research, hooks=research.hooks)
+    issues = grounding_issues(report, research.store)
+    if missing or issues:
+        result = await Runner.run(writer, _fix_prompt(prompt, report, missing, issues),
+                                  context=research, hooks=research.hooks)
         report = str(result.final_output)
         report = strip_citations(report, research.store.validate(report))
+        remaining = grounding_issues(report, research.store)
+        if remaining:
+            report = f"{report}\n\n{caveat(remaining)}"
     return re.sub(r"[ \t]+\n", "\n", report).strip()

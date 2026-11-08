@@ -321,3 +321,36 @@ def test_tools_never_write_snapshots(monkeypatch, tool, args):
     monkeypatch.setattr(http, "save_snapshot", fail)
     assert call(tool, state(), **args)["ok"]
     assert http.load_snapshot(APPID, "appdetails") is None
+
+
+def test_patch_notes_feed_the_chart(monkeypatch):
+    rows = [news_row("mid", "2026-03-15"), news_row("late", "2026-03-20"), news_row("press", "2026-03-16", feed="pcgamer")]
+    async def fake(url, params):
+        return {"appnews": {"newsitems": rows}}
+    monkeypatch.setattr(http, "get_json", fake)
+    research = state()
+    out = call(news.get_patch_notes, research, appid=APPID, start=START, end=END, official_only=False)
+    chart = research.chart
+    assert chart["appid"] == APPID and chart["granularity"] is None and chart["series"] == []
+    assert chart["as_of"]  # collection date, even before any trend call
+    assert [p["id"] for p in chart["patches"]] == ["mid", "press", "late"]  # sorted by date
+    assert all(research.store.get(p["ref"]) and p["url"] for p in chart["patches"])
+
+    # a second call for the same game never duplicates a marker
+    call(news.get_patch_notes, research, appid=APPID, start=START, end=END, official_only=False)
+    assert [p["id"] for p in chart["patches"]] == ["mid", "press", "late"]
+
+    # another game starts its own timeline
+    call(news.get_patch_notes, research, appid=424242, start=START, end=END, official_only=False)
+    assert research.chart["appid"] == 424242
+    assert [p["id"] for p in research.chart["patches"]] == ["mid", "press", "late"]
+
+
+def test_offline_search_matches_trademarked_names(monkeypatch):
+    snap = details_snap()
+    snap["data"][str(APPID)]["data"]["name"] = "HELLDIVERS\u2122 2"  # Steam's stored form
+    http.save_snapshot(APPID, "appdetails", snap)
+    for query in ("Helldivers 2", "helldivers", "HELLDIVERS 2"):
+        out = call(news.search_game, query=query, limit=5)
+        assert out["ok"] and out["results"][0]["appid"] == APPID, query
+    assert call(news.search_game, query="Helldiverz 2", limit=5)["error"] == "unavailable"

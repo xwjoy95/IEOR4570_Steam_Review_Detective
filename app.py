@@ -1,6 +1,7 @@
 """FastAPI app: the page, POST /chat (Project 1's response shape), and GET /run (live events, as in
 the course reference). Endpoints only: the agents live in detective/, the data tools in tools/."""
 
+import argparse
 import asyncio
 import json
 import os
@@ -15,6 +16,21 @@ from pydantic import BaseModel
 
 HERE = Path(__file__).parent
 load_dotenv(HERE / ".env")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run Steam Review Detective with live LLM research.")
+    parser.add_argument("--host", default="0.0.0.0")
+    parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
+    parser.add_argument("--gcp-project", help="Google Cloud project for Vertex AI calls.")
+    return parser.parse_args()
+
+
+# Configure the project before the agents construct their model settings.
+if __name__ == "__main__":
+    args = parse_args()
+    if args.gcp_project:
+        os.environ["GOOGLE_CLOUD_PROJECT"] = args.gcp_project
 
 from context_panel import AgentContexts, add_context_panel  # noqa: E402
 from detective.hooks import TraceHooks  # noqa: E402
@@ -131,6 +147,24 @@ def build_chart(research: Research) -> dict | None:
     return chart if chart.get("series") or chart["players"] else None
 
 
+def research_error(exc: Exception) -> str:
+    message = str(exc)
+    if "default credentials were not found" in message.lower():
+        return "Google Cloud login is missing on this computer. Run gcloud auth application-default login, then retry."
+    if "could not resolve project_id" in message.lower():
+        return "Set GOOGLE_CLOUD_PROJECT or provide a local gcp-project.txt before running Vertex AI."
+    return f"{type(exc).__name__}: {message[:500]}"
+
+
+def save_session(session_id: str, question: str, report: str, research: Research) -> None:
+    """Remember this turn for follow-up questions, whichever endpoint ran it."""
+    if research.games:
+        last_games[session_id] = research.games
+    history.setdefault(session_id, []).extend(
+        [{"role": "user", "content": question}, {"role": "assistant", "content": report}]
+    )
+
+
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest) -> ChatResponse:
     session_id = request.session_id or str(uuid.uuid4())
@@ -143,11 +177,9 @@ async def chat(request: ChatRequest) -> ChatResponse:
         report = await deep_research(request.message, list(turns), research, last_games.get(session_id))
     except Exception as e:
         # Auth, quota, a model that won't stop: say what happened instead of a bare 500.
-        raise HTTPException(status_code=502, detail=f"{type(e).__name__}: {str(e)[:500]}")
+        raise HTTPException(status_code=502, detail=research_error(e))
 
-    if research.games:
-        last_games[session_id] = research.games
-    turns += [{"role": "user", "content": request.message}, {"role": "assistant", "content": report}]
+    save_session(session_id, request.message, report, research)
     return ChatResponse(
         response=report,
         session_id=session_id,
@@ -171,8 +203,8 @@ def clear(session_id: str | None = None):
 async def run(question: str, session_id: str | None = None):
     """Research one question and stream what happens as Server-Sent Events (reference pattern).
 
-    TODO(Jiashu): emit activity/context events from TraceHooks as the agents work, and send
-    tool_calls, evidence and chart with "done".
+    The "done" event carries the same fields as /chat's response (tool_calls, evidence, chart),
+    and the turn is saved so a follow-up question in the same session works.
     """
     run_id = session_id or str(uuid.uuid4())
     sessions[run_id] = AgentContexts()
@@ -183,9 +215,15 @@ async def run(question: str, session_id: str | None = None):
     async def work():
         try:
             report = await deep_research(question, list(history.get(run_id, [])), research, last_games.get(run_id))
-            queue.put_nowait({"type": "done", "markdown": report, "evidence": research.store.items(), "chart": research.chart})
+            save_session(run_id, question, report, research)
+            queue.put_nowait({
+                "type": "done", "markdown": report,
+                "tool_calls": hooks.tool_calls,
+                "evidence": research.store.items(),
+                "chart": build_chart(research),
+            })
         except Exception as e:
-            queue.put_nowait({"type": "error", "message": f"{type(e).__name__}: {str(e)[:500]}"})
+            queue.put_nowait({"type": "error", "message": research_error(e)})
 
     task = asyncio.create_task(work())
 
@@ -205,4 +243,4 @@ async def run(question: str, session_id: str | None = None):
 
 if __name__ == "__main__":
     # Cloud Run sets PORT. Raise its request timeout to 300 s+ for deep research.
-    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+    uvicorn.run(app, host=args.host, port=args.port)

@@ -1,5 +1,10 @@
-"""The whole run: clarify -> plan and research in parallel (with gap rounds) -> write -> check citations."""
+"""The whole run: clarify -> plan and research in parallel (with gap rounds) -> write -> check citations.
 
+The run has a wall-clock budget (RESEARCH_TIMEOUT, under Cloud Run's request timeout): if it runs
+out, whatever the researchers found is reported as it stands instead of failing."""
+
+import asyncio
+import os
 from datetime import date
 
 from agents import MaxTurnsExceeded, Runner
@@ -10,6 +15,7 @@ from detective.writer import write
 
 HISTORY_TURNS = 6  # earlier messages the Clarifier sees
 HISTORY_CHARS = 1_500  # per message: an earlier report is long, its gist is enough
+RESEARCH_TIMEOUT = int(os.environ.get("RESEARCH_TIMEOUT", "240"))  # seconds; Cloud Run gets 300s+
 
 
 def clarifier_input(question: str, history: list[dict], last_games: list[dict]) -> str:
@@ -28,12 +34,41 @@ def clarifier_input(question: str, history: list[dict], last_games: list[dict]) 
 
 
 async def deep_research(question: str, history: list[dict], research: Research, last_games: list[dict] | None = None) -> str:
-    """Answer one question. Returns the report's markdown, or a question back to the user.
+    """Answer one question within the time budget. Returns the report's markdown, or a question back.
 
-    history: earlier turns of this session ({role, content}), so follow-ups ("那中文玩家呢？") work.
-    research: this run's state; app.py reads tool calls, evidence and research.games from it.
-    last_games: the games the previous question in this session was about.
+    history: earlier turns of this session ({role, content}), so follow-ups ("what about Chinese
+    players?") work. research: this run's state; app.py reads tool calls, evidence and
+    research.games from it. last_games: the games the previous question in this session was about.
+
+    If the budget runs out mid-run, the findings gathered so far are reported as they stand.
     """
+    try:
+        return await asyncio.wait_for(_answer(question, history, research, last_games), RESEARCH_TIMEOUT)
+    except (asyncio.TimeoutError, TimeoutError):
+        return fallback_report(research)
+
+
+def fallback_report(research: Research) -> str:
+    """A degraded report without the Writer: the findings as they stand, citations included
+    (research() already dropped ids that aren't in the store)."""
+    if not research.findings:
+        return ("The research ran out of time before finding anything. Try a narrower question: "
+                "one game, and a specific month or update.")
+    lines = [
+        "**The research hit its time budget before the Writer could write the full report.**",
+        "What the researchers found so far:",
+    ]
+    for finding in research.findings:
+        for item in finding["findings"]:
+            cites = "".join(f" [{rid}]" for rid in item["evidence"])
+            lines.append(f"- {item['claim']}{cites} *({finding['researcher']})*")
+    gaps = [gap for finding in research.findings for gap in finding.get("cannot_answer", [])]
+    if gaps:
+        lines += ["", "What the data can't answer:"] + [f"- {gap}" for gap in gaps]
+    return "\n".join(lines)
+
+
+async def _answer(question: str, history: list[dict], research: Research, last_games: list[dict] | None) -> str:
     # 1. Clarify: stop here and ask back if the question is too vague.
     result = await Runner.run(
         clarifier, clarifier_input(question, history, last_games or []), context=research, hooks=research.hooks, max_turns=6

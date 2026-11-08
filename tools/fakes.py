@@ -123,7 +123,13 @@ def get_review_trend(research, appid: int, language: str = "all") -> dict:
             baseline = round(sum(s["pct_negative"] for s in series[i - 4 : i]) / 4, 1)
             if pct > 2 * baseline:
                 spikes.append({"period": start, "pct_negative": pct, "baseline": baseline, "ref": ref})
-    research.chart = {"series": series, "patches": [{"date": d, "title": t} for _, d, t, official, _ in PATCHES if official]}
+    # Same chart shape and merge rules as the real tools (tools/steam_reviews.py).
+    previous = getattr(research, "chart", None) or {}
+    research.chart = {
+        "appid": appid, "granularity": "week", "as_of": AS_OF, "from_snapshot": False,
+        "series": series,
+        "patches": previous.get("patches", []) if previous.get("appid") == appid else [],
+    }
     return _ok(appid=appid, granularity="week", language=language, series=series, spikes=spikes, source="appreviewhistogram")
 
 
@@ -184,7 +190,19 @@ def get_patch_notes(research, appid: int, start: str, end: str, official_only: b
             continue
         url = f"https://store.steampowered.com/news/app/{APPID}/view/{gid}"
         ref = research.store.add("news", gid, url, day, f"{title}. {text}")
-        notes.append({"ref": ref, "date": day, "title": title, "url": url, "official": official, "summary": text})
+        notes.append({"ref": ref, "id": gid, "date": day, "title": title, "url": url, "official": official, "summary": text})
+    # Same chart merge rules as the real tool (tools/steam_news.py).
+    chart = getattr(research, "chart", None)
+    if chart is None or chart.get("appid") != appid:
+        chart = {"appid": appid, "granularity": None, "as_of": AS_OF, "series": [], "patches": []}
+        research.chart = chart
+    known = {p["id"] for p in chart["patches"]}
+    chart["patches"].extend(
+        {"ref": n["ref"], "id": n["id"], "date": n["date"], "title": n["title"], "url": n["url"],
+         "official": n["official"], "kind": "patch_notes" if n["official"] else "announcement"}
+        for n in notes if n["id"] not in known
+    )
+    chart["patches"].sort(key=lambda p: (p["date"], p["id"]))
     return _ok(appid=appid, notes=notes, source="GetNewsForApp")
 
 

@@ -1,0 +1,1507 @@
+{
+  "question": "Which update caused Helldivers 2's negative reviews to spike between August and October 2026, and what exactly are players complaining about?",
+  "seconds": 88.9,
+  "tool_calls_per_agent": {
+    "Clarifier": 1,
+    "Lead": 4,
+    "Review Analyst 2": 3,
+    "Player Data Analyst 3": 2,
+    "Patch Historian 1": 1
+  },
+  "agent_timings_s": {
+    "Clarifier": [
+      0.0,
+      11.5
+    ],
+    "Lead": [
+      11.5,
+      31.9
+    ],
+    "Patch Historian 1": [
+      15.9,
+      26.0
+    ],
+    "Review Analyst 2": [
+      15.9,
+      28.9
+    ],
+    "Player Data Analyst 3": [
+      15.9,
+      25.8
+    ],
+    "Writer": [
+      31.9,
+      88.8
+    ]
+  },
+  "cited": [
+    "R33",
+    "R35",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "R40",
+    "R41",
+    "R42",
+    "R43",
+    "R45",
+    "R48",
+    "R54",
+    "R55",
+    "R56",
+    "R62",
+    "R63",
+    "R65",
+    "R69",
+    "R71",
+    "R72",
+    "R73",
+    "R74",
+    "R78",
+    "R79",
+    "R84"
+  ],
+  "cited_but_missing": [],
+  "response": "# Which update caused Helldivers 2's negative reviews to spike between August and October 2026, and what exactly are players complaining about?\n\nThe negative review spike in October 2026 was caused by the \"Devoid of Liberty: 7.2.0\" update released on 2026-10-20 [R54]. This update introduced Easy Anti-Cheat (EAC), the Scope of Authority Warbond, and various weapon and stratagem rebalances [R54]. The addition of EAC led to a severe review spike, resulting in 6754 negative reviews and 3813 positive reviews (63.9% negative sentiment) during the 2026-10-01 period [R33]. Players are complaining that EAC causes constant crashes, prevents the game from launching entirely, breaks cosmetic and other mods, and is unnecessary for a PvE cooperative game [R62][R69][R71].\n\n---\n\n### Timeline\n\n* **2026-06**: The game had 25423 average concurrent players, peaking at 45817 [R35].\n* **2026-07**: Average concurrent players rose to 26750 with a peak of 43782 [R36].\n* **2026-08-06**: An official announcement detailed plans to raise the level cap from 150 to 300 [R40].\n* **2026-08-12**: The major \"Devoid of Liberty: 7.0.0\" update launched, introducing a new biome and Illuminate enemies [R41][R42].\n* **2026-08-17**: Patch 7.0.1 fixed crashes related to full-screen terminals and superwide windows [R43].\n* **2026-08-25**: Patch 7.0.2 addressed crashes in the Vehicle Customization menu and Dynamic Resolution Scaling [R45]. Player counts for the 2026-08 period averaged 52422 concurrent players with a peak of 144799 [R37].\n* **2026-09-22**: Patch \"Devoid of Liberty: 7.1.0\" introduced community feedback changes, such as preventing enemies from targeting unoccupied vehicles [R48]. Player counts for the 2026-09 period dropped to 45156 average concurrent players with a peak of 92006 [R38].\n* **2026-10-20**: The \"Devoid of Liberty: 7.2.0\" update launched, introducing Easy Anti-Cheat, the Scope of Authority Warbond, and bug bile enemy adjustments [R54].\n* **2026-10-22**: Patch 7.2.2 (listed as 7.2.1 in notes) released to resolve squad joining and leaving crashes [R55].\n* **2026-10-29**: Patch 7.2.2 updated the AMW-20 APEX and LAS-44 NOVA stratagems to fix armor penetration and demolition strength issues [R56].\n* **2026-10**: Player counts for the 2026-10 period decreased to 39956 average concurrent players with a peak of 98111 [R39], while negative reviews spiked to 6754 [R33].\n\n---\n\n### What players are complaining about\n\nThe main player complaints target the introduction of Easy Anti-Cheat (EAC) [R62][R71]. Reviewers highlight several core issues:\n\n* **Launch Failures and Errors**: Many players are completely unable to launch the game, experiencing persistent issues like the \"0x0000142\" error or \"0xc0000142\" error [R71][R79][R84].\n* **Broken and Softlocked Mods**: The anti-cheat softlocked all mods, including cosmetic mods, forcing the game to crash or close [R69][R72][R74]. Purging mods does not always restore game functionality [R69].\n* **Restrictive Measures**: Players express frustration over a restrictive anti-cheat in a cooperative PvE game, noting that it even blocks players from changing process priority in Task Manager [R62][R73].\n* **Performance and Developer Disconnect**: Reviews report a severe drop in performance and optimization [R78]. Players also cite unaddressed bugs like stratagem bouncing [R63], impossible Major Orders, and poor rewards [R78], criticizing a disconnect between developer vision and player desires [R65][R72].\n\nThe following reviews illustrate player frustration with the update [R62][R69][R71]:\n\n> \"They changed the Anti-Cheat (on a PvE game??) to EAC (Easy Anti-Cheat) which not only, likely broke some mods, has the potential to ban players from a false-positive, but many players cannot even launch the game anymore.\" (228.7 hours played) [R62]\n\n> \"Great until they softlocked anyone running mods, even cosmetic mods cause the anticheat to force close my game. After I purged all the mods, game still wouldn't run, ArrowHead needs to cut easy anticheat.\" (211.2 hours played) [R69]\n\n> \"Easy Anti-Cheat literally has made me unable to play the game at all. I've done every single way posted to fix this 0x0000142 Error. now I'm unable to play one of my favorite games.\" (135.7 hours played) [R71]\n\n---\n\n### What the data can't answer\n\n* **Console Impact**: Since the average and peak concurrent player counts and review totals are from Steam, the data cannot show if PlayStation 5 players faced similar issues, though some players enjoy the game across both PS5 and PC [R33][R35][R65].\n* **Error Distribution**: The data cannot show the exact ratio of players who cannot launch the game versus those who can play but object to the anti-cheat's presence [R62][R71].\n* **Developer Intentions**: The data does not explain why developers chose to implement Easy Anti-Cheat beyond what is stated in the 2026-10-20 announcement [R54].\n* **Reviewer Representation**: Steam reviews only reflect players who write reviews, which may not represent the entire active player base [R33].\n* **Owner Estimates**: SteamSpy owner counts are only estimates, and no console player counts or console review data are available to compare against Steam [R33][R35][R39].\n\n*Note (automated check): the following could not be verified against the cited sources and may be inaccurate:*\n- the number 06 in “* **2026-08-06**: An official announcement detailed plans to” does not appear in the cited evidence (R40)\n- the number 17 in “* **2026-08-17**: Patch 7.0.1 fixed crashes related to full-” does not appear in the cited evidence (R43)\n- the number 25 in “* **2026-08-25**: Patch 7.0.2 addressed crashes in the Vehic” does not appear in the cited evidence (R37, R45)\n- the number 22 in “* **2026-09-22**: Patch \"Devoid of Liberty: 7.1.0\" introduce” does not appear in the cited evidence (R38, R48)\n- the number 10 in “* **2026-10-22**: Patch 7.2.2 (listed as 7.2.1 in notes) rel” does not appear in the cited evidence (R55)\n- the number 22 in “* **2026-10-22**: Patch 7.2.2 (listed as 7.2.1 in notes) rel” does not appear in the cited evidence (R55)\n- the number 10 in “* **2026-10-29**: Patch 7.2.2 updated the AMW-20 APEX and LA” does not appear in the cited evidence (R56)\n- the number 29 in “* **2026-10-29**: Patch 7.2.2 updated the AMW-20 APEX and LA” does not appear in the cited evidence (R56)\n- the quoted text “error or” is not in the cited evidence (R71, R79, R84)",
+  "session_id": "cc361ce7-6706-42f9-b04b-02c2c3962edf",
+  "tool_calls": [
+    {
+      "agent": "Clarifier",
+      "name": "search_game",
+      "args": {
+        "limit": 5,
+        "query": "Helldivers 2"
+      },
+      "result": "{'ok': True, 'results': [{'appid': 553850, 'name': 'HELLDIVERS™ 2', 'release_date': '2024-02-08', 'price': '$39.99', 'price_minor': 3999, 'initial_price_minor': 3999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'as_of': '2026-11-08', 'from_snapshot': False}], 'source': 'https://store.steampowered.com/api/storesearch/', 'as_of': '2026-11-08', 'from_snapshot': False, 'partial': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "get_review_trend",
+      "args": {
+        "language": "all",
+        "appid": 553850
+      },
+      "result": "{'ok': True, 'appid': 553850, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2024-02-01', 'up': 119827, 'down': 40360, 'pct_negative': 25.2, 'ref': 'R1'}, {'period': '2024-03-01', 'up': 98970, 'down': 16423, 'pct_negative': 14.2, 'ref': 'R2'}, {'period': '2024-04-01', 'up': 45283, 'down': 6147, 'pct_negative': 12.0, 'ref': 'R3'}, {'period': '2024-05-01', 'up': 114571, 'down': 228757, 'pct_negative': 66.6, 'ref': 'R4'}, {'period': '2024-06-01', 'up': 8762, 'down': 1872, 'pct_negative': 17.6, 'ref': 'R5'}, {'period': '2024-07-01', 'up': 4573, 'down': 873, 'pct_negative': 16.0, 'ref': 'R6'}, {'period': '2024-08-01', 'up': 4979, 'down': 7609, 'pct_negative': 60.4, 'ref': 'R7'}, {'period': '2024-09-01', 'up': 5011, 'down': 1744, 'pct_negative': 25.8, 'ref': 'R8'}, {'period': '2024-10-01', 'up': 4448, 'down': 489, 'pct_negative': 9.9, 'ref': 'R9'}, {'period': '2024-11-01', 'up': 13175, 'down': 786, 'pct_negative': 5.6, 'ref': 'R10'}, {'period': '2024-12-01', 'up': 15858, 'down': 1713, 'pct_negative': 9.7, 'ref': 'R11'}, {'period': '2025-01-01', 'up': 9104, 'down': 598, 'pct_negative': 6.2, 'ref': 'R12'}, {'period': '2025-02-01', 'up': 7688, 'down': 827, 'pct_negative': 9.7, 'ref': 'R13'}, {'period': '2025-03-01', 'up': 6230, 'down': 895, 'pct_negative': 12.6, 'ref': 'R14'}, {'period': '2025-04-01', 'up': 3601, 'down': 461, 'pct_negative': 11.3, 'ref': 'R15'}, {'period': '2025-05-01', 'up': 10776, 'down': 5567, 'pct_negative': 34.1, 'ref': 'R16'}, {'period': '2025-06-01', 'up': 9387, 'down': 1146, 'pct_negative': 10.9, 'ref': 'R17'}, {'period': '2025-07-01', 'up': 6079, 'down': 739, 'pct_negative': 10.8, 'ref': 'R18'}, {'period': '2025-08-01', 'up': 5514, 'down': 828, 'pct_negative': 13.1, 'ref': 'R19'}, {'period': '2025-09-01', 'up': 8887, 'down': 5089, 'pct_negative': 36.4, 'ref': 'R20'}, {'period': '2025-10-01', 'up': 4306, 'down': 2819, 'pct_negative': 39.6, 'ref': 'R21'}, {'period': '2025-11-01', 'up': 5551, 'down': 1088, 'pct_negative': 16.4, 'ref'"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "get_review_trend",
+      "args": {
+        "language": "all",
+        "appid": 553850
+      },
+      "result": "{'ok': True, 'appid': 553850, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2024-02-01', 'up': 119827, 'down': 40360, 'pct_negative': 25.2, 'ref': 'R1'}, {'period': '2024-03-01', 'up': 98970, 'down': 16423, 'pct_negative': 14.2, 'ref': 'R2'}, {'period': '2024-04-01', 'up': 45283, 'down': 6147, 'pct_negative': 12.0, 'ref': 'R3'}, {'period': '2024-05-01', 'up': 114571, 'down': 228757, 'pct_negative': 66.6, 'ref': 'R4'}, {'period': '2024-06-01', 'up': 8762, 'down': 1872, 'pct_negative': 17.6, 'ref': 'R5'}, {'period': '2024-07-01', 'up': 4573, 'down': 873, 'pct_negative': 16.0, 'ref': 'R6'}, {'period': '2024-08-01', 'up': 4979, 'down': 7609, 'pct_negative': 60.4, 'ref': 'R7'}, {'period': '2024-09-01', 'up': 5011, 'down': 1744, 'pct_negative': 25.8, 'ref': 'R8'}, {'period': '2024-10-01', 'up': 4448, 'down': 489, 'pct_negative': 9.9, 'ref': 'R9'}, {'period': '2024-11-01', 'up': 13175, 'down': 786, 'pct_negative': 5.6, 'ref': 'R10'}, {'period': '2024-12-01', 'up': 15858, 'down': 1713, 'pct_negative': 9.7, 'ref': 'R11'}, {'period': '2025-01-01', 'up': 9104, 'down': 598, 'pct_negative': 6.2, 'ref': 'R12'}, {'period': '2025-02-01', 'up': 7688, 'down': 827, 'pct_negative': 9.7, 'ref': 'R13'}, {'period': '2025-03-01', 'up': 6230, 'down': 895, 'pct_negative': 12.6, 'ref': 'R14'}, {'period': '2025-04-01', 'up': 3601, 'down': 461, 'pct_negative': 11.3, 'ref': 'R15'}, {'period': '2025-05-01', 'up': 10776, 'down': 5567, 'pct_negative': 34.1, 'ref': 'R16'}, {'period': '2025-06-01', 'up': 9387, 'down': 1146, 'pct_negative': 10.9, 'ref': 'R17'}, {'period': '2025-07-01', 'up': 6079, 'down': 739, 'pct_negative': 10.8, 'ref': 'R18'}, {'period': '2025-08-01', 'up': 5514, 'down': 828, 'pct_negative': 13.1, 'ref': 'R19'}, {'period': '2025-09-01', 'up': 8887, 'down': 5089, 'pct_negative': 36.4, 'ref': 'R20'}, {'period': '2025-10-01', 'up': 4306, 'down': 2819, 'pct_negative': 39.6, 'ref': 'R21'}, {'period': '2025-11-01', 'up': 5551, 'down': 1088, 'pct_negative': 16.4, 'ref'"
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_history",
+      "args": {
+        "appid": 553850,
+        "end": "2026-10-01",
+        "start": "2026-06-01"
+      },
+      "result": "{'ok': True, 'appid': 553850, 'months': [{'ref': 'R35', 'month': '2026-06', 'avg': 25423, 'peak': 45817, 'gain_pct': -17.09}, {'ref': 'R36', 'month': '2026-07', 'avg': 26750, 'peak': 43782, 'gain_pct': 5.22}, {'ref': 'R37', 'month': '2026-08', 'avg': 52422, 'peak': 144799, 'gain_pct': 95.97}, {'ref': 'R38', 'month': '2026-09', 'avg': 45156, 'peak': 92006, 'gain_pct': -13.86}, {'ref': 'R39', 'month': '2026-10', 'avg': 39956, 'peak': 98111, 'gain_pct': -11.52}], 'coverage': ['2024-02', '2026-10'], 'source': 'steamcharts', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Patch Historian 1",
+      "name": "get_patch_notes",
+      "args": {
+        "end": "2026-10-31",
+        "start": "2026-08-01",
+        "official_only": true,
+        "appid": 553850
+      },
+      "result": "{'ok': True, 'appid': 553850, 'notes': [{'ref': 'R40', 'id': '1840310314341623', 'date': '2026-08-06', 'title': 'HELLDIVERS 2 Is Raising the Level Cap to 300', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314341623', 'official': True, 'kind': 'announcement', 'feed': 'steam_community_announcements', 'summary': \"Attention, Helldivers. Super Earth has authorized a new tier of service, and it's a big one: the level cap is jumping from 150 all the way to 300.\\n\\nIf you are already sore from the democratic path to 150, take a breath before you panic, this update comes with some genuinely great news for anyone who's already put in the hours.\\n\\nA Quick History of the Cap\\n\\n- \\nLaunch cap: Level 50\\n[/*]\\n- \\nApril 2024: Tripled to level 150\\n[/*]\\n- \\nNow: Doubling again to level 300\\n[/*]\\n\\nEach time the cap has risen, it's been paired with new titles, ranks, and bragging rights for the players who've stuck around–from our veterans of Malevelon Creek, to our soldiers in the Battle for Super Earth, to those brave divers who held the Menkent Line and beyond. This time is no different; level 300 is arriving as part of a broader progression overhaul that also brings Galactic War Campaigns and Personal Campaign Progression tracks, giving you new rewarding goals to chase even when the wider community's Major Order doesn't pan out.\\n\\nThe Numbers\\n\\nLet's be honest about what we're looking at here:\\n\\n- \\nReaching level 150 already takes many, many hours of dedicated sessions… Several hundreds of missions across dozens o\", 'summary_is_excerpt': True, 'truncated': True}, {'ref': 'R41', 'id': '1840944183773413', 'date': '2026-08-12', 'title': 'Devoid of Liberty: 7.0.0', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183773413', 'official': True, 'kind': 'announcement', 'feed': 'steam_community_announcements', 'summary': \"I'm your host, Release Captain Morris. When humanity is at"
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_stats",
+      "args": {
+        "appid": 553850
+      },
+      "result": "{'ok': True, 'ref': 'R57', 'appid': 553850, 'name': 'HELLDIVERS 2', 'owners_estimate': '20,000,000 .. 50,000,000', 'average_forever_h': None, 'median_forever_h': None, 'average_2weeks_h': None, 'median_2weeks_h': None, 'ccu_yesterday': 53399, 'steamspy_positive': 775883, 'steamspy_negative': 241752, 'tags': {'Online Co-Op': 1016, 'PvE': 907, 'Third-Person Shooter': 894, 'Multiplayer': 875, 'Action': 800, 'Shooter': 764, 'Co-op': 736, 'Sci-fi': 699, 'Capitalism': 666, 'Space': 624}, 'current_players': 36511, 'note': 'owners_estimate is a SteamSpy estimate range, not a sales figure. Null playtime means no data.', 'warnings': [], 'source': 'steamspy + GetNumberOfCurrentPlayers', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "end": "2026-10-31",
+        "max_hours": null,
+        "language": "english",
+        "limit": 20,
+        "start": "2026-10-01",
+        "min_hours": null,
+        "review_type": "negative",
+        "appid": 553850
+      },
+      "result": "{'ok': True, 'appid': 553850, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 6515, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R58', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561199813405057/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 716.1, 'text': 'For those who just want the TLDR, Helldivers 2 is dying and this is due to Arrowhead\\'s malicious laziness. \\n\\nBut for many of you who want me to elaborate more on what I mean, I highly encourage everyone to carefully read through my current thoughts on this game as my opinion may change depending on which direction it goes from here. \\n\\nEver since I started playing this game right around \"Omens of T'}, {'ref': 'R59', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198169902226/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 300.4, 'text': 'These devs captured lightning in a bottle...\\n\\nThen got mad it was blue, so they pissed on it to make it yellow.'}, {'ref': 'R60', 'date': '2026-10-30', 'url': 'https://steamcommunity.com/profiles/76561199177515433/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 29.8, 'text': 'Robert.\\nI dont like this game.\\nROBERT.\\nTHE DEVS ARE PISSING ME OFF.'}, {'ref': 'R61', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198106173072/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 599.5, 'text': 'This game\\'s life cycle\\n\\nIt\\'s so peak! - It\\'s so over! - We\\'re so back! - It\\'s so over! - We\\'re so back! - It\\'s so over!\\n\\nUnfortunately it\\'s been in the \"It\\'s so over!\" phase for a while!'}, {'ref': 'R62', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198157296047/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 228.7, 'text': 'They changed the Anti-Cheat (on a PvE game??) to EAC (Ea"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Get monthly player counts (average and peak) for Helldivers 2 (appid 553850) from August 2026 to October 2026 to see if players left the game after the October 2026 update.",
+        "researcher": "players"
+      },
+      "result": "{\"findings\": [{\"claim\": \"In June 2026, the average concurrent players was 25,423 with a peak of 45,817 and a gain percentage of -17.09.\", \"evidence\": [\"R35\"]}, {\"claim\": \"In July 2026, the average concurrent players was 26,750 with a peak of 43,782 and a gain percentage of 5.22.\", \"evidence\": [\"R36\"]}, {\"claim\": \"In August 2026, the average concurrent players was 52,422 with a peak of 144,799 and a gain percentage of 95.97.\", \"evidence\": [\"R37\"]}, {\"claim\": \"In September 2026, the average concurrent players was 45,156 with a peak of 92,006 and a gain percentage of -13.86.\", \"evidence\": [\"R38\"]}, {\"claim\": \"In October 2026, the average concurrent players was 39,956 with a peak of 98,111 and a gain percentage of -11.52.\", \"evidence\": [\"R39\"]}, {\"claim\": \"Average concurrent players decreased in October 2026 compared to September 2026, moving from 45,156 down to 39,956.\", \"evidence\": [\"R38\", \"R39\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "end": "2026-10-31",
+        "appid": 553850,
+        "start": "2026-10-01",
+        "max_hours": null,
+        "language": "english",
+        "review_type": "negative",
+        "limit": 30,
+        "min_hours": null
+      },
+      "result": "{'ok': True, 'appid': 553850, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 6515, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R58', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561199813405057/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 716.1, 'text': 'For those who just want the TLDR, Helldivers 2 is dying and this is due to Arrowhead\\'s malicious laziness. \\n\\nBut for many of you who want me to elaborate more on what I mean, I highly encourage everyone to carefully read through my current thoughts on this game as my opinion may change depending on which direction it goes from here. \\n\\nEver since I started playing this game right around \"Omens of T'}, {'ref': 'R59', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198169902226/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 300.4, 'text': 'These devs captured lightning in a bottle...\\n\\nThen got mad it was blue, so they pissed on it to make it yellow.'}, {'ref': 'R60', 'date': '2026-10-30', 'url': 'https://steamcommunity.com/profiles/76561199177515433/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 29.8, 'text': 'Robert.\\nI dont like this game.\\nROBERT.\\nTHE DEVS ARE PISSING ME OFF.'}, {'ref': 'R61', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198106173072/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 599.5, 'text': 'This game\\'s life cycle\\n\\nIt\\'s so peak! - It\\'s so over! - We\\'re so back! - It\\'s so over! - We\\'re so back! - It\\'s so over!\\n\\nUnfortunately it\\'s been in the \"It\\'s so over!\" phase for a while!'}, {'ref': 'R62', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198157296047/recommended/553850/', 'language': 'english', 'positive': False, 'hours_at_review': 228.7, 'text': 'They changed the Anti-Cheat (on a PvE game??) to EAC (Ea"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Find all game updates, patch notes, and developer announcements for Helldivers 2 (appid 553850) released between August 1, 2026 and October 31, 2026. Identify which major update launched in this period (especially around October 2026).",
+        "researcher": "patches"
+      },
+      "result": "{\"findings\": [{\"claim\": \"On August 6, 2026, an announcement detailed raising the level cap from 150 to 300 as part of a progression overhaul.\", \"evidence\": [\"R40\"]}, {\"claim\": \"On August 12, 2026, the 'Devoid of Liberty: 7.0.0' update launched, introducing new Illuminate enemies and a new biome.\", \"evidence\": [\"R41\", \"R42\"]}, {\"claim\": \"On August 17, 2026, patch 7.0.1 was released, fixing crashes related to full-screen terminals and superwide windows.\", \"evidence\": [\"R43\"]}, {\"claim\": \"On August 25, 2026, patch 7.0.2 was released, addressing crashes in the Vehicle Customization menu and Dynamic Resolution Scaling.\", \"evidence\": [\"R45\"]}, {\"claim\": \"On September 22, 2026, patch 'Devoid of Liberty: 7.1.0' introduced community feedback changes such as enemies no longer targeting unoccupied vehicles and Destroyer-based leaderboards for Stratagem Hero.\", \"evidence\": [\"R48\"]}, {\"claim\": \"On October 20, 2026, 'Devoid of Liberty: 7.2.0' launched, introducing Easy Anti-Cheat, the Scope of Authority Warbond, weapon/stratagem rebalances, and bug bile enemy adjustments.\", \"evidence\": [\"R54\"]}, {\"claim\": \"On October 22, 2026, patch 7.2.2 (listed as 7.2.1 in notes) was released to fix a crash that occurred when another player joined or left the squad.\", \"evidence\": [\"R55\"]}, {\"claim\": \"On October 29, 2026, patch 7.2.2 was released, updating the AMW-20 APEX and LAS-44 NOVA stratagems to fix armor penetration and demolition strength issues.\", \"evidence\": [\"R56\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Analyze negative reviews for Helldivers 2 (appid 553850) between August 1, 2026 and October 31, 2026, especially focusing on the October 2026 spike. What are the main complaints, issues, or balance changes players are criticizing?",
+        "researcher": "reviews"
+      },
+      "result": "{\"findings\": [{\"claim\": \"In October 2026, Helldivers 2 experienced a major negative review spike with 6,754 negative reviews out of 10,567 total reviews, reaching 63.9% negative sentiment.\", \"evidence\": [\"R33\"]}, {\"claim\": \"Players complain that the newly introduced Easy Anti-Cheat (EAC) prevents them from launching the game or causes constant crashes, citing errors such as 0x0000142.\", \"evidence\": [\"R62\", \"R68\", \"R71\", \"R79\", \"R84\"]}, {\"claim\": \"The anti-cheat update broke and softlocked game mods, including cosmetic mods, forcing the game to crash or close.\", \"evidence\": [\"R62\", \"R69\", \"R72\", \"R74\"]}, {\"claim\": \"Players criticize the developers for adding a restrictive anti-cheat system to a PvE cooperative game, preventing basic utilities like changing process priority in Task Manager.\", \"evidence\": [\"R62\", \"R73\"]}, {\"claim\": \"Reviewers cite a severe drop in game performance and optimization since recent updates.\", \"evidence\": [\"R78\"]}, {\"claim\": \"Players express frustration with developers over unaddressed long-standing bugs and a perceived disconnect between developer vision and player feedback.\", \"evidence\": [\"R63\", \"R65\", \"R72\"]}, {\"claim\": \"Players accuse developers of making Major Orders (MOs) impossible to accomplish and providing inadequate campaign rewards.\", \"evidence\": [\"R78\"]}], \"cannot_answer\": []}"
+    }
+  ],
+  "evidence": {
+    "R1": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-02-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-02-01",
+      "text": "Period 2024-02-01: 119827 positive reviews, 40360 negative reviews, 25.2% negative.",
+      "meta": {}
+    },
+    "R2": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-03-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-03-01",
+      "text": "Period 2024-03-01: 98970 positive reviews, 16423 negative reviews, 14.2% negative.",
+      "meta": {}
+    },
+    "R3": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-04-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-04-01",
+      "text": "Period 2024-04-01: 45283 positive reviews, 6147 negative reviews, 12.0% negative.",
+      "meta": {}
+    },
+    "R4": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-05-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-05-01",
+      "text": "Period 2024-05-01: 114571 positive reviews, 228757 negative reviews, 66.6% negative.",
+      "meta": {}
+    },
+    "R5": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-06-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-06-01",
+      "text": "Period 2024-06-01: 8762 positive reviews, 1872 negative reviews, 17.6% negative.",
+      "meta": {}
+    },
+    "R6": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-07-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-07-01",
+      "text": "Period 2024-07-01: 4573 positive reviews, 873 negative reviews, 16.0% negative.",
+      "meta": {}
+    },
+    "R7": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-08-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-08-01",
+      "text": "Period 2024-08-01: 4979 positive reviews, 7609 negative reviews, 60.4% negative.",
+      "meta": {}
+    },
+    "R8": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-09-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-09-01",
+      "text": "Period 2024-09-01: 5011 positive reviews, 1744 negative reviews, 25.8% negative.",
+      "meta": {}
+    },
+    "R9": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-10-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-10-01",
+      "text": "Period 2024-10-01: 4448 positive reviews, 489 negative reviews, 9.9% negative.",
+      "meta": {}
+    },
+    "R10": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-11-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-11-01",
+      "text": "Period 2024-11-01: 13175 positive reviews, 786 negative reviews, 5.6% negative.",
+      "meta": {}
+    },
+    "R11": {
+      "source": "review_trend",
+      "raw_id": "553850:2024-12-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2024-12-01",
+      "text": "Period 2024-12-01: 15858 positive reviews, 1713 negative reviews, 9.7% negative.",
+      "meta": {}
+    },
+    "R12": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-01-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-01-01",
+      "text": "Period 2025-01-01: 9104 positive reviews, 598 negative reviews, 6.2% negative.",
+      "meta": {}
+    },
+    "R13": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-02-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-02-01",
+      "text": "Period 2025-02-01: 7688 positive reviews, 827 negative reviews, 9.7% negative.",
+      "meta": {}
+    },
+    "R14": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-03-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-03-01",
+      "text": "Period 2025-03-01: 6230 positive reviews, 895 negative reviews, 12.6% negative.",
+      "meta": {}
+    },
+    "R15": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-04-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-04-01",
+      "text": "Period 2025-04-01: 3601 positive reviews, 461 negative reviews, 11.3% negative.",
+      "meta": {}
+    },
+    "R16": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-05-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-05-01",
+      "text": "Period 2025-05-01: 10776 positive reviews, 5567 negative reviews, 34.1% negative.",
+      "meta": {}
+    },
+    "R17": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-06-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-06-01",
+      "text": "Period 2025-06-01: 9387 positive reviews, 1146 negative reviews, 10.9% negative.",
+      "meta": {}
+    },
+    "R18": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-07-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-07-01",
+      "text": "Period 2025-07-01: 6079 positive reviews, 739 negative reviews, 10.8% negative.",
+      "meta": {}
+    },
+    "R19": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-08-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-08-01",
+      "text": "Period 2025-08-01: 5514 positive reviews, 828 negative reviews, 13.1% negative.",
+      "meta": {}
+    },
+    "R20": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-09-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-09-01",
+      "text": "Period 2025-09-01: 8887 positive reviews, 5089 negative reviews, 36.4% negative.",
+      "meta": {}
+    },
+    "R21": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-10-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-10-01",
+      "text": "Period 2025-10-01: 4306 positive reviews, 2819 negative reviews, 39.6% negative.",
+      "meta": {}
+    },
+    "R22": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-11-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-11-01",
+      "text": "Period 2025-11-01: 5551 positive reviews, 1088 negative reviews, 16.4% negative.",
+      "meta": {}
+    },
+    "R23": {
+      "source": "review_trend",
+      "raw_id": "553850:2025-12-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2025-12-01",
+      "text": "Period 2025-12-01: 4942 positive reviews, 871 negative reviews, 15.0% negative.",
+      "meta": {}
+    },
+    "R24": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-01-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-01-01",
+      "text": "Period 2026-01-01: 4265 positive reviews, 638 negative reviews, 13.0% negative.",
+      "meta": {}
+    },
+    "R25": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-02-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-02-01",
+      "text": "Period 2026-02-01: 8902 positive reviews, 1425 negative reviews, 13.8% negative.",
+      "meta": {}
+    },
+    "R26": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-03-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-03-01",
+      "text": "Period 2026-03-01: 5955 positive reviews, 3498 negative reviews, 37.0% negative.",
+      "meta": {}
+    },
+    "R27": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-04-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-04-01",
+      "text": "Period 2026-04-01: 3860 positive reviews, 4573 negative reviews, 54.2% negative.",
+      "meta": {}
+    },
+    "R28": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-05-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-05-01",
+      "text": "Period 2026-05-01: 3446 positive reviews, 4434 negative reviews, 56.3% negative.",
+      "meta": {}
+    },
+    "R29": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-06-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-06-01",
+      "text": "Period 2026-06-01: 2571 positive reviews, 1053 negative reviews, 29.1% negative.",
+      "meta": {}
+    },
+    "R30": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-07-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-07-01",
+      "text": "Period 2026-07-01: 2851 positive reviews, 704 negative reviews, 19.8% negative.",
+      "meta": {}
+    },
+    "R31": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-08-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-08-01",
+      "text": "Period 2026-08-01: 4986 positive reviews, 1103 negative reviews, 18.1% negative.",
+      "meta": {}
+    },
+    "R32": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-09-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-09-01",
+      "text": "Period 2026-09-01: 3616 positive reviews, 577 negative reviews, 13.8% negative.",
+      "meta": {}
+    },
+    "R33": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-10-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-10-01",
+      "text": "Period 2026-10-01: 3813 positive reviews, 6754 negative reviews, 63.9% negative.",
+      "meta": {}
+    },
+    "R34": {
+      "source": "review_trend",
+      "raw_id": "553850:2026-11-01",
+      "url": "https://store.steampowered.com/app/553850/",
+      "date": "2026-11-01",
+      "text": "Period 2026-11-01: 564 positive reviews, 1504 negative reviews, 72.7% negative.",
+      "meta": {}
+    },
+    "R35": {
+      "source": "player_history",
+      "raw_id": "553850:2026-06",
+      "url": "https://steamcharts.com/app/553850",
+      "date": "2026-06",
+      "text": "2026-06: 25423 average concurrent players, 45817 peak, -17.09% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R36": {
+      "source": "player_history",
+      "raw_id": "553850:2026-07",
+      "url": "https://steamcharts.com/app/553850",
+      "date": "2026-07",
+      "text": "2026-07: 26750 average concurrent players, 43782 peak, +5.22% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R37": {
+      "source": "player_history",
+      "raw_id": "553850:2026-08",
+      "url": "https://steamcharts.com/app/553850",
+      "date": "2026-08",
+      "text": "2026-08: 52422 average concurrent players, 144799 peak, +95.97% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R38": {
+      "source": "player_history",
+      "raw_id": "553850:2026-09",
+      "url": "https://steamcharts.com/app/553850",
+      "date": "2026-09",
+      "text": "2026-09: 45156 average concurrent players, 92006 peak, -13.86% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R39": {
+      "source": "player_history",
+      "raw_id": "553850:2026-10",
+      "url": "https://steamcharts.com/app/553850",
+      "date": "2026-10",
+      "text": "2026-10: 39956 average concurrent players, 98111 peak, -11.52% vs previous month (SteamCharts).",
+      "meta": {}
+    },
+    "R40": {
+      "source": "news",
+      "raw_id": "1840310314341623",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314341623",
+      "date": "2026-08-06",
+      "text": "HELLDIVERS 2 Is Raising the Level Cap to 300\n\nAttention, Helldivers. Super Earth has authorized a new tier of service, and it's a big one: the level cap is jumping from 150 all the way to 300.\n\nIf you are already sore from the democratic path to 150, take a breath before you panic, this update comes with some genuinely great news for anyone who's already put in the hours.\n\nA Quick History of the Cap\n\n- \nLaunch cap: Level 50\n[/*]\n- \nApril 2024: Tripled to level 150\n[/*]\n- \nNow: Doubling again to level 300\n[/*]\n\nEach time the cap has risen, it's been paired with new titles, ranks, and bragging rights for the players who've stuck around–from our veterans of Malevelon Creek, to our soldiers in the Battle for Super Earth, to those brave divers who held the Menkent Line and beyond. This time is no different; level 300 is arriving as part of a broader progression overhaul that also brings Galactic War Campaigns and Personal Campaign Progression tracks, giving you new rewarding goals to chase even when the wider community's Major Order doesn't pan out.\n\nThe Numbers\n\nLet's be honest about what we're looking at here:\n\n- \nReaching level 150 already takes many, many hours of dedicated sessions… Several hundreds of missions across dozens of Galactic War campaigns.\n[/*]\n- \nReaching level 300 will take more than double that. This isn't a small bump; it's a genuine second act for anyone chasing the next rank.\n[/*]\n\nIf you're not already at the cap, don't stress about \"falling behind.\" All the weapons, stratagems, and gear that actually matter for your loadout unlock by around level 25. Everything past that is about demonstrating your veteran prestige and prowess in battle. Level 300 is a marathon–not a sprint–designed to let you continue to demonstrate to your fellow Helldivers your skill and commitment to fighting for Super Earth.\n\nThe Best Part: Your XP Is Already Banked\n\nHere's the part worth getting excited about. If you hit level 150 before this patch drops and kept playing anyway, none of that XP was wasted.\n\nThe game has saved every drop of experience you earned over 150; even past the current cap. The moment the new limit goes live, the game recalculates your total XP against the new level table and instantly bumps you up to wherever you should be. No re-grinding, no starting over. Just an immediate jump that reflects the missions you’ve already completed with your fellow divers, the battles you’ve already won, and the contributions you’ve already made to the ongoing war.\n\nThis is exactly what happened the last time the cap rose from 50 to 150: players who'd kept farming missions past level 50 logged in and found themselves instantly promoted several levels, sometimes dozens, based purely on banked XP. Expect the same behavior this time around.\n\nSo if you've been running Super Helldive missions \"for nothing\" since hitting 150, surprise, you've actually been quietly stacking up levels 151, 152, 153, and beyond. You just haven't seen the number tick over yet.\n\nWhat This Means Going Forward\n\n- \nNew veteran players (already at 150): Log in after the patch and watch your level jump based on banked XP. Keep playing normally in the meantime, every dive counts💪.\n[/*]\n- \nPlayers still working toward 150: No change to your path. Keep pushing toward the current cap; the new ceiling will be waiting for you.\n[/*]\n\nExpect new titles and ranks to fill out the stretch between 150 and 300, giving long-term players fresh milestones (and hopefully some fresh bragging rights) all the way to the new ceiling.\n\nFor Super Earth, for glory, and for that sweet, sweet liberty! See you on the battlefield, Helldivers.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R41": {
+      "source": "news",
+      "raw_id": "1840944183773413",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183773413",
+      "date": "2026-08-12",
+      "text": "Devoid of Liberty: 7.0.0\n\nI'm your host, Release Captain Morris. When humanity is at stake, we bring you this update from Super Earth High Command to further your efforts in the war.\n\n*** INCOMING TRANSMISSION FROM SUPER EARTH HIGH COMMAND ***\n\nHelldivers, you are needed on the battlefield of a new frontier–one more wild and uncertain than any we have faced prior. We are so close to entering the Void.\n\nStay frosty, divers. As you fight your way toward the Void, you’ll encounter new, hideously mutated organisms. We have received intelligence reports that indicate these metamorphosed creatures are emerging from the heart of the Void–they are ghoulish diversions wrought into existence by the Illuminate scourge to threaten our freedom. \n\nWe aren’t sending you in without backup. You may now gain all 300 ranks of security access and privileges, and we have commissioned SEAF platoons to aid you on the surface of the Void source planet.\n\nThis is our opportunity to strike and avenge the citizens, SEAF, and Helldivers lost in the Battle for Super Earth.\n\nThis is our chance to destroy them.\n\n📍 Patch Highlights\n\nNew Illuminate Enemies\n\nA new biome full of fresh horrors awaits, the void warps everything it touches and your foes have taken new hideous forms.\n\n- \nThe Crusher is on a deathmarch capable of regenerating while taking heavy damage and needs to be worn down quickly and consistently without a moment of pause.\n[/*]\n- \nThe Wretch is a relentless and nimble enemy that requires quick trigger fingers and focused aim as they are able to dodge and leap at the player while advancing to quickly dismantle its weapons along with their will to live.\n[/*]\n\nSEAF Support \n\nSEAF have entered the battle! \n\nSuper Earth Armed Forces (SEAF) can now appear as a planet modifier, joining you in battle in your missions and enhancing your combat capabilities with a range of new tools (Stim pistols, Heavy Machine guns and more)\n\n- \nThe SEAF take to the stars. Super Earth High Command has mandated the SEAF be deployed directly to the frontlines of the Galactic Campaign for Democracy. Helldivers will be able to be supported by friendly SEAF NPC troops, with new and improved behavior, weaponry and updated visuals\n \n[/*]\n\nLevel Cap Increased\n\nWe've expanded the Helldiver rank system beyond Level 150, adding 15 new ranks and titles that carry Helldivers all the way up to Level 300. Each new rank comes with its own unique title and icon to recognize the most dedicated defenders of Managed Democracy. Super Earth thanks you for your continued service, the fight never ends, and neither does your potential.\n\nExpanded Emote Slots\n\nHelldivers, you now have twice as many ways to express yourself on the battlefield! The emote wheel capacity has been raised from 4 to 8 emotes.\n\nCASTELLAN'S CREED Warbond\n\nChannel the formidable battle prowess of the Astra Militarum’s finest in the HELLDIVERS™ 2 x Warhammer 40,000: Castellan’s Creed Legendary Warbond.\n\n🤝 Community Feedback Changes\n\nWe’re trying out a new section to shout out some of the fixes and changes that are high up on the community’s wishlist!\n\nGATER Upgrades\nSuper Earth engineers have replaced the engine and transmission in the GATER in favor of a much more powerful Super V48 Interceptor engine, this has improved its speed and handling.\n\nThe Constitution\n\n… has stripper clips! \n\nAssisted Reload Rework\n\nProblem we want to solve: \n\n- \nThe original intent was a tactical action that needed collaboration with a designated reloader that carries the backpack\n[/*]\n- \nWe have reevaluated how this works and with how the game has evolved since launch we got to the conclusion that the assisted reload action require too much coordination which lead to it rarely happening\n[/*]\n\nIntent and expectation with the change:\n\n- \nWe want to reduce the complexity with assisted reloading to promote using it more.\n[/*]\n- \nAllow players to keep their backpack and reload whenever you need, while also allows a teammate to easily help you if the opportunity arises. \n[/*]\n\nThe change we made:\n\n- \nHelldivers can now assist reload as long as one of the wielder and/or reloader of the weapon has the correct backpack\n[/*]\n\n⚖️ Balancing \n\nUpdated icons for backpack weapons and expendable weapons\n\nProblem we want to solve: \n\n- \nFind a specific weapon in the loadout can be hard to do with all the new weapons added to the arsenal\n[/*]\n- \nIt can be hard to know if a support weapon needs a backpack or can not be reloaded when only looking at the icon.\n[/*]\n\nIntent and expectation with the change:\n\n- \nWe want to make it easier to find specific weapons and to plan your loadout. \n[/*]\n- \nIt should be easier to know when a weapon needs a backpack or can not be reloaded when only looking at the icon.\n[/*]\n\nThe change we made:\n\n- \nStratagem Weapons that require a backpack now have a backpack icon included on their loadout icons \n[/*]\n- \nStratagem Weapons that can not be reloaded now have a drop weapon icon included on their loadout icons .\n[/*]\n\nDecreased heavy landing duration\n\nProblem we want to solve: \n\n- \nThe original intent was to make the heavy landing to feel like you recovered from a high fall.\n[/*]\n\n- \nThe player lost control for a long time when landing on the feet from a higher fall.\n[/*]\n\nIntent and expectation with the change:\n\n- \nWe wanted to make it smoother to recover from the heavy landing state and not remove the control for too long.\n[/*]\n- \nWhile still make it feel like a heavy landing recovery\n[/*]\n\nThe change we made:\n\n- \nDecreased the duration for the heavy landing animation with around 40%\n[/*]\n\nStim action input smoothing\n\nProblem we want to solve: \n\n- \nPlayers can experience dead input when trying to stim when the stim action was not allowed.\n[/*]\n\nIntent and expectation with the change:\n\n- \nWe want to lessen the feeling of dead input when using the stim action.\n[/*]\n\nThe change we made:\n\n- \nWe changed so the stim input is remembered for a short duration when the action is not allowed and will be executed if the stim action is allowed within that duration. \n[/*]\n- \nThis works similar to how the reload input action changes from the last patch.\n[/*]\n\nAmmo re-balance for Short magazines attachments and Secondaries \n\nProblem we want to solve: \n\n- \nThe benefits of the short magazines are too few compared to drum magazines.\n[/*]\n- \nThe benefits of some of the anti personnel side arms do not have enough benefits compared to other side arm options.\n[/*]\n\nIntent and expectation with the change:\n\n- \nGive more benefits to short magazines to make the items more useful compared to drum magazines for the same weapon.\n[/*]\n- \nGive more benefits to some of the lesser used anti personnel side arms to make the items more useful\n[/*]\n\nThe change we made:\n\n- \nShort magazines got more max spare and starting magazines.\n[/*]\n- \nSome of the anti personnel sidearms got more max spare and starting magazines.\n[/*]\n\nPrimaries\n\nR-2124 Constitution\n\nAdded a full stripper clip reload when reloading if the magazine is empty.\n\nPrimaries attachments\n\nShort magazines for:\n\nAR-23 Liberator\n\nAR-23P Liberator Penetrator\n\nAR-23C Liberator Concussive\n\nAR-23A Liberator Carbine \n\nAR-59 Suppressor\n\nIncreased spare magazines 12 to 16\n\nIncreased starting magazines 7 to 9\n\nShort magazines for:\n\nSMG-37 Defender \n\nSMG-72 Pummeler\n\nIncreased spare magazines 9 to 12\n\nIncreased starting magazines 6 to 8\n\nShort magazines for:\n\nSMG/FLAM-34 Stoker \n\nIncreased spare magazines 10 to 13\n\nIncreased starting magazines 6 to 7\n\nDecreased reload duration 2.8 sec to 2.3 sec \n\nShort magazines for:\n\nSG-225 Breaker\n\nSG-225IE Breaker Incendiary\n\nIncreased magazines spare magazines 9 to 11\n\nIncreased magazines starting magazines 6 to 7\n\nShort magazines for:\n\nSG-225SP Breaker Spray&Pray\n\nIncreased spare magazines 16 to 20\n\nIncreased starting magazines 11 to 12\n\nSecondaries\n\nP-113 Verdict\n\nIncreased max spare magazines from 8 to 10\n\nIncreased starting magazines from 4 to 6\n\nM6C/SOCOM Pistol\n\nIncreased max spare magazines from 8 to 10\n\nIncreased starting magazines from 5 to 6\n\nP-19 Redeemer\n\nIncreased spare magazines from 4 to 6\n\nStratagems \n\nEagle Napalm Airstrike\n\nProblem we want to solve: \n\n- \nThe Eagle napalm did not feel as effective compared to other Eagle stratagems and napalm stratagems\n[/*]\n\nIntent and expectation with the change:\n\n- \nCreate a larger area of effect for the napalms fire\n[/*]\n- \nMake it more effective compared to other napalm stratagems\n[/*]\n\nThe change we made:\n\n- \nIncreased explosion radius 8 to 10m\n[/*]\n- \nMore spread out bomb pattern to cover a larger area\n[/*]\n\nMD-17 Anti-Tank Mines\n\nProblem we want to solve: \n\n- \nThe explosion of the mines looks like they can destroy larger things\n[/*]\n\nIntent and expectation with the change:\n\n- \nThe effect of the explosion match should match the visuals better\n[/*]\n- \nMake the mines work in more situations like destroying colony walls and bug holes from the outside\n[/*]\n\nThe change we made:\n\n- \nIncreased Demolition strength from 30 to 40\n[/*]\n\nEnemies\n\nTerminids\n\nHunters\n\nProblem we want to solve: \n\n- \nHunters and their variants were unable to attack FRVs consistently \n[/*]\n- \nThey could only use their tongue to attack, and struggle to find a proper position to launch it\n[/*]\n\nIntent and expectation with the change:\n\n- \nWhen Helldivers enter a FRV, Hunters should be able to attack the vehicle more naturally \n[/*]\n\nThe change we made:\n\n- \nWe allowed one melee attack to be correctly triggered against FRVs \n[/*]\n\n \n\nIlluminate\n\nVeracitor \n\nProblem we want to solve: \n\n- \nWhen the Helldiver got attacked by a Veracitor while holding a ballistic shield it could created clipping issue where the arm of the Veracitor could merge with the body of the Helldiver and sometime resulting in sending the Helldiver at high speed in the air\n[/*]\n\nIntent and expectation with the change:\n\n- \nFighting an exomech with a ballistic shield still protects against damage, but Helldivers will now ragdoll when blocking an attack\n[/*]\n- \nHelldivers won’t be sent to low orbit anymore after blocking an attack with ballistic shield.\n[/*]\n\nBallistic shield will break after around 15 direct hits\n\nThe change we made:\n\n- \nIncreased Exomech melee’s force strength from 25 to 40\n[/*]\n- \nConformed Exomech melee’s attack armor penetration to all correctly be Anti tank\n[/*]\n\n🔧 Fixes\n\nCrash Fixes\n\n- \nFixed rare crash that could happen when dropping down the core drill\n[/*]\n- \nFixed a crash which could occur when spreading fire\n[/*]\n- \nFixed a very rare crash which could occur when mortar sentries update their targeting aim\n[/*]\n- \nFixed a crash that could happen sometimes when dropping in on CR7+ missions on Cyberstan\n[/*]\n- \nFixed a rare UI crash on shutdown\n[/*]\n- \nFixed a crash when using multiple monitors with different DPI scales in Windows \n[/*]\n\nWeapons & Stratagem Fixes\n\n- \nSway and reload weapon stats now display decimals for better accuracy\n[/*]\n- \nStratagem Weapons that require a backpack now have a backpack icon included on their loadout icons \n[/*]\n- \nStratagem Weapons that cannot be reloaded now have a drop weapon icon included on their loadout icons \n[/*]\n- \nYou can now assist reload a Helldiver, using ammo from their backpack\n[/*]\n- \nFixed glitch where Veto pistol would receive one extra round (translating to one extra 6 bullet reload!) from the Siege-Ready armor passive. \n\n- \nAlso corrects a few other weapons which also received one erroneous extra round, magazine or heat-coil. We continue to round partial bonus rounds/mags/coils up in favor of the player. \n[/*]\n[/*]\n- \nFixed a bug where the camera clipped through the R-36 Eruptor with 2x Tube Red Dot equipped when inserting the next bullet in ADS at max FoV\n[/*]\n- \nEnemies will no longer spontaneously attack the GATER unless the Helldiver is inside it or unless they are drilling. Enemies famously hate the democratic extraction of natural resources.\n[/*]\n- \nWeapons will no longer lock onto the tank of the GATER\n[/*]\n- \nIncreased GATER ammo capacity, health, knockback and impact damage. Also made it harder to roll sideways\n[/*]\n- \nIncreased the speed and responsiveness of the GATER\n[/*]\n- \nFixed an issue where the first person animation of the LAS-58 Talon overloading would make the weapon clip with the SH-20 Ballistic Shield Backpack\n[/*]\n- \nFixed an issue where the Helldiver would cancel draw animations if they tried to enter the aim state while switching weapons. This would cause the Helldiver to look ready to fire, while still preparing the weapon\n[/*]\n- \nThe Ministry of Defence user experience department have made improvements to the TD-220 Bastion Mk.XVI munitions system Heads Up Display. This should make it clearer the main canon can be reloaded manually.\n[/*]\n- \nOrbital Laser will no longer occasionally get stuck after targeting a flying enemy\n[/*]\n- \nExosuits will no longer get stuck in trees when being dropped off\n[/*]\n- \nThrowable items are now being visible to other players when the Helldiver is carrying them\n[/*]\n- \nFixed a bug where the EXO-55 Breakthrough Exosuit would sometimes have the shield arm damage zones protrude through the shield, resulting in the arm taking damage that the shield should have protected\n[/*]\n- \nFixed case where the Breaker Drill could get stuck on the roof in certain hive world missions\n[/*]\n- \nM-104 Incinerator FRV's mounted flamethrower now shows the correct icon and name\n[/*]\n\nEnemies\n\n- \nFixed an issue where the Gatekeeper's weapons clipped into each other when their target was too close\n[/*]\n- \nFixed an issue where visually removing the armor of the Impaler didn't match the gameplay experience\n[/*]\n- \nImpaler close melee attack now has a damage shockwave\n[/*]\n- \nHunters are now able to attack FRVs more consistently\n[/*]\n- \nFixed a bug where enemies would disappear when the Helldiver died, thus not being able to know what just killed the Helldiver\n[/*]\n- \nFixed enemy navigation issues in one of the Take Down Overship locations\n[/*]\n- \nFixed a bug where the Veracitor's melee attack could clip through Helldivers holding a SH-20 Ballistic Shield Backpack\n[/*]\n- \nFixed issue where Watchers and Obtruders were not attacking players while mounted behind a Grenadier Battlement\n[/*]\n- \nFixed an issue where sometimes the Hive Lord scales would not visually break properly (did not affect gameplay behavior)\n[/*]\n- \nObtruder will now collide correctly with Helldivers\n[/*]\n- \nReduced clipping between Obtruder and Helldivers' vehicles\n[/*]\n- \nVeracitors now guard outposts\n[/*]\n- \nFixed an issue where the Veracitor clipped through buildings and obstacles while charging. It should now destroy anything in its path and stop when hitting a wall\n[/*]\n- \nFixed an issue where the Veracitor clipped through buildings and obstacles while charging. It should now destroy anything in its path and stop when hitting a wall\n[/*]\n- \nGatekeeper spawnrate has been increased to closely match Veracitor in Encounters\n[/*]\n- \nFixed a bug for Gatekeeper sometimes appearing to turn in place without moving their legs\n[/*]\n- \nFixed bug which would on rare occasions cause enemies to not be able to move into the correct attack range\n[/*]\n- \nSEAFs can destroy enemy spawners\n[/*]\n- \nEnemies have learned how to climb stairs during the Establish Communication Uplink missions\n[/*]\n\nMiscellaneous Fixes\n\n- \nFixed several mission HUD inconsistencies on certain Hiveworld missions\n[/*]\n- \nFixed visible holes in the terrain in one of the Disrupt Shield Generator locations\n[/*]\n- \nFixed a bug where the factory building facade was inverted\n[/*]\n- \nUpdated the sounds for picking up medals, requisition slips and super credits one of the missions\n[/*]\n- \nFixed a bug where the Recoil Simulator was showing all ammo being fired at once\n[/*]\n- \nVehicle delivery shuttles will no longer get stuck endlessly looking for a place to drop off their deliveries when deployed in dense cities between tall buildings\n[/*]\n- \nHelldivers will no longer ride the victory elevator with their hands in the air like some kind of rollercoaster\n[/*]\n- \nHelldivers how have a chance to find super credits in Factory Worlds\n[/*]\n- \nFixed an issue in the tutorial where the incoming timer for the Orbital Precision Strike could display an incorrect duration\n[/*]\n- \nOptimized various gameplay VFX across the game\n[/*]\n- \nPrevented hit-markers being displayed for hits from indirect explosive damage, damage from your sentries and damage from your orbitals/airstrikes. Melee weapons, laser weapons and flame weapons will now display their hit markers correctly\n[/*]\n- \nFixed an issue with ragdolling causing invisible collision issues\n[/*]\n- \nExo Storms of class 2 and 3 will now spawn tornadoes of varying sizes, depending on the intensity of the storm.\n[/*]\n- \nIf your Helldiver cannot stim at the exact moment when the stim button is pressed, they will automatically stim as soon as they are able to (up to 2 seconds later)\n[/*]\n- \nFixed a bug where planting the CQC-1 One True Flag would break animations for other melee weapons.\n[/*]\n- \nFixed a bug where the CQC-1 One True Flag would be planted at the Helldivers feet instead of being planted in front of the Helldiver\n[/*]\n- \nFixed an issue where the player could see through the Destroyer ship while in a cutscene\n[/*]\n- \nDecreased the Helldivers heavy land animation from 1.32 sec to 0.8 sec\n[/*]\n- \nScrolling to the bottom of the Bindings menu with a controller now correctly stops at the last available option instead of disappearing\n[/*]\n- \nFixed possible graphical artifacts in the Control Center\n[/*]\n- \nFixed a bug where Network Desync can cause SEAF Artillery shells to not be inserted properly, causing a soft lock\n[/*]\n- \nFixed a visual bug where the Oil Rig was displaying both destroyed and non-destroyed visual states\n[/*]\n- \nClothes on the upper body of civilian industrial corpses in cities now have the correct textures\n[/*]\n- \nOptimized tree VFX materials\n[/*]\n- \nFixed an issue where network problems caused collision errors with enemy corpses.\n[/*]\n- \nFixed an issue that prevented Super Credits from spawning in Factory Cities\n[/*]\n- \nAdditional improvements to image quality when using upscaling\n[/*]\n- \nReduced ghosting around the edges of the screen when using NVIDIA DLSS upscaling\n[/*]\n- \nFixed blocky artifacts on nebula effects, especially visible on lower render scales \n[/*]\n\nKnown Issues",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R42": {
+      "source": "news",
+      "raw_id": "1840944183773828",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183773828",
+      "date": "2026-08-12",
+      "text": "HELLDIVERS 2 Devoid of Liberty Update Out Now\n\nWe have watched the Void stretch across the galaxy for too long. The threat posed to our Liberty is too great and we can no longer stand by as the Illuminate gain ground. \n\nHelldivers, you are needed on the battlefield of a new frontier–one more wild and uncertain than any we have faced prior. We must venture into their haunted abyss, the Void, and liberate it back into Super Earth’s control.\n\nJourney to the Void\n\nGetting into the Void presents a unique challenge. High Command has ordered reconnaissance missions to gather as much intel as possible in order to give us an advantage.\n\nThe planets within the Void’s reach have been altered–strange mutations have left a permanent mark on planets, and intelligence reports suggest that these changes are even more significant the closer the planets are to the Void itself. What lies inside?\n\nComplete new missions\n\nYou will be given new objectives to conquer–destroy Illuminate spires and gateways, complete data reconnaissance, and infiltrate Illuminate structures with your team. \n\nNew secondary objectives will also become available, from eradicating Void mutations to extracting materials for research, as well as the opportunity to open a secondary extraction zone on the map to potentially evacuate your squad faster. \n\nExterminate new threats\n\nAs you fight your way toward the Void, you’ll encounter new, hideously mutated organisms. We have received intelligence reports that indicate these metamorphosed creatures are emerging from the heart of the Void–they are ghoulish diversions wrought into existence by the Illuminate scourge to threaten our freedom. \n\nThe Wretch\n\nThe nimble Wretch moves fast and can easily overwhelm weaker fighters and dodge their counter-attacks–don’t let it get the jump on you.\n\nThe Crusher\n\nOn a relentless death march, the Crusher can take heavy damage and also dish it out. Wear it down before it regenerates. \n\nDive with more impact \n\nWe aren’t sending you in without backup. You may now gain all 300 ranks of security access and privileges, as well as new rank titles. \n\nWe have commissioned SEAF platoons to aid in completing operations. They’ll arrive on dropships to fight alongside you and your squad, offering medical support via stims, but also give a boost to your morale when you salute, shake hands, and–of course–hug them. \n\nThis is our opportunity to strike and avenge the citizens, SEAF, and Helldivers lost in the Battle for Super Earth.\n\nHelldivers 2 Super Merch store\n\n Helldivers 2 Super Merch is now available for those dedicated to the pursuit of Liberty and Democracy. Super Earth recognizes your accomplishments with special merchandise for purchase; complete in-game achievements in Helldivers 2 to unlock this merchandise on the Helldivers 2 Super Merch store*. Want to see what Helldivers 2 Super Merch is available to you? Simply sign on to the Helldivers 2 Super Merch store using your preferred platform.\n\nThe latest update, Devoid of Liberty**, is live now on PS5, PC, and Xbox. Take back the galaxy, divers–give these squids hell.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R43": {
+      "source": "news",
+      "raw_id": "1840944183785447",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183785447",
+      "date": "2026-08-17",
+      "text": "Devoid of Liberty: 7.0.1\n\nAttention Blueberry-Hugging Helldivers,\n\nThe Void is proving a worthy challenge. As the brave Helldivers–fueled by unwavering patriotism–charge headlong into the Illuminate's newest nightmares, Super Earth’s engineers have been working around the clock to iron out a few wrinkles in your fight for Liberty.\n\n🔧 Fixes\n\nCrash Fixes\n\n- \nFixed a crash that could occur in Fullscreen when opening terminals\n[/*]\n- \nFixed a crash that could occur with superwide windows\n[/*]\n\nWeapons & Stratagem Fixes\n\n- \nFixed an issue with the UI not showing all the available stratagems in specific instances \n[/*]\n\n Known Issues",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R44": {
+      "source": "news",
+      "raw_id": "1840944183788638",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183788638",
+      "date": "2026-08-18",
+      "text": "Helldivers 2: A deep dive into the Illuminate Void\n\nHelldivers, we have entered the unknown at last to face the unthinkable. Our elite peacekeepers are looking into the corruption and shining Liberty’s light onto the heart of darkness. The Gateway is constructed and we have crossed into the new frontier.\n\nThe Illuminate may have broken through but Super Earth will push back. Now is the time to mount the counteroffensive! You must work together to destroy their unnatural mutations in the name of Managed Democracy.\n\nThe Gateway is now open\n\nDuring the ‘Census Thunder’ campaign, the Helldivers secured large reserves of Voteless tissue samples from the Void to aid in the study of this menace. Super Earth’s Ministry of Science determined a way into the Void by opening and stabilizing a wormhole on Rirga Bay using the research you helped secure: the Gateway is now open.\n\nWe’re sending our best, Helldivers. And that means you.\n\nLiberate The Source Planet\n\nSpace inside the Void is strange, divers. There are no stars, no marvelous skies to behold from the planet’s surface. The planets pulled into the Void have been transformed, mutated, and reborn inside it.\n\nThese worlds hold Illuminate ruins and ancient technologies that you must document and destroy.\n\nYou must navigate these strange worlds and find the Source Planet, formerly known as Seasse, and liberate it. But beware: Seasse is a shade of its former glory, now consumed by the haunting flora from the Void, and filled with Illuminate horrors (the Wretch, the Crusher and the abominable lands in which they dwell)\n\nDocument the Corruption\n\nInside the Void, you have new objectives to complete on the planets, and–unlike previously more linear dives–you will have several randomized primary objectives for every operation. This brand new arrangement requires you to think fast and work together to dive and extract safely.\n\nDocument your discoveries inside the Void with the tactical video camera, destroying Illuminate structures, conducting reconnaissance missions, and more. Document their war crimes and end their foul corruption.\n\nExtract the Squad\n\nThe Void is dangerous and time is of the essence: complete objectives and extract. To give your squad a fighting chance at making it back to the Destroyer, Helldivers will be able to unlock secondary extraction zones on the Void planets.\n\nYou won’t be facing these new challenges alone. Push forward with the help of SEAF support squads to unravel the secrets of the Void. Reveal the hidden truths, uncover the source of the anomaly… and put Freedom’s foot clean through its face.\n\nThe fight for a safer tomorrow begins today.\n\nThe latest update, Devoid of Liberty***, is live now. Take back the galaxy, divers–give these squids hell.\n\n***Gameplay requires internet access and paid-for subscription on console (sold separately).",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R45": {
+      "source": "news",
+      "raw_id": "1841579228677702",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228677702",
+      "date": "2026-08-25",
+      "text": "Devoid of Liberty: 7.0.2\n\nAttention Helldivers, \n\nCaptain Morris here, deploying a small update this fine Tuesday. \n\nDue to the combined efforts of SEAF and Helldiver forces on Seasse, the Void has been temporarily pierced. This has bought Super Earth precious time to tweak and tighten their technical arsenal for continued success in the Galactic War.\n\nDive on, democracy awaits!\n\n🔧 Fixes\n\nCrash Fixes\n\n- \nFixed a crash that could occur while browsing the Vehicle Customization menu \n[/*]\n- \nFixed a Dynamic Resolution Scaling crash\n[/*]\n- \nFixed several issues that caused crashes during Message of the Day\n[/*]\n\nKnown Issues",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R46": {
+      "source": "news",
+      "raw_id": "1842846814443227",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814443227",
+      "date": "2026-09-03",
+      "text": "Behind the scenes: The Hive Lord\n\nThe Origin of the Hive Lord\n\nHello there! It is I, Niklas Malmborg, Design Director for Helldivers 2.\n\nLet’s talk about our old friend: the Hive Lord! And we can start with what he was back in the first game.\n\nDuring the development of the original HELLDIVERS, we really liked the idea of a bossfight that was massive and fit the faction. The Terminids are a subterranean species, so a giant tunneling creature fits and has a certain nerdy allure to it for unrelated reasons.\n\nBeing an important but so far not overly revealed part of the Terminid societal structure, it comes with a purpose to the Hive Worlds and it might be related to the tunnels the Helldivers “carefully” venture in to. Suggesting such a thing as a structure to Terminids society or even suggesting they have a society is a punishable offence of course. \n\nThe first HELLDIVERS serves as a source of content that players can look forward to because they know it’s a canon part of the universe (like the Bastion, Lumberer, Trident etc). We won't necessarily bring back everything from the first game, but we want to bring back a lot and the Hive Lord was near the top of the list.\n\nDue to technical limitations in the first game we made it as large as we could, but there was an urge to make it bigger and more majestic. Still, the resulting monster hit the emotional targets we were aiming for and players understood the potential scale of the Terminids.\n\nHow we Heralded it in HELLDIVERS 2\n\nIn HELLDIVERS 2, players have been able to see the bones of the Hive Lord as a beast of the past. We wanted those bones to serve as a promise to eventually show you the beast in its full glory and to be a motivator for us internally of what the game should eventually introduce.\n\nSo how did we approach it?\n\nWe started with making a list - of everything that the Hive Lord needs to be and have in order to be the biggest, baddest Terminid life form (so far). This is what we decided: \n\n(some of the text is not perfect sentences, its copy pasted from the working documents)\n\n1. MASSIVE\n\nAn impressive scale and cinematic appearance to instill awe and fear.\n\n2. ELUSIVE\n\nOnly appears on certain planets, and only sometimes. \n\n3. BURROWER \n\nUnderground traversal, deforming terrain as it moves and erupts, arcing and diving like a dolphin.\n\n4. GRATUITOUS VIOLENCE \n\nSimple movement, attack, and death. It’s head/top visible while navigating half-submerged in terrain. A simple-yet-massive acid spray to destroy players. \n\n5. HARD TO KILL\n\nIt has a massive health pool that's reflected physically on its body/segments to show players how much damage they've done.\n\n6. BAIT \n\nPlayers can influence Hive Lord behavior using both discreet and explicit tactics. Hive Lord has readable roaming behavior and provides opportunity for bait mastery. \n\n(Yeah, it detects disturbances of the earth, so you can bait it with explosions, barrages etc. Or it can find you if you’re too noisy in combat. Have fun!)\n\nWith our list completed, we prioritized our work and knew that, if we hit all the points, we would have made a truly monstrous Terminid. \n\nHere are a few of our images of the development and some more specific notes:\n\nAnimation:\n\nIn the animation files we ended up using Motionbuilder and a Human IK rig for the Hive Lord, meaning his whole body is made up of a human neck, with the head at the end and the rest of the body at the base. In the source files there are therefore tiny tiny human arm and leg joints around the base of the character that never gets exported. \n\nSound: \n\nThe sound team also used a chair dragging against the floor as part of building the iconic sound the Hive Lord makes as it erupts. \n\nPerformance and Rendering: \n\nWe had to develop a lot of new tech to make sure this very large enemy didn't impair performance and memory for players so it functions in segments compared to normal enemies where we render and treat them only as one piece!\n\nMovement:\n\nPreviously, all of our enemies used a navigation mesh that dictates where they can move, what type of movement is allowed, and where. The Hive Lord is so massive that we needed to make one specifically for him! It also has different logic, like not moving on rocky terrain, and creates its own map of disturbances (from vehicles, explosions, etc.) to choose where to navigate to.\n\nIt doesn’t have a bossfight mission? But it had one in HELLDIVERS!\n\nIn HELLDIVERS the Hive Lord could only be found in a separate mission focused only on killing the boss. Why isn't it like this in HELLDIVERS 2?\n\nOne thing we actually thought didn't work well in the first game was the bossfights. After you played them a handful of times they became very predictable and repetitive - and that didn’t feel right for HELLDIVERS 2 or for the Hive Lord.\n\nInstead, we thought of the Hive Lord like a force of nature, almost invincible. It roams around the map, churning up the land, stalking players, and creating an anticipatory atmosphere. Players get the chance to try to beat the big scary monster, but are not forced to. It’s possible for players to take on this ridiculously powerful boss enemy, but it's no easy task.\n\nI hope you enjoyed this little dive into the development of the Hive Lord, that's it for this week! I will be back in the future to talk about more exciting development stories!",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R47": {
+      "source": "news",
+      "raw_id": "1843481262704549",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262704549",
+      "date": "2026-09-15",
+      "text": "Let shockwaves of Freedom roll across the battlefield with Ironclad Democracy!\n\nOfficial transmission: Super Earth High Command.\n\nFAO: All active units and potential new recruits.\n\nHelldivers, the quickest route from tyranny to Liberty is one straight line of righteous operational advancement.\n\nAnd today you have been granted clearance to forge a path clean through anti-Democratic resistance in your own creative way, armed with the brand-new Ironclad Democracy Warbond*.\n\nExplosive. Decisive. Definitive. The latest technological advancements in battlefield problem-solving and innovative instruments of Freedom are yours to field test with maximum force and minimum restraint.\n\nSo, get to your Hellpods and join the trigger-happy YOLO rookies and the cunning, somehow-still-surviving campaign veterans of the Helldiver ranks en route to your nearest hostile hot zone in epic missions of industrial-scale Liberation.\n\nTogether you can overwhelm the diabolical forces of evil and crush peace-resistant hostiles under the inexorable Tracks of Justice.\n\nGet out there, Helldivers, and create a legacy that will endure considerably longer than you do.\n\nThe Ironclad Democracy Warbond includes:\n\nWeapons\n\nAR-11 Arbitrator\n\nPrimary – The electrical firing mechanism of this assault rifle releases caseless ammunition rounds in rapid succession, while the underslung shotgun delivers battlefield variety with a sudden and fatal surprise.\n\nGL-15 Evictor\n\nPrimary – Trade precision for devastating area-of-effect capabilities with a powerful pump-action grenade launcher. The manual single-round reload makes it a highly methodical choice for squads requiring an explosive approach to dispute resolution.\n\nP-34 Breacher\n\nSecondary – Unholster this punishing missile pistol to burn through your target’s armor – or any outer layer – with sticky projectiles powered by phosphorous fuel and loaded with an explosive payoff.\n\nThrowables\n\nG-60 Anti-Tank Seeker\n\nEquipped with a high-yield payload especially effective against armored vehicles, this smart grenade delivery drone tracks the user’s movements before homing in on nearby enemies and exploding on impact.\n\nG-8 Immolation\n\nFor you who likes to burn everything in your path. The immolation grenade sacrifices the boom for a blanket of fire to engulf your target in the blazing heart of Justice.\n\nArmor\n\nBFM-16 Tanker\n\nLight Armor – Inspired by the legendary armored cavalry of the First Galactic War, this lightweight suit features integrated acoustic dampeners to shield the wearer from the deafening roar of Freedom… and the disruptive screams of dissidence.\n\nBFM-220 Ironclad\n\nHeavy Armor – Forged from surplus hull plating, this hulking suit features an integrated servo-bracing system and a towering blast-shield collar as favored by Helldiver barbershop quartets heard throughout the galaxy.\n\nArmor Passive – Blunt-Force Mitigation\n\nMakes Helldivers more resistant to being knocked off their feet when under attack and reduces any damage taken from impact and collisions by 30%, while also providing a higher armor rating.\n\nCapes\n\nStandard of Rapid Evacuation\n\nAdorned with a fearsome armored division crest, this abbreviated cape ensures the wearer's elite status is clearly broadcast to their subordinates, without the hem becoming fatally entangled in their own vehicle's heavy tread mechanisms.\n\nShroud of The Juggernaut\n\nThe sheer weight of this camouflage shroud perfectly complements a Helldiver operating as a walking tank. Astute observers will also note that the shattered woodland pattern conceals a highly classified, morale-boosting message in Morse code.\n\nBoosters\n\nSurplus EAT Allocation\n\nEnjoy two free uses of the Expendable Anti-Tank (EAT) Stratagem per mission; that’s enough to grant a full squad one single-use rocket launcher each, provided of course that all squad members employ the proper equipment distribution protocol as standard.\n\nIntegrated Extinguishers\n\nFor the Helldivers who like to play with fire, we have the Integrated Extinguishers Booster which reduces the time to extinguish flames if you accidentally set your teammates ablaze.\n\nPlus\n\n- \nEmote – Helmet Durability Check.\n[/*]\n- \nPlayer Cards – Standard of Rapid Evacuation and Shroud of The Juggernaut.\n[/*]\n- \nTitle – Treadhead.\n[/*]\n- \nA Premium Warbond First: Tank Exclusive Patterns – Verdant camouflage, Glacial polymer, and Executive onyx.\n[/*]\n\nThe Ironclad Democracy Warbond rolls onto the Galactic battlefield September 22nd.\n\n*Requires base game, Super Credits and game progression to unlock.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R48": {
+      "source": "news",
+      "raw_id": "1844115010503588",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010503588",
+      "date": "2026-09-22",
+      "text": "Devoid of Liberty: 7.1.0\n\n*** INCOMING TRANSMISSION FROM SUPER EARTH HIGH COMMAND ***\n\n🤝 Community Feedback Changes\n\n- Enemies will no longer target unoccupied vehicles\n\n- The career stats now correctly tracks kills from mines, vehicles, drones and backpacks\n\n- Players can no longer get stuck in a state where they are unable to be reinforced even after another player throws a reinforcement stratagem or the whole squad dies. This was rare but could happen under poor network conditions\n\n- Fixed issue that caused Ice Plant hazard, found on arctic planets, to ragdoll and stagger more than intended.\n\n- Stratagem Hero - Destroyer based leaderboards.\n\n- Every super destroyer will have its own leaderboard separate from everyone else. Anyone who is on your super destroyer can play a game and get added to the leaderboard. One entry per player, so one player cannot occupy multiple highscores.\n\nGeneral Gameplay\n\n- Bug infestation zone visuals - \n\n- Bug infested zones, such as the areas around bug outposts and bug objectives, have had their visuals changed to integrate more with the biome/planet they’re on. Zones should now look more different from planet to planet.\n\n- Bug infested zones have had their fog and effects adjusted for better visibility.\n\n- These changes do not affect bug areas with larger degrees of infestation, such as areas inside the Gloom or on Hive Worlds.\n\n⚖️ Balancing\n\nEnemy Spawning\nProblem we want to solve:\n\n- Sometimes enemies did not spawn in a balanced way between players if the team spread out over the map. We also sometimes used the enemy budget on enemies that were far away from players and were not really relevant to them.\n\nIntent and expectation with the changes:\n\n- Enemy spawns are more balanced between separated helldivers on missions, giving all players a more consistent game experience.\n\nChanges:\n\n- Enemy pressure on Helldivers is now measured based on enemies count and distance and used to balance enemy spawns.\n\n- In a situation where a Helldiver is on low enemy pressure and the global enemies count reaches the maximum (set for performance reasons), enemies are preferably spawned near them.\nThis should address the feeling of roaming into empty outposts in such situations.\n\n- When enemies count is over budget, far away enemies are despawned.\n\nBalancing changes - EVACUATE HIGH-VALUE ASSETS:\nProblem we want to solve:\n\n- The missions have fallen behind in difficulty, making it so they feel boring and easy for many players that have access to good tools for these types of missions.\n\nIntent and expectation with the changes:\n\n- The missions should feel more intense and be more difficult to complete, especially in lobbies with 3-4 players.\n\nChanges:\n\n- Increased the maximum amount of waves.\n\n- Reduced the time between waves to reduce downtime between each wave.\n\n- Reduced the start time between waves from 60 seconds to 42 seconds (the time between waves at the start of the mission).\n\n- Reduced the end time between waves from 40 seconds to 28 seconds (the time between waves at the end of the mission).\n\n- Reduced the maximum time between waves from 10 seconds to 2 seconds (time between waves when finished the previous wave).\n\n- Increased amount of enemies that can spawn in each wave.\n\n- Increased encounter points through the steps of the mission more exponentially.\n\n- Increased encounter points when more players are present.\n\n- Enabled possibility to spawn SEAF troops, when included.\n\nBug changes:\n\n- Chance to spawn Shriekers.\n\nLevel Design changes\n\n- Randomized loot location and weapons.\n\n- Added 3 random groups for loot like ammo, health kits, grenades, weapons.\n\n- Added 10 common samples to collect throughout the mission.\n\nMission Objective Changes:\n\n- Added UI for each generator showing the health percentage.\n\nPrimary weapons\n\nAR/GL-21 One-Two\nProblem we want to solve:\n\n- The combination of the Assault rifle and underbarrel grenade launcher made it a flexible weapon, but the amount of ammunition for the grenade launcher did not make it useful enough.\n\nIntent and expectation with the changes:\n\n- Lean more into what makes the One-Two different from other Assault rifles.\n\n- It should be a flexible assault rifle that can use the underbarrel grenade launcher more often.\n\nChanges:\n\n- Increased starting amount from 2 to 3\n\n- Increased max spare amount from 3 to 5\n\n- Increased refills from 3 to 5\n\nLAS-13 Trident\nProblem we want to solve:\n\n- Remove an unintended change that happened when we coded the functionality for the meltagun into the beam system which caused the Trident to become more impacted by vertical climb recoil.\n\nIntent and expectation with the changes:\n\n- The intent was not for the Trident to have that much vertical climb recoil. \n\n- The main intent for it was to have some recoil to make the weapon feel more impactful to shoot and not to be that much part of the weapons power level.\n\nChanges:\n\n- Decreased vertical climb recoil from 12 to 2\n\nThrowables\n\nG/40 Melta Mine\nProblem we want to solve:\n\n- Could attach to character and vehicle geometry in unintended ways.\n\n- This could lead to:\n\n- sticking to Helldivers and obscure the players vision (or griefing)\n\n- sometimes attach to enemies and direct the explosion towards the player \n\n- floating mines in the air\n\nIntent and expectation with the changes:\n\n- Should not stick to Helldivers and obscure the players vision\n\n- Should not stick to Enemies or vehicles in unexpected angles\n\n- Prevent melta mines from floating in the air\n\nChanges:\n\n- The Melta Mine can no longer attach to characters and vehicles\n\n- The Melta Mine can land and rest on sufficiently level surfaces of characters and vehicles\n\n- The Mine will arm based on a timer from the throw unless it attaches to terrain\n\nStratagems\n\nOrbital Precision Strike\nProblem we want to solve:\n\n- The Orbital precision strike has been falling behind other similar options in usability.\n\nIntent and expectation with the changes:\n\n- Make it possible to use it more often and be closer in usability to similar options.\n\nChanges:\n\n- Decreased cooldown from 90 to 80\n\n🔧 Fixes\n\nCrash Fixes\n\n- Fixed crash or network disconnect that could occur on levels with bunker caches in them\n\n- Fixed a rare crash that could happen when hotjoining on Oil Rig missions\n\n- Fixed a crash which could occur when cycling weapon functions whilst having the TED-63 Dynamite equipped and wielding a mounted weapon\n\n- Fixed a soft lock within the tutorial, where the Helldiver could get stuck behind the door between section 10 and 11 after it had closed\n\nWeapons & Stratagem Fixes\n\n- GL-52 De-Escalator arc explosion can now hit the wielder of the weapon as intended.\n\n- Fixed an issue causing eagle rearm being blocked by anti-air emplacements\n\n- Fix wrongly displayed vehicles when cycling fast in the vehicle customization tab.\n\n- Made several improvements to automatic weapons fire audio \n\nEnemies\n\n- Fixed an issue where Wretches and Crushers could clip through the floors of certain structures.\n\n- The Spire Gazer will no longer stop firing when a target dies and will instead complete its whole firing cycle. \n\nMisc\n\n- Stim inputs will no longer buffer while you are in a vehicle/walker with the map open\n\n- Fixed an issue where Message of the Day cannot be scrolled on PC using controllers\n\n- Fixed the water levels on the Eradicate Illuminate Forces mission\n\n- Fixed issue where landing an A/G-16 Gatling Sentry on the GATER would cause it to sometimes spin out of control\n\n- Citizens in the Evacuate Citizens missions no longer lose their way to the Shuttle Bay\n\n- Text for several languages is no longer overlapping with the Mission Timer on the Galactic War menu\n\n- [Xbox only] Fixed trees rendering incorrectly\n\n- Fixed stuttering audio which could occur when melee attacks/emotes hit the environment\n\n- Fixed a bug where the cursor movement audio continuously plays, even when the cursor is not moving\n\n- Fixed an issue where players using Microsoft IME for complex characters (such as Chinese/Japanese) lost all keyboard controls in-game\n\n- Added the correct mission icon for Infiltrate Illuminate Lair\n\n- Lure mines and C4 no longer stick to other lure mines or C4 charges\n\n- The reward popup now correctly shows the player title icon\n\n- Fixed an issue where Helldivers failed to drown upon entering certain Illuminate water shrine wells. Death by drowning will now occur as intended\n\n- Fixed an issue where the sub-objective \"Retrieve Access Codes\" sometimes incorrectly displayed as a primary objective in the \"Shoot Down Overship\" mission\n\n- All illegal broadcasts in the galaxy have been upgraded with sound to make them even more illegal and un-democratic\n\n- Fixed an issue in which some points of interest would not show as cleared in the minimap once all the samples got collected\n\n- Fixed issue where changing your armor, helmet or cape would sometimes not be seen by other players\n\n- Fixed an issue where a Helldiver using a terminal could appear to other players to be facing the wrong direction\n\n- Removed misplaced bug hole inside a mission location in the \"Destroy Spore Lung\" mission\n\n- Initial brightness screen is properly displayed during first launch\n\n- The Retrieve Recon Craft mission has been enabled for Terminids and Automatons\n\n- Fixed an issue where the Helldiver could be flung extremely far if they stood on the Breakthrough's shield while it was being swung\n\n- Your Helldiver will correctly prioritize responding to another Helldivers emote over stimming them or giving them ammo\n\n- Fixed an issue where in certain situations color grading was being applied inconsistently\n\n- Fixed an issue where SEAF used default camo on Hive Worlds. Now use desert camo\n\n- Fixed enemy traversal issues in one of the hive world oil pump objectives\n\n- Fixed menus sometimes staying open when the game closed all menus\n\n- Fixed customized vehicle previews failing or crashing after rapidly changing customization patterns\n\n- Fixed HDR UI brightness setting not saving on PC\n\n- [Xbox-only] Fixed an issue where the DSS would not be visible on Xbox Series S if the FoV setting was higher than 65\n\n- Emotes and Dialogue lines are properly cancelled if the player is knocked down during the emote.\n\n- Fixed automatic weapon fire timings at low/fluctuating frame rates\n\n- Fix an issue where loot could spawn inside the wall in a certain place\n\n- Fixed an issue with the UI not showing all the available stratagems in some cases\n\n- Updated Control Center new info sounds\n\n- Players will now have information in the objective UI about how many Generators there are to defend and can see their HP percentage\n\n- Fixed floating asset in Gather Footage location\n\n- P33-Missile Pistol now plays the correct animation when reloaded in first person during one-handed operation\n\n- Fixed an issue with the warning UI becoming visible in the subsequent mission if the player left a mission while the warning sign was displayed\n\n- Fixed an issue where small and medium melee enemies were unable to attack the GATER\n\n- Fixed an issue with Super Earth flag not showing the Super Earth logo\n\n- Fixed a bug that caused the Extract E-711 terminal to display text related to a different objective\n\n- Helldivers properly rotate in the direction of terminals they interact with\n\n- Improved reward caches and spawn amounts in Mega Cities\n\n- Fixed decal issue in tutorial mission\n\n- Power generators in the 'Evacuate High-Value Assets' mission now show the generator's state on the minimap\n\n- Potential fix for crash when an object was destroyed in the same frame it was being attached to another object\n\n- Fixed an issue where voice lines could keep playing after they should have stopped\n\n🧠 Known Issues",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R49": {
+      "source": "news",
+      "raw_id": "1844751498220713",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498220713",
+      "date": "2026-09-24",
+      "text": "Devoid of Liberty: 7.1.1\n\nHotfix aimed at resolving some crashes for players when using terminals, or users with superwide windows.\n\n🔧 Fixes\n\nCrash Fixes\n\n- \nFixed crash that could occur in Fullscreen when opening terminals. \n[/*]\n- \nFixed crash that could occur with superwide windows.\n[/*]\n\n🧠 Known Issues",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R50": {
+      "source": "news",
+      "raw_id": "1844751498224310",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498224310",
+      "date": "2026-09-25",
+      "text": "Launching Devoid of Liberty: A Look Back\n\nFrom the desk of our Creative Director, Mikael Eriksson\n\nHelldivers,\n\nThe Void has been pierced and the Illuminate's latest shenanigans have been decisively dealt with! Well done! \n\nThe Devoid of Liberty launch has run its course and history has been written. Before we dive into whatever comes next, I wanted to take a moment and talk about how I personally think this update landed. \n\nWhat We Were Going For\n\nI consider Devoid of Liberty to be a ‘vertical slice’ of what we want this game to be every week. Not in terms of new content (we can’t keep up with that), but in terms of fantasy cohesion. The Void’s presence transcended the game: it was felt outside of the SE Destroyer windows and the Galactic War map. It was in what you read in the mission descriptions, what you saw on the battlefield, what you heard in the war reporting, and what you created as a community. The throughline was strong across the game and the community. \n\nThis is the future that we’re aiming for: a future where the Galactic War is this interesting and dynamic every day, and felt inside and out of the game. \n\nWith the Void specifically, we wanted to dive deeper on Illuminate lore. We had already explored the Terminid Hive Worlds and the Automaton Cyborg Factories, so it felt like the logical next step to expand our universe. The Illuminate are all about mystery, exploring the unknown, and being confronted with technology and intentions you can't fully understand. With Heart of Democracy, we had already told the classic invasion story of \"Aliens attacking innocent civilians!\" This time we wanted to explore more about who they really are and how they work.\n\nWe wanted the Void to feel like stepping into an oppressive, alien environment that actively resented your presence. From the haunting environmental audio design to the unsettling visual distortion of the Void flora, every element was built to keep Helldivers on edge.\n\nThe new enemy variants earned their teeth. The twisted, razor-limbed human experiments proved once again the Illuminate’s blatant disregard for the sanctity of human life, something Super Earth could never relate to. We also expanded on the Illuminate Fleet system, and grouped all Illuminate enemies into different Fleets, which gives flavour but also adds to the believability and gives you more to consider when choosing loadouts. Going forward, this sort of thing is what we’re considering for all factions. We don’t want a one size fits all loadout for any Faction, you should always need to consider what you’re about to engage with. \n\nSEAF squadmates are the thing I'm most hyped about in this update. Fighting with a squad that follows commands, reacts to the fight (and occasionally hugs you mid-firefight, for reasons) is something Niklas Malmborg and I have talked about doing for a long time. It’s a war, after all! As we continue to expand the game, we want to both explore tighter, less crowded spaces as well as bigger, more chaotic battlefields, and this was a crucial step in that direction for us. We also wanted to give solo players and understaffed squads a genuine lifeline without breaking the four-Helldiver core experience.\n\nThe Warhammer 40,000 ‘Castellan's Creed’ Warbond brought new blood in without diluting the tone. As always, we chose our partners with great care. If done wrong, a crossover could feel like it's wearing Super Earth's uniform without buying into Managed Democracy, and that is something we won’t do. I think we threaded that needle and ended up with a Warbond that's genuinely great while staying true to the original IP, and I was very happy to see positive reactions from the Warhammer fans. You guys are known to be particular about details!\n\nWhat We’re Still Working On\n\nLaunch stability was too patchy (pun intended). We had nasty crashes on fullscreen terminal interaction and issues for players using ultra-wide monitors. An update of this size needed a cleaner landing, and it took us two follow-up patches to get there.\n\nThese big beats should run for longer, and the endings should be more clearly shaped by the community. The two things we've heard most since the Devoid of Liberty launch: you wanted more time in the Void, and you wanted the community choices to shape the ending in impactful ways. Both of these are impacted by how we structured the campaigns: how many phases a Campaign runs, how long content stays live, and how much room our Game Masters have to react to the community in interesting ways. That's the part we're working on iterating on for the next big update.\n\nSome quality-of-life asks are still sitting in the backlog. Assist-reloading and backpack icon clarity were great wins, but there's still a long list of smaller frictions behind them, and they're on the board.\n\nWhere We Go From Here\n\nI'm happy with this update, and it was as fun as always to follow the developments live, but I know there's still room to improve. The Void isn't finished with us, and neither are we with it. Stability will stay the priority between updates, and the campaign structure work above is the one to watch for going forwards. \n\nThank you for your devotion to diving and dying and diving again. Stay frosty, Helldivers.\n\nFor Super Earth. For Liberty.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R51": {
+      "source": "news",
+      "raw_id": "1845383656392989",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656392989",
+      "date": "2026-10-05",
+      "text": "Galactic Network Maintenance\n\nGalactic Network Maintenance will occur on Tuesday, October 6th @ 8:00 UTC. Any Helldivers remaining in-atmosphere during the blackout may be lost along with any rewards.\n\nBackend maintenance will last 2 hours. Follow Super Earth communication channels for updates.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R52": {
+      "source": "news",
+      "raw_id": "1846018067943957",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846018067943957",
+      "date": "2026-10-13",
+      "text": "Line Up the Perfect Shot with the Scope of Authority Premium Warbond!\n\nPicture this: A chilly autumn breeze ripples through the forest as a battalion of Automatons amble towards an outpost. They move together like cogs in a larger wheel, chanting in their electric tongues as they march, when a peal of thunder breaks their mechanical trance.\n\nBut it’s not thunder. It’s you, Helldiver– Liberty’s sharpest shooter taking aim from inside the tree line, busting them down to bolts and puddles of bubbling oil.\n\nOn October 20, the Ministry of Defense will authorize deployment of the Scope of Authority Premium Warbond* - the next leap forward in long-range and clandestine combat solutions to guarantee your squad never misses the mark.\n\nWeapons & Stratagems\n\nThe best sniper knows the balance of stability and power is a delicate one, and a primary sniper rifle that can balance both is a tall order. After extensive research and trials in the Ministry of Defense, they have developed an elegant solution: The R-40 Sightliner bolt-action sniper rifle. Your trusty sidekick with the eagle eyes, the Sightliner can provide powerful armor piercing rounds and long-range precision.\n\nThe perfect companion to the exactitude of a sniper rifle primary is something that can provide that same steadfastness with the speed and versatility of a pistol. That brings us to the purpose-built P-44 Mist, a one-handed machine pistol designed for a compact carry. If the enemy closes in on you, carve a path out with the help of the P-44!\n\nAs we have faced larger and more heavily-armored foes, we have responded by making a more powerful and armor-penetrating, backpack-fed, colossal anti-materiel rifle featuring assisted reload: the AMW-20 Apex. The Apex is far from subtle, but there is not much in the galaxy that could survive an assault from it.\n\nFor the advanced tech-loving teams, there is a new entry to the LAS series of energy weapons: the LAS-44 Nova! This sleek rifle has the luxury of infinite ammo provided by weapons of its type, but it fires a high-precision non-explosive thermal projectile after a short charge cycle. A new optimization routine designed specifically for better cooldown performance means your rifle will be firing longer after all targets have been eliminated.\n\nWhen thrown, the G-11 Caltrops scatters a wide field of proximity-detonated submunitions that slow and stun foes, making them easier to get in your sights.\n\nArmors, passive, and more\n\nLong distance shooters know better than anyone how much time you spend in the cover of nature to get your shot. That’s why the SS-33 Mimetic Marshal light armor is inspired by old-fashioned ghillie suits without sacrificing on modern tactical polish. Utilizing state-of-the-art light-diffusing netting and adaptive fiber technology, the Mimetic Marshall, and the coordinating Mimetic Mesh cape and player card, will let you blend into your surroundings while keeping you light enough on your feet to move in on your mark.\n\nIf your tactical approach mixes in more forward marching than camping in the bushes, the SS-15 Focal Point medium armor can round out the edges of your loadout with integrated adaptive camouflage and cutting-edge optics in a stylish asymmetrical visor. The Focal Point armor looks best paired with the Boundary Banner cape and player card.\n\nNo matter which one you choose for the job, both armors are equipped with the Stationary Shroud passive, which reduces weapon sway and detection range by mimicking foliage concealment while in the crouched or prone position. Crouch down and watch as your Helldiver disappears into the wilderness around you: the perfect cover.\n\nAlong with the impressive stratagems, weapons, and armors, you’ll also get the Manual Ballistic Projection emote and a new title to claim to demonstrate your prowess as a distance shooter: Longshot. \n\nHelldivers, your scope of authority has just been widened – time to set your sights on enemies of Managed Democracy once and for all. The Scope of Authority Premium Warbond launches October 20!\n\n*Requires base game, Super Credits and game progression to unlock.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R53": {
+      "source": "news",
+      "raw_id": "1846651706693839",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706693839",
+      "date": "2026-10-20",
+      "text": "Changing anti-cheat in HELLDIVERS 2\n\nGreetings Helldivers,\n\nToday, we want to talk about an upcoming change to our anti-cheat, answer some questions we have seen arise in the community around modding, and discuss how it may impact you as a player. \n\nFairness and honor have always been strong foundations for Helldivers in our fight in the Galactic War. But we have seen for too long that there are some who would bend the rules and definitions of fairness, affecting not only their own games but also the battles of those who play alongside them, affecting pick-up rates, and even going so far as to manipulate the war itself, breaking the unfolding story and dragging down innocent players with it. \n\nWe haven't previously commented on modding, other than to warn that from a technical perspective, we can’t guarantee their safety or usability for players. However, we feel that this change, considering what it affects, is giving us an opportunity to do so.\n\nWe know mods are part of the DNA of PC gaming and gaming communities as a whole. In general, we appreciate the creativity behind cosmetic and non-gameplay mods, which players can enjoy without negatively impacting those who play alongside them. Where we need to improve is how we protect players against modifications that create unfair advantages or negatively impact others, which goes beyond software manipulation to tamper with our game. \n\nAs a stepping stone on this journey, we are doing two things:\n\n- \nImplementing additional security measures to crack down on recent cheat mods that have been circulating.\n[/*]\n- \nTransitioning from GameGuard to Easy Anti-Cheat today, October 20th, with additional security tools in place to enhance its effectiveness and improve game integrity protection.\n[/*]\n\nThese changes mean that some mods, particularly the types that are affecting the experience of other players, may no longer function. It also means that some non-malicious cosmetic mods may require updates from their individual creators in order to keep working.\n\nWe believe these are steps in the right direction, and we want to remain transparent about our decisions and intentions as we continue to improve the integrity and security of the game, to give players a consistent and fair experience, and to strengthen trust with our dedicated community.\n\nAs always, we appreciate your continued feedback and support, Helldivers. See you on the battlefield.\n\nFrequently Asked Questions\n\nQ. Why are you changing from GameGuard to Easy Anti-Cheat (EAC)?\n\nA. The implementation of GameGuard for HELLDIVERS 2 wasn't as effective as it could have been, and in the end we decided to take another path with EAC. \n\nEAC is an industry standard used in over 200 games, and we believe this will be an effective way to protect the Galactic War and will better protect fair gameplay and the integrity of the game. \n\nFor more information about EAC, please visit their official support.\n\nQ. My cosmetic mod stopped working–what do I do?\n\nA. Occasionally, mods will no longer function after an update and modders may need to update their projects to ensure they continue working with our updates and patches.\n\nIf you feel EAC or another system is blocking a non-destructive mod or other software, we encourage you to reach out to our official support on Zendesk to let us know.\n\nQ. How can I tell which mods are safe to use?\n\nA. Using mods is done at your own discretion, and so we cannot determine what’s safe vs. unsafe to use.\n\nQ. Does the implementation of EAC in HELLDIVERS 2 impose any new hardware requirements?\n\nA. No, there are no changes in hardware requirements. \n\nFor the minimum required specifications for HELLDIVERS 2, please see our article on Zendesk.\n\nQ. I play HELLDIVERS 2 on Steam Deck / Linux. Will I still be able to play?\n\nA. Yes, you can still play. Steam Deck and Linux compatibility remains unchanged.",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R54": {
+      "source": "news",
+      "raw_id": "1846651706694344",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706694344",
+      "date": "2026-10-20",
+      "text": "Devoid of Liberty: 7.2.0\n\n*** INCOMING TRANSMISSION FROM SUPER EARTH HIGH COMMAND ***\n\nSuper Earth is excited to share more with you all in regards to our latest changes for Helldivers on the frontline, with the introduction of Easy Anti-Cheat, the Scope of Authority Warbond and improvements to weapons and stratagems, there is something for the whole family to enjoy!\n\n🕵️ New Anti-Cheat introduced\n\n- \n Implemented Easy Anti-Cheat, with additional security tools in place to enhance its effectiveness and improve game integrity protection\n\n[/*]\n\nFor more information on EAC, you can read our blog (here) or visit https://www.easy.ac/support/articles\n\n🤝 Community Feedback Changes\n\n- \n Balance pass on Killzone and Halo Legendary warbond weapons\n \n[/*]\n- \n Sickle rebalance\n \n[/*]\n- \n Balance pass on several stratagems\n\n[/*]\n\nGeneral Gameplay\n\n- \n Bug Bile enemies\n \n[/*]\n\n- \n We broke out the bug strain that spawns Bile Warriors, Spewers, Scavengers, which could randomly become active on a mission, into its own bug strain that now is controlled by the Game Masters and will have its own visualization to show when it’s active just like other bug strains like Rupture, Spore Burst etc.\n \n[/*]\n\n⚖️ Balancing\n\nPrimary weapons\nBalance pass on Killzone and Halo Legendary warbond weapons\n\nProblem we want to solve:\n\n- \n These weapons felt a bit weaker versus similar weapons when accounting for the fact that they do not have any weapon customization.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n Since legendary warbond weapons don't get customization, we think some of the weapons need a slight increase in their base stats to compensate.\n \n[/*]\n- \n These will be more effective versus similar weapons, but weapons with attachments can be customized to work better in different ways.\n\n[/*]\n\nChanges:\n\nM90A Shotgun \n\n- \n Increased damage from 605 to 726 \n[/*]\n- \n Increased durable damage from 220 to 264\n[/*]\n\nMA5C Assault Rifle\n \n\n- \n Decreased recoil Vertical Drift from 20 to 15\n \n[/*]\n- \n Decreased recoil Vertical Climb from 30 to 20\n \n[/*]\n- \n Decreased recoil Horizontal Climb from 12 to 6\n \n[/*]\n- \n Increased durable damage from 16 to 20\n \n[/*]\n\nStA-52 Assault Rifle\n \n\n- \n Increased spare max magazines from 6 to 7\n \n[/*]\n- \n Decreased recoil Vertical Drift from 15 to 7.5\n \n[/*]\n- \n Decreased recoil Vertical Climb from 25 to 12.5\n \n[/*]\n- \n Decreased recoil Horizontal Drift from 10 to 5\n \n[/*]\n- \n Decreased recoil Horizontal Climb from 6 to 4\n \n[/*]\n\nStA-11 SMG\n\n- \n Increased damage from 90 to 100\n \n[/*]\n- \n Increased durable damage from 18 to 20\n \n[/*]\n- \n Decreased recoil Vertical Drift from 20 to 12\n \n[/*]\n- \n Decreased recoil Vertical Climb from 10 to 8\n \n[/*]\n- \n Increased ergonomic from 80 to 90\n\n[/*]\n\nPLAS-39 Accelerator Rifle\n\nProblem we want to solve:\n\n- \n We feel the weapon has a good identity and mechanics but some of them are a bit punishing and force players too much into using particular armor passives together with them.\n \n[/*]\n- \n The stagger force being high is normally a good thing, but if you are trying to hit weak spots then the first shot gets the enemy to stagger and then the second and third shot misses the weak spot against certain enemies. So lowering the stagger force should make it easier to use this as a precision weapon.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n By making the reload faster, it should make its ammo economy less punishing.\n \n[/*]\n- \n By lowering the stagger force it should make it easier to use this as a precision weapon.\n\n[/*]\n\nChanges:\n\n- \n Faster reload from 3.3 sec to 2.7 sec\n \n[/*]\n- \n Decreased stagger strength on projectile from 20 to 15\n\n[/*]\n\nBalance pass on Sickle variants\n\nProblem we want to solve:\n\n- \n These weapons have fallen behind in practicality since it was released compared to similar weapons. \n \n[/*]\n- \n The charge up and down time also feels too long.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n Lean more into what makes these weapons different compared to ballistic weapons. \n \n[/*]\n- \n It will also both be faster to start to shoot and cooldown.\n\n[/*]\n\nChanges:\n LAS-16 Sickle\n \n\n- \n Decreased time until weapons start to shoot from when trigger is pressed from 0.5 sec to 0.33 sec\n \n[/*]\n- \n Decreased time until weapon heat starts cooling down after firing from 1.33 sec to 0.66 sec\n \n[/*]\n- \n Less heat build up per projectile from 1.15 to 0.95\n\n[/*]\n\nLAS-17 Double-Edge Sickle\n \n\n- \n Decreased time until weapons start to shoot from when trigger is pressed from 0.5 sec to 0.33 sec\n \n[/*]\n- \n Decreased time until weapon heat starts cooling down after firing from 1.33 sec to 0.66 sec\n \n[/*]\n\nShotguns with light penetration regular ballistic pellets\n\nProblem we want to solve:\n\n- \n The light penetration regular pellet shotguns have fallen behind in effectiveness compared to other shotguns with, for instance, medium penetration or status effects.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n These shotguns will have a faster time to kill and hit harder with each round\n\n[/*]\n\nChanges:\n\n \n\nSG-8 Punisher\n \n\n- \n Increased damage from 405 to 486\n \n[/*]\n- \n Increased durable damage from 108 to 135\n \n[/*]\n\nSG-225 Breaker\n \n\n- \n Increased damage from 330 to 396\n \n[/*]\n- \n Increased durable damage from 66 to 88\n \n[/*]\n\nSG-225SP Breaker Spray&Pray\n \n\n- \n Increased damage from 240 to 288\n \n[/*]\n- \n Increased durable damage from 64 to 80\n \n[/*]\n\nSidearm weapons\nSG-22 Bushwhacker\nChanges:\n \n\n- \n Increased damage from 450 to 540\n \n[/*]\n- \n Increased durable damage from 108 to 135\n \n[/*]\n\nMissions\n\n- \n Minor combat balancing tweaks for EVACUATE HIGH VALUE ASSETS\n\n[/*]\n\nStratagems\n\nM-1000 Maxigun\nProblem we want to solve:\n\n- \n It is hard to avoid incoming attacks when firing as it takes too long to get back movement control after firing.\n \n[/*]\n- \n Corpses can block other enemies while you fire the weapon and this, in combination with being stationary while firing, can make it harder to shoot other enemies.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n It will be easier to avoid incoming attacks because movement is allowed faster after the fire button is released.\n \n[/*]\n- \n It will now stagger more types of enemies and also be better at pushing away corpses.\n\n[/*]\n\nChanges:\n\n- \n Decreased time until regaining movement control after firing from 0.5 sec to 0 sec\n \n[/*]\n- \n Increased stagger force from 15 to 20\n \n[/*]\n- \n Increased stagger impulse from 12 to 24\n\n[/*]\n\nCQC-20 Breaching Hammer\nProblem we want to solve:\n\n- \n This weapon cannot be used as often as other similar close-range anti-tank stratagem weapons.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n Now it can be used more often and be closer to similar weapons in regards to usability.\n\n[/*]\n\nChanges:\n\n- \n Increased spare charges from 7 to 10\n\n[/*]\n\nOrbital Airburst Strike\nProblem we want to solve:\n\n- \n The Orbital Airburst Strike projectile comes in with a steeper angle since the new positioning of the Super Destroyers in missions. This made the spread of the shrapnel too large, unpredictable, and does not saturate the area well enough.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n Now the spread of the shrapnel should be closer together and saturate the target area better.\n \n[/*]\n- \n It will also be more available to use to compensate more for the random nature of the stratagem.\n\n[/*]\n\nChanges:\n\n- \n Decreased cooldown from 100 to 90\n \n[/*]\n- \n Decreased explosion cone angle from 35 to 27, which creates a tighter pattern for the shrapnel.\n\n[/*]\n\nHeavy Mounted Flamethrowers Damage\n\nProblem we want to solve:\n\n- \n The amount of particles in this effect made it so the damage of flames did not feel similar to flamethrowers.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n Now it will be better at dealing damage to enemies in the flames and perform closer to other flamethrowers.\n\n[/*]\n\nChanges:\nEXO-51 Lumberer Exosuit\n \n\n- \n Increased damage on flame particle from 3 to 8\n \n[/*]\n\nA/FLAM-40 Flame Sentry\n \n\n- \n Increased damage on flame particle from 3 to 8\n \n[/*]\n\nEagle Airstrike Gas\n\nProblem we want to solve:\n\n- \n The Eagle Airstrike gas had the unintended ability to destroy structures, which caused it to behave more like Orbital projectiles as opposed to Eagles.\n\n[/*]\n\nIntent and expectation with the changes:\n\n- \n Now it can only destroy structures that other eagle bombs can destroy.\n\n[/*]\n\nChanges:\n\n- \n Decreased the explosion's demolition strength from 50 to 40.\n\n[/*]\n\n🔧 Fixes\n\nCrash Fixes\n\n- \n Fixed a crash that could occur when scrolling through and equipping vehicle customization patterns in Ship Management.\n \n[/*]\n- \n Fixed customized vehicle previews failing or crashing after rapidly changing customization patterns.\n \n[/*]\n- \n Fixed two crashes related to SEAF shuttles when a lot of enemies are around.\n \n[/*]\n- \n Fixed a rare crash that could happen when another Helldiver reloads the Flak Cannon on their Exo suit under very poor network conditions.\n \n[/*]\n- \n Fixed a crash that could occur when attempting to emote with SEAF soldiers.\n \n[/*]\n- \n Fixed crash related to ragdolls.\n \n[/*]\n- \n Fixed issue where popups would cause a crash.\n \n[/*]\n- \n Fixed issue with upscalers that could result in a crash or a grey screen at certain resolutions.\n \n[/*]\n- \n Cycling between resolutions or render scale should no longer crash the game.\n \n[/*]\n- \n Improved DirectX 12 stability.\n\n[/*]\n\nWeapons & Stratagem Fixes\n\n- \n Fixed an issue that allowed the M-103 Supply FRV's turret to spam movement audio when enemies were around, but it didn't visibly move.\n \n[/*]\n- \n Fixed an issue where the TD-220 Bastion main gun triggered the team reload request voice line.\n \n[/*]\n- \n Fixed bug where reloading the flak cannon on the EXO-55 Breakthrough Exosuit would sometimes work incorrectly.\n \n[/*]\n- \n The 40-K Meltagun now destroys Command Bunkers’ sides correctly.\n \n[/*]\n- \n Fixed an issue causing the Hellbomb to be unavailable on one side of the Gazer Spire objective.\n \n[/*]\n- \n Fixed an issue where the Melta Mine inconsistently triggered when used on Vox Engine.\n \n[/*]\n- \n Fixed an animation issue with the Hyena when the reload is interrupted.\n\n[/*]\n\nEnemies\n\n- \n Fixed an issue where the Bile Titan would clip through the cave roof in some of the passages in one of the Spore Lung locations.\n \n[/*]\n- \n The Crescent Overseer's backpack can now be destroyed, killing the enemy in the process.\n \n[/*]\n- \n The Hive Lord will now leave combat earlier if not damaged by players for a certain duration.\n \n[/*]\n- \n Fixed an issue where the Vox Engine doors damaged players too much while on the ground.\n \n[/*]\n- \n Fixed an issue where Watchers spawned in very large numbers when mixing Illuminate's fleets.\n \n[/*]\n- \n Crusher head gore no longer leaves a transparent hole where the neck is supposed to be.\n \n[/*]\n- \n Fixed an issue where Hulk Scorchers would take damage and stagger from their own saw attack.\n\n[/*]\n\n🔧 Performance & Visual\n\nCPU Optimizations\n\n- \n Improved multithreaded performance for smoother frame pacing and better frame times, particularly on lower core-count CPUs and Xbox Series S.\n \n[/*]\n- \n Reduced stuttering during intense combat scenes by optimizing how particle effects are processed.\n \n[/*]\n- \n General improvements to level loading responsiveness.\n \n[/*]\n- \n\\[PC] Reduced hitching caused by shader compilation.\n\n[/*]\n\nVisual Improvements\n\n- \n\\[PC] Fixed an issue that could cause graphical issues when using Dynamic Resolution Scaling on AMD Radeon graphics cards.\n \n[/*]\n- \n\\[PC] Adjusted Screen Space Reflections to flicker less when no anti-aliasing is used.\n \n[/*]\n- \n Fixed horizontal streak artifacts in reflections.\n \n[/*]\n- \n Fixed visual artifacts around objects when smoke is present in the background and Variable Rate Shading is used.\n \n[/*]\n- \n Dynamic Resolution Scaling now checks for GPU bound frames before decreasing resolution.\n \n[/*]\n- \n The image in Message Of The Day in 'Example Patch Notes' now has the correct aspect ratio.\n \n[/*]\n- \n Added missing color grading when NVIDIA DLSS or AMD FSR upscaling are enabled.\n\n[/*]\n\nMisc\n\n- \n Fixed an issue where the player could get stuck in one of the Extract Organic soup locations.\n \n[/*]\n- \n Fixed an issue where a SEAF could use an incorrect voice line when being revived by another SEAF.\n \n[/*]\n- \n Fixed an issue where the players unlocked the \"Democracy ain't done with you yet\" achievement when stimming SEAF.\n \n[/*]\n- \n Fixed an issue where the player name of a disconnected player would still remain in the minimap.\n \n[/*]\n- \n Fixed an enemy pathing issue on the Illuminate missions.\n \n[/*]\n- \n Fixed an issue with softlocking 'Condemn Illicit Experiments' objective where the camera could get stuck under the portable comms relay.\n \n[/*]\n- \n Fixed an issue where the IX-Voidwalker helmet would disappear in some camera angles.\n \n[/*]\n- \n Fixed an issue where only Harvesters could spawn in cities when facing the Appropriator fleet.\n \n[/*]\n- \n Explosions that originate inside a shield bubble should now properly damage entities inside the shield.\n \n[/*]\n- \n Fixed an issue where players could get stuck in Sabotage Pipes location.\n \n[/*]\n- \n Fixed an issue where the Charger was having trouble navigating one of the Collect Data locations.\n \n[/*]\n- \n Fixed an issue with players getting stuck underneath a pipe in one of the Extract Organic Soup locations.\n \n[/*]\n- \n Fixed enemy traversal issues in one of the Collect Data locations.\n \n[/*]\n- \n Fixed an issue with players floating above ground when interacting with the Data Jack in the Disrupt Shield Generator(s) objective.\n \n[/*]\n- \n Fixed enemy navigation issues in one of the Spore Lung objective locations.\n \n[/*]\n- \n Support weapon settings (e.g., fire mode) now persist between uses and across sessions.\n \n[/*]\n- \n Fixed an issue with the “Recover Scientific Specimens” optional objectives.\n \n[/*]\n- \n Fixed an issue where no animations would be triggered while interacting with a minigame if Dispatches showed at the same time.\n \n[/*]\n- \n Extreme weather conditions are now more muted while behind large objects and indoors.\n \n[/*]\n- \n Fixed an issue with weapons on the ship bridge disappearing from view at a certain camera angle.\n \n[/*]\n- \n Improved soundscape when filming with the shoulder-mounted camera in first person view.\n \n[/*]\n- \n The assisted reload animations have been reworked to function better when the shooter is prone.\n \n[/*]\n- \n Fixed rendering bug that could cause incorrect lighting for certain particle effects (smoke plumes, etc.).\n \n[/*]\n- \n When unlocked, ICBM lights now deactivate in order to increase the visibility of remaining locks.\n \n[/*]\n- \n Fixed a bug that caused a Democracy Officer voiceover line about the Gloom to play significantly more often than it should.\n \n[/*]\n- \n Added emotes for SEAF: Rock, paper, scissors, Pull my finger, and Test of Conviction.\n \n[/*]\n- \n Improved hitbox alignment for ragdolling enemies during frame-rate drops.\n \n[/*]\n- \n Fixed an issue where some character parts could behave incorrectly during ragdoll transitions.\n \n[/*]\n- \n The banners on the hologram map that denote the presence of special enemy variants have been adjusted for improved readability.\n \n[/*]\n- \n Improved cooldown mechanism for Stingrays when there are a lot of enemies, making their spawn frequency work a bit more as intended.\n \n[/*]\n- \n GPU busy % frame statistic is now available on all platforms.\n \n[/*]\n- \n Added a message overlay explaining when chat functionality is unavailable due to communication restrictions on consoles.\n \n[/*]\n- \n Fixed an issue where text within certain popups couldn't be scrolled using the controller.\n \n[/*]\n- \n Usernames changes are updated mid-game when playing multiplayer.\n \n[/*]\n- \n Bug rocks no longer bleed red.\n \n[/*]\n- \n Fixed a bug where spawned Exo suits would have the default skin applied (instead of the actually selected skin) for late joining players\n\n[/*]\n- \n Fixed a bug that would cause Helldivers to get knocked in the air when exiting a driving vehicle\n\n[/*]\n- \n Fixed an issue preventing enemies from spawning at locations in CR1 Appropriator planets\n\n[/*]\n- \n Tesla and Generator VFX no longer become huge from a distance\n\n[/*]\n- \n Fixed an overlapping VO issue on immediate extraction missions\n\n[/*]\n- \n Fixed issue where 'Infiltrate Illuminate Lair' objectives were not taggable in some situations\n\n[/*]\n- \n Fixed some city destruction sync issues\n\n[/*]\n- \n Fixed Message of the Day QR code to work with more phones\n\n[/*]\n- \n Fixed minor navigation issues on desert planets\n\n[/*]\n- \n Fixed issue where cave points of interest could be partially outside the cave\n\n[/*]\n- \n In-world subtitles now take into account subtitle settings\n\n[/*]\n- \n Replaying the tutorial level no longer resets custom armor choices\n\n[/*]\n- \n Fixed issue where Hellpods could sometime land on cave roofs on Hive Worlds\n\n[/*]\n- \n SEAF Gun stratagem name now updates with the projectile type in stratagem list. \n\n[/*]\n- \n Fixed various bugs in the armory weapon customization\n\n[/*]\n- \n Fixed a bug that caused the minimap Fog of War effect to not sync between players\n\n[/*]\n- \n Cyrillic characters will no longer display extra spaces between characters for players using non-Cyrillic text. \n\n[/*]\n- \n Display names with Bengali, Devanagari and Thai characters should be displayed correctly. Ship-operator names should show up again on consoles\n\n[/*]\n- \n Fixed an issue where some leaping enemies could jump in the wrong direction when targeting the Breakthrough Exosuit\n\n[/*]\n- \n Switching to a different equipment slot during an emote will no longer lead to unnatural weapon handling\n\n[/*]\n- \n Added back button to speech initial setting screen\n\n[/*]\n\n🧠 Known Issues",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R55": {
+      "source": "news",
+      "raw_id": "1847286114032347",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847286114032347",
+      "date": "2026-10-22",
+      "text": "Devoid of Liberty: 7.2.1\n\nThis hotfix aims to resolve one of the main crashes we have seen. \n\n🔧 Fixes\n\nCrash Fixes\n\n- \nFixed a crash that would occur when another player joined or left the squad\n[/*]\n\n🧠 Known Issues",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R56": {
+      "source": "news",
+      "raw_id": "1847920302234123",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302234123",
+      "date": "2026-10-29",
+      "text": "Devoid of Liberty: 7.2.2\n\n*** INCOMING TRANSMISSION FROM SUPER EARTH HIGH COMMAND ***\n\nStratagems\n\nAMW-20 APEX\n\nProblem we want to solve:\n\n- \nDemolition strength was too low resulting in being unable to destroy things that weapons in the same category could (Anti Material Rifle and Autocannon)\n[/*]\n- \nIts Caliber was too high and made the damage dropoff too steep\n[/*]\n- \nIncorrect information about its armor penetration caused confusion as to what the weapon was able to do\n[/*]\n\nIntent and expectation with the changes:\n\n- \nIt is now able to destroy larger things such as covers, container doors etc in line with similar weapons of its power\n[/*]\n- \nLower damage drop off over longer distances, which will make it work better as a sniper and fit the believability of the rounds\n[/*]\n- \nCorrectly displays the armor penetration level in the armory so players know better what they can use the weapon against.\n\n[/*]\n\nChanges:\n\n- \nDecreased caliber from 60 to 20\n[/*]\n- \nFixed, so it correctly displays armor penetration is “Anti-Tank”\n[/*]\n- \nIncreased demolition strength to 30\n[/*]\n\nLAS-44 NOVA\n\nProblem we want to solve:\n\n- \nIncorrect information about its armor penetration confused players as to how the weapon would perform\n[/*]\n\nIntent and expectation with the changes:\n\n- \nCorrectly displays the armor penetration level in the armory so players know better what they can use the weapon against.\n[/*]\n\nChanges:\n\n- \nFixed so it correctly displays armor penetration as “Anti-Tank”\n[/*]\n\nCorrection\n\nSG-22 BUSHWACKER \n\nThe Bushwacker changes in the previous patch were calculated incorrectly\n\nThe correct values are\n\n- \nIncreased damage from 405 to 486\n[/*]\n- \nIncreased durable damage from 108 to 135\n[/*]\n\n🔧 Fixes\n\nCrash Fixes\n\n- \nFixed rare crash in renderer on PC and Xbox\n[/*]\n- \nFixed a rare crash on boot\n[/*]\n\nMisc\n\n- \nRemoved two music tracks, does not affect gameplay\n[/*]\n\n🧠 Known Issues",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R57": {
+      "source": "player_stats",
+      "raw_id": "steamspy:553850:2026-11-08",
+      "url": "https://steamspy.com/app/553850",
+      "date": "2026-11-08",
+      "text": "HELLDIVERS 2 (SteamSpy, 2026-11-08): owners estimate 20,000,000 .. 50,000,000; yesterday's peak concurrent players 53399; average playtime None h, median None h (None = no data); current players on Steam 36511; top tags Online Co-Op, PvE, Third-Person Shooter, Multiplayer, Action, Shooter, Co-op, Sci-fi, Capitalism, Space.",
+      "meta": {
+        "owners_estimate": "20,000,000 .. 50,000,000",
+        "current_players": 36511
+      }
+    },
+    "R58": {
+      "source": "review",
+      "raw_id": "238978210",
+      "url": "https://steamcommunity.com/profiles/76561199813405057/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "For those who just want the TLDR, Helldivers 2 is dying and this is due to Arrowhead's malicious laziness. \n\nBut for many of you who want me to elaborate more on what I mean, I highly encourage everyone to carefully read through my current thoughts on this game as my opinion may change depending on which direction it goes from here. \n\nEver since I started playing this game right around \"Omens of Tyranny\", I recognized right from the get-go that there was something special about this game that had me coming back for more each and every time. \n\nDespite its initial struggles and controversies, I still think that Helldivers 2 has a chance to go down as one of the greatest games in the modern day era, even going as far as being considered in some debates amongst the current gaming greats. \n\nHowever, I'm not sure when exactly, but something had changed about this game right around \"Into the Unjust\" and then fell apart right around the start of \"Machinery of Oppression\". \n\nAnd to see how everything unfolded after the installation of Easy Anti-Cheat, I could argue that this game is now officially dead or currently on life support as all I can say is that this was on Arrowhead for what they've done to this game. \n\nBased on everything I've seen, they have had many decisions that ended up leading into many domino effects in which it negatively affected both this game and the passionate players that love it so much. \n\nThese decisions include many of the following but not limited to: \n\n- Terrible communication since Twinbeard's departure \n\n- Updates and patches becoming seasonal versus the initial 2 week period to improve the game they did \n\n- Hiding and lying about changes as noted by the Coyote nerf (Eroding trust & crippling fire based weapons)\n\n- Use of false advertisement (Ex., Scope of Authority advertising & info from box cover for Helldivers 2) \n\n- Misleading messages (Unlocking a DSS Action vs initial description of a Stratagem Permit in a campaign reward) \n\n- No in-game explanation on key mechanics (Ex., Gambits, Sieges, & Planetary Decay) \n\n- No centralized platform to communicate (Discord, Reddit, and Twitter are the main platforms to communicate)\n\n- Forcing certain stories and outcomes to occur like what happened in the Battle for Cyberstan \n\n- Cultivating a toxic community and turning it into a political mess (Ex., D10 Challenge Doxing Incident) \n\n- Devs abandoning the Illuminate (Cultists scrapped due to vibes and currently a mix of subfactions) \n\n- Enemies remaining over-tuned for years (Ex., War Strider & most of the available Illuminate units) \n\n- Enemies remaining buggy for long periods of time (Ex., Fleshmob clipping through walls and the ground) \n\n- Additional features that could've been added were scrapped (Customization for weapons, armor, and passives) \n\n- Issues taking years to address (Ex., Stratagem Bouncing & Hellpod Steering) \n\n- Creating a problem to sell a solution (Ex., Ragdoll increased so a Warbond has a passive that reduces ragdoll) \n\n- Banning mods due to these Modders doing a better job than Arrowhead themselves \n\n- New anti cheat has locked out a good amount of Linux and Xbox players from playing the game \n \nWhile this doesn't account for any other issues that Arrowhead has done to this game, the majority of the issues that many players have pointed out are constantly ignored by this AA company claiming to be a AAA studio. \n\nI don't know why this is the case but they seem to be so hellbent on having their \"Grunt Fantasy\" that they have been contradicting themselves at every turn, especially when it comes to their excuses on why Helldivers 2 can't have certain perks they know that everyone would like. \n\nThese excuses and contradictions even include stuff like: \n\n- Invoking realism when it is only one sided (ex., Dragon Roach still flies even when its wings are gone) \n\n- Outdated Software (Darktide uses the same engine as HD2 but does it better, which is Autodesk Stingray) \n\n- Features not possible (Modders added so many perks that proved that Arrowhead can do it but wont) \n\n- Apple vs Bacon argument (Used to justify no armor customization despite the Malestrom existing) \n\n- Limits their design space (In other words, it limits the ways in which they can make more money off of us) \n\n- Claiming their player base is mostly Call of Duty players (Star Wars Battlefront 2 (2005) is where I came from) \n\nI think what makes it so sad is that Arrowhead Studios has the ability to get this done as long as they put in the effort, but they choose to not do any of it and always attempt to take the easy way out each and every time. \n\nThis is honestly why I consider them to be \"maliciously lazy\" as they can put in the effort to fix all the known bugs, balance out the weapons, make the enemy factions feel good to fight against while still making it challenging but they refuse to do so and they choose to irritate everyone instead of doing their job. \n\nI think what also makes it worse is that they are apparently developing another game while Helldivers 2 is in such a poor state and if it goes the way that I expect they may be going down the same route as Bungie after what they did to Destiny 2 after introducing Marathon. \n\nBut unlike Bungie which is going to do more for the Destiny franchise, it just seems like that they are going to bleed HD2 dry and then abandon it once they get their worth from it. \n\nAnd keep in mind, this is the same studio that mentioned that they wanted Helldivers 2 to last about 10 years or so and it doesn't even feel like that they will even make it pass Year 3 or Year 4 at all with the direction they are going. \n\nIf they leave this game in such a horrible mess, its not going to matter how good their next game is as their players will do everything in their power to make sure that their next project fails. \n\nTo be honest, it just feels like that the only way this can be addressed is for Sony to finally intervene on their work like they did before, even then I don't think we will see that happen due to Sony's most recent anti-consumer practices they have emphasized. \n\nAnd what makes this all the more ironic is their overall motto, \"A game for everyone is a game for no one.\"\n\nIn other words, they have pretty much made a game I would argue is for no one now. \n\nOr in the case of how I would phrase it, \"A game for no one is a game for no one.\" \n\nLike most of the players who hop onto this game, I still love it so much and want to see it succeed more than anything. \n\nBut without honest critiques and developers/executives that are willing to listen to them, this game will keep going on an ongoing negative spiral that will drive away most players from ever coming back. \n\nIt hurts so badly for me to say it, but I will not be recommending this game until significant changes are made that improve the current state of this game.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 716.1,
+        "positive": false
+      }
+    },
+    "R59": {
+      "source": "review",
+      "raw_id": "239000120",
+      "url": "https://steamcommunity.com/profiles/76561198169902226/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "These devs captured lightning in a bottle...\n\nThen got mad it was blue, so they pissed on it to make it yellow.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 300.4,
+        "positive": false
+      }
+    },
+    "R60": {
+      "source": "review",
+      "raw_id": "238945166",
+      "url": "https://steamcommunity.com/profiles/76561199177515433/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "Robert.\nI dont like this game.\nROBERT.\nTHE DEVS ARE PISSING ME OFF.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 29.8,
+        "positive": false
+      }
+    },
+    "R61": {
+      "source": "review",
+      "raw_id": "239016703",
+      "url": "https://steamcommunity.com/profiles/76561198106173072/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "This game's life cycle\n\nIt's so peak! - It's so over! - We're so back! - It's so over! - We're so back! - It's so over!\n\nUnfortunately it's been in the \"It's so over!\" phase for a while!",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 599.5,
+        "positive": false
+      }
+    },
+    "R62": {
+      "source": "review",
+      "raw_id": "238982226",
+      "url": "https://steamcommunity.com/profiles/76561198157296047/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "They changed the Anti-Cheat (on a PvE game??) to EAC (Easy Anti-Cheat) which not only, likely broke some mods, has the potential to ban players from a false-positive, but many players cannot even launch the game anymore.\n\nGreat job AH, are you addicted to bad ideas or something?",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 228.7,
+        "positive": false
+      }
+    },
+    "R63": {
+      "source": "review",
+      "raw_id": "238970649",
+      "url": "https://steamcommunity.com/profiles/76561199098337748/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Some of the worst devs I've ever had the displeasure of witnessing. \r\n\r\n1: They refuse to admit stratagem bouncing is an intended feature and instead refer to it as a \"bug\" that they conveniently haven't removed over the course of multiple years, despite it being one of the largest pain points in their player base. \r\n\r\n2: Genuinely beginning to believe these devs have mental deficiencies, because they have easily one of the most interesting concepts for an interactive space war game, and choose to instead cover themselves in napalm and do fuck all with it. They instantly remove the bugs players find funny and harmless because fun is illegal i guess? I wouldn't have any complaints about this if it wasnt for the fact they can somehow remove fun bugs in seconds yet can't remove bugs that genuinely break the game at points (looking at you illuminate phasing through walls).\r\n\r\n3: They have a nasty habit of \"buffing\" items that players request buffs for, but simultaneously buffing all 99% of the enemies in the game thus rendering the buff pointless. The worst part is they often don't even mention the enemy buffs most of the time, because they know it would upset the player base. Absolute scum.\r\n\r\n4: The terms \"glazediver\" and such are literally banned in the discord, because Arrowhead gets their poor little feelings hurt and are incapable of coping with the fact they constantly try to fit the square peg in the round hole, continuing to fail expectations even when handed feedback by the community.\r\n\r\n5: Lock in, devs. I genuinely want this game to succeed so please just get your act together and create the game you would be proud of. Don't suck the fun out of a game. Stop the \"grunt fantasy\" and \"realism\" bullshit, because last time I checked it's not realistic for enemies to phase through solid matter.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 263.3,
+        "positive": false
+      }
+    },
+    "R64": {
+      "source": "review",
+      "raw_id": "239051596",
+      "url": "https://steamcommunity.com/profiles/76561198832045829/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Been playing since the 9th of Feb 2024.\n\nBeen there for the server size issues when it first dropped.\n\nWas there for the creek, black hole event, super earth defence and Cyberstan And most recently the void stuff.\n\nOver the time I have just seen Narrow head just messing this game up. We keep saying stuff we want. Over and over again. But just the usual \"We're listening\" in response. Saying that we'll get weekly updates and stuff, never to get one after the first one or first couple. Ignoring what most of the players are saying/asking for, and just listening to the loud couple of people that just say \"skill issue\" to all the points. And doxxing people who want the devs to play the game with some of the worst strats of all.\n\nNerfing the guns and strats we like to use into the ground whilst buffing enemies damage/armour pen and health. Whilst saying they aren't (Coyote nerf). Or buffing our stuff then buffing the enemies to basically monkey paw our buffs (Recent-ish Mech buffs). Because they want a grunt fantasy. Whilst they balance the enemies as if the game is a horde shooter and balance us as if it was a grunt shooter like Squad or Arma. Like bruh if you want a Grunt fantasy you would make us play as the SEAF not the Helldivers ffs. Or play Squad or Arma lol. The box says \"Fight overwhelming odds with over powered weapons\" but as of now it feels like \"face overwhelming odds with weapons\". They say its to stop people getting kicked because they aren't using meta. My whole time playing I have not had that issue. I use guns I like and haven't ever been kicked because of that. I have however been kicked for: Joining a lobby they want to be private but haven't changed the setting, crushing someone because my pod wouldn't steer, not wanting to kill a hive lord because it wasn't the main objective, doing side objectives whilst the other three team mates stand stationary on the main objective whilst one dude does the terminal, and most of all, my team mates walking into my airstrikes, line of fire or orbitals.\n\nSome of the things we say we want fixed or changed always seem to become part of a war bond.\n\n\"We want less ragdolls!\"\n\"Here, have a warbond with rock steady in it\"\n\n\"We want better weapon ergonomics!\"\n\"Here have a warbond with Peak Physique which does just that!\"\n\n\"We want to customize mechs!\"\n\"Here, have a warbond with two different mechs on!\"\n\n\"We want to change the armours colours and patterns!\"\n\"Oooo look at this shiny warbond with its colour changing camo's!\"\n\nNot only do they create the problem and sell the solution, they also have had several warbonds which are just poo. Like the Halo one, the shotgun is mid, light pen but okay damage. The AR is aight, med pen so can do some things to some enemies. The pistol and the SMG? Poop. Haven't touched them after 1 mission. The armour is mid, the passive isn't really useful at all. I only bought the damn thing for the helmets lol. The Killzone Warbond? I haven't seen a single soul in all of my lobbies use a single thing from them. And I don't use them either. Just are just pure poo. The only good things being the armour because of the passive which makes you more resistant to the elemental damages.\n\nNot only do they nerf what we like using, make the problems and sell the solutions, there are \"bugs\" in the game that have been there for bloody ages.\n\nWatching my Strat balls bounce around like an angry frog on flat ground. Only to fail. But succeed when I place it 15cm to the right of where I chucked it the first time, being locked into position when trying to land my pod, killing my team mates and getting me kicked from lobbies, enemies just phasing through buildings on city maps and 1 shotting me whilst hiding in them. Enemies phasing through the floor and destroying generators on defence missions. The SEAF arty cannon bugging, not letting us put the ammo in, Getting stuck on enemies and their seemingly obscenely large hit boxes on their corpses and so much more Jank which a game this old, with this amount of players shouldn't have.\n\nTheir recent change to EAC has pushed me to write this review. Personally I haven't modded this game but I have looked. Only because I love Halo and some of the cosmetic mods tickled my fancy but I never got round to modding them in. However I know that people use mods to fix some of the horrible bugs, or as I call them design choices, or give us the features that we have been asking for, for literal years. But of course there are some mods which are questionable, which if used in a private lobby with friends I couldn't care less about. Over all my time playing on the game I haven't run into a single cheater or modder. Not once. And to see Narrow Head change to EAC just as mods where getting popular just made me say \"What the f**k are they doing bro...\". Part of me is glad that I didn't mod, because I've heard if you mod there is a chance the game just doesn't boot.\n\nLike bro, come on. What are they trying to do?\n\nI love this game and I would've loved to see what it could've been if they just listen to the damned players. Narrow head, please, sort yourselves out and take a hard, long look at yourselves. The players are speaking. Just listen. \n\nPlease.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 447.8,
+        "positive": false
+      }
+    },
+    "R65": {
+      "source": "review",
+      "raw_id": "238920803",
+      "url": "https://steamcommunity.com/profiles/76561199241504623/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "I have over 2500 hours across PS5 and PC. I genuinely enjoy Helldivers 2, but I’m increasingly concerned about the direction Arrowhead is taking the game. There seems to be a disconnect between what the developers envision and what the player base actually wants. For years, players have provided feedback on longstanding issues, requested quality-of-life improvements, and suggested features that could help move the game forward, yet many of those concerns continue to go unaddressed.\n\nArrowhead frequently leans on the idea that they built a milsim, but what they’ve delivered and what players largely experience is a cooperative horde shooter. There’s nothing wrong with having a vision for your game, but refusing to acknowledge what your game has become or what your community wants is a recipe for stagnation.\n\nThe developers talk about wanting Helldivers 2 to last ten years, but that ambition requires evolution, not resistance to change. Mod support is a perfect example. While Arrowhead has expressed appreciation for modding, they’ve shown little willingness to embrace it as a legitimate way to extend the game’s lifespan, encourage creativity, and give players more ways to enjoy the experience.\n\nYou cannot build a long-term live-service game by continually dismissing player feedback, leaving issues unresolved for years, and resisting opportunities to evolve. I want Helldivers 2 to succeed, but wanting a game to last ten years and actually building one that can are two very different things. At this rate, I question whether it will maintain its player base for another six months.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 566.8,
+        "positive": false
+      }
+    },
+    "R66": {
+      "source": "review",
+      "raw_id": "239005281",
+      "url": "https://steamcommunity.com/profiles/76561198354300055/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "We never wanted this, we never wanted to unleash our reviews. together we banished the ignorance of unmanaged democracy but they betrayed us, they betrayed us all. AH stole power from the galaxy and lied to their divers. Super Earth has only once to prosper, if they will not seize it then let the galaxy BBUURRRNNNNN.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 200.9,
+        "positive": false
+      }
+    },
+    "R67": {
+      "source": "review",
+      "raw_id": "238938713",
+      "url": "https://steamcommunity.com/profiles/76561198308890838/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "\"no fun allowed\" stratagem",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 120.0,
+        "positive": false
+      }
+    },
+    "R68": {
+      "source": "review",
+      "raw_id": "238971719",
+      "url": "https://steamcommunity.com/profiles/76561198219476075/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Easy Anti-Cheat made it so I can't even boot the game despite having zero mods.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 177.4,
+        "positive": false
+      }
+    },
+    "R69": {
+      "source": "review",
+      "raw_id": "238944645",
+      "url": "https://steamcommunity.com/profiles/76561198971027634/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "Great until they softlocked anyone running mods, even cosmetic mods cause the anticheat to force close my game. After I purged all the mods, game still wouldn't run, ArrowHead needs to cut easy anticheat.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 211.2,
+        "positive": false
+      }
+    },
+    "R70": {
+      "source": "review",
+      "raw_id": "239054375",
+      "url": "https://steamcommunity.com/profiles/76561198358357438/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "i mean shit it was a good game but then i got space marine 2 to work",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 331.1,
+        "positive": false
+      }
+    },
+    "R71": {
+      "source": "review",
+      "raw_id": "239039185",
+      "url": "https://steamcommunity.com/profiles/76561198081305000/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Easy Anti-Cheat literally has made me unable to play the game at all. I've done every single way posted to fix this 0x0000142 Error. now I'm unable to play one of my favorite games. I cant recommend a game that doesn't work.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 135.7,
+        "positive": false
+      }
+    },
+    "R72": {
+      "source": "review",
+      "raw_id": "238962896",
+      "url": "https://steamcommunity.com/profiles/76561199216693490/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Arrowhead has severely dropped the ball on this one. Refuses to fix known bugs for months, and bans the mods that do their job for them. Won't buy any more arrowhead products unless they have a severe change of course on this game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 332.6,
+        "positive": false
+      }
+    },
+    "R73": {
+      "source": "review",
+      "raw_id": "238962179",
+      "url": "https://steamcommunity.com/profiles/76561199580928140/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "u cant even change the game priority in task manager now , why does a pve game even need anti cheats",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 353.8,
+        "positive": false
+      }
+    },
+    "R74": {
+      "source": "review",
+      "raw_id": "238954791",
+      "url": "https://steamcommunity.com/profiles/76561199044214891/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "give me my mods back also i cant start game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 71.0,
+        "positive": false
+      }
+    },
+    "R75": {
+      "source": "review",
+      "raw_id": "238911763",
+      "url": "https://steamcommunity.com/profiles/76561198266953675/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "Devs don't care",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 117.7,
+        "positive": false
+      }
+    },
+    "R76": {
+      "source": "review",
+      "raw_id": "238946262",
+      "url": "https://steamcommunity.com/profiles/76561199022015974/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "You know the saying \"You either die a hero or you live long enough to become the villain?\" Well that's Arrowhead in a nutshell. At launch they were amazing. They listened to player feedback and were very engaged in the community and now they get the community to harass anyone who disagrees with the status quo. The newest update with the anti-cheat has crashed many people's games when they aren't even running mods or even if they are running mods, why should that not be allowed? There's no harm to other players whatsoever when using mods. They seemingly refuse to fix the bugs that have been in the game since launch and that's frankly pathetic. \n\nDo better.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 351.5,
+        "positive": false
+      }
+    },
+    "R77": {
+      "source": "review",
+      "raw_id": "238978520",
+      "url": "https://steamcommunity.com/profiles/76561198831477399/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "The fucking last update killed the game. It wont even run now.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 262.1,
+        "positive": false
+      }
+    },
+    "R78": {
+      "source": "review",
+      "raw_id": "238924327",
+      "url": "https://steamcommunity.com/profiles/76561198117837504/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "Killing mods and putting an arguably worse anti cheat just because the community made you look like the lazy asses you are, barely any new content, straight up lying about the campaing stratagem reward, and now making MO's that are impossible to accomplish just so you don't have to actually make an campaing reward.\nNot to mention that i and other people noticed a SEVERE performance drop since the EAC was implemented, from ~~120fps to now barely going over 60 fps usually lockiong it at ~~70fps\nEvery negative review here is deserved\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 108.1,
+        "positive": false
+      }
+    },
+    "R79": {
+      "source": "review",
+      "raw_id": "239043149",
+      "url": "https://steamcommunity.com/profiles/76561198047428222/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Error (0xc0000142) ever since they updated the game to easy anti cheat. I can't even play, which sucks for a 60 dollar game which I also spent money on the battle passes.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 68.5,
+        "positive": false
+      }
+    },
+    "R80": {
+      "source": "review",
+      "raw_id": "239054193",
+      "url": "https://steamcommunity.com/profiles/76561198298581176/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "EAC just killed this game in one update.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 105.4,
+        "positive": false
+      }
+    },
+    "R81": {
+      "source": "review",
+      "raw_id": "238952200",
+      "url": "https://steamcommunity.com/profiles/76561197995251407/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "EAC",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 191.1,
+        "positive": false
+      }
+    },
+    "R82": {
+      "source": "review",
+      "raw_id": "238991012",
+      "url": "https://steamcommunity.com/profiles/76561198079323787/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Waste of time and money when trying random Dive with others only to get kicked out for no apparent reason OR even better random CRASH whenever dropping mid scene its always that part that keeps me crashing but for kicks are ludicrous so much that I lost my touch and motivation to help out fellow divers or the \"OTHER\" divers who are selfish pricks and doesn't care of divers but themselves and lastly the crash fix doesn't do much it only made things the same way as it were after said update.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 777.3,
+        "positive": false
+      }
+    },
+    "R83": {
+      "source": "review",
+      "raw_id": "239001779",
+      "url": "https://steamcommunity.com/profiles/76561199138164337/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "this game is managed worse then the us government",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 226.7,
+        "positive": false
+      }
+    },
+    "R84": {
+      "source": "review",
+      "raw_id": "238928926",
+      "url": "https://steamcommunity.com/profiles/76561198109703679/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "After the last patch and the addition of EAC, a lot of people flat out cannot launch the game and there are crickets about it from Arrowhead.  When they fix this I will change my review.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 422.6,
+        "positive": false
+      }
+    },
+    "R85": {
+      "source": "review",
+      "raw_id": "238958655",
+      "url": "https://steamcommunity.com/profiles/76561198073265890/recommended/553850/",
+      "date": "2026-10-30",
+      "text": "The devs pretend to care about the game and community, but they are actually demons from hell, sent by Satan to ruin an amazing game franchise.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1036.7,
+        "positive": false
+      }
+    },
+    "R86": {
+      "source": "review",
+      "raw_id": "239001718",
+      "url": "https://steamcommunity.com/profiles/76561199738164134/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Good game, terrible devs",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 136.6,
+        "positive": false
+      }
+    },
+    "R87": {
+      "source": "review",
+      "raw_id": "238966759",
+      "url": "https://steamcommunity.com/profiles/76561198099436346/recommended/553850/",
+      "date": "2026-10-31",
+      "text": "Great game, but the devs never really listened to the players. It's like they are actively trying to kill it \n\nAlso invasive anticheat. Shameful",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 109.2,
+        "positive": false
+      }
+    }
+  },
+  "chart": {
+    "appid": 553850,
+    "granularity": "month",
+    "as_of": "2026-11-08",
+    "from_snapshot": false,
+    "series": [
+      {
+        "period": "2024-02-01",
+        "up": 119827,
+        "down": 40360,
+        "pct_negative": 25.2,
+        "ref": "R1"
+      },
+      {
+        "period": "2024-03-01",
+        "up": 98970,
+        "down": 16423,
+        "pct_negative": 14.2,
+        "ref": "R2"
+      },
+      {
+        "period": "2024-04-01",
+        "up": 45283,
+        "down": 6147,
+        "pct_negative": 12.0,
+        "ref": "R3"
+      },
+      {
+        "period": "2024-05-01",
+        "up": 114571,
+        "down": 228757,
+        "pct_negative": 66.6,
+        "ref": "R4"
+      },
+      {
+        "period": "2024-06-01",
+        "up": 8762,
+        "down": 1872,
+        "pct_negative": 17.6,
+        "ref": "R5"
+      },
+      {
+        "period": "2024-07-01",
+        "up": 4573,
+        "down": 873,
+        "pct_negative": 16.0,
+        "ref": "R6"
+      },
+      {
+        "period": "2024-08-01",
+        "up": 4979,
+        "down": 7609,
+        "pct_negative": 60.4,
+        "ref": "R7"
+      },
+      {
+        "period": "2024-09-01",
+        "up": 5011,
+        "down": 1744,
+        "pct_negative": 25.8,
+        "ref": "R8"
+      },
+      {
+        "period": "2024-10-01",
+        "up": 4448,
+        "down": 489,
+        "pct_negative": 9.9,
+        "ref": "R9"
+      },
+      {
+        "period": "2024-11-01",
+        "up": 13175,
+        "down": 786,
+        "pct_negative": 5.6,
+        "ref": "R10"
+      },
+      {
+        "period": "2024-12-01",
+        "up": 15858,
+        "down": 1713,
+        "pct_negative": 9.7,
+        "ref": "R11"
+      },
+      {
+        "period": "2025-01-01",
+        "up": 9104,
+        "down": 598,
+        "pct_negative": 6.2,
+        "ref": "R12"
+      },
+      {
+        "period": "2025-02-01",
+        "up": 7688,
+        "down": 827,
+        "pct_negative": 9.7,
+        "ref": "R13"
+      },
+      {
+        "period": "2025-03-01",
+        "up": 6230,
+        "down": 895,
+        "pct_negative": 12.6,
+        "ref": "R14"
+      },
+      {
+        "period": "2025-04-01",
+        "up": 3601,
+        "down": 461,
+        "pct_negative": 11.3,
+        "ref": "R15"
+      },
+      {
+        "period": "2025-05-01",
+        "up": 10776,
+        "down": 5567,
+        "pct_negative": 34.1,
+        "ref": "R16"
+      },
+      {
+        "period": "2025-06-01",
+        "up": 9387,
+        "down": 1146,
+        "pct_negative": 10.9,
+        "ref": "R17"
+      },
+      {
+        "period": "2025-07-01",
+        "up": 6079,
+        "down": 739,
+        "pct_negative": 10.8,
+        "ref": "R18"
+      },
+      {
+        "period": "2025-08-01",
+        "up": 5514,
+        "down": 828,
+        "pct_negative": 13.1,
+        "ref": "R19"
+      },
+      {
+        "period": "2025-09-01",
+        "up": 8887,
+        "down": 5089,
+        "pct_negative": 36.4,
+        "ref": "R20"
+      },
+      {
+        "period": "2025-10-01",
+        "up": 4306,
+        "down": 2819,
+        "pct_negative": 39.6,
+        "ref": "R21"
+      },
+      {
+        "period": "2025-11-01",
+        "up": 5551,
+        "down": 1088,
+        "pct_negative": 16.4,
+        "ref": "R22"
+      },
+      {
+        "period": "2025-12-01",
+        "up": 4942,
+        "down": 871,
+        "pct_negative": 15.0,
+        "ref": "R23"
+      },
+      {
+        "period": "2026-01-01",
+        "up": 4265,
+        "down": 638,
+        "pct_negative": 13.0,
+        "ref": "R24"
+      },
+      {
+        "period": "2026-02-01",
+        "up": 8902,
+        "down": 1425,
+        "pct_negative": 13.8,
+        "ref": "R25"
+      },
+      {
+        "period": "2026-03-01",
+        "up": 5955,
+        "down": 3498,
+        "pct_negative": 37.0,
+        "ref": "R26"
+      },
+      {
+        "period": "2026-04-01",
+        "up": 3860,
+        "down": 4573,
+        "pct_negative": 54.2,
+        "ref": "R27"
+      },
+      {
+        "period": "2026-05-01",
+        "up": 3446,
+        "down": 4434,
+        "pct_negative": 56.3,
+        "ref": "R28"
+      },
+      {
+        "period": "2026-06-01",
+        "up": 2571,
+        "down": 1053,
+        "pct_negative": 29.1,
+        "ref": "R29"
+      },
+      {
+        "period": "2026-07-01",
+        "up": 2851,
+        "down": 704,
+        "pct_negative": 19.8,
+        "ref": "R30"
+      },
+      {
+        "period": "2026-08-01",
+        "up": 4986,
+        "down": 1103,
+        "pct_negative": 18.1,
+        "ref": "R31"
+      },
+      {
+        "period": "2026-09-01",
+        "up": 3616,
+        "down": 577,
+        "pct_negative": 13.8,
+        "ref": "R32"
+      },
+      {
+        "period": "2026-10-01",
+        "up": 3813,
+        "down": 6754,
+        "pct_negative": 63.9,
+        "ref": "R33"
+      },
+      {
+        "period": "2026-11-01",
+        "up": 564,
+        "down": 1504,
+        "pct_negative": 72.7,
+        "ref": "R34"
+      }
+    ],
+    "patches": [
+      {
+        "ref": "R40",
+        "id": "1840310314341623",
+        "date": "2026-08-06",
+        "title": "HELLDIVERS 2 Is Raising the Level Cap to 300",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314341623",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R41",
+        "id": "1840944183773413",
+        "date": "2026-08-12",
+        "title": "Devoid of Liberty: 7.0.0",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183773413",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R42",
+        "id": "1840944183773828",
+        "date": "2026-08-12",
+        "title": "HELLDIVERS 2 Devoid of Liberty Update Out Now",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183773828",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R43",
+        "id": "1840944183785447",
+        "date": "2026-08-17",
+        "title": "Devoid of Liberty: 7.0.1",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183785447",
+        "official": true,
+        "kind": "patch_notes"
+      },
+      {
+        "ref": "R44",
+        "id": "1840944183788638",
+        "date": "2026-08-18",
+        "title": "Helldivers 2: A deep dive into the Illuminate Void",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183788638",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R45",
+        "id": "1841579228677702",
+        "date": "2026-08-25",
+        "title": "Devoid of Liberty: 7.0.2",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1841579228677702",
+        "official": true,
+        "kind": "patch_notes"
+      },
+      {
+        "ref": "R46",
+        "id": "1842846814443227",
+        "date": "2026-09-03",
+        "title": "Behind the scenes: The Hive Lord",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814443227",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R47",
+        "id": "1843481262704549",
+        "date": "2026-09-15",
+        "title": "Let shockwaves of Freedom roll across the battlefield with Ironclad Democracy!",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262704549",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R48",
+        "id": "1844115010503588",
+        "date": "2026-09-22",
+        "title": "Devoid of Liberty: 7.1.0",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010503588",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R49",
+        "id": "1844751498220713",
+        "date": "2026-09-24",
+        "title": "Devoid of Liberty: 7.1.1",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498220713",
+        "official": true,
+        "kind": "patch_notes"
+      },
+      {
+        "ref": "R50",
+        "id": "1844751498224310",
+        "date": "2026-09-25",
+        "title": "Launching Devoid of Liberty: A Look Back",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844751498224310",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R51",
+        "id": "1845383656392989",
+        "date": "2026-10-05",
+        "title": "Galactic Network Maintenance",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656392989",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R52",
+        "id": "1846018067943957",
+        "date": "2026-10-13",
+        "title": "Line Up the Perfect Shot with the Scope of Authority Premium Warbond!",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846018067943957",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R53",
+        "id": "1846651706693839",
+        "date": "2026-10-20",
+        "title": "Changing anti-cheat in HELLDIVERS 2",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706693839",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R54",
+        "id": "1846651706694344",
+        "date": "2026-10-20",
+        "title": "Devoid of Liberty: 7.2.0",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706694344",
+        "official": true,
+        "kind": "announcement"
+      },
+      {
+        "ref": "R55",
+        "id": "1847286114032347",
+        "date": "2026-10-22",
+        "title": "Devoid of Liberty: 7.2.1",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847286114032347",
+        "official": true,
+        "kind": "patch_notes"
+      },
+      {
+        "ref": "R56",
+        "id": "1847920302234123",
+        "date": "2026-10-29",
+        "title": "Devoid of Liberty: 7.2.2",
+        "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302234123",
+        "official": true,
+        "kind": "patch_notes"
+      }
+    ]
+  }
+}

@@ -129,7 +129,13 @@ def _is_game(data: dict) -> bool:
     return data.get("type") == "game" and not re.search(r"\b(soundtrack|original score)\b", data.get("name", ""), re.I)
 
 
+def _norm_name(name: str) -> str:
+    """Match names the way Steam search does: lowercase, trademark symbols dropped, spacing squashed."""
+    return re.sub(r"\s+", " ", re.sub(r"[™®©]", "", name)).casefold().strip()
+
+
 def _offline_search(query: str, limit: int) -> list[dict]:
+    wanted = _norm_name(query)
     results = []
     for path in sorted(http.SNAPSHOT_DIR.glob("*/appdetails.json")):
         try:
@@ -138,7 +144,7 @@ def _offline_search(query: str, limit: int) -> list[dict]:
             if not _valid_snapshot(snap, appid, DETAILS_URL) or snap.get("params") != {"appids": appid, "cc": "US", "l": "english"}:
                 continue
             data = _details_data(snap["data"], appid)
-            if _is_game(data) and query.casefold() in data["name"].casefold():
+            if _is_game(data) and wanted in _norm_name(data["name"]):
                 results.append(_candidate(appid, snap, True))
         except (ValueError, KeyError, TypeError):
             continue
@@ -389,6 +395,24 @@ async def get_patch_notes(ctx: RunContextWrapper[Research], appid: int, start: s
                       "official": official, "kind": kind, "feed": row.get("feedname"),
                       "summary": text[:1200], "summary_is_excerpt": True, "truncated": len(text) > 1200})
     notes.sort(key=lambda n: (n["date"], n["id"]))
+
+    # Feed the page's timeline chart: this game's announcements as patch markers, merged with any
+    # earlier calls (each gid once, sorted by date). get_review_trend fills series and granularity
+    # for the same appid; whichever tool runs first creates the chart.
+    chart = getattr(ctx.context, "chart", None)
+    if chart is None or chart.get("appid") != appid:
+        chart = {"appid": appid, "granularity": None, "as_of": None, "series": [], "patches": []}
+        ctx.context.chart = chart
+    known = {p["id"] for p in chart["patches"]}
+    chart["patches"].extend(
+        {"ref": n["ref"], "id": n["id"], "date": n["date"], "title": n["title"], "url": n["url"],
+         "official": n["official"], "kind": n["kind"]}
+        for n in notes if n["id"] not in known
+    )
+    chart["patches"].sort(key=lambda p: (p["date"], p["id"]))
+    if chart["as_of"] is None:
+        chart["as_of"] = snap["as_of"]
+
     complete = snap["coverage"]["complete"]
     if not complete:
         warnings.append("Partial coverage: missing announcements cannot be ruled out.")

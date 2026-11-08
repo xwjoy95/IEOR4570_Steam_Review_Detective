@@ -478,3 +478,47 @@ def test_sample_reviews_legacy_snapshot_name(monkeypatch, tmp_path):
     _save_reviews(1086940, "reviews_negative_english_2026_10", params, [_review("1", "2026-10-03", False)])
     out = _sample_offline(monkeypatch, start="2026-10-01", end="2026-10-31", language="english")
     assert out["ok"] and out["from_snapshot"] and len(out["reviews"]) == 1
+
+
+def _save_histogram(appid):
+    """A small valid one-month review-histogram snapshot."""
+    http.save_snapshot(appid, "review_histogram_all", {
+        "as_of": "2026-11-05",
+        "params": {"appid": appid, "language": "all"},
+        "data": {"success": 1, "results": {"rollup_type": "month", "rollups": [{
+            "date": int(datetime(2026, 10, 1, tzinfo=timezone.utc).timestamp()),
+            "recommendations_up": 90, "recommendations_down": 10,
+        }]}},
+    })
+
+
+def _trend(state, appid):
+    args = {"appid": appid, "language": "all"}
+    ctx = ToolContext(context=state, tool_name="get_review_trend", tool_call_id="chart_test",
+                      tool_arguments=json.dumps(args))
+    return asyncio.run(steam_reviews.get_review_trend.on_invoke_tool(ctx, json.dumps(args)))
+
+
+def test_review_trend_chart_keeps_patches_and_resets_for_a_new_game(monkeypatch, tmp_path):
+    monkeypatch.setattr(http, "SNAPSHOT_DIR", tmp_path)
+    _save_histogram(1086940)
+    _save_histogram(1172470)
+
+    async def failed_get_json(*args, **kwargs):
+        raise RuntimeError("Simulated Steam API failure")
+
+    monkeypatch.setattr(steam_reviews, "get_json", failed_get_json)
+
+    state = Research(hooks=TraceHooks())
+    state.chart = {"appid": 1086940, "granularity": None, "as_of": None, "series": [],
+                   "patches": [{"ref": "R1", "id": "g1", "date": "2026-10-05", "title": "Patch",
+                                "url": "u", "official": True, "kind": "patch_notes"}]}
+
+    assert _trend(state, 1086940)["ok"]
+    assert state.chart["appid"] == 1086940
+    assert state.chart["granularity"] == "month" and state.chart["as_of"] == "2026-11-05"
+    assert state.chart["series"] and state.chart["series"][0]["ref"]
+    assert [p["id"] for p in state.chart["patches"]] == ["g1"]  # same game: markers kept
+
+    assert _trend(state, 1172470)["ok"]
+    assert state.chart["appid"] == 1172470 and state.chart["patches"] == []  # new game: fresh timeline

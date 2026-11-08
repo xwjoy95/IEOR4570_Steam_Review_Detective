@@ -1,0 +1,524 @@
+{
+  "schema_version": 1,
+  "appid": 553850,
+  "source": "https://store.steampowered.com/api/appdetails",
+  "params": {
+    "appids": 553850,
+    "cc": "US",
+    "l": "english"
+  },
+  "as_of": "2026-11-08",
+  "captured_at": "2026-11-08T05:34:44.460149+00:00",
+  "data": {
+    "553850": {
+      "success": true,
+      "data": {
+        "type": "game",
+        "name": "HELLDIVERS™ 2",
+        "steam_appid": 553850,
+        "required_age": "17",
+        "is_free": false,
+        "detailed_description": "<h1>Digital Deluxe Edition</h1><p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/18c7e7583bf530913d4febf628e9572b.avif?t=1793395133\" data-big-src=https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras_big/18c7e7583bf530913d4febf628e9572b.avif?t=1793395133 width=1560 height=878 /></span></p><p class=\"bb_paragraph\" >Edition includes:</p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >‘DP-53 Savior of the Free’ Armor Set.</p></li><li><p class=\"bb_paragraph\" >‘Will of the People’ Cape.</p></li><li><p class=\"bb_paragraph\" >‘MP-98 Knight’ Weapon.</p></li><li><p class=\"bb_paragraph\" >Super Citizen Status.</p></li><li><p class=\"bb_paragraph\" >Stratagem Hero Ship Game.</p></li><li><p class=\"bb_paragraph\" >Premium Warbond Token.</p></li></ul></p><br><h1>About the Game</h1><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/fb8876ccfdce9b8ec3b4e594c903b1fa.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/fb8876ccfdce9b8ec3b4e594c903b1fa.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/fb8876ccfdce9b8ec3b4e594c903b1fa.mp4?t=1793395133\" type=\"video/mp4\"></video></span><br>The Galaxy’s Last Line of Offence.<br><br>Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/4fb677a524eaf9318620399defcc00b4.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/4fb677a524eaf9318620399defcc00b4.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/4fb677a524eaf9318620399defcc00b4.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >URGENT BROADCAST – SUPER EARTH ARMED FORCES</h2>Freedom. Peace. Democracy. <br>Your Super Earth-born rights. The key pillars of our civilization. <br>Of our very existence. <br>But the war rages on. And everything is once again under threat.<br>Join the greatest military force the galaxy has ever seen and make this a safe and free place to live.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/35ca28196240c0a23e7b3f1e9f21104f.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/35ca28196240c0a23e7b3f1e9f21104f.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/35ca28196240c0a23e7b3f1e9f21104f.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >BECOME A LEGEND</h2>You will be assembled into squads of up to four Helldivers and assigned strategic missions.<br>Watch each other’s back – friendly fire is an unfortunate certainty of war, but victory without teamwork is impossible.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ed035f1ca25e13a4b37838ad0a93c7ad.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ed035f1ca25e13a4b37838ad0a93c7ad.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ed035f1ca25e13a4b37838ad0a93c7ad.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >LOADOUTS</h2>Rain down freedom from above, sneak through enemy territory, or grit your teeth and charge head-first into the jaws of combat.<br>How you deliver liberty is your choice; you’ll have access to a wide array of explosive firepower, life-saving armor and battle-changing stratagems… the jewel in every Helldiver’s arsenal.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/073978e84f89d3c2cb173bf4e92facaa.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/073978e84f89d3c2cb173bf4e92facaa.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/073978e84f89d3c2cb173bf4e92facaa.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >REQUISITION</h2>Super Earth recognises your hard work with valuable Requisition. Use it to access different rewards that benefit you, your squad, your destroyer ship and our overall war effort.<br><br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/6d14a34ac01cedb5822b1786c3a00b61.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/6d14a34ac01cedb5822b1786c3a00b61.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/6d14a34ac01cedb5822b1786c3a00b61.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >THREATS</h2>Everything on every planet wants you dead. That’s what we’re dealing with.<br>Each enemy has distinct and unpredictable characteristics, tactics, and behavior – but they all fight ferociously and without fear or morality.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/2f228b6f119f7d9207d351d5393cabea.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/2f228b6f119f7d9207d351d5393cabea.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/2f228b6f119f7d9207d351d5393cabea.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >THE GALACTIC WAR</h2>Capturing enemy planets, defending against invasions, and completing missions will contribute to our overall effort. <br><br><br>This war will be won or lost depending on the actions of everyone involved.<br><br>We stand together, or we fall apart.",
+        "about_the_game": "<span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/fb8876ccfdce9b8ec3b4e594c903b1fa.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/fb8876ccfdce9b8ec3b4e594c903b1fa.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/fb8876ccfdce9b8ec3b4e594c903b1fa.mp4?t=1793395133\" type=\"video/mp4\"></video></span><br>The Galaxy’s Last Line of Offence.<br><br>Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/4fb677a524eaf9318620399defcc00b4.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/4fb677a524eaf9318620399defcc00b4.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/4fb677a524eaf9318620399defcc00b4.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >URGENT BROADCAST – SUPER EARTH ARMED FORCES</h2>Freedom. Peace. Democracy. <br>Your Super Earth-born rights. The key pillars of our civilization. <br>Of our very existence. <br>But the war rages on. And everything is once again under threat.<br>Join the greatest military force the galaxy has ever seen and make this a safe and free place to live.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/35ca28196240c0a23e7b3f1e9f21104f.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/35ca28196240c0a23e7b3f1e9f21104f.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/35ca28196240c0a23e7b3f1e9f21104f.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >BECOME A LEGEND</h2>You will be assembled into squads of up to four Helldivers and assigned strategic missions.<br>Watch each other’s back – friendly fire is an unfortunate certainty of war, but victory without teamwork is impossible.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ed035f1ca25e13a4b37838ad0a93c7ad.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ed035f1ca25e13a4b37838ad0a93c7ad.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ed035f1ca25e13a4b37838ad0a93c7ad.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >LOADOUTS</h2>Rain down freedom from above, sneak through enemy territory, or grit your teeth and charge head-first into the jaws of combat.<br>How you deliver liberty is your choice; you’ll have access to a wide array of explosive firepower, life-saving armor and battle-changing stratagems… the jewel in every Helldiver’s arsenal.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/073978e84f89d3c2cb173bf4e92facaa.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/073978e84f89d3c2cb173bf4e92facaa.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/073978e84f89d3c2cb173bf4e92facaa.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >REQUISITION</h2>Super Earth recognises your hard work with valuable Requisition. Use it to access different rewards that benefit you, your squad, your destroyer ship and our overall war effort.<br><br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/6d14a34ac01cedb5822b1786c3a00b61.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/6d14a34ac01cedb5822b1786c3a00b61.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/6d14a34ac01cedb5822b1786c3a00b61.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >THREATS</h2>Everything on every planet wants you dead. That’s what we’re dealing with.<br>Each enemy has distinct and unpredictable characteristics, tactics, and behavior – but they all fight ferociously and without fear or morality.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/2f228b6f119f7d9207d351d5393cabea.poster.avif?t=1793395133\" width=600 height=172 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/2f228b6f119f7d9207d351d5393cabea.webm?t=1793395133\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/2f228b6f119f7d9207d351d5393cabea.mp4?t=1793395133\" type=\"video/mp4\"></video></span><h2 class=\"bb_tag\" >THE GALACTIC WAR</h2>Capturing enemy planets, defending against invasions, and completing missions will contribute to our overall effort. <br><br><br>This war will be won or lost depending on the actions of everyone involved.<br><br>We stand together, or we fall apart.",
+        "short_description": "The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter.",
+        "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean, Portuguese - Brazil<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Polish, Portuguese - Portugal, Russian, Simplified Chinese<strong>*</strong>, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/850e2f9e5bb15c5706bb9a1edc832f4f782e8be5/header.jpg?t=1793395133",
+        "capsule_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/6de866c6fb786949a92a28d12f3e1c02d91bce60/capsule_231x87.jpg?t=1793395133",
+        "capsule_imagev5": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/6de866c6fb786949a92a28d12f3e1c02d91bce60/capsule_184x69.jpg?t=1793395133",
+        "website": "https://www.playstation.com/games/helldivers-2/pc/",
+        "pc_requirements": {
+          "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel Core i7-4790K or AMD Ryzen 5 1500X<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 470<br></li><li><strong>Storage:</strong> 135 GB available space</li></ul>",
+          "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"><li>Requires a 64-bit processor and operating system<br></li><li><strong>OS:</strong> Windows 10<br></li><li><strong>Processor:</strong> Intel Core i7-9700K or AMD Ryzen 7 3700X<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT<br></li><li><strong>Storage:</strong> 40 GB available space<br></li><li><strong>Additional Notes:</strong> SSD Recommended</li></ul>"
+        },
+        "mac_requirements": {
+          "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+          "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+        },
+        "linux_requirements": {
+          "minimum": "<strong>Minimum:</strong><br><ul class=\"bb_ul\"></ul>",
+          "recommended": "<strong>Recommended:</strong><br><ul class=\"bb_ul\"></ul>"
+        },
+        "legal_notice": "©2023 Sony Interactive Entertainment LLC. Developed by Arrowhead Game Studios AB. Helldivers is a registered trademark of Sony Interactive Entertainment LLC and related companies in the U.S. and other countries.",
+        "ext_user_account_notice": "PlayStation Network (Supports Linking to Steam Account)",
+        "developers": [
+          "Arrowhead Game Studios"
+        ],
+        "publishers": [
+          "PlayStation Publishing LLC"
+        ],
+        "price_overview": {
+          "currency": "USD",
+          "initial": 3999,
+          "final": 3999,
+          "discount_percent": 0,
+          "initial_formatted": "",
+          "final_formatted": "$39.99"
+        },
+        "packages": [
+          137730,
+          1018492
+        ],
+        "package_groups": [
+          {
+            "name": "default",
+            "title": "Buy HELLDIVERS™ 2",
+            "description": "",
+            "selection_text": "Select a purchase option",
+            "save_text": "",
+            "display_type": 0,
+            "is_recurring_subscription": "false",
+            "subs": [
+              {
+                "packageid": 137730,
+                "percent_savings_text": " ",
+                "percent_savings": 0,
+                "option_text": "HELLDIVERS™ 2 - $39.99",
+                "option_description": "",
+                "can_get_free_license": "0",
+                "is_free_license": false,
+                "price_in_cents_with_discount": 3999
+              },
+              {
+                "packageid": 1018492,
+                "percent_savings_text": " ",
+                "percent_savings": 0,
+                "option_text": "HELLDIVERS™ 2 - Commercial License - $39.99",
+                "option_description": "",
+                "can_get_free_license": "0",
+                "is_free_license": false,
+                "price_in_cents_with_discount": 3999
+              }
+            ]
+          }
+        ],
+        "platforms": {
+          "windows": true,
+          "mac": false,
+          "linux": false
+        },
+        "categories": [
+          {
+            "id": 1,
+            "description": "Multi-player"
+          },
+          {
+            "id": 9,
+            "description": "Co-op"
+          },
+          {
+            "id": 38,
+            "description": "Online Co-op"
+          },
+          {
+            "id": 22,
+            "description": "Steam Achievements"
+          },
+          {
+            "id": 35,
+            "description": "In-App Purchases"
+          },
+          {
+            "id": 64,
+            "description": "Adjustable Text Size"
+          },
+          {
+            "id": 67,
+            "description": "Camera Comfort"
+          },
+          {
+            "id": 72,
+            "description": "Chat Speech-to-text"
+          },
+          {
+            "id": 73,
+            "description": "Chat Text-to-speech"
+          },
+          {
+            "id": 66,
+            "description": "Color Alternatives"
+          },
+          {
+            "id": 68,
+            "description": "Custom Volume Controls"
+          },
+          {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+          },
+          {
+            "id": 71,
+            "description": "Narrated Game Menus"
+          },
+          {
+            "id": 74,
+            "description": "Playable without Timed Input"
+          },
+          {
+            "id": 55,
+            "description": "DualShock Controller Support"
+          },
+          {
+            "id": 57,
+            "description": "DualSense Controller Support"
+          },
+          {
+            "id": 58,
+            "description": "DualSense Controller Support"
+          },
+          {
+            "id": 69,
+            "description": "Stereo Sound"
+          },
+          {
+            "id": 65,
+            "description": "Subtitle Options"
+          },
+          {
+            "id": 70,
+            "description": "Surround Sound"
+          },
+          {
+            "id": 18,
+            "description": "Partial Controller Support"
+          },
+          {
+            "id": 62,
+            "description": "Family Sharing"
+          }
+        ],
+        "genres": [
+          {
+            "id": "1",
+            "description": "Action"
+          }
+        ],
+        "screenshots": [
+          {
+            "id": 0,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/aed08979e15f54798f287dd8820fb5838476b5fa/ss_aed08979e15f54798f287dd8820fb5838476b5fa.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/aed08979e15f54798f287dd8820fb5838476b5fa/ss_aed08979e15f54798f287dd8820fb5838476b5fa.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 1,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/71ef7c65fcf63ff974ce42150190c0420c66c72b/ss_71ef7c65fcf63ff974ce42150190c0420c66c72b.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/71ef7c65fcf63ff974ce42150190c0420c66c72b/ss_71ef7c65fcf63ff974ce42150190c0420c66c72b.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 2,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/6c8b61a7c63479b6f526d285af6687a362d5d7ae/ss_6c8b61a7c63479b6f526d285af6687a362d5d7ae.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/6c8b61a7c63479b6f526d285af6687a362d5d7ae/ss_6c8b61a7c63479b6f526d285af6687a362d5d7ae.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 3,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_0c79f56fc7be1bd0102f2ca1c92c8f0900daf4fb.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_0c79f56fc7be1bd0102f2ca1c92c8f0900daf4fb.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 4,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_33e684e9cb2517af1599f0ca2b57d65ee82c2e51.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_33e684e9cb2517af1599f0ca2b57d65ee82c2e51.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 5,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_8949ed7dd24a02d5ea13b08fc5c04fab400dc4bd.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_8949ed7dd24a02d5ea13b08fc5c04fab400dc4bd.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 6,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_50afbbc4d811c38fe9f64c1fc8d7eb9d9da6d24c.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_50afbbc4d811c38fe9f64c1fc8d7eb9d9da6d24c.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 7,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_cb276fe9f0b09683bdbc496f82b405dbe0ffa1f1.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_cb276fe9f0b09683bdbc496f82b405dbe0ffa1f1.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 8,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_d0ac3830833a68d19d4a97c70aef0fba20bf0761.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_d0ac3830833a68d19d4a97c70aef0fba20bf0761.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 9,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_3b08a991443164a65f84f1bd9f1363e6c2ec4581.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_3b08a991443164a65f84f1bd9f1363e6c2ec4581.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 10,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_8f4af550ecbee08abb616b12cbb3896174dce153.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_8f4af550ecbee08abb616b12cbb3896174dce153.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 11,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_3d075daf49e21731cd768ee2ea3adf63857f798c.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_3d075daf49e21731cd768ee2ea3adf63857f798c.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 12,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_bed14617fc317c2d2b59fdc4d8c4f29b8ddf7ed2.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_bed14617fc317c2d2b59fdc4d8c4f29b8ddf7ed2.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 13,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_e45cb071779848564b3d2dcd7c3d38b7bd81cf9c.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_e45cb071779848564b3d2dcd7c3d38b7bd81cf9c.1920x1080.jpg?t=1793395133"
+          },
+          {
+            "id": 14,
+            "path_thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_5dde7ea6922800dfece2a3a319cb68e4f6f67949.600x338.jpg?t=1793395133",
+            "path_full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_5dde7ea6922800dfece2a3a319cb68e4f6f67949.1920x1080.jpg?t=1793395133"
+          }
+        ],
+        "movies": [
+          {
+            "id": 257416388,
+            "name": "Devoid of Liberty",
+            "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257416388/40bb356adaabd25fd73488264840abe84ac84718/movie_600x337.jpg?t=1788431411",
+            "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/553850/97059895/43cbd15ee5e1bd1be5aef57dd4a093d448e2d7f5/1788431043/dash_av1.mpd?t=1788431411",
+            "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/97059895/43cbd15ee5e1bd1be5aef57dd4a093d448e2d7f5/1788431043/dash_h264.mpd?t=1788431411",
+            "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/97059895/43cbd15ee5e1bd1be5aef57dd4a093d448e2d7f5/1788431043/hls_264_master.m3u8?t=1788431411",
+            "highlight": true
+          },
+          {
+            "id": 257391604,
+            "name": "Face the unknown",
+            "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257391604/01449b1c2230f3901f09313fcbbf813f45edde93/movie_600x337.jpg?t=1786525386",
+            "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/553850/1066241062/9d085e63a7061466f8db4a78f6dab24e1df5de9a/1785860021/dash_av1.mpd?t=1786525386",
+            "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/1066241062/9d085e63a7061466f8db4a78f6dab24e1df5de9a/1785860021/dash_h264.mpd?t=1786525386",
+            "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/1066241062/9d085e63a7061466f8db4a78f6dab24e1df5de9a/1785860021/hls_264_master.m3u8?t=1786525386",
+            "highlight": true
+          },
+          {
+            "id": 256994373,
+            "name": "Launch Trailer (US-EN)",
+            "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256994373/movie.293x165.jpg?t=1756923474",
+            "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/553850/650713/095c6d5ae33c146b807f4394fa3010847aec1c1e/1750550195/dash_av1.mpd?t=1756923474",
+            "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/650713/095c6d5ae33c146b807f4394fa3010847aec1c1e/1750550195/dash_h264.mpd?t=1756923474",
+            "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/650713/095c6d5ae33c146b807f4394fa3010847aec1c1e/1750550195/hls_264_master.m3u8?t=1756923474",
+            "highlight": true
+          },
+          {
+            "id": 256992403,
+            "name": "PC Trailer (US-EN)",
+            "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256992403/movie.293x165.jpg?t=1736451730",
+            "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/553850/646934/aadc3791b619905f24fab23a9896015c1cb5a628/1750550851/dash_av1.mpd?t=1736451730",
+            "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/646934/aadc3791b619905f24fab23a9896015c1cb5a628/1750550851/dash_h264.mpd?t=1736451730",
+            "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/646934/aadc3791b619905f24fab23a9896015c1cb5a628/1750550851/hls_264_master.m3u8?t=1736451730",
+            "highlight": true
+          },
+          {
+            "id": 256957675,
+            "name": "Co-op & Combat Trailer (US-EN)",
+            "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256957675/movie.293x165.jpg?t=1691444486",
+            "dash_av1": "https://video.akamai.steamstatic.com/store_trailers/553850/586622/3bec9e0e2b094162eabe087ca13ff91da51ea120/1750550136/dash_av1.mpd?t=1691444486",
+            "dash_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/586622/3bec9e0e2b094162eabe087ca13ff91da51ea120/1750550136/dash_h264.mpd?t=1691444486",
+            "hls_h264": "https://video.akamai.steamstatic.com/store_trailers/553850/586622/3bec9e0e2b094162eabe087ca13ff91da51ea120/1750550136/hls_264_master.m3u8?t=1691444486",
+            "highlight": true
+          }
+        ],
+        "recommendations": {
+          "total": 852543
+        },
+        "achievements": {
+          "total": 38,
+          "highlighted": [
+            {
+              "icon": "957152b66814084cc4ec3d3f60a70ae2ea174dab.jpg",
+              "localized_name": "Hell Dive",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Hell Dive",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/957152b66814084cc4ec3d3f60a70ae2ea174dab.jpg"
+            },
+            {
+              "icon": "dc628afed470fa613abd3c1d58936e83f01977af.jpg",
+              "localized_name": "Hold my primary, I'm going in!",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Hold my primary, I'm going in!",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/dc628afed470fa613abd3c1d58936e83f01977af.jpg"
+            },
+            {
+              "icon": "19aee2bb5136e02591b03fa8efe173f224846b58.jpg",
+              "localized_name": "Gone in 360 seconds!",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Gone in 360 seconds!",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/19aee2bb5136e02591b03fa8efe173f224846b58.jpg"
+            },
+            {
+              "icon": "ba57b6fe7d9868be18620432a6fe5ba97d0a75b7.jpg",
+              "localized_name": "Extractamundo!",
+              "archived": 0,
+              "hidden": 1,
+              "name": "Extractamundo!",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/ba57b6fe7d9868be18620432a6fe5ba97d0a75b7.jpg"
+            },
+            {
+              "icon": "0ed34ce6a0bcabbf4cb723362e1a750af14ca992.jpg",
+              "localized_name": "Caught them by Supplies!",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Caught them by Supplies!",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/0ed34ce6a0bcabbf4cb723362e1a750af14ca992.jpg"
+            },
+            {
+              "icon": "af906e4e0222f9d263ca0635657ded5344587902.jpg",
+              "localized_name": "Samples are a diver's best friend",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Samples are a diver's best friend",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/af906e4e0222f9d263ca0635657ded5344587902.jpg"
+            },
+            {
+              "icon": "d8864c8012de22d93b7894db09095ae907de6c52.jpg",
+              "localized_name": "Doing your part",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Doing your part",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/d8864c8012de22d93b7894db09095ae907de6c52.jpg"
+            },
+            {
+              "icon": "29d0c4c94964a3dbe11273c622d7b601616db17f.jpg",
+              "localized_name": "It's the only way to be sure...",
+              "archived": 0,
+              "hidden": 0,
+              "name": "It's the only way to be sure...",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/29d0c4c94964a3dbe11273c622d7b601616db17f.jpg"
+            },
+            {
+              "icon": "0d7d18d4ae6bb690e0a02974017017f90d93ed3c.jpg",
+              "localized_name": "For the greater good!",
+              "archived": 0,
+              "hidden": 0,
+              "name": "For the greater good!",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/0d7d18d4ae6bb690e0a02974017017f90d93ed3c.jpg"
+            },
+            {
+              "icon": "c66e99ccfa40e9de9385f15e5a8b922f335aa607.jpg",
+              "localized_name": "Kill it with fire!",
+              "archived": 0,
+              "hidden": 0,
+              "name": "Kill it with fire!",
+              "path": "https://shared.akamai.steamstatic.com/community_assets/images/apps/553850/c66e99ccfa40e9de9385f15e5a8b922f335aa607.jpg"
+            }
+          ]
+        },
+        "release_date": {
+          "coming_soon": false,
+          "date": "Feb 8, 2024"
+        },
+        "support_info": {
+          "url": "",
+          "email": "support@arrowhead.zendesk.com"
+        },
+        "background": "https://store.akamai.steamstatic.com/images/storepagebackground/app/553850?t=1793395133",
+        "background_raw": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/5cfa51c014cd9ffd3cd5ae2e45cfc2673e8868d3/page_bg_raw.jpg?t=1793395133",
+        "content_descriptors": {
+          "ids": [
+            2,
+            5
+          ],
+          "notes": "HELLDIVERS™ 2 is a 3rd person squad-based shooter that sees the elite forces of the Helldivers battling to win an intergalactic struggle to rid the galaxy of the rising alien threats. From a 3rd person perspective, players use a variety of weapons (pistols, machine guns, flamethrowers) and stratagems (turrets, airstrikes, etc.) to shoot and kill the alien threats. Players can also aim down the sights for a more accurate 1st person camera view. Combat is accompanied by frequent sprays of blood and dismemberment as players exterminate the alien forces or players and squad mates are hit by environmental explosions or friendly fire. Enemy encampments and battlefield environments depict bloodstains and dismembered corpses."
+        },
+        "ratings": {
+          "esrb": {
+            "rating": "m",
+            "use_age_gate": "true",
+            "required_age": "17",
+            "descriptors": "Blood and Gore\r\nIntense Violence",
+            "interactive_elements": "In-Game Purchases\r\nUsers Interact"
+          },
+          "usk": {
+            "use_age_gate": "true",
+            "required_age": "16",
+            "rating": "16",
+            "descriptors": "Gewalt\r\nChats, In-Game-Käufe"
+          },
+          "oflc": {
+            "rating": "ma15",
+            "use_age_gate": "true",
+            "required_age": "15",
+            "descriptors": "Strong science fiction violence\r\nOnline interactivity and chat \r\nIn-game purchases"
+          },
+          "nzoflc": {
+            "rating": "r16",
+            "use_age_gate": "true",
+            "required_age": "16",
+            "descriptors": "Bloody Violence"
+          },
+          "cero": {
+            "rating": "z",
+            "use_age_gate": "true",
+            "required_age": "18",
+            "descriptors": "犯罪、暴力"
+          },
+          "fpb": {
+            "use_age_gate": "true",
+            "required_age": "18",
+            "rating": "18",
+            "descriptors": "CI – Competitive Intensity, H – Horror, V - Violence"
+          },
+          "csrr": {
+            "use_age_gate": "true",
+            "required_age": "18",
+            "rating": "R",
+            "descriptors": "Violence"
+          },
+          "crl": {
+            "use_age_gate": "true",
+            "required_age": "18",
+            "rating": "18"
+          },
+          "mda": {
+            "use_age_gate": "true",
+            "required_age": "18",
+            "rating": "M18"
+          },
+          "dejus": {
+            "rating": "18",
+            "descriptors": "Violência Extrema\r\nCompras online\r\nInteração de usuários",
+            "use_age_gate": "true",
+            "required_age": "18"
+          },
+          "pegi": {
+            "rating": "18",
+            "descriptors": "Violence\r\nIn-Game Purchases",
+            "required_age": "18",
+            "use_age_gate": "true"
+          },
+          "kgrb": {
+            "rating": "18",
+            "descriptors": "폭력",
+            "use_age_gate": "true",
+            "required_age": "18"
+          },
+          "steam_germany": {
+            "rating_generated": "1",
+            "rating": "18",
+            "required_age": "18",
+            "banned": "0",
+            "use_age_gate": "0",
+            "descriptors": "Drastische Gewalt"
+          },
+          "igrs": {
+            "rating_generated": "1",
+            "rating": "18",
+            "required_age": "18",
+            "banned": "0",
+            "use_age_gate": "0",
+            "descriptors": "Kekerasan\nInteraksi Daring"
+          },
+          "steam_australia": {
+            "rating_generated": "1",
+            "rating": "R18",
+            "required_age": "18",
+            "banned": "0",
+            "use_age_gate": "0",
+            "descriptors": "High Impact Violence"
+          }
+        }
+      }
+    }
+  }
+}
