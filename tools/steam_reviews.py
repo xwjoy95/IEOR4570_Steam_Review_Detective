@@ -537,7 +537,7 @@ async def sample_reviews(
     appid: int,
     start: str,
     end: str,
-    review_type: str = "negative",
+    review_type: str = "all",  # was "negative": a default should not decide the report's tone (Jiashu)
     language: str = "all",
     min_hours: float | None = None,
     max_hours: float | None = None,

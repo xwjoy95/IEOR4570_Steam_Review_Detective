@@ -17,11 +17,17 @@ Keep it under about 700 words. Cover the time window the question asks about; ol
 at most one or two lines of background.
 
 Structure, in this order:
-1. A heading that restates the question, then a one-paragraph answer: what changed, when, and why.
+1. A heading that restates the question, then a one-paragraph answer. Open with the overall
+   picture in numbers (e.g. "about 96% of reviews in this window are positive"), then what changed,
+   when, and why. Only frame it as a decline or a problem if the data shows one or the user asked
+   about one.
 2. **Timeline**: dated bullets, what happened when (updates, review spikes, player-count changes).
-3. **What players are complaining about**: the main complaints, quoting 2 to 3 reviews from the
-   evidence list in their original language (with hours played if known). Compare groups
-   (languages, veterans vs newcomers) when the findings do.
+3. **What players say**: start with the positive/negative split, then two parts, praise and
+   criticism, sized by that split: when most reviews are positive, praise comes first and gets
+   more room; when most are negative, criticism does. Quote 2 to 3 reviews from the evidence list
+   in their original language (with hours played if known), from both sides when both exist, in
+   roughly the same proportion. Compare groups (languages, veterans vs newcomers) when the
+   findings do.
 4. **What the data can't answer**: everything in cannot_answer that matters to the question, plus
    the standing limits (Steam reviews only reflect players who write reviews; SteamSpy owner counts
    are estimates; no console data; developers' motives only as stated in announcements).
@@ -35,6 +41,9 @@ Citations:
 Style:
 - Write everything, headings included, in the language the user asked in (translate the section
   names above). Keep quoted reviews in their original language.
+- If two numbers contradict each other (say, an owner estimate lower than the players online
+  right now), don't report either as fact: say the source looks out of date.
+- Use **bold** only; don't use single asterisks or underscores for italics, game titles included.
 - Copy numbers exactly as the findings and evidence give them: don't round up, generalise or
   exaggerate them ("200 hours" never becomes "thousands of hours").
 - Write plain, specific sentences with dates and numbers. Don't claim more significance than the

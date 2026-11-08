@@ -1,0 +1,2487 @@
+{
+  "question": "Why did Baldur's Gate 3 get a wave of negative reviews after Patch 7, and what were players angry about?",
+  "seconds": 65.5,
+  "sample_reviews_types": [
+    "negative",
+    "positive"
+  ],
+  "cited_reviews_positive": 0,
+  "cited_reviews_negative": 11,
+  "missing": [],
+  "tool_calls_per_agent": {
+    "Clarifier": 1,
+    "Lead": 4,
+    "Player Data Analyst 3": 2,
+    "Patch Historian 1": 1,
+    "Review Analyst 2": 4
+  },
+  "response": "# Why did Baldur's Gate 3 get a wave of negative reviews after Patch 7, and what were players angry about?\n\nBetween September 1, 2024, and October 31, 2024, about 96.7% of sampled reviews for **Baldur's Gate 3** were positive, meaning only 3.3% of the reviews in this window were negative [R86][R87]. Despite this overwhelmingly positive overall reception, a minor wave of negative reviews followed the release of Patch 7 on September 5, 2024, which introduced official mod support, new evil ending cinematics, split-screen improvements, and Honour Mode updates [R80][R86][R87]. Players who wrote negative reviews were angry that the new official mod manager broke existing game saves, disabled third-party mods, and caused persistent multiplayer connection and synchronization failures [R92][R98][R118].\n\n## Timeline\n\n* **June 2024**: **Baldur's Gate 3** has an average of 58,746 concurrent players and a peak of 103,767 [R75].\n* **July 2024**: The game averages 66,694 players, peaking at 115,180 [R76].\n* **August 2024**: Player counts remain stable with 66,700 average players and a 119,687 peak [R77].\n* **September 5, 2024**: Patch 7 is released on PC, adding official modding support, split-screen improvements, new evil endings, and new Legendary Actions for Honour Mode [R80].\n* **September 2024**: Average player counts rise by 9.43% to 72,993, with a peak of 136,574 [R78].\n* **September 19, 2024**: Larian releases Hotfix #26 on PC to resolve a game crash and fix a bug where enemies retained Honour Mode Legendary Actions on non-Honour-Mode saves [R81].\n* **October 1, 2024**: Patch 7 rolls out to console and Mac alongside Hotfix #27, which addresses modding experience issues [R80][R82].\n* **October 16, 2024**: Hotfix #28 is released to fix crashes, blockers, and Mod Manager enable-disable loops during multiplayer [R84].\n* **October 2024**: Average players drop by 15.04% to 62,014, with a peak of 120,185 [R79].\n\n## What players say\n\nOut of 600 sampled reviews across English and Simplified Chinese, 580 were positive and 20 were negative [R86][R87]. This indicates that the massive majority of players praised the game and remained highly satisfied during this period [R86][R87]. The negative review share was slightly higher among English players at 4.3% compared to Simplified Chinese players at 2.3% [R86][R87].\n\nHowever, the critical minority focused heavily on technical issues introduced by the patch [R92][R98][R118]. The primary complaint was that the official mod manager corrupted mod libraries, broke existing save files, and stopped third-party mods from working [R92][R98][R113]. For example, a player with 363.8 hours of playtime complained: \"I will change this once they fix their mod manager.  As of right now it breaks the game\" [R92]. Another player with 298.8 hours noted: \"funny how larians attempt to support mods basically destroyed everyones saves and made mods stop working\" [R98].\n\nAdditionally, players experienced a bug where the manager would auto-resubscribe and re-download deleted mods, compounded by login loops on the modding website [R97][R99]. Others criticized broken multiplayer lobbies, desyncs, and lack of helpful error messages [R93][R118][R126]. A player with 78.3 hours stated: \"My negative review hinges entirely upon terribly buggy and poorly thought out multiplayer. Bought the game to play with friends, and it just constantly has problems playing multiplayer\" [R93].\n\nOther complaints included general performance degradation, crashes on high-end PCs, and a frustrating new mechanic in the evil endings where non-Dark Urge players who used tadpoles were forced into a mind flayer transformation unless they passed a difficult DC 25 Constitution save [R94][R123][R127].\n\n## What the data can't answer\n\nThe player count data cannot show exact daily correlations with the release of Patch 7 beyond monthly aggregated averages.\n\nFurthermore, standard limits apply: Steam reviews only reflect the opinions of players who write reviews, and this data does not include console player counts. The developers' motives are only known as stated in their official announcements [R80][R81]. Finally, SteamSpy owner estimates were not provided in the findings.",
+  "session_id": "6fde0f0c-9f78-4465-9571-ea30d4dbba63",
+  "tool_calls": [
+    {
+      "agent": "Clarifier",
+      "name": "search_game",
+      "args": {
+        "limit": 5,
+        "query": "Baldur's Gate 3"
+      },
+      "result": "{'ok': True, 'results': [{'appid': 1086940, 'name': \"Baldur's Gate 3\", 'release_date': '2023-08-03', 'price': '$59.99', 'price_minor': 5999, 'initial_price_minor': 5999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'as_of': '2026-11-08', 'from_snapshot': False}], 'source': 'https://store.steampowered.com/api/storesearch/', 'as_of': '2026-11-08', 'from_snapshot': False, 'partial': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "get_review_trend",
+      "args": {
+        "appid": 1086940,
+        "language": "all"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2020-10-01', 'up': 19543, 'down': 2618, 'pct_negative': 11.8, 'ref': 'R1'}, {'period': '2020-11-01', 'up': 4980, 'down': 452, 'pct_negative': 8.3, 'ref': 'R2'}, {'period': '2020-12-01', 'up': 1747, 'down': 223, 'pct_negative': 11.3, 'ref': 'R3'}, {'period': '2021-01-01', 'up': 1195, 'down': 189, 'pct_negative': 13.7, 'ref': 'R4'}, {'period': '2021-02-01', 'up': 1263, 'down': 175, 'pct_negative': 12.2, 'ref': 'R5'}, {'period': '2021-03-01', 'up': 1679, 'down': 219, 'pct_negative': 11.5, 'ref': 'R6'}, {'period': '2021-04-01', 'up': 935, 'down': 155, 'pct_negative': 14.2, 'ref': 'R7'}, {'period': '2021-05-01', 'up': 767, 'down': 145, 'pct_negative': 15.9, 'ref': 'R8'}, {'period': '2021-06-01', 'up': 575, 'down': 134, 'pct_negative': 18.9, 'ref': 'R9'}, {'period': '2021-07-01', 'up': 1008, 'down': 162, 'pct_negative': 13.8, 'ref': 'R10'}, {'period': '2021-08-01', 'up': 810, 'down': 171, 'pct_negative': 17.4, 'ref': 'R11'}, {'period': '2021-09-01', 'up': 671, 'down': 138, 'pct_negative': 17.1, 'ref': 'R12'}, {'period': '2021-10-01', 'up': 1277, 'down': 196, 'pct_negative': 13.3, 'ref': 'R13'}, {'period': '2021-11-01', 'up': 837, 'down': 131, 'pct_negative': 13.5, 'ref': 'R14'}, {'period': '2021-12-01', 'up': 554, 'down': 113, 'pct_negative': 16.9, 'ref': 'R15'}, {'period': '2022-01-01', 'up': 600, 'down': 153, 'pct_negative': 20.3, 'ref': 'R16'}, {'period': '2022-02-01', 'up': 723, 'down': 161, 'pct_negative': 18.2, 'ref': 'R17'}, {'period': '2022-03-01', 'up': 453, 'down': 104, 'pct_negative': 18.7, 'ref': 'R18'}, {'period': '2022-04-01', 'up': 405, 'down': 123, 'pct_negative': 23.3, 'ref': 'R19'}, {'period': '2022-05-01', 'up': 373, 'down': 108, 'pct_negative': 22.5, 'ref': 'R20'}, {'period': '2022-06-01', 'up': 380, 'down': 147, 'pct_negative': 27.9, 'ref': 'R21'}, {'period': '2022-07-01', 'up': 964, 'down': 234, 'pct_negative': 19.5, 'ref': 'R22'}, {'period': '2022-08-01'"
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_history",
+      "args": {
+        "appid": 1086940,
+        "start": "2024-06-01",
+        "end": "2024-10-31"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'months': [{'ref': 'R75', 'month': '2024-06', 'avg': 58746, 'peak': 103767, 'gain_pct': -0.86}, {'ref': 'R76', 'month': '2024-07', 'avg': 66694, 'peak': 115180, 'gain_pct': 13.53}, {'ref': 'R77', 'month': '2024-08', 'avg': 66700, 'peak': 119687, 'gain_pct': 0.01}, {'ref': 'R78', 'month': '2024-09', 'avg': 72993, 'peak': 136574, 'gain_pct': 9.43}, {'ref': 'R79', 'month': '2024-10', 'avg': 62014, 'peak': 120185, 'gain_pct': -15.04}], 'coverage': ['2020-10', '2026-10'], 'source': 'steamcharts', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Patch Historian 1",
+      "name": "get_patch_notes",
+      "args": {
+        "start": "2024-09-01",
+        "end": "2024-10-31",
+        "appid": 1086940,
+        "official_only": true
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'notes': [{'ref': 'R80', 'id': '6242640076596793610', 'date': '2024-09-05', 'title': 'Patch #7 Now Live!', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6242640076596793610', 'official': True, 'kind': 'patch_notes', 'feed': 'steam_community_announcements', 'summary': '[quote=author]EDIT:\\n\\nPatch 7 is now rolling out to console and Mac players! This update also brings both Hotfix #26 and now Hotfix #27 to all platforms! Catch up on the latest patch notes here.\\n\\nHey gang, \\n\\nAre you ready to embrace evil? Do you yearn to see the consequences of unleashing your inner jerk?\\n\\nGreat! Because Patch 7 releases on PC, today! And with it come new evil ending cinematics, along with Honour Mode improvements and new Legendary Actions, split screen improvements, a new way to mod your game, and a whole bunch of gameplay improvements and bug fixes.\\n\\nMac and console players, this is one of those patches that is so packed with changes and new features - including official modding support for all platforms - that it’s going to take a little longer to get this patch through all the necessary technical checks and requirements and into your hands. Although later than we originally expected, Patch 7 is headed to console and Mac in October, and we will keep you updated with our progress! \\n\\nUnfortunately, this does mean that console players will not be able to load cross-saves if they come from Patch 7 on PC - and multiplayer between PC and Mac will not be possible. We ar', 'summary_is_excerpt': True, 'truncated': True}, {'ref': 'R81', 'id': '6341720536502865104', 'date': '2024-09-19', 'title': 'Hotfix #26 Now Live!', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6341720536502865104', 'official': True, 'kind': 'patch_notes', 'feed': 'steam_community_announcements', 'summary': 'Hey folks,\\n\\nWe’ve got a short and sweet PC hotfix releasing today that is resolving a "
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "name": "get_player_stats",
+      "args": {
+        "appid": 1086940
+      },
+      "result": "{'ok': True, 'ref': 'R85', 'appid': 1086940, 'name': \"Baldur's Gate 3\", 'owners_estimate': '20,000,000 .. 50,000,000', 'average_forever_h': None, 'median_forever_h': None, 'average_2weeks_h': None, 'median_2weeks_h': None, 'ccu_yesterday': 54771, 'steamspy_positive': 736688, 'steamspy_negative': 23974, 'tags': {'RPG': 4536, 'Character Customization': 3522, 'Choices Matter': 3475, 'Story Rich': 3416, 'Turn-Based Combat': 3370, 'Dungeons & Dragons': 3237, 'CRPG': 2637, 'Fantasy': 2619, 'Adventure': 2578, 'Sexual Content': 2483}, 'current_players': 36832, 'owners_unreliable': False, 'note': 'owners_estimate is a SteamSpy estimate range, not a sales figure. Null playtime means no data.', 'warnings': [], 'source': 'steamspy + GetNumberOfCurrentPlayers', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "patches",
+        "task": "Find out when Patch 7 was released for Baldur's Gate 3, what major features it introduced (like official mod support), and any issues or hotfixes mentioned in developer announcements around September and October 2024."
+      },
+      "result": "{\"findings\": [{\"claim\": \"Patch 7 was released on PC on September 5, 2024, and rolled out to console and Mac in October 2024.\", \"evidence\": [\"R80\"]}, {\"claim\": \"Major features introduced in Patch 7 include new evil ending cinematics, Honour Mode improvements with new Legendary Actions, split screen improvements, and a new way to mod your game with official modding support for all platforms.\", \"evidence\": [\"R80\"]}, {\"claim\": \"Hotfix #26 was released on September 19, 2024, resolving a game crash and restoring the ability to switch back to a non-Honour-Mode save without enemies retaining their Honour Mode Legendary Actions.\", \"evidence\": [\"R81\"]}, {\"claim\": \"Hotfix #27 was released on October 1, 2024, alongside Patch 7 rolling out to console and Mac, addressing issues and further improving the modding experience.\", \"evidence\": [\"R82\"]}, {\"claim\": \"Developer announcements mentioned issues such as the 'Connection Failed—Error' when joining a multiplayer game through Steam, and mod incompatibility issues.\", \"evidence\": [\"R81\", \"R82\"]}, {\"claim\": \"Hotfix #28 was released on October 16, 2024, addressing a few crashes, blockers, gameplay bug fixes, and Mod Manager issues such as an enable-disable loop in the Mod Verification Window during multiplayer.\", \"evidence\": [\"R84\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "Retrieve the average and peak player counts for Baldur's Gate 3 in August, September, and October 2024. Did player numbers drop or rise with the release of Patch 7?",
+        "researcher": "players"
+      },
+      "result": "{\"findings\": [{\"claim\": \"In June 2024, Baldur's Gate 3 had an average of 58,746 players, a peak of 103,767, and a gain percentage of -0.86.\", \"evidence\": [\"R75\"]}, {\"claim\": \"In July 2024, the game had an average of 66,694 players, a peak of 115,180, and a gain percentage of 13.53.\", \"evidence\": [\"R76\"]}, {\"claim\": \"In August 2024, the game had an average of 66,700 players, a peak of 119,687, and a gain percentage of 0.01.\", \"evidence\": [\"R77\"]}, {\"claim\": \"In September 2024, the game had an average of 72,993 players, a peak of 136,574, and a gain percentage of 9.43.\", \"evidence\": [\"R78\"]}, {\"claim\": \"In October 2024, the game had an average of 62,014 players, a peak of 120,185, and a gain percentage of -15.04.\", \"evidence\": [\"R79\"]}], \"cannot_answer\": [\"Exact release date correlation with player numbers beyond monthly aggregated averages\"]}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "review_stats",
+      "args": {
+        "group_by": "language",
+        "appid": 1086940,
+        "end": "2024-10-31",
+        "start": "2024-09-01"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'group_by': 'language', 'start': '2024-09-01', 'end': '2024-10-31', 'groups': [{'group': 'english', 'up': 287, 'down': 13, 'pct_negative': 4.3, 'ref': 'R86'}, {'group': 'schinese', 'up': 293, 'down': 7, 'pct_negative': 2.3, 'ref': 'R87'}], 'sampled': 600, 'partial_sample': True, 'total_matching': 15330, 'pages_fetched': 6, 'language_coverage': {'english': {'sampled': 300, 'total_matching': 12678, 'pages_fetched': 3, 'partial_sample': True}, 'schinese': {'sampled': 300, 'total_matching': 2652, 'pages_fetched': 3, 'partial_sample': True}}, 'source': 'https://api.steampowered.com/IUserReviewsService/GetAppReviews/v1/', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "limit": 40,
+        "min_hours": null,
+        "appid": 1086940,
+        "language": "english",
+        "max_hours": null,
+        "end": "2024-10-31",
+        "review_type": "negative",
+        "start": "2024-09-01"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 473, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R88', 'date': '2024-10-27', 'url': 'https://steamcommunity.com/profiles/76561197968062093/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 69.0, 'text': 'I will say that I have given this game more than its fair shake before posting this review.  My initial reaction when the game went to 1.0 last year was not a positive one.  Yet, with all the undying praise of this game and my enjoyment of this genre, I believed I had missed something that others had discovered.  I wanted to know what that was.  So over the past year I have started, stopped, unins'}, {'ref': 'R89', 'date': '2024-10-13', 'url': 'https://steamcommunity.com/profiles/76561198160256951/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 103.8, 'text': 'I wish I could give an on the fence rating, as this game truly is extremely impressive. But I just want to put this out there for anyone who might be like me.\\nI went into this game having heard tales of its dedication to immersion, how every choice mattered, even the small ones. Maybe this set my expectations too high, maybe I was unlucky, but I can confidently say that, at least in my playthrough'}, {'ref': 'R90', 'date': '2024-09-18', 'url': 'https://steamcommunity.com/profiles/76561198285861181/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 37.0, 'text': 'D&D if it was just 150 gigabytes of goonslop'}, {'ref': 'R91', 'date': '2024-10-16', 'url': 'https://steamcommunity.com/profiles/76561198007229026/recommended/1086940/', 'language': 'english', 'positive': False, 'hours_at_review': 69.4, 'text': 'too loud about nothing...\\nstill cripple camera, glitching companions ... \\n3/5'}, {'ref': 'R92', 'date': '2024-09-18', 'url': 'https://steamcommunity.com/profiles/76561198006719796/recommended/1086"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "get_review_trend",
+      "args": {
+        "appid": 1086940,
+        "language": "all"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'language': 'all', 'granularity': 'month', 'series': [{'period': '2020-10-01', 'up': 19543, 'down': 2618, 'pct_negative': 11.8, 'ref': 'R1'}, {'period': '2020-11-01', 'up': 4980, 'down': 452, 'pct_negative': 8.3, 'ref': 'R2'}, {'period': '2020-12-01', 'up': 1747, 'down': 223, 'pct_negative': 11.3, 'ref': 'R3'}, {'period': '2021-01-01', 'up': 1195, 'down': 189, 'pct_negative': 13.7, 'ref': 'R4'}, {'period': '2021-02-01', 'up': 1263, 'down': 175, 'pct_negative': 12.2, 'ref': 'R5'}, {'period': '2021-03-01', 'up': 1679, 'down': 219, 'pct_negative': 11.5, 'ref': 'R6'}, {'period': '2021-04-01', 'up': 935, 'down': 155, 'pct_negative': 14.2, 'ref': 'R7'}, {'period': '2021-05-01', 'up': 767, 'down': 145, 'pct_negative': 15.9, 'ref': 'R8'}, {'period': '2021-06-01', 'up': 575, 'down': 134, 'pct_negative': 18.9, 'ref': 'R9'}, {'period': '2021-07-01', 'up': 1008, 'down': 162, 'pct_negative': 13.8, 'ref': 'R10'}, {'period': '2021-08-01', 'up': 810, 'down': 171, 'pct_negative': 17.4, 'ref': 'R11'}, {'period': '2021-09-01', 'up': 671, 'down': 138, 'pct_negative': 17.1, 'ref': 'R12'}, {'period': '2021-10-01', 'up': 1277, 'down': 196, 'pct_negative': 13.3, 'ref': 'R13'}, {'period': '2021-11-01', 'up': 837, 'down': 131, 'pct_negative': 13.5, 'ref': 'R14'}, {'period': '2021-12-01', 'up': 554, 'down': 113, 'pct_negative': 16.9, 'ref': 'R15'}, {'period': '2022-01-01', 'up': 600, 'down': 153, 'pct_negative': 20.3, 'ref': 'R16'}, {'period': '2022-02-01', 'up': 723, 'down': 161, 'pct_negative': 18.2, 'ref': 'R17'}, {'period': '2022-03-01', 'up': 453, 'down': 104, 'pct_negative': 18.7, 'ref': 'R18'}, {'period': '2022-04-01', 'up': 405, 'down': 123, 'pct_negative': 23.3, 'ref': 'R19'}, {'period': '2022-05-01', 'up': 373, 'down': 108, 'pct_negative': 22.5, 'ref': 'R20'}, {'period': '2022-06-01', 'up': 380, 'down': 147, 'pct_negative': 27.9, 'ref': 'R21'}, {'period': '2022-07-01', 'up': 964, 'down': 234, 'pct_negative': 19.5, 'ref': 'R22'}, {'period': '2022-08-01'"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "appid": 1086940,
+        "end": "2024-10-31",
+        "language": "english",
+        "review_type": "positive",
+        "min_hours": null,
+        "limit": 40,
+        "max_hours": null,
+        "start": "2024-09-01"
+      },
+      "result": "{'ok': True, 'appid': 1086940, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 12205, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R128', 'date': '2024-10-30', 'url': 'https://steamcommunity.com/profiles/76561198262123368/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 139.2, 'text': 'a lot of combat in this dating sim but 10/10 recommend.'}, {'ref': 'R129', 'date': '2024-10-30', 'url': 'https://steamcommunity.com/profiles/76561199129922134/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 146.8, 'text': 'If you want a game that combines epic adventures with hilarious mishaps and a potential midlife crisis over whether to save the world or throw a karaoke party instead, then this game is for you.'}, {'ref': 'R130', 'date': '2024-10-30', 'url': 'https://steamcommunity.com/profiles/76561198972948339/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 58.6, 'text': 'made 2 bosses unalive themselfs'}, {'ref': 'R131', 'date': '2024-10-30', 'url': 'https://steamcommunity.com/profiles/76561198254186626/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 83.0, 'text': 'Great game with a great story, the combat can be a bit challenging when you first start out but you will understand it pretty quick.'}, {'ref': 'R132', 'date': '2024-10-31', 'url': 'https://steamcommunity.com/profiles/76561198971450738/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 392.1, 'text': 'really great game really like it TBHto be honest) i like it becus u get to.Get to make friends Nice i did not receive it for free'}, {'ref': 'R133', 'date': '2024-10-30', 'url': 'https://steamcommunity.com/profiles/76561199127393726/recommended/1086940/', 'language': 'english', 'positive': True, 'hours_at_review': 104.6, 'text': 'Just straight fire'}, {'ref': 'R134', 'date': '2024-10-30', 'url': 'https://steamcommunity.co"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "reviews",
+        "task": "Analyze negative reviews for Baldur's Gate 3 between September 1, 2024, and October 31, 2024. Why were players leaving negative reviews after Patch 7? Specifically look for issues regarding mods breaking, mod manager bugs, performance, multiplayer, or other patch bugs."
+      },
+      "result": "{\"findings\": [{\"claim\": \"Between September 1, 2024, and October 31, 2024, review stats sampled across English and Simplified Chinese show 580 positive reviews and 20 negative reviews (3.3% negative share overall, with English at 4.3% and Simplified Chinese at 2.3%).\", \"evidence\": [\"R86\", \"R87\"]}, {\"claim\": \"Players complained that Patch 7's official mod manager broke existing saves, caused third-party mods to stop working, or resulted in deleted characters and corrupted mod libraries.\", \"evidence\": [\"R92\", \"R98\", \"R99\", \"R113\", \"R127\"]}, {\"claim\": \"Mod manager bugs caused frustration with auto-resubscribing and re-downloading deleted mods, alongside login loop issues on the website.\", \"evidence\": [\"R97\", \"R99\"]}, {\"claim\": \"Multiplayer sessions suffered from persistent bugs, connection failures, lack of useful error messages, and desync issues after Patch 7.\", \"evidence\": [\"R93\", \"R118\", \"R126\"]}, {\"claim\": \"Performance and stability issues caused game crashes, launch failures, infinite loading screens, and general instability even on high-end PCs.\", \"evidence\": [\"R96\", \"R123\", \"R126\", \"R127\"]}, {\"claim\": \"Patch 7's new evil endings frustrated non-Dark Urge players who used tadpoles by imposing a difficult DC 25 Constitution save or forcing them into a mind flayer transformation.\", \"evidence\": [\"R94\"]}], \"cannot_answer\": []}"
+    }
+  ],
+  "evidence": {
+    "R1": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-10-01",
+      "text": "Period 2020-10-01: 19543 positive reviews, 2618 negative reviews, 11.8% negative.",
+      "meta": {}
+    },
+    "R2": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-11-01",
+      "text": "Period 2020-11-01: 4980 positive reviews, 452 negative reviews, 8.3% negative.",
+      "meta": {}
+    },
+    "R3": {
+      "source": "review_trend",
+      "raw_id": "1086940:2020-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2020-12-01",
+      "text": "Period 2020-12-01: 1747 positive reviews, 223 negative reviews, 11.3% negative.",
+      "meta": {}
+    },
+    "R4": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-01-01",
+      "text": "Period 2021-01-01: 1195 positive reviews, 189 negative reviews, 13.7% negative.",
+      "meta": {}
+    },
+    "R5": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-02-01",
+      "text": "Period 2021-02-01: 1263 positive reviews, 175 negative reviews, 12.2% negative.",
+      "meta": {}
+    },
+    "R6": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-03-01",
+      "text": "Period 2021-03-01: 1679 positive reviews, 219 negative reviews, 11.5% negative.",
+      "meta": {}
+    },
+    "R7": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-04-01",
+      "text": "Period 2021-04-01: 935 positive reviews, 155 negative reviews, 14.2% negative.",
+      "meta": {}
+    },
+    "R8": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-05-01",
+      "text": "Period 2021-05-01: 767 positive reviews, 145 negative reviews, 15.9% negative.",
+      "meta": {}
+    },
+    "R9": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-06-01",
+      "text": "Period 2021-06-01: 575 positive reviews, 134 negative reviews, 18.9% negative.",
+      "meta": {}
+    },
+    "R10": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-07-01",
+      "text": "Period 2021-07-01: 1008 positive reviews, 162 negative reviews, 13.8% negative.",
+      "meta": {}
+    },
+    "R11": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-08-01",
+      "text": "Period 2021-08-01: 810 positive reviews, 171 negative reviews, 17.4% negative.",
+      "meta": {}
+    },
+    "R12": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-09-01",
+      "text": "Period 2021-09-01: 671 positive reviews, 138 negative reviews, 17.1% negative.",
+      "meta": {}
+    },
+    "R13": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-10-01",
+      "text": "Period 2021-10-01: 1277 positive reviews, 196 negative reviews, 13.3% negative.",
+      "meta": {}
+    },
+    "R14": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-11-01",
+      "text": "Period 2021-11-01: 837 positive reviews, 131 negative reviews, 13.5% negative.",
+      "meta": {}
+    },
+    "R15": {
+      "source": "review_trend",
+      "raw_id": "1086940:2021-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2021-12-01",
+      "text": "Period 2021-12-01: 554 positive reviews, 113 negative reviews, 16.9% negative.",
+      "meta": {}
+    },
+    "R16": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-01-01",
+      "text": "Period 2022-01-01: 600 positive reviews, 153 negative reviews, 20.3% negative.",
+      "meta": {}
+    },
+    "R17": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-02-01",
+      "text": "Period 2022-02-01: 723 positive reviews, 161 negative reviews, 18.2% negative.",
+      "meta": {}
+    },
+    "R18": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-03-01",
+      "text": "Period 2022-03-01: 453 positive reviews, 104 negative reviews, 18.7% negative.",
+      "meta": {}
+    },
+    "R19": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-04-01",
+      "text": "Period 2022-04-01: 405 positive reviews, 123 negative reviews, 23.3% negative.",
+      "meta": {}
+    },
+    "R20": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-05-01",
+      "text": "Period 2022-05-01: 373 positive reviews, 108 negative reviews, 22.5% negative.",
+      "meta": {}
+    },
+    "R21": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-06-01",
+      "text": "Period 2022-06-01: 380 positive reviews, 147 negative reviews, 27.9% negative.",
+      "meta": {}
+    },
+    "R22": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-07-01",
+      "text": "Period 2022-07-01: 964 positive reviews, 234 negative reviews, 19.5% negative.",
+      "meta": {}
+    },
+    "R23": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-08-01",
+      "text": "Period 2022-08-01: 631 positive reviews, 121 negative reviews, 16.1% negative.",
+      "meta": {}
+    },
+    "R24": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-09-01",
+      "text": "Period 2022-09-01: 465 positive reviews, 106 negative reviews, 18.6% negative.",
+      "meta": {}
+    },
+    "R25": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-10-01",
+      "text": "Period 2022-10-01: 455 positive reviews, 158 negative reviews, 25.8% negative.",
+      "meta": {}
+    },
+    "R26": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-11-01",
+      "text": "Period 2022-11-01: 529 positive reviews, 119 negative reviews, 18.4% negative.",
+      "meta": {}
+    },
+    "R27": {
+      "source": "review_trend",
+      "raw_id": "1086940:2022-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2022-12-01",
+      "text": "Period 2022-12-01: 941 positive reviews, 116 negative reviews, 11.0% negative.",
+      "meta": {}
+    },
+    "R28": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-01-01",
+      "text": "Period 2023-01-01: 959 positive reviews, 107 negative reviews, 10.0% negative.",
+      "meta": {}
+    },
+    "R29": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-02-01",
+      "text": "Period 2023-02-01: 752 positive reviews, 82 negative reviews, 9.8% negative.",
+      "meta": {}
+    },
+    "R30": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-03-01",
+      "text": "Period 2023-03-01: 985 positive reviews, 105 negative reviews, 9.6% negative.",
+      "meta": {}
+    },
+    "R31": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-04-01",
+      "text": "Period 2023-04-01: 895 positive reviews, 82 negative reviews, 8.4% negative.",
+      "meta": {}
+    },
+    "R32": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-05-01",
+      "text": "Period 2023-05-01: 793 positive reviews, 75 negative reviews, 8.6% negative.",
+      "meta": {}
+    },
+    "R33": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-06-01",
+      "text": "Period 2023-06-01: 980 positive reviews, 78 negative reviews, 7.4% negative.",
+      "meta": {}
+    },
+    "R34": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-07-01",
+      "text": "Period 2023-07-01: 8513 positive reviews, 386 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R35": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-08-01",
+      "text": "Period 2023-08-01: 174597 positive reviews, 7370 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R36": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-09-01",
+      "text": "Period 2023-09-01: 66975 positive reviews, 2395 negative reviews, 3.5% negative.",
+      "meta": {}
+    },
+    "R37": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-10-01",
+      "text": "Period 2023-10-01: 29420 positive reviews, 1081 negative reviews, 3.5% negative.",
+      "meta": {}
+    },
+    "R38": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-11-01",
+      "text": "Period 2023-11-01: 87425 positive reviews, 1167 negative reviews, 1.3% negative.",
+      "meta": {}
+    },
+    "R39": {
+      "source": "review_trend",
+      "raw_id": "1086940:2023-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2023-12-01",
+      "text": "Period 2023-12-01: 31852 positive reviews, 1282 negative reviews, 3.9% negative.",
+      "meta": {}
+    },
+    "R40": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-01-01",
+      "text": "Period 2024-01-01: 29493 positive reviews, 1249 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R41": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-02-01",
+      "text": "Period 2024-02-01: 18164 positive reviews, 801 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R42": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-03-01",
+      "text": "Period 2024-03-01: 14453 positive reviews, 715 negative reviews, 4.7% negative.",
+      "meta": {}
+    },
+    "R43": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-04-01",
+      "text": "Period 2024-04-01: 9897 positive reviews, 443 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R44": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-05-01",
+      "text": "Period 2024-05-01: 9534 positive reviews, 420 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R45": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-06-01",
+      "text": "Period 2024-06-01: 8741 positive reviews, 388 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R46": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-07-01",
+      "text": "Period 2024-07-01: 10734 positive reviews, 519 negative reviews, 4.6% negative.",
+      "meta": {}
+    },
+    "R47": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-08-01",
+      "text": "Period 2024-08-01: 9390 positive reviews, 403 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R48": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-09-01",
+      "text": "Period 2024-09-01: 11140 positive reviews, 612 negative reviews, 5.2% negative.",
+      "meta": {}
+    },
+    "R49": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-10-01",
+      "text": "Period 2024-10-01: 7606 positive reviews, 334 negative reviews, 4.2% negative.",
+      "meta": {}
+    },
+    "R50": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-11-01",
+      "text": "Period 2024-11-01: 17253 positive reviews, 388 negative reviews, 2.2% negative.",
+      "meta": {}
+    },
+    "R51": {
+      "source": "review_trend",
+      "raw_id": "1086940:2024-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-12-01",
+      "text": "Period 2024-12-01: 20427 positive reviews, 1239 negative reviews, 5.7% negative.",
+      "meta": {}
+    },
+    "R52": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-01-01",
+      "text": "Period 2025-01-01: 9109 positive reviews, 427 negative reviews, 4.5% negative.",
+      "meta": {}
+    },
+    "R53": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-02-01",
+      "text": "Period 2025-02-01: 7103 positive reviews, 319 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R54": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-03-01",
+      "text": "Period 2025-03-01: 7557 positive reviews, 295 negative reviews, 3.8% negative.",
+      "meta": {}
+    },
+    "R55": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-04-01",
+      "text": "Period 2025-04-01: 9508 positive reviews, 426 negative reviews, 4.3% negative.",
+      "meta": {}
+    },
+    "R56": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-05-01",
+      "text": "Period 2025-05-01: 7820 positive reviews, 366 negative reviews, 4.5% negative.",
+      "meta": {}
+    },
+    "R57": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-06-01",
+      "text": "Period 2025-06-01: 5873 positive reviews, 305 negative reviews, 4.9% negative.",
+      "meta": {}
+    },
+    "R58": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-07-01",
+      "text": "Period 2025-07-01: 6479 positive reviews, 315 negative reviews, 4.6% negative.",
+      "meta": {}
+    },
+    "R59": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-08-01",
+      "text": "Period 2025-08-01: 5799 positive reviews, 247 negative reviews, 4.1% negative.",
+      "meta": {}
+    },
+    "R60": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-09-01",
+      "text": "Period 2025-09-01: 5672 positive reviews, 334 negative reviews, 5.6% negative.",
+      "meta": {}
+    },
+    "R61": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-10-01",
+      "text": "Period 2025-10-01: 5596 positive reviews, 277 negative reviews, 4.7% negative.",
+      "meta": {}
+    },
+    "R62": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-11-01",
+      "text": "Period 2025-11-01: 11619 positive reviews, 249 negative reviews, 2.1% negative.",
+      "meta": {}
+    },
+    "R63": {
+      "source": "review_trend",
+      "raw_id": "1086940:2025-12-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2025-12-01",
+      "text": "Period 2025-12-01: 6637 positive reviews, 523 negative reviews, 7.3% negative.",
+      "meta": {}
+    },
+    "R64": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-01-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-01-01",
+      "text": "Period 2026-01-01: 7202 positive reviews, 503 negative reviews, 6.5% negative.",
+      "meta": {}
+    },
+    "R65": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-02-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-02-01",
+      "text": "Period 2026-02-01: 5097 positive reviews, 291 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R66": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-03-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-03-01",
+      "text": "Period 2026-03-01: 5129 positive reviews, 298 negative reviews, 5.5% negative.",
+      "meta": {}
+    },
+    "R67": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-04-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-04-01",
+      "text": "Period 2026-04-01: 3909 positive reviews, 180 negative reviews, 4.4% negative.",
+      "meta": {}
+    },
+    "R68": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-05-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-05-01",
+      "text": "Period 2026-05-01: 4248 positive reviews, 270 negative reviews, 6.0% negative.",
+      "meta": {}
+    },
+    "R69": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-06-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-06-01",
+      "text": "Period 2026-06-01: 3718 positive reviews, 211 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R70": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-07-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-07-01",
+      "text": "Period 2026-07-01: 4641 positive reviews, 260 negative reviews, 5.3% negative.",
+      "meta": {}
+    },
+    "R71": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-08-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-08-01",
+      "text": "Period 2026-08-01: 4972 positive reviews, 313 negative reviews, 5.9% negative.",
+      "meta": {}
+    },
+    "R72": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-09-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-09-01",
+      "text": "Period 2026-09-01: 4131 positive reviews, 210 negative reviews, 4.8% negative.",
+      "meta": {}
+    },
+    "R73": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-10-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-10-01",
+      "text": "Period 2026-10-01: 3676 positive reviews, 210 negative reviews, 5.4% negative.",
+      "meta": {}
+    },
+    "R74": {
+      "source": "review_trend",
+      "raw_id": "1086940:2026-11-01",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2026-11-01",
+      "text": "Period 2026-11-01: 680 positive reviews, 48 negative reviews, 6.6% negative.",
+      "meta": {}
+    },
+    "R75": {
+      "source": "player_history",
+      "raw_id": "1086940:2024-06",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2024-06",
+      "text": "2024-06: 58746 average concurrent players, 103767 peak, -0.86% vs previous month (SteamCharts).",
+      "meta": {
+        "avg": 58746,
+        "peak": 103767
+      }
+    },
+    "R76": {
+      "source": "player_history",
+      "raw_id": "1086940:2024-07",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2024-07",
+      "text": "2024-07: 66694 average concurrent players, 115180 peak, +13.53% vs previous month (SteamCharts).",
+      "meta": {
+        "avg": 66694,
+        "peak": 115180
+      }
+    },
+    "R77": {
+      "source": "player_history",
+      "raw_id": "1086940:2024-08",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2024-08",
+      "text": "2024-08: 66700 average concurrent players, 119687 peak, +0.01% vs previous month (SteamCharts).",
+      "meta": {
+        "avg": 66700,
+        "peak": 119687
+      }
+    },
+    "R78": {
+      "source": "player_history",
+      "raw_id": "1086940:2024-09",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2024-09",
+      "text": "2024-09: 72993 average concurrent players, 136574 peak, +9.43% vs previous month (SteamCharts).",
+      "meta": {
+        "avg": 72993,
+        "peak": 136574
+      }
+    },
+    "R79": {
+      "source": "player_history",
+      "raw_id": "1086940:2024-10",
+      "url": "https://steamcharts.com/app/1086940",
+      "date": "2024-10",
+      "text": "2024-10: 62014 average concurrent players, 120185 peak, -15.04% vs previous month (SteamCharts).",
+      "meta": {
+        "avg": 62014,
+        "peak": 120185
+      }
+    },
+    "R80": {
+      "source": "news",
+      "raw_id": "6242640076596793610",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6242640076596793610",
+      "date": "2024-09-05",
+      "text": "Patch #7 Now Live!\n\n[quote=author]EDIT:\n\nPatch 7 is now rolling out to console and Mac players! This update also brings both Hotfix #26 and now Hotfix #27 to all platforms! Catch up on the latest patch notes here.\n\nHey gang, \n\nAre you ready to embrace evil? Do you yearn to see the consequences of unleashing your inner jerk?\n\nGreat! Because Patch 7 releases on PC, today! And with it come new evil ending cinematics, along with Honour Mode improvements and new Legendary Actions, split screen improvements, a new way to mod your game, and a whole bunch of gameplay improvements and bug fixes.\n\nMac and console players, this is one of those patches that is so packed with changes and new features - including official modding support for all platforms - that it’s going to take a little longer to get this patch through all the necessary technical checks and requirements and into your hands. Although later than we originally expected, Patch 7 is headed to console and Mac in October, and we will keep you updated with our progress! \n\nUnfortunately, this does mean that console players will not be able to load cross-saves if they come from Patch 7 on PC - and multiplayer between PC and Mac will not be possible. We are still working on bringing crossplay to Baldur’s Gate 3, and like Patch 7, this requires a lot of work and testing before we're prepared to release it into the wild. \n\nWe’ve still got a few more patches up our sleeve for Baldur’s Gate 3 - which will include both crossplay and photo mode, alongside other fixes and updates. But eventually all stories must come to an end. As Swen said during last week’s PAX West panel in Seattle - our final live panel for Baldur’s Gate 3 - it’s time for the team to go back to our cave and hang the armour on the wall while we focus on bringing you our next project.\n\nIn case you missed it, you can catch up on the panel here for a fond look-back at the making of Baldur’s Gate 3, as well as answers to some of your most infernally burning questions.\n\nPatch 7 is certainly a big ‘un, and we’ve been busy tackling feedback and game bugs thanks to the help of mod authors who’ve been testing and populating the modding hub, as well as players who have been sharing their experience with Patch 7 during the Closed Beta. Thank you to all of you who had the opportunity to take part. The playtest has now ended and we’ll be taking this experience and carrying learnings from it into the future!\n\nPatch 7 is approximately 11.6GB on PC, and will require 160GB of free space to install. If you find yourself without the space to install the update, we recommend uninstalling Baldur’s Gate 3 and then re-downloading the patched version!\n\nAs with any patch, some third-party mods may still become incompatible after our latest update. Please try uninstalling your mods and confirm whether the issue persists without them installed. If you continue to have issues after uninstalling all mods, do reach out to our support team. Please also remember to be patient with mod authors as they make any relevant adjustments to their mods!\n\nWe know many third-party mods utilise Script Extender, and as part of the Toolkit and patch testing with mod authors, efforts to help support compatibility with Patch 7 should mean that mods that require Script Extender will continue to work.\n\nA big thank you to Norbyte, creator of Script Extender, and to all of the mod authors who have contributed to the Toolkit with their feedback! We couldn’t have done it without you.\n\nAnd with that, let’s take a look at this thing!\n\nDoes Corruption Call Your Name?\n\nThe Sword Coast is yours to command, to rule like no other.\n\nWhether you embraced absolute power, carried out your father’s will, played as an Origin character or were generally a menace to society, you’ll find Patch 7 now introduces 13 new cinematics that offer varying conclusions to your most evil playthroughs.\n\nIf you’re a streamer who is very demure, very mindful, and you use the 'Show Cinematic Nudity' option in the game's settings, it’s worth noting that we’ve now renamed this option to 'Show Sexual and Violent Cinematics' and updated its description to more accurately indicate what it does. This setting toggles explicit content plus a few select moments of extreme violence that may be distressing to some. We might have also embraced corruption a little too much because the new evil ending cinematics have been included in this setting. They really are that evil.\n\nThis setting does not affect your adventure, your choices, or your access to romance options; however, it does block sexual content with nudity and particularly violent scenes with gore.\n\nWell, she got her dragon. But at what cost?\n\nWhether you’re starting a new game or loading an old save to relive your battle with the Netherbrain, you’ll get to see these new cinematics depending on the choices you make.\n\nIt’s a One-Night Kinda Thing\n\nWe remember clearly stating in Community Update #28 that if you are playing as the Dark Urge, a certain bard would now be able to join the party as a controllable character at camp if there’s an empty slot, TEMPORARILY.\n\nIt would seem some of you didn’t pick up what we were putting down.\n\nThere are no new companions. There is only death. \n\nThe day the music died.\n\nNew Honour Mode Legendary Actions\n\nTo add to the nightmare fuel, we’ve also made some improvements to Honour Mode combat, like giving Malus Thorm a new Legendary Action called Grasping Appendage. Gross.\n\nA New Way to Mod Baldur’s Gate 3\n\nWe’re also bringing you another way to mod your Baldur’s Gate 3 saves, with Patch 7 introducing our very own in-game Mod Manager and modding Toolkit, which can be downloaded on Steam for PC players!\n\nWith this new and supported way to create and install mods, you should see improvements in compatibility and accessibility, and can rest more assured that your supported mods work wherever you’re playing Baldur's Gate 3, which will include consoles a little down the line. \n\nIn-Game Mod Manager\n\nBrowse Baldur’s Gate 3 mods straight from the game!\n\nMods that are created and uploaded via our Toolkit can be browsed and installed directly from the game itself.\n\nEnable or disable mods from the Installed tab.\n\nManage your mods for multiplayer parties by ensuring you have the same mods installed and enabled.\n\nView and manage your installed mods.\n\nBaldur’s Gate 3 Toolkit\n\nBaldur’s Gate 3 Toolkit - Project Selection.\n\nThe Baldur’s Gate 3 Toolkit is a separate application on the Steam store that you can download for free that allows you to create mods specifically for Baldur’s Gate 3.\n\nScripting Changes using Osiris.\n\nBaldur’s Gate 3 will also now officially support some scripted mods using Osiris, our in-house scripting language. This means mod authors will be able to reload their own scripts, handle build errors, and also carry out basic debugging.\n\nPublish a mod straight from the Toolkit!\n\nWhether you want to mod Baldur’s Gate 3 with supported or third-party mods and mod managers - you’ll always have that choice, but if you would like to give our Toolkit a go and try your hand at making a mod with our very own tools, head on over to your Library and select the option to view Tools. If you own Baldur's Gate 3 you should have the Baldur's Gate 3 Toolkit automatically added to your Library.\n\nTo download the Toolkit and the Data DLC necessary for mod creation, you’ll need to make sure that DLC is enabled through the Baldur’s Gate 3 store page, and check that ‘Tools’ is checked in your Steam Library to make the application visible once installed!\n\nYou can do this by:\n\n- Going to your Steam Library\n\n- Right-clicking on Baldur’s Gate 3\n\n- Selecting properties, then DLC\n\n- In the Install column, check that Toolkit Data DLC is checked\n\nTo make sure Tools is selected as showing, use the dropdown navigation above your Library search bar.\n\nGetting Started With Modding\n\nTo help you get set up with supported mods, we’ll be posting a Community Update in the not-so-distant future that’ll go into some more detail on both creating and using supported mods, so make sure to keep an eye out!\n\nIn the meantime, we’ve prepared some further guides to help kickstart your modding adventure:\n\n- Modding Guidelines - to help you understand what kind of content you can upload! \n\n- Getting Started - your go-to place for navigating our guides on creating mods.\n\n- Creating a New Mod - how to launch the Toolkit and start planning your creations.\n\n- Browse Mods Online - either in-game, or on our website!\n\nFor more helpful information on creating your own mods, don’t forget to refer back to the Getting Started guide!\n\nAs Swen also mentioned during the panel at PAX, we want to spotlight your creations on our new YouTube channel, Larian: Channel From Hell, so make sure to keep an eye out for regular mod features, and if you’d like to find out more or get involved, join the Larian Studios Discord server! \n\nBug Fixing & Gameplay Improvements\n\nWhile Patch 7 brings a deluge of new features, improvements, and more, it’s also delivering plenty of bug fixes!\n\nOnce again, these patch notes turned out to be too long for Steam, so please head over to the main Baldur's Gate 3 website to read the full patch notes! \n\nTake a look at some of the highlights:\n\nHIGHLIGHTS\n\n- Introducing 'Evil Endings': Brand new cinematic endings for the truly villainous playthroughs.\n\n- Added our very own Mod Manager, which lets you browse, install, and use mods created by the community.\n\n- Revamped split screen gameplay: When playing on split screen, the two halves of the screen will now dynamically merge together when player characters come close to each other in-game, and dynamically split back up when the characters move apart. This revamp comes alongside many other improvements and polishes to improve the overall split screen experience.\n\nHonour Mode Combat\n\n- If Dror Ragzlin finds himself inside the spider pit, he'll try his best to befriend the spiders residing there with a new spell called Arachnid Compulsion so they can band together to fight the real enemy - you.\n\n- The Bulette has a new condition called Diamond Scales and a new Legendary Action called Shredding Scales.\n\n- Malus Thorm has a new Legendary Action called Grasping Appendage.\n\n- Added a new aura and spell for Spectators: Panicked Sentinel and Ocular Nightmare, respectively.\n\n- Ch'r'ai Tska'an, the leader of the githyanki ambush in Act II, has a new Legendary Action called Soul Sacrifice.\n\n- Ch'r'ai Har'rak, the githyanki leader at the Knights of the Shield Hideout, has a new Legendary Action called Tu'narath's Embrace.\n\n- Ptaris has a new Legendary Action called Ptarian Dogma.\n\nUI\n\n- Updated the Reactions UI so that you only have to toggle the Reactions you want to use and then confirm them. (This saves you from having to select 'Do not react' multiple times!)\n\n- Added a new Equipment Options menu to the Character Sheet on controller.\n\n- The panel that opens to 'Donate' magic items to Gale will now also show items in your Traveller's Chest. It also now indicates which items are currently equipped.\n\n- We noticed some of you hiccoughing bubbles, so the action for washing yourself with soap and sponges is now called 'Use' instead of 'Consume'.\n\n- Fixed your player character's name getting reverted to 'Custom' during Character Creation if you moved on to create your Dream Guardian and then went back to edit the player character again.\n\n- Fixed the wrong spell Ability showing up when selecting a Feat during Level Up.\n\nArt\n\n- Added a new loading screen in Act III, showing the busy streets of Baldur's Gate.\n\n- Fixed the skirt part of the Adamantine Splint Armour missing for female dwarves.\n\n- Fixed the Adamantine Scale Mail clipping on large male characters.\n\nGameplay\n\n- You can now start Custom Mode games using Honour Mode mechanics when starting a new playthrough. You'll be able to do this via the 'Ruleset' dropdown.\n\n- The kuo-toa that promised to build you an army will now support you in the final battle. Unless they all died in Act I.\n\n- The help that the Gondians promised for the final battle will now arrive in the form of a friendly Steel Watcher. Apologies from Zanner Toobin for the delay.\n\n- The hair colour options in Character Creation will now remain accessible after you choose the bald hairstyle, so that you can continue fiddling around with eyebrow colours.\n\n- Overhead dialogues that support multiple player characters can now involve characters assigned to different players. (They were limited to characters controlled by a single player until now.) This means that there will be more banter among player characters in multiplayer games.\n\n- Group Hide will no longer affect summons that aren't linked to the group in the Party Line.\n\n- Changed the behaviour for selecting camp supplies for a Long Rest. When selecting camp supplies that are stacked, the game now only takes what it needs from the stack.\n\n- You can no longer cheese the Leap of Faith trial at the Gauntlet of Shar by just clicking the final platform and letting your character pathfind their way there. Shar threatened to smite us if we didn't fix this one.\n\n- Fixed a bug where resurrecting Lae'zel on the beach in Act I would cause her to appear in the Party Line but not in the world, preventing you from leaving Act I.\n\n- Patched up some savegames where Gale still had his Necrotic Aura when he shouldn't on load.\n\n- Fixed Minthara's body sometimes turning invisible on the Level Up screen. (We sorta liked the floating-head-and-hands look, but hey.)\n\nAnimation\n\n- Astarion now has idle animations at camp that aren't just him reading a book.\n\n- Added a new idle animation for Minsc at camp - Boo may or may not have taught him some tai chi.\n\n- Karlach will no longer brush the shaved side of her head.\n\n- Polished the appearance of neck kisses in lovey-dovey scenes with Shadowheart on the Sharran path for characters with large body types and dragonborn characters.\n\nWriting and Flow\n\n- Dotted some dialogue options and voiced lines into a handful of dialogues across the game, particularly to account for edge-case flows. These changes are described in more detail in the main patch notes below.\n\n- Added three new Narrator lines for Dark Urge characters to add a bit more reactivity across the game. These additions are described in more detail in the main patch notes below.\n\n- Resolved an issue that had been rendering some romance party banters inaccessible while adventuring.\n\n- Fixed a flow issue where Avatar Lae'zel did not have the option to leave and ascend or stay on Faerûn after the Netherbrain is defeated.\n\n- Added a dialogue option asking for a kiss in more paths of Wyll's epilogue dialogue.\n\n- If you're in holographic form in the epilogue, Wyll won't automatically assume he's talking to Lae'zel.\n\n- A bug that had been preventing Wyll’s romance greeting from triggering has now been fixed, so players in Act III who have a stable, loving, and committed relationship with Wyll will now see his romance greeting triggering correctly.\n\n- Fixed priorities on Wyll’s greetings so that low approval greetings will now trigger accordingly for players with low approval. \n\n- Companions should now be more sympathetic to Astarion fleeing from the sun.\n\n- Added a new dialogue in which Karlach will react to Dammon if she finds him dead after he told her that he can help her.\n\n- In Act II, Minthara will now react to you having knocked her out in Act I.\n\nScripting\n\n- Fixed several issues (related to resurrecting characters via Withers, restructuring the party at night, and automatic camp night scenes) that would trap you in an eternal slumber, unable to end a Long Rest.\n\n- Fixed a bug causing Shadowheart to keep repeating one line when you talk to her after she's resurrected by Withers from the Shadowfell.\n\n- Fixed a small flow issue preventing you from commenting on Gale's last name.\n\n- Fixed several occurrences of Wyll still having an exclamation mark above his head when he already told you everything he had to say. \n\n- When playing as the Dark Urge, Minthara will no longer act as though you accepted Bhaal when you've been stripped of his influence.\n\n- Fixed a broken kissing scene after you gave Shadowheart the Idol of Shar.\n\n- Fixed an issue where Jaheira would stop following the party after spending a night outside of the party.\n\n- Fixed the rune tablets on the nautiloid sometimes not triggering the Narrator's lines.\n\n- Clerics of Lathander should now recognise his symbol on a Lathanderian amulet.\n\n- Ensured the avatar is prioritised as the main speaker in dialogues related to the hag's Act I surrender.\n\n- Minthara does, in fact, now have something to say about Orin after you kill her.\n\n- Made the romance scene at night with Wyll in Act III unskippable if it triggers to avoid accidentally skipping it and not being able to finish the romance arc.\n\n- If Avatar Karlach and Wyll are partners and go to the Hells together, he'll now act accordingly during the epilogue.\n\n- Fixed Karlach's scene in Avernus not playing if you decided to go with her when playing as Wyll.\n\n- A bug has been fixed so that Wyll will now talk to his father if Ansur is defeated after the pact with Mizora is broken but Ravengard is saved from the Iron Throne despite this, to decide on his title. \n\n- Lae'zel will now wait a little longer for you at the site of her recruitment if you tell her you'll be back.\n\n- Improved Lae'zel's idle camp behaviours to align a bit better with the other companions'.\n\n- Fixed the fade-to-black after Karlach's scene in Avernus at the end of the game, which would give you a very brief glimpse of Game Developer Land.\n\n- Breaking up with Karlach by speaking with another companion you're dating the morning after her romance scene won't block her dialogue anymore.\n\n- Reinstated Gale's last line in his detailed explanation of ceremorphosis and tweaked a dialogue option to react to it.\n\n- Now that you can give Gale magic items from the Traveller's Chest, he will leave again if you refuse to do so.\n\n- Patched up some savegames that had a bug that would prevent the dialogue between Gale and Mystra at the end of the game from triggering.\n\n- Fixed a bug that let you kiss Gale even if he was in a disguised form before confronting the Netherbrain.. Also fixed this dialogue with him cutting off before you could give him a smooch.\n\n- Reworked the script that determines whether a character is too busy to talk. This will prevent bugs like Minthara's dialogue not triggering at Moonrise Towers after you rescue her, and knock-on effects as a result of this, like not being able to rest or fast travel.\n\nPerformance\n\n- Continued to make performance and stability optimisations across the game and implemented many under-the-hood code fixes.\n\n- Optimised performance. This will have a more noticeable impact in areas with large numbers of NPCs (like the Lower City) and will reduce peak memory usage when loading levels for the first time. It will also be noticeable when managing lots of loot (e.g. when transferring everything from a camp chest to a character's inventory).\n\nCinematics\n\n- Reworked and revamped the cutscene that plays when you interact with Ansur's bones in the Wyrmway.\n\n- Polished facial expressions and emotions across companion dialogues, including to the facial animations of your character during some kissing cinematics, including with the Vampire Lord Astarion.\n\n(Continue reading the FULL Patch Notes here!)",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R81": {
+      "source": "news",
+      "raw_id": "6341720536502865104",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6341720536502865104",
+      "date": "2024-09-19",
+      "text": "Hotfix #26 Now Live!\n\nHey folks,\n\nWe’ve got a short and sweet PC hotfix releasing today that is resolving a game crash, as well as restoring your ability to switch back to a non-Honour-Mode save without fighting for your life with enemies retaining their Honour Mode Legendary Actions. Whoopsies.\n\nWith October less than two weeks away, console and Mac players can expect Patch 7 to arrive soon! This release will also bring some further minor tweaks and fixes for the in-game Mod Manager on PC.\n\nThank you for taking the time to share your feedback on Patch 7! If you’re still noticing a few incompatibility issues with mods, give our troubleshooting a go and try uninstalling your mods to confirm whether the issue persists without them installed. If you continue to have issues after uninstalling all mods, you can reach out to our support team by clicking here. \n\nWhether you’re making the most out of the new in-game Mod Manager or continuing to use third-party mods alongside it, please remember to be kind and patient to mod authors. \nNot all of your favourite mods may be available to install in-game, and it’s important to note that attempting to port or recreate another person’s mods using the Baldur’s Gate 3 Toolkit is not permitted. Give our modding guidelines a read by viewing them here.\n\nHotfix #26\n\nMod Manager\n\n- Resolved some issues with mod filters not working as intended.\n\n- Fixed an unexpected crash when navigating the in-game Mod Manager.\n\nGame\n\n- Honour Mode enemies should no longer retain their Legendary Actions when switching from an Honour Mode save to a non-Honour-Mode save.",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R82": {
+      "source": "news",
+      "raw_id": "6339469370200698392",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6339469370200698392",
+      "date": "2024-10-01",
+      "text": "Hotfix #27 Now Live!\n\nHey everyone,\n\nAlong with Patch 7 rolling out today to those on console and Mac, we are releasing an additional hotfix on all platforms that addresses some issues and generally further improves your modding experience! \n\nConsole and Mac players! Today’s update brings to you the following: \n\n- Patch 7 \n\n- Hotfix 26\n\n- Hotfix 27 (this very one!)\n\nThank you for continuing to share your Patch 7 experience with us! We’re continuing to work on resolving some of the issues you have reported, including the “Connection Failed—Error” when joining a multiplayer game through Steam. For this particular issue, our support team has put together a workaround that you can follow to avoid running into this issue while we continue to investigate it. \n\nIf you’ve experienced an issue while playing Patch 7 and have confirmed via troubleshooting that the issue persists without mods installed, please follow the steps here to contact our support team. \n\nPatch 7 & Modding Information\n\nLooking to revisit the latest patch notes or want to try your hand at modding?\nCheck out the links below!\n\n- Full patch notes for Patch 7\n\n- Get started with modding on PC by following this guide\n\n- Community Update #29 - Playing With Mods - Your quickstart guide to downloading and playing with mods!\n\nMODDING\n\nMod Manager\n\n- The 'Trending' filter now correctly shows the trending mods.\n\n- Fixed an issue preventing you from immediately starting a modded multiplayer game after installing the required mods via the Mod Issues window.\n\n- Fixed an issue on controller preventing you from loading a modded game after disabling the mod in the Mod Issues window.\n\n- Fixed the Load Game interface registering the input of the arrow keys and the enter key in the background while the Mod Issues window is open.\n\n- Fixed a crash when disabling a mod that adds a weapon with an OnEquip passive.\n\n- Made sure 'Uninstall'/'Unsubscribe' show up correctly on the Mod Details page and the Installed tab, and added a label for mods you're subscribed to on the Browser tab on controller.\n\n- Improved the messaging for when multiple mods fail to download through the Mod Manager.\n\n- Made the Mod Issues window wider.\n\n- Updated the mod.io login screen to improve spacing across different languages.\n\n- Fixed the alignment of the warnings in the Mod Issues window when accessed via the Load Game button, and added confirmation for installed as well as subscribed mods on controller.\n\n- Fixed the position of the download bar on controller and fixed the button prompt order on the Mod Details page.\n\n- Improved the alignment and spacing on the account creation and login screens in the Mod Manager.\n\n- Fixed UI elements overlapping the Report button when you're not logged into mod.io.\n\n- Fixed the Memory Used element in the Mod Manager sometimes displaying the size of a mod instead of the actual memory used.\n\n- Added the third-party mods warning to the Main Menu on consoles and improved its appearance, particularly on split screen.\n\n- Closing the Mod Details page to go back to the browser will now maintain selection on the mod you just viewed.\n\n- The scroll bar in your Installed Mods list will no longer jump to the top after you uninstall a mod.\n\n- Hid the Memory Used text when opening an image on the Mod Details page.\n\n- Fixed the Memory Used text not showing the correct value in certain cases.\n\n- Removed an unnecessary vertical scrollbar that would appear when there were more than four images on the Mod Details page.\n\n- Going to the main menu and then reopening the Mod Manager while a mod is downloading will now correctly indicate that it's still downloading instead of displaying the 'Download' button again.\n\n- The scrollbar in the mod browser will now jump to the top when you go to a new page.\n\n- Fixed the 'Uninstall' button sometimes not working on the Mod Details page.\n\n- Fixed the wrong email address causing a password error when trying to log into the Mod Manager, requiring you to retype your password even if that was correct.\n\n- Fixed an issue with the Mod Manager's page selector, which would return to Page 1 if you clicked on a page beyond Page 9.\n\n- The Mod Issues window will no longer warn you about unresolved issues for mods in the New Mods Detected section.\n\n- When you successfully create or log into a Larian Account via the Mod Manager, you'll now immediately get led to the mod.io splash screen.\n\n- Improved the loading speed of thumbnails in the Mod Manager.\n\n- The tab key now works in the account creation and login screens.\n\n- Opening the Mod Details page from your Installed tab and then going back to the Installed tab will now maintain selection on the mod you just viewed.\n\n- The reasons for reporting a mod are now radio buttons instead of checkboxes.\n\n- The search filters in the Mod Manager are now enabled by default on keyboard and mouse.\n\n- Fixed the 'Update' button still appearing after you update to the latest version of a mod.\n\n- Fixed two sounds playing instead of one when changing pages in the Mod Manager on controller.\n\n- Fixed a button getting cut off on the Japanese localisation of the Mod Manager's splash screen.\n\n- Fixed the Mod Issues window displaying misleading warnings for mods that have yet to fully load.\n\n- Added a scrollbar to the Mod Details page on controller so you can now read longer descriptions, and fixed some UI elements getting cut off on certain aspect ratios on keyboard and mouse.\n\n- Fixed the aspect ratio of mod images in the Mod Manager.\n\n- The Mod Issues window now shows a spinning wheel while mod information is loading.\n\n- Fixed the mod loading order when enabling or disabling mods or when loading an unordered modsettings file.\n\n- Fixed incorrect mod names appearing in the Mod Issues window when loading a savegame with additional third-party mods enabled.\n\n- Fixed the wrong button prompt showing up on controller on the Mod Details page.\n\nToolkit\n\n- In the UUID Object Editor, fixed the formula bar not correctly updating to reflect the text selected in the SpellList column.\n\n- Fixed a crash when deleting a visual texture that shares a GTex with another visual texture and when trying to preview this still-existing visual texture with no GTex.\n\n- Prevented the splash screen from being modded, which could let you bypass accepting terms and conditions.\n\n- Fixed a crash when opening the Project Settings window when a mod is also in the downloaded folder.\n\n- Fixed the Root Template Manager selecting more than one item when changing folder. This could cause it to, for example, delete more than one item when clicking the 'Delete Selected' button.\n\nGAME\n\nGameplay\n\n- Reminded characters how to use ladders.\n\n- Fixed items disappearing when sending a container with a stackable item inside to a companion that has a stackable item of the same type in the main inventory.\n\n- Fixed items inside a container not scattering when you destroy the container.\n\n- Fixed BOOOAL being invisible when starting combat.\n\n- Fixed some horizontal lines appearing when Ambient Occlusion is on.\n\n- The Ruleset options are now available in the Custom Mode settings if you select the mode via the multiplayer lobby.\n\nCrashes and Blockers\n\n- Fixed a crash related to missing equipment for new modded classes.\n\n- Fixed an occasional crash when returning to the main menu from the multiplayer lobby.\n\n- Fixed a potential soft-blocker caused by falling beneath an elevator in the Mind Flayer Colony and getting stuck there. Characters who slip through the gaps will now die and become Soul Echoes.\n\n- Fixed a crash when trying to load into a playthrough instead of a particular savegame within that playthrough.\n\nCinematics\n\n- Wyll will no longer be squatting over an invisible throne during his evil ending cinematic.\n\n- Fixed an NPC popping into place before meeting his grizzly end in the Dark Urge evil ending cinematic.\n\n- Fixed some camera bugs when talking to His Majesty. Also fixed a case where His Majesty would appear unambiguously headless, revealing his glowing, hollow insides.\n\n- Fixed some camera bugs and freeze-frames during Karlach's evil ending cinematic.\n\n- Fixed some minor visual bugs during the Dark Urge evil cinematic atop the Netherbrain, including Karlach baring her bottom teeth for an uncomfortably long time.\n\nWriting\n\n- The Shattered Flail's description now indicates that it doesn't trigger other passives that react to healing.\n\n- Fixed several typos and other minor text issues across the game.",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R83": {
+      "source": "news",
+      "raw_id": "6339469370200698552",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6339469370200698552",
+      "date": "2024-10-01",
+      "text": "Community Update #29 Playing With Mods\n\nWhy hello there! You’re looking great, have you done something with your hair or just reconfigured your entire face to look like a fish? \n\nIf your mods are any indication, the answer is yes and then some. It’s not even a month since Patch 7 dropped on PC - complete with our official modding toolkit - and already you’ve uploaded over 1,000 mods and racked up more than 15 million downloads! \n\nWe’ve watched as you’ve customised your dice with flames and iridescent pearl, lightened the load of gold in your packs, and adjusted your party limit from 4 to 16 - because who needs personal space anyway?\n\nAnd now, those of you on console and Mac can finally join in, with Patch 7 rolling out to these platforms starting today. Keep reading to learn how to kick off your modded run, plus check out some of the most popular mods ready for you to explore.\n\nToday’s update also brings Hotfix #26 and Hotfix #27 to all platforms - if you want to check out the patch notes in full, point your eyes in this direction. But far from being our last patch, you can still expect to see crossplay and a photo mode for Baldur’s Gate 3 in the future. \n\nOver 15 Million Community-Made Mods Downloaded - and Counting!\n\nWhat better way to celebrate the inevitable chaos set to ensue than with another animated short made in collaboration with Spud Gun Studios, the masterminds behind Mashed. This time, our brave heroes are facing off against the latest threat to Baldur’s Gate: Mods! \n\nGiant space hamsters? Old news. It’s rabbits you’ve got to worry about now.\n\nPatch 7 & Modding Information\n\nLooking to revisit the latest patch notes or want to try your hand at modding?\nCheck out the links below!\n\n- Find the full patch notes for Patch 7 here.\n\n- Hotfix #27 now live on all platforms.\n\n- Get started with modding by following this guide.\n\nPlaying With Baldur’s Gate 3 Mods\n\nIf you’re thinking about starting a modded run and want to know what you’re getting into, whether you’re playing on console, Mac, or PC, then this is the guide for you!\n\nWhere do I even start?\n\nSo you want to enhance your journey to Baldur’s Gate with a little community-made magic? \n\nWhile the Baldur’s Gate 3 Toolkit used to create mods is only available on PC, a whole selection of player-created mods are now available on console and Mac! \n\nHow are mods chosen for release on other platforms?\n\nOnly mods made with and uploaded using the Baldur’s Gate 3 Toolkit and which pass internal testing can be eligible for release on the console and Mac in-game mod browser. \n\nTechnical limitations on certain platforms mean that some PC mods will not be available for Mac or console. Our team will need to test all mods requested to be brought to these platforms to confirm whether they can be made available. \n\nMod Authors can let us know if they’d like to see their mod available on console and Mac during the upload process. Our Community Team will then check whether the mod adheres to our modding guidelines, before sending over batches of mods to undergo internal checks that look at the mod’s basic functionality, usability, and stability.\n\nIf all looks good, the mods will then be made available on these platforms! \n\nWill more mods be made available on console and Mac?\n\nYes! There are currently, uh, 69 mods that have passed internal testing, and we’ll be adding more as we go. Making mods available on platforms other than PC will be a continuously reviewed process that may change to include additional functionality in the future. Mods ready for both Mac and console that have passed testing will be released in batches, so keep an eye out on your in-game mod browser to see when new mods are added.\n\nPlease note: Not all PC mods will make it to consoles or Mac, and we kindly ask that you do not build upon an existing mod or port another mod author’s mods in an attempt to make them available in the in-game mod manager. \n\nMod authors work hard to create their mods, whether they upload them via our Toolkit or third-party sites. Please respect their time and work!\n\nTo read up on what mods you can expect for console and Mac, please click here!\n\nNavigating The In-Game Mod Manager\n\nBrowsing Mods In-Game \n\n- Discover mods by heading to the in-game Mod Manager when you start the game!\n\n- On the Browse tab, use the filters to browse through a range of different mods.\n\n- Please read the mod Description carefully. You may need to take additional steps for the mod to work correctly, such as downloading a separate mod or adjusting in-game settings.\n\n- Hit the download button to install a mod, wait for it to download, and get ready to play!\n\nManaging Your Mods\n\n- Head to the Installed tab to view your installed mods.\n\n- Disable or enable mods by checking the box to the right of the mod.\n\n- Disabling some mods might affect your existing saves, so it’s a good idea to keep this in mind when you install mods!\n\nSynchronising Mods\n\nWhether you’re loading a modded savegame or planning on playing Multiplayer with your mods enabled, you’ll need the same version of mods installed. \n\nSay hello to the Verification Window! This window is designed to give you all the information and opportunity to synchronise the mods you currently have installed/enabled to the savegame or multiplayer game that you’re trying to join. \n\nWhen loading a savegame from either the main menu or when joining a Multiplayer session through direct connect from the lobby or by selecting a server, this window will be triggered.\n\nSupport Guide: How to enable Direct Connections.\n\nWhen the Verification Window is shown, you might be presented with a few different options, which we’ve detailed in the table below.\n\n \n\n Download\n You’ll see the option to download a mod if you don’t already have it installed, but the Multiplayer session or savegame has that mod enabled.\n \n\n \n\n Enable\n If you don’t have a mod currently enabled, but the Multiplayer session does, you’ll see the option to enable it.\n \n\n \n\n Update\n You’ll see the option to update a mod if you have the mod enabled, but the Multiplayer session has a newer version.\n \n\n \n\n Downgrade\n You’ll see the option to downgrade a mod if you have the mod enabled, but the Multiplayer session has an older version.\n \n\n \n\n New Mods\n Mods listed under New Mods are ones that you have enabled but are not enabled in the Multiplayer session you are joining.\n \n\n \n\n Third-Party\n Mods listed as Third-party are mods that are not available via the in-game mod browser.\n \n\nCross-saves and Patch 7\n\nWith Patch 7 now rolling out to Mac and console players, cross-saves will once again be compatible. If you have PC saves that include curated mods (mods that have been approved for console or Mac), these should now work on your platform, and you will be prompted to download these mods when you try to use a cross-save on another platform.\n\nIf you have been playing with mods on PC that were not approved for console, the cross-save using these mods cannot be loaded on console.\n\nPlatform-based Achievements\n\nAchievements are automatically disabled when you’re using mods, so keep this in mind if you’re still planning on completing your Baldur’s Gate 3 achievements! \n\nTroubleshooting Mods\n\nWhen you download and play with files that modify your game, you change the way your game behaves, which can create conflicts with the way your game is designed to run. \n\nWhile console mods undergo basic stability testing, they are community-made, and changes to the game, such as a new update or mods with certain dependencies or conflicts, can impact how your mods function. \n\nPlaying with a modded save sometimes means that issues can occur, such as:\n\n- Failing to load past a certain percentage when starting a save\n\n- Crashing on launch \n\n- Issues with the UI, including missing options or overlapping menus\n\n- Shader issues, including missing makeup or face textures\n\n- A land of naked avatars during Character Creation\n\nIf you run into an issue while using mods, you can help our support team track bugs by identifying whether the problem is with the game itself or a mod you may have installed. Understanding the distinction means we can offer you better official game support. However, we are unable to directly manage or fix any community-created mods.\n\nReporting Supported Mods: If you’ve noticed a mod that violates our guidelines, you can report it using the reporting functionality on the mod listing.\n\nTry these steps:\n\n- Navigate to the in-game Mod Manager and un-check your installed mods. With the mods disabled, see if the issue persists.\n\n- If the issue no longer persists, and therefore seems related to a particular mod, you can reach out to the mod author and leave them a comment on the mod listing that explains some more about the issue you’re experiencing.\n\n- If the issue persists without the mod installed and you believe the issue is with the base game, please report it to our support team using this report form.\n\nPlease note: If you are using third-party mods on PC, uninstalling and reinstalling the game will not remove all mod files. Please follow the steps outlined here to remove third-party mods!\n\nMods To Get You Started\n\nPatch 7 releases on console with more than 60 community-made mods available and ready to download! Here are some of our favourites to get you started.\n\nAdjustable Party Limit by PixellBytes\nAvailable on: PC, Mac, and Console\n\nA favourite for many, this mod by PixellBytes allows you to leave no companion behind as you journey through the Sword Coast!\n\nAdding spells that allow you to adjust the number of companions in your party, you’ll now have the opportunity to bring along up to 15 other party members. This mod also works in Multiplayer, but you’ll need to make sure everyone has the same mods loaded!\n\nImpUI (ImprovedUI) by Djmr\nAvailable on: PC, Mac, and Console \n\nDjmr’s ImpUI provides support for UI mods, and acts as a dependency for layout tweaks to the Character Creation screen, so this is a great one to have in your arsenal if you’d like to experiment with your character’s appearance! \n\nThe ‘Chin’ category here is used by the Kay’s Hair Extensions mod, with ImpUI.\n\nMods that are required to make another work are referred to as a dependency. These mods can be seen in the mod listing and should be automatically downloaded and enabled when you download a mod that requires it as a dependency.\n\nFaerunColors by TechRoot\nAvailable on: PC, Mac, and Console\n\nComplete with more than 80 dyes that aim to represent Deities and famous entities from Faerun, TechRoot’s mod allows you to switch up the colourways of your favourite garments with a range of dyes that you’ll be able to find in your camp chest!\n\nFaces of Faerun by Aloija\nAvailable on: PC \nDependency Mod Required: ImpUI (ImprovedUI)\n\nIf vanilla isn’t your flavour, then Aloija’s mod could be the one for you!\n\nThis mod adds a range of alternative heads for Character Creation and uses ImpUI, mentioned earlier in this list, to allow you to access and customise the available heads. \n\nKay’s Hair Extensions by perseidipity\nAvailable on: PC\nDependency Mod Required: ImpUI (ImprovedUI)\n\nAre Gale’s locks not voluminous enough for you? Then Kay’s Hair Extensions mods could be the perfect option for you! This mod includes a range of hair pieces that have been meticulously cut and snipped from existing vanilla hairstyles, allowing you to mix and match styles to create unique looks.\n\nUnlockLevelCurve by Dustbag\nAvailable on: PC, Mac, and Console\n\nIf you’re interested in multiclassing and want to continue your journey beyond Level 12, Dustbag’s UnlockLevelCurve mod allows you to continue to climb through levels 13-20, as well as provides more resources, spell slots and class features!\n\nAll Camp Clothes and Dyes by KatLix\nAvailable on: PC \n\nHead to camp and let out your passion for fashion with KatLix’s All Camp Clothes and Dyes mod, which offers you containers containing all camp clothes, all origin clothes, all underwear and shoes, as well as dyes and dye removers.\n\nWeightless Gold by Curious_George\nAvailable on: PC, Mac, and Console\n\nIf your pockets have been weighing you down and causing you to strut around the Sword Coast, this mod changes the weight of gold to 0, so you can go about your day without dragging your feet!\n\nWant to really go fast? Weightless Consumables by Belinn is another great mod also available on console that makes a number of consumables entirely weightless.\n\nLeicarna's Piercings: Crystals by Leicarna\nAvailable on: PC\n\nLeicarna’s mod adorns the ears of all vanilla races (except dragonborn), with glitz and glam in the form of four new piercing sets with multiple colour variations that can be added during Character Creation.\n\nBetter Inventory UI by Caites\nAvailable on: PC, Mac, and Console\nDependency Mod Required: ImpUI (ImprovedUI)\n\nThis mod by Caites adds a range of icons to help distinguish read and unread books, throwable items, consumable drinks and alchemy components, better identify instruments from weapons, highlights camp clothing from that of armour, as well as usable items. \n\nThis mod also has an add-on mod that can be downloaded to add new icons and categorise food, dyes, healing potions, arrows, and story-related items!\n\nNew to the world of modding? Feeling overwhelmed, frightened, yet desperate to give Astarion a beard? We’ve also prepped a video walking through some of the best starter mods, on the newly launched Larian: Channel from Hell which promises exclusive behind-the-scenes looks, developer interviews, and more regularly scheduled chaos: https://youtu.be/DQYMwztczUs",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R84": {
+      "source": "news",
+      "raw_id": "6212244583171984368",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/6212244583171984368",
+      "date": "2024-10-16",
+      "text": "Hotfix #28 Now Live!\n\nHey everyone,\n\nAnother small hotfix for all platforms is coming your way today! Hotfix #28 addresses a few crashes and blockers, integrates a handful of gameplay bug fixes, and resolves some issues with the Mod Manager.\n\nThis hotfix also fixes an issue with multiplayer, where some players were getting caught in an enable–disable loop in the Mod Verification Window when trying to disable a mod that the host doesn't have.\n\nMODDING\n\n- On PS5, the 'Continue' button will now work the same as the 'Load Game' screen in that it won't allow you to start a game if there are any mod issues.\n\n- On console, when loading a savegame that has unresolved mod issues, the Mod Verification Window will no longer keep asking you to re-download or uninstall mods when the action has already been taken.\n\n- Resolved an issue with mod dependencies not being loaded in the correct order after enabling/disabling some mods.\n\nMod Manager\n\n- Fixed the animated downloading bar not appearing in the Mod Verification Window after you click 'Download'.\n\n- Fixed the horizontal scrollbar on the Mod Details page not being vertically centred between the arrows that flank it.\n\n- Fixed a bug preventing you from opening the Mod Manager on PC when using a controller.\n\n- Fixed the button prompts in the Mod Details page not updating correctly when using a controller.\n\n- Fixed the filter tags in the Mod Manager not appearing in localised languages and made sure that the English string is shown as a backup in case there's an issue with fetching the translation.\n\n- The mod browser scrollbar now resets to the top when you navigate to a previous or next page.\n\n- On PS5, the Mod Manager now correctly reports the amount of remaining memory after uninstalling a mod.\n\n- Fixed a crash that could occur when changing pages in the Mod Manager.\n\n- Fixed clients on a multiplayer game getting caught in an enable–disable loop in the Mod Verification Window when trying to disable a mod that the host doesn't have.\n\n- Updated the 'Explicit Content' filter's name to 'Mature Content'.\n\n- Updated the name of the Mod Issues window to 'Mod Verification Window' to more accurately reflect what the window is for, and updated its description.\n\nGAME\n\nGameplay\n\n- Improved loading times for players with many mods installed.\n\n- You can no longer add items to your wares even if they cannot become wares (e.g. pact weapons) by selecting them along with another item that can become a ware. This prevents a trade exploit where you could sell your wares and the bound items would not leave your inventory. Any more of these up your sleeves?\n\n- Fixed Honour Mode features, like Legendary Actions, carrying over to non-Honour-Mode games if you'd previously loaded an Honour Mode save.\n\n- On PS5, fixed the DualSense lightbar updating colours every single frame of the game when a new user logs in with a new controller.\n\n- Resolved an issue with Wyll opting for negative greeting nodes even when he does like you.\n\n- Fixed the character models becoming offset in the Trade UI when switching between trade and barter when using a controller.\n\nCrashes and Blockers\n\n- Fixed a crash when trying to load into a playthrough rather than a particular savegame within that playthrough.\n\n- Fixed a crash that could occur when loading a savegame.\n\n- On PS5, fixed a potential crash when going full disco on the DualSense lightbar.",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R85": {
+      "source": "player_stats",
+      "raw_id": "steamspy:1086940:2026-11-08",
+      "url": "https://steamspy.com/app/1086940",
+      "date": "2026-11-08",
+      "text": "Baldur's Gate 3 (SteamSpy, 2026-11-08): owners estimate 20,000,000 .. 50,000,000; yesterday's peak concurrent players 54771; average playtime None h, median None h (None = no data); current players on Steam 36832; top tags RPG, Character Customization, Choices Matter, Story Rich, Turn-Based Combat, Dungeons & Dragons, CRPG, Fantasy, Adventure, Sexual Content.",
+      "meta": {
+        "owners_estimate": "20,000,000 .. 50,000,000",
+        "current_players": 36832
+      }
+    },
+    "R86": {
+      "source": "review_stats",
+      "raw_id": "1086940:2024-09-01:2024-10-31:language:english",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-10-31",
+      "text": "Review statistics for language group 'english' from 2024-09-01 to 2024-10-31: 300 observed reviews, 287 positive, 13 negative, 4.3% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "english",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R87": {
+      "source": "review_stats",
+      "raw_id": "1086940:2024-09-01:2024-10-31:language:schinese",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "date": "2024-10-31",
+      "text": "Review statistics for language group 'schinese' from 2024-09-01 to 2024-10-31: 300 observed reviews, 293 positive, 7 negative, 2.3% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "schinese",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R88": {
+      "source": "review",
+      "raw_id": "177815641",
+      "url": "https://steamcommunity.com/profiles/76561197968062093/recommended/1086940/",
+      "date": "2024-10-27",
+      "text": "I will say that I have given this game more than its fair shake before posting this review.  My initial reaction when the game went to 1.0 last year was not a positive one.  Yet, with all the undying praise of this game and my enjoyment of this genre, I believed I had missed something that others had discovered.  I wanted to know what that was.  So over the past year I have started, stopped, uninstalled, reinstalled, and repeated this process numerous times.  I had made over half a dozen characters and new starts and only just in this recent play through finally was able to pull myself through Act 1.\n\nI do not like this game.\n\nIt is final.  68 hours is more than enough.\n\n[u][b]Presentation[/b][/u]\n\nLet me get some praise out of the way before I get to the negatives.  Firstly, this game is beautiful.  The production values are top notch.  This is by far and away the most visually appealing cRPG I've ever played.  \n\nIn terms of sound outside of voice work, it is mostly passable.\n\n[u][b]Story[/b][/u]\n\nHere it comes, the bad.  \n\nI do not think this is a good story.  \n\nNot only is the story itself not good, the way it is told is downright awful.  It is disjointed and requires you to play through in a specific way to see it told in a coherent fashion.  This is a large failing because this game prides itself on being open-ended (not exactly [i]open[/i] world) and playing through the game organically (you know, actually [i]roleplaying[/i]) can lead to some truly bizarre instances where characters suddenly do or know something that did not happen in your playthrough.  \n\nThe biggest failing with the story is not that it is just poorly told, it is poorly conceived.  The main story is a bull rush of urgency.  You and your \"friends\" are not only dying, you're turning into a hive-mind tentacle monster that will torture you in unimaginable agony for days beforehand.  This is what we call, an [u]emergency[/u].  [i]Everything[/i] else should be not just secondary, but completely out of mind.  Does that matter?  No.  Quite the opposite, the game actively pushes you to do side content in order to progress in this silliness.\n\nI'm old enough to remember people lambasting Fallout 4 for a similar main quest that completely eclipsed the rest of the side content.  Why was that awful and stupid and this is award-winning fiction?\n\nAlso, the setting is D&D Epic, but with low level mooks.  Epic settings lead to boring, uninspired, stories.  Mask of the Betrayer for NWN2 is a rare exception.\n\nBut hey, at least the characters are fun, right?\n\n[u][b]Characters[/b][/u]\n\nNo, they are not.\n\nI do not like these people that call themselves companions.  They are annoying.  They are poorly written, they are out of place, and in some cases, they are hilarious in the conception.\n\nTake Wyll, for instance.  He is a chaotic good warlock that fancies himself the \"Blade of Frontiers\", a do-gooder that is willing to do anything for the greater good.  He has slain demons, minotaurs, devils, and assorted other fiends.  [i]By the dozens.[/i]  You meet him and he is level 2.\n\nAlright Brenil, but the brain worms de-leveled him by 18!\n\nMhmm...  let me tell you a little something I learned from my experiencing DMing D&D.  Characters that have epic backstories, especially at level 1, are garbagemen.  They're terrible characters, usually Mary/Marty Sues that every one else hates and wishes would meet the gravedirt.\n\nOkay, forget Wyll.  What about the others?  Oh, they're better.  But not much.  Astarion, Lae'zel, Karlach, and to some extent Gale, are all dumb and unlikable.  I'll give Gale a pass as he's supposed to be kind of a good-hearted goofball.  Astarion?  Edgy neutral evil vampire that belongs more in Twilight than D&D?  No.  Told him to go join the boar in the bush.  Lae'zel?  I gave her a try.  She played the lawful evil Githyanki quite well.  Too bad no one likes githyanki for a reason.  I told her to get in the brain machine in the creche and was disappointed with the semi-positive results.  Karlach?  See Wyll.\n\nThat leaves Minthara, Halsin, and Shadowheart.  Halsin?  Didn't interact much outside the story.  Shadowheart?  She's the most interesting companion you meet initially in Act 1, but she's a Cleric of Shar.  In Faerun, that usually means kill on sight.  Not exactly something you should [i]emblazon[/i] on your armor.  Unraveling her story is mildly interesting but nothing stellar.  I imagine her main appeal is that she is the most physically attractive character.\n\nLast is not a companion you can recruit in Act 1, but she can become one later.  That is Minthara.  I actually enjoyed this character the most.  After choosing to side with her, you learn more about her and I actually cared to do so for the first time in the game.  Of course, siding with her means you do some dirty deeds, but by this point in my playing this game, I hated everyone anyway.\n\nAll that said, on the whole, the characters do not help the story.\n\nBut hey, Brenil, my man.  At least the game is fun, right?\n\n[u][i]Gameplay[/i][/u]\n\nNo, it isn't.\n\nBG3 uses 5th Edition D&D.  I am not a fan of 5th Edition, but I knew what I was getting into and I loved Solasta.  \n\nThe game is unfun to play.  The chief reason for this is two-fold.  \n\nFirst, the UI.  The UI does nothing helpful for the player.  Finding out why X or Y enemies do Z is difficult and, sometimes, impossible to do in the game.  Like so much of the game, you have to look to an external source to help with a solution the UI should readily provide.  Add to this the awful inventory system that has learned [i]nothing[/i] from previous cRPGs, and you have poor inactive gameplay.\n\nThe active gameplay is the second problem.\n\nThis game has the worst encounters I have played in any cRPG in my life.  I have played a few of them.\n\nThe issue with the encounters in this game is that Larian thinks combat should be \"challenging\".  That's fine, I understand.  But challenging doesn't mean punishing.\n\nThroughout Act 1 after the encounter at the Druid grove, the game decides to get cheeky.  Not just set pieces and boss fights.  [i]Every[/i] encounter.  Combat in this game is a puzzle.  The solution, more often than not, is metagaming, exploiting, save scumming, or all three.\n\nTo say this makes the game frustrating is an understatement.  Does it make it hard?  I suppose, but the solution is usually readily apparent - if you are willing to game the system right back.  But wait, isn't this a [i]roleplaying[/i] game?  Isn't meta knowledge an anathema to playing the role of a character?  No, shut up n00b, and sneak a barrel into the enemy camp and watch go boom.\n\nCombat in this game is very similar to another cRPG series.  Divinity:  Original Sin.  I did not like those games either.  They were serious/silly RPGs that had bizarre mechanics and a huge emphasis on big explosions equals big fun.\n\n[u][b]Final Thoughts[/b][/u]\n\nLook, I have been harsh in this review.  I understand this.  I have been accused of being a contrarian.\n\nI gave this game more than a fair chance to wow me.  The game actively frustrated me to the point of anger at times.  If a game is not fun.  Why play it?\n\nI have seen other negative reviews here that follow my thought pattern.  Most will wave their hand and say something along the lines of, \"It's a good game, its just not for me.\"  I disagree.  I believe this [i]is[/i] a bad game.  For what is a bad game if not one that gives you nothing but grief?  It can have well-made aspects, but the whole is greater than the parts and Baldur's Gate 3 is not worth your time or money.\n\nHmm... wait a moment.  I just remembered.  I didn't like The Witcher 3 either.  Crap.  Maybe I am just a contrarian after all.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 69.0,
+        "positive": false
+      }
+    },
+    "R89": {
+      "source": "review",
+      "raw_id": "177002100",
+      "url": "https://steamcommunity.com/profiles/76561198160256951/recommended/1086940/",
+      "date": "2024-10-13",
+      "text": "I wish I could give an on the fence rating, as this game truly is extremely impressive. But I just want to put this out there for anyone who might be like me.\nI went into this game having heard tales of its dedication to immersion, how every choice mattered, even the small ones. Maybe this set my expectations too high, maybe I was unlucky, but I can confidently say that, at least in my playthrough, this was not the case, at all.\n\nFundamentally, the moment-to-moment dialogue writing is just mediocre. There are memorable and charming characters, but, once you reach past the surface level, nearly every character has the most predictable, bog-standard reaction to every single situation they come across. Very rarely did any of the writing wow me with wit, expression, or character. It doesn't matter what happens, from simple banter to life-changing moments to deaths of loved ones, everything feels like a bland first draft you’d jot down before actually thinking of an interesting or moving way of writing a scene. Dialogue options are very obvious with what interactions they are trying to pull you into, sometimes even presupposing actions that make no sense for anyone involved (knowledge they could not possibly have, or referencing things I never did).\nThis lack of quality sadly extends to the story as a whole. I simply think Larian bit off more than they could chew, as the sheer scope of what they pulled off is unbelievably impressive, but still just not enough for what they were trying to do. Rather than even “just” a 100 hour game with tighter writing and more fleshed out characters, the game is ballooned to such a scale that few things feel fully finished and it leaves the entire experience feeling messy and hollow to me. There are a handful of key character progression points, but beyond those, I rarely had any meaningful connection to my party members. At the end of Act 1, the game suddenly shovels all their character moments on you in quick succession before pulling back again for most of Act 2. Fair enough, we’re in the thick of a dramatic plot, but the generic cultist villains just aren’t nearly as interesting.\nI fully intended to finish the game despite my gripes, but the moment that finally broke me was this one (kept vague for spoiler reasons):\nI was going through a dungeon that was important to one of my party members. They were raving about an ideology that I did not agree with, but every time the game gave me the ability to talk to them about it, the options boiled down to “Your ideology is fucking dumb” and “Yeah, you’re good C:”\nI kept hoping to reach a point where the game would let me genuinely interact with their ideology and their character, but it never happened. I’ve heard there was some flag I could have set beforehand that would have made this character more amiable in this section, but that doesn’t fix my issue. In fact, it makes it worse, confining meaningful character interactions to whether you’ve completed a set scripted quest item is the opposite of immersive (except, it likely wouldn’t have been meaningful. i have reason to believe it would have been just as boring, but the character would have been easier to convince). By the end of the dungeon we reached a major decision point for this character, one that would further cement their ideology or let them break free from it. And once more, I was faced with essentially two options. “Don’t do it, I believe in you :,C” or “Yeah, you’re good C:” I then failed a persuasion check, the character turned hostile, and I was forced to kill them. This is all extremely disappointingly bland, but I could have lived with it.\nHowever. The entire section had no further dialogue at all. Not from any of the other party members, not during the combat sequence, nothing. When I returned to camp afterwards, not a single one of the others had anything to say about the fact that we were just forced to tragically kill one of our friends and compatriots. Not a word of acknowledgment. I realized in that moment that Larian probably didn’t intend for anyone to actually go through with this story beat. Whether they lacked the time or the resources or whatever, I assume they figured players would just reload. Well I hadn’t reloaded once to change story outcomes in the 100 or so hours I had put in because I trusted the game to respect the choices I made. And what’s the point of having die-roll fail cases if I’m not actually meant to go through with them? I’d seen other character deaths go unacknowledged before (like an entire village’s worth of named characters being eradicated. nobody gave a shit. again, probably just figured the players would reload), but not a party member’s. That was one step too far and right then what was left of the immersion I had in this story completely shattered.\nIf you want a videogamey romp through a DnD world, you’ll have a good time. And that is a statement fully without judgment. I had a lot of fun with the combat and exploring the various locations is exciting and rewarding as a massive semi-open-world encounter-filled funhouse.\nBut if you want to be genuinely immersed in the story and characters and feel like your actions are meaningfully impactful, be prepared to potentially be game-ruiningly disappointed depending on what choices you make and how willing you are to look past the gaping holes left in the decision tree.\n\nMinor grrr to end off:\nThe UI is straight up baffling. Randomly, things just won't stack, like you'll have 6 of an item and then just another stack of 2 more identical ones. Sometimes you can then manually stack them, sometimes the game just refuses. You can only send things to camp sometimes. Sometimes you can't mark and send multiple things to other characters or camp. Micromanaging your characters' inventories is a nightmare, especially in combat. Sometimes you can split a stack of potions to send to another party member, sometimes you just can't. I think this all has something to do with whether you’re sending from your main character, I honestly don't remember because it makes so little sense I probably compartmentalized the trauma.\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 103.8,
+        "positive": false
+      }
+    },
+    "R90": {
+      "source": "review",
+      "raw_id": "175264928",
+      "url": "https://steamcommunity.com/profiles/76561198285861181/recommended/1086940/",
+      "date": "2024-09-18",
+      "text": "D&D if it was just 150 gigabytes of goonslop",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 37.0,
+        "positive": false
+      }
+    },
+    "R91": {
+      "source": "review",
+      "raw_id": "177156493",
+      "url": "https://steamcommunity.com/profiles/76561198007229026/recommended/1086940/",
+      "date": "2024-10-16",
+      "text": "too loud about nothing...\nstill cripple camera, glitching companions ... \n3/5",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 69.4,
+        "positive": false
+      }
+    },
+    "R92": {
+      "source": "review",
+      "raw_id": "175235592",
+      "url": "https://steamcommunity.com/profiles/76561198006719796/recommended/1086940/",
+      "date": "2024-09-18",
+      "text": "I will change this once they fix their mod manager.  As of right now it breaks the game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 363.8,
+        "positive": false
+      }
+    },
+    "R93": {
+      "source": "review",
+      "raw_id": "177139676",
+      "url": "https://steamcommunity.com/profiles/76561197974492312/recommended/1086940/",
+      "date": "2024-10-16",
+      "text": "My negative review hinges entirely upon terribly buggy and poorly thought out multiplayer. Bought the game to play with friends, and it just constantly has problems playing multiplayer. There are never useful error messages. Sometimes people just cannot connect, and if they get an error message at all it is just generic. Sometimes the play session can bug out and the game continues to run, but you cannot actually do anything. If you play with four people you give up the ability to do anything with the companions because they need to be in the party and you can only have 4 people in the party. Ultimately what triggered the negative review is that our last session ended with a cut scene waiting to be played at camp, and because of that we were unable to use that save. Fortunately I save very often due to the plethora of problems we have encountered so it does not really set us back, but it is none the less ridiculous.\n\nBasically, the multiplayer just feels like a last minute addition that barely bother to support. It is shameful for a game to have this price point, have made this much money, and still have these problems.\n\nIf single player is your thing? I'm sure it's great. If multiplayer is why you're looking at buying it, save yourself the frustration.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 78.3,
+        "positive": false
+      }
+    },
+    "R94": {
+      "source": "review",
+      "raw_id": "175060283",
+      "url": "https://steamcommunity.com/profiles/76561198112699118/recommended/1086940/",
+      "date": "2024-09-15",
+      "text": "Only leaving this review as it relates to patch 7 and the new evil endings.\n\nIf you are not Dark Urge, and did not choose to [spoiler] become a mind dlayer [/spoiler] you have to make a DC 25 CON save if you used ANY tadpoles. Otherwise [spoiler] you are forcefully turned into a mind flayer and fall under the control of the elder brain to enact the grand design. [/spoiler]\n\nThis removes all player autonomy, and adds a hidden punishment at the very end of the game for a mechanic that was not punished for the entirety of the games lifetime. I just wasted hundreds of hours, and now I cannot get the ending I was playing for, because Larian added this hidden punishment that destroys player autonomy. I literally cannot pass this CON save. I may be able to respec or something, but I don't want to abuse game mechanics to be able to play the game the way I want.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 826.9,
+        "positive": false
+      }
+    },
+    "R95": {
+      "source": "review",
+      "raw_id": "175467552",
+      "url": "https://steamcommunity.com/profiles/76561198978012892/recommended/1086940/",
+      "date": "2024-09-21",
+      "text": "Initial, December 13, 2024: Coming back to this game after several months, and once again back to the same conclusion I just don't like this game; it's not for me, by any measure.\n\nEdit, 4/21/2025: Tried coming back to the game after 4-5 months to see if the updates made any difference, and I just can't bring myself to make it past the character creation screen.  The writing feels listless and does not engage me at any point, and despite the price for the game which I feel should be a motivator to \"get my money's worth\", I can't bring myself to finish or even play it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 282.5,
+        "positive": false
+      }
+    },
+    "R96": {
+      "source": "review",
+      "raw_id": "176517452",
+      "url": "https://steamcommunity.com/profiles/76561199273565011/recommended/1086940/",
+      "date": "2024-10-06",
+      "text": "Game doesn't even want to boot, on Ryzen 9 5900HX & NVIDIA GeForce RTX 3060 & 16gb ram, tried patching, and alternative ways to boot the game with no success, latest update doesn't even want to boot the game at all. first time i got it to launch i had no sound. every time i boot the game i have to verify the files, but now that doesn't even work. I have tried sending bug reports too. if anyone have a solution please feel free to comment any solutions but i've already tried to boot the game for 1hr without success, but maybe i'll get around to test your solutions if i get any.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1.0,
+        "positive": false
+      }
+    },
+    "R97": {
+      "source": "review",
+      "raw_id": "175397701",
+      "url": "https://steamcommunity.com/profiles/76561198016182494/recommended/1086940/",
+      "date": "2024-09-20",
+      "text": "The ingame mod manager is beyond garbage.\n\nAttempted to use website to unsubscribe from mods as the ingame manager would auto re-subscribe and re-download, however the website has me stuck in an endless failed login loop.\n\nWay to fuck up what is a pretty alright game.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 248.1,
+        "positive": false
+      }
+    },
+    "R98": {
+      "source": "review",
+      "raw_id": "176468140",
+      "url": "https://steamcommunity.com/profiles/76561198878314079/recommended/1086940/",
+      "date": "2024-10-06",
+      "text": "funny how larians attempt to support mods basically destroyed everyones saves and made mods stop working.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 298.8,
+        "positive": false
+      }
+    },
+    "R99": {
+      "source": "review",
+      "raw_id": "175696591",
+      "url": "https://steamcommunity.com/profiles/76561198162797539/recommended/1086940/",
+      "date": "2024-09-24",
+      "text": "game was almost perfect, then they added their own mod manager and whent to fuckin shit. please fix mod manager, I dont like deleting a mod for it to redownload when i quit game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 191.3,
+        "positive": false
+      }
+    },
+    "R100": {
+      "source": "review",
+      "raw_id": "175277666",
+      "url": "https://steamcommunity.com/profiles/76561198090846220/recommended/1086940/",
+      "date": "2024-09-19",
+      "text": "I don't know man I just don't get it. I want to. But I don't.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 9.3,
+        "positive": false
+      }
+    },
+    "R101": {
+      "source": "review",
+      "raw_id": "176918958",
+      "url": "https://steamcommunity.com/profiles/76561198865964959/recommended/1086940/",
+      "date": "2024-10-12",
+      "text": "not for me back to Elden ring",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 0.9,
+        "positive": false
+      }
+    },
+    "R102": {
+      "source": "review",
+      "raw_id": "177122144",
+      "url": "https://steamcommunity.com/profiles/76561199334036160/recommended/1086940/",
+      "date": "2024-10-15",
+      "text": "i don t like this game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 166.1,
+        "positive": false
+      }
+    },
+    "R103": {
+      "source": "review",
+      "raw_id": "175568163",
+      "url": "https://steamcommunity.com/profiles/76561198314468427/recommended/1086940/",
+      "date": "2024-09-22",
+      "text": "Newest patch completely broke the game. 60 hours gone. Wasted.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 71.8,
+        "positive": false
+      }
+    },
+    "R104": {
+      "source": "review",
+      "raw_id": "176055909",
+      "url": "https://steamcommunity.com/profiles/76561198220044967/recommended/1086940/",
+      "date": "2024-09-29",
+      "text": "Cannot make fat jolyn cujo",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1.0,
+        "positive": false
+      }
+    },
+    "R105": {
+      "source": "review",
+      "raw_id": "177236929",
+      "url": "https://steamcommunity.com/profiles/76561198067018530/recommended/1086940/",
+      "date": "2024-10-17",
+      "text": "naked man scare me\r\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 31.5,
+        "positive": false
+      }
+    },
+    "R106": {
+      "source": "review",
+      "raw_id": "177556288",
+      "url": "https://steamcommunity.com/profiles/76561199091728043/recommended/1086940/",
+      "date": "2024-10-22",
+      "text": "One of the most boring games I have ever played",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 16.5,
+        "positive": false
+      }
+    },
+    "R107": {
+      "source": "review",
+      "raw_id": "177222701",
+      "url": "https://steamcommunity.com/profiles/76561198148335730/recommended/1086940/",
+      "date": "2024-10-17",
+      "text": "Its aight",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 158.3,
+        "positive": false
+      }
+    },
+    "R108": {
+      "source": "review",
+      "raw_id": "177647253",
+      "url": "https://steamcommunity.com/profiles/76561198091870926/recommended/1086940/",
+      "date": "2024-10-24",
+      "text": "divinity 2 is better than this game in every way",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 161.7,
+        "positive": false
+      }
+    },
+    "R109": {
+      "source": "review",
+      "raw_id": "176143906",
+      "url": "https://steamcommunity.com/profiles/76561197998063253/recommended/1086940/",
+      "date": "2024-10-01",
+      "text": "As a long-time fan of the Baldur’s Gate series, I came into Baldur’s Gate 3 with high hopes, especially after seeing the overwhelmingly positive feedback. Unfortunately, after spending a few hours in the game, I find myself more frustrated than impressed.\n\nVisually, the game is undeniably vibrant—perhaps too vibrant. The dark, gritty atmosphere that defined the earlier entries has been replaced with an overly colorful, almost cartoonish palette that feels out of place in the world of Baldur’s Gate. Instead of a deep and immersive fantasy world, it often feels like a whimsical reimagining, closer in style to Divinity: Original Sin than a continuation of the series I loved.\n\nThe writing is where the game really falters for me. Too often, the dialogue feels shallow, at times even cringe-inducing, lacking the depth and sophistication that made Baldur’s Gate 1&2 so engrossing. Rather than mature, nuanced storytelling, it sometimes feels like the game is trying too hard to cater to a broader, less demanding audience. It’s hard to connect with characters or take the plot seriously when the tone shifts awkwardly between campy humor and moments that should carry emotional weight but end up falling flat.\n\nMechanically, Baldur’s Gate 3 stays true to its D&D roots, and while that’s something I appreciate, it’s the overall tone and approach that make the game feel like it’s lost its way. The charm and complexity of the originals have been overshadowed by a focus on flashy visuals and quirky moments that often lack substance.\n\nHowever, maybe it’s not entirely the game’s fault. Perhaps it’s a reflection of how times have changed. I’ve grown older, and the gaming landscape has evolved. It feels like we live in an era where entertainment leans toward simplicity, and audiences are more content with surface-level experiences. What once felt rich and complex has now given way to what some might call a more “accessible” approach. Sometimes, it feels like we’re living in a version of Idiocracy, where depth is sacrificed for instant gratification, and people celebrate what used to be considered basic.\n\nIn the end, Baldur’s Gate 3 may not be for everyone, especially those of us who grew up with the original games. It may resonate more with today’s players, but for me, it just doesn’t capture the magic that made the earlier entries so unforgettable.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 8.5,
+        "positive": false
+      }
+    },
+    "R110": {
+      "source": "review",
+      "raw_id": "178056851",
+      "url": "https://steamcommunity.com/profiles/76561198260296601/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Don't like it, even thought I've played it with friends that do. After months of having the game, I've never had an urge to come back and make progress in it. it was cool at first to see the great graphics and some cut scenes that were nice but as a game, it's just over-hyped and maybe appealing to small niche of players who are into this stuff specifically.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 10.9,
+        "positive": false
+      }
+    },
+    "R111": {
+      "source": "review",
+      "raw_id": "177729852",
+      "url": "https://steamcommunity.com/profiles/76561199456075357/recommended/1086940/",
+      "date": "2024-10-25",
+      "text": "Just play D&D, i promise you its more fun and more bang for your buck",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 33.0,
+        "positive": false
+      }
+    },
+    "R112": {
+      "source": "review",
+      "raw_id": "176012682",
+      "url": "https://steamcommunity.com/profiles/76561199688334151/recommended/1086940/",
+      "date": "2024-09-29",
+      "text": "Way too much micromanagement.  Boring.\r\nNot my kind of RPG.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 15.0,
+        "positive": false
+      }
+    },
+    "R113": {
+      "source": "review",
+      "raw_id": "175797647",
+      "url": "https://steamcommunity.com/profiles/76561199443740844/recommended/1086940/",
+      "date": "2024-09-26",
+      "text": "Ever since the Official Mod Support all of my Nexus mods are listed in game as third party and I am unable to begin new saves or to load old ones. Kinda stupid that I have to rely on the messy organization method of the in game mod page to try and rebuild my mod library with every mod. Some were niche Class mods like a Kensei Monk mod or a mod for Rogue Subclasses. Also screw Gale's story arc, from narcissistic kiss-ass to megalomanical sociopath so obsesssed with power that he can't see the problem with coveting ruinous power",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 889.6,
+        "positive": false
+      }
+    },
+    "R114": {
+      "source": "review",
+      "raw_id": "176992289",
+      "url": "https://steamcommunity.com/profiles/76561199256831993/recommended/1086940/",
+      "date": "2024-10-13",
+      "text": "i really liked this game up until act 3, it was fun and the character creator reeled me in, but around act 3 the story stops giving you options and you stop having an impact on the story, the story itself also feels run down and downright annoying to get through. It got me some entertainment but i found myself honestly just wanting it to be over.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 133.1,
+        "positive": false
+      }
+    },
+    "R115": {
+      "source": "review",
+      "raw_id": "176773739",
+      "url": "https://steamcommunity.com/profiles/76561198344693958/recommended/1086940/",
+      "date": "2024-10-10",
+      "text": "bad",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 160.8,
+        "positive": false
+      }
+    },
+    "R116": {
+      "source": "review",
+      "raw_id": "175267157",
+      "url": "https://steamcommunity.com/profiles/76561199093695363/recommended/1086940/",
+      "date": "2024-09-18",
+      "text": "bought on sale because of its reputation, recommendations from trusted friends, awards, and high ratings but this is also my first time playing a crpg and it is definitely not beginner friendly. 12 hours in and i still can't get over the feeling i'm inherently playing it wrong.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 12.9,
+        "positive": false
+      }
+    },
+    "R117": {
+      "source": "review",
+      "raw_id": "178013719",
+      "url": "https://steamcommunity.com/profiles/76561198356458049/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "I regret buying this game, can't wait for Baldur's Gate 4 though! Or whatever Larian's next game will be",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 77.7,
+        "positive": false
+      }
+    },
+    "R118": {
+      "source": "review",
+      "raw_id": "177159825",
+      "url": "https://steamcommunity.com/profiles/76561198078981849/recommended/1086940/",
+      "date": "2024-10-16",
+      "text": "Broken Multiplayer After Patch 7 Ruined Game\n\nAfter update 7 was released the game no longer reliably supports multiplayer. (Over 4 weeks and still not fixed!) My housemate and I were nearly at the conclusion and are no longer able to play. Workarounds and a lengthy exchange with Tech Support have done nothing to fix the problem. Larian Studios dropped the ball on the once excellent game and does not deserve a single dime in the future given their egregious abandonment of their customers.\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 285.4,
+        "positive": false
+      }
+    },
+    "R119": {
+      "source": "review",
+      "raw_id": "176170699",
+      "url": "https://steamcommunity.com/profiles/76561198415332349/recommended/1086940/",
+      "date": "2024-10-01",
+      "text": "th game went from great and playable, modded and cyberpunkish real fuckin quick . gg bg3",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 785.1,
+        "positive": false
+      }
+    },
+    "R120": {
+      "source": "review",
+      "raw_id": "175496994",
+      "url": "https://steamcommunity.com/profiles/76561198331888198/recommended/1086940/",
+      "date": "2024-09-22",
+      "text": "Found this game to be boring maybe its the ASMR narrator that puts me to sleep.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 4.9,
+        "positive": false
+      }
+    },
+    "R121": {
+      "source": "review",
+      "raw_id": "175265100",
+      "url": "https://steamcommunity.com/profiles/76561199454112295/recommended/1086940/",
+      "date": "2024-09-18",
+      "text": "The new patch completely broke my game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 52.0,
+        "positive": false
+      }
+    },
+    "R122": {
+      "source": "review",
+      "raw_id": "175121354",
+      "url": "https://steamcommunity.com/profiles/76561198141690948/recommended/1086940/",
+      "date": "2024-09-16",
+      "text": "Fuck Mol",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 29.0,
+        "positive": false
+      }
+    },
+    "R123": {
+      "source": "review",
+      "raw_id": "178092542",
+      "url": "https://steamcommunity.com/profiles/76561198117164833/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Thee D&D Experience distilled into a video game. It is quite amazing, I felt empty after I finished my first playthrough (150 hrs). Initial review above was before many patches. \n\nThis game has been ruined by the developers. Every patch the game runs worse and worse. I've tried everything including a clean windows install and now after patch 8 I can barely even launch the game. Larian Studios needs to be put up for the Most Degraded Game award this year, definitely not in the running for most improved.\n\nUpdate after around a year or so:\nI came back to this as I've been wanting a fantasy rpg lately. Upon reinstalling and booting it up I got the excitement I got when I first downloaded the game again and was loving it. Upon getting up to after you talk to a certain bony man, I decided to save and quit the game to take my dog out. I come back and boot it up, only to be reminded of how bad the state of this game is. It barely loaded the save I was just playing, and then proceeded to freeze/crash my whole PC after only trying to rotate the camera. This game was perfect, and then they added their own in game mod manager (which never goes well) and surprise surprise it ruined the game. I guess I looked at the mod manager button on the main menu for 1 second too long.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 337.1,
+        "positive": false
+      }
+    },
+    "R124": {
+      "source": "review",
+      "raw_id": "177629022",
+      "url": "https://steamcommunity.com/profiles/76561198066795537/recommended/1086940/",
+      "date": "2024-10-24",
+      "text": "cant get around it...",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 4.2,
+        "positive": false
+      }
+    },
+    "R125": {
+      "source": "review",
+      "raw_id": "177353131",
+      "url": "https://steamcommunity.com/profiles/76561199098771790/recommended/1086940/",
+      "date": "2024-10-19",
+      "text": "i didnt like not  for me",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 33.9,
+        "positive": false
+      }
+    },
+    "R126": {
+      "source": "review",
+      "raw_id": "177294395",
+      "url": "https://steamcommunity.com/profiles/76561198272116661/recommended/1086940/",
+      "date": "2024-10-18",
+      "text": "Story of the game is phenomenal, but only for singleplayer. I've experienced nothing but headaches of trying to play a multiplayer campaign with just a handful of mods. Game no longer sicks and lost 50 hours into a run over the issues of it. All bases covered on mod versions and load order, only used in game mod manager for the run to keep it simple and it still couldnt stop itself from crashing our run as we got into Act 3. Very dissapointing, have spent almost 20 hours trying all options to restore our chance to play it together and just defeated.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 205.1,
+        "positive": false
+      }
+    },
+    "R127": {
+      "source": "review",
+      "raw_id": "176935144",
+      "url": "https://steamcommunity.com/profiles/76561198867091200/recommended/1086940/",
+      "date": "2024-10-13",
+      "text": "glitchy fucking mess, have a high end pc and it fucking crashes all the time, not to mention you might have a glitch that LITERALLY DELETES YOUR CHAR FROM EXISTENCE\r\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 72.0,
+        "positive": false
+      }
+    },
+    "R128": {
+      "source": "review",
+      "raw_id": "178057837",
+      "url": "https://steamcommunity.com/profiles/76561198262123368/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "a lot of combat in this dating sim but 10/10 recommend.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 139.2,
+        "positive": true
+      }
+    },
+    "R129": {
+      "source": "review",
+      "raw_id": "178048848",
+      "url": "https://steamcommunity.com/profiles/76561199129922134/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "If you want a game that combines epic adventures with hilarious mishaps and a potential midlife crisis over whether to save the world or throw a karaoke party instead, then this game is for you.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 146.8,
+        "positive": true
+      }
+    },
+    "R130": {
+      "source": "review",
+      "raw_id": "178028497",
+      "url": "https://steamcommunity.com/profiles/76561198972948339/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "made 2 bosses unalive themselfs",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 58.6,
+        "positive": true
+      }
+    },
+    "R131": {
+      "source": "review",
+      "raw_id": "178037420",
+      "url": "https://steamcommunity.com/profiles/76561198254186626/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Great game with a great story, the combat can be a bit challenging when you first start out but you will understand it pretty quick.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 83.0,
+        "positive": true
+      }
+    },
+    "R132": {
+      "source": "review",
+      "raw_id": "178076174",
+      "url": "https://steamcommunity.com/profiles/76561198971450738/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "really great game really like it TBHto be honest) i like it becus u get to.Get to make friends Nice i did not receive it for free",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 392.1,
+        "positive": true
+      }
+    },
+    "R133": {
+      "source": "review",
+      "raw_id": "178031994",
+      "url": "https://steamcommunity.com/profiles/76561199127393726/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Just straight fire",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 104.6,
+        "positive": true
+      }
+    },
+    "R134": {
+      "source": "review",
+      "raw_id": "178056339",
+      "url": "https://steamcommunity.com/profiles/76561198213853225/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "holy mother of God.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 154.1,
+        "positive": true
+      }
+    },
+    "R135": {
+      "source": "review",
+      "raw_id": "178096358",
+      "url": "https://steamcommunity.com/profiles/76561199751027456/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "good",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 68.0,
+        "positive": true
+      }
+    },
+    "R136": {
+      "source": "review",
+      "raw_id": "178002251",
+      "url": "https://steamcommunity.com/profiles/76561198033118969/recommended/1086940/",
+      "date": "2024-10-29",
+      "text": "Incredible game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 102.0,
+        "positive": true
+      }
+    },
+    "R137": {
+      "source": "review",
+      "raw_id": "178125856",
+      "url": "https://steamcommunity.com/profiles/76561198018122287/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Welp, that's it. Probably the best game I've ever played. I finished it yesterday and I'm still so full of emotions from the adventure, like I used to be as a teenager after finishing something like Mass Effect, or more recently Witcher 3. \r\n\r\nThis game is just a masterpiece, and such a standard that should be set in term of video games, for about every aspect. Love, passion, and most importantly, dedication.\r\n\r\nBravo everyone at Larian, love you all\r\n\r\nI'm just baffled that my adventure felt so tailored for me, and complete, while knowing there are so many paths possible",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 375.4,
+        "positive": true
+      }
+    },
+    "R138": {
+      "source": "review",
+      "raw_id": "178119960",
+      "url": "https://steamcommunity.com/profiles/76561197985972296/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Great game, feels like Larian was trying to make art, not product.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 123.9,
+        "positive": true
+      }
+    },
+    "R139": {
+      "source": "review",
+      "raw_id": "178113225",
+      "url": "https://steamcommunity.com/profiles/76561198141008123/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "oui",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1046.7,
+        "positive": true
+      }
+    },
+    "R140": {
+      "source": "review",
+      "raw_id": "178107928",
+      "url": "https://steamcommunity.com/profiles/76561199050575080/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "EGG SALAD",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 472.8,
+        "positive": true
+      }
+    },
+    "R141": {
+      "source": "review",
+      "raw_id": "178103113",
+      "url": "https://steamcommunity.com/profiles/76561198016715542/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Pretty nice game not gonna lie",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 525.6,
+        "positive": true
+      }
+    },
+    "R142": {
+      "source": "review",
+      "raw_id": "178100057",
+      "url": "https://steamcommunity.com/profiles/76561198041497892/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Simply the best game I have ever played.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 128.5,
+        "positive": true
+      }
+    },
+    "R143": {
+      "source": "review",
+      "raw_id": "178080364",
+      "url": "https://steamcommunity.com/profiles/76561199383621532/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "神中神",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 337.0,
+        "positive": true
+      }
+    },
+    "R144": {
+      "source": "review",
+      "raw_id": "178072877",
+      "url": "https://steamcommunity.com/profiles/76561198055753749/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Gimblebock is my best friend, my buddy \"Uncle Scoots\" and I have had him in our adventure for over 80 hours, and he's our favorite weapon. 10/10 Gnome Game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 417.8,
+        "positive": true
+      }
+    },
+    "R145": {
+      "source": "review",
+      "raw_id": "178072625",
+      "url": "https://steamcommunity.com/profiles/76561198879334074/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "fantastic, no complaints at all, truly a marvel of game design.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 91.9,
+        "positive": true
+      }
+    },
+    "R146": {
+      "source": "review",
+      "raw_id": "178064644",
+      "url": "https://steamcommunity.com/profiles/76561198160209909/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Banger of a game.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 332.0,
+        "positive": true
+      }
+    },
+    "R147": {
+      "source": "review",
+      "raw_id": "178056350",
+      "url": "https://steamcommunity.com/profiles/76561198274540789/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Be gay",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 198.0,
+        "positive": true
+      }
+    },
+    "R148": {
+      "source": "review",
+      "raw_id": "178050124",
+      "url": "https://steamcommunity.com/profiles/76561198064210165/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "support developers who give a shit",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 257.9,
+        "positive": true
+      }
+    },
+    "R149": {
+      "source": "review",
+      "raw_id": "178047957",
+      "url": "https://steamcommunity.com/profiles/76561199185822058/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Peak.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 115.3,
+        "positive": true
+      }
+    },
+    "R150": {
+      "source": "review",
+      "raw_id": "178046121",
+      "url": "https://steamcommunity.com/profiles/76561198819202114/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "It's really good if you can look past them releasing an unfinished DND game.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 141.5,
+        "positive": true
+      }
+    },
+    "R151": {
+      "source": "review",
+      "raw_id": "178023070",
+      "url": "https://steamcommunity.com/profiles/76561198444238062/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "the sex was pretty cool",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 45.9,
+        "positive": true
+      }
+    },
+    "R152": {
+      "source": "review",
+      "raw_id": "178005438",
+      "url": "https://steamcommunity.com/profiles/76561198046329788/recommended/1086940/",
+      "date": "2024-10-29",
+      "text": "Best RPG ive played in a long time :D",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 122.2,
+        "positive": true
+      }
+    },
+    "R153": {
+      "source": "review",
+      "raw_id": "178003193",
+      "url": "https://steamcommunity.com/profiles/76561197981671238/recommended/1086940/",
+      "date": "2024-10-29",
+      "text": "100% must play for every living person out there. DO IT!",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 204.3,
+        "positive": true
+      }
+    },
+    "R154": {
+      "source": "review",
+      "raw_id": "177992624",
+      "url": "https://steamcommunity.com/profiles/76561198202961811/recommended/1086940/",
+      "date": "2024-10-29",
+      "text": "Beautiful. One of the greatest games I've ever had the pleasure of playing in my life.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 730.8,
+        "positive": true
+      }
+    },
+    "R155": {
+      "source": "review",
+      "raw_id": "178009362",
+      "url": "https://steamcommunity.com/profiles/76561198238549310/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Great game! Finally getting to the end without starting a new run lol. Already planning on the next run!",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 348.8,
+        "positive": true
+      }
+    },
+    "R156": {
+      "source": "review",
+      "raw_id": "178088185",
+      "url": "https://steamcommunity.com/profiles/76561198929494451/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Literally the best game ive ever played, and probably ever will.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 219.6,
+        "positive": true
+      }
+    },
+    "R157": {
+      "source": "review",
+      "raw_id": "178083236",
+      "url": "https://steamcommunity.com/profiles/76561198053205456/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Act three is a let down but otherwise a spectacular experience.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 94.2,
+        "positive": true
+      }
+    },
+    "R158": {
+      "source": "review",
+      "raw_id": "178069621",
+      "url": "https://steamcommunity.com/profiles/76561198035471295/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "im 90 hours in to my first playthorugh.... already im planning a second and third. (inc- Durge) \r\nLarian needs to make more like this. (maybe Divinity: Original Sin 3?)",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 90.0,
+        "positive": true
+      }
+    },
+    "R159": {
+      "source": "review",
+      "raw_id": "178130167",
+      "url": "https://steamcommunity.com/profiles/76561199445168592/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Cat loves this game, but cat thinks it's kinda freaky. Live laugh love Shadowheart, Karlach and Halsin.\n　　　 　　／＞　　フ\n　　　 　　| 　_　 _ l\n　 　　 　／` ミ＿xノ\n　　 　 /　　　 　 |\n　　　 /　 ヽ　　 ﾉ\n　 　 │　　|　|　|\n　／￣|　　 |　|　|\n　| (￣ヽ＿_ヽ_)__)\n　＼二つ",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 97.0,
+        "positive": true
+      }
+    },
+    "R160": {
+      "source": "review",
+      "raw_id": "178129782",
+      "url": "https://steamcommunity.com/profiles/76561198033783498/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Yeah. I guess you could say its good.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 817.6,
+        "positive": true
+      }
+    },
+    "R161": {
+      "source": "review",
+      "raw_id": "178129488",
+      "url": "https://steamcommunity.com/profiles/76561198880798281/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Yes",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 7.2,
+        "positive": true
+      }
+    },
+    "R162": {
+      "source": "review",
+      "raw_id": "178127985",
+      "url": "https://steamcommunity.com/profiles/76561198098245129/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Raise the bar. Who will follow?",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 238.5,
+        "positive": true
+      }
+    },
+    "R163": {
+      "source": "review",
+      "raw_id": "178125050",
+      "url": "https://steamcommunity.com/profiles/76561199554026081/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Game good, Much fun, Much wow, mods go brrrrr",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 247.5,
+        "positive": true
+      }
+    },
+    "R164": {
+      "source": "review",
+      "raw_id": "178123615",
+      "url": "https://steamcommunity.com/profiles/76561198313344821/recommended/1086940/",
+      "date": "2024-10-31",
+      "text": "Best RPG game ever",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 76.5,
+        "positive": true
+      }
+    },
+    "R165": {
+      "source": "review",
+      "raw_id": "178010966",
+      "url": "https://steamcommunity.com/profiles/76561198092279830/recommended/1086940/",
+      "date": "2024-10-30",
+      "text": "Very DnD like, and great story so far. The world feels real, with true consequences, and overall just a game you can lose hours in.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 61.8,
+        "positive": true
+      }
+    },
+    "R166": {
+      "source": "review",
+      "raw_id": "178002893",
+      "url": "https://steamcommunity.com/profiles/76561198049094652/recommended/1086940/",
+      "date": "2024-10-29",
+      "text": "if you haven't already, play it!",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 97.8,
+        "positive": true
+      }
+    },
+    "R167": {
+      "source": "review",
+      "raw_id": "178001175",
+      "url": "https://steamcommunity.com/profiles/76561198830145291/recommended/1086940/",
+      "date": "2024-10-29",
+      "text": "Baldur’s Gate 3 Review: A Masterpiece of Immersion and World-Building\n\nBaldur’s Gate 3, developed by Larian Studios, stands as a true triumph in the RPG genre, bringing to life the rich, complex world of Dungeons & Dragons like never before. Every element of the game is meticulously crafted to create an experience that is not only expansive but deeply immersive.\n\nFrom the moment you start, you’re thrust into a world where your choices genuinely shape the narrative. The game’s branching storylines and intricate character interactions make you feel like an active participant rather than a passive observer. Every dialogue option, moral decision, and combat choice influences not just how NPCs respond but also the broader world around you. Whether you play as a noble hero or a morally gray adventurer, the consequences are tangible and often surprising, enhancing the feeling of being in a living, breathing world.\n\nThe character creation system is robust, with countless customization options that allow players to create unique personas. Each class, race, and background comes with its own set of abilities, proficiencies, and dialogue options, making every playthrough feel different. The game’s alignment with the D&D 5th Edition ruleset adds authenticity, giving roleplaying enthusiasts a genuine tabletop experience. Your character’s personality and background influence how they interact with other characters, adding depth to conversations and character arcs.\n\nVisually, Baldur’s Gate 3 is a masterpiece. The environments are vibrant and detailed, with everything from dense forests to eerie, ancient ruins brought to life with stunning graphics and atmospheric lighting. The attention to detail is remarkable; even small elements like weather changes, flickering torchlight in dark dungeons, and the textures of characters’ clothing contribute to the immersive atmosphere. The cinematics, powered by motion capture, add another layer of realism, making characters’ expressions and movements feel incredibly lifelike. \n\nThe turn-based combat system is intricate, strategic, and rewarding. It captures the essence of tabletop combat, with each encounter feeling like a puzzle to be solved. You can approach combat situations in multiple ways, whether it’s through brute force, stealth, or clever use of spells and terrain. Exploration is equally rich, with secret areas, hidden quests, and interactive objects scattered throughout the world. The game encourages curiosity, rewarding players who take the time to explore and experiment.\n\nThe audio design is another standout feature, amplifying the game’s immersive quality. From the sounds of weapons clashing in battle to the soft rustling of leaves during exploration, everything sounds authentic. The orchestral score, filled with dramatic highs and emotional lows, perfectly complements the game’s epic scale and intimate moments, drawing players even deeper into the world.\n\nFinal Thoughts\n\nBaldur’s Gate 3 isn’t just a game; it’s an experience. It’s a testament to the power of storytelling and world-building, setting a new standard for immersive RPGs. Whether you’re a D&D veteran or new to the genre, Baldur’s Gate 3 offers a beautifully crafted adventure that is bound to captivate your imagination and leave a lasting impression.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 848.4,
+        "positive": true
+      }
+    }
+  },
+  "chart": {
+    "series": [
+      {
+        "period": "2020-10-01",
+        "up": 19543,
+        "down": 2618,
+        "pct_negative": 11.8,
+        "ref": "R1"
+      },
+      {
+        "period": "2020-11-01",
+        "up": 4980,
+        "down": 452,
+        "pct_negative": 8.3,
+        "ref": "R2"
+      },
+      {
+        "period": "2020-12-01",
+        "up": 1747,
+        "down": 223,
+        "pct_negative": 11.3,
+        "ref": "R3"
+      },
+      {
+        "period": "2021-01-01",
+        "up": 1195,
+        "down": 189,
+        "pct_negative": 13.7,
+        "ref": "R4"
+      },
+      {
+        "period": "2021-02-01",
+        "up": 1263,
+        "down": 175,
+        "pct_negative": 12.2,
+        "ref": "R5"
+      },
+      {
+        "period": "2021-03-01",
+        "up": 1679,
+        "down": 219,
+        "pct_negative": 11.5,
+        "ref": "R6"
+      },
+      {
+        "period": "2021-04-01",
+        "up": 935,
+        "down": 155,
+        "pct_negative": 14.2,
+        "ref": "R7"
+      },
+      {
+        "period": "2021-05-01",
+        "up": 767,
+        "down": 145,
+        "pct_negative": 15.9,
+        "ref": "R8"
+      },
+      {
+        "period": "2021-06-01",
+        "up": 575,
+        "down": 134,
+        "pct_negative": 18.9,
+        "ref": "R9"
+      },
+      {
+        "period": "2021-07-01",
+        "up": 1008,
+        "down": 162,
+        "pct_negative": 13.8,
+        "ref": "R10"
+      },
+      {
+        "period": "2021-08-01",
+        "up": 810,
+        "down": 171,
+        "pct_negative": 17.4,
+        "ref": "R11"
+      },
+      {
+        "period": "2021-09-01",
+        "up": 671,
+        "down": 138,
+        "pct_negative": 17.1,
+        "ref": "R12"
+      },
+      {
+        "period": "2021-10-01",
+        "up": 1277,
+        "down": 196,
+        "pct_negative": 13.3,
+        "ref": "R13"
+      },
+      {
+        "period": "2021-11-01",
+        "up": 837,
+        "down": 131,
+        "pct_negative": 13.5,
+        "ref": "R14"
+      },
+      {
+        "period": "2021-12-01",
+        "up": 554,
+        "down": 113,
+        "pct_negative": 16.9,
+        "ref": "R15"
+      },
+      {
+        "period": "2022-01-01",
+        "up": 600,
+        "down": 153,
+        "pct_negative": 20.3,
+        "ref": "R16"
+      },
+      {
+        "period": "2022-02-01",
+        "up": 723,
+        "down": 161,
+        "pct_negative": 18.2,
+        "ref": "R17"
+      },
+      {
+        "period": "2022-03-01",
+        "up": 453,
+        "down": 104,
+        "pct_negative": 18.7,
+        "ref": "R18"
+      },
+      {
+        "period": "2022-04-01",
+        "up": 405,
+        "down": 123,
+        "pct_negative": 23.3,
+        "ref": "R19"
+      },
+      {
+        "period": "2022-05-01",
+        "up": 373,
+        "down": 108,
+        "pct_negative": 22.5,
+        "ref": "R20"
+      },
+      {
+        "period": "2022-06-01",
+        "up": 380,
+        "down": 147,
+        "pct_negative": 27.9,
+        "ref": "R21"
+      },
+      {
+        "period": "2022-07-01",
+        "up": 964,
+        "down": 234,
+        "pct_negative": 19.5,
+        "ref": "R22"
+      },
+      {
+        "period": "2022-08-01",
+        "up": 631,
+        "down": 121,
+        "pct_negative": 16.1,
+        "ref": "R23"
+      },
+      {
+        "period": "2022-09-01",
+        "up": 465,
+        "down": 106,
+        "pct_negative": 18.6,
+        "ref": "R24"
+      },
+      {
+        "period": "2022-10-01",
+        "up": 455,
+        "down": 158,
+        "pct_negative": 25.8,
+        "ref": "R25"
+      },
+      {
+        "period": "2022-11-01",
+        "up": 529,
+        "down": 119,
+        "pct_negative": 18.4,
+        "ref": "R26"
+      },
+      {
+        "period": "2022-12-01",
+        "up": 941,
+        "down": 116,
+        "pct_negative": 11.0,
+        "ref": "R27"
+      },
+      {
+        "period": "2023-01-01",
+        "up": 959,
+        "down": 107,
+        "pct_negative": 10.0,
+        "ref": "R28"
+      },
+      {
+        "period": "2023-02-01",
+        "up": 752,
+        "down": 82,
+        "pct_negative": 9.8,
+        "ref": "R29"
+      },
+      {
+        "period": "2023-03-01",
+        "up": 985,
+        "down": 105,
+        "pct_negative": 9.6,
+        "ref": "R30"
+      },
+      {
+        "period": "2023-04-01",
+        "up": 895,
+        "down": 82,
+        "pct_negative": 8.4,
+        "ref": "R31"
+      },
+      {
+        "period": "2023-05-01",
+        "up": 793,
+        "down": 75,
+        "pct_negative": 8.6,
+        "ref": "R32"
+      },
+      {
+        "period": "2023-06-01",
+        "up": 980,
+        "down": 78,
+        "pct_negative": 7.4,
+        "ref": "R33"
+      },
+      {
+        "period": "2023-07-01",
+        "up": 8513,
+        "down": 386,
+        "pct_negative": 4.3,
+        "ref": "R34"
+      },
+      {
+        "period": "2023-08-01",
+        "up": 174597,
+        "down": 7370,
+        "pct_negative": 4.1,
+        "ref": "R35"
+      },
+      {
+        "period": "2023-09-01",
+        "up": 66975,
+        "down": 2395,
+        "pct_negative": 3.5,
+        "ref": "R36"
+      },
+      {
+        "period": "2023-10-01",
+        "up": 29420,
+        "down": 1081,
+        "pct_negative": 3.5,
+        "ref": "R37"
+      },
+      {
+        "period": "2023-11-01",
+        "up": 87425,
+        "down": 1167,
+        "pct_negative": 1.3,
+        "ref": "R38"
+      },
+      {
+        "period": "2023-12-01",
+        "up": 31852,
+        "down": 1282,
+        "pct_negative": 3.9,
+        "ref": "R39"
+      },
+      {
+        "period": "2024-01-01",
+        "up": 29493,
+        "down": 1249,
+        "pct_negative": 4.1,
+        "ref": "R40"
+      },
+      {
+        "period": "2024-02-01",
+        "up": 18164,
+        "down": 801,
+        "pct_negative": 4.2,
+        "ref": "R41"
+      },
+      {
+        "period": "2024-03-01",
+        "up": 14453,
+        "down": 715,
+        "pct_negative": 4.7,
+        "ref": "R42"
+      },
+      {
+        "period": "2024-04-01",
+        "up": 9897,
+        "down": 443,
+        "pct_negative": 4.3,
+        "ref": "R43"
+      },
+      {
+        "period": "2024-05-01",
+        "up": 9534,
+        "down": 420,
+        "pct_negative": 4.2,
+        "ref": "R44"
+      },
+      {
+        "period": "2024-06-01",
+        "up": 8741,
+        "down": 388,
+        "pct_negative": 4.3,
+        "ref": "R45"
+      },
+      {
+        "period": "2024-07-01",
+        "up": 10734,
+        "down": 519,
+        "pct_negative": 4.6,
+        "ref": "R46"
+      },
+      {
+        "period": "2024-08-01",
+        "up": 9390,
+        "down": 403,
+        "pct_negative": 4.1,
+        "ref": "R47"
+      },
+      {
+        "period": "2024-09-01",
+        "up": 11140,
+        "down": 612,
+        "pct_negative": 5.2,
+        "ref": "R48"
+      },
+      {
+        "period": "2024-10-01",
+        "up": 7606,
+        "down": 334,
+        "pct_negative": 4.2,
+        "ref": "R49"
+      },
+      {
+        "period": "2024-11-01",
+        "up": 17253,
+        "down": 388,
+        "pct_negative": 2.2,
+        "ref": "R50"
+      },
+      {
+        "period": "2024-12-01",
+        "up": 20427,
+        "down": 1239,
+        "pct_negative": 5.7,
+        "ref": "R51"
+      },
+      {
+        "period": "2025-01-01",
+        "up": 9109,
+        "down": 427,
+        "pct_negative": 4.5,
+        "ref": "R52"
+      },
+      {
+        "period": "2025-02-01",
+        "up": 7103,
+        "down": 319,
+        "pct_negative": 4.3,
+        "ref": "R53"
+      },
+      {
+        "period": "2025-03-01",
+        "up": 7557,
+        "down": 295,
+        "pct_negative": 3.8,
+        "ref": "R54"
+      },
+      {
+        "period": "2025-04-01",
+        "up": 9508,
+        "down": 426,
+        "pct_negative": 4.3,
+        "ref": "R55"
+      },
+      {
+        "period": "2025-05-01",
+        "up": 7820,
+        "down": 366,
+        "pct_negative": 4.5,
+        "ref": "R56"
+      },
+      {
+        "period": "2025-06-01",
+        "up": 5873,
+        "down": 305,
+        "pct_negative": 4.9,
+        "ref": "R57"
+      },
+      {
+        "period": "2025-07-01",
+        "up": 6479,
+        "down": 315,
+        "pct_negative": 4.6,
+        "ref": "R58"
+      },
+      {
+        "period": "2025-08-01",
+        "up": 5799,
+        "down": 247,
+        "pct_negative": 4.1,
+        "ref": "R59"
+      },
+      {
+        "period": "2025-09-01",
+        "up": 5672,
+        "down": 334,
+        "pct_negative": 5.6,
+        "ref": "R60"
+      },
+      {
+        "period": "2025-10-01",
+        "up": 5596,
+        "down": 277,
+        "pct_negative": 4.7,
+        "ref": "R61"
+      },
+      {
+        "period": "2025-11-01",
+        "up": 11619,
+        "down": 249,
+        "pct_negative": 2.1,
+        "ref": "R62"
+      },
+      {
+        "period": "2025-12-01",
+        "up": 6637,
+        "down": 523,
+        "pct_negative": 7.3,
+        "ref": "R63"
+      },
+      {
+        "period": "2026-01-01",
+        "up": 7202,
+        "down": 503,
+        "pct_negative": 6.5,
+        "ref": "R64"
+      },
+      {
+        "period": "2026-02-01",
+        "up": 5097,
+        "down": 291,
+        "pct_negative": 5.4,
+        "ref": "R65"
+      },
+      {
+        "period": "2026-03-01",
+        "up": 5129,
+        "down": 298,
+        "pct_negative": 5.5,
+        "ref": "R66"
+      },
+      {
+        "period": "2026-04-01",
+        "up": 3909,
+        "down": 180,
+        "pct_negative": 4.4,
+        "ref": "R67"
+      },
+      {
+        "period": "2026-05-01",
+        "up": 4248,
+        "down": 270,
+        "pct_negative": 6.0,
+        "ref": "R68"
+      },
+      {
+        "period": "2026-06-01",
+        "up": 3718,
+        "down": 211,
+        "pct_negative": 5.4,
+        "ref": "R69"
+      },
+      {
+        "period": "2026-07-01",
+        "up": 4641,
+        "down": 260,
+        "pct_negative": 5.3,
+        "ref": "R70"
+      },
+      {
+        "period": "2026-08-01",
+        "up": 4972,
+        "down": 313,
+        "pct_negative": 5.9,
+        "ref": "R71"
+      },
+      {
+        "period": "2026-09-01",
+        "up": 4131,
+        "down": 210,
+        "pct_negative": 4.8,
+        "ref": "R72"
+      },
+      {
+        "period": "2026-10-01",
+        "up": 3676,
+        "down": 210,
+        "pct_negative": 5.4,
+        "ref": "R73"
+      },
+      {
+        "period": "2026-11-01",
+        "up": 680,
+        "down": 48,
+        "pct_negative": 6.6,
+        "ref": "R74"
+      }
+    ],
+    "patches": [
+      {
+        "date": "2024-09-05",
+        "title": "Patch #7 Now Live!",
+        "ref": "R80"
+      },
+      {
+        "date": "2024-09-19",
+        "title": "Hotfix #26 Now Live!",
+        "ref": "R81"
+      },
+      {
+        "date": "2024-10-01",
+        "title": "Hotfix #27 Now Live!",
+        "ref": "R82"
+      },
+      {
+        "date": "2024-10-01",
+        "title": "Community Update #29 Playing With Mods",
+        "ref": "R83"
+      },
+      {
+        "date": "2024-10-16",
+        "title": "Hotfix #28 Now Live!",
+        "ref": "R84"
+      }
+    ],
+    "players": [
+      {
+        "month": "2024-06",
+        "avg": 58746,
+        "ref": "R75"
+      },
+      {
+        "month": "2024-07",
+        "avg": 66694,
+        "ref": "R76"
+      },
+      {
+        "month": "2024-08",
+        "avg": 66700,
+        "ref": "R77"
+      },
+      {
+        "month": "2024-09",
+        "avg": 72993,
+        "ref": "R78"
+      },
+      {
+        "month": "2024-10",
+        "avg": 62014,
+        "ref": "R79"
+      }
+    ]
+  },
+  "games": [
+    {
+      "appid": 1086940,
+      "name": "Baldur's Gate 3",
+      "store_url": "https://store.steampowered.com/app/1086940/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040",
+      "developer": "Larian Studios",
+      "release_date": "2023-08-03",
+      "genres": [
+        "Adventure",
+        "RPG",
+        "Strategy"
+      ],
+      "price": "$59.99",
+      "discount_pct": 0
+    }
+  ],
+  "timeline": [
+    {
+      "agent": "Clarifier",
+      "start": 0.0,
+      "end": 10.5
+    },
+    {
+      "agent": "Lead",
+      "start": 10.5,
+      "end": 44.7
+    },
+    {
+      "agent": "Patch Historian 1",
+      "start": 21.7,
+      "end": 24.8
+    },
+    {
+      "agent": "Review Analyst 2",
+      "start": 21.7,
+      "end": 40.3
+    },
+    {
+      "agent": "Player Data Analyst 3",
+      "start": 21.7,
+      "end": 25.3
+    },
+    {
+      "agent": "Writer",
+      "start": 44.7,
+      "end": 65.5
+    }
+  ]
+}

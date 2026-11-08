@@ -22,6 +22,14 @@ REAL = [steam_news.search_game, steam_news.get_game_info, steam_news.get_patch_n
         steam_reviews.sample_reviews, steam_reviews.review_stats, player_stats.get_player_stats, player_stats.get_player_history]
 
 
+@pytest.fixture(autouse=True)
+def no_store_requests(monkeypatch):
+    """/chat may look up store details for the dossier header: keep these tests offline."""
+    async def offline(appid):
+        raise ConnectionError("offline test")
+    monkeypatch.setattr(app.steam_news, "fetch_game_details", offline)
+
+
 def run(coro):
     return asyncio.run(coro)
 
@@ -198,3 +206,48 @@ def test_index_and_chat(monkeypatch):
     second = client.post("/chat", json={"message": "q2", "session_id": first["session_id"]}).json()
     assert second["response"] == "answer to q2 after 2 turns"
     assert app.last_games[first["session_id"]] == [{"appid": 1, "name": "G"}]
+
+
+def test_clear_forgets_one_session(monkeypatch):
+    async def fake_deep_research(question, history, research, last_games=None):
+        research.games = [{"appid": 1, "name": "G"}]
+        return "ok"
+
+    monkeypatch.setattr(app, "deep_research", fake_deep_research)
+    client = TestClient(app.app)
+    a = client.post("/chat", json={"message": "a"}).json()["session_id"]
+    b = client.post("/chat", json={"message": "b"}).json()["session_id"]
+    assert client.post(f"/clear?session_id={a}").json() == {"status": "ok"}
+    assert a not in app.history and a not in app.last_games and b in app.history
+
+
+def test_build_chart_adds_patches_and_players():
+    state = Research(hooks=TraceHooks(), chart={"series": [{"period": "2026-09-01", "up": 1, "down": 1}]})
+    state.store.add("news", "g1", "https://x", "2026-09-09", "Update 1.4\n\nbody")
+    state.store.add("player_history", "1:2026-09", "https://y", "2026-09", "t", {"avg": 100, "peak": 200})
+    chart = app.build_chart(state)
+    assert chart["patches"] == [{"date": "2026-09-09", "title": "Update 1.4", "ref": "R1"}]
+    assert chart["players"] == [{"month": "2026-09", "avg": 100, "ref": "R2"}]
+    assert app.build_chart(Research(hooks=TraceHooks())) is None
+
+
+def test_agent_timeline_is_relative_and_sorted():
+    hooks = TraceHooks()
+    hooks.timings = {"Writer": [110.0, 125.0], "Lead": [100.0, 110.0], "Review Analyst 1": [103.0, None]}
+    assert app.agent_timeline(hooks) == [
+        {"agent": "Lead", "start": 0.0, "end": 10.0},
+        {"agent": "Review Analyst 1", "start": 3.0, "end": None},
+        {"agent": "Writer", "start": 10.0, "end": 25.0},
+    ]
+    assert app.agent_timeline(TraceHooks()) == []
+
+
+def test_game_cards_use_store_evidence():
+    state = Research(hooks=TraceHooks(), games=[{"appid": 7, "name": "G"}])
+    state.store.add("store", "7", "https://s", "2026-11-01",
+                    json.dumps({"developer": ["Studio"], "release_date": "2025-01-02", "genres": ["RPG"], "price": "$9.99"}))
+    card = run(app.game_cards(state))[0]
+    assert card["developer"] == "Studio" and card["genres"] == ["RPG"] and card["price"] == "$9.99"
+    assert card["store_url"].endswith("/app/7/") and "/apps/7/header.jpg" in card["header_image"]
+    bare = run(app.game_cards(Research(hooks=TraceHooks(), games=[{"appid": 8, "name": "H"}])))[0]
+    assert bare["name"] == "H" and "developer" not in bare  # offline: only what we know

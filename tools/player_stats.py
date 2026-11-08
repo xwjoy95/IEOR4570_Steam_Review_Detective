@@ -99,6 +99,14 @@ def parse_steamspy(raw: dict, appid: int) -> dict:
     }
 
 
+def owners_upper_bound(owners: str | None) -> int | None:
+    """'20,000,000 .. 50,000,000' -> 50000000; None if it can't be read."""
+    try:
+        return int(str(owners).split("..")[-1].replace(",", "").strip())
+    except ValueError:
+        return None
+
+
 def parse_current_players(raw: dict) -> int:
     response = raw["response"]
     if response.get("result") != 1 or type(response.get("player_count")) is not int:
@@ -236,14 +244,24 @@ async def get_player_stats(ctx: RunContextWrapper[Research], appid: int) -> dict
         current = None
         warnings.append("Steam's current player count is unavailable.")
 
+    # SteamSpy lags for new releases: an owner range below the players online right now can't be right.
+    online = max(v for v in (current, stats["ccu_yesterday"], 0) if v is not None)
+    upper = owners_upper_bound(stats["owners_estimate"])
+    owners_unreliable = upper is not None and online > upper
+    if owners_unreliable:
+        warnings.append(f"SteamSpy's owner estimate ({stats['owners_estimate']}) is below the {online} players online, "
+                        "so it is out of date (common for new releases). Don't report it as a figure.")
+
     as_of = snap["as_of"]
     text = (f"{stats['name']} (SteamSpy, {as_of}): owners estimate {stats['owners_estimate']}; "
             f"yesterday's peak concurrent players {stats['ccu_yesterday']}; "
             f"average playtime {stats['average_forever_h']} h, median {stats['median_forever_h']} h "
-            f"(None = no data); current players on Steam {current}; top tags {', '.join(stats['tags'])}.")
+            f"(None = no data); current players on Steam {current}; top tags {', '.join(stats['tags'])}."
+            + (" The owners estimate is below the players online, so SteamSpy is out of date for this game." if owners_unreliable else ""))
     ref = ctx.context.store.add("player_stats", f"steamspy:{appid}:{as_of}", f"https://steamspy.com/app/{appid}", as_of, text,
                                 meta={"owners_estimate": stats["owners_estimate"], "current_players": current})
     return {"ok": True, "ref": ref, "appid": appid, **stats, "current_players": current,
+            "owners_unreliable": owners_unreliable,
             "note": "owners_estimate is a SteamSpy estimate range, not a sales figure. Null playtime means no data.",
             "warnings": warnings, "source": source, "as_of": as_of, "from_snapshot": from_snapshot}
 
@@ -289,7 +307,8 @@ async def get_player_history(ctx: RunContextWrapper[Research], appid: int, start
     for r in picked:
         change = f", {r['gain_pct']:+}% vs previous month" if r["gain_pct"] is not None else ""
         ref = ctx.context.store.add("player_history", f"{appid}:{r['month']}", url, r["month"],
-                                    f"{r['month']}: {r['avg']} average concurrent players, {r['peak']} peak{change} (SteamCharts).")
+                                    f"{r['month']}: {r['avg']} average concurrent players, {r['peak']} peak{change} (SteamCharts).",
+                                    meta={"avg": r["avg"], "peak": r["peak"]})
         months.append({"ref": ref, "month": r["month"], "avg": r["avg"], "peak": r["peak"], "gain_pct": r["gain_pct"]})
     return {"ok": True, "appid": appid, "months": months, "coverage": coverage, "source": "steamcharts",
             "as_of": snap["as_of"], "from_snapshot": from_snapshot}

@@ -20,6 +20,7 @@ from context_panel import AgentContexts, add_context_panel  # noqa: E402
 from detective.hooks import TraceHooks  # noqa: E402
 from detective.orchestrator import deep_research  # noqa: E402
 from detective.state import Research  # noqa: E402
+from tools import USE_FAKE_TOOLS, steam_news  # noqa: E402
 
 
 class ChatRequest(BaseModel):
@@ -40,6 +41,8 @@ class ChatResponse(BaseModel):
     tool_calls: list[ToolCall] = []
     evidence: dict = {}  # "R12" -> {source, raw_id, url, date, text}: the page opens citations from it
     chart: dict | None = None  # timeline data: review trend + patch dates
+    games: list[dict] = []  # [{appid, name}] the question was about (empty when the Clarifier asked back)
+    timeline: list[dict] = []  # [{agent, start, end}] seconds since the run began: who worked when
 
 
 # In-memory, single process.
@@ -55,6 +58,77 @@ add_context_panel(app, sessions)
 def index():
     # no-cache: browsers otherwise keep serving an old page after a redeploy
     return FileResponse(HERE / "static" / "index.html", headers={"Cache-Control": "no-cache"})
+
+
+CAPSULE_URL = "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/{appid}/header.jpg"
+
+
+def _as_list(value) -> list:
+    return value if isinstance(value, list) else [value] if value else []
+
+
+async def game_cards(research: Research) -> list[dict]:
+    """The games for the page's dossier header: appid and name, plus store facts when we have them.
+
+    Uses get_game_info's evidence if a researcher called it; otherwise, with real tools, one
+    store-details request (cached, 8 s budget). Missing facts stay missing: the page shows what it has."""
+    cards = []
+    items = research.store.items()
+    for game in research.games:
+        appid = game.get("appid")
+        card = {**game, "store_url": f"https://store.steampowered.com/app/{appid}/",
+                "header_image": CAPSULE_URL.format(appid=appid)}
+        facts = None
+        for item in items.values():
+            if item["source"] == "store" and item["raw_id"] == str(appid):
+                try:
+                    facts = json.loads(item["text"])
+                except ValueError:
+                    pass
+        if facts is None and not USE_FAKE_TOOLS and isinstance(appid, int):
+            try:
+                snap = await asyncio.wait_for(steam_news.fetch_game_details(appid), 8)
+                data = steam_news._details_data(snap["data"], appid)
+                facts = {"developer": data.get("developers"), "release_date": steam_news._release(data)[0],
+                         "genres": [g["description"] for g in data.get("genres", []) if "description" in g],
+                         **steam_news._price(data)}
+                card["header_image"] = data.get("header_image") or card["header_image"]
+            except Exception:  # the header is decoration: never fail the answer over it
+                facts = None
+        if facts:
+            card.update({"developer": ", ".join(_as_list(facts.get("developer"))) or None,
+                         "release_date": facts.get("release_date"),
+                         "genres": _as_list(facts.get("genres"))[:4],
+                         "price": facts.get("price"), "discount_pct": facts.get("discount_pct")})
+        cards.append(card)
+    return cards
+
+
+def agent_timeline(hooks: TraceHooks) -> list[dict]:
+    """When each agent started and finished, in seconds from the first one: shows the parallel fan-out."""
+    if not hooks.timings:
+        return []
+    t0 = min(start for start, _ in hooks.timings.values())
+    rows = [{"agent": agent, "start": round(start - t0, 1), "end": round(end - t0, 1) if end else None}
+            for agent, (start, end) in hooks.timings.items()]
+    return sorted(rows, key=lambda r: r["start"])
+
+
+def build_chart(research: Research) -> dict | None:
+    """Timeline data for the page: the review trend (from get_review_trend), plus the patch notes and
+    monthly player counts the researchers found, taken from the evidence so each point has its ref."""
+    chart = dict(research.chart or {})
+    items = research.store.items()
+    if not chart.get("patches"):
+        chart["patches"] = [
+            {"date": it["date"][:10], "title": it["text"].split("\n")[0][:90], "ref": rid}
+            for rid, it in items.items() if it["source"] == "news"
+        ]
+    chart["players"] = [
+        {"month": it["date"][:7], "avg": it["meta"]["avg"], "ref": rid}
+        for rid, it in items.items() if it["source"] == "player_history" and "avg" in it.get("meta", {})
+    ]
+    return chart if chart.get("series") or chart["players"] else None
 
 
 @app.post("/chat", response_model=ChatResponse)
@@ -79,8 +153,18 @@ async def chat(request: ChatRequest) -> ChatResponse:
         session_id=session_id,
         tool_calls=[ToolCall(**call) for call in hooks.tool_calls],
         evidence=research.store.items(),
-        chart=research.chart,
+        chart=build_chart(research),
+        games=await game_cards(research),
+        timeline=agent_timeline(hooks),
     )
+
+
+@app.post("/clear")
+def clear(session_id: str | None = None):
+    """Forget one conversation (the page's delete button). Other sessions are untouched."""
+    for store in (history, last_games, sessions):
+        store.pop(session_id, None)
+    return {"status": "ok"}
 
 
 @app.get("/run")

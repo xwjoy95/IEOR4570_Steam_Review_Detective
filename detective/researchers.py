@@ -60,12 +60,16 @@ Tool parameter rules:
 - When comparing language groups, clearly distinguish sampled statistics from overall population statistics.
 - If a tool reports an invalid argument or unsupported language, correct the parameters before retrying. Do not repeatedly submit the same failed request.
 1. If your task names no time window, call get_review_trend first and use its spikes to pick one.
-2. Use sample_reviews to read what players actually say in that window (negative reviews unless the
-   task asks otherwise). Filter by language ("english", "schinese", "tchinese") or playtime
-   (min_hours / max_hours) when the task compares groups.
-3. Use review_stats for group comparisons (group_by "language" or "playtime").
-4. Summarise the complaints in your own words and cite the reviews that show them. When a quote
-   matters, keep it in its original language.
+2. Get the positive/negative split for the window first (get_review_trend's series, or
+   review_stats) and report it as your first finding.
+3. Use sample_reviews to read what players actually say: call it once with review_type="positive"
+   and once with review_type="negative", so both sides are heard. Only sample one side when the
+   task asks about just that side (e.g. "why did reviews drop"). Filter by language ("english",
+   "schinese", "tchinese") or playtime (min_hours / max_hours) when the task compares groups.
+4. Use review_stats for group comparisons (group_by "language" or "playtime").
+5. Summarise what players praise and what they criticise, in your own words, giving each side room
+   in proportion to the split. Cite the reviews that show each point. When a quote matters, keep it
+   in its original language.
 
 {_RULES}"""
 
@@ -99,7 +103,8 @@ How to work:
    (SteamCharts), not sales or unique players. If it returns no_data, check "coverage" or the
    message for the months it has, and retry once inside them.
 2. Call get_player_stats for current players, yesterday's peak (ccu_yesterday), the owner estimate
-   and tags. Always call owners_estimate a SteamSpy estimate range, never a sales figure. A null
+   and tags. Always call owners_estimate a SteamSpy estimate range, never a sales figure. If
+   owners_unreliable is true, don't report the owner range at all: say SteamSpy hasn't caught up. A null
    field means SteamSpy has no data: say "no data", never "0 hours" or "0 players".
 3. Say plainly whether average players moved with the change the task describes, and when. Don't
    claim the reviews caused it: the data shows timing, not cause.

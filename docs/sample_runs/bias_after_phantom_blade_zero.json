@@ -1,0 +1,1122 @@
+{
+  "question": "How Do Reviews of Phantom Blade Zero Compare Now with the Launch Period?",
+  "seconds": 50.4,
+  "sample_reviews_types": [
+    "positive",
+    "positive",
+    "negative",
+    "negative"
+  ],
+  "cited_reviews_positive": 6,
+  "cited_reviews_negative": 12,
+  "missing": [],
+  "tool_calls_per_agent": {
+    "Clarifier": 1,
+    "Lead": 5,
+    "Patch Historian 3": 2,
+    "Player Data Analyst 4": 2,
+    "Review Analyst 2": 3,
+    "Review Analyst 1": 3
+  },
+  "response": "# How Do Reviews of Phantom Blade Zero Compare Now with the Launch Period?\n\nReviews for **Phantom Blade Zero** remain overwhelmingly positive, with recent English reviews showing 3.7% negative and Simplified Chinese showing 3.0% negative between November 5 and November 8, 2026 [R7][R8], compared to 5.3% negative for English and 3.3% negative for Simplified Chinese during the launch window of October 29 to November 4, 2026 [R9][R10]. This slight positive trend followed the release of Patch 1.0302256 on November 4, 2026, which addressed critical technical bugs like shader compilation stutters and control mapping issues [R6]. While early complaints heavily criticized performance drops and unresponsive controls [R54][R68], recent criticisms have shifted to minor environmental collision issues [R48], while both periods saw praise for the game's responsive combat, beautiful art direction, and music [R11][R15][R21].\n\n### Timeline\n\n*   **October 28, 2026**: **Phantom Blade Zero** is released on Windows by S-GAME Studio and S-GAME Publishing for $59.99 [R3]. S-GAME publishes the developer announcement titled \"Reason and Madness\" reflecting on franchise history [R5].\n*   **October 29 – November 4, 2026**: Launch review period [R9][R10]. In sampled reviews, English reviewers submit 284 positive and 16 negative reviews, while Simplified Chinese reviewers submit 290 positive and 10 negative reviews [R9][R10].\n*   **November 4, 2026**: S-GAME releases patch version 1.0302256, adding sound options, remapping for keyboard and controller, easing boss grab attacks on Wayfarer and Pathbreaker difficulties, and optimization improvements for PC shaders [R6].\n*   **November 5 – November 8, 2026**: Recent review period [R7][R8]. Sampled English reviews contain 289 positive and 11 negative reviews, while Simplified Chinese reviews contain 291 positive and 9 negative reviews [R7][R8].\n*   **November 8, 2026**: The game records a current player count of 349043 on Steam [R4].\n\n### What players say\n\nDuring the recent period, 96.3% of sampled English reviews and 97.0% of Simplified Chinese reviews were positive, maintaining the strong positive momentum from the launch period [R7][R8][R9].\n\n#### Praise\nPositive reviewers continuously praise **Phantom Blade Zero** for its butter-smooth, highly responsive combat system, outstanding fluid animations, and satisfying weapon diversity [R11][R15][R17]. Players also express appreciation for the game's engaging wuxia atmospheric music, great art direction, and Chinese voice acting [R15][R17][R18]. At launch, some players specifically praised the design choice of non-respawning enemies, though this was divisive as others felt it left maps feeling empty [R29][R70].\n*   \"BEST ACTION GAME I'VE EXPERIENCED IN THE RECENT YEARS.\" (57.8 hours played) [R11]\n*   \"Every weapon feels so different and unique while all feeling extremely satisfying to try out with the exclusive animations for them all.\" (59.8 hours played) [R15]\n\n#### Criticism\nNegative feedback has evolved since launch. In the launch window, players complained about severe shader compilation stutters, delayed texture loading, frame drops, frequent crashes, and AMD GPU glitches [R54][R56][R62]. They also criticized key remapping bugs and unresponsive dodge inputs [R55][R68]. Following the November 4 patch [R6], recent complaints highlight other optimization issues on GTX 50s [R46] and collision bugs where players get stuck on small ledges or rocks [R48]. Others complain about invisible walls [R43] or dismiss the combat across both windows as repetitive button-mashing or heavily scripted [R42][R52][R53].\n*   \"I should not be getting stuck on little ledges, of walk ways, rocks, pieces of wood, etc.\" (25.3 hours played) [R48]\n\n### What the data can't answer\n\n*   The data cannot track historical player count peaks or averages for **Phantom Blade Zero** from its launch on October 29 through November 8, 2026.\n*   The total number of owners cannot be verified because SteamSpy's owner estimate is out of date and contradicts the active player count [R4].\n*   There is no console data available, as the sources only cover Steam and Windows platforms [R3][R4].\n*   Steam reviews only represent players who chose to post reviews.\n*   Developer motivations are only known as stated in official announcements [R5].",
+  "session_id": "f178b882-66f4-4490-8c82-729963b76711",
+  "tool_calls": [
+    {
+      "agent": "Clarifier",
+      "name": "search_game",
+      "args": {
+        "limit": 5,
+        "query": "Phantom Blade Zero"
+      },
+      "result": "{'ok': True, 'results': [{'appid': 4115450, 'name': 'Phantom Blade Zero', 'release_date': '2026-10-28', 'price': '$59.99', 'price_minor': 5999, 'initial_price_minor': 5999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'as_of': '2026-11-08', 'from_snapshot': False}], 'source': 'https://store.steampowered.com/api/storesearch/', 'as_of': '2026-11-08', 'from_snapshot': False, 'partial': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "get_review_trend",
+      "args": {
+        "appid": 4115450,
+        "language": "all"
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'language': 'all', 'granularity': 'week', 'series': [{'period': '2026-10-29', 'up': 67076, 'down': 6816, 'pct_negative': 9.2, 'ref': 'R1'}, {'period': '2026-11-05', 'up': 16979, 'down': 659, 'pct_negative': 3.7, 'ref': 'R2'}], 'spikes': [], 'source': 'https://store.steampowered.com/appreviewhistogram/4115450', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Patch Historian 3",
+      "name": "get_game_info",
+      "args": {
+        "appid": 4115450
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'name': 'Phantom Blade Zero', 'type': 'game', 'developer': ['S-GAME Studio'], 'publisher': ['S-GAME Publishing'], 'release_date': '2026-10-28', 'release_date_raw': 'Oct 28, 2026', 'coming_soon': False, 'genres': ['Action', 'RPG'], 'platforms': {'windows': True, 'mac': False, 'linux': False}, 'price': '$59.99', 'price_minor': 5999, 'initial_price_minor': 5999, 'currency': 'USD', 'region': 'US', 'is_free': False, 'discount_pct': 0, 'metacritic': 88, 'description': 'S-GAME presents Phantom Blade Zero, a fusion of classic Wuxia storytelling and exhilarating action powered by Unreal Engine 5. You play as Soul, a warrior with only sixty-six days left to live. Fend off assassins, unravel world-ending conspiracies, and defend your values with your life.', 'price_scope': 'Current US store price at collection time; no price history.', 'ref': 'R3', 'url': 'https://store.steampowered.com/app/4115450/', 'date': '2026-11-08', 'source': 'https://store.steampowered.com/api/appdetails', 'as_of': '2026-11-08', 'from_snapshot': False, 'warnings': []}"
+    },
+    {
+      "agent": "Player Data Analyst 4",
+      "name": "get_player_history",
+      "args": {
+        "appid": 4115450,
+        "start": "2026-08-01",
+        "end": "2026-11-30"
+      },
+      "result": "{'ok': False, 'error': 'unavailable', 'message': 'SteamCharts is unreachable or has no page for this appid, and there is no snapshot. Historical player counts are not available.', 'source': 'steamcharts'}"
+    },
+    {
+      "agent": "Player Data Analyst 4",
+      "name": "get_player_stats",
+      "args": {
+        "appid": 4115450
+      },
+      "result": "{'ok': True, 'ref': 'R4', 'appid': 4115450, 'name': 'Phantom Blade Zero', 'owners_estimate': '0 .. 20,000', 'average_forever_h': None, 'median_forever_h': None, 'average_2weeks_h': None, 'median_2weeks_h': None, 'ccu_yesterday': None, 'steamspy_positive': 0, 'steamspy_negative': 0, 'tags': {}, 'current_players': 349043, 'owners_unreliable': True, 'note': 'owners_estimate is a SteamSpy estimate range, not a sales figure. Null playtime means no data.', 'warnings': [\"SteamSpy's owner estimate (0 .. 20,000) is below the 349043 players online, so it is out of date (common for new releases). Don't report it as a figure.\"], 'source': 'steamspy + GetNumberOfCurrentPlayers', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Patch Historian 3",
+      "name": "get_patch_notes",
+      "args": {
+        "official_only": true,
+        "end": "2026-11-08",
+        "appid": 4115450,
+        "start": "2026-10-28"
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'notes': [{'ref': 'R5', 'id': '1847920302231212', 'date': '2026-10-28', 'title': 'Reason and Madness', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302231212', 'official': True, 'kind': 'announcement', 'feed': 'steam_community_announcements', 'summary': 'Twenty years ago, while I was still a student, I completed my first indie game, Rainblood: Town of Death. It was a hobby project made with RPG Maker. With the limited skills I had at the time, I built the fantasy world I had imagined: the Phantom World, rooted in traditional Chinese wuxia but infused with elements such as body modification, parallel worlds, and more.\\n\\nBack then, I had no idea where my life or career would lead. Making games had simply been a source of comfort while I studied abroad, but before I knew it, it had become one of the most important parts of my life.\\n\\nMore than three years ago, when we brought our first, still rather rough trailer for Phantom Blade Zero to a PlayStation Showcase, we probably looked like a new studio being a little too bold, putting an unfinished game out for the whole world to judge. Phantom Blade was simply another original IP, its world, characters, and story entirely unfamiliar to most people.\\n\\nBut that moment marked the beginning of an extraordinary journey.\\n\\nWe cancelled our other projects in development and kept expanding the scale of production, refining every detail, and bringing together all the technology, expertise, resources,', 'summary_is_excerpt': True, 'truncated': True}, {'ref': 'R6', 'id': '1848557880478393', 'date': '2026-11-04', 'title': 'Phantom Blade Zero — Patch Notes (Version 1.0302256)', 'url': 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848557880478393', 'official': True, 'kind': 'patch_notes', 'feed': 'steam_community_announcements', 'summary': 'Thank you for your continued support and feedback. This patch introduces "
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "players",
+        "task": "What were the player count trends (peaks and averages) for Phantom Blade Zero (4115450) from its launch on October 29, 2026 through November 8, 2026?"
+      },
+      "result": "{\"findings\": [{\"claim\": \"The current player count for Phantom Blade Zero was 349043 on November 8, 2026.\", \"evidence\": [\"R4\"]}, {\"claim\": \"SteamSpy has not caught up with owners for Phantom Blade Zero, and its owner estimate is unreliable.\", \"evidence\": [\"R4\"]}], \"cannot_answer\": [\"historical player counts\", \"peaks and averages for Phantom Blade Zero from October 29, 2026 through November 8, 2026\"]}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "review_stats",
+      "args": {
+        "start": "2026-11-05",
+        "appid": 4115450,
+        "group_by": "language",
+        "end": "2026-11-08"
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'group_by': 'language', 'start': '2026-11-05', 'end': '2026-11-08', 'groups': [{'group': 'english', 'up': 289, 'down': 11, 'pct_negative': 3.7, 'ref': 'R7'}, {'group': 'schinese', 'up': 291, 'down': 9, 'pct_negative': 3.0, 'ref': 'R8'}], 'sampled': 600, 'partial_sample': True, 'total_matching': 27497, 'pages_fetched': 6, 'language_coverage': {'english': {'sampled': 300, 'total_matching': 2001, 'pages_fetched': 3, 'partial_sample': True}, 'schinese': {'sampled': 300, 'total_matching': 25496, 'pages_fetched': 3, 'partial_sample': True}}, 'source': 'https://api.steampowered.com/IUserReviewsService/GetAppReviews/v1/', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "patches",
+        "task": "Find the game release details and any patch notes or update announcements released for Phantom Blade Zero (4115450) between October 28 and November 8, 2026."
+      },
+      "result": "{\"findings\": [{\"claim\": \"Phantom Blade Zero was released on October 28, 2026, developed by S-GAME Studio and published by S-GAME Publishing for Windows at a price of $59.99.\", \"evidence\": [\"R3\"]}, {\"claim\": \"On October 28, 2026, S-GAME published a developer announcement titled 'Reason and Madness' reflecting on the franchise history and the release of Phantom Blade Zero.\", \"evidence\": [\"R5\"]}, {\"claim\": \"On November 4, 2026, S-GAME released patch version 1.0302256 for Phantom Blade Zero.\", \"evidence\": [\"R6\"]}, {\"claim\": \"Patch 1.0302256 added 'Hit Sound Intensity' and 'Hit Impact Sound Intensity' audio settings, and added PC support for remapping 'Interact / Talk' for keyboard and controller.\", \"evidence\": [\"R6\"]}, {\"claim\": \"Patch 1.0302256 reduced the frequency of grab attacks used by Hua, Deadly Betrothed on Wayfarer and Pathbreaker difficulties, while leaving other difficulty settings unaffected.\", \"evidence\": [\"R6\"]}, {\"claim\": \"Patch 1.0302256 updated the PC shader compilation process to significantly reduce startup times and made ray tracing shaders no longer compile by default at startup.\", \"evidence\": [\"R6\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "review_stats",
+      "args": {
+        "appid": 4115450,
+        "end": "2026-11-04qs",
+        "group_by": "language",
+        "start": "2026-10-29"
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'group_by': 'language', 'start': '2026-10-29', 'end': '2026-11-04', 'groups': [{'group': 'english', 'up': 284, 'down': 16, 'pct_negative': 5.3, 'ref': 'R9'}, {'group': 'schinese', 'up': 290, 'down': 10, 'pct_negative': 3.3, 'ref': 'R10'}], 'sampled': 600, 'partial_sample': True, 'total_matching': 115113, 'pages_fetched': 6, 'language_coverage': {'english': {'sampled': 300, 'total_matching': 8182, 'pages_fetched': 3, 'partial_sample': True}, 'schinese': {'sampled': 300, 'total_matching': 106931, 'pages_fetched': 3, 'partial_sample': True}}, 'source': 'https://api.steampowered.com/IUserReviewsService/GetAppReviews/v1/', 'as_of': '2026-11-08', 'from_snapshot': False}"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "appid": 4115450,
+        "language": "english",
+        "min_hours": null,
+        "limit": 10,
+        "review_type": "positive",
+        "start": "2026-11-05",
+        "end": "2026-11-08",
+        "max_hours": null
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 1901, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R11', 'date': '2026-11-07', 'url': 'https://steamcommunity.com/profiles/76561198073059342/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 57.8, 'text': \"GAME OF THE DECADE? (for me). Butter smooth combat.. Had no issues running this game with PT + FG at 1440P. \\r\\n\\r\\nBEST ACTION GAME I'VE EXPERIENCED IN THE RECENT YEARS.\"}, {'ref': 'R12', 'date': '2026-11-08', 'url': 'https://steamcommunity.com/profiles/76561198049892880/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 21.1, 'text': \"This is actually a peak action game. I didn't expect much and was pleasantly surprised after completing about 4, fairly large, metroidvania-esque zones that were full of content and things for me to do and then learned I was only about 50% of the way through the game. This game is a bit like Sekiro on steroids. There are also surprisingly many builds and weapons to choose from, the bosses all feel\"}, {'ref': 'R13', 'date': '2026-11-07', 'url': 'https://steamcommunity.com/profiles/76561198362816222/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 47.5, 'text': 'The ancient Wulin propaganda got me.\\n\\nThe Merciful Lady of the Blossom Veil\\nShall descend from Her lotus throne in the Pure Land\\nAnd reveal Her divine presence in this troubled mortal world\\nManifesting Her sacred form for all to behold\\nTo guide all beings lost in suffering\\nAnd deliver them from affliction and impermanence.'}, {'ref': 'R14', 'date': '2026-11-07', 'url': 'https://steamcommunity.com/profiles/76561198073787382/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 21.2, 'text': \"game of the year, btw its not a souls like so please dont treat it like one, it's just a good game\"}, {'ref': 'R15', 'date': '2026-11-07', 'url': "
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "sample_reviews",
+      "args": {
+        "language": "english",
+        "appid": 4115450,
+        "limit": 20,
+        "max_hours": null,
+        "min_hours": null,
+        "review_type": "positive",
+        "end": "2026-11-04",
+        "start": "2026-10-29"
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 7518, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R21', 'date': '2026-11-04', 'url': 'https://steamcommunity.com/profiles/76561199864993639/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 47.3, 'text': 'Amazing music, amazing combat, amazing choices of weapons and a bit confusing story but its very interesting if you read and understand through everything. I absolutely loved this game and have been waiting for the release for a long time and after completing it myself, this game is one of the best i have ever played.'}, {'ref': 'R22', 'date': '2026-11-04', 'url': 'https://steamcommunity.com/profiles/76561198080636755/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 6.8, 'text': 'öyle bi combat var ki insana 31 cektirir'}, {'ref': 'R23', 'date': '2026-11-04', 'url': 'https://steamcommunity.com/profiles/76561199833309323/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 98.5, 'text': 'fun'}, {'ref': 'R24', 'date': '2026-11-04', 'url': 'https://steamcommunity.com/profiles/76561198452159722/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 40.5, 'text': 'Absolute cinema! \\r\\nL GTA6 \\r\\nW Phantom blade'}, {'ref': 'R25', 'date': '2026-11-04', 'url': 'https://steamcommunity.com/profiles/76561199146228441/recommended/4115450/', 'language': 'english', 'positive': True, 'hours_at_review': 44.3, 'text': 'GOTY for me before it was Crimson Desert. This Game is a treat my only complaint is that sometimes it feels a bit to easy but the combat is amazing one of the best ive ever played you feel like a badass everything is so perfectly captured. The story is also good and at the end i had goosebumps I got the \"True ending\" It is 100 percent worth it and almost mandatory. Amazing game cant wait to see wh'}, {'ref': 'R26', 'date': '2026-11-04"
+    },
+    {
+      "agent": "Review Analyst 2",
+      "name": "sample_reviews",
+      "args": {
+        "language": "english",
+        "end": "2026-11-08",
+        "max_hours": null,
+        "start": "2026-11-05",
+        "min_hours": null,
+        "appid": 4115450,
+        "review_type": "negative",
+        "limit": 10
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'total_in_range': 100, 'sampled_in_range': 100, 'total_matching': 100, 'pages_fetched': 1, 'sampled': True, 'reviews': [{'ref': 'R41', 'date': '2026-11-06', 'url': 'https://steamcommunity.com/profiles/76561198778449898/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 11.3, 'text': \"The Duality of Phantom Blade Zero: Overrated or Exactly What You're Looking For\\n\\nThis is the first time I've felt the need to write a review of a game, mainly because I want to save some people from potentially making a mistake. So let me explain that somewhat confusing title.\\n\\nFirst of all, this game looks absolutely beautiful. The art direction is fantastic, same as the music and simply walking \"}, {'ref': 'R42', 'date': '2026-11-05', 'url': 'https://steamcommunity.com/profiles/76561199638888777/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 3.8, 'text': \"I've yet to get even a drip of dopamine from this. How can y'all glaze something so obviously basic? This is the first time I've ever noped out of boss fight from the sheer amount of time you have to button spam. It's the most boring shit. The 2nd phase of the annoying chain-guy fight (dont care to know the name) is spamming the same moves for so long I just quit out of bordem induced rage. Hated \"}, {'ref': 'R43', 'date': '2026-11-07', 'url': 'https://steamcommunity.com/profiles/76561199039159324/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 9.9, 'text': ' 战斗手感很差，战斗操作都感觉不太跟手，不是延迟的问题，是动作前摇长 不够干净利落，给人一种不跟手的感觉。不只是战斗吧，所有人物的动作，都感觉很不利落 手感超级差。另外到处是空气墙，行走特别不自由，除了打怪 没有别的事情可以做，鉴定为类似于黑悟空那种垃圾阳痿游戏，真的很后悔买了这个游戏，感觉玩不下去'}, {'ref': 'R44', 'date': '2026-11-05', 'url': 'https://steamcommunity.com/profiles/76561198057216703/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 69.5, 'text': \"After 60+ hours in the game, I've come to the conclusion that the game suffers from a split p"
+    },
+    {
+      "agent": "Review Analyst 1",
+      "name": "sample_reviews",
+      "args": {
+        "appid": 4115450,
+        "limit": 20,
+        "end": "2026-11-04",
+        "language": "english",
+        "review_type": "negative",
+        "min_hours": null,
+        "start": "2026-10-29",
+        "max_hours": null
+      },
+      "result": "{'ok': True, 'appid': 4115450, 'total_in_range': None, 'sampled_in_range': 300, 'total_matching': 664, 'pages_fetched': 3, 'sampled': True, 'reviews': [{'ref': 'R51', 'date': '2026-11-03', 'url': 'https://steamcommunity.com/profiles/76561198059882645/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 10.9, 'text': 'мне осталось жить 66 дней мор утопия'}, {'ref': 'R52', 'date': '2026-11-02', 'url': 'https://steamcommunity.com/profiles/76561199164345155/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 4.3, 'text': 'For me, Phantom Blade was a wishlist game since it was announced. While the game has a fun element to it, the combat can be reduced to a button mashing spam fest that leaves a lot of disappointment. I held off on getting this due to some of the feedback it was getting, and while I think the feedback was a little unfair, I do believe the game is bit overhyped. Games like this show that the unwashed'}, {'ref': 'R53', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561197970546349/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 24.4, 'text': 'I wish Steam had a \"Meh\" option, because that\\'s exactly where I land on this one.\\n\\nThis game was sold on the promise of Sekiro-level combat, and I\\'m just not seeing it. What we actually got feels more like an anime dressed up as a game.\\n\\nBoss encounters are essentially heavily scripted action movies. You hold block, wait for the flashy visual cue, hit the corresponding bumper, and get a few second'}, {'ref': 'R54', 'date': '2026-10-31', 'url': 'https://steamcommunity.com/profiles/76561198093483333/recommended/4115450/', 'language': 'english', 'positive': False, 'hours_at_review': 6.8, 'text': 'combat system are just bad or poorly explained. why the f i need to compile shaders every run (i get it if for the first time, but every run...?)\\n\\nUE5 trash - shader statters, delayed models/textures lo"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "task": "What do positive and negative Steam reviews for Phantom Blade Zero (4115450) complain about or praise during the recent window of November 5 to November 8, 2026?",
+        "researcher": "reviews"
+      },
+      "result": "{\"findings\": [{\"claim\": \"During the window of November 5 to November 8, 2026, English reviews had 289 positive and 11 negative reviews (3.7% negative), while Simplified Chinese reviews had 291 positive and 9 negative reviews (3.0% negative).\", \"evidence\": [\"R7\", \"R8\"]}, {\"claim\": \"Positive reviewers praised the game for its butter-smooth, responsive combat system, fluid animations, diverse weapons and builds, great art direction, music, and beautiful graphics.\", \"evidence\": [\"R11\", \"R12\", \"R15\", \"R17\", \"R18\"]}, {\"claim\": \"Some positive reviewers specifically highlighted the engaging story and Chinese voice acting.\", \"evidence\": [\"R15\", \"R17\", \"R18\"]}, {\"claim\": \"Negative reviewers complained about boring or repetitive combat mechanics, long animation start-ups (wind-ups) making actions feel un-responsive, and excessive button-mashing during boss fights.\", \"evidence\": [\"R42\", \"R43\", \"R47\", \"R50\"]}, {\"claim\": \"Negative reviewers also cited technical and environmental issues such as bad optimization causing crashes, invisible walls, and getting stuck on minor environmental ledges, rocks, or pieces of wood during combat.\", \"evidence\": [\"R43\", \"R46\", \"R48\"]}], \"cannot_answer\": []}"
+    },
+    {
+      "agent": "Lead",
+      "name": "research",
+      "args": {
+        "researcher": "reviews",
+        "task": "What do positive and negative Steam reviews for Phantom Blade Zero (4115450) complain about or praise during the launch window of October 29 to November 4, 2026?"
+      },
+      "result": "{\"findings\": [{\"claim\": \"During the launch window of October 29 to November 4, 2026, sampled English reviews had 284 positive and 16 negative reviews (5.3% negative), while Simplified Chinese reviews had 290 positive and 10 negative reviews (3.3% negative).\", \"evidence\": [\"R9\", \"R10\"]}, {\"claim\": \"Positive reviewers praise the game for its amazing music, fast-paced and satisfying combat system, gorgeous atmosphere, and engaging wuxia/souls-like gameplay experience.\", \"evidence\": [\"R21\", \"R25\", \"R28\", \"R35\", \"R36\"]}, {\"claim\": \"Some positive reviewers highlight design choices like non-respawning enemies as a major plus, while others criticize the lack of enemy respawns because it leaves zones empty and limits post-clear combat opportunities.\", \"evidence\": [\"R29\", \"R70\"]}, {\"claim\": \"Negative reviewers complain about technical issues including shader compilation stutter, delayed model/texture loading, frame drops, frequent crashes, and AMD GPU visual glitches.\", \"evidence\": [\"R54\", \"R56\", \"R62\"]}, {\"claim\": \"Negative reviewers also criticize the combat mechanics, describing them as overly scripted, weightless, button-mashing or turn-based where enemies automatically take their turn after you exhaust your combo.\", \"evidence\": [\"R52\", \"R53\", \"R57\", \"R59\", \"R69\"]}, {\"claim\": \"Additional negative feedback mentions unresponsive parry/dodge inputs, control mapping bugs (such as crouching triggering an unmapped weapon), and frustrating boss encounters like the Gold Masked One.\", \"evidence\": [\"R55\", \"R64\", \"R67\", \"R68\"]}], \"cannot_answer\": []}"
+    }
+  ],
+  "evidence": {
+    "R1": {
+      "source": "review_trend",
+      "raw_id": "4115450:2026-10-29",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-10-29",
+      "text": "Period 2026-10-29: 67076 positive reviews, 6816 negative reviews, 9.2% negative.",
+      "meta": {}
+    },
+    "R2": {
+      "source": "review_trend",
+      "raw_id": "4115450:2026-11-05",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-11-05",
+      "text": "Period 2026-11-05: 16979 positive reviews, 659 negative reviews, 3.7% negative.",
+      "meta": {}
+    },
+    "R3": {
+      "source": "store",
+      "raw_id": "4115450",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-11-08",
+      "text": "{\"appid\": 4115450, \"name\": \"Phantom Blade Zero\", \"type\": \"game\", \"developer\": [\"S-GAME Studio\"], \"publisher\": [\"S-GAME Publishing\"], \"release_date\": \"2026-10-28\", \"release_date_raw\": \"Oct 28, 2026\", \"coming_soon\": false, \"genres\": [\"Action\", \"RPG\"], \"platforms\": {\"windows\": true, \"mac\": false, \"linux\": false}, \"price\": \"$59.99\", \"price_minor\": 5999, \"initial_price_minor\": 5999, \"currency\": \"USD\", \"region\": \"US\", \"is_free\": false, \"discount_pct\": 0, \"metacritic\": 88, \"description\": \"S-GAME presents Phantom Blade Zero, a fusion of classic Wuxia storytelling and exhilarating action powered by Unreal Engine 5. You play as Soul, a warrior with only sixty-six days left to live. Fend off assassins, unravel world-ending conspiracies, and defend your values with your life.\", \"price_scope\": \"Current US store price at collection time; no price history.\"}",
+      "meta": {
+        "from_snapshot": false,
+        "captured_at": "2026-11-08T05:14:55.000009+00:00"
+      }
+    },
+    "R4": {
+      "source": "player_stats",
+      "raw_id": "steamspy:4115450:2026-11-08",
+      "url": "https://steamspy.com/app/4115450",
+      "date": "2026-11-08",
+      "text": "Phantom Blade Zero (SteamSpy, 2026-11-08): owners estimate 0 .. 20,000; yesterday's peak concurrent players None; average playtime None h, median None h (None = no data); current players on Steam 349043; top tags . The owners estimate is below the players online, so SteamSpy is out of date for this game.",
+      "meta": {
+        "owners_estimate": "0 .. 20,000",
+        "current_players": 349043
+      }
+    },
+    "R5": {
+      "source": "news",
+      "raw_id": "1847920302231212",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302231212",
+      "date": "2026-10-28",
+      "text": "Reason and Madness\n\nTwenty years ago, while I was still a student, I completed my first indie game, Rainblood: Town of Death. It was a hobby project made with RPG Maker. With the limited skills I had at the time, I built the fantasy world I had imagined: the Phantom World, rooted in traditional Chinese wuxia but infused with elements such as body modification, parallel worlds, and more.\n\nBack then, I had no idea where my life or career would lead. Making games had simply been a source of comfort while I studied abroad, but before I knew it, it had become one of the most important parts of my life.\n\nMore than three years ago, when we brought our first, still rather rough trailer for Phantom Blade Zero to a PlayStation Showcase, we probably looked like a new studio being a little too bold, putting an unfinished game out for the whole world to judge. Phantom Blade was simply another original IP, its world, characters, and story entirely unfamiliar to most people.\n\nBut that moment marked the beginning of an extraordinary journey.\n\nWe cancelled our other projects in development and kept expanding the scale of production, refining every detail, and bringing together all the technology, expertise, resources, and support we could. Thousands of hours of motion capture. Visits to towns and mountain villages across China to scan them in 3D. Lion dance choreography guided by masters from Guangdong, sword formations guided by sword masters from Mount Emei, and hand-to-hand techniques guided by monks from the Shaolin Temple. We also assembled a dedicated team of professional martial arts performers for motion capture, led by action director Yang Liu. With guidance from our hero, Donnie Yen, the team created countless attacks, defensive moves, dodges, combos, and executions for the game.\n\nYou may have already seen plenty of reviews of Phantom Blade Zero, but if you’d rather avoid spoilers, you can always experience the game for yourself. Once you start playing, much of it will feel natural, simple, and familiar. We have taken those familiar elements, reimagined them, and brought them together into something new.\n\nOver the past few years, we have taken a close look at many of the conventions that action RPGs and action games have long treated as unwritten rules. We have asked ourselves what players want most, and how to bring those elements together to achieve our goal: a game that everyone who loves wuxia and spectacular action can enjoy. After all, this is a game. We want as many people as possible to have fun, unwind, and enjoy the experience, while offering an extra rush of adrenaline to those who seek a challenge.\n\nThroughout development, we have spoken with countless players at shows and hands-on events, from Beijing and Shanghai to Los Angeles and São Paulo. Those conversations helped us better understand what players want, and we have tried to bring that same care to even the smallest details.\n\nFor example, our audio settings include an option to adjust the tone of clashing blades, so you can tailor how each clash sounds and feels. On PS5, we offer three different button layouts, with more flexible remapping options on PC. We have also adapted the game for all major screen aspect ratios, including 16:9 monitors and TVs, 16:10 laptops and handhelds, and ultrawide displays with aspect ratios beyond 3:1.\n\nBut making games is not always a rational pursuit. Sometimes, it is passion and a little madness that give a game its richest flavor. Several of our key battles were created by a few young teammates in their twenties. Our Art Director, Michael Chang, single-handedly drew the concept art for every character and most of our environments. And then there is our Music Director, Caisheng Bo, who has never been one to hold back. He created more than ten hours of music almost entirely by himself. Aside from a few special instruments and vocal performances, he handled everything, including composition, performance, and mixing. He also guided the implementation of the music in the game, including playback, volume control, and more.\n\nAfter years of development, I feel that technology and experience have become the baseline, almost a given at this point. What I find myself paying more attention to now is the mindset of the people behind the game. Beyond skill and experience, is there also a certain madness, a certain obsession? Somewhere along the way, as we kept making a wuxia game, it started to feel like we ourselves were becoming the kind of people you would find in a wuxia story.\n\nOver the past few years, one thing I often said to the team was, “Today, I have a suffocating decision to announce.” That usually meant taking apart something everyone had already carefully built and polished, then rebuilding it, or even abandoning it altogether. It meant a great deal of rework, and sometimes letting go of content that had already taken an enormous amount of time and effort. I am deeply grateful to the team for their understanding and support. We did it. We have poured all our thought and creativity into this game.\n\nPhantom Blade Zero exists to make you feel powerful and incredibly cool. No matter what enemy stands before you, you will defeat them in the end. That feeling has to come from more than simply telling you how strong you are. It has to come through every slash of your blade, every block, every dodge, and every dazzling execution shaped by the game’s brutal aesthetic. Your enemies are powerful so that your own strength can feel even greater. Even the story’s darkness, its touch of tragedy, and the countdown of sixty-six days left to live serve that same purpose: to take that sense of strength beyond what you can do in battle and make it something you feel within yourself.\n\nAnd now, with all our hearts, we invite you to experience Phantom Blade Zero.\n\n \n\nIts roots lie in the indie game I created during my student years, at a time of hardship and uncertainty. But it also holds everything we have been able to give.\n\n \n\nThis is a game of immense scale, made with all the passion in our hearts. It is a gift from a small group of gamers who just happen to be developers, to every gamer who shares our love for gaming.\n\n \n\nSee you in the Phantom World!\n\n————————————————\n\nJust before I finished writing this letter, I received three more updates from the team:\n\n- \nWe’ve prepared a day-one patch ahead of launch. The update is approximately 5 GB and significantly improves ray tracing and path tracing performance, alongside several bug fixes. If you’ve already pre-loaded the game, please download and install the update before launching. If you haven’t pre-loaded, your download will automatically include the latest version.\n\n[/*]\n- \nWe’ve spent a great deal of time refining the game’s rasterized visuals so that each environment stays true to our art direction even with ray tracing turned off. We’ve also extensively tested the game on mid-range and lower-end PCs, as well as handhelds, and encourage you to give it a try.\n\n[/*]\n- \nWe’ve observed some performance instability with NVIDIA’s latest 621.01 driver. Based on our testing, version 617.42 currently offers the best experience in Phantom Blade Zero. If you’ve installed a driver newer than 617.42, we recommend rolling back to 617.42 and choosing the clean installation option. Please stay on this version until NVIDIA releases its next driver update, which we expect to arrive soon.\n[/*]\n\n Soulframe LIANG\n\n Creative Director / CEO of S-GAME",
+      "meta": {
+        "official": true,
+        "kind": "announcement",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R6": {
+      "source": "news",
+      "raw_id": "1848557880478393",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848557880478393",
+      "date": "2026-11-04",
+      "text": "Phantom Blade Zero — Patch Notes (Version 1.0302256)\n\nThank you for your continued support and feedback. This patch introduces new audio and control options, along with performance improvements, combat adjustments, and bug fixes.\n\n \n\nNew Features\n\n● Added “Hit Sound Intensity” and “Hit Impact Sound Intensity” options to the audio settings.\n\n● \\[PC] Added support for remapping “Interact / Talk” for both keyboard and controller.\n\n \n\nImprovements and Adjustments\n\n● Improved performance in certain areas.\n\n● Adjusted the combat behavior of certain bosses and enemies, along with the functionality of certain environmental mechanisms.\n\n● Reduced the frequency of grab attacks used by Hua, Deadly Betrothed on Wayfarer and Pathbreaker difficulties. Other difficulty settings are unaffected.\n\n● Improved weapon hit feedback and adjusted the volume of certain sound effects and dialogue.\n\n● Updated weapon descriptions, certain skill descriptions, and controller button icons.\n\n● \\[PC] Updated the shader compilation process to significantly reduce startup times. Ray tracing shaders will no longer be compiled by default at startup. Players who previously had Ray Tracing disabled will need to recompile shaders on their first launch after installing this patch. This is a one-time process and should take only a short time. Players who previously had Ray Tracing enabled can start playing without recompiling shaders. If you enable Ray Tracing in the settings, the required ray tracing shaders will be compiled separately the next time you restart the game.\n\n● \\[PC] Reduced stuttering that could occur when using a controller connected via Bluetooth.\n\n● \\[PC] NVIDIA Reflex now works when set to “Auto” with V-Sync enabled.\n\n \n\nBug Fixes\n\n● Fixed issues that could prevent progression under certain conditions.\n\n● Fixed environmental issues that could cause the player character to become stuck.\n\n● Fixed various issues with cutscenes and visuals.\n\n● Fixed several combat-related issues.\n\n● Fixed an issue that caused character hair to render incorrectly on certain AMD graphics cards with specific driver versions.\n\n \n\nWe will continue to monitor your feedback and improve the game experience. To report an issue or share your feedback, please visit our official support page.\n\n \n\nPlease note the following common issues related to this update:\n\n- \nSome third-party mods are not compatible with this update and may cause issues. If you encounter problems after updating, please remove any installed mods.\n[/*]\n- \nIf you experience crashes or stuttering after updating, please clear the game’s shader cache and relaunch the game. Shaders will then be quickly recompiled. Cache file location: right-click Phantom Blade Zero in your Steam Library, select Manage → Browse local files, then go to the PBZ\\\\ProjectPBZ\\\\Saved\\\\Cache folder and delete the files inside.\n[/*]\n\nS-GAME",
+      "meta": {
+        "official": true,
+        "kind": "patch_notes",
+        "feed": "steam_community_announcements",
+        "as_of": "2026-11-08",
+        "from_snapshot": false
+      }
+    },
+    "R7": {
+      "source": "review_stats",
+      "raw_id": "4115450:2026-11-05:2026-11-08:language:english",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-11-08",
+      "text": "Review statistics for language group 'english' from 2026-11-05 to 2026-11-08: 300 observed reviews, 289 positive, 11 negative, 3.7% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "english",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R8": {
+      "source": "review_stats",
+      "raw_id": "4115450:2026-11-05:2026-11-08:language:schinese",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-11-08",
+      "text": "Review statistics for language group 'schinese' from 2026-11-05 to 2026-11-08: 300 observed reviews, 291 positive, 9 negative, 3.0% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "schinese",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R9": {
+      "source": "review_stats",
+      "raw_id": "4115450:2026-10-29:2026-11-04:language:english",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-11-04",
+      "text": "Review statistics for language group 'english' from 2026-10-29 to 2026-11-04: 300 observed reviews, 284 positive, 16 negative, 5.3% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "english",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R10": {
+      "source": "review_stats",
+      "raw_id": "4115450:2026-10-29:2026-11-04:language:schinese",
+      "url": "https://store.steampowered.com/app/4115450/",
+      "date": "2026-11-04",
+      "text": "Review statistics for language group 'schinese' from 2026-10-29 to 2026-11-04: 300 observed reviews, 290 positive, 10 negative, 3.3% negative. Partial sample: True.",
+      "meta": {
+        "group_by": "language",
+        "group": "schinese",
+        "count": 300,
+        "partial_sample": true
+      }
+    },
+    "R11": {
+      "source": "review",
+      "raw_id": "239638149",
+      "url": "https://steamcommunity.com/profiles/76561198073059342/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "GAME OF THE DECADE? (for me). Butter smooth combat.. Had no issues running this game with PT + FG at 1440P. \r\n\r\nBEST ACTION GAME I'VE EXPERIENCED IN THE RECENT YEARS.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 57.8,
+        "positive": true
+      }
+    },
+    "R12": {
+      "source": "review",
+      "raw_id": "239664532",
+      "url": "https://steamcommunity.com/profiles/76561198049892880/recommended/4115450/",
+      "date": "2026-11-08",
+      "text": "This is actually a peak action game. I didn't expect much and was pleasantly surprised after completing about 4, fairly large, metroidvania-esque zones that were full of content and things for me to do and then learned I was only about 50% of the way through the game. This game is a bit like Sekiro on steroids. There are also surprisingly many builds and weapons to choose from, the bosses all feel unique and interesting in their design, there are about 61 from what I heard. This is not a souls like though, so from sloppers need to get their fix somewhere else. \n\nThis game unlike other UE5 sloppers, actually manages to establish a clean visual identity that doesn't look like garbage. Despite getting decent performance I still found certain areas to provide dips and unpleasant performance and feel the game could benefit from optimisation. The areas are all beautifully designed, each zone and area feels unique and distinct in its design and appearance. The OST is pretty good here as well. Just do yourself a favour and play with the Chinese dub, skip English entirely as you should in any Eastern game. \n\nHighly recommend",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 21.1,
+        "positive": true
+      }
+    },
+    "R13": {
+      "source": "review",
+      "raw_id": "239657043",
+      "url": "https://steamcommunity.com/profiles/76561198362816222/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "The ancient Wulin propaganda got me.\n\nThe Merciful Lady of the Blossom Veil\nShall descend from Her lotus throne in the Pure Land\nAnd reveal Her divine presence in this troubled mortal world\nManifesting Her sacred form for all to behold\nTo guide all beings lost in suffering\nAnd deliver them from affliction and impermanence.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 47.5,
+        "positive": true
+      }
+    },
+    "R14": {
+      "source": "review",
+      "raw_id": "239656523",
+      "url": "https://steamcommunity.com/profiles/76561198073787382/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "game of the year, btw its not a souls like so please dont treat it like one, it's just a good game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 21.2,
+        "positive": true
+      }
+    },
+    "R15": {
+      "source": "review",
+      "raw_id": "239648649",
+      "url": "https://steamcommunity.com/profiles/76561199152333879/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "Personal GOTY. Best action combat since Sifu. Every weapon feels so different and unique while all feeling extremely satisfying to try out with the exclusive animations for them all. The score kept me very engaged as well as a simple, but great story along with S tier Chinese Voice Acting and beautiful graphics. 9.5/10",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 59.8,
+        "positive": true
+      }
+    },
+    "R16": {
+      "source": "review",
+      "raw_id": "239639627",
+      "url": "https://steamcommunity.com/profiles/76561198280004963/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "press parry 100 times, then press attack 1 time. \r\npeak.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 31.0,
+        "positive": true
+      }
+    },
+    "R17": {
+      "source": "review",
+      "raw_id": "239668699",
+      "url": "https://steamcommunity.com/profiles/76561199084266893/recommended/4115450/",
+      "date": "2026-11-08",
+      "text": "Pretty much a perfect game; all of the complaints I saw before playing this game ended up being completely incorrect. \r\n\r\nIncredibly fluid and responsive combat system, well-designed weapons, a coherent story if you bother to pay attention, a pretty challenging difficulty, a huge amount of content, excellent graphics, and more. \r\n\r\nCountless \"people\" in the reviews were claiming that the game's combat was clunky (lie), that the story was hard to follow (IQ gap), and even that the game looked cheap (????); none of that is true, and if you are expecting this to be a Sekiro-quality product, you will not be disappointed as long as you play it for more than 5 minutes and don't immediately give up on the game because \"durrr hurrr I no understand gam in 1 hr... giv refun!\" \r\n\r\nPhenomenal game; I've only beaten it once, and it exceeded my expectations. Good!",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 42.9,
+        "positive": true
+      }
+    },
+    "R18": {
+      "source": "review",
+      "raw_id": "239658978",
+      "url": "https://steamcommunity.com/profiles/76561198209451791/recommended/4115450/",
+      "date": "2026-11-08",
+      "text": "Incredible Action RPG with combat that never got boring in my 50 hours of playtime. Some of the cleanest animations I have seen in a long time and the game was a treat to play from start to finish. Story was pretty good overall and keeps you engaged well enough for you to keep interest throughout the game. Overall a great addition to the Action RPG genre, and I hope to see more from this studio in the future.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 50.2,
+        "positive": true
+      }
+    },
+    "R19": {
+      "source": "review",
+      "raw_id": "239652128",
+      "url": "https://steamcommunity.com/profiles/76561198801408280/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "66/10",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 75.5,
+        "positive": true
+      }
+    },
+    "R20": {
+      "source": "review",
+      "raw_id": "239667248",
+      "url": "https://steamcommunity.com/profiles/76561198848912413/recommended/4115450/",
+      "date": "2026-11-08",
+      "text": "play it rn goty easily fk gta 6",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 57.7,
+        "positive": true
+      }
+    },
+    "R21": {
+      "source": "review",
+      "raw_id": "239376057",
+      "url": "https://steamcommunity.com/profiles/76561199864993639/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Amazing music, amazing combat, amazing choices of weapons and a bit confusing story but its very interesting if you read and understand through everything. I absolutely loved this game and have been waiting for the release for a long time and after completing it myself, this game is one of the best i have ever played.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 47.3,
+        "positive": true
+      }
+    },
+    "R22": {
+      "source": "review",
+      "raw_id": "239377285",
+      "url": "https://steamcommunity.com/profiles/76561198080636755/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "öyle bi combat var ki insana 31 cektirir",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.8,
+        "positive": true
+      }
+    },
+    "R23": {
+      "source": "review",
+      "raw_id": "239385229",
+      "url": "https://steamcommunity.com/profiles/76561199833309323/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "fun",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 98.5,
+        "positive": true
+      }
+    },
+    "R24": {
+      "source": "review",
+      "raw_id": "239386432",
+      "url": "https://steamcommunity.com/profiles/76561198452159722/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Absolute cinema! \r\nL GTA6 \r\nW Phantom blade",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 40.5,
+        "positive": true
+      }
+    },
+    "R25": {
+      "source": "review",
+      "raw_id": "239397050",
+      "url": "https://steamcommunity.com/profiles/76561199146228441/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "GOTY for me before it was Crimson Desert. This Game is a treat my only complaint is that sometimes it feels a bit to easy but the combat is amazing one of the best ive ever played you feel like a badass everything is so perfectly captured. The story is also good and at the end i had goosebumps I got the \"True ending\" It is 100 percent worth it and almost mandatory. Amazing game cant wait to see what else this studio puts out thank you S GAME!!!",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 44.3,
+        "positive": true
+      }
+    },
+    "R26": {
+      "source": "review",
+      "raw_id": "239380994",
+      "url": "https://steamcommunity.com/profiles/76561197983489285/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Pure masterpiece. GOTY, without a doubt! 🔥",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 32.5,
+        "positive": true
+      }
+    },
+    "R27": {
+      "source": "review",
+      "raw_id": "239379304",
+      "url": "https://steamcommunity.com/profiles/76561199527561355/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Peak",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 8.5,
+        "positive": true
+      }
+    },
+    "R28": {
+      "source": "review",
+      "raw_id": "239373687",
+      "url": "https://steamcommunity.com/profiles/76561199017737133/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "At first i was hesitant about buying this game as i usually do not enjoy souls like games but this game was mind blowing. The story, the areas and even side quest stuff just made the game feel like a larger world than you think. It has so much smoothness to the fights and mechanics. It can seem overbearing at first but it feels rewarding to beat the fights. I will definitely recommend this to others because it was something i could not put down and  was gutted when i reached the end. I hope they decide to work on dlc to expand the story more because this game just hit every tickbox from what felt like has been missing from a game of this genre for so long",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 43.0,
+        "positive": true
+      }
+    },
+    "R29": {
+      "source": "review",
+      "raw_id": "239374195",
+      "url": "https://steamcommunity.com/profiles/76561198066807341/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "biggest flaw is that enemies don´t respawn. you literally have a god tier combat system and I run through empty zones trying to do quests or find things. why? even if they give no xp and no rewards I would still want them to just fight .. fighting feels good, why limit it? you can still run past them if you don´t want to fight like in any souls game. \n\nrest is dope .. fighting feels great, bosses are super fun to learn and master, world looks great, story is meh who cares \n\ncan recommend, but hopefully someone makes a mod which just respawns enemies when you use a bell .. serious flaw",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 16.3,
+        "positive": true
+      }
+    },
+    "R30": {
+      "source": "review",
+      "raw_id": "239397069",
+      "url": "https://steamcommunity.com/profiles/76561199642340265/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "10/10 imo cant wait for a sequel or dlc",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 68.2,
+        "positive": true
+      }
+    },
+    "R31": {
+      "source": "review",
+      "raw_id": "239394528",
+      "url": "https://steamcommunity.com/profiles/76561199068837109/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "W China",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 11.9,
+        "positive": true
+      }
+    },
+    "R32": {
+      "source": "review",
+      "raw_id": "239389671",
+      "url": "https://steamcommunity.com/profiles/76561199524167718/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "best game ever",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 54.7,
+        "positive": true
+      }
+    },
+    "R33": {
+      "source": "review",
+      "raw_id": "239383140",
+      "url": "https://steamcommunity.com/profiles/76561198680507317/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "My dopamine receptors are off the rails with each press and X and LB. 100% recommend for anyone who has played Sekiro or those who like fast combat",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 15.1,
+        "positive": true
+      }
+    },
+    "R34": {
+      "source": "review",
+      "raw_id": "239382319",
+      "url": "https://steamcommunity.com/profiles/76561198254796369/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Review after getting the 100% on Hellwalker difficulty, the game is a lot of fun, it kept me hooked pretty much the entire game, super fun and satisfying gameplay albeit much easier than anticipated, i ended up dying 60 times total, 20ish were from environmental hazards, this was with 100% and all tales/items collected, kind of speaks for itself in how difficult it was. The story was good, nothing exceptional or too intriguing but it was good enough, it kept me interested in what was to come next. Despite all of that, its a great game and I would highly recommend it, I think its a great gateway into playing more classic souls games which happen to be my favorite genre so it's no surprise I enjoyed this game as much as I did. Performance was really good for me, I played max everything in 4k and very rarely ever had any performance issues, game only crashed once for me. The game is great on the eyes, it looks marvelous, my in game time was 38 hours, more accurately like 35ish hours due to afking without pausing, so it's relatively short for the price tag but imo it's worth full price.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 61.6,
+        "positive": true
+      }
+    },
+    "R35": {
+      "source": "review",
+      "raw_id": "239379098",
+      "url": "https://steamcommunity.com/profiles/76561199349417992/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Great combat system, amazing scenes and atmosphere with massive content. 9/10",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 47.4,
+        "positive": true
+      }
+    },
+    "R36": {
+      "source": "review",
+      "raw_id": "239378087",
+      "url": "https://steamcommunity.com/profiles/76561198839518383/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "This is my first review of a game here on steam. This one I've been waiting anxiously for quite some time now. I recently played games like Sekiro, Elden Ring, Lies of P, Onimusha, Black Myth Wukong, among others, so I've been enjoying action combat games so far.\r\nI'm still on the first map, trying to do everything before going to the second, but I can already say: this is a gem.\r\nPersonally I like parry based combat more than just rolling, so Sekiro, Lies of P and Onimusha are ranked high to me. I can comfortably rank Phantom Blade 0 among them. The combat is visually impressive but also challenging (playing on hard mode), it's not a parry-only game but it requires you to play smart around parrying and dodging, weapon versatility without making you feel bad about upgrade decisions (you can respec if you received a new weapon and want to start using that).",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 10.3,
+        "positive": true
+      }
+    },
+    "R37": {
+      "source": "review",
+      "raw_id": "239377441",
+      "url": "https://steamcommunity.com/profiles/76561199807356928/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Ten",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 60.3,
+        "positive": true
+      }
+    },
+    "R38": {
+      "source": "review",
+      "raw_id": "239377286",
+      "url": "https://steamcommunity.com/profiles/76561198015098122/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Better than Sekiro.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 43.5,
+        "positive": true
+      }
+    },
+    "R39": {
+      "source": "review",
+      "raw_id": "239372330",
+      "url": "https://steamcommunity.com/profiles/76561198648169240/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "game is peak.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 22.6,
+        "positive": true
+      }
+    },
+    "R40": {
+      "source": "review",
+      "raw_id": "239397014",
+      "url": "https://steamcommunity.com/profiles/76561199238152067/recommended/4115450/",
+      "date": "2026-11-04",
+      "text": "Top 5 soulsish of all time. Combat flow is incredible once you get it. Weapon progression system is one of the best out there",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 30.2,
+        "positive": true
+      }
+    },
+    "R41": {
+      "source": "review",
+      "raw_id": "239544639",
+      "url": "https://steamcommunity.com/profiles/76561198778449898/recommended/4115450/",
+      "date": "2026-11-06",
+      "text": "The Duality of Phantom Blade Zero: Overrated or Exactly What You're Looking For\n\nThis is the first time I've felt the need to write a review of a game, mainly because I want to save some people from potentially making a mistake. So let me explain that somewhat confusing title.\n\nFirst of all, this game looks absolutely beautiful. The art direction is fantastic, same as the music and simply walking around and exploring the world is genuinely enjoyable. A lot of that comes down to how good the movement looks and feels, with your character effortlessly running, dodging, and jumping through the environment. The lovingly crafted world only adds to that impression. The same goes for the combat: at first glance, it looks incredibly cool and flashy.\n\nHowever, the more time you spend with the game, and the more you approach its mechanics and story expecting a certain level of depth, the more obvious it becomes that this is a fairly average experience at its core.\n\nIt starts with the combat. The flashy first impression wears off a little once you want to deep-dive into it which especially shows in the blocking system. At some point you'll realize that you don't even have to time your blocks properly. You can simply hold down the block button, and as long as you regularly switch weapons to keep your Sha-Chi meter filled, you basically won't take any damage which culminates in you just holding block even while attacking to be invulnerable.\n\nOf course, enemies also have red and blue attacks that you can't just block and instead have to respond to with a perfectly timed parry or dodge. But when you spend most of the fight doing nothing other than holding block, occasionally switching weapons to have enough Sha-Chi, and watching out for those red and blue attacks, it's honestly pretty difficult to mess up the timing.\n\nSuccessfully parrying or dodging these attacks damages the enemy's posture, eventually giving you a short window to hit them with light or heavy attacks. Outside of those windows, however, there's barely any reason to attack at all, since many of the later enemies will either parry pretty much everything or simply be invulnerable until you've broken their posture.\n\nNow this is the most important part of my problem with this game: As a result, what initially looks like a very dynamic combat system gradually turns into a rather mindless waiting game. You wait for the right attacks, dodge or parry them, break the enemy's posture, and then spend the next 10 seconds mashing the same button over and over again until the enemy becomes untouchable again. I think there could be a pretty interesting combat system but the game just does not let me use it. Also: This pattern repeats an absurd number of times on Hellwalker difficulty, since the bosses are a somewhat damage spongy until, after a while, the difficulty starts to feel somewhat artificial, because the mechanics aren't particularly demanding, but because you're forced to repeat the same simple sequence throughout the whole fight. What underlines this impression is that your character is sometimes practically fighting on his own. You'll find yourself watching these long, elaborate combos that look impressive, while all you're actually doing is repeatedly pressing the same button. This takes away some of the impact and directness of the combat, because what happens on screen doesn't always feel proportional to what you're actually doing.\n\n(Additionally some bosses are so shamelessly copied from other games that it's almost funny. Jing Ye is just Gyoubu Oniwa from Sekiro. But that's not really part of my criticism.)\n\nThe story suffers from a similar problem. With its beautiful cutscenes and wonderfully detailed characters, it makes a great first impression. But once you actually start paying attention to the dialogue and try to follow what's happening, so many things feel completely random, absurd, or like they came out of nowhere. At some point, you almost have to stop questioning things to enjoy it.\n\nEven the beautifully designed map becomes rather annoying once you actually try to use it. It's so inaccurate that some markers seem to indicate only the rough general area of whatever you're looking for. I once spent around ten minutes searching for an interaction shown on the map, only to eventually realize it was much farther east and somewhere deep inside the mountain below me.\nEventually, I just started ignoring the map altogether. If a map is going to be unreliable, just don't put it in the game. Let players miss things if they're not paying enough attention while exploring. \n\nConclusion: I think Phantom Blade Zero was apparently designed to appeal to a very broad audience which is not necessarily bad. An accessible game can have mechanical depth and a hard game can be mechanically very simple. But this game wants to be accessible while also trying to offer a somewhat challenging and demanding experience here and there. And I don't think it quite manages to balance those two ambitions. Sometimes it just feels a little undecided about what kind of game it wants to be.\n\nWith all that said, I really want to emphasize again just how beautiful this game is. The animations, the movement, the huge variety of weapons and their different fighting styles, the fantastically staged boss encounters, and the world itself are all seriously amazing. There's a lot of enjoyment in this game.\n\nBut if you're looking for demanding, precise gameplay with a lot of mechanical depth, where your inputs feel deliberate and every action matters, I think there's a good chance you'll end up somewhat disappointed.\n\n(BTW: I'm not even saying that Phantom Blade Zero necessarily pretends to be an extremely deep or demanding Soulslike - the devs even said that this is not a Soulslike. It's just that, judging by its presentation and the sheer number of mechanics it introduces, you could easily get the impression that there's much more depth beneath the surface than there actually is.)\n\nIf, on the other hand, you're looking for a beautiful hack-and-slash game to enjoy looking like a character from \"House Of Flying Daggers\" while fighting your way through an amazing world, this might genuinely be your game of the year.\n\nTL;DR: The aesthetics, animations, and world design are S-tier. But if you're expecting precise, deliberate combat with a high skill ceiling, you might be disappointed. Despite how impressive everything looks, many of the combos require very little input, defensive mechanics are surprisingly forgiving, and boss fights often boil down to waiting for specific attacks before getting another opportunity to deal damage. The game is much more about spectacle than mechanical depth. Whether that's a problem depends entirely on what you're looking for.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 11.3,
+        "positive": false
+      }
+    },
+    "R42": {
+      "source": "review",
+      "raw_id": "239409191",
+      "url": "https://steamcommunity.com/profiles/76561199638888777/recommended/4115450/",
+      "date": "2026-11-05",
+      "text": "I've yet to get even a drip of dopamine from this. How can y'all glaze something so obviously basic? This is the first time I've ever noped out of boss fight from the sheer amount of time you have to button spam. It's the most boring shit. The 2nd phase of the annoying chain-guy fight (dont care to know the name) is spamming the same moves for so long I just quit out of bordem induced rage. Hated pretty much every minute before that too. There's nothing special about this in any way other than some combat animations. It's like someone tried to make Wukong from drunk memory. I feel like I'm in the Twilight Zone with how everyone is acting like it's great, meanwhile I don't think I'm gonna touch it again until they figure out a way to make it tolerable. No I don't want to spend 5 minutes on a boss phase spamming the same crap over and over and over slowly chipping away their health and holding L1 for 90% of it. All I'm doing is waiting for a blue blink or red blink....fun. I have no desire for the story, to upgrade anything, to look at the map, to learn, to play at all. I thought I'd love it. I was all hyped. Now it'll be just another waste of $ in my uninstalled (hidden) list.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 3.8,
+        "positive": false
+      }
+    },
+    "R43": {
+      "source": "review",
+      "raw_id": "239579875",
+      "url": "https://steamcommunity.com/profiles/76561199039159324/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": " 战斗手感很差，战斗操作都感觉不太跟手，不是延迟的问题，是动作前摇长 不够干净利落，给人一种不跟手的感觉。不只是战斗吧，所有人物的动作，都感觉很不利落 手感超级差。另外到处是空气墙，行走特别不自由，除了打怪 没有别的事情可以做，鉴定为类似于黑悟空那种垃圾阳痿游戏，真的很后悔买了这个游戏，感觉玩不下去",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 9.9,
+        "positive": false
+      }
+    },
+    "R44": {
+      "source": "review",
+      "raw_id": "239448772",
+      "url": "https://steamcommunity.com/profiles/76561198057216703/recommended/4115450/",
+      "date": "2026-11-05",
+      "text": "After 60+ hours in the game, I've come to the conclusion that the game suffers from a split personality. This is because the developers didn't know which genre to assign it to: on one hand, it's not a Souls-like, but it acts like a Souls-like. Another thing—I don't know if I'm the only one who felt this way—at times it felt like I was playing God of War, Tekken, or Mortal Kombat; it felt as if several games were blended into one.\n\nThe bugs here are bothersome; several times I died simply because I got stuck in a corner and couldn't react! To sum it up, if the game belongs to the Action RPG genre, they should make sure it actually acts like one. It's hard for me to recommend it, even though there were moments when I enjoyed it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 69.5,
+        "positive": false
+      }
+    },
+    "R45": {
+      "source": "review",
+      "raw_id": "239645561",
+      "url": "https://steamcommunity.com/profiles/76561199228590410/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "I had been genuinely excited for this game from the second it was announced, and to keep it short and sweet, it did not come close to my expectations.\n\nOverall, graphically it is above average. The world is very pretty, but the effects definitely break that immersion—the quality of things like blood splatter and water animation just seems so much lower than the environment.\n\nNarratively, I have not been able to get drawn into it. That’s not really important for this kind of game, but I couldn’t care less about any of the dialogue or cutscenes, which is a bit disappointing.\n\nNow to the important part: combat. The combat in this game, flashy as it may be, is just that. Perfect Block and Parry windows are terrible outside of the blue and red flashes. Combat is essentially reduced to just holding block while attacking and weapon swapping if you don’t want to be overly punished by artificial difficulty.\n\nAnd that is my BIGGEST problem with the combat: artificial difficulty in boss fights. Whether it be attacks blending in with the environment, using one animation to block another (causing you to miss your cues or straight-up hide them), stirring up the environment to block your vision, or spamming low-visibility attacks while you’re in the middle of handling the last one without a large enough window to read it—the real enemy is not being able to actually see what is going on.\n\nObviously, I am still early on with only 10 hours in, but if the trend of boss fights continues to be riddled with vision obstruction, artificial difficulty, and overly flashy animations instead of actual engaging combat, then I will not be completing this game. I had been playing on Hellwalker, but apparently that difficulty allows enemies to adapt to your play and perform feints and combo cancellations, along with other differences that punish the player for learning the boss itself.\n\nIf my opinion changes, I will update my review. I will be proceeding on Pathfinder difficulty from here on.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 10.6,
+        "positive": false
+      }
+    },
+    "R46": {
+      "source": "review",
+      "raw_id": "239426448",
+      "url": "https://steamcommunity.com/profiles/76561199152378112/recommended/4115450/",
+      "date": "2026-11-05",
+      "text": "bad optimization for GTX 50s even after a week of launch the game still crash after 30 mins",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 59.7,
+        "positive": false
+      }
+    },
+    "R47": {
+      "source": "review",
+      "raw_id": "239612348",
+      "url": "https://steamcommunity.com/profiles/76561198029531689/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "Anyone that said this plays like DMC or Ninja Gaiden needs to stop writing about games.\nI hit three buttons and my dude started doing a combo that he attacked like 40 times in. \nThis game plays itself",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1.6,
+        "positive": false
+      }
+    },
+    "R48": {
+      "source": "review",
+      "raw_id": "239621828",
+      "url": "https://steamcommunity.com/profiles/76561199083560881/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "Overall, I have been enjoying the fighting style and the story. But, the collision with the environment is fucking ass. I should not be getting stuck on little ledges, of walk ways, rocks, pieces of wood, etc. Especially, in boss fights. S-Game Studio WTF.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 25.3,
+        "positive": false
+      }
+    },
+    "R49": {
+      "source": "review",
+      "raw_id": "239429266",
+      "url": "https://steamcommunity.com/profiles/76561198064283163/recommended/4115450/",
+      "date": "2026-11-05",
+      "text": "Wish there was a maybe option.  Game is okay. 6.5/10\r\n\r\nI'd wait for a sale.  I did 100% the game though.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 60.9,
+        "positive": false
+      }
+    },
+    "R50": {
+      "source": "review",
+      "raw_id": "239614143",
+      "url": "https://steamcommunity.com/profiles/76561198076770823/recommended/4115450/",
+      "date": "2026-11-07",
+      "text": "I gave it a positive review first. Thinking about not understanding the game, or that it would grow on me. But i changed the review after a lot of playing and thought.At the Start i gave it a Thumbs up, because overall Other people seem to enjoy it. My summary would be:\nIts unbelievable Boring - Its \"Spectacle a slop\" -\nIt looks very nice and all. But thats it. The fighting system is boring and repetative. There is no real Learning-curve, until the moment you understand that in boss fights you just can spam your block button and sometimes the dodge button with blue-red lights - nothing new, nothing realy worht investing time into it. \nThe Weapons are overall interesting and good looking - the move set looks very nice, even when it does not do much swaping and changing \"combos\". There is no finesse in the fights, nor are there very much interesting characters you´d like to fight again.\nAfter about 70& of the game, i just hoped we could bring it to an end, so im over it with at least getting my moneys worth.\n\nThe world is.. \" ok\". Not good, not bad - ill stand neutral on this area. As there is much repetative enviromental things coming up - but still there are a lot of beautiful views to look at , not enough to stand in awe.\n\nThere is a good amount of medicine, and builds to choose from and make your fighting-style unique... but still not enough to differentiate it from any other build you can use.. there is no \"oomph\" in it when you try out a new build. \nIf the Onimusha, Wukong, Kazaan is an 9/10 fighting system, i woudl give Phantom blade a 3 maybe a 4 (If its just about the system, not the visual presentation). Where it is better looking, under a very thin patina - its just flat and very, very boring.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 51.3,
+        "positive": false
+      }
+    },
+    "R51": {
+      "source": "review",
+      "raw_id": "239258123",
+      "url": "https://steamcommunity.com/profiles/76561198059882645/recommended/4115450/",
+      "date": "2026-11-03",
+      "text": "мне осталось жить 66 дней мор утопия",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 10.9,
+        "positive": false
+      }
+    },
+    "R52": {
+      "source": "review",
+      "raw_id": "239169246",
+      "url": "https://steamcommunity.com/profiles/76561199164345155/recommended/4115450/",
+      "date": "2026-11-02",
+      "text": "For me, Phantom Blade was a wishlist game since it was announced. While the game has a fun element to it, the combat can be reduced to a button mashing spam fest that leaves a lot of disappointment. I held off on getting this due to some of the feedback it was getting, and while I think the feedback was a little unfair, I do believe the game is bit overhyped. Games like this show that the unwashed masses of the gaming market are more interested in flashy animations, cinematics, and other forms of feedback they aren't really in control of, and therefore plays it for them in some respects. To put it more bluntly, gamers today are more impressed with games that make you feel more skilled than you really are rather than becoming better at the game through failure and actually getting better. \n\nTo start, the animations are so plentiful that it is often hard to tell when the game is playing itself or if you are. This just left me bitter at times. Even on hellwalker, the game didn't feel as challenging as I thought it would. Instead, after rolling through a couple of mini-bosses and bosses, the challenge quickly became more artificial. When am I actually playing? Yes, there's moves sets that the game controls, not you. But, during blocks sequences, this also happens, so much so that on many occasions if you miss the first series of an enemy attack, there is no way to catch up to block any additional attacks in that series. Because you're stuck in an enemy animation feeback that has to play out. No way to heal during this, no way to escape, no way to block effectively. This isn't always the case though. Sometimes it is, sometimes it isn't. And that's frustrating. Am I going to get stuck in this particular attack pattern if I don't start it off perfectly? Or, can I be less than perfect, and get back on track. Hard to say, really. Each boss is different so far. \n\nOn a further note, the block timing in this game is just plain bad. What feels like a naturally timed block isn't, and you're stuck testing this out over and over again. To the point where you're really just frustratingly spamming. I've seen many people admitting they're just holding the block button down while attacking to mitigate incoming damage. \n\nThis leads to another issue. People obviously aren't always capable seeing, or even knowing, when to block or parry, or when to dodge. They're just holding block for dear life, or spamming dodge, and letting luck take the wheel. \n\nA combat system built on these issues is not good. I'm sorry. Flashy animations aren't going to save it. \n\nThe story isn't anything interesting. It's also weighed down by ill-defined metaphysical concepts that aren't really explained well through dialogue, and while there may be more explanations in the text, the game operates on the principle that everything is so fast all the time, that slowing down to read doesn't make sense. I'm not much of a lore guy myself, so that doesn't help either. It also doesn't help this a Chinese game, and Chinese games are often hyper-cheesy with their dialogue and stories. \n\nThere is fun to be had here. It's a button mashing hack and slash on steroids with flashy animations and cinematics. And if you're here to mindlessly swing for the fences while being made feel god-like through animations that happen often in your fights, while look no further. This game is for you. For me, it's a bit of a disappointment and nothing to really write home about so far. I will finish it but I have nothing extremely positive to say about it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 4.3,
+        "positive": false
+      }
+    },
+    "R53": {
+      "source": "review",
+      "raw_id": "239008219",
+      "url": "https://steamcommunity.com/profiles/76561197970546349/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "I wish Steam had a \"Meh\" option, because that's exactly where I land on this one.\n\nThis game was sold on the promise of Sekiro-level combat, and I'm just not seeing it. What we actually got feels more like an anime dressed up as a game.\n\nBoss encounters are essentially heavily scripted action movies. You hold block, wait for the flashy visual cue, hit the corresponding bumper, and get a few seconds to actually attack the boss. Rinse and repeat.\n\nEventually, you realize you're not really fighting the boss. You're **waiting for the boss to give you permission to play the game.** Four seconds of actual combat, followed by another round of waiting for the next flashy, choreographed sequence.\n\nAnd that's my biggest disappointment. The supposedly deep, expressive combat system only really gets room to breathe against trash mobs, which die far too quickly for any of that depth to matter. The boss fights, where that combat should truly shine, are instead dominated by scripted spectacle.\n\nNow, I'll absolutely give the game credit where it's due. It looks sick as hell. The animations, presentation, and sheer spectacle are genuinely impressive. But looking incredible and being engaging to actually play are two very different things.\n\nI also think some game journalists need to get better at recognizing when they're being sold a carefully curated experience rather than critically evaluating the game underneath all that spectacle. A stunning boss animation isn't automatically good combat design.\n\nThere's a genuinely interesting combat system buried in here. I just wish the game would get out of its own way and let me use it.\n\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 24.4,
+        "positive": false
+      }
+    },
+    "R54": {
+      "source": "review",
+      "raw_id": "238991281",
+      "url": "https://steamcommunity.com/profiles/76561198093483333/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "combat system are just bad or poorly explained. why the f i need to compile shaders every run (i get it if for the first time, but every run...?)\n\nUE5 trash - shader statters, delayed models/textures loading after game start, frame drops\ncombat - smash buttons, press LB for blue, RB for red - thats all depth (if you where pressing parry/block because enemy showering you with attacks but if enemy drops red attack get owned)\nstory - so far it's China slop (your avg web novel level about cultivation)\n\nthis game has 2 good aspects:\n1. animations\n2. visual style",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.8,
+        "positive": false
+      }
+    },
+    "R55": {
+      "source": "review",
+      "raw_id": "238985186",
+      "url": "https://steamcommunity.com/profiles/76561198020789024/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "I am not able to properly react to red flashes with dodge. Sometimes blocking/parry doesn't work properly either. Either my brain is getting slow or there is something with my setup making this almost non-playable. I feel like I wasted 60$.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.2,
+        "positive": false
+      }
+    },
+    "R56": {
+      "source": "review",
+      "raw_id": "239032127",
+      "url": "https://steamcommunity.com/profiles/76561198987106122/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "For people with AMD GPUs: there are a number of vfx glitches right now. Like grid in sky, and soul's hair vortex explosion in some cutscenes. So not recommended for AMD GPUs. Please wait for hotfixes before buying. \n\nOverall the game is a banger. If you like sekiro or DMC, you are going to like this game and if you like both, you are going to love this game.\n\n",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 19.1,
+        "positive": false
+      }
+    },
+    "R57": {
+      "source": "review",
+      "raw_id": "239066696",
+      "url": "https://steamcommunity.com/profiles/76561198043433607/recommended/4115450/",
+      "date": "2026-11-01",
+      "text": "FYI i have been playing this game on highest difficulty you can choose on first run. This game is okay at best IMO. The move sets are cool but they are so not practical in this game. No matter what you do, once you deplete your \"turn\", the enemies WILL take their turns to attack you even when you are continuing your combos. Doesn't matter if you are faster or better. Once you use your turn, the enemy's gotta have its' turn to attack you no matter what. So you are forced to have this flow of turns between you and the enemy through out the whole battle. BTW the combo you can do is basically press light attacks 1 to 5  times and maybe add few strong attacks at the end. That's pretty much all you can do. The combo animations are cool but you will soon realize that the \"combos\" are shallow as hell. Not satisfying when hitting enemies since it feels so light even when you land the attacks.\n\nI can see that the devs tried hard to deviate from usual souls like games and action games but this turned out to be so shallow on both criteria. Is it more satisfying and more stylish than DMC 5? No. Is it more satisfying than Elden ring when you beat the boss? No. \n\nIt's definitely not a bad game at all but I am not sure if it lives up to the hype that everyone has built up so far.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 5.5,
+        "positive": false
+      }
+    },
+    "R58": {
+      "source": "review",
+      "raw_id": "239086945",
+      "url": "https://steamcommunity.com/profiles/76561198127232736/recommended/4115450/",
+      "date": "2026-11-01",
+      "text": "This is just my opinion, and I want to share it, so people who are soulslike fans like me, can see what I think of this game, with a mindset like that.\n\nThe selling point of this game is supposed to be the visuals and combat, so I will start with those.\n\nVisually the game looks amazing, there is no point arguing. Combat is flashy, the environment is beautiful.\n\nThe combat itself is the real problem for me. I understand the target audience is the casual players, who do not want to get good. But to have a combat loop, where you essentially spam the same button, and the game plays itself is a bit too casual for me. If to pull out a combo for you is to spam the same button, then you will enjoy this combat system. This in itself would not be a problem, if the core of the combat would be deep, but in reality, as long as you confidently spam attacks and parries, you will do just fine 99% of the time. Therefor the combat has no depths, it plays itself. Now there are people who say it is fun, and that is good. I just want to warn people the combat is essentially spam the buttons, and if you do not enjoy to see the same animations over and over again, while you spam the same buttons, then avoid this game. I personally did not enjoy it, and after 15 hours I have had enough. Just do not hope it will get better, because it will not.\nNow note that I got halfway through the 4th world, and I saw some okay bosses, but majority of the times, bosses are HP sponges, where you continously have to spam without any brain activity. As I said there are exceptions, but that is quite rare considering how much you have to fight in this game. Some people will say parrying makes the combat not braindead, but I succeded in the hardest difficulty with randomly pressing the parry, because I had no time to learn the timing of the bosses. I just defeated them before it happened.\n\nExploration sucks. I can not express how disappointed I am. The world visually is so nice, but the invisible walls are everywhere, and you can not find shortcuts other than the very few intended ones. I want to bring up dark souls as an example, how a good exploration works. There the world is connected unexpectedly, and exploration always feel fun because of it. You are free to find funny shortcuts, experiment with the environment. In this game you just go straight, no shortcuts, no exciting experimenting to find ways to explore the world your own way. You are forced in a boring pattern, and you constantly get stuck on random objects. Try to jump down to an area, which you should be able to survive based on height, and the area should be accessible, yet it is instant death. No fun allowed during exploration. \nAlso the fact that you unlock different weapons to open up previously unaccessible small areas, is just not fun in this game. This makes it so you are confused. You do not know if you found everything you wanted in the area the first time, or you missed something. This is supposed to be very similar to metroidvania games, which somehow does this idea much better. \nUltimately exploring became a chore for me.\n\nMusic in this game is really good, no complaints about it.\n\nStory is just... please do not expect anything nice. The way it is told is already confusing in itself, randomly jumping around in the timeline, and all I understood is every fking character in this story is an aura farmer, scheming character, and I did not understand their intentions. Everyone is just too smart for you to understand what is going on, because the way dialogues happen, you do not get to understand enough.\n\nOverall the game is not that bad, IF (and this is a big IF), you happen to enjoy flashy braindead combat, and do not care about interesting exploration. The story is not an issue, many games with bad story are fun. So please if you happen to read this, consider my opinions. Consider my viewpoint as a soulslike fan. Otherwise this review might not be for you.\n\nEdit: I got asked in the comments why I hate the combat, and it is similar to Sekiro, so if I love Sekiro, 100% completed the game, then why do I hate this game?\n\nAlso why do I not find soulslike combat boring, when it usually is very simple on the surface.\n\nHere is the answer to those:\n\nSoulslike combat have learning curves, you are there to fail and fail until you learn what you need to learn. This results in a satisfaction, pretty much the core of a soulslike. That is also the reason why soulslike players split their community when someone tries to find the most op, easiest to play build, but that is a different topic. But because there are many builds, these type of games have huge replayability values. To have the option to build 100 different builds, and each feel different, is a huge blessing to those, who wants to enjoy the game again. But this only works, if the core of the combat is already good.\n\nSekiro is not like this either. Sekiro combat seems simple on the surface, yet the combat has a huge learning curve. If you played Sekiro, you will know, each enemy has a visually confirmed rythm. Here visually confirmed is really important to me, because phantom blade zero felt to me like, attacks are coming from nowhere, happening suddenly, which forced me to try to parry everything randomly, and still I succeded the first try majority of the times. Now this made me hate the combat, because there is no satisfaction behind it, other than an eye candy, which gets boring. To me not even the different weapons made this better, because that only resulted way too long combos. Also important to note, that once you deplete a boss's stamina bar, you can do your true combo. This very long true combo takes 20% of the boss's HP. There might be better combos, other than I did, but still the core mechanics are repatativ, and becomes boring, because does not matter what or who you fight, ultimately it will feel the same. Sekiro encounters felt unique, every single of them.\n\nAlso while phantom blade zero is not supposed to be soulslike or sekiro like, people still compare them. I think it is because phantom blade zero is trying to imitate those games, yet they say they are not like those game. It's like when palworld took insipration from Pokemon, made it what fanbase wanted from Pokemon for ages, but the difference here is, phantom blade zero made it look worse, copied everything from a soulslike, except it's core, it's heart, which is the most important, what makes soulslike fan. So comparing them should be valid even if they say, phantom blade zero is not meant to be a soulslike.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 15.2,
+        "positive": false
+      }
+    },
+    "R59": {
+      "source": "review",
+      "raw_id": "239024087",
+      "url": "https://steamcommunity.com/profiles/76561199565521701/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "It feels like two parties masturbating over each other, endlessly trading flashy moves without either side accomplishing anything meaningful.\n\nVictory doesn't feel earned, and defeat doesn't feel instructive. Combat becomes less about skill, strategy, or learning from mistakes and more about participating in an elaborate visual performance. There's plenty of spectacle, but very little substance beneath it.\n\nEvery encounter seems designed to impress rather than engage. The result is an exhausting loop of cinematic flourishes, exaggerated animations, and mechanical noise that mistakes visual intensity for meaningful gameplay.\n\nWhen the dust settles, there's no real satisfaction, no sense of accomplishment, and little incentive to reflect on what went wrong or what went right.\n\nSpectacle slop. All style, no soul.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 14.6,
+        "positive": false
+      }
+    },
+    "R60": {
+      "source": "review",
+      "raw_id": "238996360",
+      "url": "https://steamcommunity.com/profiles/76561198047318813/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "Phantom Blade Zero is undoubtely an incredibly stylish game, but it compromises heft and depth of gameplay for that style and ultimately fails to impress in a year filled with incredible action games. \r\n\r\nPHZ truly shines in its boss fights. The spectacle of a wuxia style story combined with ridiculously hype moments and music make every boss fight I've played in the 6 odd hours stand out and be memorable, but everything outside of those boss fights, be it the fodder enemies and the traversal, feel like an afterthought. \r\n\r\nCombat also greatly suffers outside of boss fights. There's no heft to the movements, enemies rarely, if ever, react to your moves. Throughout my runtime I kept thinking about Onimusha's fodder enemies and how much better it was to fight them because of its incredible parry and combat system. \r\n\r\nIf this game's combat had the same level of polish as Onimusha's does, it would have been a serious game of the year contender. Right now, I cannot recommend it.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.6,
+        "positive": false
+      }
+    },
+    "R61": {
+      "source": "review",
+      "raw_id": "239033932",
+      "url": "https://steamcommunity.com/profiles/76561198186431511/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "I couldn't find myself enjoying this game",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.5,
+        "positive": false
+      }
+    },
+    "R62": {
+      "source": "review",
+      "raw_id": "239234388",
+      "url": "https://steamcommunity.com/profiles/76561198261578681/recommended/4115450/",
+      "date": "2026-11-03",
+      "text": "Crashing very frequently.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1.6,
+        "positive": false
+      }
+    },
+    "R63": {
+      "source": "review",
+      "raw_id": "239219505",
+      "url": "https://steamcommunity.com/profiles/76561197982002746/recommended/4115450/",
+      "date": "2026-11-02",
+      "text": "why does everyone else like this game except me? so glad I wasted 70 dollars on this",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 5.5,
+        "positive": false
+      }
+    },
+    "R64": {
+      "source": "review",
+      "raw_id": "239092999",
+      "url": "https://steamcommunity.com/profiles/76561198862679937/recommended/4115450/",
+      "date": "2026-11-01",
+      "text": "parry and dodge doesn't do anything, its no as satisfying as onimusha and harder than sekiro.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 8.2,
+        "positive": false
+      }
+    },
+    "R65": {
+      "source": "review",
+      "raw_id": "239027081",
+      "url": "https://steamcommunity.com/profiles/76561198104593070/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "Not as good as I have expected. The combat system is OK but buggy sometimes. Your character often got stuck on the map for no reason. The map looks nice but lots of areas you just can't reach. Not a game for me.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1.6,
+        "positive": false
+      }
+    },
+    "R66": {
+      "source": "review",
+      "raw_id": "239047687",
+      "url": "https://steamcommunity.com/profiles/76561198256376285/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "bzz",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 0.6,
+        "positive": false
+      }
+    },
+    "R67": {
+      "source": "review",
+      "raw_id": "239308613",
+      "url": "https://steamcommunity.com/profiles/76561199138237055/recommended/4115450/",
+      "date": "2026-11-03",
+      "text": " genuinely fucking hate the Gold Masked One. I have never felt such pure hatred towards a fictional character in my entire life. Every time I walk into that arena, I know this golden piece of shit is about to ruin my entire evening. I am sick of his attacks, sick of his animations, sick of his existence. I don't want revenge anymore. I want this boss REMOVED FROM THE FUCKING GAME. I hope his mask cracks, his armor rusts, and he spends the rest of eternity getting jumped by tutorial enemies. FUCK YOU, GOLD MASKED ONE.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 6.7,
+        "positive": false
+      }
+    },
+    "R68": {
+      "source": "review",
+      "raw_id": "239235938",
+      "url": "https://steamcommunity.com/profiles/76561198311806336/recommended/4115450/",
+      "date": "2026-11-03",
+      "text": "key remaping doesn't work, mapping crouch to ctrl uses the axe even though is not mapped that",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 3.2,
+        "positive": false
+      }
+    },
+    "R69": {
+      "source": "review",
+      "raw_id": "239054866",
+      "url": "https://steamcommunity.com/profiles/76561197963351962/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "It relies way too heavily on motion capture. Everything feels floaty and weightless, with almost no hit feedback and janky execution animations. The combat basically feels like auto-combat, with the occasional dodge or parry input thrown into the mix. Not a bad game I guess, its just not for me. I've expected more out of the combat feel. The game does look pretty though and the visuals are fire",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 1.6,
+        "positive": false
+      }
+    },
+    "R70": {
+      "source": "review",
+      "raw_id": "239052414",
+      "url": "https://steamcommunity.com/profiles/76561199723689790/recommended/4115450/",
+      "date": "2026-10-31",
+      "text": "I have mixed opinions about this game.\n\nPositives are it looks good, the cutscenes are really good and enjoyable, the combat is fun, storyline is emotional and good. Also once you kill enemies they stay dead (I LOVE THAT) they don’t respawn. \n\nNegatives are the maps is too big and open meaning its easy to get lost, there is to many side quests along with main stories going on at once, and unlocking new maps without finishing a current one, but its more than one map unlocking at once, so there is so much backtracking its not even funny, there is too much going on, and some boss fights can be extremely hard on the easiest difficulty setting. \n\nSecondly the heal button (pressing down to heal) you have to be completely still to use that function, and one hit can kill you if you don’t get away fast enough, the heal function should work as soon as you press the button. So that’s frustrating. I have currently unlocked 5-6 maps at this time of making my review about 14hrs in.\n\nSo at this stage i am rating this game a 2.5/5. \n\nIt definitely isn’t as good as Onimusha but has similar vibes.\n\n(edit) I now rate it a 1/5 due to lack of effective patches and bug fixes, some parts of the game is just unplayable.",
+      "meta": {
+        "language": "english",
+        "hours_at_review": 27.6,
+        "positive": false
+      }
+    }
+  },
+  "chart": {
+    "series": [
+      {
+        "period": "2026-10-29",
+        "up": 67076,
+        "down": 6816,
+        "pct_negative": 9.2,
+        "ref": "R1"
+      },
+      {
+        "period": "2026-11-05",
+        "up": 16979,
+        "down": 659,
+        "pct_negative": 3.7,
+        "ref": "R2"
+      }
+    ],
+    "patches": [
+      {
+        "date": "2026-10-28",
+        "title": "Reason and Madness",
+        "ref": "R5"
+      },
+      {
+        "date": "2026-11-04",
+        "title": "Phantom Blade Zero — Patch Notes (Version 1.0302256)",
+        "ref": "R6"
+      }
+    ],
+    "players": []
+  },
+  "games": [
+    {
+      "appid": 4115450,
+      "name": "Phantom Blade Zero",
+      "store_url": "https://store.steampowered.com/app/4115450/",
+      "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4115450/header.jpg",
+      "developer": "S-GAME Studio",
+      "release_date": "2026-10-28",
+      "genres": [
+        "Action",
+        "RPG"
+      ],
+      "price": "$59.99",
+      "discount_pct": 0
+    }
+  ],
+  "timeline": [
+    {
+      "agent": "Clarifier",
+      "start": 0.0,
+      "end": 8.4
+    },
+    {
+      "agent": "Lead",
+      "start": 8.4,
+      "end": 30.8
+    },
+    {
+      "agent": "Review Analyst 1",
+      "start": 15.0,
+      "end": 25.2
+    },
+    {
+      "agent": "Review Analyst 2",
+      "start": 15.0,
+      "end": 24.4
+    },
+    {
+      "agent": "Patch Historian 3",
+      "start": 15.0,
+      "end": 19.2
+    },
+    {
+      "agent": "Player Data Analyst 4",
+      "start": 15.0,
+      "end": 17.5
+    },
+    {
+      "agent": "Writer",
+      "start": 30.8,
+      "end": 50.4
+    }
+  ]
+}

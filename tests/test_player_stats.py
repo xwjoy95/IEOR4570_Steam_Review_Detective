@@ -155,3 +155,17 @@ def test_tools_never_write_snapshots(live, state, monkeypatch):
     monkeypatch.setattr(http, "save_snapshot", fail)
     call(ps.get_player_stats, state, appid=BG3)
     call(ps.get_player_history, state, appid=BG3, start="2026-01-01", end="2026-10-31")
+
+
+def test_player_stats_flags_stale_owner_estimate(live, state):
+    # A new release: SteamSpy still says 0 .. 20,000 owners while 349k play right now.
+    live[ps.STEAMSPY_URL] = json.loads(fixture("steamspy_1086940.json")) | {"owners": "0 .. 20,000", "ccu": 0}
+    live[ps.CURRENT_PLAYERS_URL] = {"response": {"result": 1, "player_count": 349043}}
+    out = call(ps.get_player_stats, state, appid=BG3)
+    assert out["owners_unreliable"] is True and any("out of date" in w for w in out["warnings"])
+    assert "out of date" in state.store.get(out["ref"]).text
+    assert ps.owners_upper_bound("20,000,000 .. 50,000,000") == 50_000_000 and ps.owners_upper_bound(None) is None
+
+
+def test_player_stats_trusts_consistent_owner_estimate(live, state):
+    assert call(ps.get_player_stats, state, appid=BG3)["owners_unreliable"] is False

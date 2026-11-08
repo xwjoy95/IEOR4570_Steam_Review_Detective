@@ -138,7 +138,7 @@ def _matching_reviews(start, end, review_type="all", language="all", min_hours=N
         yield rid, day, lang, hours, up, score, text
 
 
-def sample_reviews(research, appid: int, start: str, end: str, review_type: str = "negative", language: str = "all",
+def sample_reviews(research, appid: int, start: str, end: str, review_type: str = "all", language: str = "all",
                    min_hours: float | None = None, max_hours: float | None = None, limit: int = 40) -> dict:
     if appid != APPID:
         return _unknown(appid, "appreviews")
@@ -223,6 +223,7 @@ def get_player_history(research, appid: int, start: str, end: str) -> dict:
         ref = research.store.add(
             "player_history", f"{APPID}:{month}", f"https://steamcharts.com/app/{APPID}", month,
             f"{NAME}, {month}: {avg} average players, {peak} peak" + (f", {gain:+}% vs previous month." if gain is not None else "."),
+            {"avg": avg, "peak": peak},
         )
         months.append({"ref": ref, "month": month, "avg": avg, "peak": peak, "gain_pct": gain})
     return _ok(appid=appid, months=months, source="steamcharts")
